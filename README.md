@@ -4,3 +4,4 @@ Repository for the MC656 (Software Engineering) course project at UNICAMP.
 - 219255 - José Mauricio de Vasconcellos Junior
 - 231413 - Thiago Salvador Teixeira Dorta
 - 250453 - Chris Araújo Felipe Souza
+- 183611 - Maria Eduarda Xavier Messias
