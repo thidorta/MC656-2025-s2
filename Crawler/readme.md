@@ -1,4 +1,4 @@
-# 1) Gere os JSONs como antes
+# 1) Gere os JSONs 
 python -m src.collectors.enumerate_dimensions
 
 # 2) Construa o DB simples (SQLite)
