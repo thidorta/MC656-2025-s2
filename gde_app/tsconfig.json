@@ -3,16 +3,16 @@
   "compilerOptions": {
     "strict": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
       "~/*": [
-        "src/*"
+        "./*"
       ],
       "@/*": [
         "./*"
       ],
       "tailwind.config": [
-        "./tailwind.config.js"
+        "../tailwind.config.js"
       ]
     }
   }
