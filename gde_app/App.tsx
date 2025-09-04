@@ -5,6 +5,8 @@ import { useState } from 'react';
 
 import './global.css';
 
+import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
+
 export default function App() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -55,7 +57,9 @@ export default function App() {
   };
 
   return (
-    <>
+    
+    <GluestackUIProvider mode="light">
+      <>
       <ScreenContent title="GDE App - UNICAMP" path="App.tsx">
         <View className="mt-8 p-4 bg-blue-100 rounded-lg">
           <Text className="text-lg font-semibold text-blue-800 text-center">
@@ -103,5 +107,7 @@ export default function App() {
       </ScreenContent>
       <StatusBar style="auto" />
     </>
+    </GluestackUIProvider>
+  
   );
 }
