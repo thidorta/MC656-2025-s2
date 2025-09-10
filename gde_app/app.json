@@ -1,38 +1,52 @@
 {
   "expo": {
-    "name": "gde_app",
+    "name": "GDE • DAC Online",
     "slug": "gde_app",
     "version": "1.0.0",
+
+    "icon": "./assets/logo.png",
+
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+
+    "experiments": { "tsconfigPaths": true },
+
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "hidden": false
+    },
+
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1220"
+    },
+
+    "assetBundlePatterns": ["**/*"],
+
+    "ios": {
+      "supportsTablet": true,
+      "splash": {
+        "resizeMode": "contain",
+        "backgroundColor": "#0B1220"
+      }
+    },
+
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B1220"
+      },
+      "splash": {
+        "image": "./assets/logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#0B1220"
+      }
+    },
 
     "web": {
       "favicon": "./assets/favicon.png"
     },
 
-    "experiments": {
-      "tsconfigPaths": true
-    },
-
-    "plugins": [],
-
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-
-    "userInterfaceStyle": "light",
-
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    }
+    "plugins": []
   }
 }
