@@ -6,8 +6,7 @@ This project implements a crawler to collect and organize information from the *
 ## 👥 Team
 - **250502** – Johatan dos Reis Lima  
 - **219255** – José Mauricio de Vasconcellos Junior  
-- **231413** – Thiago Salvador Teixeira Dorta  
-- **250453** – Chris Araújo Felipe Souza  
+- **231413** – Thiago Salvador Teixeira Dorta
 - **183611** – Maria Eduarda Xavier Messias  
 
 ---
