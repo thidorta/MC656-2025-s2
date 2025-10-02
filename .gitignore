@@ -5,3 +5,12 @@
 /backend/app/__pycache__/
 /backend/app/models/__pycache__/
 /backend/app/api/__pycache__/
+/Crawler/__pycache__/
+/Crawler/venv/
+/Crawler/src/__pycache__/
+/Crawler/src/collectors/__pycache__/
+/Crawler/src/parsers/__pycache__/
+/Crawler/src/utils/__pycache__/
+/Crawler/src/utils/__pycache__
+/Crawler/src/tools/__pycache__/
+/Crawler/src/db/__pycache__/

@@ -112,7 +112,19 @@ def parse_modalidades_from_fragment(html: str) -> List[Dict[str, str]]:
             "descricao": label if label and label != val else None,
         })
         seen.add(val)
-    logger.info("Modalidades extraídas: %d", len(out))
+    
+    # Se não encontrou nenhuma modalidade válida, retorna uma modalidade "padrão" (vazia)
+    # para que o crawler não pule cursos sem modalidades
+    if not out:
+        logger.info("Nenhuma modalidade específica encontrada - usando modalidade padrão")
+        out.append({
+            "modalidade_id": "",
+            "sigla": "UNICA",
+            "descricao": "Modalidade Única",
+        })
+    else:
+        logger.info("Modalidades extraídas: %d", len(out))
+    
     return out
 
 # -------------------------
