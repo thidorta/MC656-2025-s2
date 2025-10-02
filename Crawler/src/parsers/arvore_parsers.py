@@ -45,9 +45,9 @@ def _extract_options(html: str, select_id_or_name: str) -> List[Tuple[str, str]]
 # Course/catalog/modalidade parsers
 # -------------------------
 
-def parse_courses_from_arvore(html: str) -> List[Dict[str, str]]:
+def parse_courses_from_arvore(html: str) -> List[Dict[str, object]]:
     courses = _extract_options(html, "curso")
-    out: List[Dict[str, str]] = []
+    out: List[Dict[str, object]] = []
     for cid, label in courses:
         m = re.search(r"\(([A-Z]{2,8})\)\s*$", label or "")
         sigla = m.group(1) if m else None
@@ -62,9 +62,9 @@ def parse_courses_from_arvore(html: str) -> List[Dict[str, str]]:
     return out
 
 
-def parse_catalogs_from_arvore(html: str) -> List[Dict[str, str]]:
+def parse_catalogs_from_arvore(html: str) -> List[Dict[str, str | int | None]]:
     cats = _extract_options(html, "catalogo")
-    out: List[Dict[str, str]] = []
+    out: List[Dict[str, str | int | None]] = []
     for val, _label in cats:
         ano = None
         m = re.search(r"(\d{4})", val or "")
@@ -78,7 +78,7 @@ def parse_catalogs_from_arvore(html: str) -> List[Dict[str, str]]:
             "vigencia_fim": None,
         })
     seen = set()
-    uniq: List[Dict[str, str]] = []
+    uniq: List[Dict[str, str | int | None]] = []
     for row in out:
         if row["catalogo_id"] not in seen:
             uniq.append(row)
@@ -87,7 +87,7 @@ def parse_catalogs_from_arvore(html: str) -> List[Dict[str, str]]:
     return uniq
 
 
-def parse_modalidades_from_fragment(html: str) -> List[Dict[str, str]]:
+def parse_modalidades_from_fragment(html: str) -> List[Dict[str, str | None]]:
     modos: List[Tuple[str, str]] = []
     modos.extend(_extract_options(html, "modalidade"))
 
@@ -101,7 +101,7 @@ def parse_modalidades_from_fragment(html: str) -> List[Dict[str, str]]:
         if val:
             modos.append((val, val))
 
-    out: List[Dict[str, str]] = []
+    out: List[Dict[str, str | None]] = []
     seen = set()
     for val, label in modos:
         if not val or val in seen:
