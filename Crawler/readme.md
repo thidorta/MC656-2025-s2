@@ -1,5 +1,18 @@
-# 1) Gere os JSONs 
-python -m src.collectors.enumerate_dimensions
-
-# 2) Construa o DB simples (SQLite)
-python -m src.tools.build_simple_db
+1. **Prepare the environment**  
+   Inside the `Crawler/` folder, create a `.env` file with your login credentials:
+   ```env
+   GDE_LOGIN=your_login
+   GDE_SENHA=your_password
+   ```
+2. **Open terminal and navigate to the crawler folder**  
+   ```env
+   cd Crawler
+   ```
+3. **Allow script execution (only needed once on Windows PowerShell)**  
+   ```env
+   Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+   ```
+4. **Run the crawler pipeline**  
+   ```env
+   scripts/run_all.ps1
+   ```

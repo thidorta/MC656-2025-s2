@@ -1,7 +1,10 @@
 from __future__ import annotations
 import logging
 import re
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Optional, Tuple
+from urllib.parse import parse_qs, urlparse
+
+from bs4 import BeautifulSoup
 
 LOGGER_NAME = "arvore_parsers"
 logger = logging.getLogger(LOGGER_NAME)
@@ -11,43 +14,48 @@ logger = logging.getLogger(LOGGER_NAME)
 # -------------------------
 
 def _extract_options(html: str, select_id_or_name: str) -> List[Tuple[str, str]]:
-    patt_select = re.compile(
-        rf"<select[^>]+(?:id|name)\s*=\s*['\"]{re.escape(select_id_or_name)}['\"][\s\S]*?</select>",
-        re.IGNORECASE,
-    )
-    m = patt_select.search(html or "")
-    if not m:
-        logger.debug("Select '%s' não encontrado", select_id_or_name)
+    """Return (value, label) pairs for the target <select> regardless of attribute order."""
+    if not html:
         return []
-    select_html = m.group(0)
+
+    soup = BeautifulSoup(html, "html.parser")
+    select = soup.find("select", id=select_id_or_name)
+    if select is None:
+        select = soup.find("select", attrs={"name": select_id_or_name})
+
+    if select is None:
+        logger.debug("Select '%s' nao encontrado", select_id_or_name)
+        return []
 
     options: List[Tuple[str, str]] = []
-    for mo in re.finditer(
-        r"<option\s+[^>]*value\s*=\s*['\"]([^'\"]+)['\"][^>]*>(.*?)</option>",
-        select_html,
-        re.IGNORECASE | re.DOTALL,
-    ):
-        val = (mo.group(1) or "").strip()
-        lbl = re.sub(r"<[^>]*>", "", mo.group(2) or "").strip()
-        if val:
-            options.append((val, lbl))
+    for option in select.find_all("option"):
+        value = option.get("value") or ""
+        if isinstance(value, list):
+            value = " ".join(value)
+        value = value.strip()
+        if not value:
+            continue
+        label = option.get_text(strip=True)
+        options.append((value, label))
 
     seen = set()
     uniq: List[Tuple[str, str]] = []
-    for v, l in options:
-        if v not in seen:
-            uniq.append((v, l))
-            seen.add(v)
-    logger.debug("Select '%s': %d opções", select_id_or_name, len(uniq))
+    for value, label in options:
+        if value in seen:
+            continue
+        seen.add(value)
+        uniq.append((value, label))
+
+    logger.debug("Select '%s': %d opcoes", select_id_or_name, len(uniq))
     return uniq
 
 # -------------------------
 # Course/catalog/modalidade parsers
 # -------------------------
 
-def parse_courses_from_arvore(html: str) -> List[Dict[str, str]]:
+def parse_courses_from_arvore(html: str) -> List[Dict[str, object]]:
     courses = _extract_options(html, "curso")
-    out: List[Dict[str, str]] = []
+    out: List[Dict[str, object]] = []
     for cid, label in courses:
         m = re.search(r"\(([A-Z]{2,8})\)\s*$", label or "")
         sigla = m.group(1) if m else None
@@ -62,9 +70,9 @@ def parse_courses_from_arvore(html: str) -> List[Dict[str, str]]:
     return out
 
 
-def parse_catalogs_from_arvore(html: str) -> List[Dict[str, str]]:
+def parse_catalogs_from_arvore(html: str) -> List[Dict[str, str | int | None]]:
     cats = _extract_options(html, "catalogo")
-    out: List[Dict[str, str]] = []
+    out: List[Dict[str, str | int | None]] = []
     for val, _label in cats:
         ano = None
         m = re.search(r"(\d{4})", val or "")
@@ -78,30 +86,40 @@ def parse_catalogs_from_arvore(html: str) -> List[Dict[str, str]]:
             "vigencia_fim": None,
         })
     seen = set()
-    uniq: List[Dict[str, str]] = []
+    uniq: List[Dict[str, str | int | None]] = []
     for row in out:
         if row["catalogo_id"] not in seen:
             uniq.append(row)
             seen.add(row["catalogo_id"])
-    logger.info("Catálogos encontrados: %d", len(uniq))
+    logger.info("Catalogos encontrados: %d", len(uniq))
     return uniq
 
 
-def parse_modalidades_from_fragment(html: str) -> List[Dict[str, str]]:
+def parse_modalidades_from_fragment(html: str) -> List[Dict[str, str | None]]:
     modos: List[Tuple[str, str]] = []
     modos.extend(_extract_options(html, "modalidade"))
 
-    for m in re.finditer(r"[?&]modalidade=([A-Za-z0-9_]+)", html or "", re.IGNORECASE):
-        val = (m.group(1) or "").strip()
+    soup = BeautifulSoup(html or "", "html.parser")
+
+    for tag in soup.find_all(attrs={"data-sigla": True}):
+        data_sigla = tag.get("data-sigla") or ""
+        if isinstance(data_sigla, list):
+            val = " ".join(data_sigla).strip()
+        else:
+            val = str(data_sigla).strip()
         if val:
             modos.append((val, val))
 
-    for m in re.finditer(r"data-?sigla\s*=\s*['\"]([A-Za-z0-9_]+)['\"]", html or "", re.IGNORECASE):
-        val = (m.group(1) or "").strip()
-        if val:
-            modos.append((val, val))
+    for tag in soup.find_all(href=True):
+        href = tag.get("href") or ""
+        parsed = urlparse(str(href))
+        qs = parse_qs(parsed.query)
+        for val in qs.get("modalidade", []):
+            cleaned = (val or "").strip()
+            if cleaned:
+                modos.append((cleaned, cleaned))
 
-    out: List[Dict[str, str]] = []
+    out: List[Dict[str, str | None]] = []
     seen = set()
     for val, label in modos:
         if not val or val in seen:
@@ -112,20 +130,25 @@ def parse_modalidades_from_fragment(html: str) -> List[Dict[str, str]]:
             "descricao": label if label and label != val else None,
         })
         seen.add(val)
-    logger.info("Modalidades extraídas: %d", len(out))
+
+    if not out:
+        logger.info("Nenhuma modalidade especifica encontrada - usando modalidade padrao")
+        out.append({
+            "modalidade_id": "",
+            "sigla": "UNICA",
+            "descricao": "Modalidade unica",
+        })
+    else:
+        logger.info("Modalidades extraidas: %d", len(out))
+
     return out
 
 # -------------------------
-# Integralização / disciplinas
+# Integralizacao / disciplinas
 # -------------------------
 
-_ANCHOR_RE = re.compile(
-    r'<a\s+href="[^"]*/disciplina/(\d+)/"\s+class="sigla"\s+title="([^"]+)"[^>]*>([^<]+)</a>\s*\((\d+)\)',
-    re.IGNORECASE,
-)
-
 _OBRIG_BLOCK_RE = re.compile(
-    r"(?:<strong>\s*)?Disciplinas\s+Obrigat(?:&oacute;|&Oacute;|ó|o)rias[^:]*:\s*(?:</strong>)?\s"
+    r"(?:<strong>\s*)?Disciplinas\s+Obrigat(?:&oacute;|&Oacute;|\u00f3|o)rias[^:]*:\s*(?:</strong>)?\s"
     r"([\s\S]*?)"
     r"(?=(?:<strong>\s*)?Disciplinas\s+Eletivas|</pre>|$)",
     re.IGNORECASE,
@@ -144,14 +167,19 @@ def _normalize_codigo(c: str) -> str:
 
 
 def _find_integralizacao_pre(html: str) -> Optional[str]:
-    mdiv = re.search(r'<div[^>]+id=["\']integralizacao["\'][^>]*>([\s\S]*?)</div>', html or "", re.IGNORECASE)
-    if not mdiv:
+    if not html:
         return None
-    bloco = mdiv.group(1)
-    mpre = re.search(r"<pre>([\s\S]*?)</pre>", bloco or "", re.IGNORECASE)
-    if not mpre:
+
+    soup = BeautifulSoup(html, "html.parser")
+    container = soup.find("div", id="integralizacao")
+    if container is None:
         return None
-    return mpre.group(1)
+
+    pre = container.find("pre")
+    if pre is None:
+        return None
+
+    return pre.decode_contents()
 
 
 def _split_semester_groups(section: str) -> List[str]:
@@ -161,10 +189,47 @@ def _split_semester_groups(section: str) -> List[str]:
     return [b.strip() for b in s.split("\n\n") if b.strip()]
 
 
+def _extract_disciplina_nodes(block_html: str) -> List[Tuple[str, str, str, Optional[int]]]:
+    """Parse the HTML for one semester block and extract disciplina metadata."""
+    soup = BeautifulSoup(block_html or "", "html.parser")
+    nodes: List[Tuple[str, str, str, Optional[int]]] = []
+
+    for anchor in soup.find_all("a", class_="sigla"):
+        href = anchor.get("href") or ""
+        match = re.search(r"/disciplina/(\d+)/", str(href))
+        if not match:
+            continue
+        disciplina_id = match.group(1)
+        title_val = anchor.get("title") or ""
+        if isinstance(title_val, list):
+            nome = " ".join(title_val).strip()
+        else:
+            nome = str(title_val).strip()
+        codigo = _normalize_codigo(anchor.get_text())
+
+        # Look for the first "(N)" sequence after the anchor to obtain credits.
+        rendered_block = block_html
+        anchor_markup = str(anchor)
+        creditos: Optional[int] = None
+        pos = rendered_block.find(anchor_markup)
+        if pos != -1:
+            tail = rendered_block[pos + len(anchor_markup):]
+            mcred = re.search(r"\((\d+)\)", tail)
+            if mcred:
+                try:
+                    creditos = int(mcred.group(1))
+                except ValueError:
+                    creditos = None
+
+        nodes.append((disciplina_id, nome, codigo, creditos))
+
+    return nodes
+
+
 def parse_disciplinas_from_integralizacao(html: str, catalogo: str) -> List[Dict]:
     pre = _find_integralizacao_pre(html)
     if not pre:
-        logger.warning("Bloco <pre> da integralização não encontrado.")
+        logger.warning("Bloco <pre> da integralizacao nao encontrado.")
         return []
 
     results: List[Dict] = []
@@ -172,24 +237,17 @@ def parse_disciplinas_from_integralizacao(html: str, catalogo: str) -> List[Dict
 
     def _collect_from_section(section_text: Optional[str], tipo: str):
         if not section_text:
-            logger.info("Seção '%s' não encontrada.", tipo)
+            logger.info("Secao '%s' nao encontrada.", tipo)
             return
 
         groups = _split_semester_groups(section_text)
-        logger.info("Seção '%s': %d blocos (semestres) detectados.", tipo, len(groups))
+        logger.info("Secao '%s': %d blocos (semestres) detectados.", tipo, len(groups))
 
         for idx, block in enumerate(groups, start=1):
             found_any = False
-            for m in _ANCHOR_RE.finditer(block):
-                disciplina_id, nome, codigo, cred = m.groups()
-                codigo = _normalize_codigo(codigo)
-                try:
-                    creditos = int(cred)
-                except Exception:
-                    creditos = None
-
+            for disciplina_id, nome, codigo, creditos in _extract_disciplina_nodes(block):
                 if disciplina_id in seen_ids:
-                    logger.debug("Duplicata ignorada (id=%s, código=%s).", disciplina_id, codigo)
+                    logger.debug("Duplicata ignorada (id=%s, codigo=%s).", disciplina_id, codigo)
                     continue
 
                 results.append({
@@ -205,7 +263,7 @@ def parse_disciplinas_from_integralizacao(html: str, catalogo: str) -> List[Dict
                 found_any = True
 
             if not found_any:
-                logger.debug("Nenhuma âncora encontrada no bloco '%s' (semestre=%d).", tipo, idx)
+                logger.debug("Nenhuma ancora encontrada no bloco '%s' (semestre=%d).", tipo, idx)
 
     obrig_match = _OBRIG_BLOCK_RE.search(pre)
     _collect_from_section(obrig_match.group(1) if obrig_match else None, "obrigatoria")
