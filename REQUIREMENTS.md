@@ -18,11 +18,21 @@
 4) Quais funcionalidades você gostaria de ver no mobile?  
 5) Comentários adicionais.
 
-**Evidências.**  
-- `docs/evidencias/form-perguntas.png` (print das perguntas)  
-- `docs/evidencias/form-resumos.png` (gráficos/tabelas de respostas)  
-- `docs/evidencias/form-respostas.csv` (export do Google Forms)  
-- (Opcional) link somente leitura da planilha do Forms: _adicionar link_
+---
+
+## Evidências (Formulário Google Forms)
+
+As evidências da técnica de elicitação foram adicionadas no diretório [`docs/evidencias`](./docs/evidencias):
+
+- **[Link do Formulário aplicado](https://forms.gle/9GLM3QVBy7T5LYMu9)** – contém todas as perguntas enviadas aos alunos.  
+- **formulario-respostas.csv** → dados brutos exportados do Google Forms.  
+- **Voce_conhece_o_GDE.png** → gráfico de respostas sobre o conhecimento prévio do GDE.  
+- **funcionalidades.png** → funcionalidades mais utilizadas no GDE.  
+- **relevancia_gde_mobile.png** → percepção de utilidade do GDE Mobile.  
+- **funcionalidades_extras.png** → funcionalidades desejadas no aplicativo (calendário, notificações etc.).
+
+Esses arquivos comprovam a execução da técnica de elicitação e suportam as análises descritas neste documento.
+
 
 ---
 
