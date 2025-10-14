@@ -2,7 +2,7 @@
 /Crawler/outputs
 /Crawler/.env
 /Crawler/.venv/
-/Crawler/__pycache__/
+*__pycache__*
 /backend/__pycache__/
 /backend/app/__pycache__/
 /backend/app/models/__pycache__/

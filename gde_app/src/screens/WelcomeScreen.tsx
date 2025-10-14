@@ -6,7 +6,6 @@ import { spacing } from '../theme/spacing';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { StatusBar } from 'expo-status-bar';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Welcome'>;
 
@@ -38,7 +37,7 @@ export default function WelcomeScreen({ navigation }: Props) {
 
           <PrimaryButton
             label="Explorar GDE"
-            onPress={() => navigation.navigate('Courses')}
+            onPress={() => navigation.navigate('Login')}
             style={{ marginTop: spacing(3) }}
           />
 
