@@ -1,35 +1,30 @@
-#!/bin/bash
-# Script para rodar o crawler coletando TODOS os cursos
+#!/usr/bin/env bash
+# Run the crawler for ALL courses and build the DB
 
-echo "🚀 Iniciando coleta de TODOS os cursos..."
-echo ""
+set -euo pipefail
 
-# 1) Gera os JSONs
-echo "📥 Passo 1/2: Coletando dados de todos os cursos..."
-python -m src.collectors.enumerate_dimensions
+# Move to project root (folder containing this file)
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT_DIR"
 
-if [ $? -ne 0 ]; then
-    echo "❌ Erro ao coletar dados!"
-    exit 1
+# Activate venv if present (Linux/macOS)
+if [ -f .venv/bin/activate ]; then
+  echo "[1/3] Activating venv (.venv)"
+  # shellcheck disable=SC1091
+  source .venv/bin/activate
 fi
 
-echo ""
-echo "✅ Coleta finalizada!"
-echo ""
+echo "Python: $(python --version 2>&1)"
 
-# 2) Constrói o banco de dados
-echo "💾 Passo 2/2: Construindo banco de dados SQLite..."
-python -m src.tools.build_simple_db
+echo "[2/3] Collecting data (crawler_app collect)"
+python -m src.crawler_app.cli collect
 
-if [ $? -ne 0 ]; then
-    echo "❌ Erro ao construir banco de dados!"
-    exit 1
-fi
+echo "[3/3] Building DB (crawler_app build-db)"
+python -m src.crawler_app.cli build-db
 
-echo ""
-echo "🎉 Processo completo! Verifique a pasta outputs/"
-echo ""
-echo "📊 Outputs gerados:"
-echo "  • outputs/json/        - JSONs por curso/modalidade"
-echo "  • outputs/gde_simple.db - Banco SQLite"
-echo "  • outputs/raw/         - HTMLs brutos"
+echo
+echo "Done. Outputs:"
+echo "  - data/json/           (JSONs per course/modalidade)"
+echo "  - data/db/gde_simple.db (SQLite DB)"
+echo "  - data/raw/            (raw HTML)"
+

@@ -1,16 +1,49 @@
-/Crawler/outputs
-/Crawler/.env
-/backend/.env
-/backend/__pycache__/
-/backend/app/__pycache__/
-/backend/app/models/__pycache__/
-/backend/app/api/__pycache__/
-/Crawler/__pycache__/
-/Crawler/venv/
-/Crawler/src/__pycache__/
-/Crawler/src/collectors/__pycache__/
-/Crawler/src/parsers/__pycache__/
-/Crawler/src/utils/__pycache__/
-/Crawler/src/utils/__pycache__
-/Crawler/src/tools/__pycache__/
-/Crawler/src/db/__pycache__/
+## OS files
+.DS_Store
+Thumbs.db
+
+## IDE / editor
+.vscode/
+.idea/
+
+## Python cache/compiled
+__pycache__/
+crawler/src/**/__pycache__/
+backend/**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+## Virtual environments
+.venv/
+venv/
+env/
+crawler/.venv/
+
+## Env files (secrets)
+.env
+.env.*
+backend/.env
+crawler/.env
+Crawler/.env
+!crawler/template.env
+
+## Build and packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+## Test/coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+## Project data/logs/artifacts
+crawler/data/
+crawler/logs/
+crawler/outputs/
+Crawler/outputs/
+
