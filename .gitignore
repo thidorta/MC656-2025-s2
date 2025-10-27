@@ -1,3 +1,96 @@
+###############################
+# Global ignores (Python, OS, IDE, secrets)
+###############################
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.*
+*.env
+
+# Packaging / distribution
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+coverage.xml
+nosetests.xml
+*.cover
+*.py,cover
+.pytest_cache/
+
+# Type checkers / linters
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.pylint.d/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Common secrets/keys
+.secrets
+secrets.*
+*.secret
+*.key
+*.pem
+*.p12
+*.pfx
+*-credentials.json
+
+# Local Python versions
+.python-version
+
+# PDM / other local caches
+__pypackages__/
+
 /crawler/outputs
 /crawler/.env
 /backend/.env
@@ -14,3 +107,4 @@
 /crawler/src/utils/__pycache__
 /crawler/src/tools/__pycache__/
 /crawler/src/db/__pycache__/
+/crawler/data
