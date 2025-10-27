@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+# Requires PowerShell 5+
+# Usage:
+=======
 # Requires PowerShell 5+ (Windows 10+)
 # Usage: Right-click -> Run with PowerShell (or) in PS:
+>>>>>>> main
 #   PS> ./scripts/run_all.ps1
 
 $ErrorActionPreference = 'Stop'
@@ -80,14 +85,28 @@ if ($ShouldInstallDeps) {
 # Optional: show python version
 Write-Host "Python: " -NoNewline; python --version
 
+<<<<<<< HEAD
 # Step 1: collect -> data/raw + data/json
-Write-Host "[3/4] Running collector (crawler_app collect)" -ForegroundColor Cyan
+Write-Host "[2/3] Rodando coletor (src.crawler_app.cli collect)" -ForegroundColor Cyan
 python -m src.crawler_app.cli collect
-if ($LASTEXITCODE -ne 0) { throw "Collector failed (crawler_app collect)" }
+if ($LASTEXITCODE -ne 0) { throw "Falha no coletor (crawler_app collect)" }
+
+# Step 2: build DB -> data/db
+Write-Host "[3/3] Construindo banco (src.crawler_app.cli build-db)" -ForegroundColor Cyan
+python -m src.crawler_app.cli build-db
+if ($LASTEXITCODE -ne 0) { throw "Falha ao construir o banco (crawler_app build-db)" }
+
+Write-Host "✔ Concluído. JSONs em data/json e DB em data/db/gde_simple.db" -ForegroundColor Green
+=======
+# Step 1: enumerate -> outputs/json
+Write-Host "[3/4] Running collector (enumerate_dimensions)" -ForegroundColor Cyan
+python -m src.collectors.enumerate_dimensions
+if ($LASTEXITCODE -ne 0) { throw "Collector enumerate_dimensions failed" }
 
 # Step 2: build DB -> data/db
 Write-Host "[4/4] Building database (crawler_app build-db)" -ForegroundColor Cyan
 python -m src.crawler_app.cli build-db
 if ($LASTEXITCODE -ne 0) { throw "Database build failed (crawler_app build-db)" }
 
-Write-Host "Done. JSON files in data/json and DB in data/db/gde_simple.db" -ForegroundColor Green
+Write-Host "Done. JSON files in outputs/json and DB in outputs/gde_simple.db" -ForegroundColor Green
+>>>>>>> main
