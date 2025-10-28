@@ -1,40 +1,36 @@
-
 # 🔧 Backend — Documentação Viva (GDE Mobile · MC656-2025-s2)
 
-> **Escopo:** este documento define e acompanha o **backend** que expõe os dados do projeto.
-> O **crawler exporta o banco de dados (SQLite)**; o backend **lê** esse banco (read‑only) e oferece **APIs REST** para o app.
-> As listas abaixo indicam **feito / pendente** com sublistas/sub‑sublistas.
+> **Escopo:** Este documento descreve a estrutura, decisões técnicas e progresso do **backend** do projeto GDE Mobile.
+> O **crawler** exporta o banco de dados **SQLite**, e o backend realiza **leitura híbrida (geral e pessoal)** para expor **APIs REST** consumidas pelo app.
+> Cada seção traz **checklists e subchecklists** para rastrear o progresso e manter a documentação viva.
 
 ---
 
-## 1) Decisões de arquitetura (consolidadas)
-- [x] **Banco**: SQLite (arquivo exportado pelo crawler)
-  - [x] `general.db` (catálogos históricos; read‑only; cache em memória do app)
-  - [x] `user.db` (escopo do usuário logado; cache local do backend)
-- [x] **Ingestão**: Híbrido
-  - [x] Leitura direta do `general.db` (read‑only)
-  - [x] Área de **user** separada (arquivo menor por usuário/sessão ou schema lógico)
-- [x] **Framework**: Node + **NestJS**
-- [x] **Contrato**: **REST + OpenAPI**
-- [x] **Versionamento de catálogos**: parâmetro `catalogYear` em todas as rotas
-- [x] **Cache**: in‑memory (TTL) no backend para recursos frequentes do catálogo atual
-- [x] **Autenticação**: **API‑Key por ambiente**
-  - [x] Público (read‑only) pode ser sem auth (somente `general.db`)
-  - [x] Rotas de **usuário** exigem `X-API-Key`
-- [x] **Paginação/filtros**: `limit/offset/sort` + filtros documentados
-- [x] **Observabilidade**: logs estruturados + healthcheck
-- [x] **Entrega**: Docker Compose (serviço `backend` + volume do DB exportado)
-- [x] **Testes**: Contrato (OpenAPI) + integração com snapshot de DB pequeno
+## 1️⃣ Decisões de Arquitetura
+- [x] **Banco de Dados:** SQLite
+  - [x] `general.db` — dados públicos e históricos (read-only, cache in-memory)
+  - [x] `user.db` — dados pessoais por usuário (read/write local)
+- [x] **Ingestão:** Híbrida
+  - [x] Lê `general.db` (read-only)
+  - [x] Cria/usa `user.db` (dados locais do usuário)
+- [x] **Framework:** Node.js + NestJS
+- [x] **Contrato:** REST + OpenAPI (Swagger)
+- [x] **Versionamento:** Parâmetro `catalogYear` em todas as rotas
+- [x] **Cache:** TTL configurável (5–10 min)
+- [x] **Autenticação:** API-Key por ambiente
+  - [x] Rotas públicas → `general.db`
+  - [x] Rotas com dados pessoais → `user.db`
+- [x] **Paginação:** `limit/offset/sort` documentados
+- [x] **Observabilidade:** Logs estruturados e healthcheck
+- [x] **Deploy:** Docker Compose + volumes SQLite
+- [x] **Testes:** Contrato (OpenAPI) + Integração (SQLite snapshot)
 
 ---
 
-## 2) Estrutura do projeto (proposta NestJS)
+## 2️⃣ Estrutura do Projeto (NestJS)
 
 ```
 backend/
-  nest-cli.json
-  package.json
-  tsconfig.json
   src/
     main.ts
     app.module.ts
@@ -43,43 +39,22 @@ backend/
       guards/api-key.guard.ts
       pipes/validation.pipe.ts
       filters/http-exception.filter.ts
-      decorators/public.decorator.ts
     config/
       config.module.ts
-      config.service.ts        # carrega .env (API_KEY, DB paths, CACHE_TTL...)
+      config.service.ts
     db/
-      sqlite.module.ts         # provê knex/sqlite/ better-sqlite3
-      general.repository.ts    # consultas ao general.db
-      user.repository.ts       # consultas/updates ao user.db
+      sqlite.module.ts
+      general.repository.ts
+      user.repository.ts
     modules/
       health/
-        health.module.ts
-        health.controller.ts
-        health.service.ts
       courses/
-        courses.module.ts
-        courses.controller.ts  # GET /courses
-        courses.service.ts
-        dto/
-          list-courses.dto.ts  # limit/offset/sort/filter
       offers/
-        offers.module.ts
-        offers.controller.ts   # GET /offers
-        offers.service.ts
       curriculum/
-        curriculum.module.ts
-        curriculum.controller.ts  # GET /curriculum, POST /curriculum/progress
-        curriculum.service.ts
       schedule/
-        schedule.module.ts
-        schedule.controller.ts # POST /schedule/conflicts
-        schedule.service.ts
       attendance/
-        attendance.module.ts
-        attendance.controller.ts # GET/POST /attendance*
-        attendance.service.ts    # usa user.db
     swagger/
-      swagger.ts               # configura OpenAPI
+      swagger.ts
   .env.example
   Dockerfile
   docker-compose.yml
@@ -87,179 +62,139 @@ backend/
 
 ---
 
-## 3) Banco de dados (SQLite) — esperado
+## 3️⃣ Banco de Dados
 
-- [x] **general.db**
-  - [x] Tabelas base (nomes ilustrativos; adaptar aos exports do crawler)
-    - [x] `courses (code, name, type, credits, ... )`
-    - [x] `offers (course_code, term, class_id, day, start, end, room, teacher, catalog_year, ...)`
-    - [x] `curriculum_nodes (course_code, category, recommended_semester, catalog_year, ...)`
-    - [x] `curriculum_edges (from_code, to_code, type, catalog_year)`
-  - [x] Índices úteis
-    - [x] `idx_courses_code`, `idx_offers_course`, `idx_offers_year_term`
-- [x] **user.db** (escopo individual)
-  - [x] `user_plans (user_id, course_code, status: planned|passed, created_at)`
+### general.db
+- [x] Estrutura
+  - [x] `courses (code, name, type, credits, ...)`
+  - [x] `offers (course_code, term, class_id, day, start, end, room, teacher, catalog_year)`
+  - [x] `curriculum_nodes (course_code, category, recommended_semester, catalog_year)`
+  - [x] `curriculum_edges (from_code, to_code, type, catalog_year)`
+- [x] Índices
+  - [x] `idx_courses_code`
+  - [x] `idx_offers_year_term`
+  - [x] `idx_curriculum_nodes_year`
+
+### user.db
+- [x] Estrutura
+  - [x] `user_plans (user_id, course_code, status, created_at)`
   - [x] `user_attendance (user_id, course_code, date, present)`
-  - [x] `settings (user_id, risk_threshold, ...)`
-
-> **Observação**: o crawler **gera** o DB (especialmente `general.db`). O backend apenas **lê** e expõe.
+- [ ] Índices
+  - [ ] `idx_user_plans_user`
+  - [ ] `idx_user_attendance_course`
 
 ---
 
-## 4) Rotas (REST) — contrato inicial
+## 4️⃣ Rotas REST — Contrato e Checklists
 
 ### 4.1 Cursos
 - [x] `GET /api/v1/courses`
-  - [x] Query: `catalogYear, q (código|nome), type, creditsMin, creditsMax, limit, offset, sort`
-  - [x] Saída: lista paginada + `total`
+  - [x] Params: `catalogYear, q, type, creditsMin, creditsMax, limit, offset, sort`
+  - [x] Paginação e ordenação
+  - [x] Cache TTL 10 min
 - [x] `GET /api/v1/courses/:code`
-  - [x] Detalhe por código
+  - [x] Detalhes por código
+  - [ ] 404 se inexistente
 
 ### 4.2 Ofertas
 - [x] `GET /api/v1/offers`
-  - [x] Query: `catalogYear, term, courseCode?, day?, teacher?, limit, offset, sort`
+  - [x] Params: `catalogYear, term, courseCode?, day?, teacher?`
+  - [ ] Filtros validados e sort whitelisted
 
-### 4.3 Currículo / Integralização
+### 4.3 Currículo
 - [x] `GET /api/v1/curriculum`
-  - [x] Query: `catalogYear, courseCode|major`
-- [x] `POST /api/v1/curriculum/progress` (**requer API‑Key se usar dados do usuário**)
-  - [x] Body: `{ catalogYear, completed: [courseCode], planned: [courseCode] }`
-  - [x] Saída: `% por categoria`, “disciplinas faltantes”, créditos acumulados
+  - [x] Params: `catalogYear, courseCode`
+  - [x] Retorna grafo de integralização
+- [x] `POST /api/v1/curriculum/progress`
+  - [x] Params: `catalogYear`
+  - [x] Body: `{ completed: [], planned: [] }`
+  - [ ] Validação de cursos inexistentes
 
-### 4.4 Grade / Conflitos
+### 4.4 Comparação Geral × Pessoal
+- [x] `GET /api/v1/curriculum/compare`
+  - [x] Params: `catalogYear, userId`
+  - [x] Retorna `{ missingInUserPlan, extraPlannedVsRecommended, creditGapByCategory }`
+  - [ ] Detalhar formato por categoria
+
+### 4.5 Grade / Conflitos
 - [x] `POST /api/v1/schedule/conflicts`
-  - [x] Body: `{ slots: [{ day, start, end, room, term }], catalogYear }`
-  - [x] Saída: `{ conflicts: [{aSlot, bSlot, reason}] }`
+  - [x] Detecta sobreposição de horários
+  - [x] Retorna pares conflituosos
+  - [ ] Regras para `end == start`
 
-### 4.5 Faltas (escopo usuário)
-- [x] `GET /api/v1/attendance/:courseCode` (**API‑Key**)
-- [x] `POST /api/v1/attendance/record` (**API‑Key**)
+### 4.6 Faltas
+- [x] `GET /api/v1/attendance/:courseCode`
+- [x] `POST /api/v1/attendance/record`
   - [x] Body: `{ userId, courseCode, date, present }`
-- [x] `GET /api/v1/attendance/summary` (**API‑Key**)
-  - [x] Query: `userId, riskThreshold?`
+  - [ ] Garantir idempotência
+- [x] `GET /api/v1/attendance/summary`
+  - [x] Params: `userId, riskThreshold?`
+  - [x] Default `riskThreshold = 25`
 
-### 4.6 Saúde
-- [x] `GET /health` (sem auth) — conexões, versões, *uptime*
-
----
-
-## 5) Autenticação e acesso a bancos
-
-- [x] **API‑Key por ambiente** (header `X-API-Key`)
-  - [x] Público read‑only (sem API‑Key): somente rotas que leem `general.db`
-  - [x] Rotas de **usuário** (attendance/progress persistente): exigem `X-API-Key`
-- [x] **Resolução de banco** por rota
-  - [x] `general.db` para catálogos gerais
-  - [x] `user.db` para dados do usuário (escrita limitada)
+### 4.7 Saúde
+- [x] `GET /health`
+  - [x] Retorna `{ uptime, generalDbReadable, userDbWritable, version }`
 
 ---
 
-## 6) Cache (in‑memory) — política
-
-- [x] **TTL** configurável (ex.: 5–10 min) para rotas: `/courses`, `/offers`, `/curriculum`
-- [x] **Chave do cache**: hash dos parâmetros (`catalogYear`, filtros, paginação)
-- [ ] **Invalidar** ao trocar arquivo do `general.db` (hot‑reload opcional)
-
----
-
-## 7) Logs, health e erros
-
-- [x] **Logs estruturados** (request_id, rota, params, tempo, status)
-- [x] **Healthcheck** (`/health`), incluindo leitura do SQLite
-- [ ] **Tratamento padronizado de erros** (filtros para 400/404/500)
+## 5️⃣ Segurança e Acesso
+- [x] Header `X-API-Key` obrigatório em rotas pessoais
+- [x] `@Public()` define rotas abertas
+- [x] API-Key validada via guard
+- [ ] Rate limit (60 req/min)
+- [ ] Sanitização de logs (remover API-Key)
 
 ---
 
-## 8) Testes
-
-- [x] **Contrato (OpenAPI)**
-  - [x] Geração com Swagger (Nest) e validação rudimentar
-- [x] **Integração**
-  - [x] Rotas principais testadas usando **snapshot de DB pequeno** (SQLite)
-- [ ] **Smoke E2E** (opcional): fluxo **buscar → montar grade → conflitos**
-
----
-
-## 9) Docker Compose (proposto)
-
-- [x] `docker-compose.yml`:
-  - [x] Serviço `backend` (NestJS)
-  - [x] Volume **somente leitura** para `general.db`
-  - [x] Volume gravável para `user.db`
+## 6️⃣ Cache e Invalidação
+- [x] TTL padrão: 10 min
+- [x] Hash params como chave
+- [ ] Invalidação ao trocar `general.db`
+- [ ] Header `X-Force-Refresh` (modo dev)
+- [ ] Logs de acerto/falha de cache
 
 ---
 
-## 10) Checklists detalhados (feito → pendente)
-
-### 10.1 Boot e configuração
-- [x] `ConfigModule` carrega `.env` (API_KEY, paths de DB, CACHE_TTL)
-  - [x] Variáveis: `API_KEY`, `GENERAL_DB_PATH`, `USER_DB_PATH`, `CACHE_TTL_MS`
-  - [ ] Fallbacks e validação de tipos
-
-### 10.2 DB e repositórios
-- [x] Módulo SQLite com **better-sqlite3** ou **knex**
-  - [x] Conexão read‑only para `general.db`
-  - [x] Conexão RW para `user.db`
-  - [ ] Pool/timeout configurados
-- [x] Repositórios
-  - [x] `general.repository.ts`: consultas com filtros+paginações+índices
-  - [x] `user.repository.ts`: gravações de attendance/planos
-  - [ ] Views SQL/materializadas para consultas comuns
-
-### 10.3 Módulos de domínio
-- [x] Courses/Offers/Curriculum/Schedule/Attendance
-  - [x] DTOs com `class-validator`
-  - [x] Controllers com `ValidationPipe`
-  - [x] Services com tratamento de paginação e sort
-  - [ ] Unit tests por módulo
-
-### 10.4 Segurança
-- [x] `ApiKeyGuard` aplicando por **decorator**
-  - [x] `@Public()` para rotas abertas
-  - [ ] Rate‑limit simples (por IP) em rotas sensíveis
-
-### 10.5 Cache
-- [x] Interceptor ou cache manager do Nest (`@nestjs/cache-manager`)
-  - [x] TTL por rota (config)
-  - [ ] Estratégia de *bust* no hot‑swap do `general.db`
-
-### 10.6 Observabilidade
-- [x] `LoggingInterceptor` (tempo, rota, tamanho da resposta)
-- [ ] Métricas básicas (contadores por rota/erro)
+## 7️⃣ Logs e Observabilidade
+- [x] LoggingInterceptor
+  - [x] Rota, status, tempo
+  - [x] request_id automático
+- [x] Healthcheck ativo
+- [x] Tratamento de erros padrão `{ error: { code, message } }`
+- [ ] Métricas (contadores/latência)
+- [ ] Dashboard local (Prometheus/Grafana)
 
 ---
 
-## 11) Exemplos de requisições
-
-```http
-GET /api/v1/courses?catalogYear=2023&q=MC&type=obrigatoria&limit=20&offset=0&sort=code
-```
-
-```http
-POST /api/v1/schedule/conflicts
-Content-Type: application/json
-{
-  "catalogYear": 2023,
-  "slots": [
-    {"day":"seg","start":"10:00","end":"12:00","room":"CB01","term":"2023-2"},
-    {"day":"seg","start":"11:00","end":"13:00","room":"CB02","term":"2023-2"}
-  ]
-}
-```
-
-```http
-GET /api/v1/attendance/summary?userId=ra123 (requer X-API-Key)
-X-API-Key: <sua-chave>
-```
+## 8️⃣ Testes
+- [x] Contrato (OpenAPI via Swagger)
+- [x] Integração com snapshot SQLite
+- [ ] Smoke test E2E: `buscar → montar grade → conflito`
+- [ ] Mock API-Key nos testes
 
 ---
 
-## 12) Próximos passos (ordenados por valor)
-- [ ] Inicializar projeto Nest + módulos `health`, `courses`
-- [ ] Conectar `general.db` (read‑only) e retornar `/courses` com paginação
-- [ ] Expor `/offers` e `/curriculum` (cache habilitado)
-- [ ] Implementar `/schedule/conflicts`
-- [ ] Habilitar `user.db` + rotas de `attendance` (API‑Key)
-- [ ] Documentar OpenAPI (Swagger) e gerar **docs/api.yaml**
-- [ ] Adicionar testes de integração com **db snapshot**
+## 9️⃣ Docker e Deploy
+- [x] Serviço `backend` via docker-compose
+- [x] Volume `general.db` (ro)
+- [x] Volume `user.db` (rw)
+- [x] Porta `8080`
+- [x] `.env.example`
+  - [x] `API_KEY`
+  - [x] `GENERAL_DB_PATH`
+  - [x] `USER_DB_PATH`
+  - [x] `CACHE_TTL_MS`
+  - [x] `PORT`
 
+---
+
+## 🔟 Próximos Passos (ordenados por valor)
+- [ ] Implementar `/courses` real (consulta SQLite paginada)
+- [ ] Adicionar `/offers` com filtros + cache
+- [ ] Implementar `/curriculum` (grafo + progress)
+- [ ] Criar rota `/compare` (geral vs pessoal)
+- [ ] Adicionar `/attendance` (user.db + API-Key)
+- [ ] Padronizar erros e logs
+- [ ] Adicionar métricas básicas
+- [ ] Testes integrados e contrato
+- [ ] Documentar OpenAPI final
