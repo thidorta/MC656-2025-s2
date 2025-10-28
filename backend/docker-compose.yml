@@ -1,0 +1,18 @@
+
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: gde-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+      - API_KEY=${API_KEY}
+      - GENERAL_DB_PATH=/data/general.db
+      - USER_DB_PATH=/data/user.db
+      - CACHE_TTL_MS=600000
+    volumes:
+      - ./data/general.db:/data/general.db:ro
+      - ./data/user.db:/data/user.db
+    restart: unless-stopped
