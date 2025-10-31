@@ -1,0 +1,5 @@
+[
+  { "code": "MC202", "requirements": ["MC102"] },
+  { "code": "MC322", "requirements": ["MC102", "MC202"] }
+]
+
