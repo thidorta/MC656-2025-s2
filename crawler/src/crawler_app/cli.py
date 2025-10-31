@@ -25,6 +25,14 @@ def _call_build_db() -> int:
         return 1
 
 
+def _call_healthcheck() -> int:
+    try:
+        print("healthcheck (stub): session and GDEClient will be validated later.")
+        return 0
+    except Exception as e:
+        print(f"[healthcheck] error: {e}", file=sys.stderr)
+        return 1
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="crawler_app", description="Crawler CLI")
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -32,6 +40,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("collect", help="Run data collection (HTML + JSON)")
     sub.add_parser("build-db", help="Build SQLite DB from JSON")
     sub.add_parser("run-all", help="Collect then build DB")
+    sub.add_parser("healthcheck", help="Sanity check for session and GDEClient (stub)")
 
     args = parser.parse_args(argv)
     if args.cmd == "collect":
@@ -43,6 +52,8 @@ def main(argv: list[str] | None = None) -> int:
         if rc != 0:
             return rc
         return _call_build_db()
+    if args.cmd == "healthcheck":
+        return _call_healthcheck()
 
     parser.print_help()
     return 2
