@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-# Requires PowerShell 5+
-# Usage:
-=======
 # Requires PowerShell 5+ (Windows 10+)
 # Usage: Right-click -> Run with PowerShell (or) in PS:
->>>>>>> main
 #   PS> ./scripts/run_all.ps1
 
 $ErrorActionPreference = 'Stop'
