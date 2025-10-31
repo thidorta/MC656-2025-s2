@@ -1,0 +1,13 @@
+{
+  "course_id": 34,
+  "year": 2022,
+  "modality": "AA",
+  "nodes": [
+    { "code": "MC102", "name": "Algoritmos e Programação", "period": 1, "category": "obrigatoria" },
+    { "code": "MC202", "name": "Estruturas de Dados", "period": 2, "category": "obrigatoria" }
+  ],
+  "edges": [
+    { "src": "MC102", "dst": "MC202", "type": "prereq" }
+  ]
+}
+
