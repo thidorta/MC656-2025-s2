@@ -1,13 +1,15 @@
 {
-  "course_id": 34,
-  "year": 2022,
-  "modality": "AA",
-  "nodes": [
-    { "code": "MC102", "name": "Algoritmos e Programação", "period": 1, "category": "obrigatoria" },
-    { "code": "MC202", "name": "Estruturas de Dados", "period": 2, "category": "obrigatoria" }
-  ],
-  "edges": [
-    { "src": "MC102", "dst": "MC202", "type": "prereq" }
-  ]
+  "cp": "0,5720",
+  "cpf": "0,6872",
+  "integralizacao": "<br />\n<pre>\n  <strong>Aviso:</strong> Esta n&atilde;o &eacute; a integraliza&ccedil;&atilde;o oficial da DAC e pode ou n&atilde;o refletir a realidade.\n  <strong>Aluno:</strong> <a href=\"https://grade.daconline.unicamp.br/perfil/usuario=dudamx\">Maria Eduarda Xavier Messias</a>\n  <strong>Registro Acad&ecirc;mico (RA):</strong> 183611\n  <strong>Curso:</strong> 34 - Engenharia de Computa&ccedil;&atilde;o\n  <strong>Modalidade:</strong> AA - Sistemas de Computa&ccedil;&atilde;o\n  <strong>Cat&aacute;logo:</strong> 2022\n  <strong>Ingresso:</strong> 1&ordm; semestre de 2023\n  <strong>Limite para Integraliza&ccedil;&atilde;o:</strong> 1&ordm; semestre de 2030\n  <strong><i>Semestre Atual</i>:</strong> 2025 - 2&ordm; Semestre\n  ...\n</pre>",
+  "tipos": {
+    "2745": "Obrigat&oacute;ria",
+    "2748": "Obrigat&oacute;ria",
+    "4210": "Obrigat&oacute;ria",
+    "6771": "Obrigat&oacute;ria",
+    "4172": "Obrigat&oacute;ria",
+    "10585": "Obrigat&oacute;ria",
+    "4177": "Obrigat&oacute;ria",
+    "897": "Obrigat&oacute;ria"
+  }
 }
-

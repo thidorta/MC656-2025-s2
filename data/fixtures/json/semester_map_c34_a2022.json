@@ -1,5 +1,5 @@
 [
   { "code": "MC102", "recommendedSemester": 1 },
-  { "code": "MC202", "recommendedSemester": 2 }
+  { "code": "MC202", "recommendedSemester": 2 },
+  { "code": "MC322", "recommendedSemester": 3 }
 ]
-
