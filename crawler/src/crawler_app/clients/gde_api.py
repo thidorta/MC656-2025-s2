@@ -92,9 +92,9 @@ class GDEApiClient:
             "arvore": os.getenv("GDE_PATH_ARVORE", "arvore/"),
         }
 
-        self.catalogo_default = os.getenv("GDE_CATALOGO_DEFAULT", CATALOGO_TARGET)
-        self.periodo_default = os.getenv("GDE_PERIODO_DEFAULT", PERIODO_TARGET)
-        self.cp_default = os.getenv("GDE_CP_DEFAULT", CP_TARGET)
+        self.catalogo_default = str(CATALOGO_TARGET)
+        self.periodo_default = str(PERIODO_TARGET)
+        self.cp_default = str(CP_TARGET)
         self._planejador_cache: Dict[tuple[int, int], Optional[Dict[str, Any]]] = {}
 
     # ------------------------------------------------------------------
@@ -330,11 +330,22 @@ class GDEApiClient:
 
         url = self._build_url(path)
         method = method.upper()
+        base_host = self.base_url.rstrip("/")
+        headers = {
+            "Accept": "application/json, text/javascript, */*; q=0.01",
+            "X-Requested-With": "XMLHttpRequest",
+        }
+        csrf_cookie = self.session.cookies.get("csrfptoken")
+        if method == "POST":
+            headers["Content-Type"] = "application/x-www-form-urlencoded; charset=UTF-8"
+            headers["Origin"] = base_host
+            if "planejador" in path:
+                headers["Referer"] = base_host + "/planejador/"
+            if csrf_cookie:
+                headers["X-CSRFP-TOKEN"] = csrf_cookie
+
         request_kwargs = {
-            "headers": {
-                "Accept": "application/json, text/javascript, */*; q=0.01",
-                "X-Requested-With": "XMLHttpRequest",
-            },
+            "headers": headers,
             "timeout": timeout,
         }
         if method == "POST":
@@ -402,11 +413,12 @@ class GDEApiClient:
             self._planejador_cache[key] = None
             return None
 
-        periodo_param = os.getenv("GDE_PLANEJADOR_PERIOD", self.periodo_default or year)
+        periodo_param = self.periodo_default or str(year)
+        planner_id = os.getenv("GDE_PLANEJADOR_ID") or getattr(self.session, "gde_planejador_id", None)
         post_data = {
-            "id": os.getenv("GDE_PLANEJADOR_ID", "0"),
+            "id": str(planner_id or "0"),
             "a": "c",
-            "c": course_id,
+            "c": 0 if planner_id else course_id,
             "pp": periodo_param,
             "pa": "",
         }
