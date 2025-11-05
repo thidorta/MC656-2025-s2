@@ -1,0 +1,1212 @@
+{
+  "course": {
+    "id": 111,
+    "name": "Engenharia de Transportes (111)",
+    "code": "111"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9726",
+      "codigo": "EB102",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10090",
+      "codigo": "EB205",
+      "nome": "Metodologia Científica e Tecnológica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14222",
+      "codigo": "EB931",
+      "nome": "Fundamentos da Engenharia de Transportes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14223",
+      "codigo": "EB932",
+      "nome": "Química Geral Aplicada à Engenharia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10081",
+      "codigo": "EB201",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST101",
+          "ST201"
+        ],
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10102",
+      "codigo": "EB403",
+      "nome": "Estatística",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14224",
+      "codigo": "EB933",
+      "nome": "Representação Gráfica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9727",
+      "codigo": "EB103",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9728",
+      "codigo": "EB104",
+      "nome": "Laboratório de Física I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17620",
+      "codigo": "EB308",
+      "nome": "Introdução à Extensão Universitária",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14228",
+      "codigo": "EB937",
+      "nome": "Introdução às Ciências Ambientais Voltada aos Transportes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9730",
+      "codigo": "SI100",
+      "nome": "Algoritmos e Programação de Computadores I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10083",
+      "codigo": "EB203",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST109"
+        ],
+        [
+          "EB103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10084",
+      "codigo": "EB204",
+      "nome": "Laboratório de Física II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB103",
+          "EB104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10086",
+      "codigo": "EB301",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14226",
+      "codigo": "EB935",
+      "nome": "Topografia I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB933"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17642",
+      "codigo": "EB991",
+      "nome": "Projeto Integrador I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7042",
+      "codigo": "ST216",
+      "nome": "Geologia Geral",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10094",
+      "codigo": "EB402",
+      "nome": "Fenômenos de Transporte",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB203",
+          "EB301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10095",
+      "codigo": "EB405",
+      "nome": "Mecânica dos Sólidos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB103",
+          "EB201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10103",
+      "codigo": "EB406",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14230",
+      "codigo": "EB939",
+      "nome": "Grafos e Redes",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB936"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14233",
+      "codigo": "EB942",
+      "nome": "Engenharia de Tráfego",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB403"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10104",
+      "codigo": "EB501",
+      "nome": "Hidráulica I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10100",
+      "codigo": "EB504",
+      "nome": "Resistência dos Materiais I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB201",
+          "EB405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17622",
+      "codigo": "EB608",
+      "nome": "Ciência e Tecnologia dos Materiais",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14229",
+      "codigo": "EB938",
+      "nome": "Topografia II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB935"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5590",
+      "codigo": "ST423",
+      "nome": "Resistência dos Materiais II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST309"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18150",
+      "codigo": "TT219",
+      "nome": "Fundamentos de  Eletricidade",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10123",
+      "codigo": "EB801",
+      "nome": "Sistemas de Informações Geográficas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14232",
+      "codigo": "EB941",
+      "nome": "Hidrologia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB403",
+          "EB938"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14238",
+      "codigo": "EB948",
+      "nome": "Pesquisa Operacional",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB102",
+          "EB403",
+          "EB939"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7043",
+      "codigo": "ST410",
+      "nome": "Mecânica dos Solos I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST216"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17648",
+      "codigo": "EB998",
+      "nome": "Estruturas de Concreto",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7044",
+      "codigo": "ST529",
+      "nome": "Mecânica dos Solos II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST410",
+          "ST423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14235",
+      "codigo": "EB945",
+      "nome": "Sistemas de Transportes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB938"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14236",
+      "codigo": "EB946",
+      "nome": "Projeto e Construção de Estradas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB938"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14239",
+      "codigo": "EB949",
+      "nome": "Drenagem de Estradas",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB941"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14256",
+      "codigo": "EB966",
+      "nome": "Ergonomia e Segurança do Trabalho",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17643",
+      "codigo": "EB992",
+      "nome": "Projeto Integrador II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14246",
+      "codigo": "EB956",
+      "nome": "Movimento de Terra",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB938",
+          "ST423",
+          "ST529"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14259",
+      "codigo": "EB969",
+      "nome": "Segurança de Vias",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB960"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17638",
+      "codigo": "EB987",
+      "nome": "Transporte Público Urbano",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14242",
+      "codigo": "EB951",
+      "nome": "Demanda de Transportes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB403",
+          "EB945"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14243",
+      "codigo": "EB952",
+      "nome": "Logística",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14244",
+      "codigo": "EB953",
+      "nome": "Pavimentação I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB946",
+          "ST410"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14245",
+      "codigo": "EB954",
+      "nome": "Ferrovias",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB946",
+          "ST423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14250",
+      "codigo": "EB960",
+      "nome": "Pavimentação II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB953"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17639",
+      "codigo": "EB988",
+      "nome": "Terminais e Operação de Transporte Intermodal",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17640",
+      "codigo": "EB989",
+      "nome": "Planejamento e Operação de Portos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB945"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14237",
+      "codigo": "EB947",
+      "nome": "Transporte Hidroviário",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB941"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14249",
+      "codigo": "EB959",
+      "nome": "Sistemas de Monitoramento e Controle de Tráfego",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB942",
+          "EB948"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14255",
+      "codigo": "EB965",
+      "nome": "Impactos Ambientais dos Transportes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14258",
+      "codigo": "EB968",
+      "nome": "Conservação e Manutenção de Pavimentos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB960"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17641",
+      "codigo": "EB990",
+      "nome": "Planejamento e Operação de Aeroportos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB945"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17631",
+      "codigo": "EB807",
+      "nome": "Introdução à Administração de Organizações",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14253",
+      "codigo": "EB963",
+      "nome": "Modelagem Econômica de Transportes",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB802",
+          "EB939"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14254",
+      "codigo": "EB964",
+      "nome": "Pavimento Rígido",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB603",
+          "EB960"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14257",
+      "codigo": "EB967",
+      "nome": "Introdução ao Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17644",
+      "codigo": "EB993",
+      "nome": "Projeto Integrador III",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14248",
+      "codigo": "EB958",
+      "nome": "Planejamento de Transporte Urbano e Uso do Solo",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB403",
+          "EB942",
+          "ST540"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14252",
+      "codigo": "EB962",
+      "nome": "Planejamento Estratégico de Transportes",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB802",
+          "EB948",
+          "EB951"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14260",
+      "codigo": "EB970",
+      "nome": "Atividades Complementares",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14262",
+      "codigo": "EB972",
+      "nome": "Estágio Supervisionado",
+      "creditos": 12,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17645",
+      "codigo": "EB994",
+      "nome": "Atividades Complementares de Extensão",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14391",
+      "codigo": "EB976",
+      "nome": "Tópicos Especiais em Engenharia de Transportes III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14225",
+      "codigo": "EB940",
+      "nome": "Filosofia da Ciência",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14394",
+      "codigo": "EB979",
+      "nome": "GPS e outros Sistemas de Posicionamento",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB938"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14398",
+      "codigo": "EB983",
+      "nome": "IPD Integrated Project Delivery em Processos Relacionados a Construção e Gestão",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB934"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17647",
+      "codigo": "EB997",
+      "nome": "Estruturas pré-fabricadas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB944",
+          "ST423"
+        ],
+        [
+          "EB998",
+          "ST423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14396",
+      "codigo": "EB981",
+      "nome": "SIG Aplicado aos Transportes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST540"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14389",
+      "codigo": "EB974",
+      "nome": "Tópicos Especiais em Engenharia de Transportes I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14393",
+      "codigo": "EB978",
+      "nome": "Geodésia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB938"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14397",
+      "codigo": "EB982",
+      "nome": "Sensoriamento Remoto",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST540"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7045",
+      "codigo": "ST729",
+      "nome": "Noções de Concreto Protendido",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB944"
+        ],
+        [
+          "ST527"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14388",
+      "codigo": "EB973",
+      "nome": "Drenagem Urbana",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB941"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14392",
+      "codigo": "EB977",
+      "nome": "Tópicos Especiais em Engenharia de Transportes IV",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14395",
+      "codigo": "EB980",
+      "nome": "Cartografia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB938"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14387",
+      "codigo": "EB934",
+      "nome": "Computação Gráfica Avançada e Modelagem 3D",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB933"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10108",
+      "codigo": "EB601",
+      "nome": "Hidráulica II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14390",
+      "codigo": "EB975",
+      "nome": "Tópicos Especiais em Engenharia de Transportes II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14386",
+      "codigo": "EB985",
+      "nome": "Pensamento Crítico Aplicado à Engenharia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17649",
+      "codigo": "EB999",
+      "nome": "Obras de Arte",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB944",
+          "ST423"
+        ],
+        [
+          "EB998",
+          "ST423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17646",
+      "codigo": "EB995",
+      "nome": "Trabalho de Conclusão de Curso - Extensão",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB967"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14261",
+      "codigo": "EB971",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB967"
+        ]
+      ]
+    }
+  ]
+}

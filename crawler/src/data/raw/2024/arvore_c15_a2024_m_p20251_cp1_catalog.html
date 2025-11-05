@@ -1,0 +1,2021 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" >
+<head>
+	<link rel="search" type="application/opensearchdescription+xml" href="https://grade.daconline.unicamp.br/opensearch.xml" title="Procurar no GDE" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>GDE - &Aacute;rvore</title>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery-ui-1.8.24.min.js"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.ba-hashchange.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.easing.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.fancybox.js?20210919"></script>
+	<script type='text/javascript' src="https://grade.daconline.unicamp.br/web/js/jquery.fullcalendar.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.guaycuru.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jcontext.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jdMenu.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jhelpertip.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.maskedinput.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.numberinput.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.popup.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.positionBy.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.tablesorter.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.timers.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.validate.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.watcherkeys.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/gde.common.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/gde.42.js?20210919"></script>
+	<script type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3315545-3']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/dropdown_menu.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/gde.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/tabs.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.datepicker.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.fancybox.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jcontext.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jdMenu.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jhelpertip.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.popup.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.ui.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/fullcalendar.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.tablesorter.css?20210919" type="text/css" />
+	<link rel="apple-touch-icon" href="https://grade.daconline.unicamp.br/web/images/apple-touch-icon.png" />
+</head>
+<body id="page_bg">
+<a href="https://github.com/guaycuru/gde" target="_blank" title="Colabore com o GDE, abra seu Pull Request!" id="fork-me-ribbon">
+	<img style="position: absolute; top: 0; right: 0; border: 0; z-index: 99;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+</a>
+<script type="text/javascript">
+// <![CDATA[
+var CONFIG_URL = 'https://grade.daconline.unicamp.br/';
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+// Informacoes para o chat
+var ID_USUARIO = '40017';
+var meu_status = 'z';
+var minha_foto_th = 'https://grade.daconline.unicamp.br/web/fts/ncNDZJ0b5PY8vrRR_th.jpg';
+$(document).ready(function(){
+	$('body').watcherkeys({callback: $.guaycuru.changeIt});
+	$("#menu_input_busca").Valor_Padrao('Buscar...', 'padrao');
+	$("#form_busca_universal").submit(function() {
+		if($("#menu_input_busca").val().length < 1 || $("#menu_input_busca").hasClass('padrao'))
+			return false;
+	});
+	$("#toggle_menu_busca_avancada").click(function() {
+		$("#div_menu_busca_avancada").toggle('fast', function() {
+			if($(this).is(":visible"))
+				$(document).click(function() { $("#div_menu_busca_avancada").hide('fast'); });
+		});
+		return false;
+	});
+});
+// ]]>
+</script>
+	<iframe src="about:blank" width="0" height="0" frameborder="0" id="controle" name="controle"></iframe>
+		<div id="top">
+			<div id="mini_logo">
+				<a href="https://grade.daconline.unicamp.br/" title="Home"><img src="https://grade.daconline.unicamp.br/web/images/mini_logo.gif" alt="GDE" width="128" height="38" /></a>
+			</div> 
+				<div id="top_menu" class="menu ui-corner-bottom">
+				<ul>
+							<li><a href="#" onclick="return false;">Acad&ecirc;mico</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/arvore/">&Aacute;rvore / Integraliza&ccedil;&atilde;o</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/avaliar/">Avaliar Professores</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/eliminador/">Eliminar Disciplinas</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/mapa/">Mapa do Campus</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/planejador/">Planejador</a></li>
+							<!-- <li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/rankings/">Rankings</a></li> -->
+						</ul>
+					</li>
+					<li><a href="#" onclick="return false;">Social</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/editar-perfil/">Editar Perfil</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/configuracoes/">Configura&ccedil;&otilde;es da Conta</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/amigos/">Meus Amigos</a></li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="return false;">Ajuda</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/contato/">Contato</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/estatisticas/">Estat&iacute;sticas</a></li>
+							<li><a href="https://github.com/guaycuru/gde/wiki/FAQ" target="_blank">Perguntas Frequentes</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/sobre/">Sobre o GDE</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/termos/">Termos de Uso</a></li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="Logout(); return false;">Sair</a></li>
+				</ul>
+			</div>
+			<form id="form_busca_universal" method="get" action="https://grade.daconline.unicamp.br/busca/">
+				<div id="top_busca_simples">
+					<input type="text" id="menu_input_busca" name="q" />
+				</div>
+				<div id="top_botoes_busca">
+					<input type="submit" id="botao_busca_universal" name="buscar" value="OK" />
+					<div id="busca_avancada_wrapper">
+						<a href="https://grade.daconline.unicamp.br/busca/" title="Busca Avan&ccedil;ada" id="toggle_menu_busca_avancada"><img id="botao_busca_avancada" src="https://grade.daconline.unicamp.br/web/images/menu-avancado.png" alt="+" width="11" height="38" /></a>
+						<div id="div_menu_busca_avancada">
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_alunos">Buscar Alunos</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_professores">Buscar Professores</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_disciplinas">Buscar Disciplinas</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_oferecimentos">Buscar Oferecimentos</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_salas">Buscar Salas</a>
+						</div>
+					</div>
+				</div>
+			</form>
+			</div>
+	<div id="wrapper" class="center">
+		<div id="content_bg">
+			<div id="content">
+<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jcontext.js?20210919"></script>
+<script type="text/javascript">
+	// <![CDATA[
+	$(document).ready(function() {
+		
+	$("#Shape_18294").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD177"
+	});
+
+	$("#Shape_18294").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD177.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_15143").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS102"
+	});
+
+	$("#Shape_15143").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS102.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_15144").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS103"
+	});
+
+	$("#Shape_15144").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS103.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18290").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD170"
+	});
+
+	$("#Shape_18290").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD170.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18291").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD171"
+	});
+
+	$("#Shape_18291").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD171.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18292").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD173"
+	});
+
+	$("#Shape_18292").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD173.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_15141").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS100"
+	});
+
+	$("#Shape_15141").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS100.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18293").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD175"
+	});
+
+	$("#Shape_18293").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD175.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_15142").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS101"
+	});
+
+	$("#Shape_15142").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS101.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18609").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD174"
+	});
+
+	$("#Shape_18609").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD174.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_15304").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS201"
+	});
+
+	$("#Shape_15304").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS201.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18610").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD176"
+	});
+
+	$("#Shape_18610").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD176.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_15305").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS202"
+	});
+
+	$("#Shape_15305").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS202.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18611").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD178"
+	});
+
+	$("#Shape_18611").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD178.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_15306").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS203"
+	});
+
+	$("#Shape_15306").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS203.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_9192").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS340"
+	});
+
+	$("#Shape_9192").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS340.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18607").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD125"
+	});
+
+	$("#Shape_18607").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD125.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18608").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD172"
+	});
+
+	$("#Shape_18608").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD172.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18617").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD228"
+	});
+
+	$("#Shape_18617").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD228.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18620").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD233"
+	});
+
+	$("#Shape_18620").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD233.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18622").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD235"
+	});
+
+	$("#Shape_18622").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD235.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18624").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD237"
+	});
+
+	$("#Shape_18624").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD237.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_9190").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS320"
+	});
+
+	$("#Shape_9190").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS320.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18625").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD238"
+	});
+
+	$("#Shape_18625").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD238.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_9191").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS330"
+	});
+
+	$("#Shape_9191").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS330.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18612").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD221"
+	});
+
+	$("#Shape_18612").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD221.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_9194").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS430"
+	});
+
+	$("#Shape_9194").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS430.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18621").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD234"
+	});
+
+	$("#Shape_18621").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD234.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18613").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD224"
+	});
+
+	$("#Shape_18613").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD224.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18623").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD236"
+	});
+
+	$("#Shape_18623").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD236.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18614").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD225"
+	});
+
+	$("#Shape_18614").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD225.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18626").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD239"
+	});
+
+	$("#Shape_18626").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD239.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18615").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD226"
+	});
+
+	$("#Shape_18615").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD226.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18616").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD227"
+	});
+
+	$("#Shape_18616").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD227.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18618").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD229"
+	});
+
+	$("#Shape_18618").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD229.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_9193").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS420"
+	});
+
+	$("#Shape_9193").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS420.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18619").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD230"
+	});
+
+	$("#Shape_18619").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD230.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18631").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD316"
+	});
+
+	$("#Shape_18631").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD316.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18635").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD322"
+	});
+
+	$("#Shape_18635").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD322.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18638").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD326"
+	});
+
+	$("#Shape_18638").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD326.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18627").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD312"
+	});
+
+	$("#Shape_18627").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD312.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18629").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD314"
+	});
+
+	$("#Shape_18629").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD314.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18630").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD315"
+	});
+
+	$("#Shape_18630").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD315.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18636").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD323"
+	});
+
+	$("#Shape_18636").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD323.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18637").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD325"
+	});
+
+	$("#Shape_18637").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD325.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18639").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD327"
+	});
+
+	$("#Shape_18639").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD327.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18628").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD313"
+	});
+
+	$("#Shape_18628").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD313.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18632").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD317"
+	});
+
+	$("#Shape_18632").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD317.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18633").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD318"
+	});
+
+	$("#Shape_18633").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD318.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18634").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD319"
+	});
+
+	$("#Shape_18634").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD319.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18643").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD432"
+	});
+
+	$("#Shape_18643").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD432.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18644").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD433"
+	});
+
+	$("#Shape_18644").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD433.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18645").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD434"
+	});
+
+	$("#Shape_18645").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD434.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18646").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD435"
+	});
+
+	$("#Shape_18646").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD435.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18647").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD436"
+	});
+
+	$("#Shape_18647").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD436.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18641").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD425"
+	});
+
+	$("#Shape_18641").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD425.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18642").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD431"
+	});
+
+	$("#Shape_18642").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD431.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18650").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD513"
+	});
+
+	$("#Shape_18650").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD513.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18651").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD514"
+	});
+
+	$("#Shape_18651").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD514.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18652").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD515"
+	});
+
+	$("#Shape_18652").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD515.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18653").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD523"
+	});
+
+	$("#Shape_18653").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD523.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18654").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD524"
+	});
+
+	$("#Shape_18654").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD524.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18655").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD525"
+	});
+
+	$("#Shape_18655").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD525.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18649").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD512"
+	});
+
+	$("#Shape_18649").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD512.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18663").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD617"
+	});
+
+	$("#Shape_18663").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD617.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18657").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD610"
+	});
+
+	$("#Shape_18657").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD610.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18670").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD625"
+	});
+
+	$("#Shape_18670").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD625.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18664").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD618"
+	});
+
+	$("#Shape_18664").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD618.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18658").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD612"
+	});
+
+	$("#Shape_18658").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD612.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18665").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD619"
+	});
+
+	$("#Shape_18665").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD619.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18659").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD613"
+	});
+
+	$("#Shape_18659").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD613.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18666").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD620"
+	});
+
+	$("#Shape_18666").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD620.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18660").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD614"
+	});
+
+	$("#Shape_18660").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD614.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18667").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD622"
+	});
+
+	$("#Shape_18667").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD622.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18661").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD615"
+	});
+
+	$("#Shape_18661").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD615.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18668").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD623"
+	});
+
+	$("#Shape_18668").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD623.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18662").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD616"
+	});
+
+	$("#Shape_18662").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD616.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_18669").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD624"
+	});
+
+	$("#Shape_18669").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD624.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});	$("a#inline").fancybox({
+		'width': 2315,
+		'height': 930,
+		'hideOnContentClick': false,
+		'autoDimensions' : false,
+		'autoScale' : false,
+		'centerOnScroll': false
+	});
+		$("a.iframe").fancybox({
+			'zoomSpeedIn': 300,
+			'zoomSpeedOut': 300,
+			'hideOnContentClick': false,
+			'width': 700,
+			'height': 500
+		});
+		var evt = $.browser.msie ? "click" : "change";
+		$("#curso").bind(evt, atualiza_modalidades);
+		$("#catalogo").bind(evt, atualiza_modalidades);
+		$("#ok").click(manda_form);
+		$("#limpar").click(limpa_form);
+		$('#select_modalidade').addClass("ac_loading");
+		$('#select_modalidade').load('https://grade.daconline.unicamp.br/ajax/modalidades.php?c=15&a=2024&s=&o=1', {}, function(){$('#select_modalidade').removeClass("ac_loading");});
+
+		$.guaycuru.tooltip("TT_tips", "Dicas:", "<ul><li>Para eliminar uma Disciplina da &Aacute;rvore, clique nela.</li><li>Para colocar uma disciplina de volta na &Aacute;rvore, busque pela disciplina (no menu Disciplinas) e, na p&aacute;gina dela, selecione a op&ccedil;&atilde;o \"Nenhuma das Anteriores\".</li><li>Para eliminar uma Eletiva, busque pela disciplina que foi cursada como eletiva, e marque que a mesma foi cursada.</li></ul>", {});
+
+	});
+	atualiza_modalidades = function() {
+		$('#select_modalidade').addClass("ac_loading");
+		$('#select_modalidade').load('https://grade.daconline.unicamp.br/ajax/modalidades.php?c='+$('#curso').val()+'&a='+$('#catalogo').val()+'&o=1', {}, function(){
+			$('#select_modalidade').removeClass("ac_loading");
+		});
+	};
+	manda_form = function() {
+		document.location = 'https://grade.daconline.unicamp.br/arvore/?curso='+$("#curso").val()+'&modalidade='+$("#modalidade").val()+'&catalogo='+$("#catalogo").val()+'&cp='+$("#cp").val();
+	};
+	limpa_form = function() {
+		document.location = 'https://grade.daconline.unicamp.br/arvore/';
+	};
+	Elimina = function(id, a, r) {
+		$.post('https://grade.daconline.unicamp.br/ajax/disciplina.php', {id: id, e: '1', a: a, r: r, v: '1'}, function() {
+			history.go(0);
+		});
+	}
+	// ]]>
+</script>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD177.png" alt="" /></div><div id="Menu_MD177" style="display:none;" class="RMenu">
+   <ul>
+   <li>Ética e relacionamento humano</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18294/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18294', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18294', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18294', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS102.png" alt="" /></div><div id="Menu_BS102" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases do Desenvolvimento e dos Tecidos do Corpo Humano I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/15143/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('15143', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('15143', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('15143', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS103.png" alt="" /></div><div id="Menu_BS103" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases Funcionais do Corpo Humano I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/15144/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('15144', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('15144', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('15144', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD170.png" alt="" /></div><div id="Menu_MD170" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases humanas da prática médica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18290/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18290', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18290', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18290', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD171.png" alt="" /></div><div id="Menu_MD171" style="display:none;" class="RMenu">
+   <ul>
+   <li>Prática médica I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18291/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18291', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18291', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18291', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD173.png" alt="" /></div><div id="Menu_MD173" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Coletiva I: Introdução à Saúde Coletiva</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18292/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18292', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18292', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18292', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS100.png" alt="" /></div><div id="Menu_BS100" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases Moleculares das Células</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/15141/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('15141', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('15141', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('15141', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD175.png" alt="" /></div><div id="Menu_MD175" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases científicas da prática médica I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18293/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18293', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18293', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18293', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS101.png" alt="" /></div><div id="Menu_BS101" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases Anatômicas do Corpo Humano I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/15142/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('15142', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('15142', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('15142', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD174.png" alt="" /></div><div id="Menu_MD174" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Coletiva II: Ações de Saúde Pública</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18609/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18609', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18609', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18609', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS201.png" alt="" /></div><div id="Menu_BS201" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases Anatômicas do Corpo Humano II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/15304/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('15304', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('15304', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('15304', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD176.png" alt="" /></div><div id="Menu_MD176" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases científicas da prática médica II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18610/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18610', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18610', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18610', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS202.png" alt="" /></div><div id="Menu_BS202" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases do Desenvolvimento e dos Tecidos do Corpo Humano II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/15305/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('15305', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('15305', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('15305', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD178.png" alt="" /></div><div id="Menu_MD178" style="display:none;" class="RMenu">
+   <ul>
+   <li>Ética, ciência e prática médica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18611/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18611', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18611', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18611', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS203.png" alt="" /></div><div id="Menu_BS203" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bases Funcionais do Corpo Humano II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/15306/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('15306', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('15306', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('15306', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS340.png" alt="" /></div><div id="Menu_BS340" style="display:none;" class="RMenu">
+   <ul>
+   <li>Relação Patógeno-Hospedeiro II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/9192/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('9192', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('9192', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('9192', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD125.png" alt="" /></div><div id="Menu_MD125" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atividades complementares e Avaliação I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18607/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18607', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18607', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18607', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD172.png" alt="" /></div><div id="Menu_MD172" style="display:none;" class="RMenu">
+   <ul>
+   <li>Prática Médica II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18608/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18608', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18608', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18608', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD228.png" alt="" /></div><div id="Menu_MD228" style="display:none;" class="RMenu">
+   <ul>
+   <li>Habilidades clínicas I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18617/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18617', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18617', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18617', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD233.png" alt="" /></div><div id="Menu_MD233" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Coletiva III: Epidemiologia e saúde I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18620/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18620', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18620', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18620', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD235.png" alt="" /></div><div id="Menu_MD235" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Coletiva IV: Ciências Humanas e Sociais I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18622/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18622', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18622', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18622', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD237.png" alt="" /></div><div id="Menu_MD237" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde digital</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18624/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18624', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18624', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18624', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS320.png" alt="" /></div><div id="Menu_BS320" style="display:none;" class="RMenu">
+   <ul>
+   <li>Neurociências I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/9190/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('9190', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('9190', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('9190', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD238.png" alt="" /></div><div id="Menu_MD238" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bioética</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18625/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18625', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18625', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18625', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS330.png" alt="" /></div><div id="Menu_BS330" style="display:none;" class="RMenu">
+   <ul>
+   <li>Relação Patógeno-Hospedeiro I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/9191/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('9191', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('9191', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('9191', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD221.png" alt="" /></div><div id="Menu_MD221" style="display:none;" class="RMenu">
+   <ul>
+   <li>Farmacologia aplicada à prática médica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18612/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18612', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18612', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18612', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS430.png" alt="" /></div><div id="Menu_BS430" style="display:none;" class="RMenu">
+   <ul>
+   <li>Relação Patógeno-Hospedeiro IV</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/9194/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('9194', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('9194', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('9194', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD234.png" alt="" /></div><div id="Menu_MD234" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Coletiva V: Epidemiologia e saúde II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18621/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18621', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18621', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18621', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD224.png" alt="" /></div><div id="Menu_MD224" style="display:none;" class="RMenu">
+   <ul>
+   <li>Anatomia Patológica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18613/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18613', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18613', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18613', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD236.png" alt="" /></div><div id="Menu_MD236" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Coletiva VI: Ciências Humanas e Sociais II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18623/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18623', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18623', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18623', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD225.png" alt="" /></div><div id="Menu_MD225" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atividades complementares e Avaliação II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18614/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18614', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18614', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18614', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD239.png" alt="" /></div><div id="Menu_MD239" style="display:none;" class="RMenu">
+   <ul>
+   <li>Ética e comunicação</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18626/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18626', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18626', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18626', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD226.png" alt="" /></div><div id="Menu_MD226" style="display:none;" class="RMenu">
+   <ul>
+   <li>Introdução à imunologia médica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18615/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18615', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18615', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18615', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD227.png" alt="" /></div><div id="Menu_MD227" style="display:none;" class="RMenu">
+   <ul>
+   <li>Anatomia aplicada à prática médica I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18616/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18616', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18616', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18616', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD229.png" alt="" /></div><div id="Menu_MD229" style="display:none;" class="RMenu">
+   <ul>
+   <li>Habilidades clínicas II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18618/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18618', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18618', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18618', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_BS420.png" alt="" /></div><div id="Menu_BS420" style="display:none;" class="RMenu">
+   <ul>
+   <li>Relação Patógeno-Hospedeiro III</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/9193/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('9193', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('9193', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('9193', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD230.png" alt="" /></div><div id="Menu_MD230" style="display:none;" class="RMenu">
+   <ul>
+   <li>Neurociências e saúde mental</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18619/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18619', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18619', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18619', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD316.png" alt="" /></div><div id="Menu_MD316" style="display:none;" class="RMenu">
+   <ul>
+   <li>Raciocínio clínico III</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18631/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18631', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18631', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18631', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD322.png" alt="" /></div><div id="Menu_MD322" style="display:none;" class="RMenu">
+   <ul>
+   <li>Medicina, evidência e decisão I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18635/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18635', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18635', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18635', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD326.png" alt="" /></div><div id="Menu_MD326" style="display:none;" class="RMenu">
+   <ul>
+   <li>Profissionalismo, responsabilidade e segurança do paciente</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18638/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18638', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18638', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18638', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD312.png" alt="" /></div><div id="Menu_MD312" style="display:none;" class="RMenu">
+   <ul>
+   <li>Anatomia aplicada à prática médica II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18627/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18627', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18627', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18627', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD314.png" alt="" /></div><div id="Menu_MD314" style="display:none;" class="RMenu">
+   <ul>
+   <li>Raciocínio clínico I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18629/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18629', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18629', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18629', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD315.png" alt="" /></div><div id="Menu_MD315" style="display:none;" class="RMenu">
+   <ul>
+   <li>Raciocínio clínico II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18630/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18630', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18630', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18630', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD323.png" alt="" /></div><div id="Menu_MD323" style="display:none;" class="RMenu">
+   <ul>
+   <li>Medicina, evidência e decisão II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18636/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18636', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18636', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18636', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD325.png" alt="" /></div><div id="Menu_MD325" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atividades Complementares e Avaliação III</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18637/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18637', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18637', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18637', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD327.png" alt="" /></div><div id="Menu_MD327" style="display:none;" class="RMenu">
+   <ul>
+   <li>Medicina Legal</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18639/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18639', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18639', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18639', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD313.png" alt="" /></div><div id="Menu_MD313" style="display:none;" class="RMenu">
+   <ul>
+   <li>Anatomia aplicada à prática médica III</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18628/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18628', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18628', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18628', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD317.png" alt="" /></div><div id="Menu_MD317" style="display:none;" class="RMenu">
+   <ul>
+   <li>Raciocínio clínico IV</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18632/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18632', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18632', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18632', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD318.png" alt="" /></div><div id="Menu_MD318" style="display:none;" class="RMenu">
+   <ul>
+   <li>Raciocínio clínico V</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18633/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18633', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18633', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18633', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD319.png" alt="" /></div><div id="Menu_MD319" style="display:none;" class="RMenu">
+   <ul>
+   <li>Raciocínio clínico VI</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18634/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18634', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18634', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18634', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD432.png" alt="" /></div><div id="Menu_MD432" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção clínica I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18643/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18643', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18643', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18643', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD433.png" alt="" /></div><div id="Menu_MD433" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção clínico-cirúrgica I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18644/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18644', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18644', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18644', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD434.png" alt="" /></div><div id="Menu_MD434" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção integral à saúde do adulto e do idoso</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18645/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18645', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18645', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18645', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD435.png" alt="" /></div><div id="Menu_MD435" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção à saúde mental</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18646/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18646', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18646', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18646', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD436.png" alt="" /></div><div id="Menu_MD436" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Coletiva VII: Saúde da Família e Comunidade I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18647/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18647', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18647', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18647', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD425.png" alt="" /></div><div id="Menu_MD425" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atividades complementares e Avaliação IV</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18641/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18641', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18641', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18641', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD431.png" alt="" /></div><div id="Menu_MD431" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção primária integral à saúde</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18642/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18642', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18642', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18642', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD513.png" alt="" /></div><div id="Menu_MD513" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção integral à saúde da mulher I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18650/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18650', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18650', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18650', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD514.png" alt="" /></div><div id="Menu_MD514" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção integral à saúde do adulto I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18651/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18651', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18651', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18651', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD515.png" alt="" /></div><div id="Menu_MD515" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção clínico-cirúrgica II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18652/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18652', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18652', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18652', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD523.png" alt="" /></div><div id="Menu_MD523" style="display:none;" class="RMenu">
+   <ul>
+   <li>Plantão em Pediatria</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18653/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18653', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18653', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18653', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD524.png" alt="" /></div><div id="Menu_MD524" style="display:none;" class="RMenu">
+   <ul>
+   <li>Plantão em Tocoginecologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18654/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18654', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18654', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18654', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD525.png" alt="" /></div><div id="Menu_MD525" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atividades complementares e Avaliação V</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18655/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18655', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18655', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18655', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD512.png" alt="" /></div><div id="Menu_MD512" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção integral à saúde da criança e do adolescente I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18649/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18649', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18649', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18649', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD617.png" alt="" /></div><div id="Menu_MD617" style="display:none;" class="RMenu">
+   <ul>
+   <li>Anestesiologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18663/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18663', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18663', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18663', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD610.png" alt="" /></div><div id="Menu_MD610" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Coletiva VIII: Saúde da Família II e Saúde Mental</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18657/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18657', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18657', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18657', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD625.png" alt="" /></div><div id="Menu_MD625" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atividades complementares e Avaliação VI</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18670/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18670', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18670', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18670', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD618.png" alt="" /></div><div id="Menu_MD618" style="display:none;" class="RMenu">
+   <ul>
+   <li>Ortopedia, Traumatologia e Reumatologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18664/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18664', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18664', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18664', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD612.png" alt="" /></div><div id="Menu_MD612" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção integral à saúde da criança e do adolescente II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18658/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18658', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18658', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18658', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD619.png" alt="" /></div><div id="Menu_MD619" style="display:none;" class="RMenu">
+   <ul>
+   <li>Emergências Clínicas</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18665/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18665', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18665', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18665', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD613.png" alt="" /></div><div id="Menu_MD613" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção integral à saúde da mulher II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18659/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18659', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18659', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18659', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD620.png" alt="" /></div><div id="Menu_MD620" style="display:none;" class="RMenu">
+   <ul>
+   <li>Emergências Cirúrgicas</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18666/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18666', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18666', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18666', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD614.png" alt="" /></div><div id="Menu_MD614" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção Cirúrgica à Saúde</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18660/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18660', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18660', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18660', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD622.png" alt="" /></div><div id="Menu_MD622" style="display:none;" class="RMenu">
+   <ul>
+   <li>Emergências Pediátricas</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18667/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18667', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18667', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18667', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD615.png" alt="" /></div><div id="Menu_MD615" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção Clínico-Cirúrgica III</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18661/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18661', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18661', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18661', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD623.png" alt="" /></div><div id="Menu_MD623" style="display:none;" class="RMenu">
+   <ul>
+   <li>Plantão em Cirurgia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18668/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18668', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18668', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18668', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD616.png" alt="" /></div><div id="Menu_MD616" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atenção integral à saúde do adulto II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18662/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18662', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18662', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18662', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV_MD624.png" alt="" /></div><div id="Menu_MD624" style="display:none;" class="RMenu">
+   <ul>
+   <li>Plantão em Clínica Médica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/18669/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('18669', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('18669', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('18669', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<h2>Curr&iacute;culo de Maria Eduarda Xavier Messias</h2>
+	<form method="get" action="https://grade.daconline.unicamp.br/arvore/">
+		<table cellpadding="1" cellspacing="0" border="0" width="90%">
+			<tr>
+				<td width="10%">Cat&aacute;logo:</td>
+				<td><select id="catalogo" name="catalogo"><option value='1998'>1998</option><option value='1999'>1999</option><option value='2000'>2000</option><option value='2001'>2001</option><option value='2002'>2002</option><option value='2003'>2003</option><option value='2004'>2004</option><option value='2005'>2005</option><option value='2006'>2006</option><option value='2007'>2007</option><option value='2008'>2008</option><option value='2009'>2009</option><option value='2010'>2010</option><option value='2011'>2011</option><option value='2012'>2012</option><option value='2013'>2013</option><option value='2014'>2014</option><option value='2015'>2015</option><option value='2016'>2016</option><option value='2017'>2017</option><option value='2018'>2018</option><option value='2019'>2019</option><option value='2020'>2020</option><option value='2021'>2021</option><option value='2022'>2022</option><option value='2023'>2023</option><option value='2024' selected="selected">2024</option><option value='2025'>2025</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Curso:</td>
+				<td><select id="curso" name="curso"><option value="109">Administração (109)</option><option value="110">Administração Pública (110)</option><option value="48">Arquitetura e Urbanismo (48)</option><option value="26">Artes Cênicas (26)</option><option value="25">Artes Visuais (25)</option><option value="42">Ciência da Computação (42)</option><option value="3">Ciência da Computação (3)</option><option value="6">Ciências Biológicas (6)</option><option value="52">Ciências da Terra (52)</option><option value="100">Ciências do Esporte (100)</option><option value="17">Ciências Econômicas (17)</option><option value="47">Ciências Econômicas (47)</option><option value="16">Ciências Sociais (16)</option><option value="44">Ciências Sociais (44)</option><option value="64">Comunicação Social - Midialogia (64)</option><option value="70">Curso de Música Composição e Regência (70)</option><option value="71">Curso de Música Instrumento (71)</option><option value="72">Curso de Música Popular (72)</option><option value="37">Curso Superior de Tecnologia da Construção Civil (37)</option><option value="82">Curso Superior de Tecnologia da Construção Civil (82)</option><option value="32">Curso Superior de Tecnologia da Construção Civil - Edifícios (32)</option><option value="33">Curso Superior de Tecnologia da Construção Civil - Obras de Solos (33)</option><option value="36">Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (36)</option><option value="60">Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (60)</option><option value="83">Curso Superior de Tecnologia em Construção de Edifícios (83)</option><option value="84">Curso Superior de Tecnologia em Estradas (84)</option><option value="62">Curso Superior de Tecnologia em Saneamento Ambiental (62)</option><option value="73">Curso Superior de Tecnologia em Saneamento Ambiental (73)</option><option value="87">Curso Superior de Tecnologia em Saneamento Ambiental (87)</option><option value="74">Curso Superior de Tecnologia em Sistemas de Telecomunicações (74)</option><option value="31">Curso Superior de Tecnologia Sanitária (31)</option><option value="23">Dança (23)</option><option value="27">Educação Física (27)</option><option value="45">Educação Física (45)</option><option value="21">Enfermagem (21)</option><option value="8">Engenharia Agrícola (8)</option><option value="89">Engenharia Ambiental (89)</option><option value="12">Engenharia Civil (12)</option><option value="13">Engenharia de Alimentos (13)</option><option value="43">Engenharia de Alimentos (43)</option><option value="34">Engenharia de Computação (34)</option><option value="49">Engenharia de Controle e Automação (49)</option><option value="101">Engenharia de Manufatura (101)</option><option value="102">Engenharia de Produção (102)</option><option value="88">Engenharia de Telecomunicações (88)</option><option value="111">Engenharia de Transportes (111)</option><option value="11">Engenharia Elétrica (11)</option><option value="41">Engenharia Elétrica (41)</option><option value="108">Engenharia Física (108)</option><option value="10">Engenharia Mecânica (10)</option><option value="9">Engenharia Química (9)</option><option value="39">Engenharia Química (39)</option><option value="2">Estatística (2)</option><option value="75">Estudos Literários (75)</option><option value="63">Farmácia (63)</option><option value="30">Filosofia (30)</option><option value="4">Física (4)</option><option value="999">Fisioterapia (999)</option><option value="58">Fonoaudiologia (58)</option><option value="54">Geografia (54)</option><option value="55">Geografia (55)</option><option value="53">Geologia (53)</option><option value="104">Gestão de Comércio Internacional (104)</option><option value="105">Gestão de Empresas (105)</option><option value="106">Gestão de Políticas Públicas (106)</option><option value="103">Gestão do Agronegócio (103)</option><option value="19">História (19)</option><option value="46">Licenciatura em Ciências Biológicas (46)</option><option value="35">Licenciatura em Esquema I (35)</option><option value="40">Licenciatura em Física (40)</option><option value="24">Licenciatura em Letras (24)</option><option value="7">Licenciatura em Letras - Português (7)</option><option value="57">Licenciatura em Letras - Português (57)</option><option value="29">Licenciatura em Matemática (29)</option><option value="201">Licenciatura em Teatro (201)</option><option value="56">Licenciatura Integrada Química/Física (56)</option><option value="18">Linguística (18)</option><option value="1">Matemática (1)</option><option value="28">Matemática Aplicada e Computacional (28)</option><option value="51">Matemática/Física/Matemática Aplicada e Computacional (51)</option><option value="15" selected="selected">Medicina (15)</option><option value="22">Música (22)</option><option value="90">Música (90)</option><option value="91">Música (91)</option><option value="92">Música (92)</option><option value="93">Música (93)</option><option value="107">Nutrição (107)</option><option value="14">Odontologia (14)</option><option value="20">Pedagogia (20)</option><option value="38">Pedagogia (38)</option><option value="59">Pedagogia (59)</option><option value="65">Pedagogia (65)</option><option value="66">Pedagogia (66)</option><option value="67">Pedagogia (67)</option><option value="200">Programa de Formação Interdisciplinar Superior - ProFIS (200)</option><option value="5">Química (5)</option><option value="50">Química Tecnológica (50)</option><option value="94">Sistemas de Informação (94)</option><option value="85">Superior de Tecnologia Ambiental (85)</option><option value="86">Superior Tecnologia em Saneamento Ambiental (86)</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Modalidade:</td>
+				<td id="select_modalidade"><select id="modalidade" name="modalidade"><option value="">Indiferente</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Per&iacute;odo:</td>
+				<td><select id="periodo" name="periodo"><option value="20252">2025 - 2&ordm; Semestre</option><option value="20251" selected="selected">2025 - 1.&ordm; Semestre</option><option value="20250">2025 - F&eacute;rias de Ver&atilde;o</option><option value="20242">2024 - 2&ordm; Semestre</option><option value="20241">2024 - 1&ordm; Semestre</option><option value="20240">2024 - F&eacute;rias de Ver&atilde;o</option><option value="20232">2023 - 2&ordm; Semestre</option><option value="20231">2023 - 1&ordm; Semestre</option><option value="20230">2023 - F&eacute;rias de Ver&atilde;o</option><option value="20222">2022 - 2&ordm; Semestre</option><option value="20221">2022 - 1&ordm; Semestre</option><option value="20220">2022 - F&eacute;rias de Ver&atilde;o</option><option value="20212">2021 - 2&ordm; Semestre</option><option value="20211">2021 - 1&ordm; Semestre</option><option value="20210">2021 - F&eacute;rias de Ver&atilde;o</option><option value="20202">2020 - 2&ordm; Semestre</option><option value="20201">2020 - 1&ordm; Semestre</option><option value="20200">2020 - F&eacute;rias de Ver&atilde;o</option><option value="20192">2019 - 2&ordm; Semestre</option><option value="20191">2019 - 1&ordm; Semestre</option><option value="20190">2019 - F&eacute;rias de Ver&atilde;o</option><option value="20182">2018 - 2&ordm; Semestre</option><option value="20181">2018 - 1&ordm; Semestre</option><option value="20180">2018 - F&eacute;rias de Ver&atilde;o</option><option value="20172">2017 - 2&ordm; Semestre</option><option value="20171">2017 - 1&ordm; Semestre</option><option value="20170">2017 - F&eacute;rias de Ver&atilde;o</option><option value="20162">2016 - 2&ordm; Semestre</option><option value="20161">2016 - 1&ordm; Semestre</option><option value="20160">2016 - F&eacute;rias de Ver&atilde;o</option><option value="20152">2015 - 2&ordm; Semestre</option><option value="20151">2015 - 1&ordm; Semestre</option><option value="20150">2015 - F&eacute;rias de Ver&atilde;o</option><option value="20142">2014 - 2&ordm; Semestre</option><option value="20141">2014 - 1&ordm; Semestre</option><option value="20140">2014 - F&eacute;rias de Ver&atilde;o</option><option value="20132">2013 - 2&ordm; Semestre</option><option value="20131">2013 - 1&ordm; Semestre</option><option value="20130">2013 - F&eacute;rias de Ver&atilde;o</option><option value="20122">2012 - 2&ordm; Semestre</option><option value="20121">2012 - 1&ordm; Semestre</option><option value="20120">2012 - F&eacute;rias de Ver&atilde;o</option><option value="20112">2011 - 2&ordm; Semestre</option><option value="20111">2011 - 1&ordm; Semestre</option><option value="20110">2011 - F&eacute;rias de Ver&atilde;o</option><option value="20102">2010 - 2&ordm; Semestre</option><option value="20101">2010 - 1&ordm; Semestre</option><option value="20100">2010 - F&eacute;rias de Ver&atilde;o</option><option value="20092">2009 - 2&ordm; Semestre</option><option value="20091">2009 - 1&ordm; Semestre</option><option value="20090">2009 - F&eacute;rias de Ver&atilde;o</option><option value="20082">2008 - 2&ordm; Semestre</option><option value="20081">2008 - 1&ordm; Semestre</option><option value="20080">2008 - F&eacute;rias de Ver&atilde;o</option><option value="20072">2007 - 2&ordm; Semestre</option><option value="20071">2007 - 1&ordm; Semestre</option><option value="20070">2007 - F&eacute;rias de Ver&atilde;o</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Completa:</td>
+				<td><select id="cp" name="cp"><option value='0'>N&atilde;o</option><option value='1' selected="selected">Sim</option></select></td>
+			</tr>
+		</table>
+		<br />
+		<table cellpadding="0" cellspacing="0" border="0" width="90%">
+			<tr>
+				<td colspan='2'><input type="submit" id="ok" value=" " alt="Consultar" class="botao_consultar" /> <input type="button" id="limpar" value=" " alt="Limpar" class="botao_limpar" /></td>
+			</tr>
+		</table>
+	</form>
+	<br /><br />
+	<div style="display: block" id="mostra">
+		<a href="#" onclick="document.getElementById('integralizacao').style.display='block'; document.getElementById('mostra').style.display='none'; return false;">Mostrar Integraliza&ccedil;&atilde;o</a>
+	</div>
+	<div style="display: none" id="integralizacao">
+		<a href="#" onclick="document.getElementById('integralizacao').style.display='none'; document.getElementById('mostra').style.display='block'; return false;">Ocultar Integraliza&ccedil;&atilde;o</a>
+		<br /><div><br />
+<pre>
+  <strong>Aviso:</strong> Esta n&atilde;o &eacute; a integraliza&ccedil;&atilde;o oficial da DAC e pode ou n&atilde;o refletir a realidade.
+  <strong>Aluno:</strong> <a href="https://grade.daconline.unicamp.br/perfil/usuario=dudamx">Maria Eduarda Xavier Messias</a>
+  <strong>Registro Acad&ecirc;mico (RA):</strong> 183611
+  <strong>Curso:</strong> 15 - Medicina
+  <strong>Modalidade:</strong> -
+  <strong>Cat&aacute;logo:</strong> 2024
+  <strong>Ingresso:</strong> 1&ordm; semestre de 2023
+  <strong>Limite para Integraliza&ccedil;&atilde;o:</strong> 1&ordm; semestre de 2031
+  <strong><i>Semestre Atual</i>:</strong> 2025 - 1.&ordm; Semestre
+  <strong><i>Neste semestre</i> ->    CP :</strong> 0,0000  <strong>Cr&eacute;ditos Obtidos:</strong> 0  <strong>Cr&eacute;ditos Faltantes:</strong> 0
+  <strong><i>Final do semestre </i>-> CPF:</strong> 0,0000  <strong>Cr&eacute;ditos Obtidos:</strong> 0  <strong>Cr&eacute;ditos Faltantes:</strong> 0
+
+
+  <strong>Disciplinas j&aacute; cursadas:</strong>
+
+
+  <strong>Disciplinas Obrigat&oacute;rias que ainda devem ser cursadas:</strong>
+  <a href="https://grade.daconline.unicamp.br/disciplina/18294/" class="sigla" title="Ética e relacionamento humano" target="_blank">MD177</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/15143/" class="sigla" title="Bases do Desenvolvimento e dos Tecidos do Corpo Humano I" target="_blank">BS102</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/15144/" class="sigla" title="Bases Funcionais do Corpo Humano I" target="_blank">BS103</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18290/" class="sigla" title="Bases humanas da prática médica" target="_blank">MD170</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18291/" class="sigla" title="Prática médica I" target="_blank">MD171</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18292/" class="sigla" title="Saúde Coletiva I: Introdução à Saúde Coletiva" target="_blank">MD173</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/15141/" class="sigla" title="Bases Moleculares das Células" target="_blank">BS100</a>(08)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18293/" class="sigla" title="Bases científicas da prática médica I" target="_blank">MD175</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/15142/" class="sigla" title="Bases Anatômicas do Corpo Humano I" target="_blank">BS101</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18609/" class="sigla" title="Saúde Coletiva II: Ações de Saúde Pública" target="_blank">MD174</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/15304/" class="sigla" title="Bases Anatômicas do Corpo Humano II" target="_blank">BS201</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/18610/" class="sigla" title="Bases científicas da prática médica II" target="_blank">MD176</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/15305/" class="sigla" title="Bases do Desenvolvimento e dos Tecidos do Corpo Humano II" target="_blank">BS202</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/18611/" class="sigla" title="Ética, ciência e prática médica" target="_blank">MD178</a>(02)
+  <a href="https://grade.daconline.unicamp.br/disciplina/15306/" class="sigla" title="Bases Funcionais do Corpo Humano II" target="_blank">BS203</a>(10)  <a href="https://grade.daconline.unicamp.br/disciplina/9192/" class="sigla" title="Relação Patógeno-Hospedeiro II" target="_blank">BS340</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18607/" class="sigla" title="Atividades complementares e Avaliação I" target="_blank">MD125</a>(01)  <a href="https://grade.daconline.unicamp.br/disciplina/18608/" class="sigla" title="Prática Médica II" target="_blank">MD172</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18617/" class="sigla" title="Habilidades clínicas I" target="_blank">MD228</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18620/" class="sigla" title="Saúde Coletiva III: Epidemiologia e saúde I" target="_blank">MD233</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18622/" class="sigla" title="Saúde Coletiva IV: Ciências Humanas e Sociais I" target="_blank">MD235</a>(04)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18624/" class="sigla" title="Saúde digital" target="_blank">MD237</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/9190/" class="sigla" title="Neurociências I" target="_blank">BS320</a>(14)  <a href="https://grade.daconline.unicamp.br/disciplina/18625/" class="sigla" title="Bioética" target="_blank">MD238</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/9191/" class="sigla" title="Relação Patógeno-Hospedeiro I" target="_blank">BS330</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18612/" class="sigla" title="Farmacologia aplicada à prática médica" target="_blank">MD221</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/9194/" class="sigla" title="Relação Patógeno-Hospedeiro IV" target="_blank">BS430</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18621/" class="sigla" title="Saúde Coletiva V: Epidemiologia e saúde II" target="_blank">MD234</a>(02)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18613/" class="sigla" title="Anatomia Patológica" target="_blank">MD224</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/18623/" class="sigla" title="Saúde Coletiva VI: Ciências Humanas e Sociais II" target="_blank">MD236</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18614/" class="sigla" title="Atividades complementares e Avaliação II" target="_blank">MD225</a>(01)  <a href="https://grade.daconline.unicamp.br/disciplina/18626/" class="sigla" title="Ética e comunicação" target="_blank">MD239</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18615/" class="sigla" title="Introdução à imunologia médica" target="_blank">MD226</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18616/" class="sigla" title="Anatomia aplicada à prática médica I" target="_blank">MD227</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18618/" class="sigla" title="Habilidades clínicas II" target="_blank">MD229</a>(02)
+  <a href="https://grade.daconline.unicamp.br/disciplina/9193/" class="sigla" title="Relação Patógeno-Hospedeiro III" target="_blank">BS420</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/18619/" class="sigla" title="Neurociências e saúde mental" target="_blank">MD230</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18631/" class="sigla" title="Raciocínio clínico III" target="_blank">MD316</a>(09)  <a href="https://grade.daconline.unicamp.br/disciplina/18635/" class="sigla" title="Medicina, evidência e decisão I" target="_blank">MD322</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18638/" class="sigla" title="Profissionalismo, responsabilidade e segurança do paciente" target="_blank">MD326</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18627/" class="sigla" title="Anatomia aplicada à prática médica II" target="_blank">MD312</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18629/" class="sigla" title="Raciocínio clínico I" target="_blank">MD314</a>(09)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18630/" class="sigla" title="Raciocínio clínico II" target="_blank">MD315</a>(09)  <a href="https://grade.daconline.unicamp.br/disciplina/18636/" class="sigla" title="Medicina, evidência e decisão II" target="_blank">MD323</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18637/" class="sigla" title="Atividades Complementares e Avaliação III" target="_blank">MD325</a>(01)  <a href="https://grade.daconline.unicamp.br/disciplina/18639/" class="sigla" title="Medicina Legal" target="_blank">MD327</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18628/" class="sigla" title="Anatomia aplicada à prática médica III" target="_blank">MD313</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18632/" class="sigla" title="Raciocínio clínico IV" target="_blank">MD317</a>(09)  <a href="https://grade.daconline.unicamp.br/disciplina/18633/" class="sigla" title="Raciocínio clínico V" target="_blank">MD318</a>(09)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18634/" class="sigla" title="Raciocínio clínico VI" target="_blank">MD319</a>(09)  <a href="https://grade.daconline.unicamp.br/disciplina/18643/" class="sigla" title="Atenção clínica I" target="_blank">MD432</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/18644/" class="sigla" title="Atenção clínico-cirúrgica I" target="_blank">MD433</a>(16)  <a href="https://grade.daconline.unicamp.br/disciplina/18645/" class="sigla" title="Atenção integral à saúde do adulto e do idoso" target="_blank">MD434</a>(16)  <a href="https://grade.daconline.unicamp.br/disciplina/18646/" class="sigla" title="Atenção à saúde mental" target="_blank">MD435</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/18647/" class="sigla" title="Saúde Coletiva VII: Saúde da Família e Comunidade I" target="_blank">MD436</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/18641/" class="sigla" title="Atividades complementares e Avaliação IV" target="_blank">MD425</a>(01)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18642/" class="sigla" title="Atenção primária integral à saúde" target="_blank">MD431</a>(24)  <a href="https://grade.daconline.unicamp.br/disciplina/18650/" class="sigla" title="Atenção integral à saúde da mulher I" target="_blank">MD513</a>(29)  <a href="https://grade.daconline.unicamp.br/disciplina/18651/" class="sigla" title="Atenção integral à saúde do adulto I" target="_blank">MD514</a>(29)  <a href="https://grade.daconline.unicamp.br/disciplina/18652/" class="sigla" title="Atenção clínico-cirúrgica II" target="_blank">MD515</a>(21)  <a href="https://grade.daconline.unicamp.br/disciplina/18653/" class="sigla" title="Plantão em Pediatria" target="_blank">MD523</a>(17)  <a href="https://grade.daconline.unicamp.br/disciplina/18654/" class="sigla" title="Plantão em Tocoginecologia" target="_blank">MD524</a>(21)  <a href="https://grade.daconline.unicamp.br/disciplina/18655/" class="sigla" title="Atividades complementares e Avaliação V" target="_blank">MD525</a>(01)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18649/" class="sigla" title="Atenção integral à saúde da criança e do adolescente I" target="_blank">MD512</a>(29)  <a href="https://grade.daconline.unicamp.br/disciplina/18663/" class="sigla" title="Anestesiologia" target="_blank">MD617</a>(05)  <a href="https://grade.daconline.unicamp.br/disciplina/18657/" class="sigla" title="Saúde Coletiva VIII: Saúde da Família II e Saúde Mental" target="_blank">MD610</a>(10)  <a href="https://grade.daconline.unicamp.br/disciplina/18670/" class="sigla" title="Atividades complementares e Avaliação VI" target="_blank">MD625</a>(01)  <a href="https://grade.daconline.unicamp.br/disciplina/18664/" class="sigla" title="Ortopedia, Traumatologia e Reumatologia" target="_blank">MD618</a>(07)  <a href="https://grade.daconline.unicamp.br/disciplina/18658/" class="sigla" title="Atenção integral à saúde da criança e do adolescente II" target="_blank">MD612</a>(05)  <a href="https://grade.daconline.unicamp.br/disciplina/18665/" class="sigla" title="Emergências Clínicas" target="_blank">MD619</a>(19)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18659/" class="sigla" title="Atenção integral à saúde da mulher II" target="_blank">MD613</a>(05)  <a href="https://grade.daconline.unicamp.br/disciplina/18666/" class="sigla" title="Emergências Cirúrgicas" target="_blank">MD620</a>(05)  <a href="https://grade.daconline.unicamp.br/disciplina/18660/" class="sigla" title="Atenção Cirúrgica à Saúde" target="_blank">MD614</a>(14)  <a href="https://grade.daconline.unicamp.br/disciplina/18667/" class="sigla" title="Emergências Pediátricas" target="_blank">MD622</a>(05)  <a href="https://grade.daconline.unicamp.br/disciplina/18661/" class="sigla" title="Atenção Clínico-Cirúrgica III" target="_blank">MD615</a>(15)  <a href="https://grade.daconline.unicamp.br/disciplina/18668/" class="sigla" title="Plantão em Cirurgia" target="_blank">MD623</a>(03)  <a href="https://grade.daconline.unicamp.br/disciplina/18662/" class="sigla" title="Atenção integral à saúde do adulto II" target="_blank">MD616</a>(15)
+  <a href="https://grade.daconline.unicamp.br/disciplina/18669/" class="sigla" title="Plantão em Clínica Médica" target="_blank">MD624</a>(17)
+
+  <strong>Disciplinas Eletivas que ainda devem ser cursadas:</strong>
+  Obter 12 Cr&eacute;dito(s) dentre a(s) seguinte(s) disciplina(s):   <a href="https://grade.daconline.unicamp.br/disciplina/18686/" class="sigla" title="Imersão em Saúde Coletiva" target="_blank">MD837</a>(10)  <a href="https://grade.daconline.unicamp.br/disciplina/18690/" class="sigla" title="Imersão Avançada em Pediatria" target="_blank">MD843</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18675/" class="sigla" title="Neuropatologia Oncológica" target="_blank">MD822</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18678/" class="sigla" title="Otorrinolaringologia Aplicada à Prática do Generalista" target="_blank">MD827</a>(02)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/18188/" class="sigla" title="Atividades de Extensão em Toxicologia Clínica" target="_blank">EX020</a>(10)  <a href="https://grade.daconline.unicamp.br/disciplina/18685/" class="sigla" title="Imersão em Pediatria" target="_blank">MD836</a>(10)  <a href="https://grade.daconline.unicamp.br/disciplina/18689/" class="sigla" title="Imersão Avançada em Tocoginecologia" target="_blank">MD842</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18674/" class="sigla" title="Patologia Cirúrgica do Trato Gastrointestinal" target="_blank">MD821</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/18677/" class="sigla" title="Imersão em Otorrinolaringologia" target="_blank">MD826</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/10610/" class="sigla" title="O Teatro para o Aperfeiçoamento da Relação Médico-Paciente II" target="_blank">MD985</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18684/" class="sigla" title="Imersão em Tocoginecologia" target="_blank">MD834</a>(10)  <a href="https://grade.daconline.unicamp.br/disciplina/18688/" class="sigla" title="Imersão Avançada em Clínica Médica" target="_blank">MD839</a>(02)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/18673/" class="sigla" title="Diagnóstico Diferencial das Anemias - Correlação Clínico-Laboratorial" target="_blank">MD820</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18676/" class="sigla" title="Diagnóstico Laboratorial das Hemoglobinopatias" target="_blank">MD824</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/9095/" class="sigla" title="O Teatro para o Aperfeiçoamento da Relação Médico-Paciente" target="_blank">MD885</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/18683/" class="sigla" title="Imersão em Clínica Médica" target="_blank">MD833</a>(10)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/18687/" class="sigla" title="Imersão Avançada em Cirurgia" target="_blank">MD838</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18691/" class="sigla" title="Imersão Avançada em Saúde Coletiva" target="_blank">MD844</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/18296/" class="sigla" title="Interpretação Clínica em Farmacogenética" target="_blank">MD823</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/9094/" class="sigla" title="Neuroanatomia Aplicada à Prática Médica" target="_blank">MD883</a>(02)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/18682/" class="sigla" title="Imersão em Cirurgia" target="_blank">MD832</a>(10)
+
+
+  <strong>Disciplinas sendo cursadas atualmente:</strong>
+
+
+
+
+  <strong>C&oacute;digos utilizados:</strong>
+     ---------------------------------------------------------------
+
+  Formato:  LLXXXT(DD)I PPAAAA
+
+    LLXXX = Sigla da Disciplina DD = Cr&eacute;ditos da Disciplina
+    I = Tipo de Aproveitamento PP = Periodo AAAA = Ano
+
+  Tipos de Aproveitamento:
+
+    + = Obrigat&oacute;ria   * = Eletiva    X = Extra-Curricular
+</pre></div>
+	</div><br/>
+	<span class="formInfo"><a href="#" id="TT_tips">Dicas</a></span>
+	<br /><br />
+	<a id="inline" href="#popup_arvore"><img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV.png" border="0" width="900" height="361" alt="Arvore" /></a>
+<div style="display:none">
+<div id="popup_arvore">
+<div class="div_img_ov_arvore" style="opacity: 0; position: absolute; display: none; z-index: 100;"><img class="img_ov_arvore" src="" alt="" /></div><div id="div_img_ov_mapa" style="position: absolute; z-index: 110;"><img id="img_ov_mapa" usemap="#mapa" src="https://grade.daconline.unicamp.br/web/images/spacer.gif" width="2315" height="930" alt="" /></div>
+<img src="../cache/arvores/arvore_6ui1mBHc7O2JgbwV.png" class="img_arvore" usemap="#mapa" border="0" alt="Arvore" />
+</div>
+</div><map name="mapa" id="mapa">
+<area shape='rect' coords='80,50,170,80' title='Ética e relacionamento humano' alt='Ética e relacionamento humano' href='#' id='Shape_18294' class='Shapes' /><area shape='rect' coords='225,50,315,80' title='Bases do Desenvolvimento e dos Tecidos do Corpo Humano I' alt='Bases do Desenvolvimento e dos Tecidos do Corpo Humano I' href='#' id='Shape_15143' class='Shapes' /><area shape='rect' coords='370,50,460,80' title='Bases Funcionais do Corpo Humano I' alt='Bases Funcionais do Corpo Humano I' href='#' id='Shape_15144' class='Shapes' /><area shape='rect' coords='515,50,605,80' title='Bases humanas da prática médica' alt='Bases humanas da prática médica' href='#' id='Shape_18290' class='Shapes' /><area shape='rect' coords='660,50,750,80' title='Prática médica I' alt='Prática médica I' href='#' id='Shape_18291' class='Shapes' /><area shape='rect' coords='805,50,895,80' title='Saúde Coletiva I: Introdução à Saúde Coletiva' alt='Saúde Coletiva I: Introdução à Saúde Coletiva' href='#' id='Shape_18292' class='Shapes' /><area shape='rect' coords='950,50,1040,80' title='Bases Moleculares das Células' alt='Bases Moleculares das Células' href='#' id='Shape_15141' class='Shapes' /><area shape='rect' coords='1095,50,1185,80' title='Bases científicas da prática médica I' alt='Bases científicas da prática médica I' href='#' id='Shape_18293' class='Shapes' /><area shape='rect' coords='1240,50,1330,80' title='Bases Anatômicas do Corpo Humano I' alt='Bases Anatômicas do Corpo Humano I' href='#' id='Shape_15142' class='Shapes' /><area shape='rect' coords='80,155,170,185' title='Saúde Coletiva II: Ações de Saúde Pública' alt='Saúde Coletiva II: Ações de Saúde Pública' href='#' id='Shape_18609' class='Shapes' /><area shape='rect' coords='225,155,315,185' title='Bases Anatômicas do Corpo Humano II' alt='Bases Anatômicas do Corpo Humano II' href='#' id='Shape_15304' class='Shapes' /><area shape='rect' coords='370,155,460,185' title='Bases científicas da prática médica II' alt='Bases científicas da prática médica II' href='#' id='Shape_18610' class='Shapes' /><area shape='rect' coords='515,155,605,185' title='Bases do Desenvolvimento e dos Tecidos do Corpo Humano II' alt='Bases do Desenvolvimento e dos Tecidos do Corpo Humano II' href='#' id='Shape_15305' class='Shapes' /><area shape='rect' coords='660,155,750,185' title='Ética, ciência e prática médica' alt='Ética, ciência e prática médica' href='#' id='Shape_18611' class='Shapes' /><area shape='rect' coords='805,155,895,185' title='Bases Funcionais do Corpo Humano II' alt='Bases Funcionais do Corpo Humano II' href='#' id='Shape_15306' class='Shapes' /><area shape='rect' coords='950,155,1040,185' title='Relação Patógeno-Hospedeiro II' alt='Relação Patógeno-Hospedeiro II' href='#' id='Shape_9192' class='Shapes' /><area shape='rect' coords='1095,155,1185,185' title='Atividades complementares e Avaliação I' alt='Atividades complementares e Avaliação I' href='#' id='Shape_18607' class='Shapes' /><area shape='rect' coords='1240,155,1330,185' title='Prática Médica II' alt='Prática Médica II' href='#' id='Shape_18608' class='Shapes' /><area shape='rect' coords='80,260,170,290' title='Habilidades clínicas I' alt='Habilidades clínicas I' href='#' id='Shape_18617' class='Shapes' /><area shape='rect' coords='225,260,315,290' title='Saúde Coletiva III: Epidemiologia e saúde I' alt='Saúde Coletiva III: Epidemiologia e saúde I' href='#' id='Shape_18620' class='Shapes' /><area shape='rect' coords='370,260,460,290' title='Saúde Coletiva IV: Ciências Humanas e Sociais I' alt='Saúde Coletiva IV: Ciências Humanas e Sociais I' href='#' id='Shape_18622' class='Shapes' /><area shape='rect' coords='515,260,605,290' title='Saúde digital' alt='Saúde digital' href='#' id='Shape_18624' class='Shapes' /><area shape='rect' coords='660,260,750,290' title='Neurociências I' alt='Neurociências I' href='#' id='Shape_9190' class='Shapes' /><area shape='rect' coords='805,260,895,290' title='Bioética' alt='Bioética' href='#' id='Shape_18625' class='Shapes' /><area shape='rect' coords='950,260,1040,290' title='Relação Patógeno-Hospedeiro I' alt='Relação Patógeno-Hospedeiro I' href='#' id='Shape_9191' class='Shapes' /><area shape='rect' coords='1095,260,1185,290' title='Farmacologia aplicada à prática médica' alt='Farmacologia aplicada à prática médica' href='#' id='Shape_18612' class='Shapes' /><area shape='rect' coords='80,365,170,395' title='Relação Patógeno-Hospedeiro IV' alt='Relação Patógeno-Hospedeiro IV' href='#' id='Shape_9194' class='Shapes' /><area shape='rect' coords='225,365,315,395' title='Saúde Coletiva V: Epidemiologia e saúde II' alt='Saúde Coletiva V: Epidemiologia e saúde II' href='#' id='Shape_18621' class='Shapes' /><area shape='rect' coords='370,365,460,395' title='Anatomia Patológica' alt='Anatomia Patológica' href='#' id='Shape_18613' class='Shapes' /><area shape='rect' coords='515,365,605,395' title='Saúde Coletiva VI: Ciências Humanas e Sociais II' alt='Saúde Coletiva VI: Ciências Humanas e Sociais II' href='#' id='Shape_18623' class='Shapes' /><area shape='rect' coords='660,365,750,395' title='Atividades complementares e Avaliação II' alt='Atividades complementares e Avaliação II' href='#' id='Shape_18614' class='Shapes' /><area shape='rect' coords='805,365,895,395' title='Ética e comunicação' alt='Ética e comunicação' href='#' id='Shape_18626' class='Shapes' /><area shape='rect' coords='950,365,1040,395' title='Introdução à imunologia médica' alt='Introdução à imunologia médica' href='#' id='Shape_18615' class='Shapes' /><area shape='rect' coords='1095,365,1185,395' title='Anatomia aplicada à prática médica I' alt='Anatomia aplicada à prática médica I' href='#' id='Shape_18616' class='Shapes' /><area shape='rect' coords='1240,365,1330,395' title='Habilidades clínicas II' alt='Habilidades clínicas II' href='#' id='Shape_18618' class='Shapes' /><area shape='rect' coords='1385,365,1475,395' title='Relação Patógeno-Hospedeiro III' alt='Relação Patógeno-Hospedeiro III' href='#' id='Shape_9193' class='Shapes' /><area shape='rect' coords='1530,365,1620,395' title='Neurociências e saúde mental' alt='Neurociências e saúde mental' href='#' id='Shape_18619' class='Shapes' /><area shape='rect' coords='80,470,170,500' title='Raciocínio clínico III' alt='Raciocínio clínico III' href='#' id='Shape_18631' class='Shapes' /><area shape='rect' coords='225,470,315,500' title='Medicina, evidência e decisão I' alt='Medicina, evidência e decisão I' href='#' id='Shape_18635' class='Shapes' /><area shape='rect' coords='370,470,460,500' title='Profissionalismo, responsabilidade e segurança do paciente' alt='Profissionalismo, responsabilidade e segurança do paciente' href='#' id='Shape_18638' class='Shapes' /><area shape='rect' coords='515,470,605,500' title='Anatomia aplicada à prática médica II' alt='Anatomia aplicada à prática médica II' href='#' id='Shape_18627' class='Shapes' /><area shape='rect' coords='660,470,750,500' title='Raciocínio clínico I' alt='Raciocínio clínico I' href='#' id='Shape_18629' class='Shapes' /><area shape='rect' coords='805,470,895,500' title='Raciocínio clínico II' alt='Raciocínio clínico II' href='#' id='Shape_18630' class='Shapes' /><area shape='rect' coords='80,575,170,605' title='Medicina, evidência e decisão II' alt='Medicina, evidência e decisão II' href='#' id='Shape_18636' class='Shapes' /><area shape='rect' coords='225,575,315,605' title='Atividades Complementares e Avaliação III' alt='Atividades Complementares e Avaliação III' href='#' id='Shape_18637' class='Shapes' /><area shape='rect' coords='370,575,460,605' title='Medicina Legal' alt='Medicina Legal' href='#' id='Shape_18639' class='Shapes' /><area shape='rect' coords='515,575,605,605' title='Anatomia aplicada à prática médica III' alt='Anatomia aplicada à prática médica III' href='#' id='Shape_18628' class='Shapes' /><area shape='rect' coords='660,575,750,605' title='Raciocínio clínico IV' alt='Raciocínio clínico IV' href='#' id='Shape_18632' class='Shapes' /><area shape='rect' coords='805,575,895,605' title='Raciocínio clínico V' alt='Raciocínio clínico V' href='#' id='Shape_18633' class='Shapes' /><area shape='rect' coords='950,575,1040,605' title='Raciocínio clínico VI' alt='Raciocínio clínico VI' href='#' id='Shape_18634' class='Shapes' /><area shape='rect' coords='80,680,170,710' title='Atenção clínica I' alt='Atenção clínica I' href='#' id='Shape_18643' class='Shapes' /><area shape='rect' coords='225,680,315,710' title='Atenção clínico-cirúrgica I' alt='Atenção clínico-cirúrgica I' href='#' id='Shape_18644' class='Shapes' /><area shape='rect' coords='370,680,460,710' title='Atenção integral à saúde do adulto e do idoso' alt='Atenção integral à saúde do adulto e do idoso' href='#' id='Shape_18645' class='Shapes' /><area shape='rect' coords='515,680,605,710' title='Atenção à saúde mental' alt='Atenção à saúde mental' href='#' id='Shape_18646' class='Shapes' /><area shape='rect' coords='660,680,750,710' title='Saúde Coletiva VII: Saúde da Família e Comunidade I' alt='Saúde Coletiva VII: Saúde da Família e Comunidade I' href='#' id='Shape_18647' class='Shapes' /><area shape='rect' coords='805,680,895,710' title='Atividades complementares e Avaliação IV' alt='Atividades complementares e Avaliação IV' href='#' id='Shape_18641' class='Shapes' /><area shape='rect' coords='950,680,1040,710' title='Atenção primária integral à saúde' alt='Atenção primária integral à saúde' href='#' id='Shape_18642' class='Shapes' /><area shape='rect' coords='80,785,170,815' title='Atenção integral à saúde da mulher I' alt='Atenção integral à saúde da mulher I' href='#' id='Shape_18650' class='Shapes' /><area shape='rect' coords='225,785,315,815' title='Atenção integral à saúde do adulto I' alt='Atenção integral à saúde do adulto I' href='#' id='Shape_18651' class='Shapes' /><area shape='rect' coords='370,785,460,815' title='Atenção clínico-cirúrgica II' alt='Atenção clínico-cirúrgica II' href='#' id='Shape_18652' class='Shapes' /><area shape='rect' coords='515,785,605,815' title='Plantão em Pediatria' alt='Plantão em Pediatria' href='#' id='Shape_18653' class='Shapes' /><area shape='rect' coords='660,785,750,815' title='Plantão em Tocoginecologia' alt='Plantão em Tocoginecologia' href='#' id='Shape_18654' class='Shapes' /><area shape='rect' coords='805,785,895,815' title='Atividades complementares e Avaliação V' alt='Atividades complementares e Avaliação V' href='#' id='Shape_18655' class='Shapes' /><area shape='rect' coords='950,785,1040,815' title='Atenção integral à saúde da criança e do adolescente I' alt='Atenção integral à saúde da criança e do adolescente I' href='#' id='Shape_18649' class='Shapes' /><area shape='rect' coords='80,890,170,920' title='Anestesiologia' alt='Anestesiologia' href='#' id='Shape_18663' class='Shapes' /><area shape='rect' coords='225,890,315,920' title='Saúde Coletiva VIII: Saúde da Família II e Saúde Mental' alt='Saúde Coletiva VIII: Saúde da Família II e Saúde Mental' href='#' id='Shape_18657' class='Shapes' /><area shape='rect' coords='370,890,460,920' title='Atividades complementares e Avaliação VI' alt='Atividades complementares e Avaliação VI' href='#' id='Shape_18670' class='Shapes' /><area shape='rect' coords='515,890,605,920' title='Ortopedia, Traumatologia e Reumatologia' alt='Ortopedia, Traumatologia e Reumatologia' href='#' id='Shape_18664' class='Shapes' /><area shape='rect' coords='660,890,750,920' title='Atenção integral à saúde da criança e do adolescente II' alt='Atenção integral à saúde da criança e do adolescente II' href='#' id='Shape_18658' class='Shapes' /><area shape='rect' coords='805,890,895,920' title='Emergências Clínicas' alt='Emergências Clínicas' href='#' id='Shape_18665' class='Shapes' /><area shape='rect' coords='950,890,1040,920' title='Atenção integral à saúde da mulher II' alt='Atenção integral à saúde da mulher II' href='#' id='Shape_18659' class='Shapes' /><area shape='rect' coords='1095,890,1185,920' title='Emergências Cirúrgicas' alt='Emergências Cirúrgicas' href='#' id='Shape_18666' class='Shapes' /><area shape='rect' coords='1240,890,1330,920' title='Atenção Cirúrgica à Saúde' alt='Atenção Cirúrgica à Saúde' href='#' id='Shape_18660' class='Shapes' /><area shape='rect' coords='1385,890,1475,920' title='Emergências Pediátricas' alt='Emergências Pediátricas' href='#' id='Shape_18667' class='Shapes' /><area shape='rect' coords='1530,890,1620,920' title='Atenção Clínico-Cirúrgica III' alt='Atenção Clínico-Cirúrgica III' href='#' id='Shape_18661' class='Shapes' /><area shape='rect' coords='1675,890,1765,920' title='Plantão em Cirurgia' alt='Plantão em Cirurgia' href='#' id='Shape_18668' class='Shapes' /><area shape='rect' coords='1820,890,1910,920' title='Atenção integral à saúde do adulto II' alt='Atenção integral à saúde do adulto II' href='#' id='Shape_18662' class='Shapes' /><area shape='rect' coords='1965,890,2055,920' title='Plantão em Clínica Médica' alt='Plantão em Clínica Médica' href='#' id='Shape_18669' class='Shapes' />
+</map>	<br />Obs: Caso existam dois conjuntos de pr&eacute;-requisitos presentes integralmente no cat&aacute;logo, apenas um deles ser&aacute; exibido.<br />
+	
+				<div id="rodape">
+					<hr style="color: #B2B2B2; background-color: #B2B2B2; height: 1px; margin: 10px 0 10px 0; border: 0 none" />
+					<div id="usuarios_online"><span>Usu&aacute;rios online</span>: <span id="contador_usuarios_online">12</span></div>
+					<br />&Uacute;ltima Atualiza&ccedil;&atilde;o do sistema: 15/11/2024 - Vers&atilde;o 2.6
+					<br /><br /><strong>Aviso:</strong> O GDE n&atilde;o &eacute; um sistema oficial da Unicamp, e tem por &uacute;nico objetivo auxiliar alunos na vida acad&ecirc;mica.
+					<br /><br /><i></i>
+					<hr style="color: #B2B2B2; background-color: #B2B2B2; height: 1px; margin: 10px 0 10px 0; border: 0 none" />
+					<div style="width: 210px; height: 42px; margin: auto;">
+						<a href="http://www.guaycuru.net" title="Desenvolvido por Felipe Guaycuru de C. B. Franco" target="_blank" style="float: left; margin-top: 10px;"><img src="https://grade.daconline.unicamp.br/web/images/logo_guaycuru.gif" border="0" alt="Desenvolvido por Felipe Guaycuru de C. B. Franco" width="100" height="21" /></a>
+					</div>
+					<!-- <br /><div style="width: 125px; margin: auto;"><a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="https://grade.daconline.unicamp.br/web/images/w3c_xhtml.gif" border="0" alt="Valid XHTML 1.0 Transitional !" width="60" height="21" /></a> <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="https://grade.daconline.unicamp.br/web/images/w3c_css.gif" alt="Valid CSS !" width="60" height="21" /></a></div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,466 @@
+{
+  "course": {
+    "id": 2,
+    "name": "Estatística (2)",
+    "code": "2"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4423",
+      "codigo": "ME110",
+      "nome": "Noções de Estatística",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4424",
+      "codigo": "ME111",
+      "nome": "Laboratório de Estatística",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4754",
+      "codigo": "MS149",
+      "nome": "Complementos de Matemática",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4432",
+      "codigo": "ME210",
+      "nome": "Probabilidade I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11726",
+      "codigo": "ME115",
+      "nome": "Linguagem R",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4436",
+      "codigo": "ME310",
+      "nome": "Probabilidade II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "ME210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12157",
+      "codigo": "ME322",
+      "nome": "Inferência",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "ME210"
+        ],
+        [
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3930",
+      "codigo": "LA242",
+      "nome": "Inglês Instrumental à Distância",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA142"
+        ],
+        [
+          "LA122"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4449",
+      "codigo": "ME501",
+      "nome": "Processos Estocásticos",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME310"
+        ],
+        [
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4459",
+      "codigo": "ME613",
+      "nome": "Análise de Regressão",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "ME322",
+          "ME323"
+        ],
+        [
+          "MA327",
+          "ME310",
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11727",
+      "codigo": "ME315",
+      "nome": "Manipulação de Banco de Dados",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC102",
+          "ME115"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11728",
+      "codigo": "ME415",
+      "nome": "Método Científico e Técnicas de Pesquisa",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4446",
+      "codigo": "ME430",
+      "nome": "Técnicas de Amostragem",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME310"
+        ],
+        [
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4456",
+      "codigo": "ME607",
+      "nome": "Séries Temporais",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4460",
+      "codigo": "ME623",
+      "nome": "Planejamento e Pesquisa",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4465",
+      "codigo": "ME705",
+      "nome": "Inferência Bayesiana",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4775",
+      "codigo": "MS512",
+      "nome": "Análise Numérica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MS211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4453",
+      "codigo": "ME524",
+      "nome": "Computação Aplicada à Estatística",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "ME115",
+          "ME322",
+          "MS211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4474",
+      "codigo": "ME731",
+      "nome": "Métodos em Análise Multivariada",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11729",
+      "codigo": "ME712",
+      "nome": "Consultoria Estatística I",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME415",
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4468",
+      "codigo": "ME714",
+      "nome": "Análise de Dados Discretos",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11730",
+      "codigo": "ME812",
+      "nome": "Consultoria Estatística II",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME712"
+        ]
+      ]
+    }
+  ]
+}

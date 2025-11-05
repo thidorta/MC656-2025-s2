@@ -1,0 +1,805 @@
+{
+  "course": {
+    "id": 14,
+    "name": "Odontologia (14)",
+    "code": "14"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "8618",
+      "codigo": "DM012",
+      "nome": "Diagnóstico Oral I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9130",
+      "codigo": "DM013",
+      "nome": "Terapêutica Cirúrgica I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9117",
+      "codigo": "DB011",
+      "nome": "Biociências I",
+      "creditos": 16,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7859",
+      "codigo": "DM011",
+      "nome": "Cárie I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9118",
+      "codigo": "DB021",
+      "nome": "Biociências II",
+      "creditos": 16,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DB011"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9131",
+      "codigo": "DM021",
+      "nome": "Cárie II",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM011"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9133",
+      "codigo": "DM022",
+      "nome": "Diagnóstico Oral II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9137",
+      "codigo": "DM024",
+      "nome": "Reabilitação Oral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9138",
+      "codigo": "DM031",
+      "nome": "Cárie III",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DB021",
+          "DM021"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9139",
+      "codigo": "DM032",
+      "nome": "Diagnóstico Oral III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DB021",
+          "DM012",
+          "DM022"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9141",
+      "codigo": "DM034",
+      "nome": "Reabilitação Oral II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM024"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9142",
+      "codigo": "DM035",
+      "nome": "Periodonto I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8622",
+      "codigo": "DM036",
+      "nome": "Procedimentos Comuns I",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18929",
+      "codigo": "DS033",
+      "nome": "Bioestatística e Metodologia da Pesquisa",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9144",
+      "codigo": "DM042",
+      "nome": "Diagnóstico Oral IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM022",
+          "DM032"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9127",
+      "codigo": "DM043",
+      "nome": "Terapêutica Cirúrgica II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM013"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9145",
+      "codigo": "DM045",
+      "nome": "Periodonto II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM035"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9146",
+      "codigo": "DM046",
+      "nome": "Procedimentos Comuns II",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM013",
+          "DM032",
+          "DM036"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9143",
+      "codigo": "DM041",
+      "nome": "Cárie IV",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM031"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9148",
+      "codigo": "DM052",
+      "nome": "Diagnóstico Oral V",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM042"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9149",
+      "codigo": "DM057",
+      "nome": "Polpa e Periapice I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18930",
+      "codigo": "DS053",
+      "nome": "Bioestatística em Odontologia",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DS033"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18890",
+      "codigo": "DC054",
+      "nome": "Clínica Odontológica Integrada I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM041",
+          "DM042",
+          "DM043",
+          "DM045",
+          "DM046"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9147",
+      "codigo": "DM051",
+      "nome": "Cárie V",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM041"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9151",
+      "codigo": "DM068",
+      "nome": "Odontologia Infantil I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM013",
+          "DM034",
+          "DM046"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9159",
+      "codigo": "DS062",
+      "nome": "Odontologia Preventiva e Saúde Pública",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC052"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18931",
+      "codigo": "DS063",
+      "nome": "Odontologia Legal I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC054"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18932",
+      "codigo": "DS064",
+      "nome": "Odontologia Social II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC054"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18891",
+      "codigo": "DC064",
+      "nome": "Clínica Odontológica Integrada II",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC054",
+          "DM051",
+          "DM052",
+          "DM057"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18899",
+      "codigo": "DM064",
+      "nome": "Reabilitação Oral III",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC054",
+          "DM034"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9150",
+      "codigo": "DM067",
+      "nome": "Polpa e Periapice II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM057"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9153",
+      "codigo": "DM078",
+      "nome": "Odontologia Infantil II",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM068"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18933",
+      "codigo": "DS073",
+      "nome": "Odontologia Legal II",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DS063"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18934",
+      "codigo": "DS074",
+      "nome": "Odontologia Social III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DS062"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12147",
+      "codigo": "DC073",
+      "nome": "Clínica Odontológica Integrada Infantil I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM068"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18892",
+      "codigo": "DC074",
+      "nome": "Clínica Odontológica Integrada III",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC064",
+          "DM064",
+          "DM067"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11359",
+      "codigo": "DM075",
+      "nome": "Reabilitação Oral IV",
+      "creditos": 7,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC062",
+          "DM034"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9155",
+      "codigo": "DM084",
+      "nome": "Reabilitação Oral V",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM074",
+          "DM075"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11360",
+      "codigo": "DM085",
+      "nome": "Reabilitação Oral VI",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM074",
+          "DM075"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18900",
+      "codigo": "DM086",
+      "nome": "Implantodontia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC074"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18901",
+      "codigo": "DM087",
+      "nome": "Odontologia Digital",
+      "creditos": 1,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC074"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12149",
+      "codigo": "DC083",
+      "nome": "Clínica Odontológica Integrada Infantil II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC073",
+          "DM078"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18893",
+      "codigo": "DC084",
+      "nome": "Clínica Odontológica Integrada IV",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC074",
+          "DM075"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9154",
+      "codigo": "DM083",
+      "nome": "Terapêutica Cirúrgica III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM043"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18432",
+      "codigo": "DS093",
+      "nome": "Atendimento Clínico Extramuro I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12151",
+      "codigo": "DC093",
+      "nome": "Clínica Odontológica Integrada Infantil III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC083"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18894",
+      "codigo": "DC094",
+      "nome": "Clínica Odontológica Integrada V",
+      "creditos": 16,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC084"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17601",
+      "codigo": "DE092",
+      "nome": "Atividades clínicas multidisciplinares supervisionadas I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC083",
+          "DC084"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17618",
+      "codigo": "DS105",
+      "nome": "Atividades complementares",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC084"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12153",
+      "codigo": "DC103",
+      "nome": "Clínica Odontológica Integrada Infantil IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC093"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18895",
+      "codigo": "DC104",
+      "nome": "Clínica Odontológica Integrada IV",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC094"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17602",
+      "codigo": "DE102",
+      "nome": "Atividades clínicas multidisciplinares supervisionadas II",
+      "creditos": 16,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC083",
+          "DC084"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9162",
+      "codigo": "DS101",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DS011"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18433",
+      "codigo": "DS103",
+      "nome": "Atendimento Clínico Extramuro II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

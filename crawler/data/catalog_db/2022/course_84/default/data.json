@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 84,
+    "name": "Curso Superior de Tecnologia em Estradas (84)",
+    "code": "84"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2022,
+  "parameters": {
+    "catalogo": "2022",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": []
+}

@@ -1,0 +1,669 @@
+{
+  "course": {
+    "id": 47,
+    "name": "Ciências Econômicas (47)",
+    "code": "47"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "6726",
+      "codigo": "CE105",
+      "nome": "Fundamentos da Teoria Econômica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "836",
+      "codigo": "CE141",
+      "nome": "Contabilidade e Análise de Balanço",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE461",
+          "CE471"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6727",
+      "codigo": "CE142",
+      "nome": "Métodos de Análise Econômica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6728",
+      "codigo": "CE172",
+      "nome": "Introdução à Economia",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6729",
+      "codigo": "CE191",
+      "nome": "História Econômica Geral I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6731",
+      "codigo": "CE205",
+      "nome": "Ciências Sociais para Economia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6732",
+      "codigo": "CE242",
+      "nome": "Métodos de Análise Econômica II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE172"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6734",
+      "codigo": "CE272",
+      "nome": "Contabilidade Social",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE172"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6735",
+      "codigo": "CE291",
+      "nome": "História Econômica Geral II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE191"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6738",
+      "codigo": "CE305",
+      "nome": "Economia Política I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE105",
+          "CE205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6741",
+      "codigo": "CE372",
+      "nome": "Macroeconomia I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE242",
+          "CE272"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6742",
+      "codigo": "CE391",
+      "nome": "Desenvolvimento Socioeconômico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE291"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6730",
+      "codigo": "CE112",
+      "nome": "Economia Matemática II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6733",
+      "codigo": "CE262",
+      "nome": "Microeconomia I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6744",
+      "codigo": "CE405",
+      "nome": "Economia Política II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE305"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6747",
+      "codigo": "CE472",
+      "nome": "Macroeconomia II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE372"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6737",
+      "codigo": "CE302",
+      "nome": "Instituições de Direito",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6743",
+      "codigo": "CE342",
+      "nome": "Métodos de Análise Econômica III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE372"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6740",
+      "codigo": "CE362",
+      "nome": "Microeconomia II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE262"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6751",
+      "codigo": "CE572",
+      "nome": "Macroeconomia III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE342",
+          "CE472"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6736",
+      "codigo": "CE113",
+      "nome": "Economia Matemática III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE112"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6746",
+      "codigo": "CE462",
+      "nome": "Microeconomia III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE362"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6748",
+      "codigo": "CE482",
+      "nome": "Economia Internacional I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE362"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "861",
+      "codigo": "CE491",
+      "nome": "Formação Econômica do Brasil I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE391"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6739",
+      "codigo": "CE323",
+      "nome": "Estatística Econômica e Introdução à Econometria",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6750",
+      "codigo": "CE562",
+      "nome": "Microeconomia IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE462"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6752",
+      "codigo": "CE582",
+      "nome": "Economia Internacional II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE291",
+          "CE482"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "870",
+      "codigo": "CE591",
+      "nome": "Formação Econômica do Brasil II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE491"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "883",
+      "codigo": "CE671",
+      "nome": "Economia Monetária",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE342",
+          "CE472"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6745",
+      "codigo": "CE423",
+      "nome": "Econometria I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE113",
+          "CE323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "871",
+      "codigo": "CE592",
+      "nome": "Economia Brasileira Contemporânea I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE591"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6754",
+      "codigo": "CE672",
+      "nome": "Estratégias Corporativas e Financeirização",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE141",
+          "CE142",
+          "CE562"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6755",
+      "codigo": "CE682",
+      "nome": "Economia Internacional III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE582"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "900",
+      "codigo": "CE853",
+      "nome": "Economia do Setor Público",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE591"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "872",
+      "codigo": "CE593",
+      "nome": "Economia Brasileira Contemporânea II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE592"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6753",
+      "codigo": "CE625",
+      "nome": "Técnicas de Pesquisa",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "894",
+      "codigo": "CE791",
+      "nome": "História do Pensamento Econômico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE405",
+          "CE671"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6757",
+      "codigo": "CE792",
+      "nome": "Desenvolvimento Econômico Contemporâneo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE391",
+          "CE682"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6749",
+      "codigo": "CE442",
+      "nome": "Métodos de Análise Econômica IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6758",
+      "codigo": "CE542",
+      "nome": "Métodos de Análise Econômica V",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE593"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6756",
+      "codigo": "CE725",
+      "nome": "Monografia I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE625"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6759",
+      "codigo": "CE825",
+      "nome": "Monografia II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE725"
+        ]
+      ]
+    }
+  ]
+}

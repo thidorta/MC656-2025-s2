@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 21,
+    "name": "Enfermagem (21)",
+    "code": "21"
+  },
+  "modalidade": "AA",
+  "modalidade_label": "AA - Bacharelado em Enfermagem",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "AA",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": []
+}

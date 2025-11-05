@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 59,
+    "name": "Pedagogia (59)",
+    "code": "59"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": []
+}

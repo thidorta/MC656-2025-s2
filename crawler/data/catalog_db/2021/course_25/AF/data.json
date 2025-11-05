@@ -1,0 +1,448 @@
+{
+  "course": {
+    "id": 25,
+    "name": "Artes Visuais (25)",
+    "code": "25"
+  },
+  "modalidade": "AF",
+  "modalidade_label": "AF - Bacharelado em Artes Visuais",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "AF",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "270",
+      "codigo": "AP104",
+      "nome": "Desenho Artístico I",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "275",
+      "codigo": "AP110",
+      "nome": "Modelagem I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "283",
+      "codigo": "AP198",
+      "nome": "História da Arte I",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "478",
+      "codigo": "AR101",
+      "nome": "Fundamentos Filosóficos da Arte Educação",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11733",
+      "codigo": "AP301",
+      "nome": "Elementos da Prática de Pesquisa",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "332",
+      "codigo": "AP415",
+      "nome": "Escultura I",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "287",
+      "codigo": "AP203",
+      "nome": "Pintura II",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "288",
+      "codigo": "AP204",
+      "nome": "Desenho Artístico II",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "303",
+      "codigo": "AP298",
+      "nome": "História da Arte II",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP198"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "317",
+      "codigo": "AP398",
+      "nome": "História da Arte III",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP298"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "347",
+      "codigo": "AP515",
+      "nome": "Escultura II",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP415"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "307",
+      "codigo": "AP303",
+      "nome": "Pintura III",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "308",
+      "codigo": "AP304",
+      "nome": "Desenho Artístico III",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10154",
+      "codigo": "AP313",
+      "nome": "Arte Fotográfica I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "336",
+      "codigo": "AP498",
+      "nome": "História da Arte IV",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP398"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "350",
+      "codigo": "AP520",
+      "nome": "Gravura I",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "366",
+      "codigo": "AP615",
+      "nome": "Escultura III",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP515"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "321",
+      "codigo": "AP403",
+      "nome": "Pintura IV",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "324",
+      "codigo": "AP404",
+      "nome": "Desenho Artístico IV",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10155",
+      "codigo": "AP413",
+      "nome": "Arte Fotográfica II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP313"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "348",
+      "codigo": "AP518",
+      "nome": "Cerâmica I",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "353",
+      "codigo": "AP598",
+      "nome": "História da Arte V",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP498"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "370",
+      "codigo": "AP620",
+      "nome": "Gravura II",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "380",
+      "codigo": "AP709",
+      "nome": "Arte e Novos Meios I",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "355",
+      "codigo": "AP600",
+      "nome": "Metodologia de Pesquisa em Artes Visuais",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "368",
+      "codigo": "AP618",
+      "nome": "Cerâmica II",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP518"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "371",
+      "codigo": "AP625",
+      "nome": "História da Arte Brasileira I",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8130",
+      "codigo": "AP773",
+      "nome": "Serigrafia",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP313"
+        ],
+        [
+          "AP413"
+        ],
+        [
+          "AP104"
+        ],
+        [
+          "AP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "386",
+      "codigo": "AP725",
+      "nome": "História da Arte Brasileira II",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP625"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9164",
+      "codigo": "AP735",
+      "nome": "Projeto Experimental em Artes Visuais I",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP600"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9167",
+      "codigo": "AP836",
+      "nome": "Projeto Experimental em Artes Visuais II",
+      "creditos": 14,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "AP735"
+        ]
+      ]
+    }
+  ]
+}

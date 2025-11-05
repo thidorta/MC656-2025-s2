@@ -1,0 +1,931 @@
+{
+  "course": {
+    "id": 88,
+    "name": "Engenharia de Telecomunicações (88)",
+    "code": "88"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9727",
+      "codigo": "EB103",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9728",
+      "codigo": "EB104",
+      "nome": "Laboratório de Física I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6148",
+      "codigo": "TT106",
+      "nome": "Organização e Arquitetura de Computadores",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6150",
+      "codigo": "TT108",
+      "nome": "Fundamentos para Telecomunicações",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9738",
+      "codigo": "TT114",
+      "nome": "Expressão Gráfica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9726",
+      "codigo": "EB102",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10083",
+      "codigo": "EB203",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST109"
+        ],
+        [
+          "EB103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10084",
+      "codigo": "EB204",
+      "nome": "Laboratório de Física II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB103",
+          "EB104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10027",
+      "codigo": "TT214",
+      "nome": "Linguagem e Técnica de Programação I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10028",
+      "codigo": "TT215",
+      "nome": "Comunicação e Expressão",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10029",
+      "codigo": "TT216",
+      "nome": "Metodologia do Trabalho Científico",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10030",
+      "codigo": "TT217",
+      "nome": "Química Aplicada",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10081",
+      "codigo": "EB201",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST101",
+          "ST201"
+        ],
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6163",
+      "codigo": "TT302",
+      "nome": "Circuitos Digitais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10031",
+      "codigo": "TT310",
+      "nome": "Redes de Comunicação I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10032",
+      "codigo": "TT311",
+      "nome": "Circuitos Elétricos I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10034",
+      "codigo": "TT313",
+      "nome": "Física Aplicada III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB102",
+          "EB103",
+          "EB201"
+        ],
+        [
+          "TT111",
+          "TT112",
+          "TT220"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10035",
+      "codigo": "TT314",
+      "nome": "Orientação a Objetos I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT214"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10603",
+      "codigo": "TT315",
+      "nome": "Probabilidades e Teoria da Informação",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT120"
+        ],
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10086",
+      "codigo": "EB301",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10605",
+      "codigo": "TT419",
+      "nome": "Programação de Dispositivos Móveis",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT314"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10094",
+      "codigo": "EB402",
+      "nome": "Fenômenos de Transporte",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB203",
+          "EB301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9388",
+      "codigo": "TT420",
+      "nome": "Ciência dos Materiais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT212",
+          "TT313"
+        ],
+        [
+          "EB203",
+          "TT313"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10036",
+      "codigo": "TT410",
+      "nome": "Circuitos Elétricos II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB301",
+          "TT311"
+        ],
+        [
+          "TT311",
+          "TT312"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10037",
+      "codigo": "TT411",
+      "nome": "Circuitos Digitais II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10039",
+      "codigo": "TT413",
+      "nome": "Métodos Matemáticos para Telecomunicacões",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT312"
+        ],
+        [
+          "EB301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10040",
+      "codigo": "TT414",
+      "nome": "Redes de Comunicação II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10604",
+      "codigo": "TT418",
+      "nome": "Óptica e Relatividade",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT313"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10049",
+      "codigo": "TT516",
+      "nome": "Microcontroladores I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10050",
+      "codigo": "TT517",
+      "nome": "Instalações Elétricas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10095",
+      "codigo": "EB405",
+      "nome": "Mecânica dos Sólidos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB103",
+          "EB201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10103",
+      "codigo": "EB406",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10044",
+      "codigo": "TT511",
+      "nome": "Eletromagnetismo Aplicado",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT313"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10047",
+      "codigo": "TT514",
+      "nome": "Sinais e Sistemas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB102",
+          "TT413"
+        ],
+        [
+          "TT111",
+          "TT413"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10048",
+      "codigo": "TT515",
+      "nome": "Eletrônica Analógica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT410"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10055",
+      "codigo": "TT608",
+      "nome": "Laboratório de Sistemas de Telecomunicações",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10056",
+      "codigo": "TT609",
+      "nome": "Sistemas de Telecomunicações",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT315",
+          "TT413"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10606",
+      "codigo": "TT615",
+      "nome": "Microcontroladores II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT516"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10051",
+      "codigo": "TT604",
+      "nome": "Processamento Digital de Sinais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT514"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10052",
+      "codigo": "TT605",
+      "nome": "Eletrônica Analógica II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT515"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10053",
+      "codigo": "TT606",
+      "nome": "Ondas Guiadas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT511"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10054",
+      "codigo": "TT607",
+      "nome": "Laboratório de Ondas Guiadas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT511"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10608",
+      "codigo": "TT709",
+      "nome": "Telefonia e Comutação",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14400",
+      "codigo": "TT710",
+      "nome": "Tecnologias de Radiofrequência e Micro-Ondas",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT515",
+          "TT606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10058",
+      "codigo": "TT701",
+      "nome": "Propagação de Ondas Eletromagnéticas Antenas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT511"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10061",
+      "codigo": "TT704",
+      "nome": "Comunicações Móveis",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT609"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10064",
+      "codigo": "TT707",
+      "nome": "Conversão de Energia",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT410"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10607",
+      "codigo": "TT708",
+      "nome": "Dispositivos Fotônicos",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT416",
+          "TT606"
+        ],
+        [
+          "TT420",
+          "TT606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10069",
+      "codigo": "TT905",
+      "nome": "Programação Web",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT314"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10076",
+      "codigo": "TT911",
+      "nome": "Administração de Empresas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10071",
+      "codigo": "TT914",
+      "nome": "Estágio Supervisionado",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10609",
+      "codigo": "TT916",
+      "nome": "Comunicações Ópticas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT708"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10065",
+      "codigo": "TT901",
+      "nome": "Transmissão de Sinais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT609"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10066",
+      "codigo": "TT902",
+      "nome": "Introdução ao Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10067",
+      "codigo": "TT903",
+      "nome": "Conceitos de Televisão",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT609"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10073",
+      "codigo": "TT908",
+      "nome": "Projetos de Extensão Comunitária",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10074",
+      "codigo": "TT909",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10075",
+      "codigo": "TT910",
+      "nome": "Gestão Empreendedora",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10077",
+      "codigo": "TT912",
+      "nome": "Relações Humanas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10078",
+      "codigo": "TT913",
+      "nome": "Ergonomia-Aplicação Prática ao Trabalho",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10068",
+      "codigo": "TT904",
+      "nome": "Economia e Finanças",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10079",
+      "codigo": "TT915",
+      "nome": "Atividades Complementares",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10072",
+      "codigo": "TT907",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT902"
+        ]
+      ]
+    }
+  ]
+}

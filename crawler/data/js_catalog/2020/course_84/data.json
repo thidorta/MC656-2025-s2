@@ -1,0 +1,22 @@
+{
+  "course": {
+    "id": 84,
+    "name": "Curso Superior de Tecnologia em Estradas (84)",
+    "code": "84"
+  },
+  "modalities": [],
+  "curriculum": {
+    "course_id": 84,
+    "year": 2020,
+    "modality": "AA",
+    "nodes": [],
+    "edges": []
+  },
+  "offers": [],
+  "prereqs": [],
+  "semester_map": {
+    "course_id": 84,
+    "year": 2020,
+    "entries": []
+  }
+}

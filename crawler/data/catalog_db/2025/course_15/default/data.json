@@ -1,0 +1,1462 @@
+{
+  "course": {
+    "id": 15,
+    "name": "Medicina (15)",
+    "code": "15"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "18291",
+      "codigo": "MD171",
+      "nome": "Prática médica I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18292",
+      "codigo": "MD173",
+      "nome": "Saúde Coletiva I: Introdução à Saúde Coletiva",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18816",
+      "codigo": "BS105",
+      "nome": "Biologia Celular e Molecular",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18293",
+      "codigo": "MD175",
+      "nome": "Bases científicas da prática médica I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18817",
+      "codigo": "BS106",
+      "nome": "Fundamentos de Anatomia e Radiologia do Aparelho Locomotor",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18294",
+      "codigo": "MD177",
+      "nome": "Ética e relacionamento humano",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18818",
+      "codigo": "BS107",
+      "nome": "Bases da Embriologia e da Histologia Gerais do Corpo Humano",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18819",
+      "codigo": "BS108",
+      "nome": "Bases Bioquímicas e Fisiológicas do Corpo Humano I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18290",
+      "codigo": "MD170",
+      "nome": "Bases humanas da prática médica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18607",
+      "codigo": "MD125",
+      "nome": "Atividades complementares e Avaliação I",
+      "creditos": 1,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18608",
+      "codigo": "MD172",
+      "nome": "Prática Médica II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18609",
+      "codigo": "MD174",
+      "nome": "Saúde Coletiva II: Ações de Saúde Pública",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD173"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18610",
+      "codigo": "MD176",
+      "nome": "Bases científicas da prática médica II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD175"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18820",
+      "codigo": "BS112",
+      "nome": "Fundamentos de Anatomia e Radiologia dos Sistemas Orgânicos",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS105",
+          "BS106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18611",
+      "codigo": "MD178",
+      "nome": "Ética, ciência e prática médica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18821",
+      "codigo": "BS113",
+      "nome": "Bases da Embriologia e da Histologia dos Sistemas do Corpo Humano",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS107"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18822",
+      "codigo": "BS114",
+      "nome": "Bases Bioquímicas e Fisiológicas do Corpo Humano II",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18824",
+      "codigo": "BS230",
+      "nome": "Bacteriologia Médica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18625",
+      "codigo": "MD238",
+      "nome": "Bioética",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18825",
+      "codigo": "BS235",
+      "nome": "Imunologia Básica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18612",
+      "codigo": "MD221",
+      "nome": "Farmacologia aplicada à prática médica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18617",
+      "codigo": "MD228",
+      "nome": "Habilidades clínicas I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18620",
+      "codigo": "MD233",
+      "nome": "Saúde Coletiva III: Epidemiologia e saúde I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18622",
+      "codigo": "MD235",
+      "nome": "Saúde Coletiva IV: Ciências Humanas e Sociais I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD173",
+          "MD174"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18823",
+      "codigo": "BS220",
+      "nome": "Neurociências",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18624",
+      "codigo": "MD237",
+      "nome": "Saúde digital",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18616",
+      "codigo": "MD227",
+      "nome": "Anatomia aplicada à prática médica I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS106",
+          "BS112"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18618",
+      "codigo": "MD229",
+      "nome": "Habilidades clínicas II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18826",
+      "codigo": "BS240",
+      "nome": "Parasitologia e Micologia Médica",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS235"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18619",
+      "codigo": "MD230",
+      "nome": "Neurociências e saúde mental",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS220"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18827",
+      "codigo": "BS243",
+      "nome": "Virologia Médica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS230",
+          "BS235"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18621",
+      "codigo": "MD234",
+      "nome": "Saúde Coletiva V: Epidemiologia e saúde II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD233"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18613",
+      "codigo": "MD224",
+      "nome": "Anatomia Patológica",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS108",
+          "BS114"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18623",
+      "codigo": "MD236",
+      "nome": "Saúde Coletiva VI: Ciências Humanas e Sociais II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD235"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18614",
+      "codigo": "MD225",
+      "nome": "Atividades complementares e Avaliação II",
+      "creditos": 1,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18626",
+      "codigo": "MD239",
+      "nome": "Ética e comunicação",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18615",
+      "codigo": "MD226",
+      "nome": "Introdução à imunologia médica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18627",
+      "codigo": "MD312",
+      "nome": "Anatomia aplicada à prática médica II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD227"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18629",
+      "codigo": "MD314",
+      "nome": "Raciocínio clínico I",
+      "creditos": 9,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS108",
+          "BS114",
+          "MD171",
+          "MD172",
+          "MD224",
+          "MD228",
+          "MD229",
+          "MD230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18630",
+      "codigo": "MD315",
+      "nome": "Raciocínio clínico II",
+      "creditos": 9,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS108",
+          "BS114",
+          "MD171",
+          "MD172",
+          "MD224",
+          "MD228",
+          "MD229",
+          "MD230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18631",
+      "codigo": "MD316",
+      "nome": "Raciocínio clínico III",
+      "creditos": 9,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS108",
+          "BS114",
+          "MD171",
+          "MD172",
+          "MD224",
+          "MD228",
+          "MD229",
+          "MD230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18635",
+      "codigo": "MD322",
+      "nome": "Medicina, evidência e decisão I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18638",
+      "codigo": "MD326",
+      "nome": "Profissionalismo, responsabilidade e segurança do paciente",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18632",
+      "codigo": "MD317",
+      "nome": "Raciocínio clínico IV",
+      "creditos": 9,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD314",
+          "MD315",
+          "MD316"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18633",
+      "codigo": "MD318",
+      "nome": "Raciocínio clínico V",
+      "creditos": 9,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD314",
+          "MD315",
+          "MD316"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18634",
+      "codigo": "MD319",
+      "nome": "Raciocínio clínico VI",
+      "creditos": 9,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD314",
+          "MD315",
+          "MD316"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18636",
+      "codigo": "MD323",
+      "nome": "Medicina, evidência e decisão II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18637",
+      "codigo": "MD325",
+      "nome": "Atividades Complementares e Avaliação III",
+      "creditos": 1,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18639",
+      "codigo": "MD327",
+      "nome": "Medicina Legal",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD177",
+          "MD178",
+          "MD238",
+          "MD239",
+          "MD326"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18628",
+      "codigo": "MD313",
+      "nome": "Anatomia aplicada à prática médica III",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD312"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18647",
+      "codigo": "MD436",
+      "nome": "Saúde Coletiva VII: Saúde da Família e Comunidade I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD313",
+          "MD317",
+          "MD318",
+          "MD319",
+          "MD323",
+          "MD327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18641",
+      "codigo": "MD425",
+      "nome": "Atividades complementares e Avaliação IV",
+      "creditos": 1,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18642",
+      "codigo": "MD431",
+      "nome": "Atenção primária integral à saúde",
+      "creditos": 24,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD313",
+          "MD317",
+          "MD318",
+          "MD319",
+          "MD323",
+          "MD327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18643",
+      "codigo": "MD432",
+      "nome": "Atenção clínica I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD313",
+          "MD317",
+          "MD318",
+          "MD319",
+          "MD323",
+          "MD327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18644",
+      "codigo": "MD433",
+      "nome": "Atenção clínico-cirúrgica I",
+      "creditos": 16,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD313",
+          "MD317",
+          "MD318",
+          "MD319",
+          "MD323",
+          "MD327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18645",
+      "codigo": "MD434",
+      "nome": "Atenção integral à saúde do adulto e do idoso",
+      "creditos": 16,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD313",
+          "MD317",
+          "MD318",
+          "MD319",
+          "MD323",
+          "MD327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18646",
+      "codigo": "MD435",
+      "nome": "Atenção à saúde mental",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD313",
+          "MD317",
+          "MD318",
+          "MD319",
+          "MD323",
+          "MD327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18654",
+      "codigo": "MD524",
+      "nome": "Plantão em Tocoginecologia",
+      "creditos": 21,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD431",
+          "MD432",
+          "MD433",
+          "MD434",
+          "MD435"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18655",
+      "codigo": "MD525",
+      "nome": "Atividades complementares e Avaliação V",
+      "creditos": 1,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18649",
+      "codigo": "MD512",
+      "nome": "Atenção integral à saúde da criança e do adolescente I",
+      "creditos": 29,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD431",
+          "MD432",
+          "MD433",
+          "MD434",
+          "MD435",
+          "MD436"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18650",
+      "codigo": "MD513",
+      "nome": "Atenção integral à saúde da mulher I",
+      "creditos": 29,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD431",
+          "MD432",
+          "MD433",
+          "MD434",
+          "MD435",
+          "MD436"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18651",
+      "codigo": "MD514",
+      "nome": "Atenção integral à saúde do adulto I",
+      "creditos": 29,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD431",
+          "MD432",
+          "MD433",
+          "MD434",
+          "MD435",
+          "MD436"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18652",
+      "codigo": "MD515",
+      "nome": "Atenção clínico-cirúrgica II",
+      "creditos": 21,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD431",
+          "MD432",
+          "MD433",
+          "MD434",
+          "MD435",
+          "MD436"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18653",
+      "codigo": "MD523",
+      "nome": "Plantão em Pediatria",
+      "creditos": 17,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD431",
+          "MD432",
+          "MD434",
+          "MD435",
+          "MD436"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18660",
+      "codigo": "MD614",
+      "nome": "Atenção Cirúrgica à Saúde",
+      "creditos": 14,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18667",
+      "codigo": "MD622",
+      "nome": "Emergências Pediátricas",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18661",
+      "codigo": "MD615",
+      "nome": "Atenção Clínico-Cirúrgica III",
+      "creditos": 15,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18668",
+      "codigo": "MD623",
+      "nome": "Plantão em Cirurgia",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18662",
+      "codigo": "MD616",
+      "nome": "Atenção integral à saúde do adulto II",
+      "creditos": 15,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18669",
+      "codigo": "MD624",
+      "nome": "Plantão em Clínica Médica",
+      "creditos": 17,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18663",
+      "codigo": "MD617",
+      "nome": "Anestesiologia",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18657",
+      "codigo": "MD610",
+      "nome": "Saúde Coletiva VIII: Saúde da Família II e Saúde Mental",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18670",
+      "codigo": "MD625",
+      "nome": "Atividades complementares e Avaliação VI",
+      "creditos": 1,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18664",
+      "codigo": "MD618",
+      "nome": "Ortopedia, Traumatologia e Reumatologia",
+      "creditos": 7,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18658",
+      "codigo": "MD612",
+      "nome": "Atenção integral à saúde da criança e do adolescente II",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18665",
+      "codigo": "MD619",
+      "nome": "Emergências Clínicas",
+      "creditos": 19,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18659",
+      "codigo": "MD613",
+      "nome": "Atenção integral à saúde da mulher II",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18666",
+      "codigo": "MD620",
+      "nome": "Emergências Cirúrgicas",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD512",
+          "MD513",
+          "MD514",
+          "MD515",
+          "MD523",
+          "MD524"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9095",
+      "codigo": "MD885",
+      "nome": "O Teatro para o Aperfeiçoamento da Relação Médico-Paciente",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18683",
+      "codigo": "MD833",
+      "nome": "Imersão em Clínica Médica",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18687",
+      "codigo": "MD838",
+      "nome": "Imersão Avançada em Cirurgia",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18691",
+      "codigo": "MD844",
+      "nome": "Imersão Avançada em Saúde Coletiva",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18674",
+      "codigo": "MD821",
+      "nome": "Patologia Cirúrgica do Trato Gastrointestinal",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9094",
+      "codigo": "MD883",
+      "nome": "Neuroanatomia Aplicada à Prática Médica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18682",
+      "codigo": "MD832",
+      "nome": "Imersão em Cirurgia",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18686",
+      "codigo": "MD837",
+      "nome": "Imersão em Saúde Coletiva",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18690",
+      "codigo": "MD843",
+      "nome": "Imersão Avançada em Pediatria",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18673",
+      "codigo": "MD820",
+      "nome": "Diagnóstico Diferencial das Anemias - Correlação Clínico-Laboratorial",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18676",
+      "codigo": "MD824",
+      "nome": "Diagnóstico Laboratorial das Hemoglobinopatias",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18188",
+      "codigo": "EX020",
+      "nome": "Atividades de Extensão em Toxicologia Clínica",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18685",
+      "codigo": "MD836",
+      "nome": "Imersão em Pediatria",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18689",
+      "codigo": "MD842",
+      "nome": "Imersão Avançada em Tocoginecologia",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18678",
+      "codigo": "MD827",
+      "nome": "Otorrinolaringologia Aplicada à Prática do Generalista",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18296",
+      "codigo": "MD823",
+      "nome": "Interpretação Clínica em Farmacogenética",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10610",
+      "codigo": "MD985",
+      "nome": "O Teatro para o Aperfeiçoamento da Relação Médico-Paciente II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18684",
+      "codigo": "MD834",
+      "nome": "Imersão em Tocoginecologia",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18688",
+      "codigo": "MD839",
+      "nome": "Imersão Avançada em Clínica Médica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18677",
+      "codigo": "MD826",
+      "nome": "Imersão em Otorrinolaringologia",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18675",
+      "codigo": "MD822",
+      "nome": "Neuropatologia Oncológica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

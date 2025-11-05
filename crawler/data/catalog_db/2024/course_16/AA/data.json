@@ -1,0 +1,800 @@
+{
+  "course": {
+    "id": 16,
+    "name": "Ciências Sociais (16)",
+    "code": "16"
+  },
+  "modalidade": "AA",
+  "modalidade_label": "AA - Bacharelado em Ciências Sociais - Antropologia",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "AA",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "834",
+      "codigo": "CE131",
+      "nome": "Introdução à Economia para Ciências Sociais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3692",
+      "codigo": "HZ141",
+      "nome": "Política I: Introdução à Ciência Política",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3706",
+      "codigo": "HZ158",
+      "nome": "Sociologia de Durkheim",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10577",
+      "codigo": "HZ160",
+      "nome": "Introdução a Antropologia: Natureza e Cultura",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10578",
+      "codigo": "HZ260",
+      "nome": "Antropologia II: Troca, Sociedade e Estrutura",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17950",
+      "codigo": "HZ211",
+      "nome": "Extensão em Humanidades I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3723",
+      "codigo": "HZ248",
+      "nome": "Política II: Política Brasileira",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3729",
+      "codigo": "HZ258",
+      "nome": "Sociologia de Marx",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ158"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3745",
+      "codigo": "HZ345",
+      "nome": "Política III: Teorias do Estado",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3752",
+      "codigo": "HZ358",
+      "nome": "Sociologia de Weber",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ258"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10579",
+      "codigo": "HZ360",
+      "nome": "Antropologia III: Teorias e Experimentações Etnográficas",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ260"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9202",
+      "codigo": "HZ431",
+      "nome": "Metodologia e Técnicas de Pesquisa I",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ141",
+          "HZ158",
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3766",
+      "codigo": "HZ460",
+      "nome": "Pesquisa Antropológica",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10580",
+      "codigo": "HZ469",
+      "nome": "Antropologia IV - Antropologia Contemporânea",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9203",
+      "codigo": "HZ631",
+      "nome": "Estatística para Ciências Sociais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "888",
+      "codigo": "CE730",
+      "nome": "Economia Brasileira",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "CE131",
+          "HZ141",
+          "HZ158",
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3714",
+      "codigo": "HZ168",
+      "nome": "Tópicos Especiais em Antropologia XIV",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3711",
+      "codigo": "HZ165",
+      "nome": "Tópicos Especiais em Antropologia XI",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10672",
+      "codigo": "HZ068",
+      "nome": "Corpo, Pessoa e Agência",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10669",
+      "codigo": "HZ065",
+      "nome": "Antropologia e Direito",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6229",
+      "codigo": "HZ969",
+      "nome": "Monografias Básicas - Brasil",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ160",
+          "HZ260",
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3882",
+      "codigo": "HZ966",
+      "nome": "Tópicos Especiais em Teoria Antropológica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3880",
+      "codigo": "HZ962",
+      "nome": "Antropologia Política",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3809",
+      "codigo": "HZ669",
+      "nome": "Etnologia Sul Americana",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3786",
+      "codigo": "HZ565",
+      "nome": "Antropologia Urbana",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3770",
+      "codigo": "HZ466",
+      "nome": "Mito e Ritual",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3755",
+      "codigo": "HZ365",
+      "nome": "Antropologia da Religião",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3735",
+      "codigo": "HZ267",
+      "nome": "Tópicos Especiais em Antropologia XVIII",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3715",
+      "codigo": "HZ169",
+      "nome": "Tópicos Especiais em Antropologia XV",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3712",
+      "codigo": "HZ166",
+      "nome": "Tópicos Especiais em Antropologia XII",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10673",
+      "codigo": "HZ069",
+      "nome": "Raça, Etnicidade e Identidade",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10670",
+      "codigo": "HZ066",
+      "nome": "Antropologia e História",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3883",
+      "codigo": "HZ967",
+      "nome": "Tópicos Especiais em Teoria Antropológica II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9209",
+      "codigo": "HZ963",
+      "nome": "Leitura Dirigida em Antropologia I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3863",
+      "codigo": "HZ861",
+      "nome": "Leitura de Monografias Antropológicas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10675",
+      "codigo": "HZ665",
+      "nome": "Etnologia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3771",
+      "codigo": "HZ467",
+      "nome": "Antropologia e Estudos de Parentesco",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10674",
+      "codigo": "HZ366",
+      "nome": "Modos de Conhecimento e suas Expressões",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10667",
+      "codigo": "HZ062",
+      "nome": "Gênero e Sexualidade",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3733",
+      "codigo": "HZ265",
+      "nome": "Tópicos Especiais em Antropologia XVI",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3713",
+      "codigo": "HZ167",
+      "nome": "Tópicos Especiais em Antropologia XIII",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3709",
+      "codigo": "HZ163",
+      "nome": "Tópicos Especiais em Antropologia X",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10671",
+      "codigo": "HZ067",
+      "nome": "Antropologia Rural",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10668",
+      "codigo": "HZ063",
+      "nome": "Antropologia, Organizações e Burocracia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3884",
+      "codigo": "HZ968",
+      "nome": "Monografias Clássicas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3736",
+      "codigo": "HZ268",
+      "nome": "Tópicos Especiais em Antropologia XIX",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3867",
+      "codigo": "HZ866",
+      "nome": "Antropologia e os Grupos de Idade",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3807",
+      "codigo": "HZ667",
+      "nome": "Mídia, Cultura e História",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3783",
+      "codigo": "HZ562",
+      "nome": "Antropologia Econômica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3769",
+      "codigo": "HZ465",
+      "nome": "Antropologia no Brasil",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3737",
+      "codigo": "HZ269",
+      "nome": "Tópicos Especiais em Antropologia XX",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3734",
+      "codigo": "HZ266",
+      "nome": "Tópicos Especiais em Antropologia XVII",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9210",
+      "codigo": "HZ965",
+      "nome": "Leitura Dirigida em Antropologia II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HZ963"
+        ]
+      ]
+    }
+  ]
+}

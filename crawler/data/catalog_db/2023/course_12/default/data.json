@@ -1,0 +1,3213 @@
+{
+  "course": {
+    "id": 12,
+    "name": "Engenharia Civil (12)",
+    "code": "12"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17464",
+      "codigo": "CV105",
+      "nome": "Desenho Técnico Projetivo de Edificações",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5344",
+      "codigo": "QG102",
+      "nome": "Química Experimental I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17465",
+      "codigo": "CV142",
+      "nome": "Sustentabilidade e Ambiente",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17466",
+      "codigo": "CV143",
+      "nome": "Química para Engenharia Civil",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17467",
+      "codigo": "CV150",
+      "nome": "Introdução à Engenharia Civil",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17490",
+      "codigo": "CV250",
+      "nome": "Atividades de Extensão",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17883",
+      "codigo": "GM430",
+      "nome": "Geologia Aplicada à Engenharia",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17488",
+      "codigo": "CV204",
+      "nome": "Materiais de Construção Civil I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV143",
+          "QG102"
+        ],
+        [
+          "QG102",
+          "QG191"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17489",
+      "codigo": "CV225",
+      "nome": "Topografia e Geodésia I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17512",
+      "codigo": "CV305",
+      "nome": "Projeto Arquitetônico",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17513",
+      "codigo": "CV314",
+      "nome": "Isostática de Estruturas Planas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17514",
+      "codigo": "CV325",
+      "nome": "Topografia e Geodésia II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV225"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17515",
+      "codigo": "CV355",
+      "nome": "Projeto Integrador em Aplicação em Engenharia Civil",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2746",
+      "codigo": "F 229",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1148",
+      "codigo": "CV301",
+      "nome": "Física para Engenharia Civil",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17511",
+      "codigo": "CV304",
+      "nome": "Materiais de Construção Civil II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17536",
+      "codigo": "CV414",
+      "nome": "Mecânica dos Sólidos I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV314"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17537",
+      "codigo": "CV423",
+      "nome": "Introdução à Economia",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17538",
+      "codigo": "CV432",
+      "nome": "Mecânica dos Fluidos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV314",
+          "MA211"
+        ],
+        [
+          "F 315",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15520",
+      "codigo": "CV441",
+      "nome": "Planejamento e Gestão Ambiental",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV341"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1161",
+      "codigo": "CV450",
+      "nome": "Metodologia Científica e Redação Científica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17543",
+      "codigo": "CV523",
+      "nome": "Técnica dos Transportes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17544",
+      "codigo": "CV527",
+      "nome": "Geotecnia I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GM430"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17545",
+      "codigo": "CV533",
+      "nome": "Engenharia Hidráulica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV432"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17539",
+      "codigo": "CV502",
+      "nome": "Administração Aplicada à Empresas de Construção",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17546",
+      "codigo": "CV543",
+      "nome": "Qualidade Sanitária do Meio",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV441"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17540",
+      "codigo": "CV504",
+      "nome": "Técnicas Construtivas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV204",
+          "CV304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17541",
+      "codigo": "CV505",
+      "nome": "Modelagem da Informação da Construção (BIM)",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV105",
+          "CV305"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17542",
+      "codigo": "CV514",
+      "nome": "Mecânica dos Sólidos II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17553",
+      "codigo": "CV636",
+      "nome": "Hidráulica Aplicada",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17548",
+      "codigo": "CV615",
+      "nome": "Teoria das Estruturas I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV314",
+          "CV514"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17554",
+      "codigo": "CV645",
+      "nome": "Sistema de Abastecimento de Água",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17549",
+      "codigo": "CV625",
+      "nome": "Geometria de Vias e Terraplenagem",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV325",
+          "CV523"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17555",
+      "codigo": "CV655",
+      "nome": "Projeto Integrador em Cidades Sustentáveis",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17550",
+      "codigo": "CV627",
+      "nome": "Geotecnia II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV527"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1174",
+      "codigo": "CV632",
+      "nome": "Hidrologia Básica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV531",
+          "MC102",
+          "ME414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17551",
+      "codigo": "CV634",
+      "nome": "Eletrotécnica Aplicada à Engenharia Civil",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17552",
+      "codigo": "CV635",
+      "nome": "Planejamento Urbano",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17547",
+      "codigo": "CV614",
+      "nome": "Estruturas de Madeira",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV314",
+          "CV514"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17559",
+      "codigo": "CV717",
+      "nome": "Estruturas Metálicas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV514",
+          "CV615"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17560",
+      "codigo": "CV727",
+      "nome": "Engenharia de Fundações",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV627"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17561",
+      "codigo": "CV731",
+      "nome": "Sistemas Prediais Elétricos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV532"
+        ],
+        [
+          "CV634"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17562",
+      "codigo": "CV732",
+      "nome": "Sistemas Prediais Hidráulicos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17556",
+      "codigo": "CV704",
+      "nome": "Planejamento e Controle de Empreendimentos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV502",
+          "ME414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17563",
+      "codigo": "CV745",
+      "nome": "Sistema de Coleta e Tratamento de Esgoto",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV632",
+          "CV641"
+        ],
+        [
+          "CV632",
+          "CV645"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17557",
+      "codigo": "CV715",
+      "nome": "Teoria das Estruturas II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV314",
+          "CV615"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17564",
+      "codigo": "CV755",
+      "nome": "Projeto Integrador em Edificações",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17558",
+      "codigo": "CV716",
+      "nome": "Estruturas de Concreto Armado I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV304",
+          "CV414",
+          "CV615"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17568",
+      "codigo": "CV825",
+      "nome": "Drenagem e Pavimentação",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV625",
+          "CV632"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1193",
+      "codigo": "CV832",
+      "nome": "Portos, Rios e Canais",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV531",
+          "CV632"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17565",
+      "codigo": "CV815",
+      "nome": "Estruturas de Concreto Protendido",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV716"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17569",
+      "codigo": "CV843",
+      "nome": "Sistemas de Gestão em Resíduo Sólido",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV745"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17566",
+      "codigo": "CV816",
+      "nome": "Estruturas de Concreto Armado II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV715",
+          "CV716"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17570",
+      "codigo": "CV855",
+      "nome": "Projeto Integrador em Inovação em Infraestrutura",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17567",
+      "codigo": "CV817",
+      "nome": "Estruturas de Pontes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV716"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17571",
+      "codigo": "CV856",
+      "nome": "Infraestrutura em Energia",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV634"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1189",
+      "codigo": "CV821",
+      "nome": "Economia dos Transportes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1191",
+      "codigo": "CV823",
+      "nome": "Aeroportos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV522",
+          "CV622"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17573",
+      "codigo": "CV959",
+      "nome": "Estágio Supervisionado",
+      "creditos": 11,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17572",
+      "codigo": "CV958",
+      "nome": "Projeto de Final de Curso I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV450"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17460",
+      "codigo": "CV050",
+      "nome": "Atividades Complementares",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17574",
+      "codigo": "CV968",
+      "nome": "Projeto de Final de Curso II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV958"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3739",
+      "codigo": "HZ291",
+      "nome": "Tópicos Especiais de Humanidades I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3740",
+      "codigo": "HZ292",
+      "nome": "Tópicos Especiais de Humanidades II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6227",
+      "codigo": "HZ293",
+      "nome": "Tópicos Especiais de Humanidades III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1223",
+      "codigo": "CV929",
+      "nome": "Transporte Público Urbano",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1246",
+      "codigo": "CV952",
+      "nome": "Iniciação Científica em Engenharia Civil I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1214",
+      "codigo": "CV920",
+      "nome": "Geomática",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV421"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1090",
+      "codigo": "CV002",
+      "nome": "Planejamento e Logística de Canteiro de Obras",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV701"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6964",
+      "codigo": "CV076",
+      "nome": "Obras Hidráulicas: Fundamentos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1132",
+      "codigo": "CV066",
+      "nome": "Tópicos em Engenharia de Estruturas II",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1230",
+      "codigo": "CV936",
+      "nome": "Impactos Ambientais Resultantes de Obras Hidráulicas",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12199",
+      "codigo": "CV964",
+      "nome": "Tópicos Especiais em Gestão do Projeto e da Construção VI",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15536",
+      "codigo": "CV996",
+      "nome": "Mobilidade Sustentável",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV622"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12214",
+      "codigo": "CV970",
+      "nome": "Tópicos em Engenharia de Estruturas IV",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1240",
+      "codigo": "CV946",
+      "nome": "Química Sanitária e Ambiental",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10613",
+      "codigo": "CV052",
+      "nome": "Tópicos em Geotecnia e Transportes II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1119",
+      "codigo": "CV042",
+      "nome": "Tópicos em Saneamento Ambiental II",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12212",
+      "codigo": "CV967",
+      "nome": "Tópicos Especiais em Concreto V",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714",
+          "CV814"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15532",
+      "codigo": "CV992",
+      "nome": "Tratamento de Águas Residuais",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV742"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "532",
+      "codigo": "CV957",
+      "nome": "Tópicos Avançados em Engenharia Civil II",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12196",
+      "codigo": "CV961",
+      "nome": "Tópicos Especiais em Gestão do Projeto e da Construção III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1216",
+      "codigo": "CV922",
+      "nome": "Serviços Logísticos: Gestão e Projeto",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7065",
+      "codigo": "CV004",
+      "nome": "Tópicos Especiais em Gestão do Projeto e da Construção I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7075",
+      "codigo": "CV081",
+      "nome": "Hidráulica Fluvial e Obras Fluviais",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1204",
+      "codigo": "CV910",
+      "nome": "Estruturas de Concreto Armado III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714",
+          "CV814"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12206",
+      "codigo": "CV979",
+      "nome": "Tópicos em Recursos Hídricos, Energéticos e Ambientais V",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15534",
+      "codigo": "CV994",
+      "nome": "Tecnologia Construtiva Industrializada",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV504",
+          "CV704"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1125",
+      "codigo": "CV049",
+      "nome": "Tópicos em Gestão Ambiental II",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12216",
+      "codigo": "CV972",
+      "nome": "Tópicos em Engenharia de Estruturas VI",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1243",
+      "codigo": "CV949",
+      "nome": "Aspectos Legais e Institucionais em Saneamento e Ambiente",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541",
+          "CV841"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1210",
+      "codigo": "CV916",
+      "nome": "Introdução ao Método dos Elementos Finitos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV511"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1122",
+      "codigo": "CV046",
+      "nome": "Tratamento de Lodo de ETE e ETA",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV641"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1220",
+      "codigo": "CV926",
+      "nome": "Apoio à Tomada de Decisão",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1198",
+      "codigo": "CV903",
+      "nome": "Gestão Financeira, Econômica e Riscos de Empreendimentos",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV401",
+          "CV701"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12201",
+      "codigo": "CV974",
+      "nome": "Tópicos em Geotecnia e Transportes IV",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15525",
+      "codigo": "CV985",
+      "nome": "Tratamento Biológico Avançado de Águas Residuais",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541",
+          "CV742"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1218",
+      "codigo": "CV924",
+      "nome": "Complementos de Fundações",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV721"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7067",
+      "codigo": "CV006",
+      "nome": "Conforto Térmico e Eficiência Energética em Edificações",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1226",
+      "codigo": "CV932",
+      "nome": "Engenharia Hidráulica Aplicada a Sistemas de Transportes Fluidos",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1206",
+      "codigo": "CV912",
+      "nome": "Estruturas Metálicas Compostas de Chapas Dobradas",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV713"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1118",
+      "codigo": "CV041",
+      "nome": "Tópicos em Saneamento Ambiental I",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1097",
+      "codigo": "CV015",
+      "nome": "Dinâmica das Estruturas",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1235",
+      "codigo": "CV941",
+      "nome": "Laboratório de Saneamento",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV141",
+          "QG102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1106",
+      "codigo": "CV024",
+      "nome": "Complementos de Aeroportos",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV823"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12209",
+      "codigo": "CV982",
+      "nome": "Tópicos em Gestão Ambiental III",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1212",
+      "codigo": "CV918",
+      "nome": "Estruturas em Situação de Incêndio",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15529",
+      "codigo": "CV989",
+      "nome": "Seminários em Saneamento e Ambiente",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1222",
+      "codigo": "CV928",
+      "nome": "Laboratório de Aprendizagem em Logística e Transportes",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1202",
+      "codigo": "CV908",
+      "nome": "Conforto Acústico de Ambientes",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9113",
+      "codigo": "CV090",
+      "nome": "Cadastro Técnico Multifinalitário",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV321"
+        ],
+        [
+          "CV323"
+        ],
+        [
+          "AU223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15527",
+      "codigo": "CV987",
+      "nome": "O Comportamento Pró-Ambiental e o Processo de Tomada de Decisão",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1108",
+      "codigo": "CV031",
+      "nome": "Introdução ao Planejamento Energético",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1131",
+      "codigo": "CV065",
+      "nome": "Tópicos em Engenharia de Estruturas I",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1228",
+      "codigo": "CV934",
+      "nome": "Características Gerais de um Aproveitamento Hidroelétrico",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12198",
+      "codigo": "CV963",
+      "nome": "Tópicos Especiais em Gestão do Projeto e da Construção V",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12203",
+      "codigo": "CV976",
+      "nome": "Tópicos em Geotecnia e Transportes VI",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1101",
+      "codigo": "CV019",
+      "nome": "Tópicos Especiais em Concreto I",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1239",
+      "codigo": "CV945",
+      "nome": "Gestão em Saneamento Ambiental",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541",
+          "CV841"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10612",
+      "codigo": "CV051",
+      "nome": "Tópicos em Geotecnia e Transportes I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14280",
+      "codigo": "CV984",
+      "nome": "Gestão e Gerenciamento Integrado de Resíduo Sólido",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12211",
+      "codigo": "CV966",
+      "nome": "Tópicos Especiais em Concreto IV",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714",
+          "CV814"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15531",
+      "codigo": "CV991",
+      "nome": "Avaliação de Impacto Ambiental",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "531",
+      "codigo": "CV956",
+      "nome": "Tópicos Avançados em Engenharia Civil I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6285",
+      "codigo": "CV953",
+      "nome": "Iniciação Científica em Engenharia Civil II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1215",
+      "codigo": "CV921",
+      "nome": "Superestrutura Ferroviária",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV522",
+          "CV622"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1091",
+      "codigo": "CV003",
+      "nome": "Tecnologia de Argamassas e Revestimento",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7074",
+      "codigo": "CV080",
+      "nome": "Hidráulica Marítima e Obras Costeiras",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10148",
+      "codigo": "CV092",
+      "nome": "Instabilidade e Flexo-Torção em Elementos de Estruturas Metálicas",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV511"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12204",
+      "codigo": "CV977",
+      "nome": "Tópicos em Recursos Hídricos, Energéticos e Ambientais III",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15533",
+      "codigo": "CV993",
+      "nome": "Gestão do processo de projeto com metodologia BIM",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV505"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1124",
+      "codigo": "CV048",
+      "nome": "Tópicos em Gestão Ambiental I",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12215",
+      "codigo": "CV971",
+      "nome": "Tópicos em Engenharia de Estruturas V",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1242",
+      "codigo": "CV948",
+      "nome": "Saneamento de Pequenas Comunidades",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV742"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1209",
+      "codigo": "CV915",
+      "nome": "Complementos de Teoria das Estruturas",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV712"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1121",
+      "codigo": "CV045",
+      "nome": "Reuso de Águas",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541",
+          "CV742"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12213",
+      "codigo": "CV969",
+      "nome": "Tópicos em Engenharia de Estruturas III",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1129",
+      "codigo": "CV063",
+      "nome": "Concretos Especiais",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV332"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12200",
+      "codigo": "CV973",
+      "nome": "Tópicos em Geotecnia e Transportes III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12197",
+      "codigo": "CV962",
+      "nome": "Tópicos Especiais em Gestão do Projeto e da Construção IV",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1217",
+      "codigo": "CV923",
+      "nome": "Geotecnia III",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7066",
+      "codigo": "CV005",
+      "nome": "Tópicos Especiais em Gestão do Projeto e da Construção II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1224",
+      "codigo": "CV930",
+      "nome": "Práticas e Projetos em Drenagem Urbana",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV531",
+          "CV632"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1205",
+      "codigo": "CV911",
+      "nome": "Projeto Estrutural de Edifício de Concreto Armado",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714",
+          "CV814"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12207",
+      "codigo": "CV980",
+      "nome": "Tópicos em Recursos Hídricos, Energéticos e Ambientais VI",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15535",
+      "codigo": "CV995",
+      "nome": "Gestão Lean na construção",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV504",
+          "CV704"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1234",
+      "codigo": "CV940",
+      "nome": "Gestão Ambiental por Bacias",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1103",
+      "codigo": "CV021",
+      "nome": "Laboratório de Mecânica dos Solos",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12208",
+      "codigo": "CV981",
+      "nome": "Tópicos em Saneamento Ambiental III",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1211",
+      "codigo": "CV917",
+      "nome": "Projeto de Estruturas de Concreto Armado Assistido por Computador",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15528",
+      "codigo": "CV988",
+      "nome": "Análise de Ciclo de Vida",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1221",
+      "codigo": "CV927",
+      "nome": "Engenharia de Tráfego",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1200",
+      "codigo": "CV906",
+      "nome": "Projeto e Construção Sustentável",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV402",
+          "CV633"
+        ],
+        [
+          "AU113",
+          "AU812"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9111",
+      "codigo": "CV088",
+      "nome": "Sistema de Informação Geográfica",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV321"
+        ],
+        [
+          "CV323"
+        ],
+        [
+          "AU223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15526",
+      "codigo": "CV986",
+      "nome": "Tratamento Avançado de Resíduo Sólido",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1219",
+      "codigo": "CV925",
+      "nome": "Terminais de Transporte",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1130",
+      "codigo": "CV064",
+      "nome": "Tópicos Especiais em Concreto II",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1227",
+      "codigo": "CV933",
+      "nome": "Gerenciamento de Recursos Hídricos",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV632"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1207",
+      "codigo": "CV913",
+      "nome": "Estruturas Metálicas dos Edifícios Industriais",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV813"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12202",
+      "codigo": "CV975",
+      "nome": "Tópicos em Geotecnia e Transportes V",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1099",
+      "codigo": "CV017",
+      "nome": "Placas e Cascas",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV511"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1236",
+      "codigo": "CV942",
+      "nome": "Tratamento de Águas para Abastecimento",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV641"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7068",
+      "codigo": "CV025",
+      "nome": "Barragens de Terra",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14279",
+      "codigo": "CV983",
+      "nome": "Seminário em Gestão e Saneamento Ambiental II",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12210",
+      "codigo": "CV965",
+      "nome": "Tópicos Especiais em Concreto III",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV714",
+          "CV814"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15530",
+      "codigo": "CV990",
+      "nome": "Projetos em Infraestrutura e Ambiente",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV521",
+          "CV821",
+          "CV822",
+          "CV842"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17506",
+      "codigo": "CV285",
+      "nome": "Tópicos Especiais em Extensão 36",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17523",
+      "codigo": "CV377",
+      "nome": "Tópicos Especiais em Extensão 48",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17519",
+      "codigo": "CV373",
+      "nome": "Tópicos Especiais em Extensão 44",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17510",
+      "codigo": "CV289",
+      "nome": "Tópicos Especiais em Extensão 40",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17495",
+      "codigo": "CV274",
+      "nome": "Tópicos Especiais em Extensão 25",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17491",
+      "codigo": "CV270",
+      "nome": "Tópicos Especiais em Extensão 21",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17484",
+      "codigo": "CV186",
+      "nome": "Tópicos Especiais em Extensão 17",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17499",
+      "codigo": "CV278",
+      "nome": "Tópicos Especiais em Extensão 29",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17477",
+      "codigo": "CV179",
+      "nome": "Tópicos Especiais em Extensão 10",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17473",
+      "codigo": "CV175",
+      "nome": "Tópicos Especiais em Extensão 6",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17469",
+      "codigo": "CV171",
+      "nome": "Tópicos Especiais em Extensão 2",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17481",
+      "codigo": "CV183",
+      "nome": "Tópicos Especiais em Extensão 14",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17462",
+      "codigo": "CV058",
+      "nome": "Atividades complementares de Integração Ensino e Extensão II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17532",
+      "codigo": "CV386",
+      "nome": "Tópicos Especiais em Extensão 57",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17528",
+      "codigo": "CV382",
+      "nome": "Tópicos Especiais em Extensão 53",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17516",
+      "codigo": "CV370",
+      "nome": "Tópicos Especiais em Extensão 41",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17507",
+      "codigo": "CV286",
+      "nome": "Tópicos Especiais em Extensão 37",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17503",
+      "codigo": "CV282",
+      "nome": "Tópicos Especiais em Extensão 33",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17520",
+      "codigo": "CV374",
+      "nome": "Tópicos Especiais em Extensão 45",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17496",
+      "codigo": "CV275",
+      "nome": "Tópicos Especiais em Extensão 26",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17492",
+      "codigo": "CV271",
+      "nome": "Tópicos Especiais em Extensão 22",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17485",
+      "codigo": "CV187",
+      "nome": "Tópicos Especiais em Extensão 18",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17500",
+      "codigo": "CV279",
+      "nome": "Tópicos Especiais em Extensão 30",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17482",
+      "codigo": "CV184",
+      "nome": "Tópicos Especiais em Extensão 15",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17478",
+      "codigo": "CV180",
+      "nome": "Tópicos Especiais em Extensão 11",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17474",
+      "codigo": "CV176",
+      "nome": "Tópicos Especiais em Extensão 7",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17470",
+      "codigo": "CV172",
+      "nome": "Tópicos Especiais em Extensão 3",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17529",
+      "codigo": "CV383",
+      "nome": "Tópicos Especiais em Extensão 54",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17463",
+      "codigo": "CV059",
+      "nome": "Atividades complementares de Integração Ensino e Extensão III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17524",
+      "codigo": "CV378",
+      "nome": "Tópicos Especiais em Extensão 49",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17533",
+      "codigo": "CV387",
+      "nome": "Tópicos Especiais em Extensão 58",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17517",
+      "codigo": "CV371",
+      "nome": "Tópicos Especiais em Extensão 42",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17508",
+      "codigo": "CV287",
+      "nome": "Tópicos Especiais em Extensão 38",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17504",
+      "codigo": "CV283",
+      "nome": "Tópicos Especiais em Extensão 34",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17521",
+      "codigo": "CV375",
+      "nome": "Tópicos Especiais em Extensão 46",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17501",
+      "codigo": "CV280",
+      "nome": "Tópicos Especiais em Extensão 31",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17497",
+      "codigo": "CV276",
+      "nome": "Tópicos Especiais em Extensão 27",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17493",
+      "codigo": "CV272",
+      "nome": "Tópicos Especiais em Extensão 23",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17486",
+      "codigo": "CV188",
+      "nome": "Tópicos Especiais em Extensão 19",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17471",
+      "codigo": "CV173",
+      "nome": "Tópicos Especiais em Extensão 4",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17483",
+      "codigo": "CV185",
+      "nome": "Tópicos Especiais em Extensão 16",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17479",
+      "codigo": "CV181",
+      "nome": "Tópicos Especiais em Extensão 12",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17475",
+      "codigo": "CV177",
+      "nome": "Tópicos Especiais em Extensão 8",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17530",
+      "codigo": "CV384",
+      "nome": "Tópicos Especiais em Extensão 55",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17526",
+      "codigo": "CV380",
+      "nome": "Tópicos Especiais em Extensão 51",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17525",
+      "codigo": "CV379",
+      "nome": "Tópicos Especiais em Extensão 50",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17534",
+      "codigo": "CV388",
+      "nome": "Tópicos Especiais em Extensão 59",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17522",
+      "codigo": "CV376",
+      "nome": "Tópicos Especiais em Extensão 47",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17518",
+      "codigo": "CV372",
+      "nome": "Tópicos Especiais em Extensão 43",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17509",
+      "codigo": "CV288",
+      "nome": "Tópicos Especiais em Extensão 39",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17505",
+      "codigo": "CV284",
+      "nome": "Tópicos Especiais em Extensão 35",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17487",
+      "codigo": "CV189",
+      "nome": "Tópicos Especiais em Extensão 20",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17502",
+      "codigo": "CV281",
+      "nome": "Tópicos Especiais em Extensão 32",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17498",
+      "codigo": "CV277",
+      "nome": "Tópicos Especiais em Extensão 28",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17494",
+      "codigo": "CV273",
+      "nome": "Tópicos Especiais em Extensão 24",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17476",
+      "codigo": "CV178",
+      "nome": "Tópicos Especiais em Extensão 9",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17472",
+      "codigo": "CV174",
+      "nome": "Tópicos Especiais em Extensão 5",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17468",
+      "codigo": "CV170",
+      "nome": "Tópicos Especiais em Extensão 1",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17480",
+      "codigo": "CV182",
+      "nome": "Tópicos Especiais em Extensão 13",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17535",
+      "codigo": "CV389",
+      "nome": "Tópicos Especiais em Extensão 60",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17531",
+      "codigo": "CV385",
+      "nome": "Tópicos Especiais em Extensão 56",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17527",
+      "codigo": "CV381",
+      "nome": "Tópicos Especiais em Extensão 52",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17461",
+      "codigo": "CV057",
+      "nome": "Atividades complementares de Integração Ensino e Extensão I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

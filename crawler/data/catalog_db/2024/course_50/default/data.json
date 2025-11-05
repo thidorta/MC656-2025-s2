@@ -1,0 +1,683 @@
+{
+  "course": {
+    "id": 50,
+    "name": "Química Tecnológica (50)",
+    "code": "50"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18105",
+      "codigo": "QE100",
+      "nome": "Concepção e Princípios da Integração entre Ensino, Pesquisa e Extensão",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5347",
+      "codigo": "QG108",
+      "nome": "Química Geral Teórica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5348",
+      "codigo": "QG109",
+      "nome": "Química Geral Experimental",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5289",
+      "codigo": "QA282",
+      "nome": "Química Clássica",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18110",
+      "codigo": "QI146",
+      "nome": "Interações Químicas",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5393",
+      "codigo": "QO321",
+      "nome": "Química Orgânica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101",
+          "QG102"
+        ],
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12179",
+      "codigo": "QA383",
+      "nome": "Eletroanalítica",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA282"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5318",
+      "codigo": "QF431",
+      "nome": "Físico-Química I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18111",
+      "codigo": "QI346",
+      "nome": "Química de Coordenação",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QI146"
+        ],
+        [
+          "QI145"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5399",
+      "codigo": "QO423",
+      "nome": "Fundamentos da Espectrometria de Massas",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5403",
+      "codigo": "QO521",
+      "nome": "Química Orgânica II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12178",
+      "codigo": "QA381",
+      "nome": "Espectroanalítica",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA282"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12180",
+      "codigo": "QA481",
+      "nome": "Métodos de Separação",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA282"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12181",
+      "codigo": "QA483",
+      "nome": "Estatística Aplicada à Química Analítica",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA282"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5322",
+      "codigo": "QF531",
+      "nome": "Físico-Química II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QF335"
+        ],
+        [
+          "QF431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12182",
+      "codigo": "QG464",
+      "nome": "Laboratório Integrado",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5374",
+      "codigo": "QI245",
+      "nome": "Química de Sólidos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QI145"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5400",
+      "codigo": "QO424",
+      "nome": "Fundamentos em Espectroscopia e Ressonância Magnética Nuclear",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12183",
+      "codigo": "QA583",
+      "nome": "Preparo de Amostras",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA381",
+          "QA383",
+          "QA481",
+          "QA483"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18104",
+      "codigo": "QA585",
+      "nome": "Laboratório de Química Analítica Instrumental",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA381",
+          "QA383",
+          "QA481",
+          "QA483"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5354",
+      "codigo": "QG650",
+      "nome": "Laboratório de Síntese Orgânica e Inorgânica",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QI145",
+          "QO521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5404",
+      "codigo": "QO551",
+      "nome": "Bioquímica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15130",
+      "codigo": "EQ482",
+      "nome": "Introdução aos Cálculos de Processos Químicos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QF531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6711",
+      "codigo": "EQ582",
+      "nome": "Fenômenos de Transporte e Operações Unitárias",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ482"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18115",
+      "codigo": "QO627",
+      "nome": "Química Orgânica Experimental II",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG650",
+          "QO423",
+          "QO424"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5841",
+      "codigo": "TA918",
+      "nome": "Microbiologia e Fermentações",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO551"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2095",
+      "codigo": "EM312",
+      "nome": "Desenho Técnico",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5321",
+      "codigo": "QF530",
+      "nome": "Introdução à Química Quântica e Espectroscopia Molecular",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 328",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18108",
+      "codigo": "QF635",
+      "nome": "Físico-Química Experimental",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QF531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10598",
+      "codigo": "QF835",
+      "nome": "Processos Industriais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ582"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5381",
+      "codigo": "QI545",
+      "nome": "Química de Organometálicos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QI345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5302",
+      "codigo": "QA815",
+      "nome": "Química do Meio Ambiente",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA282",
+          "QF531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18106",
+      "codigo": "QE101",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão",
+      "creditos": 10,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QE100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5328",
+      "codigo": "QF661",
+      "nome": "Química Aplicada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QF531",
+          "QO421"
+        ],
+        [
+          "QF531",
+          "QO521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18113",
+      "codigo": "QI546",
+      "nome": "Química Inorgânica Experimental II",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG650",
+          "QI545"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5313",
+      "codigo": "QF053",
+      "nome": "Laboratório de Química Aplicada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ482"
+        ],
+        [
+          "EQ481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5338",
+      "codigo": "QG080",
+      "nome": "Estágio",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

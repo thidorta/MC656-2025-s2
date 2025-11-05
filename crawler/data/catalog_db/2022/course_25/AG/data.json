@@ -1,0 +1,655 @@
+{
+  "course": {
+    "id": 25,
+    "name": "Artes Visuais (25)",
+    "code": "25"
+  },
+  "modalidade": "AG",
+  "modalidade_label": "AG - Licenciatura em Artes - Artes Visuais",
+  "year": 2022,
+  "parameters": {
+    "catalogo": "2022",
+    "modalidade": "AG",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "270",
+      "codigo": "AP104",
+      "nome": "Desenho Artístico I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "275",
+      "codigo": "AP110",
+      "nome": "Modelagem I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "283",
+      "codigo": "AP198",
+      "nome": "História da Arte I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "478",
+      "codigo": "AR101",
+      "nome": "Fundamentos Filosóficos da Arte Educação",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "266",
+      "codigo": "AP100",
+      "nome": "Práticas de Oficina I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "269",
+      "codigo": "AP103",
+      "nome": "Pintura I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "303",
+      "codigo": "AP298",
+      "nome": "História da Arte II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP198"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "332",
+      "codigo": "AP415",
+      "nome": "Escultura I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "287",
+      "codigo": "AP203",
+      "nome": "Pintura II",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "288",
+      "codigo": "AP204",
+      "nome": "Desenho Artístico II",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "284",
+      "codigo": "AP199",
+      "nome": "Atividades Artísticas - Culturais - Ensino I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "308",
+      "codigo": "AP304",
+      "nome": "Desenho Artístico III",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10154",
+      "codigo": "AP313",
+      "nome": "Arte Fotográfica I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "317",
+      "codigo": "AP398",
+      "nome": "História da Arte III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP298"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "350",
+      "codigo": "AP520",
+      "nome": "Gravura I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "304",
+      "codigo": "AP299",
+      "nome": "Atividades Artísticas - Culturais - Ensino II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "324",
+      "codigo": "AP404",
+      "nome": "Desenho Artístico IV",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10155",
+      "codigo": "AP413",
+      "nome": "Arte Fotográfica II",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP313"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "336",
+      "codigo": "AP498",
+      "nome": "História da Arte IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP398"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "318",
+      "codigo": "AP399",
+      "nome": "Atividades Artísticas - Culturais - Ensino III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "353",
+      "codigo": "AP598",
+      "nome": "História da Arte V",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP498"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "484",
+      "codigo": "AR301",
+      "nome": "Psicologia do Desenvolvimento Aplicado às Artes I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11372",
+      "codigo": "FN468",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "337",
+      "codigo": "AP499",
+      "nome": "Atividades Artísticas - Culturais - Ensino IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "355",
+      "codigo": "AP600",
+      "nome": "Metodologia de Pesquisa em Artes Visuais",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "371",
+      "codigo": "AP625",
+      "nome": "História da Arte Brasileira I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "380",
+      "codigo": "AP709",
+      "nome": "Arte e Novos Meios I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10583",
+      "codigo": "AR601",
+      "nome": "Processos Pedagógicos Voltados para o Corpo na Arte",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "354",
+      "codigo": "AP599",
+      "nome": "Atividades Artísticas - Culturais - Ensino V",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "386",
+      "codigo": "AP725",
+      "nome": "História da Arte Brasileira II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP625"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9164",
+      "codigo": "AP735",
+      "nome": "Projeto Experimental em Artes Visuais I",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP600"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "398",
+      "codigo": "AP762",
+      "nome": "Estágio Pedagógico I",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "EL874"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "375",
+      "codigo": "AP699",
+      "nome": "Atividades Artísticas - Culturais - Ensino VI",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9167",
+      "codigo": "AP836",
+      "nome": "Projeto Experimental em Artes Visuais II",
+      "creditos": 14,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP735"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "434",
+      "codigo": "AP862",
+      "nome": "Estágio Pedagógico II",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP762"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "385",
+      "codigo": "AP724",
+      "nome": "Gravura III",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "321",
+      "codigo": "AP403",
+      "nome": "Pintura IV",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "347",
+      "codigo": "AP515",
+      "nome": "Escultura II",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP415"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "366",
+      "codigo": "AP615",
+      "nome": "Escultura III",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP515"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "368",
+      "codigo": "AP618",
+      "nome": "Cerâmica II",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP518"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "307",
+      "codigo": "AP303",
+      "nome": "Pintura III",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "370",
+      "codigo": "AP620",
+      "nome": "Gravura II",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "346",
+      "codigo": "AP763",
+      "nome": "Pedagogia e Didática de Artes Visuais I",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "course": {
+    "id": 44,
+    "name": "Ciências Sociais (44)",
+    "code": "44"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Bacharelado em Ciências Sociais - Política",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "AB",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "834",
+      "codigo": "CE131",
+      "nome": "Introdução à Economia para Ciências Sociais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3692",
+      "codigo": "HZ141",
+      "nome": "Política I: Introdução à Ciência Política",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3706",
+      "codigo": "HZ158",
+      "nome": "Sociologia de Durkheim",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10577",
+      "codigo": "HZ160",
+      "nome": "Introdução a Antropologia: Natureza e Cultura",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3723",
+      "codigo": "HZ248",
+      "nome": "Política II: Política Brasileira",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3729",
+      "codigo": "HZ258",
+      "nome": "Sociologia de Marx",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ158"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10578",
+      "codigo": "HZ260",
+      "nome": "Antropologia II: Troca, Sociedade e Estrutura",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17950",
+      "codigo": "HZ211",
+      "nome": "Extensão em Humanidades I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3745",
+      "codigo": "HZ345",
+      "nome": "Política III: Teorias do Estado",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3752",
+      "codigo": "HZ358",
+      "nome": "Sociologia de Weber",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ258"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10579",
+      "codigo": "HZ360",
+      "nome": "Antropologia III: Teorias e Experimentações Etnográficas",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ260"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9202",
+      "codigo": "HZ431",
+      "nome": "Metodologia e Técnicas de Pesquisa I",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ141",
+          "HZ158",
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3761",
+      "codigo": "HZ447",
+      "nome": "Política IV - Tradições do Pensamento Político",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3778",
+      "codigo": "HZ546",
+      "nome": "Política V - Teoria e Pesquisa em Ciência Política",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9203",
+      "codigo": "HZ631",
+      "nome": "Estatística para Ciências Sociais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "888",
+      "codigo": "CE730",
+      "nome": "Economia Brasileira",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "CE131",
+          "HZ141",
+          "HZ158",
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15862",
+      "codigo": "HZ347",
+      "nome": "Pensamento Político: Debates Contemporâneos II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3873",
+      "codigo": "HZ942",
+      "nome": "Relações Internacionais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3871",
+      "codigo": "HZ940",
+      "nome": "Estado, Nação e Nacionalismo",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3817",
+      "codigo": "HZ740",
+      "nome": "Regimes e Sistemas Políticos Comparados",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3854",
+      "codigo": "HZ840",
+      "nome": "Estado e Reformas Econômicas no Capitalismo Contemporâneo",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3791",
+      "codigo": "HZ640",
+      "nome": "Pensamento Político Brasileiro",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3773",
+      "codigo": "HZ540",
+      "nome": "Políticas Públicas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3756",
+      "codigo": "HZ440",
+      "nome": "Trabalho e Sindicalismo",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15874",
+      "codigo": "HZ949",
+      "nome": "Estudos Legislativos II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3746",
+      "codigo": "HZ348",
+      "nome": "Teorias da Ação Coletiva e Movimentos Sociais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15873",
+      "codigo": "HZ948",
+      "nome": "Estudos Legislativos I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15872",
+      "codigo": "HZ947",
+      "nome": "Estado, Nação e Nacionalismo II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15871",
+      "codigo": "HZ943",
+      "nome": "Relações Internacionais II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9201",
+      "codigo": "HZ346",
+      "nome": "Política e Direito II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15870",
+      "codigo": "HZ847",
+      "nome": "Estado e Reformas Econômicas no Capitalismo Contemporâneo II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3741",
+      "codigo": "HZ340",
+      "nome": "Política e Direito I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3724",
+      "codigo": "HZ249",
+      "nome": "Pensamento Político: Debates Contemporâneos",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3716",
+      "codigo": "HZ240",
+      "nome": "Democracia e Cidadania",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15869",
+      "codigo": "HZ747",
+      "nome": "Regimes e Sistemas Políticos Comparados II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3691",
+      "codigo": "HZ140",
+      "nome": "Partidos Políticos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15868",
+      "codigo": "HZ647",
+      "nome": "Pensamento Político Brasileiro II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15867",
+      "codigo": "HZ549",
+      "nome": "Políticas Públicas II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15866",
+      "codigo": "HZ548",
+      "nome": "Trabalho e Sindicalismo II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15864",
+      "codigo": "HZ449",
+      "nome": "Partidos Políticos II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15865",
+      "codigo": "HZ547",
+      "nome": "Democracia e Cidadania II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15863",
+      "codigo": "HZ448",
+      "nome": "Teorias da Ação Coletiva e Movimentos Sociais II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HZ345"
+        ]
+      ]
+    }
+  ]
+}

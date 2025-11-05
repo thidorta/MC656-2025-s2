@@ -1,0 +1,306 @@
+{
+  "course": {
+    "id": 30,
+    "name": "Filosofia (30)",
+    "code": "30"
+  },
+  "modalidade": "AA",
+  "modalidade_label": "AA - Bacharelado em Filosofia",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "AA",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "3312",
+      "codigo": "HG107",
+      "nome": "Redação Filosófica I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3313",
+      "codigo": "HG108",
+      "nome": "Introdução à Filosofia Geral I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3316",
+      "codigo": "HG207",
+      "nome": "Redação Filosófica II",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG107"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3317",
+      "codigo": "HG208",
+      "nome": "Introdução à Filosofia Geral II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17885",
+      "codigo": "HG211",
+      "nome": "Práticas de extensão em humanidades I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3318",
+      "codigo": "HG301",
+      "nome": "História da Filosofia Antiga I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3319",
+      "codigo": "HG302",
+      "nome": "História da Filosofia Medieval I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3321",
+      "codigo": "HG304",
+      "nome": "Teoria do Conhecimento I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3323",
+      "codigo": "HG402",
+      "nome": "História da Filosofia Contemporânea I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3325",
+      "codigo": "HG404",
+      "nome": "Introdução à Lógica",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3322",
+      "codigo": "HG401",
+      "nome": "História da Filosofia Moderna I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3320",
+      "codigo": "HG303",
+      "nome": "Ética I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3324",
+      "codigo": "HG403",
+      "nome": "Estética I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3373",
+      "codigo": "HG770",
+      "nome": "Monografia I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "HG207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17886",
+      "codigo": "HG212",
+      "nome": "Extensão em Humanidades II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17887",
+      "codigo": "HG213",
+      "nome": "Extensão em Humanidades III",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17888",
+      "codigo": "HG651",
+      "nome": "Práticas de extensão em filosofia I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17889",
+      "codigo": "HG652",
+      "nome": "Práticas de extensão em filosofia II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17890",
+      "codigo": "HG653",
+      "nome": "Práticas de extensão em filosofia III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17891",
+      "codigo": "HG654",
+      "nome": "Práticas de extensão em filosofia IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    }
+  ]
+}
