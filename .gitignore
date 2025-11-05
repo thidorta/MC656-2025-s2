@@ -1,3 +1,9 @@
+**/*.env
+/Crawler/outputs
+/Crawler/.env
+/Crawler/.venv/
+**/__pycache__/
+Crawler/__pycache__/
 ###############################
 # Global ignores (Python, OS, IDE, secrets)
 ###############################
@@ -97,6 +103,24 @@ __pypackages__/
 /backend/app/__pycache__/
 /backend/app/models/__pycache__/
 /backend/app/api/__pycache__/
+/backend/venv/
+/backend/.env
+/gde_app/node_modules/
+/gde_app/.expo/
+/gde_app/dist/
+/gde_app/npm-debug.*
+/gde_app/*.jks
+/gde_app/*.p8
+/gde_app/*.p12
+/gde_app/*.key
+/gde_app/*.mobileprovision
+/gde_app/*.orig.*
+/gde_app/web-build/
+/gde_app/ios
+/gde_app/android
+/gde_app/.DS_Store
+/gde_app/.metro-health-check*
+.DS_Store
 /crawler/__pycache__/
 /crawler/venv/
 /crawler/src/__pycache__/
