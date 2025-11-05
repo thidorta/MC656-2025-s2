@@ -2,7 +2,7 @@ from __future__ import annotations
 import re
 from typing import Dict, List, Optional
 
-from .io_raw import ensure_dir, save_raw, timestamped_name
+from .io_raw import save_raw
 
 
 def print_session_cookies(session, *, prefix: str = "Cookies na sessão"):
@@ -47,13 +47,11 @@ def log_response_with_selects(label: str, resp, raw_dir: str, filename: Optional
     ctype = resp.headers.get("Content-Type", "")
     print(f"Content-Type: {ctype}")
     print(f"Tamanho (bytes): {len(resp.content) if resp.content is not None else 0}")
-    print(f"Prévia do HTML: {summarize_html(resp.text, max_chars=300)}")
+    print(f"Previa do HTML: {summarize_html(resp.text, max_chars=300)}")
 
-    ensure_dir(raw_dir)
-    if filename is None:
-        filename = timestamped_name(label, ext="html")
-    path = save_raw(raw_dir, filename, resp.text)
-    print(f"✔ RAW salvo em: {path}")
+    hint = filename or label
+    path = save_raw(resp.text or "", raw_dir, hint)
+    print(f"RAW salvo em: {path}")
 
     selects = find_all_selects(resp.text or "")
     if not selects:
@@ -67,5 +65,7 @@ def log_response_with_selects(label: str, resp, raw_dir: str, filename: Optional
             for j, (v, l) in enumerate(s["options"][:5], start=1):
                 print(f"      - opt{j}: value='{v}' label='{l}'")
             if len(s["options"]) > 5:
-                print(f"      … (+{len(s['options']) - 5} opções)")
+                print(f"      ... (+{len(s['options']) - 5} opcoes)")
+
+    return path
 
