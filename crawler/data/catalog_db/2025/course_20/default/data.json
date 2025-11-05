@@ -1,0 +1,654 @@
+{
+  "course": {
+    "id": 20,
+    "name": "Pedagogia (20)",
+    "code": "20"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2297",
+      "codigo": "EP107",
+      "nome": "Introdução à Pedagogia - Organização do Trabalho Pedagógico",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2300",
+      "codigo": "EP110",
+      "nome": "História da Educação I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP107",
+          "EP108",
+          "EP122",
+          "EP130",
+          "EP140"
+        ],
+        [
+          "EP107",
+          "EP130"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2309",
+      "codigo": "EP130",
+      "nome": "Filosofia da Educação I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2313",
+      "codigo": "EP140",
+      "nome": "Sociologia Geral",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2315",
+      "codigo": "EP142",
+      "nome": "Educação e Antropologia Cultural",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP111",
+          "EP159",
+          "EP765"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11731",
+      "codigo": "EP570",
+      "nome": "Estudo e Produção Acadêmica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2353",
+      "codigo": "EP210",
+      "nome": "História da Educação II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP110",
+          "EP123",
+          "EP208",
+          "EP230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2357",
+      "codigo": "EP230",
+      "nome": "Filosofia da Educação II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP107",
+          "EP108",
+          "EP122",
+          "EP130",
+          "EP140"
+        ],
+        [
+          "EP130"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2377",
+      "codigo": "EP340",
+      "nome": "Sociologia da Educação I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP107",
+          "EP108",
+          "EP122",
+          "EP130",
+          "EP140"
+        ],
+        [
+          "EP140"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2379",
+      "codigo": "EP347",
+      "nome": "Educação, Cultura e Linguagens",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17670",
+      "codigo": "EP381",
+      "nome": "Pesquisa, Prática pedagógica e de extensão",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2307",
+      "codigo": "EP128",
+      "nome": "Psicologia I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2323",
+      "codigo": "EP152",
+      "nome": "Didática - Teoria Pedagógica",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP110",
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ],
+        [
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6760",
+      "codigo": "EP165",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2373",
+      "codigo": "EP330",
+      "nome": "Filosofia da Educação III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2396",
+      "codigo": "EP412",
+      "nome": "História da Educação III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP152",
+          "EP210",
+          "EP340"
+        ],
+        [
+          "EP210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2308",
+      "codigo": "EP129",
+      "nome": "Psicologia II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2329",
+      "codigo": "EP158",
+      "nome": "Educação, Corpo e Arte",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2336",
+      "codigo": "EP164",
+      "nome": "Organização do Trabalho Pedagógico e Gestão Escolar",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP159"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2356",
+      "codigo": "EP226",
+      "nome": "Psicologia e Educação",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2388",
+      "codigo": "EP372",
+      "nome": "Avaliação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2403",
+      "codigo": "EP445",
+      "nome": "Sociologia da Educação II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP110",
+          "EP123",
+          "EP208",
+          "EP230",
+          "EP340"
+        ],
+        [
+          "EP340"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2324",
+      "codigo": "EP153",
+      "nome": "Metodologia do Ensino Fundamental",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP152",
+          "EP208",
+          "EP340"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2411",
+      "codigo": "EP472",
+      "nome": "Escola e Conhecimento de História e Geografia",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2412",
+      "codigo": "EP473",
+      "nome": "Escola e Cultura Matemática",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2413",
+      "codigo": "EP474",
+      "nome": "Escola e Conhecimento em Ciências Naturais",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2481",
+      "codigo": "EP910",
+      "nome": "Estágio Supervisionado I - Gestão Escolar",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2389",
+      "codigo": "EP376",
+      "nome": "Práticas de Ensino e Estágio Supervisionado nos Anos Iniciais do Ensino Fundamental",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2410",
+      "codigo": "EP471",
+      "nome": "Escola, Alfabetização e Culturas da Escrita",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2390",
+      "codigo": "EP377",
+      "nome": "Planejamento Educacional e Estágio Supervisionado em Gestão Escolar",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6761",
+      "codigo": "EP790",
+      "nome": "Políticas de Educação Infantil",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2482",
+      "codigo": "EP911",
+      "nome": "Estágio Supervisionado II - Anos Iniciais do Ensino Fundamental",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2317",
+      "codigo": "EP144",
+      "nome": "Metodologia da Pesquisa em Ciências da Educação I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP108",
+          "EP208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17669",
+      "codigo": "EP282",
+      "nome": "Práticas extracurriculares de extensão",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2380",
+      "codigo": "EP348",
+      "nome": "Educação Especial e Inclusão",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2465",
+      "codigo": "EP808",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2483",
+      "codigo": "EP912",
+      "nome": "Estágio Supervisionado III - Educação Infantil",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2312",
+      "codigo": "EP139",
+      "nome": "Pedagogia da Educação Infantil",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2320",
+      "codigo": "EP146",
+      "nome": "Educação e Tecnologias",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2333",
+      "codigo": "EP162",
+      "nome": "Escola e Currículo",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP445"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11371",
+      "codigo": "EP879",
+      "nome": "Educação de Jovens e Adultos",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2480",
+      "codigo": "EP887",
+      "nome": "Educação Não Formal",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP153"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2485",
+      "codigo": "EP914",
+      "nome": "Estágio Supervisionado V - Educação Não Formal",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14264",
+      "codigo": "EP915",
+      "nome": "Histórias e Culturas Afro-brasileiras e Africanas",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14265",
+      "codigo": "EP916",
+      "nome": "Histórias e Culturas de Povos Indígenas Brasileiros",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2427",
+      "codigo": "EP529",
+      "nome": "Educação de Surdos e Língua de Sinais",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17671",
+      "codigo": "EP923",
+      "nome": "Prática e Extensão em Educação Infantil",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2466",
+      "codigo": "EP809",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP808"
+        ]
+      ]
+    }
+  ]
+}

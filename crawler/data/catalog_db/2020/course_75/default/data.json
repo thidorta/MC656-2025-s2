@@ -1,0 +1,110 @@
+{
+  "course": {
+    "id": 75,
+    "name": "Estudos Literários (75)",
+    "code": "75"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "5941",
+      "codigo": "TL108",
+      "nome": "Introdução à Literatura e Cultura Brasileira",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5942",
+      "codigo": "TL109",
+      "nome": "Introdução aos Estudos Literários",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5951",
+      "codigo": "TL118",
+      "nome": "Textos em Teoria, Crítica e História Literária I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5986",
+      "codigo": "TL155",
+      "nome": "Tópicos em Literatura Clássica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6019",
+      "codigo": "TL222",
+      "nome": "Pesquisa XII: Historiografia Literária I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6051",
+      "codigo": "TL255",
+      "nome": "Tópicos em Literatura Clássica II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6113",
+      "codigo": "TL908",
+      "nome": "Monografia I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6200",
+      "codigo": "TL909",
+      "nome": "Monografia II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TL908"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1425 @@
+{
+  "course": {
+    "id": 64,
+    "name": "Comunicação Social - Midialogia (64)",
+    "code": "64"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1044",
+      "codigo": "CS100",
+      "nome": "Cultura Moderna e Imagem",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1046",
+      "codigo": "CS102",
+      "nome": "Fotografia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1047",
+      "codigo": "CS103",
+      "nome": "Teorias da Comunicação",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1048",
+      "codigo": "CS104",
+      "nome": "História da Fotografia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8131",
+      "codigo": "CS106",
+      "nome": "Métodos e Técnicas de Pesquisa e de Desenvolvimento de Produtos em Midialogia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11395",
+      "codigo": "CS107",
+      "nome": "Introdução ao Pensamento Computacional",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1050",
+      "codigo": "CS200",
+      "nome": "Captação e Edição de Áudio",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1053",
+      "codigo": "CS203",
+      "nome": "Planejamento e Produção de Produtos Audiovisuais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1055",
+      "codigo": "CS204",
+      "nome": "Comunicação, Cultura e Sociedade",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11396",
+      "codigo": "CS206",
+      "nome": "Teoria da Imagem",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1037",
+      "codigo": "CS052",
+      "nome": "Fotografia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1059",
+      "codigo": "CS300",
+      "nome": "Recursos Eletrônicos Aplicados à Produção Sonora",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS200"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1060",
+      "codigo": "CS301",
+      "nome": "História do Rádio",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1061",
+      "codigo": "CS302",
+      "nome": "História da TV e do Vídeo",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1063",
+      "codigo": "CS304",
+      "nome": "História do Cinema I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1066",
+      "codigo": "CS400",
+      "nome": "Computação Gráfica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1024",
+      "codigo": "CS039",
+      "nome": "Oficina de Roteiro I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS304",
+          "CS401"
+        ],
+        [
+          "CS401",
+          "CS404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1025",
+      "codigo": "CS040",
+      "nome": "Oficina de Roteiro II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS039"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1057",
+      "codigo": "CS205",
+      "nome": "Tecnologias da Informação e da Comunicação",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1062",
+      "codigo": "CS303",
+      "nome": "Edição de Produtos Audiovisuais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1067",
+      "codigo": "CS401",
+      "nome": "Teoria do Cinema",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1068",
+      "codigo": "CS402",
+      "nome": "Fotografia e Movimento",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1070",
+      "codigo": "CS404",
+      "nome": "História do Cinema II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1071",
+      "codigo": "CS405",
+      "nome": "Educação e Tecnologia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1072",
+      "codigo": "CS500",
+      "nome": "História do Cinema Brasileiro",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11397",
+      "codigo": "CS508",
+      "nome": "Redes: Convergência e Sociedade",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11237",
+      "codigo": "CS601",
+      "nome": "História e Imagem: Laboratório de Cultura Visual e Mídia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1052",
+      "codigo": "CS202",
+      "nome": "Antropologia da Imagem",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1026",
+      "codigo": "CS041",
+      "nome": "Projeto de Cinema I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS203",
+          "CS304"
+        ],
+        [
+          "CS203",
+          "CS404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "982",
+      "codigo": "CS001",
+      "nome": "Projeto em Fotografia",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS102",
+          "CS104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10700",
+      "codigo": "CS072",
+      "nome": "Projetos Integrados V",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS203",
+          "CS303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10698",
+      "codigo": "CS070",
+      "nome": "Projetos Integrados III - II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS069"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1029",
+      "codigo": "CS043",
+      "nome": "Projetos Especiais",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10697",
+      "codigo": "CS069",
+      "nome": "Projetos Integrados III - I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS203",
+          "CS303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10696",
+      "codigo": "CS068",
+      "nome": "Projetos Integrados II - II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS067"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10695",
+      "codigo": "CS067",
+      "nome": "Projetos Integrados II - I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS203",
+          "CS303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10693",
+      "codigo": "CS065",
+      "nome": "Projetos Integrados I - I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS203",
+          "CS303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10699",
+      "codigo": "CS071",
+      "nome": "Projetos Integrados IV",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS203",
+          "CS303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10692",
+      "codigo": "CS064",
+      "nome": "Projetos Especiais IV - II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS063"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10691",
+      "codigo": "CS063",
+      "nome": "Projetos Especiais IV - I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS203",
+          "CS303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10690",
+      "codigo": "CS062",
+      "nome": "Projetos Especiais III - II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS061"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10688",
+      "codigo": "CS060",
+      "nome": "Projetos Especiais II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS203",
+          "CS303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10694",
+      "codigo": "CS066",
+      "nome": "Projetos Integrados I - II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS065"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7064",
+      "codigo": "CS047",
+      "nome": "Projeto em TV e Vídeo II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS046"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7063",
+      "codigo": "CS046",
+      "nome": "Projeto em TV e Vídeo I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS203",
+          "CS302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1033",
+      "codigo": "CS045",
+      "nome": "Projeto em Produção Sonora II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS044",
+          "CS300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18421",
+      "codigo": "CS082",
+      "nome": "Projeto em Meios Emergentes II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS081"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10689",
+      "codigo": "CS061",
+      "nome": "Projetos Especiais III - I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS203",
+          "CS303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18420",
+      "codigo": "CS081",
+      "nome": "Projeto em Meios Emergentes I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS205",
+          "CS400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11234",
+      "codigo": "CS074",
+      "nome": "Projeto em Narrativas Digitais II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11233",
+      "codigo": "CS073",
+      "nome": "Projeto em Narrativas Digitais I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS305"
+        ],
+        [
+          "CS508"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1030",
+      "codigo": "CS044",
+      "nome": "Projeto em Produção Sonora I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1028",
+      "codigo": "CS042",
+      "nome": "Projeto de Cinema II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS041",
+          "CS203",
+          "CS304"
+        ],
+        [
+          "CS041",
+          "CS203",
+          "CS404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "481",
+      "codigo": "AR130",
+      "nome": "Arte e Produção",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17457",
+      "codigo": "CS509",
+      "nome": "Gerenciamento de Metadados e Análise de Mídias Sociais Digitais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS107"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1007",
+      "codigo": "CS024",
+      "nome": "Tópicos Especiais em Internet/Multimídia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11236",
+      "codigo": "CS505",
+      "nome": "Realização Audiovisual II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1017",
+      "codigo": "CS034",
+      "nome": "Tópicos Especiais em Midialogia VI",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1008",
+      "codigo": "CS025",
+      "nome": "Oficina de Produção Audiovisual",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1015",
+      "codigo": "CS032",
+      "nome": "Monitoria",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17456",
+      "codigo": "CS409",
+      "nome": "Televisão, Vídeo e o Campo Midiático Contemporâneo",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1004",
+      "codigo": "CS021",
+      "nome": "Tópicos Especiais em Fotografia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11235",
+      "codigo": "CS504",
+      "nome": "Realização Audiovisual I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS039",
+          "CS040",
+          "CS203",
+          "CS303",
+          "CS402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1016",
+      "codigo": "CS033",
+      "nome": "Difusão Cultural e Tecnológica em Midialogia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1003",
+      "codigo": "CS020",
+      "nome": "Tópicos Especiais em Midialogia IV",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18425",
+      "codigo": "CS499",
+      "nome": "Computação Gráfica Aplicada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17455",
+      "codigo": "CS309",
+      "nome": "Comunicação, Divulgação Científica e Percepção Pública",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1002",
+      "codigo": "CS019",
+      "nome": "Tópicos Especiais em Midialogia III",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1064",
+      "codigo": "CS305",
+      "nome": "Redes Convergentes",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "988",
+      "codigo": "CS006",
+      "nome": "Tópicos Especiais em Cinema I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1000",
+      "codigo": "CS017",
+      "nome": "Projeto de Iniciação Científica",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18424",
+      "codigo": "CS188",
+      "nome": "Interfaces Computacionais: Programações Fundamentais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17159",
+      "codigo": "CS132",
+      "nome": "Monitoria II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS032"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "990",
+      "codigo": "CS008",
+      "nome": "Tópicos Especiais em Cinema Brasileiro I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11477",
+      "codigo": "CS059",
+      "nome": "Documentário: História, Teoria e Análise",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1014",
+      "codigo": "CS031",
+      "nome": "Estudos Dirigidos I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "998",
+      "codigo": "CS015",
+      "nome": "Tópicos Especiais em Midialogia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18423",
+      "codigo": "CS185",
+      "nome": "Mídias Radiofônicas: teoria, história e análise",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15486",
+      "codigo": "CS094",
+      "nome": "Cinema e Tecnologias Digitais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18419",
+      "codigo": "CS075",
+      "nome": "Mídias Sonoras: História e Contemporaneidade",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10687",
+      "codigo": "CS049",
+      "nome": "Tópicos Especiais em Midialogia XII",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1013",
+      "codigo": "CS030",
+      "nome": "Estudos Dirigidos II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "997",
+      "codigo": "CS014",
+      "nome": "Tópicos Especiais em Internet/Multimídia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS073",
+          "CS503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18422",
+      "codigo": "CS155",
+      "nome": "Elementos da Linguagem Sonora e Musical",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15485",
+      "codigo": "CS092",
+      "nome": "Análise Fílmica II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1088",
+      "codigo": "CS801",
+      "nome": "Estágio Supervisionado em Midialogia II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1022",
+      "codigo": "CS038",
+      "nome": "Tópicos Especiais em Midialogia X",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1012",
+      "codigo": "CS029",
+      "nome": "Tópicos Especiais em Midialogia V",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "993",
+      "codigo": "CS011",
+      "nome": "Tópicos Especiais em Fotografia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS102",
+          "CS104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15484",
+      "codigo": "CS091",
+      "nome": "Análise Fílmica  I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1087",
+      "codigo": "CS800",
+      "nome": "Estágio Supervisionado em Midialogia I",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1021",
+      "codigo": "CS037",
+      "nome": "Tópicos Especiais em Midialogia IX",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1011",
+      "codigo": "CS028",
+      "nome": "Tópicos Especiais em Midialogia III",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "991",
+      "codigo": "CS009",
+      "nome": "Tópicos Especiais em Cinema Brasileiro II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17459",
+      "codigo": "CS511",
+      "nome": "Antropologia da Comunicação Algorítmica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS107",
+          "CS205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "380",
+      "codigo": "AP709",
+      "nome": "Arte e Novos Meios I",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11232",
+      "codigo": "CS507",
+      "nome": "Narrativas Audiovisuais: Teorias, Análises e Processos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1019",
+      "codigo": "CS036",
+      "nome": "Tópicos Especiais em Midialogia VIII",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1010",
+      "codigo": "CS027",
+      "nome": "Oficina de Direção de Arte",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "989",
+      "codigo": "CS007",
+      "nome": "Tópicos Especiais em Cinema II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17458",
+      "codigo": "CS510",
+      "nome": "Arte Tecnológica: Meios Eletrônicos e Computacionais.",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10686",
+      "codigo": "CS048",
+      "nome": "Tópicos Especiais em Midialogia XI",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11231",
+      "codigo": "CS506",
+      "nome": "Direção de Atores",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1018",
+      "codigo": "CS035",
+      "nome": "Tópicos Especiais em Midialogia VII",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1009",
+      "codigo": "CS026",
+      "nome": "Oficina de Direção de Fotografia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17161",
+      "codigo": "CS912",
+      "nome": "Atividades Orientadas de Extensão em Midialogia II",
+      "creditos": 10,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS911"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17160",
+      "codigo": "CS911",
+      "nome": "Atividades Orientadas de Extensão em Midialogia I",
+      "creditos": 10,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

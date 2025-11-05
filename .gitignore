@@ -91,7 +91,6 @@ secrets.*
 # PDM / other local caches
 __pypackages__/
 
-/crawler/outputs
 /crawler/.env
 /backend/.env
 /backend/__pycache__/
@@ -107,4 +106,4 @@ __pypackages__/
 /crawler/src/utils/__pycache__
 /crawler/src/tools/__pycache__/
 /crawler/src/db/__pycache__/
-/crawler/data
+/crawler/data/user_db/

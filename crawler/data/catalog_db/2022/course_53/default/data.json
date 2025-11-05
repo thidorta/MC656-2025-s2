@@ -1,0 +1,1421 @@
+{
+  "course": {
+    "id": 53,
+    "name": "Geologia (53)",
+    "code": "53"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2022,
+  "parameters": {
+    "catalogo": "2022",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5345",
+      "codigo": "QG104",
+      "nome": "Química",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3141",
+      "codigo": "GE300",
+      "nome": "Mineralogia I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3280",
+      "codigo": "GN101",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3286",
+      "codigo": "GN107",
+      "nome": "Ciência do Sistema Mundo I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14869",
+      "codigo": "GN111",
+      "nome": "Sistema Terra",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5314",
+      "codigo": "QF331",
+      "nome": "Físico-Química",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "QG101"
+        ],
+        [
+          "MA111",
+          "QG104"
+        ],
+        [
+          "MA111",
+          "QG108"
+        ],
+        [
+          "MS220",
+          "QG101"
+        ],
+        [
+          "MS220",
+          "QG104"
+        ],
+        [
+          "MS220",
+          "QG108"
+        ],
+        [
+          "MS380",
+          "QG101"
+        ],
+        [
+          "MS380",
+          "QG104"
+        ],
+        [
+          "MS380",
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14870",
+      "codigo": "GE207",
+      "nome": "Introdução ao Sensoriamento Remoto e Fotogeologia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3146",
+      "codigo": "GE406",
+      "nome": "Mineralogia II",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3227",
+      "codigo": "GF508",
+      "nome": "Pedologia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3930",
+      "codigo": "LA242",
+      "nome": "Inglês Instrumental à Distância",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA142"
+        ],
+        [
+          "LA122"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "607",
+      "codigo": "BD101",
+      "nome": "Biologia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3149",
+      "codigo": "GE502",
+      "nome": "Petrografia Sedimentar",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3155",
+      "codigo": "GE601",
+      "nome": "Sedimentologia",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN111"
+        ],
+        [
+          "GN106",
+          "GN208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3210",
+      "codigo": "GF303",
+      "nome": "Geomorfologia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3284",
+      "codigo": "GN105",
+      "nome": "Teorias e Métodos da Ciência",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3298",
+      "codigo": "GN304",
+      "nome": "Trabalho de Campo",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN107",
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3143",
+      "codigo": "GE402",
+      "nome": "Elementos de Paleontologia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3147",
+      "codigo": "GE407",
+      "nome": "Desenho Geológico",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3222",
+      "codigo": "GF503",
+      "nome": "Sociologia",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3152",
+      "codigo": "GE506",
+      "nome": "Petrografia e Petrologia Ígnea",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14871",
+      "codigo": "GE507",
+      "nome": "Sensoriamento Remoto",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14872",
+      "codigo": "GE512",
+      "nome": "Gestão, Governança e Sustentabilidade",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1152",
+      "codigo": "CV323",
+      "nome": "Topografia",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE207"
+        ],
+        [
+          "FA173"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3150",
+      "codigo": "GE503",
+      "nome": "Geoquímica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406",
+          "QF331"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3157",
+      "codigo": "GE603",
+      "nome": "Geologia Estrutural",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE407"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3159",
+      "codigo": "GE606",
+      "nome": "Petrografia e Petrologia Metamórfica",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3172",
+      "codigo": "GE804",
+      "nome": "Sistemas de Informações Georreferenciadas",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE507"
+        ],
+        [
+          "GE707"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3134",
+      "codigo": "GE117",
+      "nome": "Geoquímica Analítica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3154",
+      "codigo": "GE511",
+      "nome": "Geologia de Campo I",
+      "creditos": 12,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601",
+          "GN304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3170",
+      "codigo": "GE802",
+      "nome": "Geotectônica",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE603",
+          "GE606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3178",
+      "codigo": "GE903",
+      "nome": "Geologia Urbana",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3162",
+      "codigo": "GE703",
+      "nome": "Geofísica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3163",
+      "codigo": "GE704",
+      "nome": "Estratigrafia",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601",
+          "GE603"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3167",
+      "codigo": "GE708",
+      "nome": "Geologia de Campo II",
+      "creditos": 12,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE506",
+          "GE511",
+          "GE603",
+          "GE606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3175",
+      "codigo": "GE806",
+      "nome": "Mecânica de Solos e Rochas",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6280",
+      "codigo": "GE910",
+      "nome": "Geologia de Campo III",
+      "creditos": 12,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE708"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3165",
+      "codigo": "GE706",
+      "nome": "Geologia Histórica e do Brasil",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE402",
+          "GE802"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3168",
+      "codigo": "GE711",
+      "nome": "Geologia de Hidrocarbonetos",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE603",
+          "GE704"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3171",
+      "codigo": "GE803",
+      "nome": "Geologia Econômica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE503",
+          "GE603",
+          "GE606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3173",
+      "codigo": "GE805",
+      "nome": "Hidrogeologia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11380",
+      "codigo": "GE007",
+      "nome": "Estágio Supervisionado",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3156",
+      "codigo": "GE602",
+      "nome": "Economia dos Recursos Minerais e Energéticos",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3176",
+      "codigo": "GE901",
+      "nome": "Prospecção",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE503",
+          "GE603",
+          "GE803"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3179",
+      "codigo": "GE904",
+      "nome": "Geotecnia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE806"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3118",
+      "codigo": "GE001",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 12,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3140",
+      "codigo": "GE127",
+      "nome": "Tópicos Avançados em Geologia II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3126",
+      "codigo": "GE109",
+      "nome": "Inclusões Fluidas",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6845",
+      "codigo": "GE912",
+      "nome": "Mapas e Linguagem Visual no Ensino de Ciências Naturais",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3137",
+      "codigo": "GE120",
+      "nome": "Geofísica-Sísmica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6934",
+      "codigo": "GE122",
+      "nome": "Tópicos Especiais em Geologia",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6878",
+      "codigo": "GE124",
+      "nome": "Tópicos Especiais em Geologia I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3129",
+      "codigo": "GE112",
+      "nome": "Geocronologia e Geologia Isotópica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3131",
+      "codigo": "GE114",
+      "nome": "Indústria dos Minerais Metálicos",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "770",
+      "codigo": "BT201",
+      "nome": "Biogeografia",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BD101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3122",
+      "codigo": "GE104",
+      "nome": "Metamorfismo de Alto Grau e Evolução Crustal",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3124",
+      "codigo": "GE107",
+      "nome": "Petrografia de Minérios",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3161",
+      "codigo": "GE702",
+      "nome": "História e Teoria das Organizações",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3128",
+      "codigo": "GE111",
+      "nome": "Depósitos Lateríticos",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14052",
+      "codigo": "GE005",
+      "nome": "Iniciação Científica I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3119",
+      "codigo": "GE100",
+      "nome": "Estratégia e Gestão Organizacional",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3121",
+      "codigo": "GE102",
+      "nome": "Análise Estatística de Dados Geológicos",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14873",
+      "codigo": "GF136",
+      "nome": "Cartografia Sistemática",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3295",
+      "codigo": "GN301",
+      "nome": "História das Teorias Econômicas",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3145",
+      "codigo": "GE405",
+      "nome": "Direito dos Recursos Naturais",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3274",
+      "codigo": "GM222",
+      "nome": "Direito Ambiental",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11847",
+      "codigo": "GT105",
+      "nome": "Teorias e Métodos da Ciência",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6201",
+      "codigo": "GE123",
+      "nome": "Tópicos Avançados em Geologia",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3177",
+      "codigo": "GE902",
+      "nome": "Geologia de Minas, Lavra e Tratamento de Minério",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE511",
+          "GE601",
+          "GE603",
+          "GE806"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6846",
+      "codigo": "GE914",
+      "nome": "Ciência e Linguagens",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6848",
+      "codigo": "GE916",
+      "nome": "Ensino de Ciências da Terra e do Ambiente",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3273",
+      "codigo": "GM201",
+      "nome": "Geologia e Recursos Minerais",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3139",
+      "codigo": "GE126",
+      "nome": "Tópicos Avançados em Geologia I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9211",
+      "codigo": "GE128",
+      "nome": "Remediação de Áreas Contaminadas",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE117",
+          "GF508"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6844",
+      "codigo": "GE911",
+      "nome": "Comunicação Científica em Ciências da Terra",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3136",
+      "codigo": "GE119",
+      "nome": "Greenstone Belts",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3138",
+      "codigo": "GE121",
+      "nome": "Mineração e Meio Ambiente",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3120",
+      "codigo": "GE101",
+      "nome": "Geoestatística",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6801",
+      "codigo": "GE125",
+      "nome": "Tópicos Especiais em Geologia II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3130",
+      "codigo": "GE113",
+      "nome": "Engenharia Econômica de Recursos Minerais",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3132",
+      "codigo": "GE115",
+      "nome": "Técnicas de Microanálise Eletrônica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3135",
+      "codigo": "GE118",
+      "nome": "Planejamento de Recursos Minerais",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3123",
+      "codigo": "GE106",
+      "nome": "Evolução Metalogenética",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3125",
+      "codigo": "GE108",
+      "nome": "Geoquímica Ambiental",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3127",
+      "codigo": "GE110",
+      "nome": "Indústria dos Minerais Não Metálicos",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6850",
+      "codigo": "GE003",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14053",
+      "codigo": "GE006",
+      "nome": "Iniciação Científica II",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3233",
+      "codigo": "GF605",
+      "nome": "Geomorfologia do Brasil",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GF506"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3293",
+      "codigo": "GN207",
+      "nome": "Introdução ao Sensoriamento Remoto",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3144",
+      "codigo": "GE403",
+      "nome": "Micropalentologia e Palinologia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14051",
+      "codigo": "GE002",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3276",
+      "codigo": "GM290",
+      "nome": "Elementos de Geofísica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11846",
+      "codigo": "GF135",
+      "nome": "Antropologia da Moral e da Ética",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3169",
+      "codigo": "GE801",
+      "nome": "História das Ciências Naturais",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6853",
+      "codigo": "GE913",
+      "nome": "Ciências Naturais e Ambiente",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6847",
+      "codigo": "GE915",
+      "nome": "Educação, Ciência, Tecnologia e Sociedade",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3133",
+      "codigo": "GE116",
+      "nome": "Política e Administração de Recursos Petrolíferos",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

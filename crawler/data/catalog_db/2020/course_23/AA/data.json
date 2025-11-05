@@ -1,0 +1,559 @@
+{
+  "course": {
+    "id": 23,
+    "name": "Dança (23)",
+    "code": "23"
+  },
+  "modalidade": "AA",
+  "modalidade_label": "AA - Bacharelado em Dança",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "AA",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "11030",
+      "codigo": "AD013",
+      "nome": "Ateliê de Prática e Ensino da Dança I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "478",
+      "codigo": "AR101",
+      "nome": "Fundamentos Filosóficos da Arte Educação",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "115",
+      "codigo": "AD021",
+      "nome": "Ateliê de Criação I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "121",
+      "codigo": "AD030",
+      "nome": "Ateliê de Produção Cênica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "122",
+      "codigo": "AD041",
+      "nome": "Técnica I: Investigação e Percepção",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "145",
+      "codigo": "AD116",
+      "nome": "Anatomia e Fisiologia Humana Básica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "147",
+      "codigo": "AD135",
+      "nome": "Dança do Brasil I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "172",
+      "codigo": "AD421",
+      "nome": "História da Dança I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "650",
+      "codigo": "BF223",
+      "nome": "Fisiologia do Movimento",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD116"
+        ],
+        [
+          "BA123"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10584",
+      "codigo": "AD014",
+      "nome": "Ateliê de Prática e Ensino da Dança II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD013"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11129",
+      "codigo": "AD015",
+      "nome": "Dança do Brasil II: Prática e Ensino",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD136"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "116",
+      "codigo": "AD022",
+      "nome": "Ateliê de Criação II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD021"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "123",
+      "codigo": "AD042",
+      "nome": "Técnica II: Investigação e Percepção",
+      "creditos": 10,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD041"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "183",
+      "codigo": "AD521",
+      "nome": "História da Dança II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD421"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "188",
+      "codigo": "AD601",
+      "nome": "História da Dança no Brasil",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "484",
+      "codigo": "AR301",
+      "nome": "Psicologia do Desenvolvimento Aplicado às Artes I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1757",
+      "codigo": "EF920",
+      "nome": "Cinesiologia I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11031",
+      "codigo": "AD016",
+      "nome": "Técnica III: Prática, Análise e Ensino da Dança",
+      "creditos": 10,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD042"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "117",
+      "codigo": "AD023",
+      "nome": "Ateliê de Criação III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD022"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "130",
+      "codigo": "AD051",
+      "nome": "Atividade Científico Cultural I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "166",
+      "codigo": "AD335",
+      "nome": "Dança do Brasil III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD015"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "152",
+      "codigo": "AD213",
+      "nome": "Introdução à Metodologia de Pesquisa",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "176",
+      "codigo": "AD435",
+      "nome": "Dança do Brasil IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD335"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1758",
+      "codigo": "EF921",
+      "nome": "Cinesiologia II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EF920"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11130",
+      "codigo": "AD017",
+      "nome": "Ateliê de Criação IV: Prática e Ensino",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD023"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "125",
+      "codigo": "AD044",
+      "nome": "Técnica IV: Prática e Análise",
+      "creditos": 10,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD016"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "131",
+      "codigo": "AD052",
+      "nome": "Atividade Científico Cultural II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD051"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "132",
+      "codigo": "AD053",
+      "nome": "Atividade Científico Cultural III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD052"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "119",
+      "codigo": "AD025",
+      "nome": "Ateliê de Criação V",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD017"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "126",
+      "codigo": "AD045",
+      "nome": "Técnica V: Variação e Exploração",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD036",
+          "AD037"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "120",
+      "codigo": "AD026",
+      "nome": "Ateliê de Criação VI",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD017"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "127",
+      "codigo": "AD046",
+      "nome": "Técnica VI: Variação e Exploração",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD045"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "133",
+      "codigo": "AD054",
+      "nome": "Atividade Científico Cultural IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD053"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "134",
+      "codigo": "AD055",
+      "nome": "Atividade Científico Cultural V",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD054"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "136",
+      "codigo": "AD061",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "creditos": 10,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD014",
+          "AD026",
+          "AD030",
+          "AD046",
+          "AD435"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "128",
+      "codigo": "AD047",
+      "nome": "Técnica VII: Expressão e Integração",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD040"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "129",
+      "codigo": "AD048",
+      "nome": "Técnica VIII: Expressão e Integração",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD047"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "135",
+      "codigo": "AD056",
+      "nome": "Atividade Científico Cultural VI",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "AD055"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "137",
+      "codigo": "AD062",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 10,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": []
+    }
+  ]
+}

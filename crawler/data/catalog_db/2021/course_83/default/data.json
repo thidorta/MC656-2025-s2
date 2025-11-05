@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 83,
+    "name": "Curso Superior de Tecnologia em Construção de Edifícios (83)",
+    "code": "83"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": []
+}

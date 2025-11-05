@@ -1,0 +1,399 @@
+{
+  "course": {
+    "id": 19,
+    "name": "História (19)",
+    "code": "19"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Licenciatura em História",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "AB",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "3423",
+      "codigo": "HH183",
+      "nome": "Introdução ao Estudo de História",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3424",
+      "codigo": "HH185",
+      "nome": "História Antiga",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9756",
+      "codigo": "HH186",
+      "nome": "Laboratório de História",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9757",
+      "codigo": "HH188",
+      "nome": "História da África",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3426",
+      "codigo": "HH285",
+      "nome": "História Medieval",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3428",
+      "codigo": "HH381",
+      "nome": "História Moderna I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3429",
+      "codigo": "HH384",
+      "nome": "História do Brasil I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3430",
+      "codigo": "HH386",
+      "nome": "História da América I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3434",
+      "codigo": "HH483",
+      "nome": "História do Brasil II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3435",
+      "codigo": "HH484",
+      "nome": "História Moderna II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3433",
+      "codigo": "HH482",
+      "nome": "História da América II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3438",
+      "codigo": "HH584",
+      "nome": "História do Brasil III",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3439",
+      "codigo": "HH587",
+      "nome": "História Contemporânea I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3442",
+      "codigo": "HH682",
+      "nome": "História do Brasil IV",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3443",
+      "codigo": "HH685",
+      "nome": "História Contemporânea II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HH183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3444",
+      "codigo": "HH690",
+      "nome": "Estágio Supervisionado em História",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11362",
+      "codigo": "LA001",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3917",
+      "codigo": "LA213",
+      "nome": "Francês II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "LA113"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3895",
+      "codigo": "LA112",
+      "nome": "Inglês I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3916",
+      "codigo": "LA212",
+      "nome": "Inglês II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "LA112"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3896",
+      "codigo": "LA113",
+      "nome": "Francês I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1927",
+      "codigo": "EL142",
+      "nome": "Tópicos Especiais em Ciências Sociais Aplicadas à Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,656 @@
+{
+  "course": {
+    "id": 22,
+    "name": "Música (22)",
+    "code": "22"
+  },
+  "modalidade": "TC",
+  "modalidade_label": "TC - Teclados - Música Popular",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "TC",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4667",
+      "codigo": "MP104",
+      "nome": "Teclados I",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4672",
+      "codigo": "MP140",
+      "nome": "História e Linguagem da Música Popular I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4674",
+      "codigo": "MP150",
+      "nome": "Música e Tecnologia I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4840",
+      "codigo": "MU058",
+      "nome": "Rítmica I",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4857",
+      "codigo": "MU105",
+      "nome": "Estruturação Musical I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4975",
+      "codigo": "MU293",
+      "nome": "Percepção Musical II",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU193"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4680",
+      "codigo": "MP204",
+      "nome": "Teclados II",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4685",
+      "codigo": "MP240",
+      "nome": "História e Linguagem da Música Popular II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP140"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4687",
+      "codigo": "MP250",
+      "nome": "Música e Tecnologia II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP150"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9170",
+      "codigo": "MU049",
+      "nome": "Introdução à Pesquisa",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU058"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4919",
+      "codigo": "MU205",
+      "nome": "Estruturação Musical II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4670",
+      "codigo": "MP120",
+      "nome": "Prática Instrumental I",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5018",
+      "codigo": "MU393",
+      "nome": "Percepção Musical III",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU293"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4671",
+      "codigo": "MP130",
+      "nome": "Harmonia I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4683",
+      "codigo": "MP220",
+      "nome": "Prática Instrumental II",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP120"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4693",
+      "codigo": "MP304",
+      "nome": "Teclados III",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4698",
+      "codigo": "MP340",
+      "nome": "História e Linguagem da Música Popular III",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP240"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4842",
+      "codigo": "MU060",
+      "nome": "Rítmica III",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU059"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5060",
+      "codigo": "MU493",
+      "nome": "Percepção Musical IV",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU393"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4684",
+      "codigo": "MP230",
+      "nome": "Harmonia II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP130"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4696",
+      "codigo": "MP320",
+      "nome": "Prática Instrumental III",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP220"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4706",
+      "codigo": "MP404",
+      "nome": "Teclados IV",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4711",
+      "codigo": "MP440",
+      "nome": "História e Linguagem da Música Popular IV",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP340"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4843",
+      "codigo": "MU061",
+      "nome": "Rítmica IV",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU060"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4719",
+      "codigo": "MP504",
+      "nome": "Teclados V",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4862",
+      "codigo": "MU111",
+      "nome": "Música Industrializada I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4875",
+      "codigo": "MU132",
+      "nome": "Trilhas Sonoras I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4669",
+      "codigo": "MP110",
+      "nome": "Arranjo I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4697",
+      "codigo": "MP330",
+      "nome": "Harmonia III",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4709",
+      "codigo": "MP420",
+      "nome": "Prática Instrumental IV",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP320"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4722",
+      "codigo": "MP520",
+      "nome": "Prática Instrumental V",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP420"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4729",
+      "codigo": "MP604",
+      "nome": "Teclados VI",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4936",
+      "codigo": "MU231",
+      "nome": "Música Industrializada II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4937",
+      "codigo": "MU232",
+      "nome": "Trilhas Sonoras II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MU132"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "16223",
+      "codigo": "MP106",
+      "nome": "Atividades complementares I",
+      "creditos": 7,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4682",
+      "codigo": "MP210",
+      "nome": "Arranjo II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4710",
+      "codigo": "MP430",
+      "nome": "Harmonia IV",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP330"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4732",
+      "codigo": "MP620",
+      "nome": "Prática Instrumental VI",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4739",
+      "codigo": "MP704",
+      "nome": "Teclados VII",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP604"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "16224",
+      "codigo": "MP107",
+      "nome": "Atividades complementares II",
+      "creditos": 7,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4746",
+      "codigo": "MP804",
+      "nome": "Teclados VIII",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "MP704"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5188",
+      "codigo": "MU999",
+      "nome": "Projeto Final de Graduação",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "TC",
+      "prereqs": [
+        [
+          "EL874"
+        ],
+        [
+          "MP601"
+        ],
+        [
+          "MP602"
+        ],
+        [
+          "MP603"
+        ],
+        [
+          "MP604"
+        ],
+        [
+          "MP605"
+        ],
+        [
+          "MU671"
+        ]
+      ]
+    }
+  ]
+}

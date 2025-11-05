@@ -1,0 +1,623 @@
+{
+  "course": {
+    "id": 44,
+    "name": "Ciências Sociais (44)",
+    "code": "44"
+  },
+  "modalidade": "AH",
+  "modalidade_label": "AH - Licenciatura em Ciências Sociais - Geral",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "AH",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "834",
+      "codigo": "CE131",
+      "nome": "Introdução à Economia para Ciências Sociais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3692",
+      "codigo": "HZ141",
+      "nome": "Política I: Introdução à Ciência Política",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3706",
+      "codigo": "HZ158",
+      "nome": "Sociologia de Durkheim",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10577",
+      "codigo": "HZ160",
+      "nome": "Introdução a Antropologia: Natureza e Cultura",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3723",
+      "codigo": "HZ248",
+      "nome": "Política II: Política Brasileira",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3729",
+      "codigo": "HZ258",
+      "nome": "Sociologia de Marx",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ158"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10578",
+      "codigo": "HZ260",
+      "nome": "Antropologia II: Troca, Sociedade e Estrutura",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11720",
+      "codigo": "EL105",
+      "nome": "Tecnologias e Processos Educativos",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3745",
+      "codigo": "HZ345",
+      "nome": "Política III: Teorias do Estado",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3752",
+      "codigo": "HZ358",
+      "nome": "Sociologia de Weber",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ258"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10579",
+      "codigo": "HZ360",
+      "nome": "Antropologia III: Teorias e Experimentações Etnográficas",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ260"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11721",
+      "codigo": "HZ379",
+      "nome": "Oficinas de Leitura e Escrita em Humanidades",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9202",
+      "codigo": "HZ431",
+      "nome": "Metodologia e Técnicas de Pesquisa I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ141",
+          "HZ158",
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11362",
+      "codigo": "LA001",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11363",
+      "codigo": "HZ369",
+      "nome": "Ensino de Antropologia: Temas e Conceitos Fundamentais",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ345",
+          "HZ358",
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11364",
+      "codigo": "HZ349",
+      "nome": "Políticas Públicas Educacionais",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ345",
+          "HZ358",
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9203",
+      "codigo": "HZ631",
+      "nome": "Estatística para Ciências Sociais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3689",
+      "codigo": "HZ103",
+      "nome": "Estágio Supervisionado em Ciências Sociais I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ352"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11365",
+      "codigo": "HZ339",
+      "nome": "Educação e Questões Demográficas",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ345",
+          "HZ358",
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "888",
+      "codigo": "CE730",
+      "nome": "Economia Brasileira",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "CE131",
+          "HZ141",
+          "HZ158",
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3690",
+      "codigo": "HZ104",
+      "nome": "Estágio Supervisionado em Ciências Sociais II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11366",
+      "codigo": "HZ359",
+      "nome": "Educação e Sociedade",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "HZ345",
+          "HZ358",
+          "HZ360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1927",
+      "codigo": "EL142",
+      "nome": "Tópicos Especiais em Ciências Sociais Aplicadas à Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2380",
+      "codigo": "EP348",
+      "nome": "Educação Especial e Inclusão",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2333",
+      "codigo": "EP162",
+      "nome": "Escola e Currículo",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "EP445"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2388",
+      "codigo": "EP372",
+      "nome": "Avaliação",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2336",
+      "codigo": "EP164",
+      "nome": "Organização do Trabalho Pedagógico e Gestão Escolar",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "EP159"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2297",
+      "codigo": "EP107",
+      "nome": "Introdução à Pedagogia - Organização do Trabalho Pedagógico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2471",
+      "codigo": "EP814",
+      "nome": "Seminário de Educação, Cultura e Artes",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2368",
+      "codigo": "EP315",
+      "nome": "Pesquisa e Prática Pedagógica I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2300",
+      "codigo": "EP110",
+      "nome": "História da Educação I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "EP107",
+          "EP108",
+          "EP122",
+          "EP130",
+          "EP140"
+        ],
+        [
+          "EP107",
+          "EP130"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2480",
+      "codigo": "EP887",
+      "nome": "Educação Não Formal",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "EP153"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2377",
+      "codigo": "EP340",
+      "nome": "Sociologia da Educação I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "EP107",
+          "EP108",
+          "EP122",
+          "EP130",
+          "EP140"
+        ],
+        [
+          "EP140"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2309",
+      "codigo": "EP130",
+      "nome": "Filosofia da Educação I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2379",
+      "codigo": "EP347",
+      "nome": "Educação, Cultura e Linguagens",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2323",
+      "codigo": "EP152",
+      "nome": "Didática - Teoria Pedagógica",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AH",
+      "prereqs": [
+        [
+          "EP110",
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ],
+        [
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ]
+      ]
+    }
+  ]
+}

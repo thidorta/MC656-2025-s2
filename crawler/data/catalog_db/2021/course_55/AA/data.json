@@ -1,0 +1,554 @@
+{
+  "course": {
+    "id": 55,
+    "name": "Geografia (55)",
+    "code": "55"
+  },
+  "modalidade": "AA",
+  "modalidade_label": "AA - Bacharelado em Geografia",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "AA",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "7109",
+      "codigo": "GF129",
+      "nome": "Geografia Econômica",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14873",
+      "codigo": "GF136",
+      "nome": "Cartografia Sistemática",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3208",
+      "codigo": "GF301",
+      "nome": "História do Pensamento Geográfico",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3280",
+      "codigo": "GN101",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3286",
+      "codigo": "GN107",
+      "nome": "Ciência do Sistema Mundo I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14869",
+      "codigo": "GN111",
+      "nome": "Sistema Terra",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3219",
+      "codigo": "GF410",
+      "nome": "Climatologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3222",
+      "codigo": "GF503",
+      "nome": "Sociologia",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3229",
+      "codigo": "GF601",
+      "nome": "Geografia Regional (Teoria e Regionalização Mundial)",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3284",
+      "codigo": "GN105",
+      "nome": "Teorias e Métodos da Ciência",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3295",
+      "codigo": "GN301",
+      "nome": "História das Teorias Econômicas",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3212",
+      "codigo": "GF402",
+      "nome": "História Econômica, Política e Sociedade do Brasil",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3210",
+      "codigo": "GF303",
+      "nome": "Geomorfologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14874",
+      "codigo": "GF306",
+      "nome": "Geografia Regional: América Latina",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3232",
+      "codigo": "GF604",
+      "nome": "Geografia Urbana",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4427",
+      "codigo": "ME173",
+      "nome": "Estatística Descritiva",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3209",
+      "codigo": "GF302",
+      "nome": "Sensoriamento Remoto",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GN207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14875",
+      "codigo": "GF412",
+      "nome": "Climatologia Geográfica",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14876",
+      "codigo": "GF413",
+      "nome": "Geografia Regional: África",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3226",
+      "codigo": "GF507",
+      "nome": "Cartografia Temática",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3298",
+      "codigo": "GN304",
+      "nome": "Trabalho de Campo",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GN107",
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3930",
+      "codigo": "LA242",
+      "nome": "Inglês Instrumental à Distância",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "LA142"
+        ],
+        [
+          "LA122"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3211",
+      "codigo": "GF401",
+      "nome": "Metodologia da Geografia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3225",
+      "codigo": "GF506",
+      "nome": "Geomorfologia (Climática e Litorânea)",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3227",
+      "codigo": "GF508",
+      "nome": "Pedologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3236",
+      "codigo": "GF702",
+      "nome": "Meio Ambiente Urbano",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF604"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3220",
+      "codigo": "GF501",
+      "nome": "Geografia Agrária",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3221",
+      "codigo": "GF502",
+      "nome": "Geografia das Indústrias",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3233",
+      "codigo": "GF605",
+      "nome": "Geomorfologia do Brasil",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF506"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3234",
+      "codigo": "GF606",
+      "nome": "Sistemas de Informação Geográfica",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF136",
+          "GF507"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3239",
+      "codigo": "GF801",
+      "nome": "Geografia das Relações Internacionais",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "770",
+      "codigo": "BT201",
+      "nome": "Biogeografia",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "BD101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3215",
+      "codigo": "GF405",
+      "nome": "Geografia do Brasil",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3237",
+      "codigo": "GF703",
+      "nome": "Desenvolvimento da Agricultura Brasileira",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9212",
+      "codigo": "GF714",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3213",
+      "codigo": "GF403",
+      "nome": "Hidrologia e Oceanografia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3230",
+      "codigo": "GF602",
+      "nome": "Análise Redes e Fluxos (Transportes e Comunicação)",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3231",
+      "codigo": "GF603",
+      "nome": "Estudos Populacionais",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9213",
+      "codigo": "GF814",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3216",
+      "codigo": "GF406",
+      "nome": "Geografia Política",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF301",
+          "GF401",
+          "GF601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3241",
+      "codigo": "GF803",
+      "nome": "Análise e Gestão de Bacias Hidrográficas",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF403"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3243",
+      "codigo": "GF805",
+      "nome": "Planejamento Territorial",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "GF401"
+        ]
+      ]
+    }
+  ]
+}

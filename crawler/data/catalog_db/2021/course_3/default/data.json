@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 3,
+    "name": "Ciência da Computação (3)",
+    "code": "3"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": []
+}

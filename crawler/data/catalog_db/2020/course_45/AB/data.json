@@ -1,0 +1,799 @@
+{
+  "course": {
+    "id": 45,
+    "name": "Educação Física (45)",
+    "code": "45"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Licenciatura em Educação Física",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "AB",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "560",
+      "codigo": "BA110",
+      "nome": "Anatomia Humana I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1666",
+      "codigo": "EF112",
+      "nome": "História da Educação Física",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1668",
+      "codigo": "EF114",
+      "nome": "Fundamentos da Ginástica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1669",
+      "codigo": "EF115",
+      "nome": "Jogo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1670",
+      "codigo": "EF116",
+      "nome": "Teorias do Conhecimento",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1671",
+      "codigo": "EF209",
+      "nome": "Atletismo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1672",
+      "codigo": "EF212",
+      "nome": "Ritmo e Expressão",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1675",
+      "codigo": "EF215",
+      "nome": "Saúde Coletiva e Atividade Física",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "563",
+      "codigo": "BA210",
+      "nome": "Anatomia Humana II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BA110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "572",
+      "codigo": "BB110",
+      "nome": "Bioquímica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1667",
+      "codigo": "EF113",
+      "nome": "Fundamentos de Antropologia e Educação Física",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1679",
+      "codigo": "EF314",
+      "nome": "Dança",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1680",
+      "codigo": "EF315",
+      "nome": "Luta",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7061",
+      "codigo": "BF312",
+      "nome": "Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BA210",
+          "BB110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1665",
+      "codigo": "EF109",
+      "nome": "Socorros de Urgência",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1683",
+      "codigo": "EF412",
+      "nome": "Fundamentos Neurofuncionais do Movimento Humano",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1685",
+      "codigo": "EF414",
+      "nome": "Fundamentos de Psicologia e Educação Física",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1686",
+      "codigo": "EF415",
+      "nome": "Nado",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1687",
+      "codigo": "EF416",
+      "nome": "Esporte Coletivo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "656",
+      "codigo": "BF412",
+      "nome": "Fisiologia Humana II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BF310"
+        ],
+        [
+          "BF312"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1673",
+      "codigo": "EF213",
+      "nome": "Fundamentos Metodológicos do Treinamento Desportivo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1674",
+      "codigo": "EF214",
+      "nome": "Metodologia de Pesquisa",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1701",
+      "codigo": "EF512",
+      "nome": "Adaptações dos Sistemas Orgânicos ao Treinamento Físico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BF410"
+        ],
+        [
+          "BF412"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1703",
+      "codigo": "EF514",
+      "nome": "Educação Física Adaptada",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1676",
+      "codigo": "EF309",
+      "nome": "Cinesiologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BA210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1678",
+      "codigo": "EF313",
+      "nome": "Fundamentos Teóricos do Lazer",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1681",
+      "codigo": "EF316",
+      "nome": "Crescimento e Desenvolvimento",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1682",
+      "codigo": "EF411",
+      "nome": "Biomecânica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1684",
+      "codigo": "EF413",
+      "nome": "Sociologia do Esporte",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1707",
+      "codigo": "EF611",
+      "nome": "Processo de Envelhecimento e Educação Física",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1709",
+      "codigo": "EF613",
+      "nome": "Aprendizagem Motora",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1677",
+      "codigo": "EF312",
+      "nome": "Teorias da Educação Física",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1702",
+      "codigo": "EF513",
+      "nome": "Treinamento Desportivo e a Preparação do Desempenho",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF213",
+          "EF316"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1704",
+      "codigo": "EF521",
+      "nome": "Estágio Supervisionado em Educação Física I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11372",
+      "codigo": "FN468",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1708",
+      "codigo": "EF612",
+      "nome": "Fundamentos de Nutrição e Educação Física",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1710",
+      "codigo": "EF614",
+      "nome": "Pesquisa em Educação Física I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF424"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1711",
+      "codigo": "EF621",
+      "nome": "Estágio Supervisionado em Educação Física II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1712",
+      "codigo": "EF622",
+      "nome": "Educação Física - Educação Infantil",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1700",
+      "codigo": "EF511",
+      "nome": "Estatística Aplicada à Educação Física",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1726",
+      "codigo": "EF711",
+      "nome": "Lazer e Sociedade",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF313"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1727",
+      "codigo": "EF714",
+      "nome": "Pesquisa em Educação Física II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF614"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1728",
+      "codigo": "EF722",
+      "nome": "Educação Física Escolar - Ensino Fundamental",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1729",
+      "codigo": "EF723",
+      "nome": "Educação Física Escolar Especial",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1732",
+      "codigo": "EF811",
+      "nome": "Gestão em Esporte",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1733",
+      "codigo": "EF814",
+      "nome": "Seminário de Monografia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1734",
+      "codigo": "EF822",
+      "nome": "Educação Física Escolar - Ensino Médio",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1688",
+      "codigo": "EF428",
+      "nome": "Natação",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11418",
+      "codigo": "EF452",
+      "nome": "Capoeira",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF212"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1694",
+      "codigo": "EF446",
+      "nome": "Ginástica Rítmica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1689",
+      "codigo": "EF441",
+      "nome": "Basquetebol",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1695",
+      "codigo": "EF447",
+      "nome": "Handebol",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1690",
+      "codigo": "EF442",
+      "nome": "Futebol de Campo",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1697",
+      "codigo": "EF449",
+      "nome": "Voleibol",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1691",
+      "codigo": "EF443",
+      "nome": "Futsal",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1698",
+      "codigo": "EF450",
+      "nome": "Esportes de Raquete",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1692",
+      "codigo": "EF444",
+      "nome": "Ginástica Geral",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1699",
+      "codigo": "EF451",
+      "nome": "Ginásticas Competitivas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1693",
+      "codigo": "EF445",
+      "nome": "Ginástica Artística",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    }
+  ]
+}

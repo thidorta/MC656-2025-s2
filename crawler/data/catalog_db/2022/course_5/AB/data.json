@@ -1,0 +1,675 @@
+{
+  "course": {
+    "id": 5,
+    "name": "Química (5)",
+    "code": "5"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Licenciatura em Química",
+  "year": 2022,
+  "parameters": {
+    "catalogo": "2022",
+    "modalidade": "AB",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "5336",
+      "codigo": "QG005",
+      "nome": "Química e Mercado de Trabalho",
+      "creditos": 1,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5347",
+      "codigo": "QG108",
+      "nome": "Química Geral Teórica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5348",
+      "codigo": "QG109",
+      "nome": "Química Geral Experimental",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5349",
+      "codigo": "QG362",
+      "nome": "Química com Segurança",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5289",
+      "codigo": "QA282",
+      "nome": "Química Clássica",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5393",
+      "codigo": "QO321",
+      "nome": "Química Orgânica I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QG101",
+          "QG102"
+        ],
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5318",
+      "codigo": "QF431",
+      "nome": "Físico-Química I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA211",
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14317",
+      "codigo": "QG331",
+      "nome": "Estudos de Problemas de Ensino de Química",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5403",
+      "codigo": "QO521",
+      "nome": "Química Orgânica II",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11756",
+      "codigo": "EL111",
+      "nome": "Leitura, Produção de Textos e Docência",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2323",
+      "codigo": "EP152",
+      "nome": "Didática - Teoria Pedagógica",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EP110",
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ],
+        [
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5322",
+      "codigo": "QF531",
+      "nome": "Físico-Química II",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QF335"
+        ],
+        [
+          "QF431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12182",
+      "codigo": "QG464",
+      "nome": "Laboratório Integrado",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5375",
+      "codigo": "QI246",
+      "nome": "Química Inorgânica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2388",
+      "codigo": "EP372",
+      "nome": "Avaliação",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5352",
+      "codigo": "QG565",
+      "nome": "Química Orgânica e Inorgânica Experimental",
+      "creditos": 12,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QA481",
+          "QG464",
+          "QO521"
+        ],
+        [
+          "QG109",
+          "QI246",
+          "QO521"
+        ],
+        [
+          "QI145",
+          "QO521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5404",
+      "codigo": "QO551",
+      "nome": "Bioquímica I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14318",
+      "codigo": "QG551",
+      "nome": "Didática e Metodologia do Ensino de Química",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL212",
+          "EL511",
+          "EL683",
+          "EP152",
+          "EP372",
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5323",
+      "codigo": "QF535",
+      "nome": "Introdução à Química Quântica",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5326",
+      "codigo": "QF632",
+      "nome": "Físico-Química Experimental I",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QA282",
+          "QF531"
+        ],
+        [
+          "QA217",
+          "QF531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11757",
+      "codigo": "EL109",
+      "nome": "Introdução à Pesquisa no Ensino de Ciências",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5357",
+      "codigo": "QG680",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL886"
+        ],
+        [
+          "EL874"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5359",
+      "codigo": "QG760",
+      "nome": "Projetos de Ensino em Química",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5302",
+      "codigo": "QA815",
+      "nome": "Química do Meio Ambiente",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QA282",
+          "QF531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14319",
+      "codigo": "QG771",
+      "nome": "Tecnologias de Informação e Comunicação Aplicadas ao Ensino de Química",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5364",
+      "codigo": "QG880",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QG680"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6207",
+      "codigo": "QL701",
+      "nome": "Projetos Integrados",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QG760"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9097",
+      "codigo": "EP094",
+      "nome": "Juventudes, Cidadania e Psicologia",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11371",
+      "codigo": "EP879",
+      "nome": "Educação de Jovens e Adultos",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11473",
+      "codigo": "QG983",
+      "nome": "Tópicos Especiais em Ensino de Química III",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11474",
+      "codigo": "QG984",
+      "nome": "Tópicos Especiais em Ensino de Química IV",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11471",
+      "codigo": "QG981",
+      "nome": "Tópicos Especiais em Ensino de Química I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11472",
+      "codigo": "QG982",
+      "nome": "Tópicos Especiais em Ensino de Química II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    }
+  ]
+}
