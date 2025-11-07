@@ -1,0 +1,1844 @@
+{
+  "course": {
+    "id": 34,
+    "name": "Engenharia de Computação (34)",
+    "code": "34"
+  },
+  "modalidade": "AA",
+  "modalidade_label": "AA - Sistemas de Computação",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "AA",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5343",
+      "codigo": "QG101",
+      "nome": "Química I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18935",
+      "codigo": "EA134",
+      "nome": "Seminários sobre o Curso de Engenharia de Computação",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18282",
+      "codigo": "F 259",
+      "nome": "Introdução à Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 128",
+          "F 159"
+        ],
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4165",
+      "codigo": "MC202",
+      "nome": "Estruturas de Dados",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18193",
+      "codigo": "F 359",
+      "nome": "Introdução à Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 259",
+          "GE504"
+        ],
+        [
+          "F 259",
+          "MA111"
+        ],
+        [
+          "F 129"
+        ],
+        [
+          "F 229"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9197",
+      "codigo": "MC322",
+      "nome": "Programação Orientada a Objetos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1336",
+      "codigo": "EA513",
+      "nome": "Circuitos Elétricos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2753",
+      "codigo": "F 428",
+      "nome": "Física Geral IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6770",
+      "codigo": "MC358",
+      "nome": "Fundamentos Matemáticos da Computação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4171",
+      "codigo": "MC404",
+      "nome": "Organização Básica de Computadores e Linguagem de Montagem",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC202"
+        ],
+        [
+          "MC602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1338",
+      "codigo": "EA614",
+      "nome": "Análise de Sinais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1343",
+      "codigo": "EA772",
+      "nome": "Circuitos Lógicos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4193",
+      "codigo": "MC613",
+      "nome": "Laboratório de Circuitos Digitais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EA772"
+        ],
+        [
+          "MC602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4210",
+      "codigo": "MC750",
+      "nome": "Construção de Interfaces Homem-Computador",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4440",
+      "codigo": "ME323",
+      "nome": "Introdução aos Modelos Probabilísticos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17180",
+      "codigo": "EE533",
+      "nome": "Eletrônica Básica I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EA513"
+        ],
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6772",
+      "codigo": "MC458",
+      "nome": "Projeto e Análise de Algoritmos I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC202",
+          "MS328"
+        ],
+        [
+          "MC202",
+          "MC358"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4184",
+      "codigo": "MC536",
+      "nome": "Bancos de Dados: Teoria e Prática",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10585",
+      "codigo": "MC732",
+      "nome": "Projeto de Sistemas Computacionais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EA772",
+          "MC404"
+        ],
+        [
+          "ES572",
+          "MC404"
+        ],
+        [
+          "MC404",
+          "MC602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6771",
+      "codigo": "EE534",
+      "nome": "Laboratório de Eletrônica Aplicada",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EE533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2101",
+      "codigo": "EM423",
+      "nome": "Resistência dos Materiais",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 313"
+        ],
+        [
+          "F 315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6775",
+      "codigo": "MC558",
+      "nome": "Projeto e Análise de Algoritmos II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18289",
+      "codigo": "MC656",
+      "nome": "Engenharia de Software",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC536"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4177",
+      "codigo": "MC504",
+      "nome": "Sistemas Operacionais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EA869"
+        ],
+        [
+          "MC404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "631",
+      "codigo": "BE310",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "845",
+      "codigo": "CE304",
+      "nome": "Direito",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3739",
+      "codigo": "HZ291",
+      "nome": "Tópicos Especiais de Humanidades I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "896",
+      "codigo": "CE838",
+      "nome": "Contabilidade para Engenharia",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EC306"
+        ],
+        [
+          "MA311"
+        ],
+        [
+          "CE151"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "897",
+      "codigo": "CE839",
+      "nome": "Introdução à Administração para Computação",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10586",
+      "codigo": "MC832",
+      "nome": "Redes de Computadores",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4203",
+      "codigo": "MC714",
+      "nome": "Sistemas Distribuídos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "EA876"
+        ],
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6983",
+      "codigo": "MC833",
+      "nome": "Programação de Redes de Computadores",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC832"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11376",
+      "codigo": "MC921",
+      "nome": "Projeto e Construção de Compiladores",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "890",
+      "codigo": "CE738",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4156",
+      "codigo": "MC030",
+      "nome": "Projeto Final de Graduação",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4159",
+      "codigo": "MC040",
+      "nome": "Estágio de Iniciação Científica I",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4160",
+      "codigo": "MC041",
+      "nome": "Estágio de Iniciação Científica II",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4153",
+      "codigo": "MC019",
+      "nome": "Estágio Supervisionado em Ciência da Computação",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10634",
+      "codigo": "MC051",
+      "nome": "Monitoria II",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4161",
+      "codigo": "MC050",
+      "nome": "Monitoria",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4157",
+      "codigo": "MC032",
+      "nome": "Estudo Dirigido",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4154",
+      "codigo": "MC020",
+      "nome": "Estágio Supervisionado em Ciência da Computação II",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC019"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6859",
+      "codigo": "MC033",
+      "nome": "Estudo Dirigido II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18036",
+      "codigo": "MC854",
+      "nome": "Projeto em Computação com Extensão",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18085",
+      "codigo": "MX853",
+      "nome": "Projeto Integrador Interdisciplinar de Extensão III",
+      "creditos": 12,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12246",
+      "codigo": "MC758",
+      "nome": "Teoria dos Jogos Algorítmica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4255",
+      "codigo": "MC956",
+      "nome": "Tópicos em Bancos de Dados",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC536"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6773",
+      "codigo": "MC346",
+      "nome": "Paradigmas de Programação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4265",
+      "codigo": "MC986",
+      "nome": "Tópicos em Interfaces Humano-Computador",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC750"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4218",
+      "codigo": "MC852",
+      "nome": "Arquiteturas Paralelas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC732"
+        ],
+        [
+          "MC613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4257",
+      "codigo": "MC962",
+      "nome": "Projeto de Redes Multimídia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC832"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4250",
+      "codigo": "MC948",
+      "nome": "Geometria Computacional",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10637",
+      "codigo": "MC721",
+      "nome": "Desafios de Programação III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC521"
+        ],
+        [
+          "MC621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4219",
+      "codigo": "MC858",
+      "nome": "Algoritmos Paralelos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6860",
+      "codigo": "MC738",
+      "nome": "Algoritmos Probabilísticos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4231",
+      "codigo": "MC914",
+      "nome": "Tópicos em Sistemas Operacionais I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4232",
+      "codigo": "MC918",
+      "nome": "Tópicos em Teoria da Computação I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10638",
+      "codigo": "MC821",
+      "nome": "Desafios de Programação IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC521"
+        ],
+        [
+          "MC621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11437",
+      "codigo": "MC971",
+      "nome": "Introdução à Programação Concorrente",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4251",
+      "codigo": "MC949",
+      "nome": "Visão Computacional",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC102",
+          "ME210"
+        ],
+        [
+          "MA327",
+          "MC102",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4235",
+      "codigo": "MC922",
+      "nome": "Princípios de Projeto VLSI",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC732"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6868",
+      "codigo": "MC886",
+      "nome": "Aprendizado de Máquina",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC102",
+          "ME210"
+        ],
+        [
+          "MA327",
+          "MC102",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10635",
+      "codigo": "MC521",
+      "nome": "Desafios de Programação I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6776",
+      "codigo": "MC658",
+      "nome": "Projeto e Análise de Algoritmos III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4236",
+      "codigo": "MC923",
+      "nome": "Projetos de Sistemas Digitais com HDLs",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC732"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4258",
+      "codigo": "MC963",
+      "nome": "Tópicos em Redes de Computadores II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC832"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4253",
+      "codigo": "MC953",
+      "nome": "Tópicos em Redes de Computadores I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC832"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4260",
+      "codigo": "MC972",
+      "nome": "Tópicos em Arquitetura e Hardware I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC732"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18032",
+      "codigo": "MC816",
+      "nome": "Aprendizado por Reforço",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4220",
+      "codigo": "MC868",
+      "nome": "Linguagens Formais e Autômatos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC358"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6861",
+      "codigo": "MC748",
+      "nome": "Algoritmos de Aproximação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4245",
+      "codigo": "MC936",
+      "nome": "Tópicos em Sistemas de Informação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC426"
+        ],
+        [
+          "MC536"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4261",
+      "codigo": "MC973",
+      "nome": "Tópicos em Arquitetura e Hardware II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC732"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18033",
+      "codigo": "MC826",
+      "nome": "Fundamentos de Álgebra Linear e Otimização para Aprendizado de Máquina",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12245",
+      "codigo": "MC646",
+      "nome": "Verificação, Validação e Testes de Software",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC426"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4225",
+      "codigo": "MC898",
+      "nome": "Fluxos em Redes e Programação Linear",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4262",
+      "codigo": "MC976",
+      "nome": "Tópicos em Engenharia de Software II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC426"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6869",
+      "codigo": "MC896",
+      "nome": "Processamento de Línguas Naturais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10636",
+      "codigo": "MC621",
+      "nome": "Desafios de Programação II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4233",
+      "codigo": "MC919",
+      "nome": "Tópicos Especiais em Processamento Gráfico",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC920"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4226",
+      "codigo": "MC900",
+      "nome": "Tópicos Especiais em Linguagem de Programação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4237",
+      "codigo": "MC926",
+      "nome": "Tópicos em Engenharia de Software I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC426"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4259",
+      "codigo": "MC964",
+      "nome": "Tópicos em Computação Distribuída",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4267",
+      "codigo": "MC998",
+      "nome": "Fluxo em Redes",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4234",
+      "codigo": "MC920",
+      "nome": "Introdução ao Processamento de Imagem Digital",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327",
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4228",
+      "codigo": "MC908",
+      "nome": "Tópicos Especiais em Teoria da Computação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4222",
+      "codigo": "MC878",
+      "nome": "Teoria e Aplicações de Grafos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC358"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4246",
+      "codigo": "MC938",
+      "nome": "Algoritmos Criptográficos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10639",
+      "codigo": "MC937",
+      "nome": "Computação Gráfica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18034",
+      "codigo": "MC846",
+      "nome": "Aprendizado Supervisionado",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12247",
+      "codigo": "MC907",
+      "nome": "Robótica Móvel",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC906"
+        ],
+        [
+          "MC886"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18037",
+      "codigo": "MC867",
+      "nome": "Deep Learning",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4249",
+      "codigo": "MC942",
+      "nome": "Segurança de Redes de Computadores",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC832"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4264",
+      "codigo": "MC979",
+      "nome": "Tópicos em Inteligência Artificial II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC906"
+        ],
+        [
+          "MC886"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4227",
+      "codigo": "MC906",
+      "nome": "Introdução à Inteligência Artificial",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4252",
+      "codigo": "MC950",
+      "nome": "Recuperação de Imagens por Conteúdo",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC536",
+          "MC920"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18038",
+      "codigo": "MC887",
+      "nome": "Fundamentos Probabilísticos de Aprendizado de Máquina",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7132",
+      "codigo": "MC946",
+      "nome": "Aprendizado de Máquina e Reconhecimento de Padrões",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327",
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4238",
+      "codigo": "MC928",
+      "nome": "Tópicos em Teoria da Computação II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4256",
+      "codigo": "MC959",
+      "nome": "Tópicos em Inteligência Artificial I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC906"
+        ],
+        [
+          "MC886"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4198",
+      "codigo": "MC668",
+      "nome": "Bioinformática",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4230",
+      "codigo": "MC912",
+      "nome": "Tópicos Especiais em Arquitetura de Computadores",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC732"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4224",
+      "codigo": "MC889",
+      "nome": "Introdução à Criptografia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4254",
+      "codigo": "MC954",
+      "nome": "Tópicos em Sistemas Operacionais II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7524",
+      "codigo": "MC970",
+      "nome": "Introdução à Programação Paralela",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4247",
+      "codigo": "MC940",
+      "nome": "Processamento e Análise de Imagens",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MC920"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18035",
+      "codigo": "MC847",
+      "nome": "Aprendizado Não-supervisionado",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ]
+    }
+  ]
+}

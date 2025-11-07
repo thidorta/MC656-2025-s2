@@ -1,0 +1,1038 @@
+{
+  "course": {
+    "id": 27,
+    "name": "Educação Física (27)",
+    "code": "27"
+  },
+  "modalidade": "AF",
+  "modalidade_label": "AF - Bacharelado em Educação Física",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "AF",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "17183",
+      "codigo": "EF130",
+      "nome": "Filosofia do Esporte",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "560",
+      "codigo": "BA110",
+      "nome": "Anatomia Humana I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1666",
+      "codigo": "EF112",
+      "nome": "História da Educação Física",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1669",
+      "codigo": "EF115",
+      "nome": "Jogo",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17181",
+      "codigo": "EF124",
+      "nome": "Ginástica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17182",
+      "codigo": "EF129",
+      "nome": "Atletismo",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17188",
+      "codigo": "EF224",
+      "nome": "Psicologia aplicada à Educação Física",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "563",
+      "codigo": "BA210",
+      "nome": "Anatomia Humana II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "BA110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17189",
+      "codigo": "EF226",
+      "nome": "Esporte Coletivo",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "572",
+      "codigo": "BB110",
+      "nome": "Bioquímica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17190",
+      "codigo": "EF228",
+      "nome": "Natação",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17184",
+      "codigo": "EF216",
+      "nome": "Fundamentos Metodológicos do Treinamento Esportivo",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17191",
+      "codigo": "EF250",
+      "nome": "Esportes de Raquete",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17185",
+      "codigo": "EF218",
+      "nome": "Gênero e sexualidade nas práticas corporais",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17186",
+      "codigo": "EF222",
+      "nome": "Ritmo, Expressão e Dança",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17187",
+      "codigo": "EF223",
+      "nome": "Educação Física, Lazer e Sociedade",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17193",
+      "codigo": "EF305",
+      "nome": "Ginástica Artística",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17198",
+      "codigo": "EF324",
+      "nome": "Educação Física Adaptada",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1676",
+      "codigo": "EF309",
+      "nome": "Cinesiologia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "BA210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1680",
+      "codigo": "EF315",
+      "nome": "Luta",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17194",
+      "codigo": "EF319",
+      "nome": "Socorros de urgência",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17195",
+      "codigo": "EF320",
+      "nome": "Crescimento e Desenvolvimento Motor",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "652",
+      "codigo": "BF310",
+      "nome": "Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "BA210",
+          "BB110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17196",
+      "codigo": "EF322",
+      "nome": "Estatística Aplicada à Educação Física",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17192",
+      "codigo": "EF304",
+      "nome": "Basquetebol",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17197",
+      "codigo": "EF323",
+      "nome": "Antropologia das Práticas Esportivas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17201",
+      "codigo": "EF425",
+      "nome": "Saúde coletiva, promoção da saúde e atividade física",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1690",
+      "codigo": "EF442",
+      "nome": "Futebol de Campo",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "655",
+      "codigo": "BF410",
+      "nome": "Fisiologia Humana II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "BF310"
+        ],
+        [
+          "BF312"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1697",
+      "codigo": "EF449",
+      "nome": "Voleibol",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1682",
+      "codigo": "EF411",
+      "nome": "Biomecânica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17202",
+      "codigo": "EF453",
+      "nome": "Aprendizagem Motora",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1684",
+      "codigo": "EF413",
+      "nome": "Sociologia do Esporte",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17203",
+      "codigo": "EF459",
+      "nome": "Ginástica para Todos",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17199",
+      "codigo": "EF422",
+      "nome": "Bases Neurofuncionais do Movimento Humano",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17204",
+      "codigo": "EF460",
+      "nome": "Educação Física e as Relações Étnico-Raciais",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17200",
+      "codigo": "EF424",
+      "nome": "Metodologia de Pesquisa",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17205",
+      "codigo": "EF503",
+      "nome": "Teoria e Metodologia do Treino no Esporte",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF216",
+          "EF320"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1701",
+      "codigo": "EF512",
+      "nome": "Adaptações dos Sistemas Orgânicos ao Treinamento Físico",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "BF410"
+        ],
+        [
+          "BF412"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17206",
+      "codigo": "EF543",
+      "nome": "Futsal",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17207",
+      "codigo": "EF547",
+      "nome": "Handebol",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17208",
+      "codigo": "EF553",
+      "nome": "Políticas Públicas para as práticas corporais não escolares",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17209",
+      "codigo": "EF571",
+      "nome": "Estágio Supervisionado em Educação Física I - Bacharelado",
+      "creditos": 11,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17211",
+      "codigo": "EF602",
+      "nome": "Saúde Coletiva e Educação Física",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF425"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17212",
+      "codigo": "EF609",
+      "nome": "Ginástica de Academia e Treinamento Personalizado",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF309"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1708",
+      "codigo": "EF612",
+      "nome": "Fundamentos de Nutrição e Educação Física",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1710",
+      "codigo": "EF614",
+      "nome": "Pesquisa em Educação Física I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF424"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1713",
+      "codigo": "EF631",
+      "nome": "Esporte Adaptado",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17213",
+      "codigo": "EF671",
+      "nome": "Estágio Supervisionado Em Educação Física II - Bacharelado",
+      "creditos": 11,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17215",
+      "codigo": "EF701",
+      "nome": "Lazer e Planejamento",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17217",
+      "codigo": "EF703",
+      "nome": "Processo de Envelhecimento e Educação Física",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17218",
+      "codigo": "EF724",
+      "nome": "Pesquisa em Educação Física II - Bacharelado",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF614"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17224",
+      "codigo": "EF752",
+      "nome": "Exercício Físico em Condições Clínicas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17226",
+      "codigo": "EF771",
+      "nome": "Estágio Supervisionado Em Educação Física III - Bacharelado",
+      "creditos": 11,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17228",
+      "codigo": "EF801",
+      "nome": "Análise de Desempenho Individual e Coletivo",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1732",
+      "codigo": "EF811",
+      "nome": "Gestão em Esporte",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17229",
+      "codigo": "EF824",
+      "nome": "Monografia Educação Física Bacharelado",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF724"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17230",
+      "codigo": "EF842",
+      "nome": "Psicologia do Esporte",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF224"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17232",
+      "codigo": "EF871",
+      "nome": "Estágio Supervisionado Em Educação Física IV - Bacharelado",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1719",
+      "codigo": "EF645",
+      "nome": "Aprofundamento em Ginástica Artística",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF305"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17220",
+      "codigo": "EF745",
+      "nome": "Aprofundamento em Ginástica Para Todos",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF459"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17221",
+      "codigo": "EF747",
+      "nome": "Aprofundamento em Handebol",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF547"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1715",
+      "codigo": "EF641",
+      "nome": "Aprofundamento em Basquetebol",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1725",
+      "codigo": "EF661",
+      "nome": "Aprofundamento em Atletismo",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17222",
+      "codigo": "EF748",
+      "nome": "Aprofundamento em Natação",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF228"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18261",
+      "codigo": "EF999",
+      "nome": "Skateboard",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1717",
+      "codigo": "EF643",
+      "nome": "Aprofundamento em Futsal",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF543"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17219",
+      "codigo": "EF742",
+      "nome": "Aprofundamento em Futebol de Campo",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF442"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17223",
+      "codigo": "EF749",
+      "nome": "Aprofundamento em Voleibol",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EF449"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18215",
+      "codigo": "EF003",
+      "nome": "Extensão em Educação Física III",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18224",
+      "codigo": "EF012",
+      "nome": "Extensão em Educação Física XII",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18217",
+      "codigo": "EF005",
+      "nome": "Extensão em Educação Física V",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18226",
+      "codigo": "EF014",
+      "nome": "Extensão em Educação Física XIV",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18219",
+      "codigo": "EF007",
+      "nome": "Extensão em Educação Física VII",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18221",
+      "codigo": "EF009",
+      "nome": "Extensão em Educação Física IX",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18214",
+      "codigo": "EF002",
+      "nome": "Extensão em Educação Física II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18223",
+      "codigo": "EF011",
+      "nome": "Extensão em Educação Física XI",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18216",
+      "codigo": "EF004",
+      "nome": "Extensão em Educação Física IV",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18225",
+      "codigo": "EF013",
+      "nome": "Extensão em Educação Física XIII",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18218",
+      "codigo": "EF006",
+      "nome": "Extensão em Educação Física VI",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18227",
+      "codigo": "EF015",
+      "nome": "Extensão em Educação Física XV",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18220",
+      "codigo": "EF008",
+      "nome": "Extensão em Educação Física VIII",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18213",
+      "codigo": "EF001",
+      "nome": "Extensão em Educação Física I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18222",
+      "codigo": "EF010",
+      "nome": "Extensão em Educação Física X",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 93,
+    "name": "Música (93)",
+    "code": "93"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": []
+}

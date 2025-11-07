@@ -1,0 +1,402 @@
+{
+  "course": {
+    "id": 7,
+    "name": "Licenciatura em Letras - Português (7)",
+    "code": "7"
+  },
+  "modalidade": "AE",
+  "modalidade_label": "AE - Licenciatura em Letras - Português",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "AE",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "6951",
+      "codigo": "HL121",
+      "nome": "Fonética, Fonologia e Morfologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6952",
+      "codigo": "HL127",
+      "nome": "Introdução às Ciências da Linguagem",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3589",
+      "codigo": "HL143",
+      "nome": "Latim I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6953",
+      "codigo": "LA104",
+      "nome": "Letramentos: Teoria e Prática",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14296",
+      "codigo": "LA405",
+      "nome": "Seminários em Ensino de Língua Portuguesa",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14298",
+      "codigo": "LG028",
+      "nome": "Atividades em Diversidade e Direitos Humanos",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5941",
+      "codigo": "TL108",
+      "nome": "Introdução à Literatura e Cultura Brasileira",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14295",
+      "codigo": "LA404",
+      "nome": "Ensino de Língua Portuguesa: Marcos Históricos e Documentos Curriculares",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14404",
+      "codigo": "TL404",
+      "nome": "Literatura e Ensino",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6954",
+      "codigo": "HL220",
+      "nome": "Prática de Análise Gramatical",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6955",
+      "codigo": "HL236",
+      "nome": "Linguagem: Dimensões Históricas e Sociais",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11483",
+      "codigo": "HL337",
+      "nome": "Laboratório de Produção Textual II",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6956",
+      "codigo": "LA204",
+      "nome": "Leitura e Escrita: Teoria e Prática",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3669",
+      "codigo": "HL804",
+      "nome": "Linguística e Ensino de Português",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6958",
+      "codigo": "LA303",
+      "nome": "Interpretação: Teoria e Prática",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14297",
+      "codigo": "LA406",
+      "nome": "Laboratório de Produção de Materiais Didáticos para o Ensino de Língua Portuguesa",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14405",
+      "codigo": "TL405",
+      "nome": "Seminários em Ensino de Literatura",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14382",
+      "codigo": "HL324",
+      "nome": "Linguagem e Significação no Ensino de Língua Portuguesa",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14383",
+      "codigo": "HL325",
+      "nome": "Texto, Discurso e Ensino de Língua",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14384",
+      "codigo": "HL423",
+      "nome": "Aquisição da Linguagem e Ensino de Língua",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14385",
+      "codigo": "HL424",
+      "nome": "Neurolinguística e Ensino de Língua",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6961",
+      "codigo": "LA403",
+      "nome": "Linguagem e Diversidade: Pesquisa e Ensino",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14406",
+      "codigo": "TL406",
+      "nome": "Laboratório de Ensino em Literatura",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3587",
+      "codigo": "HL135",
+      "nome": "Escrita e Oralidade",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10599",
+      "codigo": "LA504",
+      "nome": "Linguagem e Tecnologias",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6962",
+      "codigo": "HL245",
+      "nome": "Escrita e Oralidade: Prática de Análise",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10655",
+      "codigo": "LA712",
+      "nome": "Análise Linguística no Ensino de Língua Portuguesa",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11362",
+      "codigo": "LA001",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    }
+  ]
+}

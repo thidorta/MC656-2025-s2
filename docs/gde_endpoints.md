@@ -1,70 +1,49 @@
-# GDE JSON Endpoints (Template)
+# GDE JSON/XHR Endpoints (JS Migration Reference)
 
-> Template only. Fill with real values from DevTools (Network) once discovered.
+This note documents the endpoints observed in the captured HAR files under
+`docs/crawler/real_site/` and how the crawler reuses them. Every section lists the
+HTTP details, required params/headers, and the local fixture that mirrors a real
+response for smoke/diff purposes.
 
-## list_courses
-- URL: `...`
-- Method: `GET`
-- Headers: `...`
-- Params: `year=YYYY`, `q?=...`, `limit?=...`, `offset?=...`
-- Sample response:
-```json
-{
-  "items": [
-    { "id": "34", "code": "MC", "name": "Ciência da Computação" }
-  ],
-  "total": 0
-}
-```
+## Courses (HTML page fallback)
+- **Path:** `/arvore/` (override via `GDE_PATH_ARVORE`)
+- **Method:** `GET`
+- **Params:** `catalogo` (year), `curso`, `modalidade`, `periodo`, `cp`
+- **Headers:** default browser headers (not an AJAX call)
+- **Response:** full HTML; `<select id="curso">` enumerates all programmes
+- **Fixture:** `data/fixtures/html/courses_select_a2022.html`
 
-## list_offers
-- URL: `...`
-- Method: `GET`
-- Headers: `...`
-- Params: `year=YYYY`, `courseId=...`, `term?=...`, `teacher?=...`
-- Sample response:
-```json
-{
-  "items": [
-    { "courseCode": "MC202", "term": "2025-1", "classes": [] }
-  ]
-}
-```
+## Offers (`ajax/planejador.php`)
+- **Path:** `/ajax/planejador.php` (override via `GDE_PATH_OFFERS`)
+- **Method:** `POST`
+- **Form data:** `id` (plan id, default `0`), `a=c`, `c` (course id), `pp` (período), `pa` (optional)
+- **Headers:** `Accept: application/json, text/javascript, */*; q=0.01`, `X-Requested-With: XMLHttpRequest`
+- **Response:** JSON hash (`Planejado`, `Oferecimentos`, `Arvore`, `Extras`)
+- **Fixture:** `data/fixtures/json/offers_c34_a2022.json`
 
-## get_curriculum
-- URL: `...`
-- Method: `GET`
-- Headers: `...`
-- Params: `courseId=...`, `year=YYYY`
-- Sample response:
-```json
-{
-  "nodes": [ { "code": "MC102", "name": "Algoritmos" } ],
-  "edges": [ { "from": "MC102", "to": "MC202", "type": "prereq" } ]
-}
-```
+## Curriculum (`ajax/planejador.php`, HTML fallback)
+- **Path:** `/ajax/planejador.php` (override via `GDE_PATH_CURRICULUM`)
+- **Method:** `POST`
+- **Form data:** same as “Offers”
+- **Response:** same JSON payload; we read `Disciplina.semestre` + `Arvore.tipos` and fallback to `/arvore/` integralização HTML when missing
+- **Fixture:** `data/fixtures/json/arvore_c34_a2022_sAA.json`
 
-## get_prereqs
-- URL: `...`
-- Method: `GET`
-- Headers: `...`
-- Params: `courseId=...`, `year=YYYY`
-- Sample response:
-```json
-{
-  "items": [ { "code": "MC202", "prereqs": ["MC102"] } ]
-}
-```
+## Prerequisites (`ajax/planejador.php` + derived edges)
+- **Path:** `/ajax/planejador.php` (override via `GDE_PATH_PREREQS`)
+- **Method:** `POST`
+- **Form data:** same as “Offers”; when the server omits explicit prereqs we compute from curriculum edges
+- **Fixture:** `data/fixtures/json/prereqs_c34_a2022.json`
 
-## get_semester_map
-- URL: `...`
-- Method: `GET`
-- Headers: `...`
-- Params: `courseId=...`, `year=YYYY`
-- Sample response:
-```json
-{
-  "items": [ { "code": "MC202", "recommendedSemester": 3 } ]
-}
-```
+## Semester Map (`ajax/planejador.php`, node fallback)
+- **Path:** `/ajax/planejador.php` (override via `GDE_PATH_SEM_MAP`)
+- **Method:** `POST`
+- **Form data:** same as “Offers”; we map `Disciplina.semestre` to recommended semester
+- **Fixture:** `data/fixtures/json/semester_map_c34_a2022.json`
 
+## Modalidades (HTML fragment)
+- **Path:** `/ajax/modalidades.php` (override via `GDE_PATH_MODALITIES`)
+- **Method:** `POST` with query-string params (GET also works)
+- **Params:** `c` (course id), `a` (catalog year), `s` (selected modality), `o` (ordering)
+- **Headers:** `Accept: text/html, */*`, `X-Requested-With: XMLHttpRequest`
+- **Response:** `<select id="modalidade">` HTML fragment
+- **Fixture:** `data/fixtures/html/modalidades_c34_a2022.html`

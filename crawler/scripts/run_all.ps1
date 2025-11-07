@@ -80,7 +80,6 @@ if ($ShouldInstallDeps) {
 # Optional: show python version
 Write-Host "Python: " -NoNewline; python --version
 
-<<<<<<< HEAD
 # Step 1: collect -> data/raw + data/json
 Write-Host "[2/3] Rodando coletor (src.crawler_app.cli collect)" -ForegroundColor Cyan
 python -m src.crawler_app.cli collect
@@ -92,7 +91,6 @@ python -m src.crawler_app.cli build-db
 if ($LASTEXITCODE -ne 0) { throw "Falha ao construir o banco (crawler_app build-db)" }
 
 Write-Host "✔ Concluído. JSONs em data/json e DB em data/db/gde_simple.db" -ForegroundColor Green
-=======
 # Step 1: enumerate -> outputs/json
 Write-Host "[3/4] Running collector (enumerate_dimensions)" -ForegroundColor Cyan
 python -m src.collectors.enumerate_dimensions
@@ -104,4 +102,3 @@ python -m src.crawler_app.cli build-db
 if ($LASTEXITCODE -ne 0) { throw "Database build failed (crawler_app build-db)" }
 
 Write-Host "Done. JSON files in outputs/json and DB in outputs/gde_simple.db" -ForegroundColor Green
->>>>>>> main

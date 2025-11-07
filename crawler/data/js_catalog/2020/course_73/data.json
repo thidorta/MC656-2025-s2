@@ -1,0 +1,22 @@
+{
+  "course": {
+    "id": 73,
+    "name": "Curso Superior de Tecnologia em Saneamento Ambiental (73)",
+    "code": "73"
+  },
+  "modalities": [],
+  "curriculum": {
+    "course_id": 73,
+    "year": 2020,
+    "modality": "AA",
+    "nodes": [],
+    "edges": []
+  },
+  "offers": [],
+  "prereqs": [],
+  "semester_map": {
+    "course_id": 73,
+    "year": 2020,
+    "entries": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 72,
+    "name": "Curso de Música Popular (72)",
+    "code": "72"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2019,
+  "parameters": {
+    "catalogo": "2019",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": []
+}

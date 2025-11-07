@@ -1,0 +1,834 @@
+{
+  "course": {
+    "id": 22,
+    "name": "Música (22)",
+    "code": "22"
+  },
+  "modalidade": "VZ",
+  "modalidade_label": "VZ - Voz",
+  "year": 2022,
+  "parameters": {
+    "catalogo": "2022",
+    "modalidade": "VZ",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4915",
+      "codigo": "MU196",
+      "nome": "Canto I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4840",
+      "codigo": "MU058",
+      "nome": "Rítmica I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5002",
+      "codigo": "MU360",
+      "nome": "História da Música I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU260"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4857",
+      "codigo": "MU105",
+      "nome": "Estruturação Musical I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4863",
+      "codigo": "MU112",
+      "nome": "Técnica Vocal I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4866",
+      "codigo": "MU120",
+      "nome": "Coral I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4894",
+      "codigo": "MU162",
+      "nome": "Laboratório de Expressão Corporal I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4928",
+      "codigo": "MU220",
+      "nome": "Coral II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU120"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4956",
+      "codigo": "MU262",
+      "nome": "Laboratório de Expressão Corporal II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU162"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4975",
+      "codigo": "MU293",
+      "nome": "Percepção Musical II",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU193"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9170",
+      "codigo": "MU049",
+      "nome": "Introdução à Pesquisa",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4977",
+      "codigo": "MU296",
+      "nome": "Canto II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU196"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU058"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5045",
+      "codigo": "MU460",
+      "nome": "História da Música II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4919",
+      "codigo": "MU205",
+      "nome": "Estruturação Musical II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4924",
+      "codigo": "MU212",
+      "nome": "Técnica Vocal II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU112"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4864",
+      "codigo": "MU114",
+      "nome": "Análise I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5084",
+      "codigo": "MU560",
+      "nome": "História da Música III",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU460"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4881",
+      "codigo": "MU146",
+      "nome": "Harmonia do Período Barroco",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4904",
+      "codigo": "MU178",
+      "nome": "Música de Câmera I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4987",
+      "codigo": "MU320",
+      "nome": "Coral III",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU220"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5018",
+      "codigo": "MU393",
+      "nome": "Percepção Musical III",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU293"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5020",
+      "codigo": "MU396",
+      "nome": "Canto III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU296"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4842",
+      "codigo": "MU060",
+      "nome": "Rítmica III",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU059"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5070",
+      "codigo": "MU512",
+      "nome": "Dicção I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU212"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5030",
+      "codigo": "MU420",
+      "nome": "Coral IV",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU320"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5060",
+      "codigo": "MU493",
+      "nome": "Percepção Musical IV",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU393"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5062",
+      "codigo": "MU496",
+      "nome": "Canto IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU396"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4843",
+      "codigo": "MU061",
+      "nome": "Rítmica IV",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU060"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5106",
+      "codigo": "MU612",
+      "nome": "Dicção II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU512"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4925",
+      "codigo": "MU214",
+      "nome": "Análise II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU114"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5117",
+      "codigo": "MU660",
+      "nome": "História da Música IV",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU560"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4943",
+      "codigo": "MU246",
+      "nome": "Harmonia do Classicismo ao Romantismo",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU146"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4966",
+      "codigo": "MU278",
+      "nome": "Música de Câmera II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU178"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4911",
+      "codigo": "MU190",
+      "nome": "História da Música Brasileira I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4986",
+      "codigo": "MU314",
+      "nome": "Análise III",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU214"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4994",
+      "codigo": "MU346",
+      "nome": "Harmonia do Romantismo ao Século XX",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU246"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5003",
+      "codigo": "MU362",
+      "nome": "Ópera Estúdio I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU296"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5010",
+      "codigo": "MU378",
+      "nome": "Música de Câmera III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU278"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5098",
+      "codigo": "MU596",
+      "nome": "Canto V",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU496"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4973",
+      "codigo": "MU290",
+      "nome": "História da Música Brasileira II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU190"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5029",
+      "codigo": "MU414",
+      "nome": "Análise IV",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU314"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5037",
+      "codigo": "MU446",
+      "nome": "Harmonia do Século XX",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU346"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5046",
+      "codigo": "MU462",
+      "nome": "Ópera Stúdio II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU362"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5052",
+      "codigo": "MU478",
+      "nome": "Música de Câmera IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU378"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5131",
+      "codigo": "MU696",
+      "nome": "Canto VI",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU596"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "16223",
+      "codigo": "MP106",
+      "nome": "Atividades complementares I",
+      "creditos": 7,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VZ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "16224",
+      "codigo": "MP107",
+      "nome": "Atividades complementares II",
+      "creditos": 7,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MP106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5085",
+      "codigo": "MU562",
+      "nome": "Ópera Stúdio III",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU462"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5157",
+      "codigo": "MU796",
+      "nome": "Canto VII",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU696"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5187",
+      "codigo": "MU998",
+      "nome": "Recital",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU448"
+        ],
+        [
+          "MU603"
+        ],
+        [
+          "MU604"
+        ],
+        [
+          "MU606"
+        ],
+        [
+          "MU609"
+        ],
+        [
+          "MU621"
+        ],
+        [
+          "MU623"
+        ],
+        [
+          "MU624"
+        ],
+        [
+          "MU626"
+        ],
+        [
+          "MU627"
+        ],
+        [
+          "MU684"
+        ],
+        [
+          "MU686"
+        ],
+        [
+          "MU692"
+        ],
+        [
+          "MU694"
+        ],
+        [
+          "MU696"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5118",
+      "codigo": "MU662",
+      "nome": "Ópera Estúdio IV",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU562"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5183",
+      "codigo": "MU896",
+      "nome": "Canto VIII",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU796"
+        ]
+      ]
+    }
+  ]
+}

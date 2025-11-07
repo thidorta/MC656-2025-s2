@@ -1,6 +1,13 @@
 from __future__ import annotations
-import requests
+
+import re
 from typing import Optional
+
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+from ..config.settings import CrawlerSettings
 
 DEFAULT_HEADERS = {
     "User-Agent": (
@@ -12,6 +19,24 @@ DEFAULT_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
     "Connection": "keep-alive",
 }
+
+
+def build_session(settings: CrawlerSettings) -> requests.Session:
+    session = requests.Session()
+    session.headers.update(DEFAULT_HEADERS)
+
+    retry = Retry(
+        total=settings.retries,
+        status=settings.retries,
+        backoff_factor=0.2,
+        status_forcelist=(500, 502, 503, 504),
+        allowed_methods=frozenset({"GET", "POST"}),
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    return session
 
 
 def create_session() -> requests.Session:
@@ -33,7 +58,13 @@ def ensure_csrf_cookie(session: requests.Session, base_url: str) -> Optional[str
     return session.cookies.get("csrfptoken")
 
 
-def login_via_ajax(session: requests.Session, base_url: str, user: str, password: str, csrf: Optional[str] = None):
+def login_via_ajax(
+    session: requests.Session,
+    base_url: str,
+    user: str,
+    password: str,
+    csrf: Optional[str] = None,
+):
     url = base_url.rstrip("/") + "/ajax/login.php"
     headers = {
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
@@ -60,5 +91,17 @@ def login_via_ajax(session: requests.Session, base_url: str, user: str, password
 
     resp = session.post(url, headers=headers, data=data, timeout=30)
     resp.raise_for_status()
+
+    # Try to discover the planner ID so downstream calls don't rely on env vars.
+    try:
+        planner_resp = session.get(base_url.rstrip("/") + "/planejador/", timeout=20)
+        planner_resp.raise_for_status()
+        pattern = r"InicializarPlanejador\([\'\"](\d+)[\'\"]\)"
+        match = re.search(pattern, planner_resp.text)
+        if match:
+            session.gde_planejador_id = match.group(1)
+    except Exception:
+        pass
+
     return resp
 

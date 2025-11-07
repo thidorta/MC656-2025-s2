@@ -1,0 +1,978 @@
+{
+  "course": {
+    "id": 100,
+    "name": "Ciências do Esporte (100)",
+    "code": "100"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "6888",
+      "codigo": "SL104",
+      "nome": "Saúde e Sociedade",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9722",
+      "codigo": "SL105",
+      "nome": "Biologia Celular e Molecular",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9715",
+      "codigo": "CP102",
+      "nome": "História da Educação Física e do Esporte",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11345",
+      "codigo": "SL106",
+      "nome": "Anatomia e Histologia Aplicadas ao Esporte I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17442",
+      "codigo": "CP104",
+      "nome": "Modalidades Esportivas: Ginásticas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17443",
+      "codigo": "CP105",
+      "nome": "Modalidades Esportivas: Atletismo",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17444",
+      "codigo": "CP106",
+      "nome": "Teoria do Jogo",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9720",
+      "codigo": "NC103",
+      "nome": "Natureza e Tecnologia na Sociedade Contemporânea",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "972",
+      "codigo": "CP700",
+      "nome": "Socorros de Urgência",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12133",
+      "codigo": "NC104",
+      "nome": "Introdução à Ciência dos Dados e à Informação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "953",
+      "codigo": "CP200",
+      "nome": "Fundamentos Metodológicos do Treinamento Desportivo",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11346",
+      "codigo": "SL108",
+      "nome": "Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL106"
+        ],
+        [
+          "SL109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11717",
+      "codigo": "CP205",
+      "nome": "Temas Contemporâneos de Ginásticas",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11347",
+      "codigo": "SL206",
+      "nome": "Anatomia e Histologia Aplicadas ao Esporte II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9899",
+      "codigo": "CP305",
+      "nome": "Pedagogia do Esporte",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11348",
+      "codigo": "SL209",
+      "nome": "Matemática para Ciências da Saúde",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9901",
+      "codigo": "CP307",
+      "nome": "Bioquímica Metabólica",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9900",
+      "codigo": "CP306",
+      "nome": "Psicologia da Aprendizagem Aplicada ao Esporte",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5439",
+      "codigo": "SL400",
+      "nome": "Crescimento e Desenvolvimento",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17445",
+      "codigo": "CP308",
+      "nome": "Modalidades Esportivas de Combate",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9902",
+      "codigo": "NC301",
+      "nome": "Filosofia e Ciências Humanas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5435",
+      "codigo": "SL204",
+      "nome": "Cinesiologia I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11349",
+      "codigo": "SL208",
+      "nome": "Fisiologia Humana II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT210",
+          "SL108",
+          "SL109"
+        ],
+        [
+          "CP307",
+          "SL108",
+          "SL206"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6889",
+      "codigo": "SL303",
+      "nome": "Estatística e Bioestatística",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL209"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "970",
+      "codigo": "CP602",
+      "nome": "Avaliação em Ciências do Esporte",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP200"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "962",
+      "codigo": "CP404",
+      "nome": "Biomecânica Aplicada em Ciências do Esporte",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL209"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11350",
+      "codigo": "SL403",
+      "nome": "Saúde Coletiva e Epidemiologia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9904",
+      "codigo": "CP410",
+      "nome": "Fisiologia do Exercício",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17446",
+      "codigo": "CP413",
+      "nome": "Modalidades Esportivas Individuais Combinadas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17447",
+      "codigo": "CP414",
+      "nome": "Modalidades Esportivas: Coletivas I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "968",
+      "codigo": "CP600",
+      "nome": "Políticas Públicas em Esporte",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9913",
+      "codigo": "CP607",
+      "nome": "Avaliações Fisiológicas Aplicadas ao Esporte",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP410",
+          "CP602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11351",
+      "codigo": "CP609",
+      "nome": "Introdução aos Esportes Adaptados",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12134",
+      "codigo": "CP708",
+      "nome": "Psicologia no Esporte e na Atividade Física I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP306"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9909",
+      "codigo": "CP507",
+      "nome": "Atividade Física e Esporte para Grupos Especiais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP410"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17448",
+      "codigo": "CP511",
+      "nome": "Ética, Mercado de Trabalho e Estágios Iniciais em Ciências do Esporte",
+      "creditos": 13,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9912",
+      "codigo": "CP606",
+      "nome": "Fundamentos do Treinamento Resistido",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP410"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5440",
+      "codigo": "SL600",
+      "nome": "Introdução à Prática de Ciências",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "966",
+      "codigo": "CP502",
+      "nome": "Treinamento Desportivo e Rendimento",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP607"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17449",
+      "codigo": "CP611",
+      "nome": "Modalidades Esportivas - Coletivas II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9915",
+      "codigo": "CP706",
+      "nome": "Esporte Adaptado",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP609"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "973",
+      "codigo": "CP701",
+      "nome": "Esporte, Lazer e Sociedade",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "977",
+      "codigo": "CP705",
+      "nome": "Estágio em Ciências do Esporte I",
+      "creditos": 14,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15473",
+      "codigo": "CP709",
+      "nome": "Treinadores e Treinadoras Esportivos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17450",
+      "codigo": "CP710",
+      "nome": "Desenvolvimento e Relatório de Pesquisa e Prática em Ciências",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "979",
+      "codigo": "CP801",
+      "nome": "Organização e Gestão em Esporte",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "981",
+      "codigo": "CP803",
+      "nome": "Estágio em Ciência do Esporte II",
+      "creditos": 17,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11270",
+      "codigo": "CP807",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CP707"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17451",
+      "codigo": "CP809",
+      "nome": "Modalidades Esportivas: Aquáticas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14429",
+      "codigo": "NC007",
+      "nome": "Tópicos Especiais em Humanidades VII",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18086",
+      "codigo": "NC112",
+      "nome": "Linguagens e discursividades",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18088",
+      "codigo": "NC223",
+      "nome": "Tecnologia e sociedade",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11890",
+      "codigo": "NC003",
+      "nome": "Tópicos Especiais em Humanidades III",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6893",
+      "codigo": "NC202",
+      "nome": "Sociedade e Ambiente",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18089",
+      "codigo": "NC224",
+      "nome": "Biologia e cultura",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9519",
+      "codigo": "NC005",
+      "nome": "Tópicos Especiais em Humanidades V",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5189",
+      "codigo": "NC100",
+      "nome": "Ética e Cidadania",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18087",
+      "codigo": "NC222",
+      "nome": "Ciência e sociedade",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9518",
+      "codigo": "NC001",
+      "nome": "Tópicos Especiais em Humanidades I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3642",
+      "codigo": "NC021",
+      "nome": "Etnografia e Interdisciplinaridade",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10369",
+      "codigo": "NC019",
+      "nome": "Sociedade da Informação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18092",
+      "codigo": "NC506",
+      "nome": "Debates Interdisciplinares em processos técnicos e tecnologias",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10364",
+      "codigo": "NC013",
+      "nome": "Fenomenologia, Ciência e Geografia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12005",
+      "codigo": "NC004",
+      "nome": "Tópicos Especiais em Humanidades IV",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14413",
+      "codigo": "NC023",
+      "nome": "Estudos de Laboratório",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14430",
+      "codigo": "NC008",
+      "nome": "Tópicos Especiais em Humanidades VIII",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10362",
+      "codigo": "NC010",
+      "nome": "Cinema e Percepção Pública da Ciência",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10371",
+      "codigo": "NC502",
+      "nome": "Lógica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10367",
+      "codigo": "NC017",
+      "nome": "Urbanização e Dinâmicas de Uso e Cobertura de Terra",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18091",
+      "codigo": "NC505",
+      "nome": "Debates Interdisciplinares em políticas, institucionalidades e inovação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9520",
+      "codigo": "NC006",
+      "nome": "Tópicos Especiais em Humanidades VI",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10370",
+      "codigo": "NC020",
+      "nome": "O Utilitarismo e seus Críticos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10407",
+      "codigo": "NC002",
+      "nome": "Tópicos Especiais em Humanidades II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3640",
+      "codigo": "NC022",
+      "nome": "Quartas Interdisciplinares: Seminários de Pesquisa",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18090",
+      "codigo": "NC504",
+      "nome": "Debates Interdisciplinares em metabolismo, movimento e alimentação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14414",
+      "codigo": "NC024",
+      "nome": "Fundamentos e Metodologias de Extensão Universitária",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10366",
+      "codigo": "NC016",
+      "nome": "Aplicações em Ciências Humanas e Sociais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17441",
+      "codigo": "CP047",
+      "nome": "Atividades de Extensão Universitária II",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17440",
+      "codigo": "CP046",
+      "nome": "Atividades de Extensão Universitária I",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

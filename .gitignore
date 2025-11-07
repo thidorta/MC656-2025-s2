@@ -136,4 +136,4 @@ __pypackages__/
 /crawler/src/utils/__pycache__
 /crawler/src/tools/__pycache__/
 /crawler/src/db/__pycache__/
-/crawler/data
+/crawler/data/user_db/
