@@ -97,6 +97,7 @@ secrets.*
 # PDM / other local caches
 __pypackages__/
 
+/.genaiscript
 /.github/instructions/genaiscript.instructions.md
 /package-lock.json
 /package.json
