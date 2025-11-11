@@ -43,10 +43,10 @@ Documentação detalhada: [docs/gde_app/ARCHITECTURE.md](docs/gde_app/ARCHITECTU
 ## Arquitetura - Backend
 O backend atua como camada de orquestração e provedor de dados, servindo como ponte entre o GDE App e os dados coletados pelo crawler.
 
--Arquitetura desacoplada orientada a serviços, com foco em APIs RESTful para consumo externo.
--Validação, agregação e normalização dos dados recebidos do crawler antes de disponibilizá-los ao app.
--Camada de persistência abstrata, facilitando substituição de fornecedores de dados (ex: SQLite, arquivos JSON).
--Configuração por variáveis de ambiente e arquivos .env, centralizando settings críticos.
+- Arquitetura desacoplada orientada a serviços, com foco em APIs RESTful para consumo externo.
+- Validação, agregação e normalização dos dados recebidos do crawler antes de disponibilizá-los ao app.
+- Camada de persistência abstrata, facilitando substituição de fornecedores de dados (ex: SQLite, arquivos JSON).
+- Configuração por variáveis de ambiente e arquivos .env, centralizando settings críticos.
 
 Documentação detalhada: [docs/backend/ARCHITECTURE.md](docs/backend/ARCHITECTURE.md)
 ---
