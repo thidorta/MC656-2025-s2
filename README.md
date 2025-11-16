@@ -30,6 +30,25 @@ O crawler fecha o circuito App -> Backend -> Crawler/DB: o app aciona o backend,
 
 Documentacao detalhada: [docs/crawler/ARCHITECTURE.md](docs/crawler/ARCHITECTURE.md)
 
+## Arquitetura - GDE App
+O GDE App é a interface de usuário do sistema, permitindo aos usuários consultar, visualizar e interagir com os dados provenientes do backend.
+
+- Frontend baseado em arquitetura MVC, separando lógica de apresentação, controle e visualização de dados.
+- Comunicação via API RESTful com o backend, promovendo desacoplamento entre camadas.
+- Configuração e parametrização via arquivos de ambiente e settings próprios do app.
+- Reutilização de componentes visuais para otimizar manutenção e extensibilidade.
+
+Documentação detalhada: [docs/gde_app/ARCHITECTURE.md](docs/gde_app/ARCHITECTURE.md)
+
+## Arquitetura - Backend
+O backend atua como camada de orquestração e provedor de dados, servindo como ponte entre o GDE App e os dados coletados pelo crawler.
+
+- Arquitetura desacoplada orientada a serviços, com foco em APIs RESTful para consumo externo.
+- Validação, agregação e normalização dos dados recebidos do crawler antes de disponibilizá-los ao app.
+- Camada de persistência abstrata, facilitando substituição de fornecedores de dados (ex: SQLite, arquivos JSON).
+- Configuração por variáveis de ambiente e arquivos .env, centralizando settings críticos.
+
+Documentação detalhada: [docs/backend/ARCHITECTURE.md](docs/backend/ARCHITECTURE.md)
 ---
 
 ## ⚙️ How to Run the Project

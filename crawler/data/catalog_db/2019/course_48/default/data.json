@@ -1,0 +1,1578 @@
+{
+  "course": {
+    "id": 48,
+    "name": "Arquitetura e Urbanismo (48)",
+    "code": "48"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2019,
+  "parameters": {
+    "catalogo": "2019",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "511",
+      "codigo": "AU221",
+      "nome": "Geometria Aplicada à Arquitetura",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11740",
+      "codigo": "AU991",
+      "nome": "Práticas de Campo Diurnas 1 (PCD-1)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7002",
+      "codigo": "HH788",
+      "nome": "Introdução ao Estudo da Cidade",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4751",
+      "codigo": "MS123",
+      "nome": "Elementos de Cálculo",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "276",
+      "codigo": "AP111",
+      "nome": "Teoria e Projeto I: Introdução",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "295",
+      "codigo": "AP211",
+      "nome": "Desenho I: Desenho Artístico",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6807",
+      "codigo": "AU110",
+      "nome": "Fundamentos da Teoria da Arquitetura",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "510",
+      "codigo": "AU212",
+      "nome": "Desenho II: Desenho Técnico",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU221"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "513",
+      "codigo": "AU223",
+      "nome": "Topografia e Informações Geográficas para Arquitetura",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU221"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11741",
+      "codigo": "AU992",
+      "nome": "Práticas de Campo Diurnas 2 (PCD-2)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7003",
+      "codigo": "HH804",
+      "nome": "História da Arquitetura e Urbanismo do Clássico ao Barroco",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "277",
+      "codigo": "AP112",
+      "nome": "Teoria e Projeto II: Processo Criativo",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AP111",
+          "AP211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "281",
+      "codigo": "AP120",
+      "nome": "Teoria e Projeto X: Interiores",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AP216"
+        ],
+        [
+          "AP217"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "529",
+      "codigo": "AU501",
+      "nome": "Física Aplicada à Arquitetura",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MS123"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "537",
+      "codigo": "AU601",
+      "nome": "Fundamentos do Urbanismo",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HH792",
+          "HH801"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "542",
+      "codigo": "AU811",
+      "nome": "Tecnologia do Ambiente Construído I: Materiais de Construção",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU403"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11742",
+      "codigo": "AU993",
+      "nome": "Práticas de Campo Diurnas 3 (PCD-3)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7006",
+      "codigo": "HH789",
+      "nome": "Estudos Socioeconômicos para Arquitetura e Urbanismo I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HH788"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "278",
+      "codigo": "AP115",
+      "nome": "Modelos e Maquetes",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AP213"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "517",
+      "codigo": "AU302",
+      "nome": "Informática Aplicada II: Introdução ao CAD",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU221"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10590",
+      "codigo": "AU145",
+      "nome": "Teoria e Projeto V: Conforto Térmico e Projeto Bioclimático",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU144",
+          "AU501"
+        ],
+        [
+          "AU146",
+          "AU501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11743",
+      "codigo": "AU605",
+      "nome": "Conforto Urbano",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "543",
+      "codigo": "AU812",
+      "nome": "Tecnologia do Ambiente Construído II: Técnicas Construtivas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU811"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11744",
+      "codigo": "AU994",
+      "nome": "Práticas de Campo Diurnas 4 (PCD-4)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7009",
+      "codigo": "HH805",
+      "nome": "História da Arquitetura e Urbanismo Moderno",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HH788"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "315",
+      "codigo": "AP314",
+      "nome": "Informática Aplicada IV: Modelagem e Animação",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AP213"
+        ],
+        [
+          "AU303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "296",
+      "codigo": "AP213",
+      "nome": "Desenho III: Plástica Aplicada",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AP211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10591",
+      "codigo": "AU146",
+      "nome": "Teoria e Projeto VI: Iluminação Natural e Artificial na Arquitetura",
+      "creditos": 10,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU501"
+        ],
+        [
+          "AU133",
+          "AU135"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "522",
+      "codigo": "AU401",
+      "nome": "Estruturas I: Introdução",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MS123"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11745",
+      "codigo": "AU609",
+      "nome": "Projeto de Novos Bairros Urbanos",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "548",
+      "codigo": "AU817",
+      "nome": "Sistemas Elétricos",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11746",
+      "codigo": "AU995",
+      "nome": "Práticas de Campo Diurnas 5 (PCD-5)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10592",
+      "codigo": "AU147",
+      "nome": "Teoria e Projeto VII: Acústica Arquitetônica",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "518",
+      "codigo": "AU303",
+      "nome": "Informática Aplicada III: CAD no Processo Criativo",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "523",
+      "codigo": "AU402",
+      "nome": "Estruturas II: Resistência",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "530",
+      "codigo": "AU502",
+      "nome": "Hidráulica",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MS123"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "539",
+      "codigo": "AU613",
+      "nome": "Planejamento Urbano III: Desenho Urbano",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11747",
+      "codigo": "AU996",
+      "nome": "Práticas de Campo Diurnas 6 (PCD-6)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "391",
+      "codigo": "AP741",
+      "nome": "Arquitetura Paisagística I: Introdução",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "392",
+      "codigo": "AP742",
+      "nome": "Arquitetura Paisagística II: Projetos",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AP741",
+          "AU601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10589",
+      "codigo": "AU144",
+      "nome": "Teoria e Projeto IV: Arquitetura de Interesse Social",
+      "creditos": 13,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "526",
+      "codigo": "AU405",
+      "nome": "Estruturas V: Concreto",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11748",
+      "codigo": "AU997",
+      "nome": "Práticas de Campo Diurnas 7 (PCD-7)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7015",
+      "codigo": "HH806",
+      "nome": "História da Arquitetura e Urbanismo Contemporâneo",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HH788"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10593",
+      "codigo": "AU148",
+      "nome": "Teoria e Projeto VIII: Complexidade em Arquitetura",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU147"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "527",
+      "codigo": "AU406",
+      "nome": "Estruturas VI: Metálicas e Madeira",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "535",
+      "codigo": "AU504",
+      "nome": "Hidrologia Urbana",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11749",
+      "codigo": "AU610",
+      "nome": "Fundamentos de Estatística Aplicada ao Planejamento Urbano",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "538",
+      "codigo": "AU612",
+      "nome": "Planejamento Urbano II: Planos Urbanos",
+      "creditos": 5,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11750",
+      "codigo": "AU998",
+      "nome": "Práticas de Campo Diurnas 8 (PCD-8)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "300",
+      "codigo": "AP216",
+      "nome": "Desenho Industrial I: Introdução à Programação Visual",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "515",
+      "codigo": "AU225",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "525",
+      "codigo": "AU404",
+      "nome": "Estruturas IV: Fundações",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "540",
+      "codigo": "AU614",
+      "nome": "Planejamento Urbano IV: Planejamento Ambiental",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "545",
+      "codigo": "AU814",
+      "nome": "Técnicas Retrospectivas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU812"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11751",
+      "codigo": "AU999",
+      "nome": "Práticas de Campo Diurnas 9 (PCD-9)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7019",
+      "codigo": "HH796",
+      "nome": "Estudos Socioeconômicos para Arquitetura e Urbanismo II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HH788"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "301",
+      "codigo": "AP217",
+      "nome": "Desenho Industrial II: Introdução ao Projeto de Produto",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10594",
+      "codigo": "AU149",
+      "nome": "Teoria e Projeto IX: Arquitetura e Verticalidade",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU148"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "541",
+      "codigo": "AU713",
+      "nome": "Planejamento da Paisagem: Macro Paisagem",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU612"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "546",
+      "codigo": "AU815",
+      "nome": "Tecnologia do Ambiente Construído VI: Gerenciamento",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "547",
+      "codigo": "AU816",
+      "nome": "Sistemas Prediais, Hidráulicos e Sanitários",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11752",
+      "codigo": "AU917",
+      "nome": "Técnicas Retrospectivas II: Sítios Urbanos",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU814"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11753",
+      "codigo": "AU990",
+      "nome": "Práticas de Campo Diurnas 10 (PCD-10)",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "486",
+      "codigo": "AU001",
+      "nome": "Projeto de Graduação I",
+      "creditos": 10,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU120"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7028",
+      "codigo": "AU023",
+      "nome": "Metodologia de Projeto XI: Sistemas Arquitetônicos",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "487",
+      "codigo": "AU020",
+      "nome": "Projeto de Graduação II",
+      "creditos": 14,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU001"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "478",
+      "codigo": "AR101",
+      "nome": "Fundamentos Filosóficos da Arte Educação",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4650",
+      "codigo": "ML102",
+      "nome": "Linguagem Fotográfica I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3232",
+      "codigo": "GF604",
+      "nome": "Geografia Urbana",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3182",
+      "codigo": "GF100",
+      "nome": "Geomorfologia e Meio Ambiente",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3236",
+      "codigo": "GF702",
+      "nome": "Meio Ambiente Urbano",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GF604"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3184",
+      "codigo": "GF102",
+      "nome": "Movimentos Sociais",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "787",
+      "codigo": "BT681",
+      "nome": "Botânica Econômica",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3243",
+      "codigo": "GF805",
+      "nome": "Planejamento Territorial",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GF401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3187",
+      "codigo": "GF105",
+      "nome": "Metrópoles e Metropolização",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "255",
+      "codigo": "AM031",
+      "nome": "Trabalhos em Alfabetização Ambiental",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3295",
+      "codigo": "GN301",
+      "nome": "História das Teorias Econômicas",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3194",
+      "codigo": "GF112",
+      "nome": "Organização do Espaço Regional",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3222",
+      "codigo": "GF503",
+      "nome": "Sociologia",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3178",
+      "codigo": "GE903",
+      "nome": "Geologia Urbana",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "551",
+      "codigo": "AU902",
+      "nome": "Geoprocessamento Aplicado à Arquitetura e Engenharia Civil",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU223",
+          "CV321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11811",
+      "codigo": "AU922",
+      "nome": "Tópicos Integrados AU-EC",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "520",
+      "codigo": "AU312",
+      "nome": "Informática Aplicada II: Planos e Volumes",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AP111",
+          "AU221",
+          "AU311"
+        ],
+        [
+          "AP213"
+        ],
+        [
+          "AU303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9108",
+      "codigo": "AU915",
+      "nome": "Laboratório de Restauro I: A Documentação do Patrimônio Arquitetônico",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HH804"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11804",
+      "codigo": "AU196",
+      "nome": "Teoria e Projeto: Ateliê Vertical 6",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "558",
+      "codigo": "AU909",
+      "nome": "Modelos no Estudo de Formas Tridimensionais",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV201"
+        ],
+        [
+          "EC204"
+        ],
+        [
+          "AU300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11799",
+      "codigo": "AU191",
+      "nome": "Teoria e Projeto: Ateliê Vertical 1",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "552",
+      "codigo": "AU903",
+      "nome": "Seminários e Arquitetura Contemporânea",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU113"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11812",
+      "codigo": "AU923",
+      "nome": "Tópicos Integrados AU-EC",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "521",
+      "codigo": "AU313",
+      "nome": "Informática Aplicada III: CADD",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU212",
+          "AU312"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11808",
+      "codigo": "AU916",
+      "nome": "Análise de Projetos de Arquitetura e Urbanismo",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11805",
+      "codigo": "AU197",
+      "nome": "Teoria e Projeto: Ateliê Vertical 7",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6810",
+      "codigo": "AU910",
+      "nome": "Prototipagem e Fabricação Digital",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11800",
+      "codigo": "AU192",
+      "nome": "Teoria e Projeto: Ateliê Vertical 2",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "553",
+      "codigo": "AU904",
+      "nome": "CAD Aplicado ao Projeto de Arquitetura",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EC304"
+        ],
+        [
+          "AU313"
+        ],
+        [
+          "AU300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11813",
+      "codigo": "AU924",
+      "nome": "Tópicos Integrados AU-EC",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7018",
+      "codigo": "AU700",
+      "nome": "Eficiência Energética no Projeto e na Construção",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12195",
+      "codigo": "AU918",
+      "nome": "Saneamento de Pequenas Comunidades",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11806",
+      "codigo": "AU198",
+      "nome": "Teoria e Projeto: Ateliê Vertical 8",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6811",
+      "codigo": "AU911",
+      "nome": "Integração de Projeto em CAD 4D",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV702"
+        ],
+        [
+          "AU113"
+        ],
+        [
+          "AU405",
+          "CV402"
+        ],
+        [
+          "AU816",
+          "CV714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11801",
+      "codigo": "AU193",
+      "nome": "Teoria e Projeto: Ateliê Vertical 3",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "555",
+      "codigo": "AU906",
+      "nome": "Gestão Ambiental por Bacias",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11814",
+      "codigo": "AU925",
+      "nome": "Tópicos Integrados AU-EC",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7026",
+      "codigo": "AU701",
+      "nome": "Arquitetura Sustentável: Projeto e Construção",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU145",
+          "AU146",
+          "AU147"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11809",
+      "codigo": "AU920",
+      "nome": "Tópicos Integrados AU-EC",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11807",
+      "codigo": "AU199",
+      "nome": "Teoria e Projeto: Ateliê Vertical 9",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6808",
+      "codigo": "AU912",
+      "nome": "Teoria e Crítica na Arquitetura Contemporânea",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11802",
+      "codigo": "AU194",
+      "nome": "Teoria e Projeto: Ateliê Vertical 4",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "556",
+      "codigo": "AU907",
+      "nome": "Teoria e História da Conservação e Restauração",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HH804"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "550",
+      "codigo": "AU901",
+      "nome": "Sistema de Informação Geográfica Aplicado ao Urbanismo",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AU223",
+          "AU601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11810",
+      "codigo": "AU921",
+      "nome": "Tópicos Integrados AU-EC",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "519",
+      "codigo": "AU311",
+      "nome": "Informática Aplicada I: Introdução",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6809",
+      "codigo": "AU913",
+      "nome": "Eficiência Energética em Edificações",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11803",
+      "codigo": "AU195",
+      "nome": "Teoria e Projeto: Ateliê Vertical 5",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "557",
+      "codigo": "AU908",
+      "nome": "Introdução à Programação em Arquitetura",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV201"
+        ],
+        [
+          "EC304"
+        ],
+        [
+          "AU300"
+        ]
+      ]
+    }
+  ]
+}

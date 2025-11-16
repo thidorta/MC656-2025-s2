@@ -1,0 +1,1018 @@
+{
+  "course": {
+    "id": 83,
+    "name": "Curso Superior de Tecnologia em Construção de Edifícios (83)",
+    "code": "83"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2019,
+  "parameters": {
+    "catalogo": "2019",
+    "modalidade": "",
+    "periodo": "20251",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "5539",
+      "codigo": "ST114",
+      "nome": "Fundamentos de Química Aplicada a Construção Civil",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7042",
+      "codigo": "ST216",
+      "nome": "Geologia Geral",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5576",
+      "codigo": "ST362",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5529",
+      "codigo": "ST103",
+      "nome": "Desenho Técnico",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11015",
+      "codigo": "ST112",
+      "nome": "Introdução à Construção de Edifícios",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5561",
+      "codigo": "ST215",
+      "nome": "Mecânica Geral",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST109",
+          "ST362"
+        ],
+        [
+          "EB101",
+          "ST362"
+        ],
+        [
+          "EB101",
+          "EB102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5569",
+      "codigo": "ST304",
+      "nome": "Materiais de Construção Civil I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9727",
+      "codigo": "EB103",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5557",
+      "codigo": "ST211",
+      "nome": "Estatística",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5559",
+      "codigo": "ST213",
+      "nome": "Desenho Assistido por Computador",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5574",
+      "codigo": "ST309",
+      "nome": "Resistência dos Materiais I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST209",
+          "ST215",
+          "TT101"
+        ],
+        [
+          "EB101",
+          "ST215"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10083",
+      "codigo": "EB203",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST109"
+        ],
+        [
+          "EB103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5556",
+      "codigo": "ST210",
+      "nome": "Eletrotécnica Aplicada",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST109",
+          "TT101"
+        ],
+        [
+          "EB101",
+          "EB103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5566",
+      "codigo": "ST301",
+      "nome": "Topografia I",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5568",
+      "codigo": "ST303",
+      "nome": "Hidrotécnica I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST209",
+          "TT101"
+        ],
+        [
+          "EB101",
+          "EB103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5580",
+      "codigo": "ST401",
+      "nome": "Topografia II",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5582",
+      "codigo": "ST403",
+      "nome": "Hidrotécnica II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7043",
+      "codigo": "ST410",
+      "nome": "Mecânica dos Solos I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST216"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5588",
+      "codigo": "ST420",
+      "nome": "Materiais de Construção Civil II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5590",
+      "codigo": "ST423",
+      "nome": "Resistência dos Materiais II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST309"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5609",
+      "codigo": "ST525",
+      "nome": "Instalações Prediais Elétricas",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5610",
+      "codigo": "ST526",
+      "nome": "Estática das Estruturas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5611",
+      "codigo": "ST527",
+      "nome": "Concreto Armado I",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB603",
+          "ST423"
+        ],
+        [
+          "ST420",
+          "ST423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7044",
+      "codigo": "ST529",
+      "nome": "Mecânica dos Solos II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST410",
+          "ST423"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5672",
+      "codigo": "ST726",
+      "nome": "Construção e Meio Ambiente",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5605",
+      "codigo": "ST515",
+      "nome": "Tecnologia da Construção de Edifícios I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST420"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5571",
+      "codigo": "ST306",
+      "nome": "Hidrologia e Drenagem",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST211",
+          "ST301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5636",
+      "codigo": "ST618",
+      "nome": "Tecnologia da Construção de Edifícios II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST515"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5641",
+      "codigo": "ST625",
+      "nome": "Fundações",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST529"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5642",
+      "codigo": "ST626",
+      "nome": "Projetos de Instalações Prediais Hidráulico-Sanitárias",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5644",
+      "codigo": "ST628",
+      "nome": "Concreto Armado II",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB944",
+          "ST526"
+        ],
+        [
+          "ST526",
+          "ST527"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5674",
+      "codigo": "ST728",
+      "nome": "Introdução ao Trabalho de Graduação e Estágio Supervisionado",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5448",
+      "codigo": "ST008",
+      "nome": "Metodologia do Trabalho Científico",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5669",
+      "codigo": "ST723",
+      "nome": "Planejamento e Controle da Construção",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST618"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7045",
+      "codigo": "ST729",
+      "nome": "Noções de Concreto Protendido",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB944"
+        ],
+        [
+          "ST527"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5668",
+      "codigo": "ST722",
+      "nome": "Estruturas de Aço e Madeira",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST526"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5466",
+      "codigo": "ST026",
+      "nome": "Computação Gráfica Aplicada II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST025"
+        ],
+        [
+          "ST213"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7051",
+      "codigo": "ST640",
+      "nome": "Tecnologia dos Transportes I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10725",
+      "codigo": "ST059",
+      "nome": "Iniciação Científica II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6182",
+      "codigo": "TT601",
+      "nome": "Gestão Empreendedora",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7165",
+      "codigo": "ST046",
+      "nome": "Projeto de Estruturas de Concreto Assistido por Computador",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST628"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6126",
+      "codigo": "TT021",
+      "nome": "Contabilidade de Custos",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT020"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5467",
+      "codigo": "ST027",
+      "nome": "Tópicos Especiais em Edifícios",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5673",
+      "codigo": "ST727",
+      "nome": "Concreto Armado III",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB944"
+        ],
+        [
+          "ST527"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5516",
+      "codigo": "ST090",
+      "nome": "Ergonomia - Aplicação Prática ao Trabalho",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7001",
+      "codigo": "TT801",
+      "nome": "Gestão Empreendedora",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10721",
+      "codigo": "ST055",
+      "nome": "Tópicos Especiais em Edifícios II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6991",
+      "codigo": "TT350",
+      "nome": "Administração de Empresas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5468",
+      "codigo": "ST028",
+      "nome": "Orçamentos de Construções",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST515"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7046",
+      "codigo": "ST730",
+      "nome": "Estruturas de Concreto Pré-Moldado",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST628"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5517",
+      "codigo": "ST091",
+      "nome": "Tópicos em Tecnologia da Construção Civil",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10722",
+      "codigo": "ST056",
+      "nome": "Tópicos Especiais em Edifícios III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6173",
+      "codigo": "TT404",
+      "nome": "Administração de Empresas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5479",
+      "codigo": "ST042",
+      "nome": "Processo de Projeto",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST515"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7052",
+      "codigo": "ST736",
+      "nome": "Movimento de Terra",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST401",
+          "ST539"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5460",
+      "codigo": "ST020",
+      "nome": "Processos Construtivos",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST515"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7048",
+      "codigo": "ST540",
+      "nome": "Sistemas de Informações Geográficas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB938"
+        ],
+        [
+          "ST401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10723",
+      "codigo": "ST057",
+      "nome": "Tópicos Especiais em Edifícios IV",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6178",
+      "codigo": "TT504",
+      "nome": "Economia e Finanças",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5481",
+      "codigo": "ST044",
+      "nome": "Alvenaria Estrutural",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST527"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6124",
+      "codigo": "TT013",
+      "nome": "Redes Complexas",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5461",
+      "codigo": "ST021",
+      "nome": "Projeto Executivo",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST525",
+          "ST626"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5635",
+      "codigo": "ST617",
+      "nome": "Desenho Urbano e Habitação de Interesse Social",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST026",
+          "ST401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10724",
+      "codigo": "ST058",
+      "nome": "Iniciação Científica I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6995",
+      "codigo": "TT550",
+      "nome": "Economia e Finanças",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5482",
+      "codigo": "ST045",
+      "nome": "Hidrologia das Águas Subterrâneas",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST306"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6125",
+      "codigo": "TT020",
+      "nome": "Contabilidade Geral",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5698",
+      "codigo": "ST821",
+      "nome": "Estágio Supervisionado",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5700",
+      "codigo": "ST823",
+      "nome": "Estágio Supervisionado",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5701",
+      "codigo": "ST824",
+      "nome": "Trabalho de Graduação Interdisciplinar",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST728"
+        ]
+      ]
+    }
+  ]
+}

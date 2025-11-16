@@ -97,6 +97,13 @@ secrets.*
 # PDM / other local caches
 __pypackages__/
 
+/.genaiscript
+/.github/instructions/genaiscript.instructions.md
+/package-lock.json
+/package.json
+/node_modules
+/genaisrc
+/crawler/outputs
 /crawler/.env
 /backend/.env
 /backend/__pycache__/
