@@ -3,10 +3,19 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+from dataclasses import replace
 from pathlib import Path
 from typing import Iterable, List, Optional
 
 from dotenv import load_dotenv
+
+from .clients.gde_api import Curriculum, CurriculumNode, GDEApiClient
+from .collectors.config import CP_TARGET, PERIODO_TARGET
+from .collectors.enumerate_pipeline import fetch_with_strategy
+from .config.settings import CrawlerSettings
+from .parsers.arvore_parsers import parse_disciplinas_from_integralizacao
+from .types import CurriculumParams
+from .utils.http_session import build_session, ensure_csrf_cookie, login_via_ajax
 
 
 ENV_PATH = Path(__file__).resolve().parents[2] / ".env"
@@ -20,9 +29,23 @@ def _ensure_trailing_slash(url: str) -> str:
     return url if url.endswith("/") else url + "/"
 
 
-DEFAULT_BASE_URL = _ensure_trailing_slash(
-    os.getenv("GDE_BASE_URL", "https://grade.daconline.unicamp.br/")
-)
+def _normalize_base_url(url: str) -> str:
+    return url.rstrip("/")
+
+
+DEFAULT_BASE_URL = _ensure_trailing_slash(CrawlerSettings().base_url)
+
+
+def _resolve_settings(base_url: Optional[str], strategy: Optional[str]) -> CrawlerSettings:
+    settings = CrawlerSettings()
+    updates: dict[str, object] = {}
+    if base_url:
+        updates["base_url"] = _normalize_base_url(base_url)
+    if strategy:
+        updates["strategy"] = strategy
+    if updates:
+        settings = replace(settings, **updates)
+    return settings
 
 
 def _call_collect() -> int:
@@ -47,22 +70,11 @@ def _call_build_db() -> int:
         return 1
 
 
-def _build_session(base_url: str):
-    from .utils import http_session
+def _build_session(settings: CrawlerSettings):
+    session = build_session(settings)
 
-    session = None
-    if hasattr(http_session, "get_session"):
-        try:
-            session = http_session.get_session(base_url=base_url)  # type: ignore[arg-type]
-        except TypeError:
-            session = http_session.get_session()  # type: ignore[assignment]
-        except Exception:
-            session = None
-
-    if session is None:
-        session = http_session.create_session()
-
-    http_session.ensure_csrf_cookie(session, base_url)
+    base_url = settings.base_url
+    ensure_csrf_cookie(session, base_url)
 
     username = os.getenv("GDE_USERNAME") or os.getenv("GDE_LOGIN")
     password = os.getenv("GDE_PASSWORD") or os.getenv("GDE_SENHA")
@@ -70,18 +82,16 @@ def _build_session(base_url: str):
 
     if username and password:
         try:
-            http_session.login_via_ajax(session, base_url, username, password, csrf=csrf_token)
+            login_via_ajax(session, base_url, username, password, csrf=csrf_token)
         except Exception as exc:
             print(f"[warn] login failed: {exc}", file=sys.stderr)
 
     return session
 
 
-def _build_client(base_url: str):
-    from .clients.gde_api import GDEApiClient
-
-    session = _build_session(base_url)
-    return GDEApiClient(base_url=base_url, session=session)
+def _build_client(settings: CrawlerSettings):
+    session = _build_session(settings)
+    return GDEApiClient(base_url=_ensure_trailing_slash(settings.base_url), session=session)
 
 
 def _print_modalities(modalities, course_id: int, year: int, expected_selected: Optional[str] = None) -> None:
@@ -167,6 +177,15 @@ def main(argv: List[str] | None = None) -> int:
     _add_base(p_curr)
     p_curr.add_argument("--year", type=int, required=True, dest="year")
     p_curr.add_argument("--course-id", type=int, required=True, dest="course_id")
+    p_curr.add_argument("--modalidade", default=None, dest="modalidade")
+    p_curr.add_argument("--periodo", default=PERIODO_TARGET, dest="periodo")
+    p_curr.add_argument("--cp", default=CP_TARGET, dest="cp")
+    p_curr.add_argument(
+        "--strategy",
+        choices=["ajax", "full", "auto"],
+        default=None,
+        dest="strategy",
+    )
 
     p_pre = sub.add_parser("prereqs", help="Fetch prerequisites map")
     _add_base(p_pre)
@@ -190,8 +209,11 @@ def main(argv: List[str] | None = None) -> int:
             return rc
         return _call_build_db()
 
-    base_url = _ensure_trailing_slash(args.base_url)
-    client = _build_client(base_url)
+    base_url_arg = _normalize_base_url(args.base_url)
+    strategy_arg = getattr(args, "strategy", None)
+    settings = _resolve_settings(base_url_arg, strategy_arg)
+    client = _build_client(settings)
+    base_url = _ensure_trailing_slash(settings.base_url)
 
     try:
         if args.cmd in {"modalities", "healthcheck"}:
@@ -207,8 +229,47 @@ def main(argv: List[str] | None = None) -> int:
             _print_offers(offers, course_id=args.course_id, year=args.year)
             return 0
         if args.cmd == "curriculum":
-            curriculum = client.get_curriculum(course_id=args.course_id, year=args.year)
-            _print_curriculum(curriculum, course_id=args.course_id, year=args.year)
+            session = client.session
+            modality_code = args.modalidade
+            if modality_code is None:
+                modalities = client.get_modalities(year=args.year, course_id=args.course_id)
+                modality_code = next((m.code for m in modalities if getattr(m, "selected", False)), None)
+                if not modality_code and modalities:
+                    modality_code = modalities[0].code
+            modality_code = modality_code or "UNICA"
+
+            params = CurriculumParams(
+                curso_id=int(args.course_id),
+                catalogo_id=int(args.year),
+                modalidade_id=str(modality_code),
+                periodo_id=str(args.periodo),
+                cp=str(args.cp),
+            )
+
+            raw_path = fetch_with_strategy(session, settings, params, settings.out_dir)
+            html = Path(raw_path).read_text(encoding="utf-8")
+            parsed = parse_disciplinas_from_integralizacao(html, catalogo=str(params.catalogo_id))
+
+            nodes = [
+                CurriculumNode(
+                    code=str(item.get("codigo") or item.get("disciplina_id") or "").strip(),
+                    name=str(item.get("nome") or item.get("codigo") or "").strip(),
+                    period=int(item.get("semestre") or 0) if str(item.get("semestre") or "").isdigit() else 0,
+                    category=(str(item.get("tipo") or "").strip() or None),
+                )
+                for item in parsed
+                if item.get("codigo")
+            ]
+
+            curriculum = Curriculum(
+                course_id=params.curso_id,
+                year=params.catalogo_id,
+                modality=modality_code,
+                nodes=nodes,
+                edges=[],
+            )
+
+            _print_curriculum(curriculum, course_id=params.curso_id, year=params.catalogo_id)
             return 0
         if args.cmd == "prereqs":
             prereqs = client.get_prereqs(course_id=args.course_id, year=args.year)

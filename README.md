@@ -21,6 +21,15 @@ This project consists of three main components:
 
 3. **Mobile App**: A React Native application built with Expo that provides a user interface to interact with the collected data.
 
+## Arquitetura - Crawler
+O crawler fecha o circuito App -> Backend -> Crawler/DB: o app aciona o backend, o backend consulta os dados coletados previamente e o crawler abastece o repositorio com HTML, JSON e SQLite obtidos do GDE.
+
+- Pipeline/Dataflow (etapas: coleta -> parsing -> normalizacao -> persistencia)
+- Ports & Adapters (coleta HTTP como port; parsers e DB writers como adapters)
+- Config-Driven via `.env` (com `CrawlerSettings`)
+
+Documentacao detalhada: [docs/crawler/ARCHITECTURE.md](docs/crawler/ARCHITECTURE.md)
+
 ---
 
 ## ⚙️ How to Run the Project

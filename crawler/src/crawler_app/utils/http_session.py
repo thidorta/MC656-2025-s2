@@ -1,8 +1,13 @@
 from __future__ import annotations
+
 import re
 from typing import Optional
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+from ..config.settings import CrawlerSettings
 
 DEFAULT_HEADERS = {
     "User-Agent": (
@@ -14,6 +19,24 @@ DEFAULT_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
     "Connection": "keep-alive",
 }
+
+
+def build_session(settings: CrawlerSettings) -> requests.Session:
+    session = requests.Session()
+    session.headers.update(DEFAULT_HEADERS)
+
+    retry = Retry(
+        total=settings.retries,
+        status=settings.retries,
+        backoff_factor=0.2,
+        status_forcelist=(500, 502, 503, 504),
+        allowed_methods=frozenset({"GET", "POST"}),
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    return session
 
 
 def create_session() -> requests.Session:
