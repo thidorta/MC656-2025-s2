@@ -18,7 +18,7 @@ export const useLoginViewModel = () => {
 
   const handleLogin = async () => {
     // Aqui, integrar com a API real ou com o AuthStrategy
-    if (email === 'usuario@email.com' && password === '123456') {
+    if (email === '231413' && password === '123') {
       Alert.alert('Sucesso', 'Login realizado com sucesso!');
       navigation.navigate('Home');
     } else {
