@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native'; // Importar StyleSheet
 
 import { EditScreenInfo } from './EditScreenInfo';
 
@@ -10,16 +10,17 @@ type ScreenContentProps = {
 
 export const ScreenContent = ({ title, path, children }: ScreenContentProps) => {
   return (
-    <View className={styles.container}>
-      <Text className={styles.title}>{title}</Text>
-      <View className={styles.separator} />
+    <View style={styles.container}> {/* Usar style */}
+      <Text style={styles.title}>{title}</Text> {/* Usar style */}
+      <View style={styles.separator} /> {/* Usar style */}
       <EditScreenInfo path={path} />
       {children}
     </View>
   );
 };
-const styles = {
-  container: `items-center flex-1 justify-center`,
-  separator: `h-[1px] my-7 w-4/5 bg-gray-200`,
-  title: `text-xl font-bold`,
-};
+// Definir styles com StyleSheet.create
+const styles = StyleSheet.create({
+  container: { alignItems: 'center', flex: 1, justifyContent: 'center' },
+  separator: { height: 1, marginVertical: 28, width: '80%', backgroundColor: '#E2E8F0' }, // bg-gray-200
+  title: { fontSize: 20, fontWeight: 'bold' }, // text-xl font-bold
+});
