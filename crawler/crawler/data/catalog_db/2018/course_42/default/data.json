@@ -1,0 +1,1032 @@
+{
+  "course": {
+    "id": 42,
+    "name": "Ciência da Computação (42)",
+    "code": "42"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2018,
+  "parameters": {
+    "catalogo": "2018",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4150",
+      "codigo": "MC009",
+      "nome": "Computação e Sociedade",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4165",
+      "codigo": "MC202",
+      "nome": "Estruturas de Dados",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6770",
+      "codigo": "MC358",
+      "nome": "Fundamentos Matemáticos da Computação",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4440",
+      "codigo": "ME323",
+      "nome": "Introdução aos Modelos Probabilísticos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9197",
+      "codigo": "MC322",
+      "nome": "Programação Orientada a Objetos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4210",
+      "codigo": "MC750",
+      "nome": "Construção de Interfaces Homem-Computador",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2751",
+      "codigo": "F 329",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 129",
+          "GE504"
+        ],
+        [
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6772",
+      "codigo": "MC458",
+      "nome": "Projeto e Análise de Algoritmos I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202",
+          "MS328"
+        ],
+        [
+          "MC202",
+          "MC358"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4190",
+      "codigo": "MC602",
+      "nome": "Circuitos Lógicos e Organização de Computadores",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4171",
+      "codigo": "MC404",
+      "nome": "Organização Básica de Computadores e Linguagem de Montagem",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202"
+        ],
+        [
+          "MC602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4172",
+      "codigo": "MC426",
+      "nome": "Engenharia de Software",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4184",
+      "codigo": "MC536",
+      "nome": "Bancos de Dados: Teoria e Prática",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6775",
+      "codigo": "MC558",
+      "nome": "Projeto e Análise de Algoritmos II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC458"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4177",
+      "codigo": "MC504",
+      "nome": "Sistemas Operacionais",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA869"
+        ],
+        [
+          "MC404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10585",
+      "codigo": "MC732",
+      "nome": "Projeto de Sistemas Computacionais",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA772",
+          "MC404"
+        ],
+        [
+          "ES572",
+          "MC404"
+        ],
+        [
+          "MC404",
+          "MC602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10586",
+      "codigo": "MC832",
+      "nome": "Redes de Computadores",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6983",
+      "codigo": "MC833",
+      "nome": "Programação de Redes de Computadores",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC832"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11376",
+      "codigo": "MC921",
+      "nome": "Projeto e Construção de Compiladores",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "897",
+      "codigo": "CE839",
+      "nome": "Introdução à Administração para Computação",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4203",
+      "codigo": "MC714",
+      "nome": "Sistemas Distribuídos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA876"
+        ],
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "890",
+      "codigo": "CE738",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "845",
+      "codigo": "CE304",
+      "nome": "Direito",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6867",
+      "codigo": "MC861",
+      "nome": "Projeto em Computação II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6863",
+      "codigo": "MC851",
+      "nome": "Projeto em Computação I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11148",
+      "codigo": "MC871",
+      "nome": "Projeto em Computação III",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6864",
+      "codigo": "MC853",
+      "nome": "Projeto em Sistemas de Programação",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11149",
+      "codigo": "MC881",
+      "nome": "Projeto em Computação IV",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6777",
+      "codigo": "MC855",
+      "nome": "Projeto em Sistemas de Computação",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6865",
+      "codigo": "MC857",
+      "nome": "Projeto em Sistemas de Informação",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC426"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6866",
+      "codigo": "MC859",
+      "nome": "Projeto em Teoria da Computação",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4156",
+      "codigo": "MC030",
+      "nome": "Projeto Final de Graduação",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10634",
+      "codigo": "MC051",
+      "nome": "Monitoria II",
+      "creditos": 8,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4157",
+      "codigo": "MC032",
+      "nome": "Estudo Dirigido",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6859",
+      "codigo": "MC033",
+      "nome": "Estudo Dirigido II",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4159",
+      "codigo": "MC040",
+      "nome": "Estágio de Iniciação Científica I",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4153",
+      "codigo": "MC019",
+      "nome": "Estágio Supervisionado em Ciência da Computação",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4160",
+      "codigo": "MC041",
+      "nome": "Estágio de Iniciação Científica II",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4154",
+      "codigo": "MC020",
+      "nome": "Estágio Supervisionado em Ciência da Computação II",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC019"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4161",
+      "codigo": "MC050",
+      "nome": "Monitoria",
+      "creditos": 8,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4227",
+      "codigo": "MC906",
+      "nome": "Introdução à Inteligência Artificial",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6776",
+      "codigo": "MC658",
+      "nome": "Projeto e Análise de Algoritmos III",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4251",
+      "codigo": "MC949",
+      "nome": "Visão Computacional",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC102",
+          "ME210"
+        ],
+        [
+          "MA327",
+          "MC102",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12247",
+      "codigo": "MC907",
+      "nome": "Robótica Móvel",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC906"
+        ],
+        [
+          "MC886"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10637",
+      "codigo": "MC721",
+      "nome": "Desafios de Programação III",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC521"
+        ],
+        [
+          "MC621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6773",
+      "codigo": "MC346",
+      "nome": "Paradigmas de Programação",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4252",
+      "codigo": "MC950",
+      "nome": "Recuperação de Imagens por Conteúdo",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC536",
+          "MC920"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4233",
+      "codigo": "MC919",
+      "nome": "Tópicos Especiais em Processamento Gráfico",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC920"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10638",
+      "codigo": "MC821",
+      "nome": "Desafios de Programação IV",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC521"
+        ],
+        [
+          "MC621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10635",
+      "codigo": "MC521",
+      "nome": "Desafios de Programação I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4256",
+      "codigo": "MC959",
+      "nome": "Tópicos em Inteligência Artificial I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC906"
+        ],
+        [
+          "MC886"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4234",
+      "codigo": "MC920",
+      "nome": "Introdução ao Processamento de Imagem Digital",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327",
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6868",
+      "codigo": "MC886",
+      "nome": "Aprendizado de Máquina",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC102",
+          "ME210"
+        ],
+        [
+          "MA327",
+          "MC102",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10636",
+      "codigo": "MC621",
+      "nome": "Desafios de Programação II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7524",
+      "codigo": "MC970",
+      "nome": "Introdução à Programação Paralela",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10639",
+      "codigo": "MC937",
+      "nome": "Computação Gráfica",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6869",
+      "codigo": "MC896",
+      "nome": "Processamento de Línguas Naturais",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12245",
+      "codigo": "MC646",
+      "nome": "Verificação, Validação e Testes de Software",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC426"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11437",
+      "codigo": "MC971",
+      "nome": "Introdução à Programação Concorrente",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4247",
+      "codigo": "MC940",
+      "nome": "Processamento e Análise de Imagens",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC920"
+        ]
+      ]
+    }
+  ]
+}

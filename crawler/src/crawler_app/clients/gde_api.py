@@ -14,6 +14,7 @@ from ..collectors.config import CATALOGO_TARGET, CP_TARGET, PERIODO_TARGET
 from ..parsers.arvore_parsers import parse_disciplinas_from_integralizacao
 
 
+CRAWLER_ROOT = Path(__file__).resolve().parents[3]
 RAW_SUBDIR = Path("data") / "raw"
 
 
@@ -79,7 +80,7 @@ class GDEApiClient:
     def __init__(self, base_url: str, session: requests.Session) -> None:
         self.base_url = base_url if base_url.endswith("/") else f"{base_url}/"
         self.session = session
-        self.project_root = Path(__file__).resolve().parents[2]
+        self.project_root = CRAWLER_ROOT
         self.raw_dir = self.project_root / RAW_SUBDIR
 
         self.paths = {

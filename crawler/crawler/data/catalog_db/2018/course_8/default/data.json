@@ -1,0 +1,2089 @@
+{
+  "course": {
+    "id": 8,
+    "name": "Engenharia Agrícola (8)",
+    "code": "8"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2018,
+  "parameters": {
+    "catalogo": "2018",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2875",
+      "codigo": "FA173",
+      "nome": "Desenho Técnico",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5343",
+      "codigo": "QG101",
+      "nome": "Química I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5344",
+      "codigo": "QG102",
+      "nome": "Química Experimental I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2873",
+      "codigo": "FA100",
+      "nome": "Engenharia Agrícola: Curso e Profissão",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "773",
+      "codigo": "BT330",
+      "nome": "Botânica Básica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2876",
+      "codigo": "FA270",
+      "nome": "Metodologia Científica e do Projeto",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2879",
+      "codigo": "FA273",
+      "nome": "Desenho Civil Assistido por Computador",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA173"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2885",
+      "codigo": "FA379",
+      "nome": "Introdução à Termodinâmica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2093",
+      "codigo": "EM306",
+      "nome": "Estática",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2751",
+      "codigo": "F 329",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 129",
+          "GE504"
+        ],
+        [
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2880",
+      "codigo": "FA370",
+      "nome": "Mecânica dos Fluidos para Engenharia",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2883",
+      "codigo": "FA373",
+      "nome": "Pedologia",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2884",
+      "codigo": "FA374",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141",
+          "MA211",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2891",
+      "codigo": "FA474",
+      "nome": "Dinâmica de Sistemas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 329",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2894",
+      "codigo": "FA479",
+      "nome": "Termodinâmica Aplicada",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA379",
+          "QG101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1152",
+      "codigo": "CV323",
+      "nome": "Topografia",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE207"
+        ],
+        [
+          "FA173"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2895",
+      "codigo": "FA481",
+      "nome": "Características e Propriedades do Solo",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA373"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2100",
+      "codigo": "EM406",
+      "nome": "Resistência dos Materiais I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM306",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2886",
+      "codigo": "FA425",
+      "nome": "Instrumentação Básica",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 329",
+          "FA370"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2887",
+      "codigo": "FA470",
+      "nome": "Dinâmica de Corpos Rígidos",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM306",
+          "F 128",
+          "FA374"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2890",
+      "codigo": "FA473",
+      "nome": "Sistemas de Produção",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BT330"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2957",
+      "codigo": "FA983",
+      "nome": "Manejo e Conservação do Solo",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2899",
+      "codigo": "FA564",
+      "nome": "Barragens e Estradas de Terra",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2902",
+      "codigo": "FA573",
+      "nome": "Laboratório de Máquinas Agrícolas",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA473"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2905",
+      "codigo": "FA576",
+      "nome": "Propriedades Mecânicas de Materiais Biológicos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2906",
+      "codigo": "FA577",
+      "nome": "Propriedades Físicas dos Produtos Agrícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA425"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2108",
+      "codigo": "EM506",
+      "nome": "Resistência dos Materiais II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2907",
+      "codigo": "FA585",
+      "nome": "Materiais e Tecnologia Mecânica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2896",
+      "codigo": "FA503",
+      "nome": "Meteorologia Agrícola",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BT330"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2908",
+      "codigo": "FA586",
+      "nome": "Materiais de Construção Civil",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2897",
+      "codigo": "FA520",
+      "nome": "História e Desenvolvimento da Agricultura Brasileira",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2918",
+      "codigo": "FA679",
+      "nome": "Tecnologia de Processos Pós-Colheita I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA577"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2632",
+      "codigo": "ET016",
+      "nome": "Eletrotécnica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2919",
+      "codigo": "FA680",
+      "nome": "Relação Trator-Implemento",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA573"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2909",
+      "codigo": "FA622",
+      "nome": "Sistema Solo-Planta-Atmosfera",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA481",
+          "FA503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2920",
+      "codigo": "FA682",
+      "nome": "Modelagem Estrutural Aplicada",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM506",
+          "FA585",
+          "FA586"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2910",
+      "codigo": "FA665",
+      "nome": "Geotecnologias I",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CV323",
+          "FA481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2911",
+      "codigo": "FA670",
+      "nome": "Elementos de Máquinas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM506",
+          "FA173",
+          "FA585"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2914",
+      "codigo": "FA673",
+      "nome": "Transferência de Calor e Massa",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA370",
+          "FA374",
+          "FA479"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2917",
+      "codigo": "FA676",
+      "nome": "Hidráulica Geral",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA370"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2924",
+      "codigo": "FA770",
+      "nome": "Elementos de Transmissões Mecânicas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA670"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2932",
+      "codigo": "FA778",
+      "nome": "Construções Rurais para a Produção Animal",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA473",
+          "FA586"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2933",
+      "codigo": "FA779",
+      "nome": "Tecnologia de Resfriamento para Produtos Hortícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA673",
+          "FA679"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2934",
+      "codigo": "FA780",
+      "nome": "Instalações Elétricas para Sistemas Agroindustriais",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET016"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2921",
+      "codigo": "FA720",
+      "nome": "Fundamentos de Economia",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2935",
+      "codigo": "FA782",
+      "nome": "Dimensionamento de Estruturas de Concreto",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA682"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2922",
+      "codigo": "FA721",
+      "nome": "Engenharia Econômica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2936",
+      "codigo": "FA786",
+      "nome": "Hidrologia Ciência e Aplicação",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA370"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2923",
+      "codigo": "FA733",
+      "nome": "Fundamentos de Microbiologia e Qualidade de Água",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2948",
+      "codigo": "FA880",
+      "nome": "Princípios de Operação de Máquinas Agrícolas",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA470",
+          "FA573",
+          "FA576",
+          "FA577",
+          "FA781"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2940",
+      "codigo": "FA873",
+      "nome": "Ambientes para Animais e Plantas",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA673",
+          "FA778"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2942",
+      "codigo": "FA874",
+      "nome": "Saneamento Ambiental",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA733"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2944",
+      "codigo": "FA876",
+      "nome": "Técnicas de Irrigação",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA676"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2945",
+      "codigo": "FA877",
+      "nome": "Planejamento Agrícola",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA665"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2946",
+      "codigo": "FA878",
+      "nome": "Introdução ao Gerenciamento de Projetos",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2947",
+      "codigo": "FA879",
+      "nome": "Tecnologia de Processos Pós-Colheita II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA577",
+          "FA673"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2937",
+      "codigo": "FA870",
+      "nome": "Dimensionamento de Estruturas de Madeira",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA682"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2864",
+      "codigo": "FA070",
+      "nome": "Estágio Supervisionado",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2950",
+      "codigo": "FA972",
+      "nome": "Drenagem de Solos Agrícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA676",
+          "FA786"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2956",
+      "codigo": "FA979",
+      "nome": "Tecnologia de Processos Pós-Colheita III",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA879"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11013",
+      "codigo": "FA984",
+      "nome": "Introdução ao Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2865",
+      "codigo": "FA071",
+      "nome": "Sociologia e Extensão Rural",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11014",
+      "codigo": "FA985",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA984"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2819",
+      "codigo": "FA024",
+      "nome": "Projeto Estrutural de Máquinas Agrícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA682"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2850",
+      "codigo": "FA055",
+      "nome": "Qualidade da Água em Bacias Hidrográficas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA786"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2870",
+      "codigo": "FA076",
+      "nome": "Automação de Processos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA474"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11795",
+      "codigo": "FA098",
+      "nome": "Biotecnologia II: Biorreatores e Processos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA097"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2812",
+      "codigo": "FA017",
+      "nome": "Tópicos Especiais em Tecnologia Pós-Colheita",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA577"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2843",
+      "codigo": "FA048",
+      "nome": "Qualidade do Ar em Ambientes para Produção Intensiva de Animais",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA778"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2863",
+      "codigo": "FA068",
+      "nome": "Erosão Acelerada do Solo e seu Controle",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA665",
+          "FA983"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11412",
+      "codigo": "FA093",
+      "nome": "Introdução ao Mercado de Capitais e de Commodities Agrícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2802",
+      "codigo": "FA001",
+      "nome": "Saneamento Rural",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA874"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2828",
+      "codigo": "FA033",
+      "nome": "Pesquisa Operacional Aplicada à Agricultura",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA374"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2856",
+      "codigo": "FA061",
+      "nome": "Agroecologia e Extensão Rural",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9101",
+      "codigo": "FA087",
+      "nome": "Logística Agrícola e Agroindustrial II",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA086"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "254",
+      "codigo": "AM030",
+      "nome": "Técnicas e Organização de Apresentações em Público",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2821",
+      "codigo": "FA026",
+      "nome": "Ergonomia Aplicada à Engenharia Agrícola",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2851",
+      "codigo": "FA056",
+      "nome": "Modelagem Hidrológica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA786"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7098",
+      "codigo": "FA080",
+      "nome": "Desenho Aplicado a Projeto de Máquinas Agrícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA173"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11796",
+      "codigo": "FA099",
+      "nome": "Internet das Coisas na Agricultura",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2813",
+      "codigo": "FA018",
+      "nome": "Tecnologia de Sementes",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA879"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2845",
+      "codigo": "FA050",
+      "nome": "Introdução à Administração de Empresas do Agronegócio",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2806",
+      "codigo": "FA069",
+      "nome": "Organização e Análise Ergonômica do Trabalho",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11413",
+      "codigo": "FA094",
+      "nome": "Segurança do Trabalho Rural",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2803",
+      "codigo": "FA002",
+      "nome": "Engenharia de Irrigação",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA876"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2836",
+      "codigo": "FA041",
+      "nome": "Aproveitamentos Hidroenergéticos no Meio Rural: Micro, Mini e Pequenas Usinas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA564",
+          "FA676",
+          "FA780"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2857",
+      "codigo": "FA062",
+      "nome": "Sistemas de Produção na Agricultura Familiar",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA520",
+          "FA720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11120",
+      "codigo": "FA088",
+      "nome": "Gestão de Responsabilidade Social e Sustentabilidade no Agronegócio",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1904",
+      "codigo": "EI001",
+      "nome": "Integralização de Estudos",
+      "creditos": 1,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2823",
+      "codigo": "FA028",
+      "nome": "Avaliação do Desempenho de Máquinas Agrícolas e Qualidade de Operação",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA880"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2852",
+      "codigo": "FA057",
+      "nome": "Limnologia - Dinâmica da Água em Reservatórios",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA786"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7099",
+      "codigo": "FA081",
+      "nome": "Mecanização Agrícola Aplicada a Culturas Comerciais",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA983"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11797",
+      "codigo": "FA102",
+      "nome": "Laboratório de Agricultura de Precisão",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA074"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2814",
+      "codigo": "FA019",
+      "nome": "Teorias Avançadas do Processo de Secagem",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA879"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2846",
+      "codigo": "FA051",
+      "nome": "Gestão Ambiental no Agronegócio",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2867",
+      "codigo": "FA073",
+      "nome": "Interação Mecânica Máquina-Planta",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA880"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11414",
+      "codigo": "FA095",
+      "nome": "Gestão de Sistemas Integrados na Agropecuária",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA721",
+          "FA877"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2805",
+      "codigo": "FA006",
+      "nome": "Projetos Especiais de Ambientes Controlados",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA873"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2837",
+      "codigo": "FA042",
+      "nome": "Hidráulica Básica Aplicada à Máquinas Agrícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA370",
+          "FA573"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2858",
+      "codigo": "FA063",
+      "nome": "Técnicas Construtivas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA586"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11122",
+      "codigo": "FA090",
+      "nome": "Comunicação e Tecnologia Rural",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA071"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1905",
+      "codigo": "EI002",
+      "nome": "Integralização de Estudos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2825",
+      "codigo": "FA030",
+      "nome": "Estradas Vicinais",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA564"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2853",
+      "codigo": "FA058",
+      "nome": "Instalações Hidráulicas em Edificações Rurais",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA676"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7100",
+      "codigo": "FA082",
+      "nome": "Estratégia e Gestão de Empresas Agropecuárias",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA720",
+          "FA721"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11798",
+      "codigo": "FA103",
+      "nome": "Análise de Imagens Aplicada a Produtos Agrícolas e Alimentos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2815",
+      "codigo": "FA020",
+      "nome": "Propriedades de Transferência",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA577",
+          "FA673"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2847",
+      "codigo": "FA052",
+      "nome": "Projeto e Desenvolvimento de Embalagens para Produtos Agrícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA173",
+          "FA576",
+          "FA577",
+          "FA673",
+          "FA679"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2868",
+      "codigo": "FA074",
+      "nome": "Tecnologia em Agricultura de Precisão",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA473",
+          "FA665"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11415",
+      "codigo": "FA096",
+      "nome": "Gestão da Inovação na Agropecuária",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2808",
+      "codigo": "FA013",
+      "nome": "Sistemas Especialistas Aplicados à Agricultura",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA374"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2838",
+      "codigo": "FA043",
+      "nome": "Qualidade e Segurança de Frutas e Hortaliças Frescas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA679"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2861",
+      "codigo": "FA066",
+      "nome": "Avaliação de Terras para Fins Agrícolas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA665"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11123",
+      "codigo": "FA091",
+      "nome": "Marketing Rural",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA520",
+          "FA720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1906",
+      "codigo": "EI003",
+      "nome": "Integralização de Estudos",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2826",
+      "codigo": "FA031",
+      "nome": "Fontes Alternativas de Energia",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA673",
+          "FA780"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2854",
+      "codigo": "FA059",
+      "nome": "Práticas de Hidráulica Aplicadas à Engenharia",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA676"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7096",
+      "codigo": "FA083",
+      "nome": "Gestão de Processos no Agronegócio",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12192",
+      "codigo": "FA104",
+      "nome": "Cartografia e Sistemas de Informações Geográficas Aplicadas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA665"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2816",
+      "codigo": "FA021",
+      "nome": "Gerenciamento de Recursos Hídricos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA786"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2849",
+      "codigo": "FA054",
+      "nome": "Geotecnologias II",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA665"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2869",
+      "codigo": "FA075",
+      "nome": "Teoria de Controle Aplicada",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA474"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11692",
+      "codigo": "FA097",
+      "nome": "Biotecnologia I: Fundamentos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311",
+          "QG101",
+          "QG102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2811",
+      "codigo": "FA016",
+      "nome": "Tecnologia de Produção de Rações",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA577"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2839",
+      "codigo": "FA044",
+      "nome": "Processamento Mínimo de Frutas e Hortaliças",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA679"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2862",
+      "codigo": "FA067",
+      "nome": "Fertilidade do Solo e Adubação",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11411",
+      "codigo": "FA092",
+      "nome": "Comercialização Agrícola e Agroindustrial",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1907",
+      "codigo": "EI004",
+      "nome": "Integralização de Estudos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2827",
+      "codigo": "FA032",
+      "nome": "Estruturas Metálicas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA586",
+          "FA682"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2855",
+      "codigo": "FA060",
+      "nome": "Desenvolvimento Rural Sustentável",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9099",
+      "codigo": "FA085",
+      "nome": "Zootecnia de Precisão",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FA473"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12191",
+      "codigo": "FA105",
+      "nome": "Patologias e Proteção da Madeira",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

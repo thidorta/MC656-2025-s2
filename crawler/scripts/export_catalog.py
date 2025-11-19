@@ -240,21 +240,25 @@ def fetch_arvore_html(client: GDEApiClient, *, course_id: int, catalogo: str, mo
     return client._request_html(client.paths["arvore"], params=params, raw_name=raw_name)
 
 
-def export_catalog(year: int, output_dir: Path) -> None:
+def export_catalog(year: int, output_dir: Path | None = None) -> None:
     client = build_client()
 
     # Clear previous captures for the target year
-    if output_dir.exists():
-        shutil.rmtree(output_dir)
+    catalog_db_dir = DATA_DIR / "catalog_db" / str(year)
+    if catalog_db_dir.exists():
+        shutil.rmtree(catalog_db_dir)
     raw_year_dir = client.raw_dir / str(year)
     if raw_year_dir.exists():
         shutil.rmtree(raw_year_dir)
-    catalog_db_dir = Path("crawler/data/catalog_db") / str(year)
-    if catalog_db_dir.exists():
-        shutil.rmtree(catalog_db_dir)
-    user_db_root = Path("crawler/data/user_db")
+    user_db_root = DATA_DIR / "user_db"
     if user_db_root.exists():
         shutil.rmtree(user_db_root)
+
+    if output_dir is None:
+        output_dir = _resolve_output_dir(year)
+    output_dir = output_dir.resolve()
+    if output_dir.exists():
+        shutil.rmtree(output_dir)
 
     raw_year_dir.mkdir(parents=True, exist_ok=True)
     catalog_db_dir.mkdir(parents=True, exist_ok=True)
@@ -359,7 +363,9 @@ def export_catalog(year: int, output_dir: Path) -> None:
                         disc_lookup.setdefault(str(key), disc)
 
             # ---------------- Catalog DB ----------------
-            catalog_period = client.periodo_default
+            period_override = os.getenv("EXPORT_CATALOG_PERIOD")
+            catalog_period = period_override or f"{year}2"
+            client.periodo_default = catalog_period
             course_catalog_root = catalog_db_dir / f"course_{course.id}"
             course_catalog_root.mkdir(parents=True, exist_ok=True)
 
@@ -585,7 +591,12 @@ def main() -> None:
     load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
     year = int(os.getenv("EXPORT_CATALOG_YEAR", "2022"))
-    output_dir = Path(os.getenv("EXPORT_CATALOG_OUTPUT", f"crawler/data/js_catalog/{year}"))
+    output_override = os.getenv("EXPORT_CATALOG_OUTPUT")
+    output_dir = None
+    if output_override:
+        output_dir = Path(output_override)
+        if not output_dir.is_absolute():
+            output_dir = (ROOT / output_dir).resolve()
     export_catalog(year=year, output_dir=output_dir)
 
 
