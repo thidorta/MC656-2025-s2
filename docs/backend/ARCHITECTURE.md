@@ -40,7 +40,7 @@ O backend adota uma **Arquitetura em Camadas (Layered Architecture)**, com ênfa
 5.  **DB Connection (conceitual `app/db/`):**
     -   Gerencia a conexão com o banco de dados (SQLite).
     -   Garante que as operações de banco sejam seguras e eficientes.
-    -   Integra-se com os dados gerados pelo `Crawler`.
+    -   Integra-se com os dados gerados pelo `Crawler`, consumindo o arquivo `crawler/data/db/catalog.db` produzido pelo importador (`crawler/scripts/import_catalog_db.py`).
 
 6.  **Config Module (`app/config/settings.py`):**
     -   Centraliza variáveis de ambiente e configurações críticas da aplicação (ex: `DATABASE_URL`, `CORS_ORIGINS`).
@@ -71,7 +71,7 @@ O backend adota uma **Arquitetura em Camadas (Layered Architecture)**, com ênfa
 ## Integração Externa
 
 -   **GDE App:** É o cliente primário do backend, consumindo seus endpoints REST.
--   **Crawler:** O backend consome os dados gerados pelo módulo `Crawler`. O `Crawler` popula o banco de dados SQLite (`gde_simple.db`) e os arquivos JSON normalizados, que são então lidos pelo backend. O backend **não** aciona o crawler diretamente.
+-   **Crawler:** O backend consome os dados gerados pelo módulo `Crawler`. O `Crawler` popula o banco de dados SQLite (`gde_simple.db`) e os arquivos JSON normalizados, e em seguida o script `scripts/import_catalog_db.py` os consolida em `crawler/data/db/catalog.db`, que se torna a fonte primária lida pelo backend. O backend **não** aciona o crawler diretamente.
 
 
 ## Diagrama C4 (exemplo textual)
@@ -89,3 +89,8 @@ O backend adota uma **Arquitetura em Camadas (Layered Architecture)**, com ênfa
 - Services: lógica de negócio
 - Repositories: acesso a dados
 - Models/Schemas: tipos/dto/entidades
+
+## Testes e automacao
+
+- O pacote `backend/tests` usa `fastapi.testclient` para validar rotas `/courses`, `/curriculum` e `/user-db`.
+- Execute `python -m pytest` (ou `powershell backend/scripts/run_tests.ps1`) dentro da virtualenv documentada em `backend/README.md`.

@@ -15,7 +15,7 @@ def _row_to_dict(row: sqlite3.Row) -> Dict[str, Any]:
 
 
 def open_catalog_connection(settings: Settings) -> sqlite3.Connection:
-    conn = sqlite3.connect(settings.catalog_db_path)
+    conn = sqlite3.connect(settings.catalog_db_path, check_same_thread=False)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")
     return conn

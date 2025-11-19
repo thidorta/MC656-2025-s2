@@ -28,7 +28,7 @@ O crawler fecha o circuito App -> Backend -> Crawler/DB: o app aciona o backend,
 - Ports & Adapters (coleta HTTP como port; parsers e DB writers como adapters)
 - Config-Driven via `.env` (com `CrawlerSettings`)
 
-Documentacao detalhada: [docs/crawler/ARCHITECTURE.md](docs/crawler/ARCHITECTURE.md)
+Documentacao detalhada: [docs/crawler/ARCHITECTURE.md](docs/crawler/ARCHITECTURE.md) e [docs/crawler/IMPORTING.md](docs/crawler/IMPORTING.md) para o processo de importacao do catalogo em SQLite.
 
 ## Arquitetura - GDE App
 O GDE App é a interface de usuário do sistema, permitindo aos usuários consultar, visualizar e interagir com os dados provenientes do backend.

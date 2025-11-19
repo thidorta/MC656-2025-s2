@@ -57,7 +57,8 @@
 4. Outputs
    - Raw HTML: `crawler/data/raw/`
    - Parsed JSON: `crawler/data/json/`
-   - SQLite DB: `crawler/data/db/gde_simple.db`
+   - SQLite DB (legacy planner cache): `crawler/data/db/gde_simple.db`
+   - Catalog DB: run `python scripts/import_catalog_db.py` to build `crawler/data/db/catalog.db`
 
 5. Configuration
    - Default collection targets are defined in `crawler/src/crawler_app/collectors/config.py`:

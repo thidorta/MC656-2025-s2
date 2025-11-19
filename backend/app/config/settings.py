@@ -20,9 +20,9 @@ class Settings:
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
-    base_dir = Path(__file__).resolve().parents[2]
-    default_catalog = (base_dir / "crawler" / "data" / "db" / "catalog.db").resolve()
-    default_user_db = (base_dir / "crawler" / "data" / "user_db").resolve()
+    project_root = Path(__file__).resolve().parents[3]
+    default_catalog = (project_root / "crawler" / "data" / "db" / "catalog.db").resolve()
+    default_user_db = (project_root / "crawler" / "data" / "user_db").resolve()
     return Settings(
         catalog_db_path=_resolve_path(os.getenv("CATALOG_DB_PATH"), default_catalog),
         user_db_root=_resolve_path(os.getenv("USER_DB_ROOT"), default_user_db),
