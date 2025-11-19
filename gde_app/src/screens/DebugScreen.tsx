@@ -3,6 +3,7 @@ import { Alert, Text, TouchableOpacity, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { API_BASE_URL } from '../config/api';
 import { ScreenContent } from 'components/ScreenContent';
+import { apiService } from '../services/api'; // Nova importação
 
 export default function DebugScreen() {
   const [isLoading, setIsLoading] = useState(false);
@@ -10,20 +11,14 @@ export default function DebugScreen() {
   const fetchPopupMessage = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`${API_BASE_URL}/popup-message`);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-      const data = await response.json();
+      const data = await apiService.getPopupMessage(); // Usando o serviço
       Alert.alert(
         data.title,
         `${data.message}\n\n📡 Framework: ${data.backend_info.framework}\n🔗 Endpoint: ${data.backend_info.endpoint}`
       );
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
-      Alert.alert(
-        '⚠️ Servidor Offline',
-        `Não foi possível conectar.\n\n💡 Inicie: uvicorn main:app --reload\n\n🔧 Erro: ${errorMessage}`
-      );
+      // O erro já é tratado no apiService, mas pode adicionar um feedback local aqui se quiser.
+      // Alert.alert('Erro', 'Falha ao buscar mensagem. Verifique a conexão do servidor.');
     } finally {
       setIsLoading(false);
     }
