@@ -9,28 +9,113 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Tree'>;
 
+interface Course {
+  code: string;
+  prereqs: string[];
+}
+
 interface Semester {
   id: string;
   title: string;
-  courses: string[];
+  courses: Course[];
 }
 
 // Dummy data for semesters and courses
 const semestersData: Semester[] = [
-  { id: '1', title: '1 Semestre', courses: ['MC102', 'MA111', 'MS180', 'F129', 'MO001'] },
-  { id: '2', title: '2 Semestre', courses: ['MC202', 'MA211', 'MS211', 'F329'] },
-  { id: '3', title: '3 Semestre', courses: ['MC302', 'MC358', 'ME210', 'AC209', 'Eletiva A'] },
-  { id: '4', title: '4 Semestre', courses: ['MC404', 'MC426', 'EA513', 'Eletiva B'] },
-  { id: '5', title: '5 Semestre', courses: ['MC437', 'MC504', 'MC536'] },
-  { id: '6', title: '6 Semestre', courses: ['MC521', 'MC613', 'MC621', 'Eletiva C'] },
-  { id: '7', title: '7 Semestre', courses: ['MC714', 'MC750', 'Eletiva D'] },
-  { id: '8', title: '8 Semestre', courses: ['MC855', 'MC833', 'Estágio'] },
+  { 
+    id: '1', 
+    title: '1 Semestre', 
+    courses: [
+      { code: 'MC102', prereqs: [] },
+      { code: 'MA111', prereqs: [] },
+      { code: 'MS180', prereqs: [] },
+      { code: 'F129', prereqs: [] },
+      { code: 'MO001', prereqs: [] }
+    ] 
+  },
+  { 
+    id: '2', 
+    title: '2 Semestre', 
+    courses: [
+      { code: 'MC202', prereqs: ['MC102'] },
+      { code: 'MA211', prereqs: ['MA111'] },
+      { code: 'MS211', prereqs: ['MA111'] },
+      { code: 'F329', prereqs: ['F129', 'MA111'] }
+    ] 
+  },
+  { 
+    id: '3', 
+    title: '3 Semestre', 
+    courses: [
+      { code: 'MC322', prereqs: ['MC202'] },
+      { code: 'MC358', prereqs: ['MC202'] },
+      { code: 'ME210', prereqs: ['MA111'] },
+      { code: 'AC209', prereqs: [] },
+      { code: 'Eletiva A', prereqs: [] }
+    ] 
+  },
+  { 
+    id: '4', 
+    title: '4 Semestre', 
+    courses: [
+      { code: 'MC404', prereqs: ['MC202'] },
+      { code: 'MC426', prereqs: ['MC322'] },
+      { code: 'EA513', prereqs: ['MC202'] },
+      { code: 'Eletiva B', prereqs: [] }
+    ] 
+  },
+  { 
+    id: '5', 
+    title: '5 Semestre', 
+    courses: [
+      { code: 'MC437', prereqs: ['MC302'] },
+      { code: 'MC504', prereqs: ['MC404'] },
+      { code: 'MC536', prereqs: ['MC322'] }
+    ] 
+  },
+  { 
+    id: '6', 
+    title: '6 Semestre', 
+    courses: [
+      { code: 'MC521', prereqs: ['MC202'] },
+      { code: 'MC613', prereqs: ['MC504'] },
+      { code: 'MC621', prereqs: ['MC536'] },
+      { code: 'Eletiva C', prereqs: [] }
+    ] 
+  },
+  { 
+    id: '7', 
+    title: '7 Semestre', 
+    courses: [
+      { code: 'MC714', prereqs: ['MC521'] },
+      { code: 'MC750', prereqs: ['MC426'] },
+      { code: 'Eletiva D', prereqs: [] }
+    ] 
+  },
+  { 
+    id: '8', 
+    title: '8 Semestre', 
+    courses: [
+      { code: 'MC855', prereqs: ['MC536'] },
+      { code: 'MC833', prereqs: ['MC404'] },
+      { code: 'Estágio', prereqs: ['MC102'] }
+    ] 
+  },
 ];
 
-// Component for an individual course chip
-const CourseChip = ({ code }: { code: string }) => (
+const CourseChip = ({ course }: { course: Course }) => (
   <View style={styles.courseChip}>
-    <Text style={styles.courseChipText}>{code}</Text>
+    <Text style={styles.courseChipText}>{course.code}</Text>
+    
+    {/* Render prerequisites if they exist */}
+    {course.prereqs.length > 0 && (
+      <View style={styles.prereqContainer}>
+        <Text style={styles.prereqLabel}>Req:</Text>
+        <Text style={styles.prereqList}>
+          {course.prereqs.join(', ')}
+        </Text>
+      </View>
+    )}
   </View>
 );
 
@@ -51,7 +136,8 @@ const SemesterSection = ({ semester }: { semester: Semester }) => {
       {!isCollapsed && (
         <View style={styles.courseContainer}>
           {semester.courses.map((course, index) => (
-            <CourseChip key={index} code={course} />
+            // Passing the entire course object now
+            <CourseChip key={index} course={course} />
           ))}
         </View>
       )}
@@ -67,7 +153,7 @@ export default function TreeScreen({ navigation }: Props) {
           <MaterialCommunityIcons name="arrow-left" size={24} color={colors.text} />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Árvore</Text>
-        <View style={styles.placeholder} /> {/* Placeholder for alignment */}
+        <View style={styles.placeholder} />
       </View>
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         {semestersData.map((semester) => (
@@ -89,7 +175,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing(3),
     paddingVertical: spacing(2),
-    backgroundColor: '#333333', // Dark background for header as per Figma
+    backgroundColor: '#333333',
   },
   backButton: {
     padding: spacing(1),
@@ -100,7 +186,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   placeholder: {
-    width: 24 + spacing(2), // Match back button size for center alignment
+    width: 24 + spacing(2),
   },
   container: {
     flex: 1,
@@ -108,23 +194,23 @@ const styles = StyleSheet.create({
     backgroundColor: colors.bg,
   },
   contentContainer: {
-    paddingBottom: spacing(8), // Garante que o último item seja visível e rolagem
+    paddingBottom: spacing(8),
   },
   semesterCard: {
-    backgroundColor: '#E0E0E0', // Light background for semester card as per Figma
+    backgroundColor: '#E0E0E0',
     borderRadius: 8,
     marginBottom: spacing(2),
-    overflow: 'hidden', // Ensures rounded corners clip content
+    overflow: 'hidden',
   },
   semesterHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: spacing(2),
-    backgroundColor: '#C0C0C0', // Slightly darker for header
+    backgroundColor: '#C0C0C0',
   },
   semesterTitle: {
-    color: colors.buttonText, // Dark text on light background
+    color: colors.buttonText,
     fontSize: 16,
     fontWeight: 'bold',
   },
@@ -132,17 +218,37 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     padding: spacing(2),
-    gap: spacing(1), // Spacing between chips
+    gap: spacing(1),
   },
   courseChip: {
-    backgroundColor: '#333333', // Dark background for chips as per Figma
+    backgroundColor: '#333333',
     borderRadius: 8,
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(2),
+    // Added minWidth to better accommodate extra texts
+    minWidth: 80, 
+    alignItems: 'center', 
   },
   courseChipText: {
-    color: colors.text, // White text on dark chip
+    color: colors.text,
     fontSize: 14,
     fontWeight: '600',
+    marginBottom: 2,
+  },
+  // Styles for prerequisites
+    prereqContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 2,
+  },
+  prereqLabel: {
+    color: '#AAAAAA', 
+    fontSize: 10,
+    marginRight: 2,
+  },
+  prereqList: {
+    color: '#FFD700', 
+    fontSize: 10,
+    fontWeight: 'bold',
   },
 });
