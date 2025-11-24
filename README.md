@@ -49,6 +49,7 @@ O backend atua como camada de orquestração e provedor de dados, servindo como 
 - Configuração por variáveis de ambiente e arquivos .env, centralizando settings críticos.
 
 Documentação detalhada: [docs/backend/ARCHITECTURE.md](docs/backend/ARCHITECTURE.md)
+
 ---
 
 ## ⚙️ How to Run the Project
