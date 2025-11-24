@@ -1,13 +1,14 @@
 import { View, Text, StyleSheet, TextInput, Dimensions, Platform, TouchableOpacity } from 'react-native';
 import { colors } from '../theme/colors';
-import PrimaryButton from '../../components/PrimaryButton';
+import { spacing } from '../theme/spacing';
 import React from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
-import { useLoginViewModel } from '../hooks/useLoginViewModel'; // Nova importação
-import { PasswordInput } from '../../components/PasswordInput'; // Nova importação
+import { useLoginViewModel } from '../hooks/useLoginViewModel';
+import { PasswordInput } from '../../components/PasswordInput';
 
-const { width, height} = Dimensions.get('window');
+const { width } = Dimensions.get('window');
+
 type Props = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 export default function LoginScreen({ navigation }: Props) {
@@ -15,42 +16,121 @@ export default function LoginScreen({ navigation }: Props) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>LOGIN GDE</Text>
+      <Text style={styles.title}>Login</Text>
 
       <View style={styles.loginContainer}>
-        <Text style={styles.label}>RA / Email / Login:</Text>
+        <Text style={styles.label}>Login</Text>
         <TextInput
-          style={[styles.input, { flex: 1, marginRight: 0, marginLeft: 0, marginBottom: 16 }]}
-          placeholder="Digite seu RA ou Email"
+          style={styles.input}
+          placeholder="Digite seu RA"
           placeholderTextColor="rgba(0, 0, 0, 0.8)"
           value={email}
           onChangeText={setEmail}
+          keyboardType="email-address"
+          autoCapitalize="none"
         />
+        <Text style={styles.helperText}>Deve ser o mesmo do GDE</Text>
 
-        <Text style={[styles.label, {marginTop: Platform.OS === "web" ? 8 : 0}]}>Senha:</Text>
-        <PasswordInput value={password} onChangeText={setPassword} /> {/* Componente PasswordInput */}
+        <Text style={[styles.label, styles.passwordLabelMargin]}>Senha</Text>
+        <PasswordInput value={password} onChangeText={setPassword} placeholder="Digite sua senha" />
+        <Text style={styles.helperText}>Deve ser o mesmo do GDE</Text>
 
-        <View style={styles.buttonContainer}>
-          <PrimaryButton label="Entrar" onPress={handleLogin} style={styles.smallButton} />
-          <PrimaryButton label="Registrar" onPress={() => {}} style={styles.smallButton}/>
-        </View>
-      </View>
+        <TouchableOpacity onPress={handleLogin} style={styles.loginButton}>
+          <Text style={styles.loginButtonText}>Login</Text>
+        </TouchableOpacity>
 
-      <View style={styles.buttonBack}>
-        <PrimaryButton label="Voltar" onPress={() => navigation.goBack()} style={styles.smallButton}/>
+        <TouchableOpacity
+          onPress={() => { /* Implement navigation or logic for registration */ }}
+          style={styles.registerButton}
+        >
+          <Text style={styles.registerButtonText}>Registre-se no GDE</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.bg, padding: 24, justifyContent: 'center', alignItems: 'center'},
-  title: { color: colors.text, fontSize: 24, fontWeight: '800', marginBottom: 8 , padding:30},
-  subtitle: { color: colors.textMuted, fontSize: 14, marginBottom: 16 },
-  loginContainer: {  backgroundColor: '#9b9bf7ff', padding: 16, borderRadius: 12, width: Platform.OS === 'web' ? width * 0.25 : width * 0.8, height: Platform.OS === 'web' ? height * 0.30 : height * 0.35},
-  label: { fontSize: 16, color: "black", marginBottom: 8 },
-  input: { borderWidth: 1, borderColor: colors.textMuted, borderRadius: 8, padding: 8, backgroundColor: '#ffffff'},
-  buttonContainer: { flexDirection: 'row', justifyContent: 'space-between', padding: 10},
-  buttonBack: {flexDirection: 'row', justifyContent: 'center', padding: 30 },
-  smallButton: { minWidth: 100, paddingVertical: 5, paddingHorizontal: 16},
+  container: {
+    flex: 1,
+    backgroundColor: colors.bg,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: spacing(3),
+  },
+  title: {
+    color: colors.text,
+    fontSize: 28,
+    fontWeight: '900',
+    marginBottom: spacing(6),
+  },
+  loginContainer: {
+    backgroundColor: '#FFFFFF',
+    padding: spacing(4),
+    borderRadius: spacing(2),
+    width: Platform.select({
+      web: width * 0.35,
+      android: width * 0.80
+    }),
+    maxWidth: 400,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  label: {
+    fontSize: 16,
+    color: '#333333',
+    fontWeight: '600',
+    marginBottom: spacing(1),
+  },
+  passwordLabelMargin: {
+    marginTop: spacing(3),
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: colors.textMuted,
+    borderRadius: 8,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    fontSize: 16,
+    backgroundColor: '#ffffff',
+    marginBottom: spacing(1),
+  },
+  helperText: {
+    fontSize: 12,
+    color: colors.textMuted,
+    marginBottom: spacing(3),
+  },
+  loginButton: {
+    backgroundColor: '#333333',
+    paddingVertical: spacing(2),
+    borderRadius: 16,
+    alignItems: 'center',
+    marginTop: spacing(3),
+    minWidth: 220,
+    alignSelf: 'center',
+  },
+  loginButtonText: {
+    color: '#FFFFFF',
+    fontWeight: '800',
+    fontSize: 16,
+  },
+  registerButton: {
+    backgroundColor: '#E0E0E0',
+    borderColor: '#C0C0C0',
+    borderWidth: 2,
+    paddingVertical: spacing(2),
+    borderRadius: 16,
+    alignItems: 'center',
+    marginTop: spacing(2),
+    minWidth: 220,
+    alignSelf: 'center',
+  },
+  registerButtonText: {
+    color: '#333333',
+    fontWeight: '800',
+    fontSize: 16,
+  },
 });
