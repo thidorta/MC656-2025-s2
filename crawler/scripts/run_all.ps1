@@ -1,5 +1,5 @@
 # Requires PowerShell 5+ (Windows 10+)
-# Usage: Right-click -> Run with PowerShell (or) in PS:
+# Usage: right-click -> Run with PowerShell or:
 #   PS> ./scripts/run_all.ps1
 
 $ErrorActionPreference = 'Stop'
@@ -81,34 +81,33 @@ if ($ShouldInstallDeps) {
 Write-Host "Python: " -NoNewline; python --version
 
 # Step 1: collect -> data/raw + data/json
-Write-Host "[2/4] Rodando coletor (src.crawler_app.cli collect)" -ForegroundColor Cyan
+Write-Host "[3/5] Running collector (src.crawler_app.cli collect)" -ForegroundColor Cyan
 python -m src.crawler_app.cli collect
-if ($LASTEXITCODE -ne 0) { throw "Falha no coletor (crawler_app collect)" }
+if ($LASTEXITCODE -ne 0) { throw "Collector failed (crawler_app collect)" }
 
 # Step 2: build DB -> data/db
-Write-Host "[3/4] Construindo banco (src.crawler_app.cli build-db)" -ForegroundColor Cyan
-python -m src.crawler_app.cli build-db
-if ($LASTEXITCODE -ne 0) { throw "Falha ao construir o banco (crawler_app build-db)" }
-
-# Step 3: gerar catalog.db
-$ImportScript = Join-Path $ProjectRoot 'scripts/import_catalog_db.py'
-if (Test-Path $ImportScript) {
-  Write-Host "[extra] Importando catalogo (scripts/import_catalog_db.py)" -ForegroundColor Cyan
-  python $ImportScript
-  if ($LASTEXITCODE -ne 0) { throw "Falha ao rodar scripts/import_catalog_db.py" }
-} else {
-  Write-Host "scripts/import_catalog_db.py não encontrado; pulei catalog.db" -ForegroundColor Yellow
-}
-
-Write-Host "✔ Concluído. JSONs em data/json, DB em data/db/gde_simple.db e catalog.db em data/db/catalog.db" -ForegroundColor Green
-# Step 1: enumerate -> outputs/json
-Write-Host "[3/4] Running collector (enumerate_dimensions)" -ForegroundColor Cyan
-python -m src.collectors.enumerate_dimensions
-if ($LASTEXITCODE -ne 0) { throw "Collector enumerate_dimensions failed" }
-
-# Step 2: build DB -> data/db
-Write-Host "[4/4] Building database (crawler_app build-db)" -ForegroundColor Cyan
+Write-Host "[4/5] Building database (src.crawler_app.cli build-db)" -ForegroundColor Cyan
 python -m src.crawler_app.cli build-db
 if ($LASTEXITCODE -ne 0) { throw "Database build failed (crawler_app build-db)" }
 
-Write-Host "Done. JSON files in outputs/json and DB in outputs/gde_simple.db" -ForegroundColor Green
+# Step 3: export catalog JSONs (optional)
+$ExportScript = Join-Path $ProjectRoot 'scripts/export_catalog.py'
+if (Test-Path $ExportScript) {
+  Write-Host "[5/5] Exporting catalog JSONs (scripts/export_catalog.py)" -ForegroundColor Cyan
+  python $ExportScript
+  if ($LASTEXITCODE -ne 0) { throw "Failed to run scripts/export_catalog.py" }
+} else {
+  Write-Host "scripts/export_catalog.py not found; skipping export" -ForegroundColor Yellow
+}
+
+# Extra: generate catalog.db when the import script exists
+$ImportScript = Join-Path $ProjectRoot 'scripts/import_catalog_db.py'
+if (Test-Path $ImportScript) {
+  Write-Host "[extra] Importing catalog into SQLite (scripts/import_catalog_db.py)" -ForegroundColor Cyan
+  python $ImportScript
+  if ($LASTEXITCODE -ne 0) { throw "Failed to run scripts/import_catalog_db.py" }
+} else {
+  Write-Host "scripts/import_catalog_db.py not found; skipping catalog.db" -ForegroundColor Yellow
+}
+
+Write-Host "Done. JSONs in data/json, DB in data/db/gde_simple.db and catalog.db in data/db/catalog.db" -ForegroundColor Green
