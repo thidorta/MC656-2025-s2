@@ -41,6 +41,18 @@ type PlannerOption = {
   year?: number;
 };
 
+type CurriculumOption = {
+  courseId: number;
+  courseName: string;
+  courseCode: string;
+  options: {
+    curriculumId: number;
+    year: number;
+    modalidade: string;
+    modalidadeLabel?: string | null;
+  }[];
+};
+
 const CourseChip = ({ course }: { course: { code: string; prereqs: string[] } }) => (
   <View style={styles.courseChip}>
     <Text style={styles.courseChipText}>{course.code}</Text>
@@ -80,12 +92,39 @@ const SemesterSection = ({ semester }: { semester: Semester }) => {
 export default function TreeScreen({ navigation }: Props) {
   const [plannerId, setPlannerId] = useState('620818');
   const [availableOptions, setAvailableOptions] = useState<PlannerOption[]>([]);
+  const [curriculumOptions, setCurriculumOptions] = useState<CurriculumOption[]>([]);
   const [selectedCourseId, setSelectedCourseId] = useState<number | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const [selectedModalidade, setSelectedModalidade] = useState<string | null>(null);
+  const [selectedPeriodo, setSelectedPeriodo] = useState<string | null>(null);
+  const [isCompleta, setIsCompleta] = useState<'Sim' | 'Não'>('Não');
   const [loadingPlanner, setLoadingPlanner] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [disciplines, setDisciplines] = useState<Discipline[]>([]);
+  const [currentPeriodRaw, setCurrentPeriodRaw] = useState<string | null>(null);
+
+  const loadCurriculumOptions = async () => {
+    try {
+      const resp = await fetch(`${API_BASE_URL}/curriculum`);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+      const parsed: CurriculumOption[] = data.map((item: any) => ({
+        courseId: item.course_id,
+        courseName: item.course_name,
+        courseCode: item.course_code,
+        options: (item.options || []).map((opt: any) => ({
+          curriculumId: opt.curriculum_id,
+          year: opt.year,
+          modalidade: opt.modalidade,
+          modalidadeLabel: opt.modalidade_label,
+        })),
+      }));
+      setCurriculumOptions(parsed);
+    } catch (err: any) {
+      console.error('Erro ao carregar opções de currículo', err);
+    }
+  };
 
   const loadPlanner = async () => {
     setLoadingPlanner(true);
@@ -109,12 +148,30 @@ export default function TreeScreen({ navigation }: Props) {
       }
 
       setAvailableOptions(options);
-      setSelectedCourseId(options[0].courseId);
-      setSelectedYear(options[0].year ?? null);
+      if (data.current_period) {
+        setCurrentPeriodRaw(String(data.current_period));
+        setSelectedPeriodo(String(data.current_period));
+      }
+
+      const preferred = options[0];
+      setSelectedCourseId(preferred.courseId);
+      setSelectedYear(preferred.year ?? null);
+
+      // se houver opções de currículo carregadas, tente casar modalidade/ano
+      const curriculum = curriculumOptions.find((c) => c.courseId === preferred.courseId);
+      if (curriculum && curriculum.options.length > 0) {
+        const matchYear = preferred.year
+          ? curriculum.options.find((o) => o.year === preferred.year)
+          : null;
+        const chosen = matchYear || curriculum.options[0];
+        setSelectedYear(chosen.year);
+        setSelectedModalidade(chosen.modalidade);
+      }
     } catch (err: any) {
       setAvailableOptions([]);
       setSelectedCourseId(null);
       setSelectedYear(null);
+      setSelectedModalidade(null);
       setDisciplines([]);
       setError(err?.message || 'Erro ao carregar planner');
     } finally {
@@ -122,11 +179,14 @@ export default function TreeScreen({ navigation }: Props) {
     }
   };
 
-  const fetchCurriculum = async (courseId: number, year: number | null) => {
+  const fetchCurriculum = async (courseId: number, year: number | null, modalidade?: string | null) => {
     setLoading(true);
     setError(null);
     try {
-      const qs = year ? `?year=${year}` : '';
+      const params = new URLSearchParams();
+      if (year) params.set('year', String(year));
+      if (modalidade) params.set('modalidade', modalidade);
+      const qs = params.toString() ? `?${params.toString()}` : '';
       const resp = await fetch(`${API_BASE_URL}/curriculum/${courseId}${qs}`);
       if (!resp.ok) {
         throw new Error(`HTTP ${resp.status}`);
@@ -146,14 +206,15 @@ export default function TreeScreen({ navigation }: Props) {
   };
 
   useEffect(() => {
-    loadPlanner();
+    // carrega catálogos/modalidades primeiro, depois planner
+    loadCurriculumOptions().finally(() => loadPlanner());
   }, []);
 
   useEffect(() => {
     if (selectedCourseId) {
-      fetchCurriculum(selectedCourseId, selectedYear);
+      fetchCurriculum(selectedCourseId, selectedYear, selectedModalidade);
     }
-  }, [selectedCourseId, selectedYear]);
+  }, [selectedCourseId, selectedYear, selectedModalidade]);
 
   const semestersData: Semester[] = useMemo(() => {
     if (!disciplines.length) return [];
@@ -176,6 +237,53 @@ export default function TreeScreen({ navigation }: Props) {
     });
     return Object.values(grouped).sort((a, b) => Number(a.id) - Number(b.id));
   }, [disciplines]);
+
+  const courseOptionsForSelect = useMemo(() => {
+    const set = new Map<number, { courseId: number; courseName: string; courseCode: string }>();
+    curriculumOptions.forEach((c) => {
+      set.set(c.courseId, { courseId: c.courseId, courseName: c.courseName, courseCode: c.courseCode });
+    });
+    return Array.from(set.values());
+  }, [curriculumOptions]);
+
+  const yearsForSelectedCourse = useMemo(() => {
+    const entry = curriculumOptions.find((c) => c.courseId === selectedCourseId);
+    if (!entry) return [];
+    return Array.from(new Set(entry.options.map((o) => o.year))).sort((a, b) => b - a);
+  }, [curriculumOptions, selectedCourseId]);
+
+  const modalitiesForSelected = useMemo(() => {
+    const entry = curriculumOptions.find((c) => c.courseId === selectedCourseId);
+    if (!entry || !selectedYear) return [];
+    return entry.options.filter((o) => o.year === selectedYear);
+  }, [curriculumOptions, selectedCourseId, selectedYear]);
+
+  const periodOptions = useMemo(() => {
+    const opts: string[] = [];
+    if (currentPeriodRaw) {
+      opts.push(currentPeriodRaw);
+    }
+    yearsForSelectedCourse.forEach((y) => {
+      if (!opts.includes(String(y))) opts.push(String(y));
+    });
+    return opts;
+  }, [currentPeriodRaw, yearsForSelectedCourse]);
+
+  const IntegralizacaoInfo = () => (
+    <View style={styles.integralizacaoCard}>
+      <Text style={styles.integralizacaoText}>Catálogo: {selectedYear ?? '*selecionar*'}</Text>
+      <Text style={styles.integralizacaoText}>
+        Curso: {selectedCourseId ?? '*selecionar*'}
+      </Text>
+      <Text style={styles.integralizacaoText}>
+        Modalidade: {selectedModalidade ?? '*selecionar*'}
+      </Text>
+      <Text style={styles.integralizacaoText}>
+        Período: {selectedPeriodo ?? '*selecionar*'}
+      </Text>
+      <Text style={styles.integralizacaoText}>Completa: {isCompleta}</Text>
+    </View>
+  );
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
@@ -210,39 +318,110 @@ export default function TreeScreen({ navigation }: Props) {
           </TouchableOpacity>
         </View>
 
-        {availableOptions.length > 0 && (
-          <View style={styles.optionChips}>
-            {availableOptions.map((option, idx) => {
-              const isSelected =
-                selectedCourseId === option.courseId && selectedYear === (option.year ?? null);
-              return (
+        <View style={styles.filters}>
+          <IntegralizacaoInfo />
+
+          <View style={styles.selectContainer}>
+            <Text style={styles.label}>Catálogo</Text>
+            <View style={styles.selectBox}>
+              {yearsForSelectedCourse.map((year) => (
                 <TouchableOpacity
-                  key={`${option.courseId}-${option.year ?? 'na'}`}
-                  style={[styles.optionChip, isSelected && styles.optionChipSelected]}
+                  key={year}
+                  style={[styles.optionRow, year === selectedYear && styles.optionRowSelected]}
                   onPress={() => {
-                    setSelectedCourseId(option.courseId);
-                    setSelectedYear(option.year ?? null);
+                    setSelectedYear(year);
+                    const mods = curriculumOptions
+                      .find((c) => c.courseId === selectedCourseId)
+                      ?.options.filter((o) => o.year === year);
+                    if (mods && mods.length > 0) {
+                      setSelectedModalidade(mods[0].modalidade);
+                    }
                   }}
                 >
-                  <Text style={styles.optionChipText}>
-                    Curso {option.courseId}
-                    {option.year ? ` · ${option.year}` : ''}
-                  </Text>
-                  {option.courseName ? (
-                    <Text style={styles.optionChipSub}>{option.courseName}</Text>
-                  ) : (
-                    <Text style={styles.optionChipSub}>Sem nome no snapshot</Text>
-                  )}
+                  <Text style={styles.optionText}>{year}</Text>
                 </TouchableOpacity>
-              );
-            })}
+              ))}
+            </View>
           </View>
-        )}
+
+          <View style={styles.selectContainer}>
+            <Text style={styles.label}>Curso</Text>
+            <View style={styles.selectBox}>
+              {courseOptionsForSelect.map((c) => (
+                <TouchableOpacity
+                  key={c.courseId}
+                  style={[styles.optionRow, c.courseId === selectedCourseId && styles.optionRowSelected]}
+                  onPress={() => {
+                    setSelectedCourseId(c.courseId);
+                    const entry = curriculumOptions.find((e) => e.courseId === c.courseId);
+                    if (entry && entry.options.length > 0) {
+                      setSelectedYear(entry.options[0].year);
+                      setSelectedModalidade(entry.options[0].modalidade);
+                    }
+                  }}
+                >
+                  <Text style={styles.optionText}>{c.courseName || `Curso ${c.courseId}`}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+
+          <View style={styles.selectContainer}>
+            <Text style={styles.label}>Modalidade</Text>
+            <View style={styles.selectBox}>
+              {modalitiesForSelected.map((opt) => (
+                <TouchableOpacity
+                  key={`${opt.modalidade}-${opt.year}`}
+                  style={[
+                    styles.optionRow,
+                    opt.modalidade === selectedModalidade && styles.optionRowSelected,
+                  ]}
+                  onPress={() => setSelectedModalidade(opt.modalidade)}
+                >
+                  <Text style={styles.optionText}>
+                    {opt.modalidade} {opt.modalidadeLabel ? `· ${opt.modalidadeLabel}` : ''}
+                  </Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+
+          <View style={styles.selectContainer}>
+            <Text style={styles.label}>Período</Text>
+            <View style={styles.selectBox}>
+              {periodOptions.map((p) => (
+                <TouchableOpacity
+                  key={p}
+                  style={[styles.optionRow, p === selectedPeriodo && styles.optionRowSelected]}
+                  onPress={() => setSelectedPeriodo(p)}
+                >
+                  <Text style={styles.optionText}>{p}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+
+          <View style={styles.selectContainer}>
+            <Text style={styles.label}>Completa</Text>
+            <View style={styles.selectBox}>
+              {['Sim', 'Não'].map((v) => (
+                <TouchableOpacity
+                  key={v}
+                  style={[styles.optionRow, v === isCompleta && styles.optionRowSelected]}
+                  onPress={() => setIsCompleta(v as 'Sim' | 'Não')}
+                >
+                  <Text style={styles.optionText}>{v}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+        </View>
 
         <Text style={styles.helperText}>
           Fonte: {API_BASE_URL} ·{' '}
           {selectedCourseId ? `Curso ${selectedCourseId}` : 'Nenhum curso selecionado'}{' '}
-          {selectedYear ? `· Catálogo ${selectedYear}` : ''}
+          {selectedYear ? `· Catálogo ${selectedYear}` : ''}{' '}
+          {selectedModalidade ? `· Modalidade ${selectedModalidade}` : ''}
         </Text>
         {loading && (
           <View style={styles.loader}>
@@ -326,34 +505,50 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontWeight: '800',
   },
-  optionChips: {
+  filters: {
+    marginBottom: spacing(2),
+    rowGap: spacing(1),
+  },
+  filterRow: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    rowGap: spacing(1.5),
-    columnGap: spacing(1.5),
+    columnGap: spacing(2),
+    alignItems: 'flex-start',
+  },
+  filterColumn: {
+    marginBottom: spacing(1),
+  },
+  selectContainer: {
     marginBottom: spacing(2),
   },
-  optionChip: {
-    backgroundColor: '#1f2937',
-    borderColor: '#374151',
-    borderWidth: 1,
-    paddingHorizontal: spacing(2),
-    paddingVertical: spacing(1.5),
-    borderRadius: 12,
-    minWidth: 140,
+  selectHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: spacing(1),
   },
-  optionChipSelected: {
-    borderColor: '#5B8CFF',
-    backgroundColor: '#111827',
-  },
-  optionChipText: {
+  selectedValue: {
     color: colors.text,
     fontWeight: '700',
   },
-  optionChipSub: {
-    color: colors.textMuted,
-    fontSize: 12,
-    marginTop: 2,
+  selectBox: {
+    borderWidth: 1,
+    borderColor: '#374151',
+    borderRadius: 10,
+    backgroundColor: '#0f172a',
+  },
+  optionRow: {
+    paddingVertical: spacing(1),
+    paddingHorizontal: spacing(1.5),
+    borderBottomWidth: 1,
+    borderBottomColor: '#1f2937',
+  },
+  optionRowSelected: {
+    backgroundColor: '#111827',
+    borderColor: '#5B8CFF',
+    borderWidth: 1,
+  },
+  optionText: {
+    color: colors.text,
   },
   helperText: {
     color: colors.text,
@@ -420,5 +615,15 @@ const styles = StyleSheet.create({
     color: '#FFD700',
     fontSize: 10,
     fontWeight: 'bold',
+  },
+  integralizacaoCard: {
+    backgroundColor: '#e5e7eb',
+    borderRadius: 12,
+    padding: spacing(2),
+    marginBottom: spacing(1),
+  },
+  integralizacaoText: {
+    color: '#111827',
+    fontWeight: '600',
   },
 });

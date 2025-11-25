@@ -1,17 +1,18 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
+import * as ExpoLinking from 'expo-linking';
 import RootNavigator from './src/navigation';
 
 const linking = {
-  prefixes: ['http://localhost:8081', 'http://localhost:8082', 'exp://'],
+  prefixes: [ExpoLinking.createURL('/')],
   config: {
     screens: {
-      Welcome: '',
-      Login: 'login',
       Home: 'home',
       Tree: 'tree',
       Planner: 'planner',
       Debug: 'debug',
+      Welcome: '',
+      Login: 'login',
     },
   },
 };
@@ -20,7 +21,7 @@ export default function App() {
   return (
     <>
       <StatusBar style="light" />
-      <NavigationContainer linking={linking} fallback={<></>}>
+      <NavigationContainer linking={linking}>
         <RootNavigator />
       </NavigationContainer>
     </>

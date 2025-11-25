@@ -16,6 +16,7 @@
     "@react-navigation/native-stack": "^7.3.26",
     "expo": "^54.0.12",
     "expo-linear-gradient": "~14.1.5",
+    "expo-linking": "^8.0.9",
     "expo-status-bar": "~2.2.3",
     "nativewind": "latest",
     "react": "19.0.0",
