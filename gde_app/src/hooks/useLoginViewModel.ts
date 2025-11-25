@@ -1,28 +1,32 @@
 import { useState } from 'react';
 import { Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { RootStackParamList } from '../navigation/types';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { apiService } from '../services/api';
+import { RootStackParamList } from '../navigation/types';
 
 type LoginNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>;
 
 export const useLoginViewModel = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const navigation = useNavigation<LoginNavigationProp>();
 
-  const toggleShowPassword = () => {
-    setShowPassword((prev) => !prev);
-  };
-
   const handleLogin = async () => {
-    // Aqui, integrar com a API real ou com o AuthStrategy
-    if (email === '231413' && password === '123') {
-      Alert.alert('Sucesso', 'Login realizado com sucesso!');
+    if (!email || !password) {
+      Alert.alert('Campos obrigatórios', 'Informe login e senha.');
+      return;
+    }
+    setIsLoading(true);
+    try {
+      const response = await apiService.login(email, password);
+      Alert.alert('Sucesso', `Login realizado! Token: ${response.access_token}`);
       navigation.navigate('Home');
-    } else {
-      Alert.alert('Erro', 'Credenciais inválidas!');
+    } catch (error) {
+      console.error('Login error', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -31,8 +35,7 @@ export const useLoginViewModel = () => {
     setEmail,
     password,
     setPassword,
-    showPassword,
-    toggleShowPassword,
+    isLoading,
     handleLogin,
   };
 };

@@ -10,11 +10,7 @@ type Props = {
 
 export default function PrimaryButton({ label, onPress, style }: Props) {
   return (
-    <TouchableOpacity
-      activeOpacity={0.85}
-      onPress={onPress}
-      style={[styles.btn, style]}
-    >
+    <TouchableOpacity activeOpacity={0.85} onPress={onPress} style={[styles.btn, style]}>
       <Text style={styles.label}>{label}</Text>
     </TouchableOpacity>
   );
@@ -22,31 +18,32 @@ export default function PrimaryButton({ label, onPress, style }: Props) {
 
 const styles = StyleSheet.create({
   btn: {
-    backgroundColor: colors.primary,       // azul do botão
-    paddingVertical: spacing(2),
-    paddingHorizontal: spacing(4),
-    borderRadius: 16,
-    borderWidth: 2,                         // borda clara
-    borderColor: '#8FB3FF',
+    backgroundColor: colors.primary,
+    paddingVertical: spacing(1.5),
+    paddingHorizontal: spacing(3),
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.primary,
     alignItems: 'center',
     alignSelf: 'center',
-    minWidth: 220,                          // para não “abraçar” só o texto
+    minWidth: 200,
     ...Platform.select({
       ios: {
-        shadowColor: '#000',
-        shadowOpacity: 0.25,
-        shadowRadius: 6,
-        shadowOffset: { width: 0, height: 3 },
+        shadowColor: colors.primary,
+        shadowOpacity: 0.18,
+        shadowRadius: 12,
+        shadowOffset: { width: 0, height: 6 },
       },
       android: {
-        elevation: 4,
+        elevation: 3,
       },
     }),
   },
   label: {
-    color: colors.buttonText,               // texto escuro sobre azul claro
+    color: colors.buttonText,
     fontWeight: '800',
     fontSize: 16,
-    letterSpacing: 0.2,
+    letterSpacing: 0.3,
+    fontFamily: 'monospace',
   },
 });

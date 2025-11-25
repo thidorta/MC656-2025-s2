@@ -26,7 +26,7 @@ After activating the venv, copy the environment template and adjust paths if nee
 copy env.example .env
 ```
 
-`CATALOG_DB_PATH` and `USER_DB_ROOT` should match the files produced by the crawler (defaults already point to `../crawler/data/...`). See `docs/backend/CONFIG.md` for details.
+`CATALOG_DB_PATH` and `USER_DB_ROOT` should match the files produced by the crawler (defaults already point to `../crawler/data/...`). `.env` is loaded automatically via `python-dotenv`. See `docs/backend/CONFIG.md` for details.
 
 ## 3. Data requirements
 
@@ -37,7 +37,7 @@ The API now reads everything from the crawler outputs (see `docs/crawler/IMPORTI
 
 If those files are missing, run the crawler pipeline first.
 
-## 4. Running the API
+## 4. Running the API (local)
 
 ```powershell
 cd backend
@@ -47,6 +47,16 @@ uvicorn main:app --reload --port 8000
 
 The routes are prefixed with `/api/v1` (e.g., `/api/v1/courses`).
 
+Or via Docker (after the crawler populated the data):
+
+```powershell
+cd backend
+copy env.example .env
+docker compose up --build
+```
+
+The compose file mounts `../crawler/data/db/catalog.db` and `../crawler/data/user_db` read-only into the container and binds port `8000`.
+
 ## 5. Quick sanity check
 
 ```
@@ -54,6 +64,8 @@ GET /api/v1/courses        -> lists all course IDs from catalog.db
 GET /api/v1/curriculum     -> lists curriculum options grouped by course
 GET /api/v1/curriculum/34  -> returns curriculum detail (supports ?year=&modalidade=)
 GET /api/v1/user-db/611894 -> returns cached planner data if present
+GET /api/v1/popup-message  -> connectivity check used by the mobile app
+POST /api/v1/auth/login    -> stub auth for the mobile app (returns a dev token)
 ```
 
 These endpoints rely on the SQLite DB (read-only) and a file-based cache for user snapshots.
@@ -89,6 +101,6 @@ cd backend
 python -m pytest
 ```
 
-The user-db test skips automatically if the sample planner directory (`crawler/data/user_db/611894`) is missing.
+The tests skip if the catalog snapshot (`crawler/data/db/catalog.db`) is missing. The user-db test also skips automatically if the sample planner directory (`crawler/data/user_db/611894`) is missing.
 
 Shortcut: `powershell backend/scripts/run_tests.ps1`

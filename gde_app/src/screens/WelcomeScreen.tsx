@@ -1,68 +1,72 @@
 import { StyleSheet, View, Text, Image } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import PrimaryButton from '../../components/PrimaryButton';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Welcome'>;
 
 export default function WelcomeScreen({ navigation }: Props) {
   return (
-    <>
-      {/* iOS/Android (edge-to-edge): pinta a área da status bar */}
-      <SafeAreaView edges={['top']} style={{ flex: 0, backgroundColor: '#0B1220' }} />
-      <LinearGradient
-        colors={['#0B1220', '#121C33', '#0B1220']}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
-        style={styles.gradient}
-      >
-        <View style={styles.inner}>
-          {/* LOGO acima do texto */}
-          <Image
-            source={require('../../assets/logo.png')}
-            style={styles.logo}
-            resizeMode="contain"
-            accessible
-            accessibilityLabel="Logo do GDE • DAC Online"
-          />
-
-          <Text style={styles.title}>GDE • UNICAMP</Text>
-          <Text style={styles.subtitle}>
-            Explore cursos, ementas e informações acadêmicas estruturadas.
-          </Text>
-
-          <PrimaryButton
-            label="Explorar GDE"
-            onPress={() => navigation.navigate('Login')}
-            style={{ marginTop: spacing(3) }}
-          />
-
+    <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
+      <View style={styles.container}>
+        <View style={styles.logoWrap}>
+          <Image source={require('../../assets/logo.png')} style={styles.logo} resizeMode="contain" />
+          <Text style={styles.title}>GDE - UNICAMP</Text>
+          <Text style={styles.subtitle}>Explore cursos, ementas e informacoes academicas estruturadas.</Text>
         </View>
-      </LinearGradient>
-    </>
+
+        <PrimaryButton
+          label="Explorar GDE"
+          onPress={() => navigation.navigate('Login')}
+          style={styles.cta}
+        />
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  gradient: { flex: 1 },
-  inner: {
+  safeArea: {
+    flex: 1,
+    backgroundColor: colors.bg,
+  },
+  container: {
     flex: 1,
     paddingHorizontal: spacing(3),
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: colors.bg,
   },
-
+  logoWrap: {
+    alignItems: 'center',
+    gap: spacing(2),
+  },
   logo: {
     width: 140,
     height: 140,
-    marginBottom: spacing(8),
+    marginBottom: spacing(1),
   },
-  title: { color: colors.text, fontSize: 28, fontWeight: '900', letterSpacing: 0.5, textAlign: 'center' },
-  subtitle: { color: colors.textMuted, marginTop: spacing(1.5), fontSize: 16, textAlign: 'center' },
-  helper: { color: colors.textMuted, marginTop: spacing(2), fontSize: 12 },
-  hint: { color: colors.textMuted, opacity: 0.8, marginTop: spacing(0.5), fontSize: 11, textAlign: 'center' },
+  title: {
+    color: colors.text,
+    fontSize: 26,
+    fontWeight: '900',
+    letterSpacing: 0.6,
+    fontFamily: 'monospace',
+  },
+  subtitle: {
+    color: colors.textMuted,
+    marginTop: spacing(1),
+    fontSize: 15,
+    textAlign: 'center',
+    maxWidth: 320,
+    lineHeight: 22,
+    fontFamily: 'monospace',
+  },
+  cta: {
+    marginTop: spacing(4),
+    width: '100%',
+  },
 });

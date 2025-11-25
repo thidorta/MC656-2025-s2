@@ -1,136 +1,131 @@
-import { View, Text, StyleSheet, TextInput, Dimensions, Platform, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
-import React from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
 import { useLoginViewModel } from '../hooks/useLoginViewModel';
 import { PasswordInput } from '../../components/PasswordInput';
-
-const { width } = Dimensions.get('window');
+import PrimaryButton from '../../components/PrimaryButton';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 export default function LoginScreen({ navigation }: Props) {
-  const { email, setEmail, password, setPassword, handleLogin } = useLoginViewModel();
+  const { email, setEmail, password, setPassword, isLoading, handleLogin } = useLoginViewModel();
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
+    <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
+      <View style={styles.container}>
+        <Text style={styles.title}>Login</Text>
 
-      <View style={styles.loginContainer}>
-        <Text style={styles.label}>Login</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="Digite seu RA"
-          placeholderTextColor="rgba(0, 0, 0, 0.8)"
-          value={email}
-          onChangeText={setEmail}
-          keyboardType="email-address"
-          autoCapitalize="none"
-        />
-        <Text style={styles.helperText}>Deve ser o mesmo do GDE</Text>
+        <View style={styles.card}>
+          <Text style={styles.label}>Login</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Digite seu RA"
+            placeholderTextColor={colors.textMuted}
+            value={email}
+            onChangeText={setEmail}
+            keyboardType="email-address"
+            autoCapitalize="none"
+          />
+          <Text style={styles.helperText}>Deve ser o mesmo do GDE</Text>
 
-        <Text style={[styles.label, styles.passwordLabelMargin]}>Senha</Text>
-        <PasswordInput value={password} onChangeText={setPassword} placeholder="Digite sua senha" />
-        <Text style={styles.helperText}>Deve ser o mesmo do GDE</Text>
+          <Text style={[styles.label, styles.passwordLabelMargin]}>Senha</Text>
+          <PasswordInput value={password} onChangeText={setPassword} placeholder="Digite sua senha" />
+          <Text style={styles.helperText}>Deve ser o mesmo do GDE</Text>
 
-        <TouchableOpacity onPress={handleLogin} style={styles.loginButton}>
-          <Text style={styles.loginButtonText}>Login</Text>
-        </TouchableOpacity>
+          <PrimaryButton
+            label={isLoading ? 'Entrando...' : 'Login'}
+            onPress={handleLogin}
+            style={{ width: '100%', marginTop: spacing(2) }}
+          />
 
-        <TouchableOpacity
-          onPress={() => { /* Implement navigation or logic for registration */ }}
-          style={styles.registerButton}
-        >
-          <Text style={styles.registerButtonText}>Registre-se no GDE</Text>
-        </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {}}
+            style={styles.secondaryButton}
+          >
+            <Text style={styles.secondaryButtonText}>Registre-se no GDE</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: colors.bg,
+  },
   container: {
     flex: 1,
     backgroundColor: colors.bg,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: spacing(3),
+    gap: spacing(2),
   },
   title: {
     color: colors.text,
-    fontSize: 28,
+    fontSize: 26,
     fontWeight: '900',
-    marginBottom: spacing(6),
+    letterSpacing: 0.6,
+    fontFamily: 'monospace',
   },
-  loginContainer: {
-    backgroundColor: '#FFFFFF',
-    padding: spacing(4),
-    borderRadius: spacing(2),
-    width: Platform.select({
-      web: width * 0.35,
-      android: width * 0.80
-    }),
-    maxWidth: 400,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
+  card: {
+    backgroundColor: colors.surface,
+    padding: spacing(3),
+    borderRadius: 14,
+    width: '100%',
+    maxWidth: 420,
+    borderWidth: 1,
+    borderColor: colors.border,
+    gap: spacing(1),
   },
   label: {
-    fontSize: 16,
-    color: '#333333',
-    fontWeight: '600',
-    marginBottom: spacing(1),
+    fontSize: 14,
+    color: colors.text,
+    fontWeight: '700',
+    marginBottom: spacing(0.5),
+    letterSpacing: 0.3,
+    fontFamily: 'monospace',
   },
   passwordLabelMargin: {
-    marginTop: spacing(3),
+    marginTop: spacing(2),
   },
   input: {
     borderWidth: 1,
-    borderColor: colors.textMuted,
-    borderRadius: 8,
-    paddingVertical: 10,
-    paddingHorizontal: 12,
-    fontSize: 16,
-    backgroundColor: '#ffffff',
-    marginBottom: spacing(1),
+    borderColor: colors.border,
+    borderRadius: 12,
+    paddingVertical: spacing(1),
+    paddingHorizontal: spacing(1.25),
+    fontSize: 15,
+    color: colors.text,
+    backgroundColor: colors.surfaceAlt,
+    fontFamily: 'monospace',
   },
   helperText: {
     fontSize: 12,
     color: colors.textMuted,
-    marginBottom: spacing(3),
+    marginBottom: spacing(1),
+    fontFamily: 'monospace',
   },
-  loginButton: {
-    backgroundColor: '#333333',
-    paddingVertical: spacing(2),
-    borderRadius: 16,
-    alignItems: 'center',
-    marginTop: spacing(3),
-    minWidth: 220,
-    alignSelf: 'center',
-  },
-  loginButtonText: {
-    color: '#FFFFFF',
-    fontWeight: '800',
-    fontSize: 16,
-  },
-  registerButton: {
-    backgroundColor: '#E0E0E0',
-    borderColor: '#C0C0C0',
-    borderWidth: 2,
-    paddingVertical: spacing(2),
-    borderRadius: 16,
-    alignItems: 'center',
+  secondaryButton: {
     marginTop: spacing(2),
-    minWidth: 220,
-    alignSelf: 'center',
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: 12,
+    paddingVertical: spacing(1.25),
+    alignItems: 'center',
+    backgroundColor: colors.surfaceAlt,
   },
-  registerButtonText: {
-    color: '#333333',
-    fontWeight: '800',
-    fontSize: 16,
+  secondaryButtonText: {
+    color: colors.text,
+    fontWeight: '700',
+    fontSize: 14,
+    letterSpacing: 0.3,
+    fontFamily: 'monospace',
   },
 });

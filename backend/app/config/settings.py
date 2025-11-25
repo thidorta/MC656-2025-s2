@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
 
+from dotenv import load_dotenv
 
 def _resolve_path(value: str | None, fallback: Path) -> Path:
     if value:
@@ -20,6 +21,7 @@ class Settings:
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
+    load_dotenv()
     project_root = Path(__file__).resolve().parents[3]
     default_catalog = (project_root / "crawler" / "data" / "db" / "catalog.db").resolve()
     default_user_db = (project_root / "crawler" / "data" / "user_db").resolve()

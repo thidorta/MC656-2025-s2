@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from pathlib import Path
-
 import pytest
 from fastapi.testclient import TestClient
 
@@ -9,6 +7,11 @@ from app.config.settings import get_settings
 from main import app
 
 client = TestClient(app)
+
+pytestmark = pytest.mark.skipif(
+    not get_settings().catalog_db_path.exists(),
+    reason="catalog db snapshot not present",
+)
 
 
 def test_get_courses_returns_items():
