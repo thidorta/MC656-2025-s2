@@ -1,0 +1,1280 @@
+{
+  "course": {
+    "id": 2,
+    "name": "Estatística (2)",
+    "code": "2"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2018,
+  "parameters": {
+    "catalogo": "2018",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4423",
+      "codigo": "ME110",
+      "nome": "Noções de Estatística",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4424",
+      "codigo": "ME111",
+      "nome": "Laboratório de Estatística",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4754",
+      "codigo": "MS149",
+      "nome": "Complementos de Matemática",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4432",
+      "codigo": "ME210",
+      "nome": "Probabilidade I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12157",
+      "codigo": "ME322",
+      "nome": "Inferência",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "ME210"
+        ],
+        [
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3930",
+      "codigo": "LA242",
+      "nome": "Inglês Instrumental à Distância",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA142"
+        ],
+        [
+          "LA122"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11726",
+      "codigo": "ME115",
+      "nome": "Linguagem R",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4436",
+      "codigo": "ME310",
+      "nome": "Probabilidade II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "ME210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11727",
+      "codigo": "ME315",
+      "nome": "Manipulação de Banco de Dados",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC102",
+          "ME115"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11728",
+      "codigo": "ME415",
+      "nome": "Método Científico e Técnicas de Pesquisa",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4446",
+      "codigo": "ME430",
+      "nome": "Técnicas de Amostragem",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME310"
+        ],
+        [
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4449",
+      "codigo": "ME501",
+      "nome": "Processos Estocásticos",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME310"
+        ],
+        [
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4459",
+      "codigo": "ME613",
+      "nome": "Análise de Regressão",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "ME322",
+          "ME323"
+        ],
+        [
+          "MA327",
+          "ME310",
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4456",
+      "codigo": "ME607",
+      "nome": "Séries Temporais",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4460",
+      "codigo": "ME623",
+      "nome": "Planejamento e Pesquisa",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4465",
+      "codigo": "ME705",
+      "nome": "Inferência Bayesiana",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4775",
+      "codigo": "MS512",
+      "nome": "Análise Numérica I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MS211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4474",
+      "codigo": "ME731",
+      "nome": "Métodos em Análise Multivariada",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4453",
+      "codigo": "ME524",
+      "nome": "Computação Aplicada à Estatística",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "ME115",
+          "ME322",
+          "MS211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11729",
+      "codigo": "ME712",
+      "nome": "Consultoria Estatística I",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME415",
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4468",
+      "codigo": "ME714",
+      "nome": "Análise de Dados Discretos",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11730",
+      "codigo": "ME812",
+      "nome": "Consultoria Estatística II",
+      "creditos": 12,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME712"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4079",
+      "codigo": "MA044",
+      "nome": "Matemática IV",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4472",
+      "codigo": "ME721",
+      "nome": "Demografia",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12259",
+      "codigo": "ME912",
+      "nome": "Modelagem de Variáveis Latentes",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4804",
+      "codigo": "MS715",
+      "nome": "Planejamento e Controle de Produção",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MS428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "835",
+      "codigo": "CE138",
+      "nome": "Estratégias de Empresas para Engenharia",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ],
+        [
+          "CE141",
+          "CE641"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4464",
+      "codigo": "ME701",
+      "nome": "Tópicos Especiais em Estatística Aplicada II",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12254",
+      "codigo": "ME907",
+      "nome": "Geoestatística",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4776",
+      "codigo": "MS515",
+      "nome": "Métodos Probabilísticos em Pesquisa Operacional",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4458",
+      "codigo": "ME612",
+      "nome": "Métodos Estatísticos para Ciências Biológicas",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11851",
+      "codigo": "ME860",
+      "nome": "Métodos Computacionais",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12265",
+      "codigo": "ME918",
+      "nome": "Produtos de Dados",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4112",
+      "codigo": "MA502",
+      "nome": "Análise I",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4473",
+      "codigo": "ME730",
+      "nome": "Iniciação Científica II",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME630"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12260",
+      "codigo": "ME913",
+      "nome": "Análise de Dados Hierárquicos",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5771",
+      "codigo": "TA541",
+      "nome": "Análise Sensorial de Alimentos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6817",
+      "codigo": "CE451",
+      "nome": "Métodos Quantitativos Aplicados à Economia Financeira",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME715"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4466",
+      "codigo": "ME706",
+      "nome": "Robustez",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12255",
+      "codigo": "ME908",
+      "nome": "Análise de Sobrevivência",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4783",
+      "codigo": "MS580",
+      "nome": "Introdução à Teoria Fuzzy",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MS211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4461",
+      "codigo": "ME630",
+      "nome": "Iniciação Científica I",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11848",
+      "codigo": "ME861",
+      "nome": "Análise de Regressão II",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12266",
+      "codigo": "ME919",
+      "nome": "Introdução a Modelos Lineares",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4120",
+      "codigo": "MA602",
+      "nome": "Análise II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6950",
+      "codigo": "ME732",
+      "nome": "Métodos em Análise Multivariada II",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12261",
+      "codigo": "ME914",
+      "nome": "Introdução à Teoria dos Jogos",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "890",
+      "codigo": "CE738",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4470",
+      "codigo": "ME715",
+      "nome": "Econometria",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ],
+        [
+          "CE731"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12256",
+      "codigo": "ME909",
+      "nome": "Fundamentos de Modelagem via Cópulas",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322",
+          "ME323"
+        ],
+        [
+          "ME310",
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4791",
+      "codigo": "MS614",
+      "nome": "Simulação de Sistemas",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC102",
+          "ME210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4462",
+      "codigo": "ME651",
+      "nome": "Controle Estatístico de Qualidade",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ],
+        [
+          "ME323"
+        ],
+        [
+          "ME414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12251",
+      "codigo": "ME904",
+      "nome": "Inferência Estatística na Era Computacional",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12267",
+      "codigo": "ME920",
+      "nome": "Introdução à Inferência Causal",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11849",
+      "codigo": "ME820",
+      "nome": "Estágio em Empresa I",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12262",
+      "codigo": "ME915",
+      "nome": "Teoria da Decisão",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "915",
+      "codigo": "CE939",
+      "nome": "Gestão de Marketing",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4471",
+      "codigo": "ME716",
+      "nome": "Teoria da Informação",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12257",
+      "codigo": "ME910",
+      "nome": "Teoria de Resposta ao Item",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4798",
+      "codigo": "MS680",
+      "nome": "Modelos Matemáticos para Biologia",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7137",
+      "codigo": "ME652",
+      "nome": "Controle Estatístico de Qualidade II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12252",
+      "codigo": "ME905",
+      "nome": "Inferência Estatística para Dados de Alta Dimensão",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4760",
+      "codigo": "MS317",
+      "nome": "Matemática Financeira",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7134",
+      "codigo": "ME502",
+      "nome": "Processos Estocásticos II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11850",
+      "codigo": "ME821",
+      "nome": "Estágio em Empresa II",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME820"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12263",
+      "codigo": "ME916",
+      "nome": "Regressão Quantílica",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2650",
+      "codigo": "EU502",
+      "nome": "Metrologia Industrial",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE103"
+        ],
+        [
+          "ME319"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10287",
+      "codigo": "ME720",
+      "nome": "Modelos Lineares Generalizados",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12258",
+      "codigo": "ME911",
+      "nome": "Modelagem de Equações Estruturais",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4803",
+      "codigo": "MS714",
+      "nome": "Laboratório de Simulação de Sistemas",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MS614"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "575",
+      "codigo": "BB125",
+      "nome": "Fundamentos de Biologia Molecular",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4463",
+      "codigo": "ME661",
+      "nome": "Métodos Não Paramétricos",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12253",
+      "codigo": "ME906",
+      "nome": "Métodos em Aprendizado Supervisionado de Máquina",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4769",
+      "codigo": "MS428",
+      "nome": "Programação Linear",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "MA327",
+          "MS211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4454",
+      "codigo": "ME601",
+      "nome": "Tópicos Especiais em Estatística Aplicada I",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7148",
+      "codigo": "ME850",
+      "nome": "Seminários de Estatística",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12264",
+      "codigo": "ME917",
+      "nome": "Introdução a Métodos Não Paramétricos para Estimação de Curvas",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME613"
+        ]
+      ]
+    }
+  ]
+}

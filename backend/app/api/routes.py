@@ -1,14 +1,11 @@
+from __future__ import annotations
+
 from fastapi import APIRouter
-# Importações temporariamente comentadas até criarmos os endpoints
-# from app.api.endpoints import courses, curriculum
+
+from app.api.endpoints import courses, curriculum, user_db
 
 router = APIRouter()
 
-# Rota temporária para teste
-@router.get("/test")
-async def test_endpoint():
-    return {"message": "API funcionando!"}
-
-# Incluir endpoints (comentado temporariamente)
-# router.include_router(courses.router, prefix="/courses", tags=["courses"])
-# router.include_router(curriculum.router, prefix="/curriculum", tags=["curriculum"])
+router.include_router(courses.router, prefix="/courses", tags=["courses"])
+router.include_router(curriculum.router, prefix="/curriculum", tags=["curriculum"])
+router.include_router(user_db.router, prefix="/user-db", tags=["user_db"])

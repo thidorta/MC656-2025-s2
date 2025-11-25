@@ -1,35 +1,21 @@
-# Backend — Checklist de Implementação e Estado Atual
+## Backend Docs
 
-## Objetivo
+- [`ARCHITECTURE.md`](ARCHITECTURE.md) – layered design, components, and external integrations.
+- [`ENDPOINTS.md`](ENDPOINTS.md) – HTTP interface reference.
+- [`SMELLS-AND-REFACTORING.md`](SMELLS-AND-REFACTORING.md) – technical debt notes.
 
-Disponibilizar uma API REST compliant para interação segura com dados via FastAPI, aplicando boas práticas arquiteturais e garantindo separação de responsabilidades.
+### Running locally
 
----
+Refer to `backend/README.md` for prerequisites, virtualenv setup, and data requirements (catalog DB imported from the crawler).
 
-## Checklist de Implementação
+### Tests
 
-- [x] Camadas desacopladas (Routers, Services, Repositories, Schemas)
-- [x] Padrão Repository implementado para todas entidades
-- [x] Autenticação/JWT
-- [x] Endpoints RESTful (CRUD entidades principais)
-- [x] Alembic para migração de banco
-- [x] Testes de integração básicos
-- [ ] Documentação OpenAPI adaptada (exemplos/customização)
-- [ ] Refatoração completa dos code smells identificados
-- [ ] Restrição de endpoints para produção
+Use the repo-level virtualenv and run:
 
-## Estado Atual
+```powershell
+cd backend
+.venv\Scripts\activate
+python -m pytest
+```
 
-- Estrutura de camadas aplicada via FastAPI
-- Endpoints principais (itens, usuários) operacionais
-- AuthService parcialmente separado
-- Testes básicos cobrem fluxo principal
-- Parte dos endpoints antigos ainda inclusos
-
----
-
-## O que falta para A4
-
-- Remover endpoints dispensáveis e documentar branch/issue
-- Revisar OpenAPI (Swagger) e documentar melhorias
-- Atualizar diagramas C4 para refletir estado atual
+Shortcut: `powershell backend/scripts/run_tests.ps1`

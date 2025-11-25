@@ -81,16 +81,26 @@ if ($ShouldInstallDeps) {
 Write-Host "Python: " -NoNewline; python --version
 
 # Step 1: collect -> data/raw + data/json
-Write-Host "[2/3] Rodando coletor (src.crawler_app.cli collect)" -ForegroundColor Cyan
+Write-Host "[2/4] Rodando coletor (src.crawler_app.cli collect)" -ForegroundColor Cyan
 python -m src.crawler_app.cli collect
 if ($LASTEXITCODE -ne 0) { throw "Falha no coletor (crawler_app collect)" }
 
 # Step 2: build DB -> data/db
-Write-Host "[3/3] Construindo banco (src.crawler_app.cli build-db)" -ForegroundColor Cyan
+Write-Host "[3/4] Construindo banco (src.crawler_app.cli build-db)" -ForegroundColor Cyan
 python -m src.crawler_app.cli build-db
 if ($LASTEXITCODE -ne 0) { throw "Falha ao construir o banco (crawler_app build-db)" }
 
-Write-Host "✔ Concluído. JSONs em data/json e DB em data/db/gde_simple.db" -ForegroundColor Green
+# Step 3: gerar catalog.db
+$ImportScript = Join-Path $ProjectRoot 'scripts/import_catalog_db.py'
+if (Test-Path $ImportScript) {
+  Write-Host "[extra] Importando catalogo (scripts/import_catalog_db.py)" -ForegroundColor Cyan
+  python $ImportScript
+  if ($LASTEXITCODE -ne 0) { throw "Falha ao rodar scripts/import_catalog_db.py" }
+} else {
+  Write-Host "scripts/import_catalog_db.py não encontrado; pulei catalog.db" -ForegroundColor Yellow
+}
+
+Write-Host "✔ Concluído. JSONs em data/json, DB em data/db/gde_simple.db e catalog.db em data/db/catalog.db" -ForegroundColor Green
 # Step 1: enumerate -> outputs/json
 Write-Host "[3/4] Running collector (enumerate_dimensions)" -ForegroundColor Cyan
 python -m src.collectors.enumerate_dimensions

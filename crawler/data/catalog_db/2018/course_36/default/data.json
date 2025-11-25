@@ -1,0 +1,573 @@
+{
+  "course": {
+    "id": 36,
+    "name": "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (36)",
+    "code": "36"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2018,
+  "parameters": {
+    "catalogo": "2018",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9726",
+      "codigo": "EB102",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9730",
+      "codigo": "SI100",
+      "nome": "Algoritmos e Programação de Computadores I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6148",
+      "codigo": "TT106",
+      "nome": "Organização e Arquitetura de Computadores",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9952",
+      "codigo": "SI202",
+      "nome": "Resolução de Problemas I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ],
+        [
+          "SI101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5448",
+      "codigo": "ST008",
+      "nome": "Metodologia do Trabalho Científico",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6988",
+      "codigo": "ST266",
+      "nome": "Engenharia de Software I",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT130"
+        ],
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6165",
+      "codigo": "TT304",
+      "nome": "Sistemas Operacionais",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9732",
+      "codigo": "SI102",
+      "nome": "Seminários I",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9950",
+      "codigo": "SI200",
+      "nome": "Algoritmos e Programação de Computadores II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9951",
+      "codigo": "SI201",
+      "nome": "Estrutura de Dados I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9956",
+      "codigo": "SI404",
+      "nome": "Introdução a Interfaces Humano-Computador",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST266"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6993",
+      "codigo": "ST567",
+      "nome": "Banco de Dados I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6991",
+      "codigo": "TT350",
+      "nome": "Administração de Empresas",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9953",
+      "codigo": "SI010",
+      "nome": "Estrutura de Dados II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9954",
+      "codigo": "SI300",
+      "nome": "Programação Orientada a Objetos I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9955",
+      "codigo": "SI304",
+      "nome": "Engenharia de Software II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST266"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5618",
+      "codigo": "ST562",
+      "nome": "Estruturas de Arquivos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST364"
+        ],
+        [
+          "SI201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6999",
+      "codigo": "ST767",
+      "nome": "Banco de Dados II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST567"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9957",
+      "codigo": "SI305",
+      "nome": "Análise de Sistemas de Informação I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9958",
+      "codigo": "SI400",
+      "nome": "Programação Orientada a Objetos II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5522",
+      "codigo": "ST096",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7176",
+      "codigo": "TT060",
+      "nome": "Gestão de Projetos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST266"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9959",
+      "codigo": "SI405",
+      "nome": "Análise de Sistemas de Informação II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI305"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9960",
+      "codigo": "SI703",
+      "nome": "Governança e Planejamento Estratégico de TI",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT350"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6994",
+      "codigo": "ST568",
+      "nome": "Redes de Comunicação I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5684",
+      "codigo": "ST765",
+      "nome": "Computação Gráfica",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST364",
+          "TT102"
+        ],
+        [
+          "EB102",
+          "SI201"
+        ],
+        [
+          "SI201",
+          "SI221"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9961",
+      "codigo": "SI401",
+      "nome": "Programação para a Web",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9962",
+      "codigo": "SI700",
+      "nome": "Programação para Dispositivos Móveis",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI201",
+          "SI400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9963",
+      "codigo": "SI800",
+      "nome": "Empreendedorismo e Inovação",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9966",
+      "codigo": "SI704",
+      "nome": "Seminários II",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10352",
+      "codigo": "SI901",
+      "nome": "Iniciação Científica I",
+      "creditos": 10,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10353",
+      "codigo": "SI902",
+      "nome": "Iniciação Científica II",
+      "creditos": 10,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10355",
+      "codigo": "SI904",
+      "nome": "Iniciação Tecnológica II",
+      "creditos": 10,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10357",
+      "codigo": "SI906",
+      "nome": "Monitoria II",
+      "creditos": 5,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI905"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10360",
+      "codigo": "SI909",
+      "nome": "Atividades Complementares",
+      "creditos": 10,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9964",
+      "codigo": "SI912",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9967",
+      "codigo": "SI913",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI912"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9965",
+      "codigo": "SI914",
+      "nome": "Estágio em Computação I",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9968",
+      "codigo": "SI915",
+      "nome": "Estágio em Computação II",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI914"
+        ]
+      ]
+    }
+  ]
+}

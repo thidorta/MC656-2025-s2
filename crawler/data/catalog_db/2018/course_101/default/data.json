@@ -1,0 +1,907 @@
+{
+  "course": {
+    "id": 101,
+    "name": "Engenharia de Manufatura (101)",
+    "code": "101"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2018,
+  "parameters": {
+    "catalogo": "2018",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9720",
+      "codigo": "NC103",
+      "nome": "Natureza e Tecnologia na Sociedade Contemporânea",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4019",
+      "codigo": "LE100",
+      "nome": "Desenho Técnico Assistido por Computador",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4020",
+      "codigo": "LE101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6884",
+      "codigo": "LE105",
+      "nome": "Introdução à Engenharia",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6885",
+      "codigo": "LE106",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4024",
+      "codigo": "LE200",
+      "nome": "Química Geral",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6893",
+      "codigo": "NC202",
+      "nome": "Sociedade e Ambiente",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4025",
+      "codigo": "LE201",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4026",
+      "codigo": "LE202",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4027",
+      "codigo": "LE203",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101",
+          "LE106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6902",
+      "codigo": "LE205",
+      "nome": "Introdução à Metodologia de Projeto",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4033",
+      "codigo": "LE400",
+      "nome": "Mecânica Geral",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101",
+          "LE106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12133",
+      "codigo": "NC104",
+      "nome": "Introdução à Ciência dos Dados e à Informação",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4041",
+      "codigo": "LE500",
+      "nome": "Resistência dos Materiais",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 315"
+        ],
+        [
+          "LE400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9902",
+      "codigo": "NC301",
+      "nome": "Filosofia e Ciências Humanas",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4022",
+      "codigo": "LE103",
+      "nome": "Oficinas",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4028",
+      "codigo": "LE300",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4029",
+      "codigo": "LE301",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4030",
+      "codigo": "LE302",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4031",
+      "codigo": "LE303",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4038",
+      "codigo": "LE405",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE301",
+          "LE302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6903",
+      "codigo": "LE408",
+      "nome": "Termodinâmica I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101",
+          "LE200"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2650",
+      "codigo": "EU502",
+      "nome": "Metrologia Industrial",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE103"
+        ],
+        [
+          "ME319"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10541",
+      "codigo": "LE409",
+      "nome": "Estatística e Probabilidade para Engenharia",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6904",
+      "codigo": "EU503",
+      "nome": "Mecanismos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4034",
+      "codigo": "LE401",
+      "nome": "Estrutura e Propriedade dos Materiais",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE200"
+        ],
+        [
+          "QG101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4035",
+      "codigo": "LE402",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE106",
+          "LE303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4037",
+      "codigo": "LE404",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5195",
+      "codigo": "NC400",
+      "nome": "Noções de Administração e Gestão",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12136",
+      "codigo": "EU605",
+      "nome": "Dinâmica de Mecanismos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EU503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4039",
+      "codigo": "LE406",
+      "nome": "Eletrotécnica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4042",
+      "codigo": "LE501",
+      "nome": "Fenômenos de Transporte",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 320"
+        ],
+        [
+          "LE301",
+          "LE408"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4044",
+      "codigo": "LE503",
+      "nome": "Tecnologia Mecânica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE100",
+          "LE103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2647",
+      "codigo": "EU500",
+      "nome": "Introdução aos Métodos Numéricos Aplicados à Engenharia",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE300",
+          "LE402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6905",
+      "codigo": "LE504",
+      "nome": "Termodinâmica II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE408"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2649",
+      "codigo": "EU501",
+      "nome": "Transformação de Fase dos Materiais",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12137",
+      "codigo": "LE505",
+      "nome": "Pesquisa Operacional I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10542",
+      "codigo": "EU604",
+      "nome": "Automação Industrial",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10544",
+      "codigo": "LE609",
+      "nome": "Fundamentos de Finanças e Custos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10543",
+      "codigo": "ER201",
+      "nome": "Gestão Sustentável",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4056",
+      "codigo": "LE704",
+      "nome": "Laboratório de Engenharia I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE501",
+          "LE504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2557",
+      "codigo": "ER600",
+      "nome": "Operações Unitárias",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2653",
+      "codigo": "EU602",
+      "nome": "Elementos de Máquinas",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EU605",
+          "LE500"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4045",
+      "codigo": "LE600",
+      "nome": "Conformação Mecânica",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE401",
+          "LE503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4047",
+      "codigo": "LE602",
+      "nome": "Usinagem de Materiais",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 589"
+        ],
+        [
+          "LE401",
+          "LE503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6907",
+      "codigo": "LE608",
+      "nome": "Processos de Fabricação I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4053",
+      "codigo": "LE701",
+      "nome": "Gestão de Projetos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4055",
+      "codigo": "LE703",
+      "nome": "Sistemas Produtivos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4064",
+      "codigo": "LE902",
+      "nome": "Engenharia Assistida por Computador",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EU500",
+          "EU602",
+          "LE100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6908",
+      "codigo": "EU702",
+      "nome": "Processos de Fabricação II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE608"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2663",
+      "codigo": "EU901",
+      "nome": "Materiais Poliméricos",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4018",
+      "codigo": "LE012",
+      "nome": "Manutenção Industrial",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE103",
+          "LE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4052",
+      "codigo": "LE700",
+      "nome": "Engenharia de Qualidade",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE409"
+        ],
+        [
+          "F 428",
+          "LE602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4061",
+      "codigo": "LE802",
+      "nome": "Laboratório de Engenharia II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE704"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10545",
+      "codigo": "LE804",
+      "nome": "Ergonomia, Saúde e Higiene do Trabalho",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2559",
+      "codigo": "ER700",
+      "nome": "Seleção de Materiais",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE401",
+          "LE500"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2564",
+      "codigo": "ER801",
+      "nome": "Desenvolvimento de Produtos",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE701"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12138",
+      "codigo": "EU704",
+      "nome": "Engenharia de Superfície",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6295",
+      "codigo": "ER901",
+      "nome": "Estágio I",
+      "creditos": 9,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2644",
+      "codigo": "EU010",
+      "nome": "Trabalho de Graduação",
+      "creditos": 8,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2659",
+      "codigo": "EU802",
+      "nome": "Projeto de Ferramentas para Fabricação",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2552",
+      "codigo": "ER011",
+      "nome": "Estágio II",
+      "creditos": 9,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

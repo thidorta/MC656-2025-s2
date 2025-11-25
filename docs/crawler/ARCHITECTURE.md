@@ -14,6 +14,7 @@ flowchart LR
     parser["Parser\n(parsers/arvore_parsers.py)"]
     json["JSON normalizado\n(data/json)"]
     db["SQLite\n(data/db/gde_simple.db)"]
+    catalogdb["Catalog DB\n(data/db/catalog.db)"]
 
     cli --> settings
     settings --> session
@@ -23,13 +24,14 @@ flowchart LR
     strategy --> parser
     parser --> json
     json --> db
+    json --> catalogdb
 ```
 
 ASCII: CLI -> Settings -> Session -> Collector -> Strategy -> {RAW, Parser} -> JSON -> DB.
 
 ## Entradas e saidas
 - **Entradas:** Variaveis do `.env` (`GDE_LOGIN`, `GDE_SENHA`, `CRAWLER_STRATEGY`, `HTTP_TIMEOUT_S`), argumentos CLI (`--base-url`, `--strategy`, `--course-id`, `--year`).
-- **Saidas:** HTML bruto em `crawler/data/raw`, JSON com disciplinas em `crawler/data/json`, banco SQLite consolidado em `crawler/data/db/gde_simple.db`, logs no console.
+- **Saidas:** HTML bruto em `crawler/data/raw`, JSON com disciplinas em `crawler/data/json`, banco SQLite consolidado em `crawler/data/db/gde_simple.db`, catálogo relacional em `crawler/data/db/catalog.db` (gerado por `scripts/import_catalog_db.py`), logs no console.
 - **Metadados:** Logs detalhados via `logging_helpers.log_response_with_selects` mostram previews de `<select>` para auditoria.
 
 ## Resiliencia
@@ -62,3 +64,4 @@ Outros atalhos: `python -m src.crawler_app.cli run-all` roda coleta seguida de `
 - Registrar metricas de duracao e taxa de erro para cada Strategy (ex.: Prometheus pushgateway).
 - Adicionar terceira Strategy baseada em headless browser para casos extremos.
 - Integrar validacao automatica que compara contagem de disciplinas com execucoes anteriores e alerta discrepancias.
+- Automatizar execucao do importador descrito em `docs/crawler/IMPORTING.md` ao final do `run_all.ps1`.

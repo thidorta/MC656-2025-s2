@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 31,
+    "name": "Curso Superior de Tecnologia Sanitária (31)",
+    "code": "31"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2018,
+  "parameters": {
+    "catalogo": "2018",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

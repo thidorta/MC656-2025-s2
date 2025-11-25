@@ -1,0 +1,1605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" >
+<head>
+	<link rel="search" type="application/opensearchdescription+xml" href="https://grade.daconline.unicamp.br/opensearch.xml" title="Procurar no GDE" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>GDE - &Aacute;rvore</title>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery-ui-1.8.24.min.js"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.ba-hashchange.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.easing.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.fancybox.js?20210919"></script>
+	<script type='text/javascript' src="https://grade.daconline.unicamp.br/web/js/jquery.fullcalendar.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.guaycuru.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jcontext.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jdMenu.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jhelpertip.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.maskedinput.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.numberinput.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.popup.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.positionBy.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.tablesorter.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.timers.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.validate.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.watcherkeys.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/gde.common.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/gde.42.js?20210919"></script>
+	<script type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3315545-3']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/dropdown_menu.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/gde.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/tabs.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.datepicker.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.fancybox.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jcontext.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jdMenu.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jhelpertip.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.popup.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.ui.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/fullcalendar.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.tablesorter.css?20210919" type="text/css" />
+	<link rel="apple-touch-icon" href="https://grade.daconline.unicamp.br/web/images/apple-touch-icon.png" />
+</head>
+<body id="page_bg">
+<a href="https://github.com/guaycuru/gde" target="_blank" title="Colabore com o GDE, abra seu Pull Request!" id="fork-me-ribbon">
+	<img style="position: absolute; top: 0; right: 0; border: 0; z-index: 99;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+</a>
+<script type="text/javascript">
+// <![CDATA[
+var CONFIG_URL = 'https://grade.daconline.unicamp.br/';
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+// Informacoes para o chat
+var ID_USUARIO = '40017';
+var meu_status = 'z';
+var minha_foto_th = 'https://grade.daconline.unicamp.br/web/fts/ncNDZJ0b5PY8vrRR_th.jpg';
+$(document).ready(function(){
+	$('body').watcherkeys({callback: $.guaycuru.changeIt});
+	$("#menu_input_busca").Valor_Padrao('Buscar...', 'padrao');
+	$("#form_busca_universal").submit(function() {
+		if($("#menu_input_busca").val().length < 1 || $("#menu_input_busca").hasClass('padrao'))
+			return false;
+	});
+	$("#toggle_menu_busca_avancada").click(function() {
+		$("#div_menu_busca_avancada").toggle('fast', function() {
+			if($(this).is(":visible"))
+				$(document).click(function() { $("#div_menu_busca_avancada").hide('fast'); });
+		});
+		return false;
+	});
+});
+// ]]>
+</script>
+	<iframe src="about:blank" width="0" height="0" frameborder="0" id="controle" name="controle"></iframe>
+		<div id="top">
+			<div id="mini_logo">
+				<a href="https://grade.daconline.unicamp.br/" title="Home"><img src="https://grade.daconline.unicamp.br/web/images/mini_logo.gif" alt="GDE" width="128" height="38" /></a>
+			</div> 
+				<div id="top_menu" class="menu ui-corner-bottom">
+				<ul>
+							<li><a href="#" onclick="return false;">Acad&ecirc;mico</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/arvore/">&Aacute;rvore / Integraliza&ccedil;&atilde;o</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/avaliar/">Avaliar Professores</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/eliminador/">Eliminar Disciplinas</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/mapa/">Mapa do Campus</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/planejador/">Planejador</a></li>
+							<!-- <li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/rankings/">Rankings</a></li> -->
+						</ul>
+					</li>
+					<li><a href="#" onclick="return false;">Social</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/editar-perfil/">Editar Perfil</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/configuracoes/">Configura&ccedil;&otilde;es da Conta</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/amigos/">Meus Amigos</a></li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="return false;">Ajuda</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/contato/">Contato</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/estatisticas/">Estat&iacute;sticas</a></li>
+							<li><a href="https://github.com/guaycuru/gde/wiki/FAQ" target="_blank">Perguntas Frequentes</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/sobre/">Sobre o GDE</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/termos/">Termos de Uso</a></li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="Logout(); return false;">Sair</a></li>
+				</ul>
+			</div>
+			<form id="form_busca_universal" method="get" action="https://grade.daconline.unicamp.br/busca/">
+				<div id="top_busca_simples">
+					<input type="text" id="menu_input_busca" name="q" />
+				</div>
+				<div id="top_botoes_busca">
+					<input type="submit" id="botao_busca_universal" name="buscar" value="OK" />
+					<div id="busca_avancada_wrapper">
+						<a href="https://grade.daconline.unicamp.br/busca/" title="Busca Avan&ccedil;ada" id="toggle_menu_busca_avancada"><img id="botao_busca_avancada" src="https://grade.daconline.unicamp.br/web/images/menu-avancado.png" alt="+" width="11" height="38" /></a>
+						<div id="div_menu_busca_avancada">
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_alunos">Buscar Alunos</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_professores">Buscar Professores</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_disciplinas">Buscar Disciplinas</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_oferecimentos">Buscar Oferecimentos</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_salas">Buscar Salas</a>
+						</div>
+					</div>
+				</div>
+			</form>
+			</div>
+	<div id="wrapper" class="center">
+		<div id="content_bg">
+			<div id="content">
+<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jcontext.js?20210919"></script>
+<script type="text/javascript">
+	// <![CDATA[
+	$(document).ready(function() {
+		
+	$("#Shape_2740").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_F_107"
+	});
+
+	$("#Shape_2740").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_F_107.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3089").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR103"
+	});
+
+	$("#Shape_3089").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR103.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_4763").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MS380"
+	});
+
+	$("#Shape_4763").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_MS380.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5347").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QG108"
+	});
+
+	$("#Shape_5347").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QG108.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5348").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QG109"
+	});
+
+	$("#Shape_5348").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QG109.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5349").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QG362"
+	});
+
+	$("#Shape_5349").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QG362.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_757").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS115"
+	});
+
+	$("#Shape_757").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_BS115.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_760").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BS215"
+	});
+
+	$("#Shape_760").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_BS215.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6783").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR204"
+	});
+
+	$("#Shape_6783").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR204.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_4443").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_ME414"
+	});
+
+	$("#Shape_4443").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_ME414.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5375").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QI246"
+	});
+
+	$("#Shape_5375").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QI246.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5393").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QO321"
+	});
+
+	$("#Shape_5393").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QO321.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_711").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BI315"
+	});
+
+	$("#Shape_711").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_BI315.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6787").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BP515"
+	});
+
+	$("#Shape_6787").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_BP515.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_772").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BT315"
+	});
+
+	$("#Shape_772").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_BT315.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6784").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR304"
+	});
+
+	$("#Shape_6784").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR304.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11779").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR510"
+	});
+
+	$("#Shape_11779").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR510.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5314").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QF331"
+	});
+
+	$("#Shape_5314").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QF331.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_675").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BG515"
+	});
+
+	$("#Shape_675").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_BG515.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5397").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QO421"
+	});
+
+	$("#Shape_5397").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QO421.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5413").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QO721"
+	});
+
+	$("#Shape_5413").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QO721.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_578").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BB315"
+	});
+
+	$("#Shape_578").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_BB315.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_726").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_BM415"
+	});
+
+	$("#Shape_726").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_BM415.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6785").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR406"
+	});
+
+	$("#Shape_6785").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR406.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6786").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR407"
+	});
+
+	$("#Shape_6786").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR407.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11780").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR509"
+	});
+
+	$("#Shape_11780").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR509.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5289").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QA282"
+	});
+
+	$("#Shape_5289").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QA282.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_5409").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_QO623"
+	});
+
+	$("#Shape_5409").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_QO623.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6788").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR504"
+	});
+
+	$("#Shape_6788").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR504.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6789").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR505"
+	});
+
+	$("#Shape_6789").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR505.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6791").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR507"
+	});
+
+	$("#Shape_6791").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR507.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6792").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR508"
+	});
+
+	$("#Shape_6792").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR508.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6794").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR605"
+	});
+
+	$("#Shape_6794").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR605.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11781").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR608"
+	});
+
+	$("#Shape_11781").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR608.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6795").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR606"
+	});
+
+	$("#Shape_6795").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR606.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_10601").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR607"
+	});
+
+	$("#Shape_10601").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR607.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11783").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR609"
+	});
+
+	$("#Shape_11783").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR609.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11782").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR157"
+	});
+
+	$("#Shape_11782").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR157.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3101").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR415"
+	});
+
+	$("#Shape_3101").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR415.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3106").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR602"
+	});
+
+	$("#Shape_3106").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR602.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3107").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR603"
+	});
+
+	$("#Shape_3107").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR603.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11393").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR704"
+	});
+
+	$("#Shape_11393").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR704.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6797").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR705"
+	});
+
+	$("#Shape_6797").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR705.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11394").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR706"
+	});
+
+	$("#Shape_11394").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR706.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11785").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR707"
+	});
+
+	$("#Shape_11785").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR707.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3110").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR725"
+	});
+
+	$("#Shape_3110").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR725.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11784").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR158"
+	});
+
+	$("#Shape_11784").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR158.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_4319").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MD191"
+	});
+
+	$("#Shape_4319").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_MD191.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11392").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR703"
+	});
+
+	$("#Shape_11392").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR703.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6798").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR804"
+	});
+
+	$("#Shape_6798").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR804.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6799").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR805"
+	});
+
+	$("#Shape_6799").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR805.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6800").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR806"
+	});
+
+	$("#Shape_6800").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR806.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6802").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR807"
+	});
+
+	$("#Shape_6802").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR807.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11786").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR808"
+	});
+
+	$("#Shape_11786").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR808.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3114").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR900"
+	});
+
+	$("#Shape_3114").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR900.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3115").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR901"
+	});
+
+	$("#Shape_3115").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR901.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3116").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR902"
+	});
+
+	$("#Shape_3116").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR902.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_3117").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR903"
+	});
+
+	$("#Shape_3117").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR903.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6803").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_FR904"
+	});
+
+	$("#Shape_6803").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_HCpDJhgOND2utY03_FR904.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});	$("a#inline").fancybox({
+		'width': 1445,
+		'height': 1035,
+		'hideOnContentClick': false,
+		'autoDimensions' : false,
+		'autoScale' : false,
+		'centerOnScroll': false
+	});
+		$("a.iframe").fancybox({
+			'zoomSpeedIn': 300,
+			'zoomSpeedOut': 300,
+			'hideOnContentClick': false,
+			'width': 700,
+			'height': 500
+		});
+		var evt = $.browser.msie ? "click" : "change";
+		$("#curso").bind(evt, atualiza_modalidades);
+		$("#catalogo").bind(evt, atualiza_modalidades);
+		$("#ok").click(manda_form);
+		$("#limpar").click(limpa_form);
+		$('#select_modalidade').addClass("ac_loading");
+		$('#select_modalidade').load('https://grade.daconline.unicamp.br/ajax/modalidades.php?c=63&a=2018&s=&o=1', {}, function(){$('#select_modalidade').removeClass("ac_loading");});
+
+		$.guaycuru.tooltip("TT_tips", "Dicas:", "<ul><li>Para eliminar uma Disciplina da &Aacute;rvore, clique nela.</li><li>Para colocar uma disciplina de volta na &Aacute;rvore, busque pela disciplina (no menu Disciplinas) e, na p&aacute;gina dela, selecione a op&ccedil;&atilde;o \"Nenhuma das Anteriores\".</li><li>Para eliminar uma Eletiva, busque pela disciplina que foi cursada como eletiva, e marque que a mesma foi cursada.</li></ul>", {});
+
+	});
+	atualiza_modalidades = function() {
+		$('#select_modalidade').addClass("ac_loading");
+		$('#select_modalidade').load('https://grade.daconline.unicamp.br/ajax/modalidades.php?c='+$('#curso').val()+'&a='+$('#catalogo').val()+'&o=1', {}, function(){
+			$('#select_modalidade').removeClass("ac_loading");
+		});
+	};
+	manda_form = function() {
+		document.location = 'https://grade.daconline.unicamp.br/arvore/?curso='+$("#curso").val()+'&modalidade='+$("#modalidade").val()+'&catalogo='+$("#catalogo").val()+'&cp='+$("#cp").val();
+	};
+	limpa_form = function() {
+		document.location = 'https://grade.daconline.unicamp.br/arvore/';
+	};
+	Elimina = function(id, a, r) {
+		$.post('https://grade.daconline.unicamp.br/ajax/disciplina.php', {id: id, e: '1', a: a, r: r, v: '1'}, function() {
+			history.go(0);
+		});
+	}
+	// ]]>
+</script>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_F_107.png" alt="" /></div><div id="Menu_F_107" style="display:none;" class="RMenu">
+   <ul>
+   <li>Física (Biologia)</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/2740/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('2740', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('2740', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('2740', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR103.png" alt="" /></div><div id="Menu_FR103" style="display:none;" class="RMenu">
+   <ul>
+   <li>Introdução à Profissão Farmacêutica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3089/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3089', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3089', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3089', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_MS380.png" alt="" /></div><div id="Menu_MS380" style="display:none;" class="RMenu">
+   <ul>
+   <li>Matemática Aplicada para Biologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/4763/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('4763', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('4763', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('4763', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QG108.png" alt="" /></div><div id="Menu_QG108" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Geral Teórica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5347/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5347', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5347', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5347', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QG109.png" alt="" /></div><div id="Menu_QG109" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Geral Experimental</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5348/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5348', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5348', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5348', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QG362.png" alt="" /></div><div id="Menu_QG362" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química com Segurança</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5349/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5349', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5349', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5349', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_BS115.png" alt="" /></div><div id="Menu_BS115" style="display:none;" class="RMenu">
+   <ul>
+   <li>Estrutura e Função de Células e Tecidos</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/757/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('757', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('757', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('757', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_BS215.png" alt="" /></div><div id="Menu_BS215" style="display:none;" class="RMenu">
+   <ul>
+   <li>Estrutura e Função de Órgãos e Sistemas</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/760/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('760', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('760', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('760', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR204.png" alt="" /></div><div id="Menu_FR204" style="display:none;" class="RMenu">
+   <ul>
+   <li>Ética e Bioética</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6783/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6783', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6783', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6783', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_ME414.png" alt="" /></div><div id="Menu_ME414" style="display:none;" class="RMenu">
+   <ul>
+   <li>Estatística para Experimentalistas</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/4443/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('4443', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('4443', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('4443', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QI246.png" alt="" /></div><div id="Menu_QI246" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Inorgânica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5375/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5375', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5375', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5375', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QO321.png" alt="" /></div><div id="Menu_QO321" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Orgânica I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5393/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5393', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5393', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5393', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_BI315.png" alt="" /></div><div id="Menu_BI315" style="display:none;" class="RMenu">
+   <ul>
+   <li>Imunologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/711/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('711', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('711', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('711', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_BP515.png" alt="" /></div><div id="Menu_BP515" style="display:none;" class="RMenu">
+   <ul>
+   <li>Parasitologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6787/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6787', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6787', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6787', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_BT315.png" alt="" /></div><div id="Menu_BT315" style="display:none;" class="RMenu">
+   <ul>
+   <li>Farmacobotânica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/772/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('772', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('772', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('772', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR304.png" alt="" /></div><div id="Menu_FR304" style="display:none;" class="RMenu">
+   <ul>
+   <li>Políticas de Saúde</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6784/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6784', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6784', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6784', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR510.png" alt="" /></div><div id="Menu_FR510" style="display:none;" class="RMenu">
+   <ul>
+   <li>Metodologia e Informação Científica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11779/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11779', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11779', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11779', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QF331.png" alt="" /></div><div id="Menu_QF331" style="display:none;" class="RMenu">
+   <ul>
+   <li>Físico-Química</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5314/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5314', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5314', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5314', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_BG515.png" alt="" /></div><div id="Menu_BG515" style="display:none;" class="RMenu">
+   <ul>
+   <li>Genética Básica e Molecular</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/675/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('675', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('675', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('675', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QO421.png" alt="" /></div><div id="Menu_QO421" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Orgânica II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5397/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5397', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5397', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5397', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QO721.png" alt="" /></div><div id="Menu_QO721" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Orgânica III</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5413/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5413', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5413', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5413', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_BB315.png" alt="" /></div><div id="Menu_BB315" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bioquímica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/578/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('578', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('578', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('578', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_BM415.png" alt="" /></div><div id="Menu_BM415" style="display:none;" class="RMenu">
+   <ul>
+   <li>Microbiologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/726/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('726', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('726', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('726', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR406.png" alt="" /></div><div id="Menu_FR406" style="display:none;" class="RMenu">
+   <ul>
+   <li>Deontologia e Legislação Farmacêutica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6785/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6785', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6785', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6785', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR407.png" alt="" /></div><div id="Menu_FR407" style="display:none;" class="RMenu">
+   <ul>
+   <li>Genética Médica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6786/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6786', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6786', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6786', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR509.png" alt="" /></div><div id="Menu_FR509" style="display:none;" class="RMenu">
+   <ul>
+   <li>Princípios de Farmacocinética</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11780/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11780', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11780', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11780', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QA282.png" alt="" /></div><div id="Menu_QA282" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Clássica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5289/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5289', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5289', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5289', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_QO623.png" alt="" /></div><div id="Menu_QO623" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Orgânica Experimental</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/5409/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('5409', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('5409', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('5409', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR504.png" alt="" /></div><div id="Menu_FR504" style="display:none;" class="RMenu">
+   <ul>
+   <li>Gestão Farmacêutica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6788/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6788', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6788', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6788', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR505.png" alt="" /></div><div id="Menu_FR505" style="display:none;" class="RMenu">
+   <ul>
+   <li>Anatomia Patológica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6789/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6789', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6789', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6789', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR507.png" alt="" /></div><div id="Menu_FR507" style="display:none;" class="RMenu">
+   <ul>
+   <li>Introdução à Química Farmacêutica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6791/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6791', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6791', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6791', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR508.png" alt="" /></div><div id="Menu_FR508" style="display:none;" class="RMenu">
+   <ul>
+   <li>Análise Instrumental</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6792/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6792', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6792', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6792', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR605.png" alt="" /></div><div id="Menu_FR605" style="display:none;" class="RMenu">
+   <ul>
+   <li>Biologia Molecular</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6794/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6794', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6794', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6794', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR608.png" alt="" /></div><div id="Menu_FR608" style="display:none;" class="RMenu">
+   <ul>
+   <li>Farmacologia Básica I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11781/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11781', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11781', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11781', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR606.png" alt="" /></div><div id="Menu_FR606" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bromatologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6795/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6795', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6795', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6795', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR607.png" alt="" /></div><div id="Menu_FR607" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Farmacêutica Aplicada I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/10601/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('10601', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('10601', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('10601', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR609.png" alt="" /></div><div id="Menu_FR609" style="display:none;" class="RMenu">
+   <ul>
+   <li>Farmacologia Básica II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11783/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11783', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11783', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11783', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR157.png" alt="" /></div><div id="Menu_FR157" style="display:none;" class="RMenu">
+   <ul>
+   <li>Laboratório Clínico I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11782/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11782', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11782', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11782', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR415.png" alt="" /></div><div id="Menu_FR415" style="display:none;" class="RMenu">
+   <ul>
+   <li>Farmacognosia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3101/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3101', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3101', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3101', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR602.png" alt="" /></div><div id="Menu_FR602" style="display:none;" class="RMenu">
+   <ul>
+   <li>Farmacotécnica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3106/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3106', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3106', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3106', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR603.png" alt="" /></div><div id="Menu_FR603" style="display:none;" class="RMenu">
+   <ul>
+   <li>Assistência e Atenção Farmacêutica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3107/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3107', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3107', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3107', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR704.png" alt="" /></div><div id="Menu_FR704" style="display:none;" class="RMenu">
+   <ul>
+   <li>Cosmetologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11393/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11393', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11393', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11393', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR705.png" alt="" /></div><div id="Menu_FR705" style="display:none;" class="RMenu">
+   <ul>
+   <li>Controle de Qualidade de Produtos I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6797/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6797', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6797', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6797', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR706.png" alt="" /></div><div id="Menu_FR706" style="display:none;" class="RMenu">
+   <ul>
+   <li>Fitoterapia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11394/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11394', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11394', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11394', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR707.png" alt="" /></div><div id="Menu_FR707" style="display:none;" class="RMenu">
+   <ul>
+   <li>Química Farmacêutica Aplicada II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11785/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11785', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11785', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11785', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR725.png" alt="" /></div><div id="Menu_FR725" style="display:none;" class="RMenu">
+   <ul>
+   <li>Biotecnologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3110/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3110', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3110', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3110', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR158.png" alt="" /></div><div id="Menu_FR158" style="display:none;" class="RMenu">
+   <ul>
+   <li>Laboratório Clínico II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11784/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11784', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11784', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11784', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_MD191.png" alt="" /></div><div id="Menu_MD191" style="display:none;" class="RMenu">
+   <ul>
+   <li>Saúde Pública nas Ciências Farmacêuticas</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/4319/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('4319', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('4319', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('4319', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR703.png" alt="" /></div><div id="Menu_FR703" style="display:none;" class="RMenu">
+   <ul>
+   <li>Operações Unitárias para Ciências Farmacêuticas</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11392/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11392', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11392', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11392', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR804.png" alt="" /></div><div id="Menu_FR804" style="display:none;" class="RMenu">
+   <ul>
+   <li>Toxicologia Geral</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6798/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6798', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6798', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6798', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR805.png" alt="" /></div><div id="Menu_FR805" style="display:none;" class="RMenu">
+   <ul>
+   <li>Controle de Qualidade de Produtos II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6799/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6799', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6799', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6799', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR806.png" alt="" /></div><div id="Menu_FR806" style="display:none;" class="RMenu">
+   <ul>
+   <li>Farmacoterapia e Interações Medicamentosas</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6800/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6800', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6800', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6800', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR807.png" alt="" /></div><div id="Menu_FR807" style="display:none;" class="RMenu">
+   <ul>
+   <li>Tecnologia Farmacêutica</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6802/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6802', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6802', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6802', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR808.png" alt="" /></div><div id="Menu_FR808" style="display:none;" class="RMenu">
+   <ul>
+   <li>Farmacoepidemiologia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11786/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11786', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11786', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11786', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR900.png" alt="" /></div><div id="Menu_FR900" style="display:none;" class="RMenu">
+   <ul>
+   <li>Estágio Supervisionado em Farmácia</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3114/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3114', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3114', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3114', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR901.png" alt="" /></div><div id="Menu_FR901" style="display:none;" class="RMenu">
+   <ul>
+   <li>Estágio Supervisionado Profissionalizante I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3115/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3115', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3115', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3115', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR902.png" alt="" /></div><div id="Menu_FR902" style="display:none;" class="RMenu">
+   <ul>
+   <li>Estágio Supervisionado Profissionalizante II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3116/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3116', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3116', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3116', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR903.png" alt="" /></div><div id="Menu_FR903" style="display:none;" class="RMenu">
+   <ul>
+   <li>Trabalho de Conclusão de Curso</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/3117/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('3117', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('3117', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('3117', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03_FR904.png" alt="" /></div><div id="Menu_FR904" style="display:none;" class="RMenu">
+   <ul>
+   <li>Atividades Complementares</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6803/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6803', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6803', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6803', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<h2>Curr&iacute;culo de Maria Eduarda Xavier Messias</h2>
+	<form method="get" action="https://grade.daconline.unicamp.br/arvore/">
+		<table cellpadding="1" cellspacing="0" border="0" width="90%">
+			<tr>
+				<td width="10%">Cat&aacute;logo:</td>
+				<td><select id="catalogo" name="catalogo"><option value='1998'>1998</option><option value='1999'>1999</option><option value='2000'>2000</option><option value='2001'>2001</option><option value='2002'>2002</option><option value='2003'>2003</option><option value='2004'>2004</option><option value='2005'>2005</option><option value='2006'>2006</option><option value='2007'>2007</option><option value='2008'>2008</option><option value='2009'>2009</option><option value='2010'>2010</option><option value='2011'>2011</option><option value='2012'>2012</option><option value='2013'>2013</option><option value='2014'>2014</option><option value='2015'>2015</option><option value='2016'>2016</option><option value='2017'>2017</option><option value='2018' selected="selected">2018</option><option value='2019'>2019</option><option value='2020'>2020</option><option value='2021'>2021</option><option value='2022'>2022</option><option value='2023'>2023</option><option value='2024'>2024</option><option value='2025'>2025</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Curso:</td>
+				<td><select id="curso" name="curso"><option value="109">Administração (109)</option><option value="110">Administração Pública (110)</option><option value="48">Arquitetura e Urbanismo (48)</option><option value="26">Artes Cênicas (26)</option><option value="25">Artes Visuais (25)</option><option value="42">Ciência da Computação (42)</option><option value="3">Ciência da Computação (3)</option><option value="6">Ciências Biológicas (6)</option><option value="52">Ciências da Terra (52)</option><option value="100">Ciências do Esporte (100)</option><option value="17">Ciências Econômicas (17)</option><option value="47">Ciências Econômicas (47)</option><option value="16">Ciências Sociais (16)</option><option value="44">Ciências Sociais (44)</option><option value="64">Comunicação Social - Midialogia (64)</option><option value="70">Curso de Música Composição e Regência (70)</option><option value="71">Curso de Música Instrumento (71)</option><option value="72">Curso de Música Popular (72)</option><option value="37">Curso Superior de Tecnologia da Construção Civil (37)</option><option value="82">Curso Superior de Tecnologia da Construção Civil (82)</option><option value="32">Curso Superior de Tecnologia da Construção Civil - Edifícios (32)</option><option value="33">Curso Superior de Tecnologia da Construção Civil - Obras de Solos (33)</option><option value="36">Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (36)</option><option value="60">Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (60)</option><option value="83">Curso Superior de Tecnologia em Construção de Edifícios (83)</option><option value="84">Curso Superior de Tecnologia em Estradas (84)</option><option value="62">Curso Superior de Tecnologia em Saneamento Ambiental (62)</option><option value="73">Curso Superior de Tecnologia em Saneamento Ambiental (73)</option><option value="87">Curso Superior de Tecnologia em Saneamento Ambiental (87)</option><option value="74">Curso Superior de Tecnologia em Sistemas de Telecomunicações (74)</option><option value="31">Curso Superior de Tecnologia Sanitária (31)</option><option value="23">Dança (23)</option><option value="27">Educação Física (27)</option><option value="45">Educação Física (45)</option><option value="21">Enfermagem (21)</option><option value="8">Engenharia Agrícola (8)</option><option value="89">Engenharia Ambiental (89)</option><option value="12">Engenharia Civil (12)</option><option value="13">Engenharia de Alimentos (13)</option><option value="43">Engenharia de Alimentos (43)</option><option value="34">Engenharia de Computação (34)</option><option value="49">Engenharia de Controle e Automação (49)</option><option value="101">Engenharia de Manufatura (101)</option><option value="102">Engenharia de Produção (102)</option><option value="88">Engenharia de Telecomunicações (88)</option><option value="111">Engenharia de Transportes (111)</option><option value="11">Engenharia Elétrica (11)</option><option value="41">Engenharia Elétrica (41)</option><option value="108">Engenharia Física (108)</option><option value="10">Engenharia Mecânica (10)</option><option value="9">Engenharia Química (9)</option><option value="39">Engenharia Química (39)</option><option value="2">Estatística (2)</option><option value="75">Estudos Literários (75)</option><option value="63" selected="selected">Farmácia (63)</option><option value="30">Filosofia (30)</option><option value="4">Física (4)</option><option value="999">Fisioterapia (999)</option><option value="58">Fonoaudiologia (58)</option><option value="54">Geografia (54)</option><option value="55">Geografia (55)</option><option value="53">Geologia (53)</option><option value="104">Gestão de Comércio Internacional (104)</option><option value="105">Gestão de Empresas (105)</option><option value="106">Gestão de Políticas Públicas (106)</option><option value="103">Gestão do Agronegócio (103)</option><option value="19">História (19)</option><option value="46">Licenciatura em Ciências Biológicas (46)</option><option value="35">Licenciatura em Esquema I (35)</option><option value="40">Licenciatura em Física (40)</option><option value="24">Licenciatura em Letras (24)</option><option value="7">Licenciatura em Letras - Português (7)</option><option value="57">Licenciatura em Letras - Português (57)</option><option value="29">Licenciatura em Matemática (29)</option><option value="201">Licenciatura em Teatro (201)</option><option value="56">Licenciatura Integrada Química/Física (56)</option><option value="18">Linguística (18)</option><option value="1">Matemática (1)</option><option value="28">Matemática Aplicada e Computacional (28)</option><option value="51">Matemática/Física/Matemática Aplicada e Computacional (51)</option><option value="15">Medicina (15)</option><option value="22">Música (22)</option><option value="90">Música (90)</option><option value="91">Música (91)</option><option value="92">Música (92)</option><option value="93">Música (93)</option><option value="107">Nutrição (107)</option><option value="14">Odontologia (14)</option><option value="20">Pedagogia (20)</option><option value="38">Pedagogia (38)</option><option value="59">Pedagogia (59)</option><option value="65">Pedagogia (65)</option><option value="66">Pedagogia (66)</option><option value="67">Pedagogia (67)</option><option value="200">Programa de Formação Interdisciplinar Superior - ProFIS (200)</option><option value="5">Química (5)</option><option value="50">Química Tecnológica (50)</option><option value="94">Sistemas de Informação (94)</option><option value="85">Superior de Tecnologia Ambiental (85)</option><option value="86">Superior Tecnologia em Saneamento Ambiental (86)</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Modalidade:</td>
+				<td id="select_modalidade"><select id="modalidade" name="modalidade"><option value="">Indiferente</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Per&iacute;odo:</td>
+				<td><select id="periodo" name="periodo"><option value="20252" selected="selected">2025 - 2&ordm; Semestre</option><option value="20251">2025 - 1.&ordm; Semestre</option><option value="20250">2025 - F&eacute;rias de Ver&atilde;o</option><option value="20242">2024 - 2&ordm; Semestre</option><option value="20241">2024 - 1&ordm; Semestre</option><option value="20240">2024 - F&eacute;rias de Ver&atilde;o</option><option value="20232">2023 - 2&ordm; Semestre</option><option value="20231">2023 - 1&ordm; Semestre</option><option value="20230">2023 - F&eacute;rias de Ver&atilde;o</option><option value="20222">2022 - 2&ordm; Semestre</option><option value="20221">2022 - 1&ordm; Semestre</option><option value="20220">2022 - F&eacute;rias de Ver&atilde;o</option><option value="20212">2021 - 2&ordm; Semestre</option><option value="20211">2021 - 1&ordm; Semestre</option><option value="20210">2021 - F&eacute;rias de Ver&atilde;o</option><option value="20202">2020 - 2&ordm; Semestre</option><option value="20201">2020 - 1&ordm; Semestre</option><option value="20200">2020 - F&eacute;rias de Ver&atilde;o</option><option value="20192">2019 - 2&ordm; Semestre</option><option value="20191">2019 - 1&ordm; Semestre</option><option value="20190">2019 - F&eacute;rias de Ver&atilde;o</option><option value="20182">2018 - 2&ordm; Semestre</option><option value="20181">2018 - 1&ordm; Semestre</option><option value="20180">2018 - F&eacute;rias de Ver&atilde;o</option><option value="20172">2017 - 2&ordm; Semestre</option><option value="20171">2017 - 1&ordm; Semestre</option><option value="20170">2017 - F&eacute;rias de Ver&atilde;o</option><option value="20162">2016 - 2&ordm; Semestre</option><option value="20161">2016 - 1&ordm; Semestre</option><option value="20160">2016 - F&eacute;rias de Ver&atilde;o</option><option value="20152">2015 - 2&ordm; Semestre</option><option value="20151">2015 - 1&ordm; Semestre</option><option value="20150">2015 - F&eacute;rias de Ver&atilde;o</option><option value="20142">2014 - 2&ordm; Semestre</option><option value="20141">2014 - 1&ordm; Semestre</option><option value="20140">2014 - F&eacute;rias de Ver&atilde;o</option><option value="20132">2013 - 2&ordm; Semestre</option><option value="20131">2013 - 1&ordm; Semestre</option><option value="20130">2013 - F&eacute;rias de Ver&atilde;o</option><option value="20122">2012 - 2&ordm; Semestre</option><option value="20121">2012 - 1&ordm; Semestre</option><option value="20120">2012 - F&eacute;rias de Ver&atilde;o</option><option value="20112">2011 - 2&ordm; Semestre</option><option value="20111">2011 - 1&ordm; Semestre</option><option value="20110">2011 - F&eacute;rias de Ver&atilde;o</option><option value="20102">2010 - 2&ordm; Semestre</option><option value="20101">2010 - 1&ordm; Semestre</option><option value="20100">2010 - F&eacute;rias de Ver&atilde;o</option><option value="20092">2009 - 2&ordm; Semestre</option><option value="20091">2009 - 1&ordm; Semestre</option><option value="20090">2009 - F&eacute;rias de Ver&atilde;o</option><option value="20082">2008 - 2&ordm; Semestre</option><option value="20081">2008 - 1&ordm; Semestre</option><option value="20080">2008 - F&eacute;rias de Ver&atilde;o</option><option value="20072">2007 - 2&ordm; Semestre</option><option value="20071">2007 - 1&ordm; Semestre</option><option value="20070">2007 - F&eacute;rias de Ver&atilde;o</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Completa:</td>
+				<td><select id="cp" name="cp"><option value='0'>N&atilde;o</option><option value='1' selected="selected">Sim</option></select></td>
+			</tr>
+		</table>
+		<br />
+		<table cellpadding="0" cellspacing="0" border="0" width="90%">
+			<tr>
+				<td colspan='2'><input type="submit" id="ok" value=" " alt="Consultar" class="botao_consultar" /> <input type="button" id="limpar" value=" " alt="Limpar" class="botao_limpar" /></td>
+			</tr>
+		</table>
+	</form>
+	<br /><br />
+	<div style="display: block" id="mostra">
+		<a href="#" onclick="document.getElementById('integralizacao').style.display='block'; document.getElementById('mostra').style.display='none'; return false;">Mostrar Integraliza&ccedil;&atilde;o</a>
+	</div>
+	<div style="display: none" id="integralizacao">
+		<a href="#" onclick="document.getElementById('integralizacao').style.display='none'; document.getElementById('mostra').style.display='block'; return false;">Ocultar Integraliza&ccedil;&atilde;o</a>
+		<br /><div><br />
+<pre>
+  <strong>Aviso:</strong> Esta n&atilde;o &eacute; a integraliza&ccedil;&atilde;o oficial da DAC e pode ou n&atilde;o refletir a realidade.
+  <strong>Aluno:</strong> <a href="https://grade.daconline.unicamp.br/perfil/usuario=dudamx">Maria Eduarda Xavier Messias</a>
+  <strong>Registro Acad&ecirc;mico (RA):</strong> 183611
+  <strong>Curso:</strong> 63 - Farmácia
+  <strong>Modalidade:</strong> -
+  <strong>Cat&aacute;logo:</strong> 2018
+  <strong>Ingresso:</strong> 1&ordm; semestre de 2023
+  <strong>Limite para Integraliza&ccedil;&atilde;o:</strong> 1&ordm; semestre de 2030
+  <strong><i>Semestre Atual</i>:</strong> 2025 - 2&ordm; Semestre
+  <strong><i>Neste semestre</i> ->    CP :</strong> 0,0000  <strong>Cr&eacute;ditos Obtidos:</strong> 0  <strong>Cr&eacute;ditos Faltantes:</strong> 0
+  <strong><i>Final do semestre </i>-> CPF:</strong> 0,0000  <strong>Cr&eacute;ditos Obtidos:</strong> 0  <strong>Cr&eacute;ditos Faltantes:</strong> 0
+
+
+  <strong>Disciplinas j&aacute; cursadas:</strong>
+
+
+  <strong>Disciplinas Obrigat&oacute;rias que ainda devem ser cursadas:</strong>
+  <a href="https://grade.daconline.unicamp.br/disciplina/2740/" class="sigla" title="Física (Biologia)" target="_blank">F 107</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/3089/" class="sigla" title="Introdução à Profissão Farmacêutica" target="_blank">FR103</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/4763/" class="sigla" title="Matemática Aplicada para Biologia" target="_blank">MS380</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/5347/" class="sigla" title="Química Geral Teórica" target="_blank">QG108</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/5348/" class="sigla" title="Química Geral Experimental" target="_blank">QG109</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/5349/" class="sigla" title="Química com Segurança" target="_blank">QG362</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/757/" class="sigla" title="Estrutura e Função de Células e Tecidos" target="_blank">BS115</a>(06)
+  <a href="https://grade.daconline.unicamp.br/disciplina/760/" class="sigla" title="Estrutura e Função de Órgãos e Sistemas" target="_blank">BS215</a>(12)  <a href="https://grade.daconline.unicamp.br/disciplina/6783/" class="sigla" title="Ética e Bioética" target="_blank">FR204</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/4443/" class="sigla" title="Estatística para Experimentalistas" target="_blank">ME414</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/5375/" class="sigla" title="Química Inorgânica" target="_blank">QI246</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/5393/" class="sigla" title="Química Orgânica I" target="_blank">QO321</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/711/" class="sigla" title="Imunologia" target="_blank">BI315</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6787/" class="sigla" title="Parasitologia" target="_blank">BP515</a>(04)
+  <a href="https://grade.daconline.unicamp.br/disciplina/772/" class="sigla" title="Farmacobotânica" target="_blank">BT315</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6784/" class="sigla" title="Políticas de Saúde" target="_blank">FR304</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/11779/" class="sigla" title="Metodologia e Informação Científica" target="_blank">FR510</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/5314/" class="sigla" title="Físico-Química" target="_blank">QF331</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/675/" class="sigla" title="Genética Básica e Molecular" target="_blank">BG515</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/5397/" class="sigla" title="Química Orgânica II" target="_blank">QO421</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/5413/" class="sigla" title="Química Orgânica III" target="_blank">QO721</a>(04)
+  <a href="https://grade.daconline.unicamp.br/disciplina/578/" class="sigla" title="Bioquímica" target="_blank">BB315</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/726/" class="sigla" title="Microbiologia" target="_blank">BM415</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6785/" class="sigla" title="Deontologia e Legislação Farmacêutica" target="_blank">FR406</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/6786/" class="sigla" title="Genética Médica" target="_blank">FR407</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/11780/" class="sigla" title="Princípios de Farmacocinética" target="_blank">FR509</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/5289/" class="sigla" title="Química Clássica" target="_blank">QA282</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/5409/" class="sigla" title="Química Orgânica Experimental" target="_blank">QO623</a>(06)
+  <a href="https://grade.daconline.unicamp.br/disciplina/6788/" class="sigla" title="Gestão Farmacêutica" target="_blank">FR504</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/6789/" class="sigla" title="Anatomia Patológica" target="_blank">FR505</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/6791/" class="sigla" title="Introdução à Química Farmacêutica" target="_blank">FR507</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6792/" class="sigla" title="Análise Instrumental" target="_blank">FR508</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/6794/" class="sigla" title="Biologia Molecular" target="_blank">FR605</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11781/" class="sigla" title="Farmacologia Básica I" target="_blank">FR608</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6795/" class="sigla" title="Bromatologia" target="_blank">FR606</a>(04)
+  <a href="https://grade.daconline.unicamp.br/disciplina/10601/" class="sigla" title="Química Farmacêutica Aplicada I" target="_blank">FR607</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/11783/" class="sigla" title="Farmacologia Básica II" target="_blank">FR609</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11782/" class="sigla" title="Laboratório Clínico I" target="_blank">FR157</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/3101/" class="sigla" title="Farmacognosia" target="_blank">FR415</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/3106/" class="sigla" title="Farmacotécnica" target="_blank">FR602</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/3107/" class="sigla" title="Assistência e Atenção Farmacêutica" target="_blank">FR603</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/11393/" class="sigla" title="Cosmetologia" target="_blank">FR704</a>(04)
+  <a href="https://grade.daconline.unicamp.br/disciplina/6797/" class="sigla" title="Controle de Qualidade de Produtos I" target="_blank">FR705</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11394/" class="sigla" title="Fitoterapia" target="_blank">FR706</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/11785/" class="sigla" title="Química Farmacêutica Aplicada II" target="_blank">FR707</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/3110/" class="sigla" title="Biotecnologia" target="_blank">FR725</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11784/" class="sigla" title="Laboratório Clínico II" target="_blank">FR158</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/4319/" class="sigla" title="Saúde Pública nas Ciências Farmacêuticas" target="_blank">MD191</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11392/" class="sigla" title="Operações Unitárias para Ciências Farmacêuticas" target="_blank">FR703</a>(02)
+  <a href="https://grade.daconline.unicamp.br/disciplina/6798/" class="sigla" title="Toxicologia Geral" target="_blank">FR804</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/6799/" class="sigla" title="Controle de Qualidade de Produtos II" target="_blank">FR805</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6800/" class="sigla" title="Farmacoterapia e Interações Medicamentosas" target="_blank">FR806</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6802/" class="sigla" title="Tecnologia Farmacêutica" target="_blank">FR807</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11786/" class="sigla" title="Farmacoepidemiologia" target="_blank">FR808</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/3114/" class="sigla" title="Estágio Supervisionado em Farmácia" target="_blank">FR900</a>(14)  <a href="https://grade.daconline.unicamp.br/disciplina/3115/" class="sigla" title="Estágio Supervisionado Profissionalizante I" target="_blank">FR901</a>(27)
+  <a href="https://grade.daconline.unicamp.br/disciplina/3116/" class="sigla" title="Estágio Supervisionado Profissionalizante II" target="_blank">FR902</a>(28)  <a href="https://grade.daconline.unicamp.br/disciplina/3117/" class="sigla" title="Trabalho de Conclusão de Curso" target="_blank">FR903</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6803/" class="sigla" title="Atividades Complementares" target="_blank">FR904</a>(10)
+
+  <strong>Disciplinas Eletivas que ainda devem ser cursadas:</strong>
+  Obter  8 Cr&eacute;dito(s) dentre a(s) seguinte(s) disciplina(s):   <a href="https://grade.daconline.unicamp.br/disciplina/10679/" class="sigla" title="Farmácia Homeopática" target="_blank">FR035</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4315/" class="sigla" title="Fisiologia Clínica" target="_blank">MD187</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/3077/" class="sigla" title="Tecnologia de Produção de Plantas Medicinais" target="_blank">FR014</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/11857/" class="sigla" title="Farmácia Clínica II" target="_blank">FR048</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/798/" class="sigla" title="Etnobotânica de Plantas de Interesse Farmacêutico" target="_blank">BT925</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/10684/" class="sigla" title="Tópicos Especiais em Ciências Farmacêuticas IV" target="_blank">FR042</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/5378/" class="sigla" title="Introdução à Espectroscopia Vibracional" target="_blank">QI445</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/10677/" class="sigla" title="Planejamento Estratégico de Carreira" target="_blank">FR037</a>(02)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/4316/" class="sigla" title="Hematologia Clínica" target="_blank">MD188</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/3079/" class="sigla" title="Empreendedorismo" target="_blank">FR018</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/3097/" class="sigla" title="Iniciação Científica em Ciências Farmacêuticas I" target="_blank">FR325</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/810/" class="sigla" title="Metabolismo Vegetal e Produção de Fitofármacos" target="_blank">BV915</a>(02)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/10685/" class="sigla" title="Tópicos Especiais em Ciências Farmacêuticas V" target="_blank">FR043</a>(03)  <a href="https://grade.daconline.unicamp.br/busca/?t=tab_disciplinas&sigla=QI94-&buscar#tab_disciplinas" class="sigla" title="(Desconhecido)" target="_blank">QI94-</a>(??)  <a href="https://grade.daconline.unicamp.br/disciplina/10678/" class="sigla" title="Radiofarmácia" target="_blank">FR038</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/4317/" class="sigla" title="Microbiologia Clínica" target="_blank">MD189</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/3081/" class="sigla" title="Farmacologia Quantitativa" target="_blank">FR021</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/3098/" class="sigla" title="Iniciação Científica em Ciências Farmacêuticas II" target="_blank">FR326</a>(04)  <a href="https://grade.daconline.unicamp.br/busca/?t=tab_disciplinas&sigla=EI---&buscar#tab_disciplinas" class="sigla" title="(Desconhecido)" target="_blank">EI---</a>(??)  <a href="https://grade.daconline.unicamp.br/disciplina/11854/" class="sigla" title="Ferramentas de Estudo de Bioprocessos" target="_blank">FR044</a>(02)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/5399/" class="sigla" title="Fundamentos da Espectrometria de Massas" target="_blank">QO423</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/10681/" class="sigla" title="Tópicos Especiais em Ciências Farmacêuticas I" target="_blank">FR039</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/4318/" class="sigla" title="Imunologia e Parasitologia Clínicas" target="_blank">MD190</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/3082/" class="sigla" title="Farmacologia Clínica e Terapêutica" target="_blank">FR022</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/4310/" class="sigla" title="Líquidos Biológicos" target="_blank">MD182</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/3069/" class="sigla" title="Estudo de Biodisponibilidade e Bioquivalência de Medicamentos" target="_blank">FR006</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11855/" class="sigla" title="Farmácia Clínica I" target="_blank">FR046</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/5400/" class="sigla" title="Fundamentos em Espectroscopia e Ressonância Magnética Nuclear" target="_blank">QO424</a>(02)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/10682/" class="sigla" title="Tópicos Especiais em Ciências Farmacêuticas II" target="_blank">FR040</a>(02)  <a href="https://grade.daconline.unicamp.br/busca/?t=tab_disciplinas&sigla=QA91-&buscar#tab_disciplinas" class="sigla" title="(Desconhecido)" target="_blank">QA91-</a>(??)  <a href="https://grade.daconline.unicamp.br/disciplina/3086/" class="sigla" title="Seminários Gerais" target="_blank">FR026</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/4311/" class="sigla" title="Bioquímica Clínica" target="_blank">MD183</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/3072/" class="sigla" title="Biotecnologia Microbiana na Indústria Farmacêutica" target="_blank">FR009</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11856/" class="sigla" title="Métodos Modernos Aplicados à Análise de Medicamentos" target="_blank">FR047</a>(04)  <a href="https://grade.daconline.unicamp.br/busca/?t=tab_disciplinas&sigla=QO92-&buscar#tab_disciplinas" class="sigla" title="(Desconhecido)" target="_blank">QO92-</a>(??)  <a href="https://grade.daconline.unicamp.br/disciplina/6288/" class="sigla" title="Cultivo de Células Animais - Aplicações em Ensaios Biológicos" target="_blank">BS615</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/10683/" class="sigla" title="Tópicos Especiais em Ciências Farmacêuticas III" target="_blank">FR041</a>(02)  <a href="https://grade.daconline.unicamp.br/busca/?t=tab_disciplinas&sigla=QF93-&buscar#tab_disciplinas" class="sigla" title="(Desconhecido)" target="_blank">QF93-</a>(??)
+  Obter  6 Cr&eacute;dito(s) dentre quaisquer disciplinas da Unicamp
+
+
+  <strong>Disciplinas sendo cursadas atualmente:</strong>
+
+
+
+
+  <strong>C&oacute;digos utilizados:</strong>
+     ---------------------------------------------------------------
+
+  Formato:  LLXXXT(DD)I PPAAAA
+
+    LLXXX = Sigla da Disciplina DD = Cr&eacute;ditos da Disciplina
+    I = Tipo de Aproveitamento PP = Periodo AAAA = Ano
+
+  Tipos de Aproveitamento:
+
+    + = Obrigat&oacute;ria   * = Eletiva    X = Extra-Curricular
+</pre></div>
+	</div><br/>
+	<span class="formInfo"><a href="#" id="TT_tips">Dicas</a></span>
+	<br /><br />
+	<a id="inline" href="#popup_arvore"><img src="../cache/arvores/arvore_HCpDJhgOND2utY03.png" border="0" width="900" height="644" alt="Arvore" /></a>
+<div style="display:none">
+<div id="popup_arvore">
+<div class="div_img_ov_arvore" style="opacity: 0; position: absolute; display: none; z-index: 100;"><img class="img_ov_arvore" src="" alt="" /></div><div id="div_img_ov_mapa" style="position: absolute; z-index: 110;"><img id="img_ov_mapa" usemap="#mapa" src="https://grade.daconline.unicamp.br/web/images/spacer.gif" width="1445" height="1035" alt="" /></div>
+<img src="../cache/arvores/arvore_HCpDJhgOND2utY03.png" class="img_arvore" usemap="#mapa" border="0" alt="Arvore" />
+</div>
+</div><map name="mapa" id="mapa">
+<area shape='rect' coords='80,50,170,80' title='Física (Biologia)' alt='Física (Biologia)' href='#' id='Shape_2740' class='Shapes' /><area shape='rect' coords='225,50,315,80' title='Introdução à Profissão Farmacêutica' alt='Introdução à Profissão Farmacêutica' href='#' id='Shape_3089' class='Shapes' /><area shape='rect' coords='370,50,460,80' title='Matemática Aplicada para Biologia' alt='Matemática Aplicada para Biologia' href='#' id='Shape_4763' class='Shapes' /><area shape='rect' coords='515,50,605,80' title='Química Geral Teórica' alt='Química Geral Teórica' href='#' id='Shape_5347' class='Shapes' /><area shape='rect' coords='660,50,750,80' title='Química Geral Experimental' alt='Química Geral Experimental' href='#' id='Shape_5348' class='Shapes' /><area shape='rect' coords='805,50,895,80' title='Química com Segurança' alt='Química com Segurança' href='#' id='Shape_5349' class='Shapes' /><area shape='rect' coords='950,50,1040,80' title='Estrutura e Função de Células e Tecidos' alt='Estrutura e Função de Células e Tecidos' href='#' id='Shape_757' class='Shapes' /><area shape='rect' coords='80,155,170,185' title='Estrutura e Função de Órgãos e Sistemas' alt='Estrutura e Função de Órgãos e Sistemas' href='#' id='Shape_760' class='Shapes' /><area shape='rect' coords='225,155,315,185' title='Ética e Bioética' alt='Ética e Bioética' href='#' id='Shape_6783' class='Shapes' /><area shape='rect' coords='370,155,460,185' title='Estatística para Experimentalistas' alt='Estatística para Experimentalistas' href='#' id='Shape_4443' class='Shapes' /><area shape='rect' coords='515,155,605,185' title='Química Inorgânica' alt='Química Inorgânica' href='#' id='Shape_5375' class='Shapes' /><area shape='rect' coords='660,155,750,185' title='Química Orgânica I' alt='Química Orgânica I' href='#' id='Shape_5393' class='Shapes' /><area shape='rect' coords='80,260,170,290' title='Imunologia' alt='Imunologia' href='#' id='Shape_711' class='Shapes' /><area shape='rect' coords='225,260,315,290' title='Parasitologia' alt='Parasitologia' href='#' id='Shape_6787' class='Shapes' /><area shape='rect' coords='370,260,460,290' title='Farmacobotânica' alt='Farmacobotânica' href='#' id='Shape_772' class='Shapes' /><area shape='rect' coords='515,260,605,290' title='Políticas de Saúde' alt='Políticas de Saúde' href='#' id='Shape_6784' class='Shapes' /><area shape='rect' coords='660,260,750,290' title='Metodologia e Informação Científica' alt='Metodologia e Informação Científica' href='#' id='Shape_11779' class='Shapes' /><area shape='rect' coords='805,260,895,290' title='Físico-Química' alt='Físico-Química' href='#' id='Shape_5314' class='Shapes' /><area shape='rect' coords='950,260,1040,290' title='Genética Básica e Molecular' alt='Genética Básica e Molecular' href='#' id='Shape_675' class='Shapes' /><area shape='rect' coords='1095,260,1185,290' title='Química Orgânica II' alt='Química Orgânica II' href='#' id='Shape_5397' class='Shapes' /><area shape='rect' coords='80,365,170,395' title='Química Orgânica III' alt='Química Orgânica III' href='#' id='Shape_5413' class='Shapes' /><area shape='rect' coords='225,365,315,395' title='Bioquímica' alt='Bioquímica' href='#' id='Shape_578' class='Shapes' /><area shape='rect' coords='370,365,460,395' title='Microbiologia' alt='Microbiologia' href='#' id='Shape_726' class='Shapes' /><area shape='rect' coords='515,365,605,395' title='Deontologia e Legislação Farmacêutica' alt='Deontologia e Legislação Farmacêutica' href='#' id='Shape_6785' class='Shapes' /><area shape='rect' coords='660,365,750,395' title='Genética Médica' alt='Genética Médica' href='#' id='Shape_6786' class='Shapes' /><area shape='rect' coords='805,365,895,395' title='Princípios de Farmacocinética' alt='Princípios de Farmacocinética' href='#' id='Shape_11780' class='Shapes' /><area shape='rect' coords='950,365,1040,395' title='Química Clássica' alt='Química Clássica' href='#' id='Shape_5289' class='Shapes' /><area shape='rect' coords='80,470,170,500' title='Química Orgânica Experimental' alt='Química Orgânica Experimental' href='#' id='Shape_5409' class='Shapes' /><area shape='rect' coords='225,470,315,500' title='Gestão Farmacêutica' alt='Gestão Farmacêutica' href='#' id='Shape_6788' class='Shapes' /><area shape='rect' coords='370,470,460,500' title='Anatomia Patológica' alt='Anatomia Patológica' href='#' id='Shape_6789' class='Shapes' /><area shape='rect' coords='515,470,605,500' title='Introdução à Química Farmacêutica' alt='Introdução à Química Farmacêutica' href='#' id='Shape_6791' class='Shapes' /><area shape='rect' coords='660,470,750,500' title='Análise Instrumental' alt='Análise Instrumental' href='#' id='Shape_6792' class='Shapes' /><area shape='rect' coords='805,470,895,500' title='Biologia Molecular' alt='Biologia Molecular' href='#' id='Shape_6794' class='Shapes' /><area shape='rect' coords='950,470,1040,500' title='Farmacologia Básica I' alt='Farmacologia Básica I' href='#' id='Shape_11781' class='Shapes' /><area shape='rect' coords='80,575,170,605' title='Bromatologia' alt='Bromatologia' href='#' id='Shape_6795' class='Shapes' /><area shape='rect' coords='225,575,315,605' title='Química Farmacêutica Aplicada I' alt='Química Farmacêutica Aplicada I' href='#' id='Shape_10601' class='Shapes' /><area shape='rect' coords='370,575,460,605' title='Farmacologia Básica II' alt='Farmacologia Básica II' href='#' id='Shape_11783' class='Shapes' /><area shape='rect' coords='515,575,605,605' title='Laboratório Clínico I' alt='Laboratório Clínico I' href='#' id='Shape_11782' class='Shapes' /><area shape='rect' coords='660,575,750,605' title='Farmacognosia' alt='Farmacognosia' href='#' id='Shape_3101' class='Shapes' /><area shape='rect' coords='805,575,895,605' title='Farmacotécnica' alt='Farmacotécnica' href='#' id='Shape_3106' class='Shapes' /><area shape='rect' coords='950,575,1040,605' title='Assistência e Atenção Farmacêutica' alt='Assistência e Atenção Farmacêutica' href='#' id='Shape_3107' class='Shapes' /><area shape='rect' coords='80,680,170,710' title='Cosmetologia' alt='Cosmetologia' href='#' id='Shape_11393' class='Shapes' /><area shape='rect' coords='225,680,315,710' title='Controle de Qualidade de Produtos I' alt='Controle de Qualidade de Produtos I' href='#' id='Shape_6797' class='Shapes' /><area shape='rect' coords='370,680,460,710' title='Fitoterapia' alt='Fitoterapia' href='#' id='Shape_11394' class='Shapes' /><area shape='rect' coords='515,680,605,710' title='Química Farmacêutica Aplicada II' alt='Química Farmacêutica Aplicada II' href='#' id='Shape_11785' class='Shapes' /><area shape='rect' coords='660,680,750,710' title='Biotecnologia' alt='Biotecnologia' href='#' id='Shape_3110' class='Shapes' /><area shape='rect' coords='805,680,895,710' title='Laboratório Clínico II' alt='Laboratório Clínico II' href='#' id='Shape_11784' class='Shapes' /><area shape='rect' coords='950,680,1040,710' title='Saúde Pública nas Ciências Farmacêuticas' alt='Saúde Pública nas Ciências Farmacêuticas' href='#' id='Shape_4319' class='Shapes' /><area shape='rect' coords='1095,680,1185,710' title='Operações Unitárias para Ciências Farmacêuticas' alt='Operações Unitárias para Ciências Farmacêuticas' href='#' id='Shape_11392' class='Shapes' /><area shape='rect' coords='80,785,170,815' title='Toxicologia Geral' alt='Toxicologia Geral' href='#' id='Shape_6798' class='Shapes' /><area shape='rect' coords='225,785,315,815' title='Controle de Qualidade de Produtos II' alt='Controle de Qualidade de Produtos II' href='#' id='Shape_6799' class='Shapes' /><area shape='rect' coords='370,785,460,815' title='Farmacoterapia e Interações Medicamentosas' alt='Farmacoterapia e Interações Medicamentosas' href='#' id='Shape_6800' class='Shapes' /><area shape='rect' coords='515,785,605,815' title='Tecnologia Farmacêutica' alt='Tecnologia Farmacêutica' href='#' id='Shape_6802' class='Shapes' /><area shape='rect' coords='660,785,750,815' title='Farmacoepidemiologia' alt='Farmacoepidemiologia' href='#' id='Shape_11786' class='Shapes' /><area shape='rect' coords='805,785,895,815' title='Estágio Supervisionado em Farmácia' alt='Estágio Supervisionado em Farmácia' href='#' id='Shape_3114' class='Shapes' /><area shape='rect' coords='80,890,170,920' title='Estágio Supervisionado Profissionalizante I' alt='Estágio Supervisionado Profissionalizante I' href='#' id='Shape_3115' class='Shapes' /><area shape='rect' coords='80,995,170,1025' title='Estágio Supervisionado Profissionalizante II' alt='Estágio Supervisionado Profissionalizante II' href='#' id='Shape_3116' class='Shapes' /><area shape='rect' coords='225,995,315,1025' title='Trabalho de Conclusão de Curso' alt='Trabalho de Conclusão de Curso' href='#' id='Shape_3117' class='Shapes' /><area shape='rect' coords='370,995,460,1025' title='Atividades Complementares' alt='Atividades Complementares' href='#' id='Shape_6803' class='Shapes' />
+</map>	<br />Obs: Caso existam dois conjuntos de pr&eacute;-requisitos presentes integralmente no cat&aacute;logo, apenas um deles ser&aacute; exibido.<br />
+	
+				<div id="rodape">
+					<hr style="color: #B2B2B2; background-color: #B2B2B2; height: 1px; margin: 10px 0 10px 0; border: 0 none" />
+					<div id="usuarios_online"><span>Usu&aacute;rios online</span>: <span id="contador_usuarios_online">12</span></div>
+					<br />&Uacute;ltima Atualiza&ccedil;&atilde;o do sistema: 15/11/2024 - Vers&atilde;o 2.6
+					<br /><br /><strong>Aviso:</strong> O GDE n&atilde;o &eacute; um sistema oficial da Unicamp, e tem por &uacute;nico objetivo auxiliar alunos na vida acad&ecirc;mica.
+					<br /><br /><i></i>
+					<hr style="color: #B2B2B2; background-color: #B2B2B2; height: 1px; margin: 10px 0 10px 0; border: 0 none" />
+					<div style="width: 210px; height: 42px; margin: auto;">
+						<a href="http://www.guaycuru.net" title="Desenvolvido por Felipe Guaycuru de C. B. Franco" target="_blank" style="float: left; margin-top: 10px;"><img src="https://grade.daconline.unicamp.br/web/images/logo_guaycuru.gif" border="0" alt="Desenvolvido por Felipe Guaycuru de C. B. Franco" width="100" height="21" /></a>
+					</div>
+					<!-- <br /><div style="width: 125px; margin: auto;"><a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="https://grade.daconline.unicamp.br/web/images/w3c_xhtml.gif" border="0" alt="Valid XHTML 1.0 Transitional !" width="60" height="21" /></a> <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="https://grade.daconline.unicamp.br/web/images/w3c_css.gif" alt="Valid CSS !" width="60" height="21" /></a></div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 91,
+    "name": "Música (91)",
+    "code": "91"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2018,
+  "parameters": {
+    "catalogo": "2018",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}
