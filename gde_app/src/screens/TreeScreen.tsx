@@ -4,7 +4,6 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TextInput,
   TouchableOpacity,
   View,
 } from 'react-native';
@@ -53,20 +52,79 @@ type CurriculumOption = {
   }[];
 };
 
+type DropdownOption = {
+  label: string;
+  value: string | number;
+};
+
+const DropdownSelector = ({
+  label,
+  value,
+  placeholder = '*selecionar*',
+  options,
+  onSelect,
+}: {
+  label: string;
+  value: string | number | null;
+  placeholder?: string;
+  options: DropdownOption[];
+  onSelect: (value: string | number) => void;
+}) => {
+  const [open, setOpen] = useState(false);
+  const selectedLabel = options.find((opt) => opt.value === value)?.label;
+
+  return (
+    <View style={styles.dropdownWrapper}>
+      <TouchableOpacity
+        style={styles.dropdownHeader}
+        onPress={() => setOpen((prev) => !prev)}
+        activeOpacity={0.8}
+      >
+        <View>
+          <Text style={styles.dropdownLabel}>{label}</Text>
+          <Text style={[styles.dropdownValue, !selectedLabel && styles.dropdownPlaceholder]}>
+            {selectedLabel ?? placeholder}
+          </Text>
+        </View>
+        <MaterialCommunityIcons
+          name={open ? 'chevron-up' : 'chevron-down'}
+          size={22}
+          color={colors.text}
+        />
+      </TouchableOpacity>
+
+      {open && (
+        <View style={styles.dropdownList}>
+          {options.length === 0 ? (
+            <Text style={styles.dropdownEmpty}>Nenhuma opcao disponivel</Text>
+          ) : (
+            options.map((opt) => (
+              <TouchableOpacity
+                key={String(opt.value)}
+                style={styles.dropdownOption}
+                onPress={() => {
+                  onSelect(opt.value);
+                  setOpen(false);
+                }}
+              >
+                <Text style={styles.optionText}>{opt.label}</Text>
+              </TouchableOpacity>
+            ))
+          )}
+        </View>
+      )}
+    </View>
+  );
+};
+
 const CourseChip = ({ course }: { course: { code: string; prereqs: string[] } }) => (
   <View style={styles.courseChip}>
     <Text style={styles.courseChipText}>{course.code}</Text>
-    {course.prereqs.length > 0 && (
-      <View style={styles.prereqContainer}>
-        <Text style={styles.prereqLabel}>Req:</Text>
-        <Text style={styles.prereqList}>{course.prereqs.join(', ')}</Text>
-      </View>
-    )}
   </View>
 );
 
 const SemesterSection = ({ semester }: { semester: Semester }) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
     <View style={styles.semesterCard}>
@@ -89,15 +147,15 @@ const SemesterSection = ({ semester }: { semester: Semester }) => {
   );
 };
 
+const DEFAULT_PLANNER_ID = process.env.EXPO_PUBLIC_PLANNER_ID || '620818';
+
 export default function TreeScreen({ navigation }: Props) {
-  const [plannerId, setPlannerId] = useState('620818');
-  const [availableOptions, setAvailableOptions] = useState<PlannerOption[]>([]);
   const [curriculumOptions, setCurriculumOptions] = useState<CurriculumOption[]>([]);
   const [selectedCourseId, setSelectedCourseId] = useState<number | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [selectedModalidade, setSelectedModalidade] = useState<string | null>(null);
   const [selectedPeriodo, setSelectedPeriodo] = useState<string | null>(null);
-  const [isCompleta, setIsCompleta] = useState<'Sim' | 'Não'>('Não');
+  const [isCompleta, setIsCompleta] = useState<'Sim' | 'Nao'>('Nao');
   const [loadingPlanner, setLoadingPlanner] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -121,18 +179,20 @@ export default function TreeScreen({ navigation }: Props) {
         })),
       }));
       setCurriculumOptions(parsed);
+      return parsed;
     } catch (err: any) {
-      console.error('Erro ao carregar opções de currículo', err);
+      console.error('Erro ao carregar opcoes de curriculo', err);
+      return [];
     }
   };
 
-  const loadPlanner = async () => {
+  const loadPlanner = async (curriculumData?: CurriculumOption[]) => {
     setLoadingPlanner(true);
     setError(null);
     try {
-      const resp = await fetch(`${API_BASE_URL}/user-db/${plannerId}`);
+      const resp = await fetch(`${API_BASE_URL}/user-db/${DEFAULT_PLANNER_ID}`);
       if (!resp.ok) {
-        throw new Error(`Planner ${plannerId} não encontrado (HTTP ${resp.status})`);
+        throw new Error(`Planner ${DEFAULT_PLANNER_ID} nao encontrado (HTTP ${resp.status})`);
       }
       const data = await resp.json();
       const options: PlannerOption[] = (data.courses || [])
@@ -144,31 +204,27 @@ export default function TreeScreen({ navigation }: Props) {
         .filter((item) => item.courseId);
 
       if (!options.length) {
-        throw new Error('Nenhum curso com catálogo encontrado para este planner.');
+        throw new Error('Nenhum curso com catalogo encontrado para este planner.');
       }
 
-      setAvailableOptions(options);
       if (data.current_period) {
         setCurrentPeriodRaw(String(data.current_period));
         setSelectedPeriodo(String(data.current_period));
       }
 
+      const curriculumList = curriculumData ?? curriculumOptions;
       const preferred = options[0];
-      setSelectedCourseId(preferred.courseId);
-      setSelectedYear(preferred.year ?? null);
+      const curriculum = curriculumList.find((c) => c.courseId === preferred.courseId);
+      const defaultYear = curriculum?.options[0]?.year ?? preferred.year ?? null;
+      const defaultMod =
+        curriculum?.options.find((o) => o.year === defaultYear)?.modalidade ??
+        curriculum?.options[0]?.modalidade ??
+        null;
 
-      // se houver opções de currículo carregadas, tente casar modalidade/ano
-      const curriculum = curriculumOptions.find((c) => c.courseId === preferred.courseId);
-      if (curriculum && curriculum.options.length > 0) {
-        const matchYear = preferred.year
-          ? curriculum.options.find((o) => o.year === preferred.year)
-          : null;
-        const chosen = matchYear || curriculum.options[0];
-        setSelectedYear(chosen.year);
-        setSelectedModalidade(chosen.modalidade);
-      }
+      setSelectedCourseId(preferred.courseId);
+      setSelectedYear(defaultYear);
+      setSelectedModalidade(defaultMod);
     } catch (err: any) {
-      setAvailableOptions([]);
       setSelectedCourseId(null);
       setSelectedYear(null);
       setSelectedModalidade(null);
@@ -199,15 +255,17 @@ export default function TreeScreen({ navigation }: Props) {
       setDisciplines(all);
     } catch (err: any) {
       setDisciplines([]);
-      setError(err?.message || 'Erro ao buscar currículo');
+      setError(err?.message || 'Erro ao buscar curriculo');
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    // carrega catálogos/modalidades primeiro, depois planner
-    loadCurriculumOptions().finally(() => loadPlanner());
+    // carrega catalogos/modalidades primeiro, depois planner
+    loadCurriculumOptions()
+      .then((parsed) => loadPlanner(parsed))
+      .catch(() => loadPlanner());
   }, []);
 
   useEffect(() => {
@@ -221,12 +279,12 @@ export default function TreeScreen({ navigation }: Props) {
     const grouped: Record<string, Semester> = {};
     disciplines.forEach((d) => {
       const sem = d.semestre && Number.isInteger(d.semestre) ? Number(d.semestre) : 0;
-      const key = sem > 0 ? String(sem) : '0';
+      const key = sem > 0 ? String(sem) : 'eletivas';
       const prereqList = Array.isArray(d.prereqs) ? d.prereqs.flat().filter(Boolean) : [];
       if (!grouped[key]) {
         grouped[key] = {
           id: key,
-          title: sem > 0 ? `${sem}º Semestre` : 'Semestre não informado',
+          title: sem > 0 ? `Semestre ${sem}` : 'Eletivas',
           courses: [],
         };
       }
@@ -235,7 +293,8 @@ export default function TreeScreen({ navigation }: Props) {
         prereqs: prereqList,
       });
     });
-    return Object.values(grouped).sort((a, b) => Number(a.id) - Number(b.id));
+    const orderValue = (id: string) => (id === 'eletivas' ? Number.MAX_SAFE_INTEGER : Number(id));
+    return Object.values(grouped).sort((a, b) => orderValue(a.id) - orderValue(b.id));
   }, [disciplines]);
 
   const courseOptionsForSelect = useMemo(() => {
@@ -269,19 +328,75 @@ export default function TreeScreen({ navigation }: Props) {
     return opts;
   }, [currentPeriodRaw, yearsForSelectedCourse]);
 
+  const handleCourseChange = (courseId: number) => {
+    setSelectedCourseId(courseId);
+    const entry = curriculumOptions.find((c) => c.courseId === courseId);
+    const nextYear = entry?.options[0]?.year ?? null;
+    const nextMod =
+      entry?.options.find((o) => o.year === nextYear)?.modalidade ?? entry?.options[0]?.modalidade ?? null;
+    setSelectedYear(nextYear);
+    setSelectedModalidade(nextMod);
+  };
+
+  const handleYearChange = (year: number) => {
+    setSelectedYear(year);
+    const entry = curriculumOptions.find((c) => c.courseId === selectedCourseId);
+    const modForYear = entry?.options.find((opt) => opt.year === year)?.modalidade ?? null;
+    setSelectedModalidade(modForYear);
+  };
+
   const IntegralizacaoInfo = () => (
     <View style={styles.integralizacaoCard}>
-      <Text style={styles.integralizacaoText}>Catálogo: {selectedYear ?? '*selecionar*'}</Text>
-      <Text style={styles.integralizacaoText}>
-        Curso: {selectedCourseId ?? '*selecionar*'}
-      </Text>
-      <Text style={styles.integralizacaoText}>
-        Modalidade: {selectedModalidade ?? '*selecionar*'}
-      </Text>
-      <Text style={styles.integralizacaoText}>
-        Período: {selectedPeriodo ?? '*selecionar*'}
-      </Text>
-      <Text style={styles.integralizacaoText}>Completa: {isCompleta}</Text>
+      <Text style={styles.integralizacaoTitle}>Selecione o contexto da arvore</Text>
+
+      <DropdownSelector
+        label="Curso"
+        value={selectedCourseId}
+        options={courseOptionsForSelect.map((c) => ({
+          label: c.courseName || `Curso ${c.courseId}`,
+          value: c.courseId,
+        }))}
+        onSelect={(val) => handleCourseChange(Number(val))}
+      />
+
+      <DropdownSelector
+        label="Catalogo"
+        value={selectedYear}
+        options={yearsForSelectedCourse.map((year) => ({
+          label: String(year),
+          value: year,
+        }))}
+        onSelect={(val) => handleYearChange(Number(val))}
+      />
+
+      <DropdownSelector
+        label="Modalidade"
+        value={selectedModalidade}
+        options={modalitiesForSelected.map((opt) => ({
+          label: opt.modalidadeLabel
+            ? `${opt.modalidadeLabel} (${opt.modalidade})`
+            : opt.modalidade,
+          value: opt.modalidade,
+        }))}
+        onSelect={(val) => setSelectedModalidade(String(val))}
+      />
+
+      <DropdownSelector
+        label="Periodo"
+        value={selectedPeriodo}
+        options={periodOptions.map((p) => ({ label: p, value: p }))}
+        onSelect={(val) => setSelectedPeriodo(String(val))}
+      />
+
+      <DropdownSelector
+        label="Completa"
+        value={isCompleta}
+        options={[
+          { label: 'Sim', value: 'Sim' },
+          { label: 'Nao', value: 'Nao' },
+        ]}
+        onSelect={(val) => setIsCompleta(val as 'Sim' | 'Nao')}
+      />
     </View>
   );
 
@@ -291,142 +406,22 @@ export default function TreeScreen({ navigation }: Props) {
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
           <MaterialCommunityIcons name="arrow-left" size={24} color={colors.text} />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Árvore</Text>
+        <Text style={styles.headerTitle}>Arvore</Text>
         <View style={styles.placeholder} />
       </View>
 
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         <View style={styles.controls}>
-          <View style={{ flex: 1 }}>
-            <Text style={styles.label}>Planner ID</Text>
-            <TextInput
-              value={plannerId}
-              onChangeText={setPlannerId}
-              placeholder="Informe o RA/planner"
-              placeholderTextColor="#808080"
-              style={styles.input}
-            />
-          </View>
-          <TouchableOpacity
-            onPress={loadPlanner}
-            style={styles.reloadButton}
-            disabled={loadingPlanner}
-          >
-            <Text style={styles.reloadButtonText}>
-              {loadingPlanner ? 'Carregando...' : 'Carregar planner'}
-            </Text>
-          </TouchableOpacity>
         </View>
 
         <View style={styles.filters}>
           <IntegralizacaoInfo />
-
-          <View style={styles.selectContainer}>
-            <Text style={styles.label}>Catálogo</Text>
-            <View style={styles.selectBox}>
-              {yearsForSelectedCourse.map((year) => (
-                <TouchableOpacity
-                  key={year}
-                  style={[styles.optionRow, year === selectedYear && styles.optionRowSelected]}
-                  onPress={() => {
-                    setSelectedYear(year);
-                    const mods = curriculumOptions
-                      .find((c) => c.courseId === selectedCourseId)
-                      ?.options.filter((o) => o.year === year);
-                    if (mods && mods.length > 0) {
-                      setSelectedModalidade(mods[0].modalidade);
-                    }
-                  }}
-                >
-                  <Text style={styles.optionText}>{year}</Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </View>
-
-          <View style={styles.selectContainer}>
-            <Text style={styles.label}>Curso</Text>
-            <View style={styles.selectBox}>
-              {courseOptionsForSelect.map((c) => (
-                <TouchableOpacity
-                  key={c.courseId}
-                  style={[styles.optionRow, c.courseId === selectedCourseId && styles.optionRowSelected]}
-                  onPress={() => {
-                    setSelectedCourseId(c.courseId);
-                    const entry = curriculumOptions.find((e) => e.courseId === c.courseId);
-                    if (entry && entry.options.length > 0) {
-                      setSelectedYear(entry.options[0].year);
-                      setSelectedModalidade(entry.options[0].modalidade);
-                    }
-                  }}
-                >
-                  <Text style={styles.optionText}>{c.courseName || `Curso ${c.courseId}`}</Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </View>
-
-          <View style={styles.selectContainer}>
-            <Text style={styles.label}>Modalidade</Text>
-            <View style={styles.selectBox}>
-              {modalitiesForSelected.map((opt) => (
-                <TouchableOpacity
-                  key={`${opt.modalidade}-${opt.year}`}
-                  style={[
-                    styles.optionRow,
-                    opt.modalidade === selectedModalidade && styles.optionRowSelected,
-                  ]}
-                  onPress={() => setSelectedModalidade(opt.modalidade)}
-                >
-                  <Text style={styles.optionText}>
-                    {opt.modalidade} {opt.modalidadeLabel ? `· ${opt.modalidadeLabel}` : ''}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </View>
-
-          <View style={styles.selectContainer}>
-            <Text style={styles.label}>Período</Text>
-            <View style={styles.selectBox}>
-              {periodOptions.map((p) => (
-                <TouchableOpacity
-                  key={p}
-                  style={[styles.optionRow, p === selectedPeriodo && styles.optionRowSelected]}
-                  onPress={() => setSelectedPeriodo(p)}
-                >
-                  <Text style={styles.optionText}>{p}</Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </View>
-
-          <View style={styles.selectContainer}>
-            <Text style={styles.label}>Completa</Text>
-            <View style={styles.selectBox}>
-              {['Sim', 'Não'].map((v) => (
-                <TouchableOpacity
-                  key={v}
-                  style={[styles.optionRow, v === isCompleta && styles.optionRowSelected]}
-                  onPress={() => setIsCompleta(v as 'Sim' | 'Não')}
-                >
-                  <Text style={styles.optionText}>{v}</Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </View>
         </View>
 
-        <Text style={styles.helperText}>
-          Fonte: {API_BASE_URL} ·{' '}
-          {selectedCourseId ? `Curso ${selectedCourseId}` : 'Nenhum curso selecionado'}{' '}
-          {selectedYear ? `· Catálogo ${selectedYear}` : ''}{' '}
-          {selectedModalidade ? `· Modalidade ${selectedModalidade}` : ''}
-        </Text>
         {loading && (
           <View style={styles.loader}>
             <ActivityIndicator size="large" color={colors.text} />
-            <Text style={styles.helperText}>Carregando currículo...</Text>
+            <Text style={styles.helperText}>Carregando curriculo...</Text>
           </View>
         )}
         {error && <Text style={styles.errorText}>{error}</Text>}
@@ -479,20 +474,6 @@ const styles = StyleSheet.create({
     columnGap: spacing(2),
     marginBottom: spacing(2),
   },
-  label: {
-    color: colors.text,
-    marginBottom: spacing(1),
-    fontWeight: '600',
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#444',
-    borderRadius: 8,
-    paddingVertical: spacing(1),
-    paddingHorizontal: spacing(1.5),
-    color: colors.text,
-    backgroundColor: '#111827',
-  },
   reloadButton: {
     backgroundColor: '#333333',
     paddingVertical: spacing(1.5),
@@ -508,44 +489,6 @@ const styles = StyleSheet.create({
   filters: {
     marginBottom: spacing(2),
     rowGap: spacing(1),
-  },
-  filterRow: {
-    flexDirection: 'row',
-    columnGap: spacing(2),
-    alignItems: 'flex-start',
-  },
-  filterColumn: {
-    marginBottom: spacing(1),
-  },
-  selectContainer: {
-    marginBottom: spacing(2),
-  },
-  selectHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingVertical: spacing(1),
-  },
-  selectedValue: {
-    color: colors.text,
-    fontWeight: '700',
-  },
-  selectBox: {
-    borderWidth: 1,
-    borderColor: '#374151',
-    borderRadius: 10,
-    backgroundColor: '#0f172a',
-  },
-  optionRow: {
-    paddingVertical: spacing(1),
-    paddingHorizontal: spacing(1.5),
-    borderBottomWidth: 1,
-    borderBottomColor: '#1f2937',
-  },
-  optionRowSelected: {
-    backgroundColor: '#111827',
-    borderColor: '#5B8CFF',
-    borderWidth: 1,
   },
   optionText: {
     color: colors.text,
@@ -589,32 +532,17 @@ const styles = StyleSheet.create({
   },
   courseChip: {
     backgroundColor: '#333333',
-    borderRadius: 8,
-    paddingVertical: spacing(1),
-    paddingHorizontal: spacing(2),
-    minWidth: 80,
+    borderRadius: 6,
+    paddingVertical: spacing(0.75),
+    paddingHorizontal: spacing(1),
+    minWidth: 72,
     alignItems: 'center',
   },
   courseChipText: {
     color: colors.text,
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '600',
-    marginBottom: 2,
-  },
-  prereqContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 2,
-  },
-  prereqLabel: {
-    color: '#AAAAAA',
-    fontSize: 10,
-    marginRight: 2,
-  },
-  prereqList: {
-    color: '#FFD700',
-    fontSize: 10,
-    fontWeight: 'bold',
+    marginBottom: 0,
   },
   integralizacaoCard: {
     backgroundColor: '#e5e7eb',
@@ -622,8 +550,55 @@ const styles = StyleSheet.create({
     padding: spacing(2),
     marginBottom: spacing(1),
   },
-  integralizacaoText: {
-    color: '#111827',
-    fontWeight: '600',
+  integralizacaoTitle: {
+    color: '#0f172a',
+    fontWeight: '800',
+    marginBottom: spacing(1.5),
+  },
+  dropdownWrapper: {
+    marginBottom: spacing(1.5),
+  },
+  dropdownHeader: {
+    backgroundColor: '#111827',
+    borderRadius: 10,
+    paddingVertical: spacing(1.2),
+    paddingHorizontal: spacing(1.5),
+    borderWidth: 1,
+    borderColor: '#1f2937',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  dropdownLabel: {
+    color: '#9ca3af',
+    fontSize: 12,
+    marginBottom: 2,
+  },
+  dropdownValue: {
+    color: colors.text,
+    fontWeight: '700',
+    fontSize: 14,
+  },
+  dropdownPlaceholder: {
+    color: '#9ca3af',
+    fontWeight: '500',
+  },
+  dropdownList: {
+    backgroundColor: '#0f172a',
+    borderWidth: 1,
+    borderColor: '#1f2937',
+    borderRadius: 10,
+    marginTop: spacing(0.5),
+  },
+  dropdownOption: {
+    paddingVertical: spacing(1),
+    paddingHorizontal: spacing(1.5),
+    borderBottomWidth: 1,
+    borderBottomColor: '#1f2937',
+  },
+  dropdownEmpty: {
+    color: '#9ca3af',
+    paddingVertical: spacing(1),
+    paddingHorizontal: spacing(1.5),
   },
 });
