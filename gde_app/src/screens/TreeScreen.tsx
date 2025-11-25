@@ -30,7 +30,7 @@ type Semester = {
   title: string;
   courses: {
     code: string;
-    prereqs: string[];
+    prereqs: string[][];
   }[];
 };
 
@@ -117,13 +117,62 @@ const DropdownSelector = ({
   );
 };
 
-const CourseChip = ({ course }: { course: { code: string; prereqs: string[] } }) => (
-  <View style={styles.courseChip}>
-    <Text style={styles.courseChipText}>{course.code}</Text>
-  </View>
-);
+const CourseChip = ({
+  course,
+  isActive,
+  onToggle,
+}: {
+  course: { code: string; prereqs: string[][] };
+  isActive: boolean;
+  onToggle: (course: { code: string; prereqs: string[][] }) => void;
+}) => {
+  const formatPrereqs = (prereqs: any): string[] => {
+    // debug shape of the data coming in
+    console.log('[TreeScreen] prereqs raw', course.code, prereqs);
 
-const SemesterSection = ({ semester }: { semester: Semester }) => {
+    if (!Array.isArray(prereqs) || prereqs.length === 0) return ['sem requisitos'];
+    const groups = prereqs.map((group) => {
+      if (!group) return '';
+      if (Array.isArray(group)) {
+        const leafs = group
+          .map((item) => (typeof item === 'string' ? item.trim() : ''))
+          .filter((v) => v.length > 0);
+        return leafs.length ? `(${leafs.join(' e ')})` : '';
+      }
+      if (typeof group === 'string' && group.trim().length > 0) return `(${group.trim()})`;
+      return '';
+    });
+    const clean = groups.filter((g) => g.length > 0);
+    return clean.length ? clean : ['sem requisitos'];
+  };
+
+  return (
+    <TouchableOpacity activeOpacity={0.85} style={styles.courseChip} onPress={() => onToggle(course)}>
+      <Text style={styles.courseChipText}>{course.code}</Text>
+      {isActive && (
+        <View style={styles.tooltip}>
+          <Text style={styles.tooltipLabel}>Requisitos</Text>
+          {formatPrereqs(course.prereqs).map((line, idx, arr) => (
+            <Text key={`${course.code}-req-${idx}`} style={styles.tooltipText}>
+              {line}
+              {idx < arr.length - 1 ? ' ou' : ''}
+            </Text>
+          ))}
+        </View>
+      )}
+    </TouchableOpacity>
+  );
+};
+
+const SemesterSection = ({
+  semester,
+  activeCourse,
+  onToggleCourse,
+}: {
+  semester: Semester;
+  activeCourse: { code: string; prereqs: string[][] } | null;
+  onToggleCourse: (course: { code: string; prereqs: string[][] }) => void;
+}) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
@@ -144,7 +193,12 @@ const SemesterSection = ({ semester }: { semester: Semester }) => {
       {!isCollapsed && (
         <View style={styles.courseContainer}>
           {semester.courses.map((course, index) => (
-            <CourseChip key={index} course={course} />
+            <CourseChip
+              key={index}
+              course={course}
+              isActive={activeCourse?.code === course.code}
+              onToggle={onToggleCourse}
+            />
           ))}
         </View>
       )}
@@ -166,6 +220,7 @@ export default function TreeScreen({ navigation }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [disciplines, setDisciplines] = useState<Discipline[]>([]);
   const [currentPeriodRaw, setCurrentPeriodRaw] = useState<string | null>(null);
+  const [activeCourse, setActiveCourse] = useState<{ code: string; prereqs: string[][] } | null>(null);
 
   const loadCurriculumOptions = async () => {
     try {
@@ -285,7 +340,6 @@ export default function TreeScreen({ navigation }: Props) {
     disciplines.forEach((d) => {
       const sem = d.semestre && Number.isInteger(d.semestre) ? Number(d.semestre) : 0;
       const key = sem > 0 ? String(sem) : 'eletivas';
-      const prereqList = Array.isArray(d.prereqs) ? d.prereqs.flat().filter(Boolean) : [];
       if (!grouped[key]) {
         grouped[key] = {
           id: key,
@@ -295,7 +349,7 @@ export default function TreeScreen({ navigation }: Props) {
       }
       grouped[key].courses.push({
         code: d.codigo,
-        prereqs: prereqList,
+        prereqs: Array.isArray(d.prereqs) ? d.prereqs : [],
       });
     });
     const orderValue = (id: string) => (id === 'eletivas' ? Number.MAX_SAFE_INTEGER : Number(id));
@@ -452,7 +506,16 @@ export default function TreeScreen({ navigation }: Props) {
           )}
           {!loading &&
             !error &&
-            semestersData.map((semester) => <SemesterSection key={semester.id} semester={semester} />)}
+            semestersData.map((semester) => (
+              <SemesterSection
+                key={semester.id}
+                semester={semester}
+                activeCourse={activeCourse}
+                onToggleCourse={(course) =>
+                  setActiveCourse((prev) => (prev?.code === course.code ? null : course))
+                }
+              />
+            ))}
         </ScrollView>
       </View>
     </SafeAreaView>
@@ -664,6 +727,8 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 6 },
     elevation: 6,
+    overflow: 'visible',
+    zIndex: 1,
   },
   semesterHeader: {
     flexDirection: 'row',
@@ -692,6 +757,9 @@ const styles = StyleSheet.create({
     padding: spacing(1.5),
     rowGap: spacing(1),
     columnGap: spacing(1),
+    justifyContent: 'center',
+    overflow: 'visible',
+    zIndex: 2,
   },
   courseChip: {
     backgroundColor: colors.surfaceAlt,
@@ -702,6 +770,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: colors.border,
+    position: 'relative',
+    overflow: 'visible',
+    flexGrow: 1,
+    zIndex: 1,
+    marginHorizontal: spacing(0.5),
   },
   courseChipText: {
     color: colors.text,
@@ -710,5 +783,37 @@ const styles = StyleSheet.create({
     marginBottom: 0,
     letterSpacing: 0.4,
     fontFamily: 'monospace',
+  },
+  tooltip: {
+    position: 'absolute',
+    bottom: spacing(1.5),
+    left: -spacing(1),
+    right: -spacing(1),
+    alignSelf: 'center',
+    maxWidth: 240,
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: 10,
+    padding: spacing(1.25),
+    zIndex: 99999,
+    shadowColor: '#000',
+    shadowOpacity: 0.3,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 20,
+    transform: [{ translateY: 0 }],
+  },
+  tooltipLabel: {
+    color: colors.textMuted,
+    fontSize: 12,
+    fontFamily: 'monospace',
+    marginBottom: 6,
+  },
+  tooltipText: {
+    color: colors.text,
+    fontSize: 13,
+    fontFamily: 'monospace',
+    lineHeight: 18,
   },
 });
