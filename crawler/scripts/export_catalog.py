@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 
 
 ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = ROOT / "data"
 SRC_DIR = ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
@@ -27,6 +28,16 @@ from crawler_app.parsers.arvore_parsers import (
     _ELET_BLOCK_RE,
     _split_semester_groups,
 )
+
+
+def _resolve_output_dir(year: int) -> Path:
+    override = os.getenv("EXPORT_CATALOG_OUTPUT")
+    if override:
+        path = Path(override)
+        if not path.is_absolute():
+            path = (ROOT / path).resolve()
+        return path
+    return (DATA_DIR / "js_catalog" / str(year)).resolve()
 
 
 def build_client():
