@@ -1,66 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../navigation/types';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { API_BASE_URL } from '../config/api';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Planner'>;
 
 const { width } = Dimensions.get('window');
 
-interface DaySchedule {
-  id: string;
-  day: string;
-  courses: string[];
-}
+type DaySchedule = { id: string; day: string; courses: string[] };
+type CourseBlock = { id: string; code: string; dayIndex: number; startTime: number; durationHours: number };
 
-interface CourseBlock {
-  id: string;
-  code: string;
-  dayIndex: number; // 0 for Seg, 1 for Ter, etc.
-  startTime: number; // e.g., 8 for 8:00
-  durationHours: number; // e.g., 2 for 2 hours
-}
-
-// Dummy data for daily courses
-const dailyCoursesData: DaySchedule[] = [
-  { id: '1', day: 'Segunda-feira', courses: ['MC202', 'MA211'] },
-  { id: '2', day: 'Terça-feira', courses: [] },
-  { id: '3', day: 'Quarta-feira', courses: [] },
-  { id: '4', day: 'Quinta-feira', courses: ['F 129'] },
-  { id: '5', day: 'Sexta-feira', courses: [] },
-];
-
-// Dummy data for the weekly schedule grid
-const scheduleGridData: CourseBlock[] = [
-  { id: 'cb1', code: 'MC202', dayIndex: 0, startTime: 8, durationHours: 2 }, // Segunda 8:00-10:00
-  { id: 'cb2', code: 'MA211', dayIndex: 0, startTime: 10, durationHours: 2 }, // Segunda 10:00-12:00
-  { id: 'cb3', code: 'F 129', dayIndex: 3, startTime: 14, durationHours: 2 }, // Quinta 14:00-16:00
-];
-
-const timeSlots = Array.from({ length: 16 }, (_, i) => `${8 + i}:00`); // 8:00 to 23:00
+const timeSlots = Array.from({ length: 16 }, (_, i) => `${8 + i}:00`);
 const daysOfWeek = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex'];
-const cellHeight = 40; // Height of each 1-hour time slot
-const headerRowHeight = cellHeight; // Height of the grid header row
-
-// Calculate dynamic widths for grid columns
+const cellHeight = 40;
+const headerRowHeight = cellHeight;
 const screenPaddingHorizontal = spacing(3);
 const totalGridAvailableWidth = width - 2 * screenPaddingHorizontal;
-const timeColumnWidth = totalGridAvailableWidth * 0.18; // 18% for time labels
+const timeColumnWidth = totalGridAvailableWidth * 0.18;
 const dayColumnWidth = (totalGridAvailableWidth - timeColumnWidth) / daysOfWeek.length;
 
-// Component for an individual course chip (used in daily sections)
-const CourseChip = ({ code }: { code: string }) => (
-  <View style={plannerStyles.courseChip}>
+const DEFAULT_PLANNER_ID = process.env.EXPO_PUBLIC_PLANNER_ID || '620818';
+
+const CourseChip = ({ code, onPress }: { code: string; onPress?: () => void }) => (
+  <TouchableOpacity activeOpacity={0.85} onPress={onPress} style={plannerStyles.courseChip}>
     <Text style={plannerStyles.courseChipText}>{code}</Text>
-  </View>
+  </TouchableOpacity>
 );
 
-// Component for a collapsible day section
-const DaySection = ({ schedule }: { schedule: DaySchedule }) => {
+const DaySection = ({ schedule, onToggle }: { schedule: DaySchedule; onToggle: (code: string) => void }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
@@ -74,14 +46,11 @@ const DaySection = ({ schedule }: { schedule: DaySchedule }) => {
           />
           <Text style={plannerStyles.dayTitle}>{schedule.day}</Text>
         </View>
-        <TouchableOpacity style={plannerStyles.addCourseButton} onPress={() => { /* Add course logic */ }}>
-          <MaterialCommunityIcons name="plus" size={24} color={colors.text} />
-        </TouchableOpacity>
       </TouchableOpacity>
       {!isCollapsed && schedule.courses.length > 0 && (
         <View style={plannerStyles.courseContainer}>
           {schedule.courses.map((course, index) => (
-            <CourseChip key={index} code={course} />
+            <CourseChip key={index} code={course} onPress={() => onToggle(course)} />
           ))}
         </View>
       )}
@@ -95,10 +64,214 @@ const DaySection = ({ schedule }: { schedule: DaySchedule }) => {
 };
 
 export default function PlannerScreen({ navigation }: Props) {
-  const handleExportToGoogleCalendar = () => {
-    // Implement Google Calendar export logic
-    console.log('Exporting to Google Calendar...');
+  const [planner, setPlanner] = useState<any | null>(null);
+  const [plannedSet, setPlannedSet] = useState<Set<string>>(new Set());
+  const [currentSet, setCurrentSet] = useState<Set<string>>(new Set());
+  const [loading, setLoading] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    loadPlanner();
+  }, []);
+
+  const loadPlanner = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const resp = await fetch(`${API_BASE_URL}/planner/${DEFAULT_PLANNER_ID}`);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+      setPlanner(data);
+      const basePayload = data.modified?.payload || data.original?.payload || {};
+      const curriculum = Array.isArray(basePayload.curriculum) ? basePayload.curriculum : [];
+      const currentCodes = curriculum
+        .filter((c: any) => Array.isArray(c.offers) && c.offers.length > 0)
+        .map((c: any) => String(c.codigo));
+      const planned = (basePayload.planned_codes || []).map((c: any) => String(c));
+      const initial = new Set([...planned, ...currentCodes]);
+      setCurrentSet(new Set(currentCodes));
+      setPlannedSet(initial);
+    } catch (err: any) {
+      setError(err?.message || 'Erro ao carregar planner');
+    } finally {
+      setLoading(false);
+    }
   };
+
+  const togglePlanned = (code: string) => {
+    setPlannedSet((prev) => {
+      const next = new Set(prev);
+      if (next.has(code)) next.delete(code);
+      else next.add(code);
+      return next;
+    });
+  };
+
+  const savePlanner = async () => {
+    if (!planner) return;
+    setSaving(true);
+    setError(null);
+    const payload = (planner.modified?.payload || planner.original?.payload || {}) as any;
+    const newPayload = { ...payload, planned_codes: Array.from(plannedSet) };
+    try {
+      const resp = await fetch(`${API_BASE_URL}/planner/${DEFAULT_PLANNER_ID}/modified`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ payload: newPayload }),
+      });
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+      setPlanner(data);
+    } catch (err: any) {
+      setError(err?.message || 'Erro ao salvar planner');
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const refreshPlanner = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const resp = await fetch(`${API_BASE_URL}/planner/${DEFAULT_PLANNER_ID}/refresh`, { method: 'POST' });
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+      setPlanner(data);
+      const basePayload = data.modified?.payload || data.original?.payload || {};
+      const curriculum = Array.isArray(basePayload.curriculum) ? basePayload.curriculum : [];
+      const currentCodes = curriculum
+        .filter((c: any) => Array.isArray(c.offers) && c.offers.length > 0)
+        .map((c: any) => String(c.codigo));
+      const planned = (basePayload.planned_codes || []).map((c: any) => String(c));
+      const initial = new Set([...planned, ...currentCodes]);
+      setCurrentSet(new Set(currentCodes));
+      setPlannedSet(initial);
+    } catch (err: any) {
+      setError(err?.message || 'Erro ao atualizar planner');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const activePayload = useMemo(() => {
+    if (!planner) return null;
+    const originalPayload = planner.original?.payload || null;
+    const modifiedPayload = planner.modified?.payload || null;
+
+    const hasOffers = (payload: any) =>
+      Array.isArray(payload?.curriculum) &&
+      payload.curriculum.some((c: any) => Array.isArray(c?.offers) && c.offers.length > 0);
+
+    if (modifiedPayload && hasOffers(modifiedPayload)) return modifiedPayload;
+    if (modifiedPayload && !hasOffers(modifiedPayload) && hasOffers(originalPayload)) return originalPayload;
+    return modifiedPayload || originalPayload || null;
+  }, [planner]);
+
+  const curriculum = useMemo(() => {
+    if (!activePayload || !Array.isArray(activePayload.curriculum)) return [];
+    return activePayload.curriculum as any[];
+  }, [activePayload]);
+
+  const coursesByDay: DaySchedule[] = useMemo(() => {
+    const slotsFromOffer = (offer: any) => {
+      const slots: { day: number; start: number; end: number }[] = [];
+      const events = Array.isArray(offer?.events) ? offer.events : [];
+      events.forEach((ev: any) => {
+        const dayIdx = typeof ev.day === 'number' ? ev.day : parseInt(String(ev.day ?? ''), 10);
+        const start = typeof ev.start_hour === 'number'
+          ? ev.start_hour
+          : ev.start
+          ? parseInt(String(ev.start).slice(11, 13), 10)
+          : NaN;
+        const end = typeof ev.end_hour === 'number'
+          ? ev.end_hour
+          : ev.end
+          ? parseInt(String(ev.end).slice(11, 13), 10)
+          : NaN;
+        if (!Number.isNaN(dayIdx) && dayIdx >= 0 && dayIdx <= 6 && !Number.isNaN(start) && !Number.isNaN(end)) {
+          slots.push({ day: dayIdx, start, end });
+        }
+      });
+      return slots;
+    };
+
+    const base: Record<string, DaySchedule> = {
+      '0': { id: '0', day: 'Segunda-feira', courses: [] },
+      '1': { id: '1', day: 'Terça-feira', courses: [] },
+      '2': { id: '2', day: 'Quarta-feira', courses: [] },
+      '3': { id: '3', day: 'Quinta-feira', courses: [] },
+      '4': { id: '4', day: 'Sexta-feira', courses: [] },
+      other: { id: 'other', day: 'Outros / sem horário', courses: [] },
+    };
+    curriculum.forEach((c: any) => {
+      const code = String(c.codigo);
+      if (!plannedSet.has(code) && !currentSet.has(code)) return;
+      const offers = Array.isArray(c.offers) ? c.offers : [];
+      if (offers.length === 0) {
+        base.other.courses.push(code);
+        return;
+      }
+      let pushed = false;
+      offers.forEach((o: any) => {
+        const slots = slotsFromOffer(o);
+        if (!slots.length) return;
+        slots.forEach((s) => {
+          const key = ['0', '1', '2', '3', '4'].includes(String(s.day)) ? String(s.day) : 'other';
+          base[key].courses.push(code);
+          pushed = true;
+        });
+      });
+      if (!pushed) base.other.courses.push(code);
+    });
+    return Object.values(base);
+  }, [curriculum, plannedSet, currentSet]);
+
+  const scheduleBlocks: CourseBlock[] = useMemo(() => {
+    const slotsFromOffer = (offer: any) => {
+      const slots: { day: number; start: number; end: number }[] = [];
+      const events = Array.isArray(offer?.events) ? offer.events : [];
+      events.forEach((ev: any) => {
+        const dayIdx = typeof ev.day === 'number' ? ev.day : parseInt(String(ev.day ?? ''), 10);
+        const start = typeof ev.start_hour === 'number'
+          ? ev.start_hour
+          : ev.start
+          ? parseInt(String(ev.start).slice(11, 13), 10)
+          : NaN;
+        const end = typeof ev.end_hour === 'number'
+          ? ev.end_hour
+          : ev.end
+          ? parseInt(String(ev.end).slice(11, 13), 10)
+          : NaN;
+        if (!Number.isNaN(dayIdx) && dayIdx >= 0 && dayIdx <= 6 && !Number.isNaN(start) && !Number.isNaN(end)) {
+          slots.push({ day: dayIdx, start, end });
+        }
+      });
+      return slots;
+    };
+
+    const blocks: CourseBlock[] = [];
+    curriculum.forEach((c: any) => {
+      const code = String(c.codigo);
+      if (!plannedSet.has(code) && !currentSet.has(code)) return;
+      const offers = Array.isArray(c.offers) ? c.offers : [];
+      offers.forEach((o: any, idx: number) => {
+        const slots = slotsFromOffer(o);
+        slots.forEach((s, sIdx) => {
+          if (s.day < 0 || s.day > 4) return;
+          const dur = s.end - s.start;
+          blocks.push({
+            id: `${code}-${idx}-${sIdx}`,
+            code,
+            dayIndex: s.day,
+            startTime: s.start,
+            durationHours: dur > 0 ? dur : 2,
+          });
+        });
+      });
+    });
+    return blocks;
+  }, [curriculum, plannedSet, currentSet]);
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={plannerStyles.safeArea}>
@@ -107,13 +280,23 @@ export default function PlannerScreen({ navigation }: Props) {
           <MaterialCommunityIcons name="arrow-left" size={24} color={colors.text} />
         </TouchableOpacity>
         <Text style={plannerStyles.headerTitle}>Planejador</Text>
-        <Text style={plannerStyles.placeholder}></Text>
+        <View style={plannerStyles.headerActions}>
+          <TouchableOpacity onPress={refreshPlanner} style={plannerStyles.headerIcon}>
+            <MaterialCommunityIcons name="refresh" size={20} color={colors.text} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={savePlanner} disabled={saving} style={plannerStyles.headerIcon}>
+            <MaterialCommunityIcons name="content-save" size={20} color={colors.text} />
+          </TouchableOpacity>
+        </View>
       </View>
-        
+
       <ScrollView style={plannerStyles.container} contentContainerStyle={plannerStyles.contentContainer}>
+        {loading && <Text style={plannerStyles.helperText}>Carregando planner...</Text>}
+        {error && <Text style={plannerStyles.errorText}>{error}</Text>}
+
         {/* Daily schedule sections */}
-        {dailyCoursesData.map((schedule) => (
-          <DaySection key={schedule.id} schedule={schedule} />
+        {coursesByDay.map((schedule) => (
+          <DaySection key={schedule.id} schedule={schedule} onToggle={togglePlanned} />
         ))}
 
         {/* Weekly Schedule Grid */}
@@ -141,16 +324,16 @@ export default function PlannerScreen({ navigation }: Props) {
           ))}
 
           {/* Render Course Blocks on top of the grid */}
-          {scheduleGridData.map((block) => (
+          {scheduleBlocks.map((block) => (
             <View
               key={block.id}
               style={[
                 plannerStyles.courseBlock,
                 {
-                  top: headerRowHeight + (block.startTime - 8) * cellHeight + 1, // +1 for the top border of the first time slot
-                  left: timeColumnWidth + (block.dayIndex * dayColumnWidth) + 1, // +1 for the left border
-                  width: dayColumnWidth - 2, // -2 for left/right borders or small gap
-                  height: block.durationHours * cellHeight - 2, // -2 for top/bottom borders or small gap
+                  top: headerRowHeight + (block.startTime - 8) * cellHeight + 1,
+                  left: timeColumnWidth + block.dayIndex * dayColumnWidth + 1,
+                  width: dayColumnWidth - 2,
+                  height: block.durationHours * cellHeight - 2,
                 },
               ]}
             >
@@ -160,13 +343,9 @@ export default function PlannerScreen({ navigation }: Props) {
         </View>
 
         {/* Export to Google Calendar Button */}
-        <TouchableOpacity
-          onPress={handleExportToGoogleCalendar}
-          style={plannerStyles.exportButton}
-        >
+        <TouchableOpacity onPress={() => {}} style={plannerStyles.exportButton}>
           <MaterialCommunityIcons name="calendar-export" size={24} color={colors.text} style={{ marginRight: spacing(1) }} />
           <Text style={plannerStyles.exportButtonText}>Exportar para GOOGLE CALENDAR</Text>
-          {/* Add a placeholder for the "31" icon as per Figma, since it's an image */}
           <View style={plannerStyles.googleCalendarIconPlaceholder}>
             <Text style={plannerStyles.googleCalendarIconText}>31</Text>
           </View>
@@ -191,8 +370,13 @@ const plannerStyles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.border,
   },
-  placeholder: {
-    width: 24 + spacing(2),
+  headerActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing(1),
+  },
+  headerIcon: {
+    padding: spacing(1),
   },
   backButton: {
     padding: spacing(1),
@@ -384,4 +568,6 @@ const plannerStyles = StyleSheet.create({
     fontWeight: '800',
     fontFamily: 'monospace',
   },
+  helperText: { color: colors.textMuted, marginBottom: spacing(1), fontFamily: 'monospace' },
+  errorText: { color: colors.primary, marginBottom: spacing(1), fontFamily: 'monospace' },
 });
