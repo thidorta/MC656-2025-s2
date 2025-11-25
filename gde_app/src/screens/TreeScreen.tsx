@@ -1,11 +1,19 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
+import {
+  ActivityIndicator,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../navigation/types';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { API_BASE_URL } from '../config/api';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Tree'>;
@@ -25,6 +33,12 @@ type Semester = {
     code: string;
     prereqs: string[];
   }[];
+};
+
+type PlannerOption = {
+  courseId: number;
+  courseName?: string;
+  year?: number;
 };
 
 const CourseChip = ({ course }: { course: { code: string; prereqs: string[] } }) => (
@@ -64,35 +78,82 @@ const SemesterSection = ({ semester }: { semester: Semester }) => {
 };
 
 export default function TreeScreen({ navigation }: Props) {
+  const [plannerId, setPlannerId] = useState('620818');
+  const [availableOptions, setAvailableOptions] = useState<PlannerOption[]>([]);
+  const [selectedCourseId, setSelectedCourseId] = useState<number | null>(null);
+  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const [loadingPlanner, setLoadingPlanner] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [disciplines, setDisciplines] = useState<Discipline[]>([]);
 
-  // Ajuste aqui para testar outros cursos/anos
-  const COURSE_ID = 34;
-  const YEAR = 2026;
+  const loadPlanner = async () => {
+    setLoadingPlanner(true);
+    setError(null);
+    try {
+      const resp = await fetch(`${API_BASE_URL}/user-db/${plannerId}`);
+      if (!resp.ok) {
+        throw new Error(`Planner ${plannerId} não encontrado (HTTP ${resp.status})`);
+      }
+      const data = await resp.json();
+      const options: PlannerOption[] = (data.courses || [])
+        .map((entry: any) => ({
+          courseId: entry.course_id,
+          courseName: entry.course_name,
+          year: entry.year,
+        }))
+        .filter((item) => item.courseId);
+
+      if (!options.length) {
+        throw new Error('Nenhum curso com catálogo encontrado para este planner.');
+      }
+
+      setAvailableOptions(options);
+      setSelectedCourseId(options[0].courseId);
+      setSelectedYear(options[0].year ?? null);
+    } catch (err: any) {
+      setAvailableOptions([]);
+      setSelectedCourseId(null);
+      setSelectedYear(null);
+      setDisciplines([]);
+      setError(err?.message || 'Erro ao carregar planner');
+    } finally {
+      setLoadingPlanner(false);
+    }
+  };
+
+  const fetchCurriculum = async (courseId: number, year: number | null) => {
+    setLoading(true);
+    setError(null);
+    try {
+      const qs = year ? `?year=${year}` : '';
+      const resp = await fetch(`${API_BASE_URL}/curriculum/${courseId}${qs}`);
+      if (!resp.ok) {
+        throw new Error(`HTTP ${resp.status}`);
+      }
+      const data = await resp.json();
+      const all = [
+        ...(data.disciplinas_obrigatorias || []),
+        ...(data.disciplinas_eletivas || []),
+      ];
+      setDisciplines(all);
+    } catch (err: any) {
+      setDisciplines([]);
+      setError(err?.message || 'Erro ao buscar currículo');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      setLoading(true);
-      setError(null);
-      try {
-        const resp = await fetch(`${API_BASE_URL}/curriculum/${COURSE_ID}?year=${YEAR}`);
-        if (!resp.ok) {
-          throw new Error(`HTTP ${resp.status}`);
-        }
-        const data = await resp.json();
-        const all = [...(data.disciplinas_obrigatorias || []), ...(data.disciplinas_eletivas || [])];
-        setDisciplines(all);
-      } catch (err: any) {
-        setError(err?.message || 'Erro ao buscar currículo');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
+    loadPlanner();
   }, []);
+
+  useEffect(() => {
+    if (selectedCourseId) {
+      fetchCurriculum(selectedCourseId, selectedYear);
+    }
+  }, [selectedCourseId, selectedYear]);
 
   const semestersData: Semester[] = useMemo(() => {
     if (!disciplines.length) return [];
@@ -125,9 +186,63 @@ export default function TreeScreen({ navigation }: Props) {
         <Text style={styles.headerTitle}>Árvore</Text>
         <View style={styles.placeholder} />
       </View>
+
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+        <View style={styles.controls}>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.label}>Planner ID</Text>
+            <TextInput
+              value={plannerId}
+              onChangeText={setPlannerId}
+              placeholder="Informe o RA/planner"
+              placeholderTextColor="#808080"
+              style={styles.input}
+            />
+          </View>
+          <TouchableOpacity
+            onPress={loadPlanner}
+            style={styles.reloadButton}
+            disabled={loadingPlanner}
+          >
+            <Text style={styles.reloadButtonText}>
+              {loadingPlanner ? 'Carregando...' : 'Carregar planner'}
+            </Text>
+          </TouchableOpacity>
+        </View>
+
+        {availableOptions.length > 0 && (
+          <View style={styles.optionChips}>
+            {availableOptions.map((option, idx) => {
+              const isSelected =
+                selectedCourseId === option.courseId && selectedYear === (option.year ?? null);
+              return (
+                <TouchableOpacity
+                  key={`${option.courseId}-${option.year ?? 'na'}`}
+                  style={[styles.optionChip, isSelected && styles.optionChipSelected]}
+                  onPress={() => {
+                    setSelectedCourseId(option.courseId);
+                    setSelectedYear(option.year ?? null);
+                  }}
+                >
+                  <Text style={styles.optionChipText}>
+                    Curso {option.courseId}
+                    {option.year ? ` · ${option.year}` : ''}
+                  </Text>
+                  {option.courseName ? (
+                    <Text style={styles.optionChipSub}>{option.courseName}</Text>
+                  ) : (
+                    <Text style={styles.optionChipSub}>Sem nome no snapshot</Text>
+                  )}
+                </TouchableOpacity>
+              );
+            })}
+          </View>
+        )}
+
         <Text style={styles.helperText}>
-          Curso {COURSE_ID} • Catálogo {YEAR} • Fonte: {API_BASE_URL}
+          Fonte: {API_BASE_URL} ·{' '}
+          {selectedCourseId ? `Curso ${selectedCourseId}` : 'Nenhum curso selecionado'}{' '}
+          {selectedYear ? `· Catálogo ${selectedYear}` : ''}
         </Text>
         {loading && (
           <View style={styles.loader}>
@@ -179,6 +294,79 @@ const styles = StyleSheet.create({
   contentContainer: {
     paddingBottom: spacing(8),
   },
+  controls: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    columnGap: spacing(2),
+    marginBottom: spacing(2),
+  },
+  label: {
+    color: colors.text,
+    marginBottom: spacing(1),
+    fontWeight: '600',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#444',
+    borderRadius: 8,
+    paddingVertical: spacing(1),
+    paddingHorizontal: spacing(1.5),
+    color: colors.text,
+    backgroundColor: '#111827',
+  },
+  reloadButton: {
+    backgroundColor: '#333333',
+    paddingVertical: spacing(1.5),
+    paddingHorizontal: spacing(2),
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  reloadButtonText: {
+    color: colors.text,
+    fontWeight: '800',
+  },
+  optionChips: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    rowGap: spacing(1.5),
+    columnGap: spacing(1.5),
+    marginBottom: spacing(2),
+  },
+  optionChip: {
+    backgroundColor: '#1f2937',
+    borderColor: '#374151',
+    borderWidth: 1,
+    paddingHorizontal: spacing(2),
+    paddingVertical: spacing(1.5),
+    borderRadius: 12,
+    minWidth: 140,
+  },
+  optionChipSelected: {
+    borderColor: '#5B8CFF',
+    backgroundColor: '#111827',
+  },
+  optionChipText: {
+    color: colors.text,
+    fontWeight: '700',
+  },
+  optionChipSub: {
+    color: colors.textMuted,
+    fontSize: 12,
+    marginTop: 2,
+  },
+  helperText: {
+    color: colors.text,
+    marginBottom: spacing(1),
+  },
+  loader: {
+    alignItems: 'center',
+    marginVertical: spacing(2),
+  },
+  errorText: {
+    color: '#ff6b6b',
+    marginBottom: spacing(2),
+  },
   semesterCard: {
     backgroundColor: '#E0E0E0',
     borderRadius: 8,
@@ -201,7 +389,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     padding: spacing(2),
-    gap: spacing(1),
+    rowGap: spacing(1),
+    columnGap: spacing(1),
   },
   courseChip: {
     backgroundColor: '#333333',
@@ -231,17 +420,5 @@ const styles = StyleSheet.create({
     color: '#FFD700',
     fontSize: 10,
     fontWeight: 'bold',
-  },
-  helperText: {
-    color: colors.text,
-    marginBottom: spacing(1),
-  },
-  loader: {
-    alignItems: 'center',
-    marginVertical: spacing(2),
-  },
-  errorText: {
-    color: '#ff6b6b',
-    marginBottom: spacing(2),
   },
 });

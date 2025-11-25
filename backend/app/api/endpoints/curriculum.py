@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import List, Optional
 
 from fastapi import APIRouter, Depends
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from app.db.catalog import CatalogRepository, get_catalog_repo
 
@@ -38,8 +38,8 @@ class DisciplineResponse(BaseModel):
     pode: Optional[bool] = None
     obs: Optional[str] = None
     color: Optional[str] = None
-    metadata: dict = {}
-    prereqs: List[List[str]] = []
+    metadata: dict = Field(default_factory=dict)
+    prereqs: List[List[str]] = Field(default_factory=list)
 
 
 class CurriculumDetailResponse(BaseModel):

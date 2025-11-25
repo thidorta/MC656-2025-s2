@@ -1,18 +1,16 @@
-
 version: "3.9"
 services:
   backend:
-    build: ./backend
+    build: .
     container_name: gde-backend
-    ports:
-      - "8080:8080"
+    env_file:
+      - .env
     environment:
-      - NODE_ENV=production
-      - API_KEY=${API_KEY}
-      - GENERAL_DB_PATH=/data/general.db
-      - USER_DB_PATH=/data/user.db
-      - CACHE_TTL_MS=600000
+      - CATALOG_DB_PATH=/app/catalog.db
+      - USER_DB_ROOT=/app/user_db
+    ports:
+      - "8000:8000"
     volumes:
-      - ./data/general.db:/data/general.db:ro
-      - ./data/user.db:/data/user.db
+      - ../crawler/data/db/catalog.db:/app/catalog.db:ro
+      - ../crawler/data/user_db:/app/user_db:ro
     restart: unless-stopped

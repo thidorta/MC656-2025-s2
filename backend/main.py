@@ -1,61 +1,65 @@
+from datetime import datetime, timezone
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
 from app.api.routes import router
+from app.config.settings import get_settings
+from app.db.catalog import open_catalog_connection
 
 app = FastAPI(
     title="GDE API",
     description="API para o sistema GDE - Grade DAC Online",
-    version="1.0.0"
+    version="1.0.0",
 )
 
-# Configuração CORS para permitir requisições do app mobile
+# CORS liberado para desenvolvimento; em produção, restringir domínios.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Em produção, especifique os domínios permitidos
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Incluir rotas
 app.include_router(router, prefix="/api/v1")
+
 
 @app.get("/")
 async def root():
-    return {"message": "GDE API está funcionando!", "status": "online", "version": "1.0.0"}
+    return {
+        "message": "GDE API online",
+        "status": "online",
+        "version": app.version,
+    }
+
 
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy", "timestamp": "2025-09-03"}
+    settings = get_settings()
+    catalog_ok = settings.catalog_db_path.exists()
+    user_db_ok = settings.user_db_root.exists()
+    db_ok = False
+    try:
+        conn = open_catalog_connection(settings)
+        conn.execute("SELECT 1")
+        conn.close()
+        db_ok = True
+    except Exception:
+        db_ok = False
 
-@app.get("/test")
-async def test_endpoint():
+    status = "healthy" if (catalog_ok and db_ok) else "degraded"
     return {
-        "message": "Endpoint de teste funcionando!",
-        "data": {
-            "courses": ["MC102", "MC202", "MC302"],
-            "total": 3
-        }
+        "status": status,
+        "catalog_db_path": str(settings.catalog_db_path),
+        "catalog_db_ok": catalog_ok and db_ok,
+        "user_db_root": str(settings.user_db_root),
+        "user_db_ok": user_db_ok,
+        "timestamp": datetime.now(tz=timezone.utc).isoformat(),
     }
 
-@app.get("/popup-message")
-async def popup_message():
-    return {
-        "title": "🎉 Sucesso na Comunicação!",
-        "message": "O backend FastAPI respondeu com sucesso!\n\n✅ Servidor: Online\n✅ API: Funcionando\n✅ Integração: Perfeita",
-        "timestamp": "2025-09-03",
-        "status": "success",
-        "backend_info": {
-            "framework": "FastAPI",
-            "version": "1.0.0",
-            "endpoint": "/popup-message"
-        }
-    }
-
-@app.get("/api/v1/test")
-async def test_endpoint():
-    return {"message": "Endpoint de teste funcionando!", "version": "1.0.0"}
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8000)

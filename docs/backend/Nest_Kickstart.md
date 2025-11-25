@@ -1,5 +1,7 @@
 
-# NestJS Kickstart (resumo)
+# NestJS Kickstart (legado)
+
+> Documento mantido apenas como referência histórica; o backend atual usa FastAPI.
 
 ## Criar projeto
 npx @nestjs/cli new backend

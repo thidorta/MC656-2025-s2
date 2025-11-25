@@ -12,7 +12,7 @@ const { width } = Dimensions.get('window');
 type Props = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 export default function LoginScreen({ navigation }: Props) {
-  const { email, setEmail, password, setPassword, handleLogin } = useLoginViewModel();
+  const { email, setEmail, password, setPassword, isLoading, handleLogin } = useLoginViewModel();
 
   return (
     <View style={styles.container}>
@@ -35,8 +35,12 @@ export default function LoginScreen({ navigation }: Props) {
         <PasswordInput value={password} onChangeText={setPassword} placeholder="Digite sua senha" />
         <Text style={styles.helperText}>Deve ser o mesmo do GDE</Text>
 
-        <TouchableOpacity onPress={handleLogin} style={styles.loginButton}>
-          <Text style={styles.loginButtonText}>Login</Text>
+        <TouchableOpacity
+          onPress={handleLogin}
+          style={[styles.loginButton, isLoading && styles.loginButtonDisabled]}
+          disabled={isLoading}
+        >
+          <Text style={styles.loginButtonText}>{isLoading ? 'Entrando...' : 'Login'}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -116,6 +120,9 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: '800',
     fontSize: 16,
+  },
+  loginButtonDisabled: {
+    opacity: 0.6,
   },
   registerButton: {
     backgroundColor: '#E0E0E0',
