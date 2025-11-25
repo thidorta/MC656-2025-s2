@@ -10,21 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "VC",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "4913",
-      "codigo": "MU193",
-      "nome": "Percepção Musical I",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "VC",
-      "prereqs": []
-    },
     {
       "disciplina_id": "5002",
       "codigo": "MU360",
@@ -89,6 +78,17 @@
       "codigo": "MU179",
       "nome": "Prática Orquestral I",
       "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VC",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 1,
@@ -216,17 +216,6 @@
       ]
     },
     {
-      "disciplina_id": "4904",
-      "codigo": "MU178",
-      "nome": "Música de Câmera I",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "VC",
-      "prereqs": []
-    },
-    {
       "disciplina_id": "4992",
       "codigo": "MU327",
       "nome": "Violoncelo III",
@@ -330,6 +319,17 @@
           "MU205"
         ]
       ]
+    },
+    {
+      "disciplina_id": "4904",
+      "codigo": "MU178",
+      "nome": "Música de Câmera I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VC",
+      "prereqs": []
     },
     {
       "disciplina_id": "5117",
@@ -452,21 +452,6 @@
       ]
     },
     {
-      "disciplina_id": "5010",
-      "codigo": "MU378",
-      "nome": "Música de Câmera III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "VC",
-      "prereqs": [
-        [
-          "MU278"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "5077",
       "codigo": "MU527",
       "nome": "Violoncelo V",
@@ -538,6 +523,21 @@
       "prereqs": [
         [
           "MU246"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5010",
+      "codigo": "MU378",
+      "nome": "Música de Câmera III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VC",
+      "prereqs": [
+        [
+          "MU278"
         ]
       ]
     },
@@ -643,21 +643,6 @@
       ]
     },
     {
-      "disciplina_id": "5145",
-      "codigo": "MU727",
-      "nome": "Violoncelo VII",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "VC",
-      "prereqs": [
-        [
-          "MU627"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "5151",
       "codigo": "MU779",
       "nome": "Prática Orquestral VII",
@@ -684,6 +669,21 @@
       "prereqs": [
         [
           "MP106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5145",
+      "codigo": "MU727",
+      "nome": "Violoncelo VII",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "VC",
+      "prereqs": [
+        [
+          "MU627"
         ]
       ]
     },

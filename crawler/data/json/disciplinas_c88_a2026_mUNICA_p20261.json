@@ -1,0 +1,567 @@
+{
+  "curso": "Engenharia de Telecomunicações (88)",
+  "numero_curso": 88,
+  "catalogo": "2026",
+  "modalidade": "UNICA",
+  "periodo": "20261",
+  "disciplinas": [
+    {
+      "disciplina_id": "6150",
+      "codigo": "TT108",
+      "nome": "Fundamentos para Telecomunicações",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "9738",
+      "codigo": "TT114",
+      "nome": "Expressão Gráfica",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "9726",
+      "codigo": "EB102",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "9730",
+      "codigo": "SI100",
+      "nome": "Algoritmos e Programação de Computadores I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "10030",
+      "codigo": "TT217",
+      "nome": "Química Aplicada",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "18150",
+      "codigo": "TT219",
+      "nome": "Fundamentos de  Eletricidade",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "18151",
+      "codigo": "TT227",
+      "nome": "METODOLOGIA DO TRABALHO CIENTÍFICO",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "9727",
+      "codigo": "EB103",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "10035",
+      "codigo": "TT314",
+      "nome": "Orientação a Objetos I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "9728",
+      "codigo": "EB104",
+      "nome": "Laboratório de Física I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "10081",
+      "codigo": "EB201",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "17620",
+      "codigo": "EB308",
+      "nome": "Introdução à Extensão Universitária",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "10095",
+      "codigo": "EB405",
+      "nome": "Mecânica dos Sólidos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "6163",
+      "codigo": "TT302",
+      "nome": "Circuitos Digitais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "18152",
+      "codigo": "TT317",
+      "nome": "CIRCUITOS ELÉTRICOS I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "18153",
+      "codigo": "TT318",
+      "nome": "Introdução à Programação em Python",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "10083",
+      "codigo": "EB203",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "10084",
+      "codigo": "EB204",
+      "nome": "Laboratório de Física II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "10086",
+      "codigo": "EB301",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "10039",
+      "codigo": "TT413",
+      "nome": "Métodos Matemáticos para Telecomunicacões",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "18154",
+      "codigo": "TT422",
+      "nome": "CIRCUITOS ELÉTRICOS II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "18155",
+      "codigo": "TT423",
+      "nome": "PROBABILIDADE E PROCESSOS ALEATÓRIOS",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "18156",
+      "codigo": "TT429",
+      "nome": "Programação de Dispositivos Móveis",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "18157",
+      "codigo": "TT431",
+      "nome": "CIRCUITOS DIGITAIS II",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "10094",
+      "codigo": "EB402",
+      "nome": "Fenômenos de Transporte",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "10034",
+      "codigo": "TT313",
+      "nome": "Física Aplicada III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "10044",
+      "codigo": "TT511",
+      "nome": "Eletromagnetismo Aplicado",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "10047",
+      "codigo": "TT514",
+      "nome": "Sinais e Sistemas",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "18158",
+      "codigo": "TT518",
+      "nome": "ÓPTICA E CIÊNCIA DOS MATERIAIS",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "18159",
+      "codigo": "TT525",
+      "nome": "ELETRÔNICA ANALÓGICA I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "18160",
+      "codigo": "TT526",
+      "nome": "MICROCONTROLADORES I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "10103",
+      "codigo": "EB406",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "10031",
+      "codigo": "TT310",
+      "nome": "Redes de Comunicação I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "18163",
+      "codigo": "TT635",
+      "nome": "MICROCONTROLADORES II",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "10053",
+      "codigo": "TT606",
+      "nome": "Ondas Guiadas",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "10054",
+      "codigo": "TT607",
+      "nome": "Laboratório de Ondas Guiadas",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "10055",
+      "codigo": "TT608",
+      "nome": "Laboratório de Sistemas de Telecomunicações",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "10056",
+      "codigo": "TT609",
+      "nome": "Sistemas de Telecomunicações",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "18161",
+      "codigo": "TT624",
+      "nome": "PROCESSAMENTO DIGITAL DE SINAIS",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "18162",
+      "codigo": "TT625",
+      "nome": "ELETRÔNICA ANALÓGICA II",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "10040",
+      "codigo": "TT414",
+      "nome": "Redes de Comunicação II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "14400",
+      "codigo": "TT710",
+      "nome": "Tecnologias de Radiofrequência e Micro-Ondas",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "18164",
+      "codigo": "TT711",
+      "nome": "PROPAGAÇÃO DE ONDAS ELETROMAGNÉTICAS - ANTENAS",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "18165",
+      "codigo": "TT717",
+      "nome": "Princípios de Comunicações Ópticas",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "10065",
+      "codigo": "TT901",
+      "nome": "Transmissão de Sinais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "10069",
+      "codigo": "TT905",
+      "nome": "Programação Web",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "10074",
+      "codigo": "TT909",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "10061",
+      "codigo": "TT704",
+      "nome": "Comunicações Móveis",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "18167",
+      "codigo": "TT811",
+      "nome": "REDES AVANÇADAS",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8
+    },
+    {
+      "disciplina_id": "10066",
+      "codigo": "TT902",
+      "nome": "Introdução ao Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8
+    },
+    {
+      "disciplina_id": "17631",
+      "codigo": "EB807",
+      "nome": "Introdução à Administração de Organizações",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8
+    },
+    {
+      "disciplina_id": "10072",
+      "codigo": "TT907",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8
+    },
+    {
+      "disciplina_id": "18177",
+      "codigo": "TT935",
+      "nome": "Atividades Complementares",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8
+    },
+    {
+      "disciplina_id": "17628",
+      "codigo": "EB708",
+      "nome": "Introdução à Economia",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8
+    },
+    {
+      "disciplina_id": "10071",
+      "codigo": "TT914",
+      "nome": "Estágio Supervisionado",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8
+    },
+    {
+      "disciplina_id": "18174",
+      "codigo": "TT928",
+      "nome": "Projetos de Extensão Comunitária II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18169",
+      "codigo": "TT923",
+      "nome": "Trabalho de Conclusão de Curso com Extensão",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18173",
+      "codigo": "TT927",
+      "nome": "Iniciação Científica com Extensão",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17635",
+      "codigo": "EB909",
+      "nome": "Tópicos em Extensão Universitária",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17634",
+      "codigo": "EB908",
+      "nome": "Projeto Integrador",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "10073",
+      "codigo": "TT908",
+      "nome": "Projetos de Extensão Comunitária",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    }
+  ]
+}

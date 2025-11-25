@@ -10,43 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "PN",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "4866",
-      "codigo": "MU120",
-      "nome": "Coral I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "PN",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4868",
-      "codigo": "MU123",
-      "nome": "Piano I",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "PN",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4913",
-      "codigo": "MU193",
-      "nome": "Percepção Musical I",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "PN",
-      "prereqs": []
-    },
     {
       "disciplina_id": "5002",
       "codigo": "MU360",
@@ -85,49 +52,37 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "4841",
-      "codigo": "MU059",
-      "nome": "Rítmica II",
+      "disciplina_id": "4866",
+      "codigo": "MU120",
+      "nome": "Coral I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PN",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4868",
+      "codigo": "MU123",
+      "nome": "Piano I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PN",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
       "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 1,
       "modalidade": "PN",
-      "prereqs": [
-        [
-          "MU058"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4919",
-      "codigo": "MU205",
-      "nome": "Estruturação Musical II",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "PN",
-      "prereqs": [
-        [
-          "MU105"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4928",
-      "codigo": "MU220",
-      "nome": "Coral II",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "PN",
-      "prereqs": [
-        [
-          "MU120"
-        ]
-      ]
+      "prereqs": []
     },
     {
       "disciplina_id": "4930",
@@ -190,47 +145,47 @@
       ]
     },
     {
-      "disciplina_id": "5084",
-      "codigo": "MU560",
-      "nome": "História da Música III",
-      "creditos": 2,
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU460"
+          "MU058"
         ]
       ]
     },
     {
-      "disciplina_id": "4864",
-      "codigo": "MU114",
-      "nome": "Análise I",
+      "disciplina_id": "4919",
+      "codigo": "MU205",
+      "nome": "Estruturação Musical II",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU205"
+          "MU105"
         ]
       ]
     },
     {
-      "disciplina_id": "4881",
-      "codigo": "MU146",
-      "nome": "Harmonia do Período Barroco",
+      "disciplina_id": "4928",
+      "codigo": "MU220",
+      "nome": "Coral II",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU205"
+          "MU120"
         ]
       ]
     },
@@ -302,62 +257,47 @@
       ]
     },
     {
-      "disciplina_id": "4968",
-      "codigo": "MU281",
-      "nome": "Acompanhamento II",
-      "creditos": 1,
+      "disciplina_id": "5084",
+      "codigo": "MU560",
+      "nome": "História da Música III",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU181"
+          "MU460"
         ]
       ]
     },
     {
-      "disciplina_id": "5032",
-      "codigo": "MU423",
-      "nome": "Piano IV",
-      "creditos": 3,
+      "disciplina_id": "4864",
+      "codigo": "MU114",
+      "nome": "Análise I",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU323"
+          "MU205"
         ]
       ]
     },
     {
-      "disciplina_id": "5060",
-      "codigo": "MU493",
-      "nome": "Percepção Musical IV",
-      "creditos": 5,
+      "disciplina_id": "4881",
+      "codigo": "MU146",
+      "nome": "Harmonia do Período Barroco",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU393"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4843",
-      "codigo": "MU061",
-      "nome": "Rítmica IV",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 4,
-      "modalidade": "PN",
-      "prereqs": [
-        [
-          "MU060"
+          "MU205"
         ]
       ]
     },
@@ -422,47 +362,62 @@
       ]
     },
     {
-      "disciplina_id": "4986",
-      "codigo": "MU314",
-      "nome": "Análise III",
-      "creditos": 2,
+      "disciplina_id": "4968",
+      "codigo": "MU281",
+      "nome": "Acompanhamento II",
+      "creditos": 1,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU214"
+          "MU181"
         ]
       ]
     },
     {
-      "disciplina_id": "4994",
-      "codigo": "MU346",
-      "nome": "Harmonia do Romantismo ao Século XX",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "PN",
-      "prereqs": [
-        [
-          "MU246"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5010",
-      "codigo": "MU378",
-      "nome": "Música de Câmera III",
+      "disciplina_id": "5032",
+      "codigo": "MU423",
+      "nome": "Piano IV",
       "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU278"
+          "MU323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5060",
+      "codigo": "MU493",
+      "nome": "Percepção Musical IV",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PN",
+      "prereqs": [
+        [
+          "MU393"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4843",
+      "codigo": "MU061",
+      "nome": "Rítmica IV",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PN",
+      "prereqs": [
+        [
+          "MU060"
         ]
       ]
     },
@@ -512,43 +467,47 @@
       ]
     },
     {
-      "disciplina_id": "16223",
-      "codigo": "MP106",
-      "nome": "Atividades complementares I",
-      "creditos": 7,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "PN",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4973",
-      "codigo": "MU290",
-      "nome": "História da Música Brasileira II",
+      "disciplina_id": "4986",
+      "codigo": "MU314",
+      "nome": "Análise III",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 5,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU190"
+          "MU214"
         ]
       ]
     },
     {
-      "disciplina_id": "5029",
-      "codigo": "MU414",
-      "nome": "Análise IV",
+      "disciplina_id": "4994",
+      "codigo": "MU346",
+      "nome": "Harmonia do Romantismo ao Século XX",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 5,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MU314"
+          "MU246"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5010",
+      "codigo": "MU378",
+      "nome": "Música de Câmera III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "PN",
+      "prereqs": [
+        [
+          "MU278"
         ]
       ]
     },
@@ -613,17 +572,43 @@
       ]
     },
     {
-      "disciplina_id": "16224",
-      "codigo": "MP107",
-      "nome": "Atividades complementares II",
+      "disciplina_id": "16223",
+      "codigo": "MP106",
+      "nome": "Atividades complementares I",
       "creditos": 7,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 7,
+      "semestre": 6,
+      "modalidade": "PN",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4973",
+      "codigo": "MU290",
+      "nome": "História da Música Brasileira II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
       "modalidade": "PN",
       "prereqs": [
         [
-          "MP106"
+          "MU190"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5029",
+      "codigo": "MU414",
+      "nome": "Análise IV",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "PN",
+      "prereqs": [
+        [
+          "MU314"
         ]
       ]
     },
@@ -639,6 +624,21 @@
       "prereqs": [
         [
           "MU623"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "16224",
+      "codigo": "MP107",
+      "nome": "Atividades complementares II",
+      "creditos": 7,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "PN",
+      "prereqs": [
+        [
+          "MP106"
         ]
       ]
     },

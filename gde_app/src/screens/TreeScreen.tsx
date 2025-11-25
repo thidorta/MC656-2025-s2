@@ -1,125 +1,44 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import React, { useEffect, useMemo, useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/types';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { API_BASE_URL } from '../config/api';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Tree'>;
 
-interface Course {
-  code: string;
-  prereqs: string[];
-}
+type Discipline = {
+  codigo: string;
+  nome?: string;
+  semestre?: number | null;
+  tipo?: string | null;
+  prereqs?: string[][];
+};
 
-interface Semester {
+type Semester = {
   id: string;
   title: string;
-  courses: Course[];
-}
+  courses: {
+    code: string;
+    prereqs: string[];
+  }[];
+};
 
-// Dummy data for semesters and courses
-const semestersData: Semester[] = [
-  { 
-    id: '1', 
-    title: '1 Semestre', 
-    courses: [
-      { code: 'MC102', prereqs: [] },
-      { code: 'MA111', prereqs: [] },
-      { code: 'MS180', prereqs: [] },
-      { code: 'F129', prereqs: [] },
-      { code: 'MO001', prereqs: [] }
-    ] 
-  },
-  { 
-    id: '2', 
-    title: '2 Semestre', 
-    courses: [
-      { code: 'MC202', prereqs: ['MC102'] },
-      { code: 'MA211', prereqs: ['MA111'] },
-      { code: 'MS211', prereqs: ['MA111'] },
-      { code: 'F329', prereqs: ['F129', 'MA111'] }
-    ] 
-  },
-  { 
-    id: '3', 
-    title: '3 Semestre', 
-    courses: [
-      { code: 'MC322', prereqs: ['MC202'] },
-      { code: 'MC358', prereqs: ['MC202'] },
-      { code: 'ME210', prereqs: ['MA111'] },
-      { code: 'AC209', prereqs: [] },
-      { code: 'Eletiva A', prereqs: [] }
-    ] 
-  },
-  { 
-    id: '4', 
-    title: '4 Semestre', 
-    courses: [
-      { code: 'MC404', prereqs: ['MC202'] },
-      { code: 'MC426', prereqs: ['MC322'] },
-      { code: 'EA513', prereqs: ['MC202'] },
-      { code: 'Eletiva B', prereqs: [] }
-    ] 
-  },
-  { 
-    id: '5', 
-    title: '5 Semestre', 
-    courses: [
-      { code: 'MC437', prereqs: ['MC302'] },
-      { code: 'MC504', prereqs: ['MC404'] },
-      { code: 'MC536', prereqs: ['MC322'] }
-    ] 
-  },
-  { 
-    id: '6', 
-    title: '6 Semestre', 
-    courses: [
-      { code: 'MC521', prereqs: ['MC202'] },
-      { code: 'MC613', prereqs: ['MC504'] },
-      { code: 'MC621', prereqs: ['MC536'] },
-      { code: 'Eletiva C', prereqs: [] }
-    ] 
-  },
-  { 
-    id: '7', 
-    title: '7 Semestre', 
-    courses: [
-      { code: 'MC714', prereqs: ['MC521'] },
-      { code: 'MC750', prereqs: ['MC426'] },
-      { code: 'Eletiva D', prereqs: [] }
-    ] 
-  },
-  { 
-    id: '8', 
-    title: '8 Semestre', 
-    courses: [
-      { code: 'MC855', prereqs: ['MC536'] },
-      { code: 'MC833', prereqs: ['MC404'] },
-      { code: 'Estágio', prereqs: ['MC102'] }
-    ] 
-  },
-];
-
-const CourseChip = ({ course }: { course: Course }) => (
+const CourseChip = ({ course }: { course: { code: string; prereqs: string[] } }) => (
   <View style={styles.courseChip}>
     <Text style={styles.courseChipText}>{course.code}</Text>
-    
-    {/* Render prerequisites if they exist */}
     {course.prereqs.length > 0 && (
       <View style={styles.prereqContainer}>
         <Text style={styles.prereqLabel}>Req:</Text>
-        <Text style={styles.prereqList}>
-          {course.prereqs.join(', ')}
-        </Text>
+        <Text style={styles.prereqList}>{course.prereqs.join(', ')}</Text>
       </View>
     )}
   </View>
 );
 
-// Component for a collapsible semester section
 const SemesterSection = ({ semester }: { semester: Semester }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
@@ -136,7 +55,6 @@ const SemesterSection = ({ semester }: { semester: Semester }) => {
       {!isCollapsed && (
         <View style={styles.courseContainer}>
           {semester.courses.map((course, index) => (
-            // Passing the entire course object now
             <CourseChip key={index} course={course} />
           ))}
         </View>
@@ -146,6 +64,58 @@ const SemesterSection = ({ semester }: { semester: Semester }) => {
 };
 
 export default function TreeScreen({ navigation }: Props) {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [disciplines, setDisciplines] = useState<Discipline[]>([]);
+
+  // Ajuste aqui para testar outros cursos/anos
+  const COURSE_ID = 34;
+  const YEAR = 2026;
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        const resp = await fetch(`${API_BASE_URL}/curriculum/${COURSE_ID}?year=${YEAR}`);
+        if (!resp.ok) {
+          throw new Error(`HTTP ${resp.status}`);
+        }
+        const data = await resp.json();
+        const all = [...(data.disciplinas_obrigatorias || []), ...(data.disciplinas_eletivas || [])];
+        setDisciplines(all);
+      } catch (err: any) {
+        setError(err?.message || 'Erro ao buscar currículo');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const semestersData: Semester[] = useMemo(() => {
+    if (!disciplines.length) return [];
+    const grouped: Record<string, Semester> = {};
+    disciplines.forEach((d) => {
+      const sem = d.semestre && Number.isInteger(d.semestre) ? Number(d.semestre) : 0;
+      const key = sem > 0 ? String(sem) : '0';
+      const prereqList = Array.isArray(d.prereqs) ? d.prereqs.flat().filter(Boolean) : [];
+      if (!grouped[key]) {
+        grouped[key] = {
+          id: key,
+          title: sem > 0 ? `${sem}º Semestre` : 'Semestre não informado',
+          courses: [],
+        };
+      }
+      grouped[key].courses.push({
+        code: d.codigo,
+        prereqs: prereqList,
+      });
+    });
+    return Object.values(grouped).sort((a, b) => Number(a.id) - Number(b.id));
+  }, [disciplines]);
+
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
       <View style={styles.header}>
@@ -156,9 +126,22 @@ export default function TreeScreen({ navigation }: Props) {
         <View style={styles.placeholder} />
       </View>
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-        {semestersData.map((semester) => (
-          <SemesterSection key={semester.id} semester={semester} />
-        ))}
+        <Text style={styles.helperText}>
+          Curso {COURSE_ID} • Catálogo {YEAR} • Fonte: {API_BASE_URL}
+        </Text>
+        {loading && (
+          <View style={styles.loader}>
+            <ActivityIndicator size="large" color={colors.text} />
+            <Text style={styles.helperText}>Carregando currículo...</Text>
+          </View>
+        )}
+        {error && <Text style={styles.errorText}>{error}</Text>}
+        {!loading && !error && semestersData.length === 0 && (
+          <Text style={styles.helperText}>Nenhuma disciplina encontrada.</Text>
+        )}
+        {!loading &&
+          !error &&
+          semestersData.map((semester) => <SemesterSection key={semester.id} semester={semester} />)}
       </ScrollView>
     </SafeAreaView>
   );
@@ -225,9 +208,8 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(2),
-    // Added minWidth to better accommodate extra texts
-    minWidth: 80, 
-    alignItems: 'center', 
+    minWidth: 80,
+    alignItems: 'center',
   },
   courseChipText: {
     color: colors.text,
@@ -235,20 +217,31 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     marginBottom: 2,
   },
-  // Styles for prerequisites
-    prereqContainer: {
+  prereqContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 2,
   },
   prereqLabel: {
-    color: '#AAAAAA', 
+    color: '#AAAAAA',
     fontSize: 10,
     marginRight: 2,
   },
   prereqList: {
-    color: '#FFD700', 
+    color: '#FFD700',
     fontSize: 10,
     fontWeight: 'bold',
+  },
+  helperText: {
+    color: colors.text,
+    marginBottom: spacing(1),
+  },
+  loader: {
+    alignItems: 'center',
+    marginVertical: spacing(2),
+  },
+  errorText: {
+    color: '#ff6b6b',
+    marginBottom: spacing(2),
   },
 });

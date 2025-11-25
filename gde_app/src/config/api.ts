@@ -1,2 +1,2 @@
-export const API_BASE_URL =
-  process.env.EXPO_PUBLIC_API_BASE_URL || '{API_BASE_URL}';
+// Base fixa para chamadas da API do backend (sem depender de .env)
+export const API_BASE_URL = "http://localhost:8000/api/v1";

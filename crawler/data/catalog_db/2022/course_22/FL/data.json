@@ -10,21 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "FL",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "4913",
-      "codigo": "MU193",
-      "nome": "Percepção Musical I",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "FL",
-      "prereqs": []
-    },
     {
       "disciplina_id": "5002",
       "codigo": "MU360",
@@ -96,19 +85,15 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "4967",
-      "codigo": "MU279",
-      "nome": "Prática Orquestral II",
-      "creditos": 4,
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 1,
       "modalidade": "FL",
-      "prereqs": [
-        [
-          "MU179"
-        ]
-      ]
+      "prereqs": []
     },
     {
       "disciplina_id": "4975",
@@ -216,15 +201,19 @@
       ]
     },
     {
-      "disciplina_id": "4904",
-      "codigo": "MU178",
-      "nome": "Música de Câmera I",
-      "creditos": 3,
+      "disciplina_id": "4967",
+      "codigo": "MU279",
+      "nome": "Prática Orquestral II",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "FL",
-      "prereqs": []
+      "prereqs": [
+        [
+          "MU179"
+        ]
+      ]
     },
     {
       "disciplina_id": "4979",
@@ -332,19 +321,15 @@
       ]
     },
     {
-      "disciplina_id": "5117",
-      "codigo": "MU660",
-      "nome": "História da Música IV",
-      "creditos": 2,
+      "disciplina_id": "4904",
+      "codigo": "MU178",
+      "nome": "Música de Câmera I",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "FL",
-      "prereqs": [
-        [
-          "MU560"
-        ]
-      ]
+      "prereqs": []
     },
     {
       "disciplina_id": "4925",
@@ -452,17 +437,17 @@
       ]
     },
     {
-      "disciplina_id": "5010",
-      "codigo": "MU378",
-      "nome": "Música de Câmera III",
-      "creditos": 3,
+      "disciplina_id": "5117",
+      "codigo": "MU660",
+      "nome": "História da Música IV",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "FL",
       "prereqs": [
         [
-          "MU278"
+          "MU560"
         ]
       ]
     },
@@ -542,17 +527,17 @@
       ]
     },
     {
-      "disciplina_id": "5037",
-      "codigo": "MU446",
-      "nome": "Harmonia do Século XX",
-      "creditos": 2,
+      "disciplina_id": "5010",
+      "codigo": "MU378",
+      "nome": "Música de Câmera III",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 5,
       "modalidade": "FL",
       "prereqs": [
         [
-          "MU346"
+          "MU278"
         ]
       ]
     },
@@ -643,17 +628,17 @@
       ]
     },
     {
-      "disciplina_id": "5133",
-      "codigo": "MU703",
-      "nome": "Flauta VII",
-      "creditos": 3,
+      "disciplina_id": "5037",
+      "codigo": "MU446",
+      "nome": "Harmonia do Século XX",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 7,
+      "semestre": 6,
       "modalidade": "FL",
       "prereqs": [
         [
-          "MU603"
+          "MU346"
         ]
       ]
     },
@@ -684,6 +669,21 @@
       "prereqs": [
         [
           "MP106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5133",
+      "codigo": "MU703",
+      "nome": "Flauta VII",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "FL",
+      "prereqs": [
+        [
+          "MU603"
         ]
       ]
     },

@@ -10,10 +10,32 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "AA",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
     {
       "disciplina_id": "5336",
       "codigo": "QG005",
@@ -59,24 +81,24 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "4084",
-      "codigo": "MA111",
-      "nome": "Cálculo I",
-      "creditos": 6,
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "AA",
       "prereqs": []
     },
     {
-      "disciplina_id": "4086",
-      "codigo": "MA141",
-      "nome": "Geometria Analítica e Vetores",
-      "creditos": 4,
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "AA",
       "prereqs": []
     },
@@ -147,26 +169,49 @@
       ]
     },
     {
-      "disciplina_id": "2742",
-      "codigo": "F 128",
-      "nome": "Física Geral I",
-      "creditos": 4,
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "AA",
-      "prereqs": []
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
     },
     {
-      "disciplina_id": "2743",
-      "codigo": "F 129",
-      "nome": "Física Experimental I",
+      "disciplina_id": "12178",
+      "codigo": "QA381",
+      "nome": "Espectroanalítica",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "AA",
-      "prereqs": []
+      "prereqs": [
+        [
+          "QA282"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12179",
+      "codigo": "QA383",
+      "nome": "Eletroanalítica",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "QA282"
+        ]
+      ]
     },
     {
       "disciplina_id": "5318",
@@ -215,28 +260,28 @@
       ]
     },
     {
-      "disciplina_id": "4099",
-      "codigo": "MA311",
-      "nome": "Cálculo III",
-      "creditos": 6,
+      "disciplina_id": "5400",
+      "codigo": "QO424",
+      "nome": "Fundamentos em Espectroscopia e Ressonância Magnética Nuclear",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "AA",
       "prereqs": [
         [
-          "MA211"
+          "QO321"
         ]
       ]
     },
     {
-      "disciplina_id": "12178",
-      "codigo": "QA381",
-      "nome": "Espectroanalítica",
+      "disciplina_id": "12180",
+      "codigo": "QA481",
+      "nome": "Métodos de Separação",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "AA",
       "prereqs": [
         [
@@ -245,13 +290,13 @@
       ]
     },
     {
-      "disciplina_id": "12179",
-      "codigo": "QA383",
-      "nome": "Eletroanalítica",
+      "disciplina_id": "12181",
+      "codigo": "QA483",
+      "nome": "Estatística Aplicada à Química Analítica",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "AA",
       "prereqs": [
         [
@@ -346,13 +391,13 @@
       ]
     },
     {
-      "disciplina_id": "5400",
-      "codigo": "QO424",
-      "nome": "Fundamentos em Espectroscopia e Ressonância Magnética Nuclear",
-      "creditos": 2,
+      "disciplina_id": "5404",
+      "codigo": "QO551",
+      "nome": "Bioquímica I",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "AA",
       "prereqs": [
         [
@@ -361,32 +406,20 @@
       ]
     },
     {
-      "disciplina_id": "12180",
-      "codigo": "QA481",
-      "nome": "Métodos de Separação",
+      "disciplina_id": "12183",
+      "codigo": "QA583",
+      "nome": "Preparo de Amostras",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "AA",
       "prereqs": [
         [
-          "QA282"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "12181",
-      "codigo": "QA483",
-      "nome": "Estatística Aplicada à Química Analítica",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 4,
-      "modalidade": "AA",
-      "prereqs": [
-        [
-          "QA282"
+          "QA381",
+          "QA383",
+          "QA481",
+          "QA483"
         ]
       ]
     },
@@ -458,35 +491,38 @@
       ]
     },
     {
-      "disciplina_id": "5404",
-      "codigo": "QO551",
-      "nome": "Bioquímica I",
+      "disciplina_id": "5302",
+      "codigo": "QA815",
+      "nome": "Química do Meio Ambiente",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 6,
       "modalidade": "AA",
       "prereqs": [
         [
-          "QO321"
+          "QA282",
+          "QF531"
         ]
       ]
     },
     {
-      "disciplina_id": "12183",
-      "codigo": "QA583",
-      "nome": "Preparo de Amostras",
-      "creditos": 2,
+      "disciplina_id": "5326",
+      "codigo": "QF632",
+      "nome": "Físico-Química Experimental I",
+      "creditos": 8,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 6,
       "modalidade": "AA",
       "prereqs": [
         [
-          "QA381",
-          "QA383",
-          "QA481",
-          "QA483"
+          "QA282",
+          "QF531"
+        ],
+        [
+          "QA217",
+          "QF531"
         ]
       ]
     },
@@ -549,58 +585,6 @@
       ]
     },
     {
-      "disciplina_id": "5302",
-      "codigo": "QA815",
-      "nome": "Química do Meio Ambiente",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "AA",
-      "prereqs": [
-        [
-          "QA282",
-          "QF531"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5326",
-      "codigo": "QF632",
-      "nome": "Físico-Química Experimental I",
-      "creditos": 8,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "AA",
-      "prereqs": [
-        [
-          "QA282",
-          "QF531"
-        ],
-        [
-          "QA217",
-          "QF531"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "10597",
-      "codigo": "QO653",
-      "nome": "Bioquímica II",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "AA",
-      "prereqs": [
-        [
-          "QO521",
-          "QO551"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "12186",
       "codigo": "QG770",
       "nome": "Projetos de Pesquisa em Química I",
@@ -624,6 +608,22 @@
         [
           "QG564",
           "QI545"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10597",
+      "codigo": "QO653",
+      "nome": "Bioquímica II",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "QO521",
+          "QO551"
         ]
       ]
     },

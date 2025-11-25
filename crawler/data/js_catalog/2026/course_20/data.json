@@ -1,0 +1,5009 @@
+{
+  "course": {
+    "id": 20,
+    "name": "Pedagogia (20)",
+    "code": "20"
+  },
+  "modalities": [],
+  "curriculum": {
+    "course_id": 20,
+    "year": 2026,
+    "modality": "AA",
+    "nodes": [
+      {
+        "code": "F 229",
+        "name": "Física Experimental II",
+        "period": 2,
+        "category": null
+      },
+      {
+        "code": "MC458",
+        "name": "Projeto e Análise de Algoritmos I",
+        "period": 5,
+        "category": "Obrigatória"
+      },
+      {
+        "code": "MC536",
+        "name": "Bancos de Dados: Teoria e Prática",
+        "period": 5,
+        "category": "Obrigatória"
+      },
+      {
+        "code": "MC613",
+        "name": "Laboratório de Circuitos Digitais",
+        "period": 5,
+        "category": "Obrigatória"
+      },
+      {
+        "code": "MC558",
+        "name": "Projeto e Análise de Algoritmos II",
+        "period": 6,
+        "category": null
+      },
+      {
+        "code": "MC832",
+        "name": "Redes de Computadores",
+        "period": 8,
+        "category": "Obrigatória"
+      },
+      {
+        "code": "MC714",
+        "name": "Sistemas Distribuídos",
+        "period": 9,
+        "category": "Obrigatória"
+      },
+      {
+        "code": "MC833",
+        "name": "Programação de Redes de Computadores",
+        "period": 9,
+        "category": null
+      },
+      {
+        "code": "MC921",
+        "name": "Projeto e Construção de Compiladores",
+        "period": 9,
+        "category": "Obrigatória"
+      },
+      {
+        "code": "MC030",
+        "name": "Projeto Final de Graduação",
+        "period": 10,
+        "category": null
+      },
+      {
+        "code": "MC019",
+        "name": "Estágio Supervisionado em Ciência da Computação",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC020",
+        "name": "Estágio Supervisionado em Ciência da Computação II",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC032",
+        "name": "Estudo Dirigido",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC033",
+        "name": "Estudo Dirigido II",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC040",
+        "name": "Estágio de Iniciação Científica I",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC041",
+        "name": "Estágio de Iniciação Científica II",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC050",
+        "name": "Monitoria",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC051",
+        "name": "Monitoria II",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC346",
+        "name": "Paradigmas de Programação",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC521",
+        "name": "Desafios de Programação I",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC621",
+        "name": "Desafios de Programação II",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC646",
+        "name": "Verificação, Validação e Testes de Software",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC658",
+        "name": "Projeto e Análise de Algoritmos III",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC721",
+        "name": "Desafios de Programação III",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC821",
+        "name": "Desafios de Programação IV",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC851",
+        "name": "Projeto em Computação I",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC853",
+        "name": "Projeto em Sistemas de Programação",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC855",
+        "name": "Projeto em Sistemas de Computação",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC857",
+        "name": "Projeto em Sistemas de Informação",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC859",
+        "name": "Projeto em Teoria da Computação",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC861",
+        "name": "Projeto em Computação II",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC871",
+        "name": "Projeto em Computação III",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC881",
+        "name": "Projeto em Computação IV",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC886",
+        "name": "Aprendizado de Máquina",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC896",
+        "name": "Processamento de Línguas Naturais",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC906",
+        "name": "Introdução à Inteligência Artificial",
+        "period": 0,
+        "category": "Eletiva"
+      },
+      {
+        "code": "MC907",
+        "name": "Robótica Móvel",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC919",
+        "name": "Tópicos Especiais em Processamento Gráfico",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC920",
+        "name": "Introdução ao Processamento de Imagem Digital",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC937",
+        "name": "Computação Gráfica",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC940",
+        "name": "Processamento e Análise de Imagens",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC949",
+        "name": "Visão Computacional",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC950",
+        "name": "Recuperação de Imagens por Conteúdo",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC959",
+        "name": "Tópicos em Inteligência Artificial I",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC970",
+        "name": "Introdução à Programação Paralela",
+        "period": 0,
+        "category": null
+      },
+      {
+        "code": "MC971",
+        "name": "Introdução à Programação Concorrente",
+        "period": 0,
+        "category": null
+      }
+    ],
+    "edges": []
+  },
+  "offers": [
+    {
+      "course_code": "MC458",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375352,
+        "siglan": "MC458",
+        "turma": "A",
+        "professor": "Hilder Vitor Lima Pereira",
+        "vagas": 75,
+        "fechado": false,
+        "link": "MC458 A (75)",
+        "horarios": [
+          "510",
+          "511",
+          "310",
+          "311"
+        ],
+        "professores": [
+          {
+            "nome": "Hilder Vitor Lima Pereira",
+            "mediap": 42,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375352,
+              "title": "MC458 A CB07",
+              "start": "2003-12-02T10:00:00-03:00",
+              "end": "2003-12-02T12:00:00-03:00"
+            },
+            {
+              "id": 375352,
+              "title": "MC458 A CB16",
+              "start": "2003-12-04T10:00:00-03:00",
+              "end": "2003-12-04T12:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#E67399"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC458",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375353,
+        "siglan": "MC458",
+        "turma": "B",
+        "professor": "Orlando Lee",
+        "vagas": 60,
+        "fechado": false,
+        "link": "MC458 B (60)",
+        "horarios": [
+          "519",
+          "520",
+          "321",
+          "322"
+        ],
+        "professores": [
+          {
+            "nome": "Orlando Lee",
+            "mediap": 31,
+            "media1": 39,
+            "media2": 29,
+            "media3": 28
+          }
+        ],
+        "possivel": true,
+        "adicionado": true,
+        "viola_reserva": true,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375353,
+              "title": "MC458 B CB16",
+              "start": "2003-12-02T21:00:00-03:00",
+              "end": "2003-12-02T23:00:00-03:00"
+            },
+            {
+              "id": 375353,
+              "title": "MC458 B CB10",
+              "start": "2003-12-04T19:00:00-03:00",
+              "end": "2003-12-04T21:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#E67399"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC536",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375357,
+        "siglan": "MC536",
+        "turma": "A",
+        "professor": "Claudia Maria Bauzer Medeiros",
+        "vagas": 60,
+        "fechado": false,
+        "link": "MC536 A (60)",
+        "horarios": [
+          "608",
+          "609",
+          "408",
+          "409",
+          "610",
+          "611"
+        ],
+        "professores": [
+          {
+            "nome": "Claudia Maria Bauzer Medeiros",
+            "mediap": 43,
+            "media1": 44,
+            "media2": 40,
+            "media3": 44
+          }
+        ],
+        "possivel": true,
+        "adicionado": true,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375357,
+              "title": "MC536 A CB08",
+              "start": "2003-12-03T08:00:00-03:00",
+              "end": "2003-12-03T10:00:00-03:00"
+            },
+            {
+              "id": 375357,
+              "title": "MC536 A CB09/CC00",
+              "start": "2003-12-05T08:00:00-03:00",
+              "end": "2003-12-05T12:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#E6804D"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC536",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375358,
+        "siglan": "MC536",
+        "turma": "B",
+        "professor": "Claudia Maria Bauzer Medeiros",
+        "vagas": 30,
+        "fechado": false,
+        "link": "MC536 B (30)",
+        "horarios": [
+          "608",
+          "609",
+          "610",
+          "611",
+          "408",
+          "409"
+        ],
+        "professores": [
+          {
+            "nome": "Claudia Maria Bauzer Medeiros",
+            "mediap": 43,
+            "media1": 44,
+            "media2": 40,
+            "media3": 44
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375358,
+              "title": "MC536 B CB08",
+              "start": "2003-12-03T08:00:00-03:00",
+              "end": "2003-12-03T10:00:00-03:00"
+            },
+            {
+              "id": 375358,
+              "title": "MC536 B CB09/CC03",
+              "start": "2003-12-05T08:00:00-03:00",
+              "end": "2003-12-05T12:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#E6804D"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC613",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375361,
+        "siglan": "MC613",
+        "turma": "A",
+        "professor": "Isaias Bittencourt Felzmann",
+        "vagas": 60,
+        "fechado": false,
+        "link": "MC613 A (60)",
+        "horarios": [
+          "414",
+          "415",
+          "416",
+          "417"
+        ],
+        "professores": [
+          {
+            "nome": "Isaias Bittencourt Felzmann",
+            "mediap": -1,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375361,
+              "title": "MC613 A CC00",
+              "start": "2003-12-03T14:00:00-03:00",
+              "end": "2003-12-03T18:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#A7A77D"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC613",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375362,
+        "siglan": "MC613",
+        "turma": "B",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 25,
+        "fechado": false,
+        "link": "MC613 B (25)",
+        "horarios": [
+          "214",
+          "215",
+          "216",
+          "217"
+        ],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": true,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375362,
+              "title": "MC613 B CC03",
+              "start": "2003-12-01T14:00:00-03:00",
+              "end": "2003-12-01T18:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#A7A77D"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC832",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375368,
+        "siglan": "MC832",
+        "turma": "A",
+        "professor": "Carlos Alberto Astudillo Trujillo",
+        "vagas": 90,
+        "fechado": false,
+        "link": "MC832 A (90)",
+        "horarios": [
+          "319",
+          "320",
+          "521",
+          "522"
+        ],
+        "professores": [
+          {
+            "nome": "Carlos Alberto Astudillo Trujillo",
+            "mediap": 23,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": true,
+        "viola_reserva": true,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375368,
+              "title": "MC832 A PB13",
+              "start": "2003-12-02T19:00:00-03:00",
+              "end": "2003-12-02T21:00:00-03:00"
+            },
+            {
+              "id": 375368,
+              "title": "MC832 A PB13",
+              "start": "2003-12-04T21:00:00-03:00",
+              "end": "2003-12-04T23:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#DDDD00"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC714",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375364,
+        "siglan": "MC714",
+        "turma": "A",
+        "professor": "Luiz Fernando Bittencourt",
+        "vagas": 90,
+        "fechado": false,
+        "link": "MC714 A (90)",
+        "horarios": [
+          "516",
+          "517",
+          "316",
+          "317"
+        ],
+        "professores": [
+          {
+            "nome": "Luiz Fernando Bittencourt",
+            "mediap": 43,
+            "media1": 44,
+            "media2": 33,
+            "media3": 39
+          }
+        ],
+        "possivel": true,
+        "adicionado": true,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375364,
+              "title": "MC714 A CB15",
+              "start": "2003-12-02T16:00:00-03:00",
+              "end": "2003-12-02T18:00:00-03:00"
+            },
+            {
+              "id": 375364,
+              "title": "MC714 A CB15",
+              "start": "2003-12-04T16:00:00-03:00",
+              "end": "2003-12-04T18:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#65AD89"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC921",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375380,
+        "siglan": "MC921",
+        "turma": "A",
+        "professor": "Sandro Rigo",
+        "vagas": 30,
+        "fechado": false,
+        "link": "MC921 A (30)",
+        "horarios": [
+          "308",
+          "309",
+          "508",
+          "509",
+          "510",
+          "511"
+        ],
+        "professores": [
+          {
+            "nome": "Sandro Rigo",
+            "mediap": 41,
+            "media1": 45,
+            "media2": 41,
+            "media3": 37
+          }
+        ],
+        "possivel": true,
+        "adicionado": true,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375380,
+              "title": "MC921 A CB05",
+              "start": "2003-12-02T08:00:00-03:00",
+              "end": "2003-12-02T10:00:00-03:00"
+            },
+            {
+              "id": 375380,
+              "title": "MC921 A CB04/CC03",
+              "start": "2003-12-04T08:00:00-03:00",
+              "end": "2003-12-04T12:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C244AB"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC921",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375381,
+        "siglan": "MC921",
+        "turma": "B",
+        "professor": "Sandro Rigo",
+        "vagas": 50,
+        "fechado": false,
+        "link": "MC921 B (50)",
+        "horarios": [
+          "308",
+          "309",
+          "508",
+          "509",
+          "510",
+          "511"
+        ],
+        "professores": [
+          {
+            "nome": "Sandro Rigo",
+            "mediap": 41,
+            "media1": 45,
+            "media2": 41,
+            "media3": 37
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375381,
+              "title": "MC921 B CB05",
+              "start": "2003-12-02T08:00:00-03:00",
+              "end": "2003-12-02T10:00:00-03:00"
+            },
+            {
+              "id": 375381,
+              "title": "MC921 B CB04/CC00",
+              "start": "2003-12-04T08:00:00-03:00",
+              "end": "2003-12-04T12:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C244AB"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC019",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375180,
+        "siglan": "MC019",
+        "turma": "A",
+        "professor": "Juliana Freitag Borin",
+        "vagas": 50,
+        "fechado": false,
+        "link": "MC019 A (50)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Juliana Freitag Borin",
+            "mediap": 34,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#D1BC36"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375208,
+        "siglan": "MC032",
+        "turma": "A",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 A (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375209,
+        "siglan": "MC032",
+        "turma": "B",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 B (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "C",
+      "raw": {
+        "id": 375210,
+        "siglan": "MC032",
+        "turma": "C",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 C (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "D",
+      "raw": {
+        "id": 375211,
+        "siglan": "MC032",
+        "turma": "D",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 D (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "E",
+      "raw": {
+        "id": 375212,
+        "siglan": "MC032",
+        "turma": "E",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 E (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "F",
+      "raw": {
+        "id": 375213,
+        "siglan": "MC032",
+        "turma": "F",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 F (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "G",
+      "raw": {
+        "id": 375214,
+        "siglan": "MC032",
+        "turma": "G",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 G (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "H",
+      "raw": {
+        "id": 375215,
+        "siglan": "MC032",
+        "turma": "H",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 H (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "I",
+      "raw": {
+        "id": 375216,
+        "siglan": "MC032",
+        "turma": "I",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 I (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "J",
+      "raw": {
+        "id": 375217,
+        "siglan": "MC032",
+        "turma": "J",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 J (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "K",
+      "raw": {
+        "id": 375218,
+        "siglan": "MC032",
+        "turma": "K",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 K (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "L",
+      "raw": {
+        "id": 375219,
+        "siglan": "MC032",
+        "turma": "L",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 L (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "M",
+      "raw": {
+        "id": 375220,
+        "siglan": "MC032",
+        "turma": "M",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 M (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "N",
+      "raw": {
+        "id": 375221,
+        "siglan": "MC032",
+        "turma": "N",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 N (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "O",
+      "raw": {
+        "id": 375222,
+        "siglan": "MC032",
+        "turma": "O",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 O (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "P",
+      "raw": {
+        "id": 375223,
+        "siglan": "MC032",
+        "turma": "P",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 P (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "Q",
+      "raw": {
+        "id": 375224,
+        "siglan": "MC032",
+        "turma": "Q",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 Q (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "R",
+      "raw": {
+        "id": 375225,
+        "siglan": "MC032",
+        "turma": "R",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 R (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "S",
+      "raw": {
+        "id": 375226,
+        "siglan": "MC032",
+        "turma": "S",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 S (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "T",
+      "raw": {
+        "id": 375227,
+        "siglan": "MC032",
+        "turma": "T",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 T (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "U",
+      "raw": {
+        "id": 375228,
+        "siglan": "MC032",
+        "turma": "U",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 U (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "V",
+      "raw": {
+        "id": 375229,
+        "siglan": "MC032",
+        "turma": "V",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 V (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "W",
+      "raw": {
+        "id": 375230,
+        "siglan": "MC032",
+        "turma": "W",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 W (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "X",
+      "raw": {
+        "id": 375231,
+        "siglan": "MC032",
+        "turma": "X",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 X (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "Y",
+      "raw": {
+        "id": 375232,
+        "siglan": "MC032",
+        "turma": "Y",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 Y (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC032",
+      "term": "20261",
+      "class_id": "Z",
+      "raw": {
+        "id": 375233,
+        "siglan": "MC032",
+        "turma": "Z",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC032 Z (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#4650BD"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375234,
+        "siglan": "MC033",
+        "turma": "A",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 A (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375235,
+        "siglan": "MC033",
+        "turma": "B",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 B (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "C",
+      "raw": {
+        "id": 375236,
+        "siglan": "MC033",
+        "turma": "C",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 C (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "D",
+      "raw": {
+        "id": 375237,
+        "siglan": "MC033",
+        "turma": "D",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 D (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "E",
+      "raw": {
+        "id": 375238,
+        "siglan": "MC033",
+        "turma": "E",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 E (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "F",
+      "raw": {
+        "id": 375239,
+        "siglan": "MC033",
+        "turma": "F",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 F (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "G",
+      "raw": {
+        "id": 375240,
+        "siglan": "MC033",
+        "turma": "G",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 G (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "H",
+      "raw": {
+        "id": 375241,
+        "siglan": "MC033",
+        "turma": "H",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 H (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "I",
+      "raw": {
+        "id": 375242,
+        "siglan": "MC033",
+        "turma": "I",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 I (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "J",
+      "raw": {
+        "id": 375243,
+        "siglan": "MC033",
+        "turma": "J",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 J (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "K",
+      "raw": {
+        "id": 375244,
+        "siglan": "MC033",
+        "turma": "K",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 K (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "L",
+      "raw": {
+        "id": 375245,
+        "siglan": "MC033",
+        "turma": "L",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 L (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "M",
+      "raw": {
+        "id": 375246,
+        "siglan": "MC033",
+        "turma": "M",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 M (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "N",
+      "raw": {
+        "id": 375247,
+        "siglan": "MC033",
+        "turma": "N",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 N (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "O",
+      "raw": {
+        "id": 375248,
+        "siglan": "MC033",
+        "turma": "O",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 O (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "P",
+      "raw": {
+        "id": 375249,
+        "siglan": "MC033",
+        "turma": "P",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 P (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "Q",
+      "raw": {
+        "id": 375250,
+        "siglan": "MC033",
+        "turma": "Q",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 Q (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "R",
+      "raw": {
+        "id": 375251,
+        "siglan": "MC033",
+        "turma": "R",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 R (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "S",
+      "raw": {
+        "id": 375252,
+        "siglan": "MC033",
+        "turma": "S",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 S (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "T",
+      "raw": {
+        "id": 375253,
+        "siglan": "MC033",
+        "turma": "T",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 T (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "U",
+      "raw": {
+        "id": 375254,
+        "siglan": "MC033",
+        "turma": "U",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 U (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "V",
+      "raw": {
+        "id": 375255,
+        "siglan": "MC033",
+        "turma": "V",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 V (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "W",
+      "raw": {
+        "id": 375256,
+        "siglan": "MC033",
+        "turma": "W",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 W (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "X",
+      "raw": {
+        "id": 375257,
+        "siglan": "MC033",
+        "turma": "X",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 X (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "Y",
+      "raw": {
+        "id": 375258,
+        "siglan": "MC033",
+        "turma": "Y",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 Y (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC033",
+      "term": "20261",
+      "class_id": "Z",
+      "raw": {
+        "id": 375259,
+        "siglan": "MC033",
+        "turma": "Z",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC033 Z (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#59BFB3"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375261,
+        "siglan": "MC040",
+        "turma": "A",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 A (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375262,
+        "siglan": "MC040",
+        "turma": "B",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 B (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "C",
+      "raw": {
+        "id": 375263,
+        "siglan": "MC040",
+        "turma": "C",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 C (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "D",
+      "raw": {
+        "id": 375264,
+        "siglan": "MC040",
+        "turma": "D",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 D (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "E",
+      "raw": {
+        "id": 375265,
+        "siglan": "MC040",
+        "turma": "E",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 E (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "F",
+      "raw": {
+        "id": 375266,
+        "siglan": "MC040",
+        "turma": "F",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 F (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "G",
+      "raw": {
+        "id": 375267,
+        "siglan": "MC040",
+        "turma": "G",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 G (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "H",
+      "raw": {
+        "id": 375268,
+        "siglan": "MC040",
+        "turma": "H",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 H (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "I",
+      "raw": {
+        "id": 375269,
+        "siglan": "MC040",
+        "turma": "I",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 I (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "J",
+      "raw": {
+        "id": 375270,
+        "siglan": "MC040",
+        "turma": "J",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 J (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "K",
+      "raw": {
+        "id": 375271,
+        "siglan": "MC040",
+        "turma": "K",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 K (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "L",
+      "raw": {
+        "id": 375272,
+        "siglan": "MC040",
+        "turma": "L",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 L (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "M",
+      "raw": {
+        "id": 375273,
+        "siglan": "MC040",
+        "turma": "M",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 M (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "N",
+      "raw": {
+        "id": 375274,
+        "siglan": "MC040",
+        "turma": "N",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 N (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "O",
+      "raw": {
+        "id": 375275,
+        "siglan": "MC040",
+        "turma": "O",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 O (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "P",
+      "raw": {
+        "id": 375276,
+        "siglan": "MC040",
+        "turma": "P",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 P (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "Q",
+      "raw": {
+        "id": 375277,
+        "siglan": "MC040",
+        "turma": "Q",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 Q (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "R",
+      "raw": {
+        "id": 375278,
+        "siglan": "MC040",
+        "turma": "R",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 R (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "S",
+      "raw": {
+        "id": 375279,
+        "siglan": "MC040",
+        "turma": "S",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 S (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "T",
+      "raw": {
+        "id": 375280,
+        "siglan": "MC040",
+        "turma": "T",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 T (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "U",
+      "raw": {
+        "id": 375281,
+        "siglan": "MC040",
+        "turma": "U",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 U (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "V",
+      "raw": {
+        "id": 375282,
+        "siglan": "MC040",
+        "turma": "V",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 V (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "W",
+      "raw": {
+        "id": 375283,
+        "siglan": "MC040",
+        "turma": "W",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 W (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "X",
+      "raw": {
+        "id": 375284,
+        "siglan": "MC040",
+        "turma": "X",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 X (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "Y",
+      "raw": {
+        "id": 375285,
+        "siglan": "MC040",
+        "turma": "Y",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 Y (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC040",
+      "term": "20261",
+      "class_id": "Z",
+      "raw": {
+        "id": 375286,
+        "siglan": "MC040",
+        "turma": "Z",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC040 Z (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375287,
+        "siglan": "MC041",
+        "turma": "A",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 A (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375288,
+        "siglan": "MC041",
+        "turma": "B",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 B (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "C",
+      "raw": {
+        "id": 375289,
+        "siglan": "MC041",
+        "turma": "C",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 C (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "D",
+      "raw": {
+        "id": 375290,
+        "siglan": "MC041",
+        "turma": "D",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 D (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "E",
+      "raw": {
+        "id": 375291,
+        "siglan": "MC041",
+        "turma": "E",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 E (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "F",
+      "raw": {
+        "id": 375292,
+        "siglan": "MC041",
+        "turma": "F",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 F (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "G",
+      "raw": {
+        "id": 375293,
+        "siglan": "MC041",
+        "turma": "G",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 G (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "H",
+      "raw": {
+        "id": 375294,
+        "siglan": "MC041",
+        "turma": "H",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 H (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "I",
+      "raw": {
+        "id": 375295,
+        "siglan": "MC041",
+        "turma": "I",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 I (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "J",
+      "raw": {
+        "id": 375296,
+        "siglan": "MC041",
+        "turma": "J",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 J (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "K",
+      "raw": {
+        "id": 375297,
+        "siglan": "MC041",
+        "turma": "K",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 K (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "L",
+      "raw": {
+        "id": 375298,
+        "siglan": "MC041",
+        "turma": "L",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 L (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "M",
+      "raw": {
+        "id": 375299,
+        "siglan": "MC041",
+        "turma": "M",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 M (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "N",
+      "raw": {
+        "id": 375300,
+        "siglan": "MC041",
+        "turma": "N",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 N (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "O",
+      "raw": {
+        "id": 375301,
+        "siglan": "MC041",
+        "turma": "O",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 O (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "P",
+      "raw": {
+        "id": 375302,
+        "siglan": "MC041",
+        "turma": "P",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 P (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "Q",
+      "raw": {
+        "id": 375303,
+        "siglan": "MC041",
+        "turma": "Q",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 Q (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "R",
+      "raw": {
+        "id": 375304,
+        "siglan": "MC041",
+        "turma": "R",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 R (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "S",
+      "raw": {
+        "id": 375305,
+        "siglan": "MC041",
+        "turma": "S",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 S (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "T",
+      "raw": {
+        "id": 375306,
+        "siglan": "MC041",
+        "turma": "T",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 T (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "U",
+      "raw": {
+        "id": 375307,
+        "siglan": "MC041",
+        "turma": "U",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 U (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "V",
+      "raw": {
+        "id": 375308,
+        "siglan": "MC041",
+        "turma": "V",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 V (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "W",
+      "raw": {
+        "id": 375309,
+        "siglan": "MC041",
+        "turma": "W",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 W (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "X",
+      "raw": {
+        "id": 375310,
+        "siglan": "MC041",
+        "turma": "X",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 X (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "Y",
+      "raw": {
+        "id": 375311,
+        "siglan": "MC041",
+        "turma": "Y",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 Y (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC041",
+      "term": "20261",
+      "class_id": "Z",
+      "raw": {
+        "id": 375312,
+        "siglan": "MC041",
+        "turma": "Z",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 10,
+        "fechado": false,
+        "link": "MC041 Z (10)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#C7561E"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC050",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375313,
+        "siglan": "MC050",
+        "turma": "A",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 50,
+        "fechado": false,
+        "link": "MC050 A (50)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#94A2BE"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC051",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375314,
+        "siglan": "MC051",
+        "turma": "A",
+        "professor": "Bruno Barbieri De Pontes Cafeo",
+        "vagas": 20,
+        "fechado": false,
+        "link": "MC051 A (20)",
+        "horarios": [],
+        "professores": [
+          {
+            "nome": "Bruno Barbieri De Pontes Cafeo",
+            "mediap": 46,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#668CD9"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC346",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375347,
+        "siglan": "MC346",
+        "turma": "A",
+        "professor": "Andre Santanche",
+        "vagas": 60,
+        "fechado": false,
+        "link": "MC346 A (60)",
+        "horarios": [
+          "216",
+          "217",
+          "416",
+          "417"
+        ],
+        "professores": [
+          {
+            "nome": "Andre Santanche",
+            "mediap": 29,
+            "media1": -1,
+            "media2": -1,
+            "media3": -1
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375347,
+              "title": "MC346 A CC53",
+              "start": "2003-12-01T16:00:00-03:00",
+              "end": "2003-12-01T18:00:00-03:00"
+            },
+            {
+              "id": 375347,
+              "title": "MC346 A CC53",
+              "start": "2003-12-03T16:00:00-03:00",
+              "end": "2003-12-03T18:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#B5515D"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC521",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375355,
+        "siglan": "MC521",
+        "turma": "A",
+        "professor": "Fabio Luiz Usberti",
+        "vagas": 60,
+        "fechado": false,
+        "link": "MC521 A (60)",
+        "horarios": [
+          "614",
+          "615",
+          "616",
+          "617"
+        ],
+        "professores": [
+          {
+            "nome": "Fabio Luiz Usberti",
+            "mediap": 38,
+            "media1": 46,
+            "media2": 37,
+            "media3": 46
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375355,
+              "title": "MC521 A CC00",
+              "start": "2003-12-05T14:00:00-03:00",
+              "end": "2003-12-05T18:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#E0C240"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC521",
+      "term": "20261",
+      "class_id": "B",
+      "raw": {
+        "id": 375356,
+        "siglan": "MC521",
+        "turma": "B",
+        "professor": "Fabio Luiz Usberti",
+        "vagas": 30,
+        "fechado": false,
+        "link": "MC521 B (30)",
+        "horarios": [
+          "614",
+          "615",
+          "616",
+          "617"
+        ],
+        "professores": [
+          {
+            "nome": "Fabio Luiz Usberti",
+            "mediap": 38,
+            "media1": 46,
+            "media2": 37,
+            "media3": 46
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375356,
+              "title": "MC521 B CC03",
+              "start": "2003-12-05T14:00:00-03:00",
+              "end": "2003-12-05T18:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#E0C240"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC906",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375375,
+        "siglan": "MC906",
+        "turma": "A",
+        "professor": "Anderson De Rezende Rocha",
+        "vagas": 60,
+        "fechado": false,
+        "link": "MC906 A (60)",
+        "horarios": [
+          "219",
+          "220",
+          "421",
+          "422"
+        ],
+        "professores": [
+          {
+            "nome": "Anderson De Rezende Rocha",
+            "mediap": 40,
+            "media1": 39,
+            "media2": 42,
+            "media3": 31
+          }
+        ],
+        "possivel": true,
+        "adicionado": true,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375375,
+              "title": "MC906 A PB13",
+              "start": "2003-12-01T19:00:00-03:00",
+              "end": "2003-12-01T21:00:00-03:00"
+            },
+            {
+              "id": 375375,
+              "title": "MC906 A PB13",
+              "start": "2003-12-03T21:00:00-03:00",
+              "end": "2003-12-03T23:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#F2A640"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    },
+    {
+      "course_code": "MC920",
+      "term": "20261",
+      "class_id": "A",
+      "raw": {
+        "id": 375379,
+        "siglan": "MC920",
+        "turma": "A",
+        "professor": "Helio Pedrini",
+        "vagas": 20,
+        "fechado": false,
+        "link": "MC920 A (20)",
+        "horarios": [
+          "319",
+          "320",
+          "521",
+          "522"
+        ],
+        "professores": [
+          {
+            "nome": "Helio Pedrini",
+            "mediap": 40,
+            "media1": 46,
+            "media2": 39,
+            "media3": 40
+          }
+        ],
+        "possivel": true,
+        "adicionado": false,
+        "viola_reserva": false,
+        "eventSources": {
+          "events": [
+            {
+              "id": 375379,
+              "title": "MC920 A CC51",
+              "start": "2003-12-02T19:00:00-03:00",
+              "end": "2003-12-02T21:00:00-03:00"
+            },
+            {
+              "id": 375379,
+              "title": "MC920 A CC51",
+              "start": "2003-12-04T21:00:00-03:00",
+              "end": "2003-12-04T23:00:00-03:00"
+            }
+          ],
+          "editable": false,
+          "textColor": "#000000",
+          "color": "#668CD9"
+        },
+        "Amigos": [],
+        "total": -1
+      }
+    }
+  ],
+  "prereqs": [],
+  "semester_map": {
+    "course_id": 20,
+    "year": 2026,
+    "entries": [
+      {
+        "code": "F 229",
+        "recommended_semester": 2
+      },
+      {
+        "code": "MC458",
+        "recommended_semester": 5
+      },
+      {
+        "code": "MC536",
+        "recommended_semester": 5
+      },
+      {
+        "code": "MC613",
+        "recommended_semester": 5
+      },
+      {
+        "code": "MC558",
+        "recommended_semester": 6
+      },
+      {
+        "code": "MC832",
+        "recommended_semester": 8
+      },
+      {
+        "code": "MC714",
+        "recommended_semester": 9
+      },
+      {
+        "code": "MC833",
+        "recommended_semester": 9
+      },
+      {
+        "code": "MC921",
+        "recommended_semester": 9
+      },
+      {
+        "code": "MC030",
+        "recommended_semester": 10
+      },
+      {
+        "code": "MC019",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC020",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC032",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC033",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC040",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC041",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC050",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC051",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC346",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC521",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC621",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC646",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC658",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC721",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC821",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC851",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC853",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC855",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC857",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC859",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC861",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC871",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC881",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC886",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC896",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC906",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC907",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC919",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC920",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC937",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC940",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC949",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC950",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC959",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC970",
+        "recommended_semester": null
+      },
+      {
+        "code": "MC971",
+        "recommended_semester": null
+      }
+    ]
+  }
+}

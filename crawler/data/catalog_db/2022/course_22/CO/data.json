@@ -10,10 +10,21 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "CO",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "4857",
+      "codigo": "MU105",
+      "nome": "Estruturação Musical I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CO",
+      "prereqs": []
+    },
     {
       "disciplina_id": "4866",
       "codigo": "MU120",
@@ -74,15 +85,19 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "4857",
-      "codigo": "MU105",
-      "nome": "Estruturação Musical I",
-      "creditos": 2,
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "CO",
-      "prereqs": []
+      "prereqs": [
+        [
+          "MU058"
+        ]
+      ]
     },
     {
       "disciplina_id": "4919",
@@ -175,19 +190,30 @@
       ]
     },
     {
-      "disciplina_id": "4841",
-      "codigo": "MU059",
-      "nome": "Rítmica II",
-      "creditos": 5,
+      "disciplina_id": "5084",
+      "codigo": "MU560",
+      "nome": "História da Música III",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "CO",
       "prereqs": [
         [
-          "MU058"
+          "MU460"
         ]
       ]
+    },
+    {
+      "disciplina_id": "4828",
+      "codigo": "MU035",
+      "nome": "Acústica Musical I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CO",
+      "prereqs": []
     },
     {
       "disciplina_id": "4842",
@@ -263,32 +289,6 @@
           "MU293"
         ]
       ]
-    },
-    {
-      "disciplina_id": "5084",
-      "codigo": "MU560",
-      "nome": "História da Música III",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MU460"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4828",
-      "codigo": "MU035",
-      "nome": "Acústica Musical I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "CO",
-      "prereqs": []
     },
     {
       "disciplina_id": "5060",
@@ -396,6 +396,21 @@
       ]
     },
     {
+      "disciplina_id": "4986",
+      "codigo": "MU314",
+      "nome": "Análise III",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU214"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "4994",
       "codigo": "MU346",
       "nome": "Harmonia do Romantismo ao Século XX",
@@ -497,17 +512,32 @@
       ]
     },
     {
-      "disciplina_id": "4986",
-      "codigo": "MU314",
-      "nome": "Análise III",
+      "disciplina_id": "4939",
+      "codigo": "MU240",
+      "nome": "Instrumentação II",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 6,
       "modalidade": "CO",
       "prereqs": [
         [
-          "MU214"
+          "MU140"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9180",
+      "codigo": "MU472",
+      "nome": "Port-Folio de Composição Musical II",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU372"
         ]
       ]
     },
@@ -613,32 +643,17 @@
       ]
     },
     {
-      "disciplina_id": "4939",
-      "codigo": "MU240",
-      "nome": "Instrumentação II",
-      "creditos": 2,
+      "disciplina_id": "9177",
+      "codigo": "MU389",
+      "nome": "Criação Musical com Novos Suportes Tecnológicos III",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 7,
       "modalidade": "CO",
       "prereqs": [
         [
-          "MU140"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "9180",
-      "codigo": "MU472",
-      "nome": "Port-Folio de Composição Musical II",
-      "creditos": 6,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MU372"
+          "MU289"
         ]
       ]
     },
@@ -714,21 +729,6 @@
       "prereqs": [
         [
           "MU255"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "9177",
-      "codigo": "MU389",
-      "nome": "Criação Musical com Novos Suportes Tecnológicos III",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MU289"
         ]
       ]
     },
@@ -838,6 +838,21 @@
       ]
     },
     {
+      "disciplina_id": "5175",
+      "codigo": "MU871",
+      "nome": "Composição VIII",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU771"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "9188",
       "codigo": "MU872",
       "nome": "Port-Folio de Composição Musical VI",
@@ -886,19 +901,142 @@
       ]
     },
     {
-      "disciplina_id": "5175",
-      "codigo": "MU871",
-      "nome": "Composição VIII",
-      "creditos": 4,
+      "disciplina_id": "4930",
+      "codigo": "MU223",
+      "nome": "Piano II",
+      "creditos": 3,
       "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 10,
+      "tipo": "eletiva",
+      "semestre": null,
       "modalidade": "CO",
       "prereqs": [
         [
-          "MU771"
+          "MU123"
         ]
       ]
+    },
+    {
+      "disciplina_id": "4668",
+      "codigo": "MP105",
+      "nome": "Voz I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4978",
+      "codigo": "MU302",
+      "nome": "Instrumento III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4693",
+      "codigo": "MP304",
+      "nome": "Teclados III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4869",
+      "codigo": "MU124",
+      "nome": "Cravo I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4974",
+      "codigo": "MU292",
+      "nome": "Percussão II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU192"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4690",
+      "codigo": "MP301",
+      "nome": "Cordas III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4989",
+      "codigo": "MU323",
+      "nome": "Piano III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4707",
+      "codigo": "MP405",
+      "nome": "Voz IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP305"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4914",
+      "codigo": "MU194",
+      "nome": "Violão I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
     },
     {
       "disciplina_id": "5023",
@@ -1875,144 +2013,6 @@
       "disciplina_id": "4855",
       "codigo": "MU103",
       "nome": "Flauta I",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4930",
-      "codigo": "MU223",
-      "nome": "Piano II",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MU123"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4668",
-      "codigo": "MP105",
-      "nome": "Voz I",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4978",
-      "codigo": "MU302",
-      "nome": "Instrumento III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MU202"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4693",
-      "codigo": "MP304",
-      "nome": "Teclados III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MP204"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4869",
-      "codigo": "MU124",
-      "nome": "Cravo I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4974",
-      "codigo": "MU292",
-      "nome": "Percussão II",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MU192"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4690",
-      "codigo": "MP301",
-      "nome": "Cordas III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MP201"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4989",
-      "codigo": "MU323",
-      "nome": "Piano III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MU223"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4707",
-      "codigo": "MP405",
-      "nome": "Voz IV",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "CO",
-      "prereqs": [
-        [
-          "MP305"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4914",
-      "codigo": "MU194",
-      "nome": "Violão I",
       "creditos": 3,
       "catalogo": 2022,
       "tipo": "eletiva",

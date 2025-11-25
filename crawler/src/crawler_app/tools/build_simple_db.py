@@ -42,7 +42,7 @@ def main() -> None:
 
     payloads = load_json_payloads()
     if not payloads:
-        print("Nenhum JSON encontrado em data/json — rode o coletor primeiro.")
+        print("Nenhum JSON encontrado em data/json - rode o coletor primeiro.")
         return
 
     seen_cursos: set[int] = set()
@@ -107,7 +107,7 @@ def main() -> None:
 
     commit(conn)
     conn.close()
-    print(f"✔ Banco criado/populado em: {DB_PATH}")
+    print(f"OK - Banco criado/populado em: {DB_PATH}")
 
 
 if __name__ == "__main__":

@@ -10,7 +10,7 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
@@ -59,6 +59,22 @@
       "prereqs": []
     },
     {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "5348",
       "codigo": "QG109",
       "nome": "Química Geral Experimental",
@@ -90,22 +106,6 @@
       "semestre": 2,
       "modalidade": "",
       "prereqs": []
-    },
-    {
-      "disciplina_id": "4091",
-      "codigo": "MA211",
-      "nome": "Cálculo II",
-      "creditos": 6,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "MA111",
-          "MA141"
-        ]
-      ]
     },
     {
       "disciplina_id": "4099",
@@ -380,6 +380,21 @@
       ]
     },
     {
+      "disciplina_id": "15130",
+      "codigo": "EQ482",
+      "nome": "Introdução aos Cálculos de Processos Químicos",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QF531"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "12183",
       "codigo": "QA583",
       "nome": "Preparo de Amostras",
@@ -447,21 +462,6 @@
       ]
     },
     {
-      "disciplina_id": "15130",
-      "codigo": "EQ482",
-      "nome": "Introdução aos Cálculos de Processos Químicos",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "QF531"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "6711",
       "codigo": "EQ582",
       "nome": "Fenômenos de Transporte e Operações Unitárias",
@@ -520,6 +520,21 @@
       "prereqs": []
     },
     {
+      "disciplina_id": "5381",
+      "codigo": "QI545",
+      "nome": "Química de Organometálicos",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QI345"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "5321",
       "codigo": "QF530",
       "nome": "Introdução à Química Quântica e Espectroscopia Molecular",
@@ -562,21 +577,6 @@
       "prereqs": [
         [
           "QF531"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5381",
-      "codigo": "QI545",
-      "nome": "Química de Organometálicos",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 8,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "QI345"
         ]
       ]
     },

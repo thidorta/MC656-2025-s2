@@ -10,10 +10,25 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "PC",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "5002",
+      "codigo": "MU360",
+      "nome": "História da Música I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PC",
+      "prereqs": [
+        [
+          "MU260"
+        ]
+      ]
+    },
     {
       "disciplina_id": "4840",
       "codigo": "MU058",
@@ -79,21 +94,6 @@
       "semestre": 1,
       "modalidade": "PC",
       "prereqs": []
-    },
-    {
-      "disciplina_id": "5002",
-      "codigo": "MU360",
-      "nome": "História da Música I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "PC",
-      "prereqs": [
-        [
-          "MU260"
-        ]
-      ]
     },
     {
       "disciplina_id": "4975",
@@ -332,6 +332,21 @@
       "prereqs": []
     },
     {
+      "disciplina_id": "4925",
+      "codigo": "MU214",
+      "nome": "Análise II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PC",
+      "prereqs": [
+        [
+          "MU114"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "4943",
       "codigo": "MU246",
       "nome": "Harmonia do Classicismo ao Romantismo",
@@ -437,17 +452,17 @@
       ]
     },
     {
-      "disciplina_id": "4925",
-      "codigo": "MU214",
-      "nome": "Análise II",
-      "creditos": 2,
+      "disciplina_id": "5090",
+      "codigo": "MU579",
+      "nome": "Prática Orquestral V",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "PC",
       "prereqs": [
         [
-          "MU114"
+          "MU479"
         ]
       ]
     },
@@ -523,21 +538,6 @@
       "prereqs": [
         [
           "MU278"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5090",
-      "codigo": "MU579",
-      "nome": "Prática Orquestral V",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "PC",
-      "prereqs": [
-        [
-          "MU479"
         ]
       ]
     },

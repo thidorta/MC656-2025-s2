@@ -27,12 +27,12 @@ def main():
     os.makedirs(raw_dir, exist_ok=True)
 
     settings = CrawlerSettings()
-    user = os.getenv("GDE_LOGIN")
-    password = os.getenv("GDE_SENHA")
+    user = os.getenv("GDE_LOGIN") or os.getenv("GDE_USERNAME")
+    password = os.getenv("GDE_SENHA") or os.getenv("GDE_PASSWORD")
     csrf_from_env = os.getenv("GDE_CSRF", "")
 
     if not user or not password:
-        raise SystemExit("Defina GDE_LOGIN e GDE_SENHA no .env para autenticar.")
+        raise SystemExit("Defina GDE_LOGIN/GDE_SENHA ou GDE_USERNAME/GDE_PASSWORD no .env para autenticar.")
 
     session = build_session(settings)
     print_session_cookies(session, prefix="Sessao recem-criada")

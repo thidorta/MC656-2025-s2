@@ -10,21 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "2297",
-      "codigo": "EP107",
-      "nome": "Introdução à Pedagogia - Organização do Trabalho Pedagógico",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "",
-      "prereqs": []
-    },
     {
       "disciplina_id": "2300",
       "codigo": "EP110",
@@ -91,6 +80,17 @@
       "disciplina_id": "11731",
       "codigo": "EP570",
       "nome": "Estudo e Produção Acadêmica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2297",
+      "codigo": "EP107",
+      "nome": "Introdução à Pedagogia - Organização do Trabalho Pedagógico",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
@@ -194,31 +194,6 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "2323",
-      "codigo": "EP152",
-      "nome": "Didática - Teoria Pedagógica",
-      "creditos": 6,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "EP110",
-          "EP123",
-          "EP140",
-          "EP208",
-          "EP230"
-        ],
-        [
-          "EP123",
-          "EP140",
-          "EP208",
-          "EP230"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "6760",
       "codigo": "EP165",
       "nome": "Política Educacional: Organização da Educação Brasileira",
@@ -272,15 +247,29 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "2329",
-      "codigo": "EP158",
-      "nome": "Educação, Corpo e Arte",
-      "creditos": 8,
+      "disciplina_id": "2323",
+      "codigo": "EP152",
+      "nome": "Didática - Teoria Pedagógica",
+      "creditos": 6,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "",
-      "prereqs": []
+      "prereqs": [
+        [
+          "EP110",
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ],
+        [
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ]
+      ]
     },
     {
       "disciplina_id": "2336",
@@ -359,13 +348,13 @@
       ]
     },
     {
-      "disciplina_id": "2411",
-      "codigo": "EP472",
-      "nome": "Escola e Conhecimento de História e Geografia",
+      "disciplina_id": "2329",
+      "codigo": "EP158",
+      "nome": "Educação, Corpo e Arte",
       "creditos": 8,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "",
       "prereqs": []
     },
@@ -425,13 +414,13 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "2390",
-      "codigo": "EP377",
-      "nome": "Planejamento Educacional e Estágio Supervisionado em Gestão Escolar",
+      "disciplina_id": "2411",
+      "codigo": "EP472",
+      "nome": "Escola e Conhecimento de História e Geografia",
       "creditos": 8,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 5,
       "modalidade": "",
       "prereqs": []
     },
@@ -472,6 +461,17 @@
           "EP208"
         ]
       ]
+    },
+    {
+      "disciplina_id": "2390",
+      "codigo": "EP377",
+      "nome": "Planejamento Educacional e Estágio Supervisionado em Gestão Escolar",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
     },
     {
       "disciplina_id": "2333",
@@ -551,17 +551,6 @@
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 7,
-      "modalidade": "",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "11371",
-      "codigo": "EP879",
-      "nome": "Educação de Jovens e Adultos",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 8,
       "modalidade": "",
       "prereqs": []
     },
@@ -649,6 +638,17 @@
           "EP808"
         ]
       ]
+    },
+    {
+      "disciplina_id": "11371",
+      "codigo": "EP879",
+      "nome": "Educação de Jovens e Adultos",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
     }
   ]
 }

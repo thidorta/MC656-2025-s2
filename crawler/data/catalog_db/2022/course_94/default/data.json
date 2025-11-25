@@ -10,10 +10,54 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "6148",
+      "codigo": "TT106",
+      "nome": "Organização e Arquitetura de Computadores",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6991",
+      "codigo": "TT350",
+      "nome": "Administração de Empresas",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9730",
+      "codigo": "SI100",
+      "nome": "Algoritmos e Programação de Computadores I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
     {
       "disciplina_id": "9731",
       "codigo": "SI101",
@@ -59,46 +103,46 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "6148",
-      "codigo": "TT106",
-      "nome": "Organização e Arquitetura de Computadores",
+      "disciplina_id": "9957",
+      "codigo": "SI305",
+      "nome": "Análise de Sistemas de Informação I",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "",
-      "prereqs": []
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
     },
     {
-      "disciplina_id": "9725",
-      "codigo": "EB101",
-      "nome": "Cálculo I",
-      "creditos": 6,
+      "disciplina_id": "6988",
+      "codigo": "ST266",
+      "nome": "Engenharia de Software I",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "",
-      "prereqs": []
+      "prereqs": [
+        [
+          "TT130"
+        ],
+        [
+          "SI100"
+        ]
+      ]
     },
     {
-      "disciplina_id": "6991",
-      "codigo": "TT350",
-      "nome": "Administração de Empresas",
+      "disciplina_id": "6992",
+      "codigo": "ST468",
+      "nome": "Cálculo Numérico",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "9730",
-      "codigo": "SI100",
-      "nome": "Algoritmos e Programação de Computadores I",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "",
       "prereqs": []
     },
@@ -155,48 +199,30 @@
       ]
     },
     {
-      "disciplina_id": "9957",
-      "codigo": "SI305",
-      "nome": "Análise de Sistemas de Informação I",
+      "disciplina_id": "5557",
+      "codigo": "ST211",
+      "nome": "Estatística",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "SI100"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "6988",
-      "codigo": "ST266",
-      "nome": "Engenharia de Software I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "TT130"
-        ],
-        [
-          "SI100"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "6992",
-      "codigo": "ST468",
-      "nome": "Cálculo Numérico",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "",
       "prereqs": []
+    },
+    {
+      "disciplina_id": "6993",
+      "codigo": "ST567",
+      "nome": "Banco de Dados I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
     },
     {
       "disciplina_id": "6994",
@@ -289,28 +315,32 @@
       ]
     },
     {
-      "disciplina_id": "5557",
-      "codigo": "ST211",
-      "nome": "Estatística",
+      "disciplina_id": "9958",
+      "codigo": "SI400",
+      "nome": "Programação Orientada a Objetos II",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "6993",
-      "codigo": "ST567",
-      "nome": "Banco de Dados I",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "",
       "prereqs": [
         [
-          "SI100"
+          "SI300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9961",
+      "codigo": "SI401",
+      "nome": "Programação para a Web",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI300"
         ]
       ]
     },
@@ -375,34 +405,46 @@
       ]
     },
     {
-      "disciplina_id": "9958",
-      "codigo": "SI400",
-      "nome": "Programação Orientada a Objetos II",
+      "disciplina_id": "9959",
+      "codigo": "SI405",
+      "nome": "Análise de Sistemas de Informação II",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "",
       "prereqs": [
         [
-          "SI300"
+          "SI305"
         ]
       ]
     },
     {
-      "disciplina_id": "9961",
-      "codigo": "SI401",
-      "nome": "Programação para a Web",
+      "disciplina_id": "9962",
+      "codigo": "SI700",
+      "nome": "Programação para Dispositivos Móveis",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "",
       "prereqs": [
         [
-          "SI300"
+          "SI201",
+          "SI400"
         ]
       ]
+    },
+    {
+      "disciplina_id": "10139",
+      "codigo": "SI701",
+      "nome": "Introdução a Multimídia",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
     },
     {
       "disciplina_id": "10140",
@@ -463,44 +505,13 @@
       ]
     },
     {
-      "disciplina_id": "9959",
-      "codigo": "SI405",
-      "nome": "Análise de Sistemas de Informação II",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "SI305"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "9962",
-      "codigo": "SI700",
-      "nome": "Programação para Dispositivos Móveis",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "SI201",
-          "SI400"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "10139",
-      "codigo": "SI701",
-      "nome": "Introdução a Multimídia",
+      "disciplina_id": "9963",
+      "codigo": "SI800",
+      "nome": "Empreendedorismo e Inovação",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 6,
       "modalidade": "",
       "prereqs": []
     },
@@ -537,17 +548,6 @@
           "SI201"
         ]
       ]
-    },
-    {
-      "disciplina_id": "9963",
-      "codigo": "SI800",
-      "nome": "Empreendedorismo e Inovação",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "",
-      "prereqs": []
     },
     {
       "disciplina_id": "9964",

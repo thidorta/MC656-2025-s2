@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" >
+<head>
+	<link rel="search" type="application/opensearchdescription+xml" href="https://grade.daconline.unicamp.br/opensearch.xml" title="Procurar no GDE" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>GDE - &Aacute;rvore</title>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery-ui-1.8.24.min.js"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.ba-hashchange.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.easing.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.fancybox.js?20210919"></script>
+	<script type='text/javascript' src="https://grade.daconline.unicamp.br/web/js/jquery.fullcalendar.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.guaycuru.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jcontext.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jdMenu.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jhelpertip.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.maskedinput.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.numberinput.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.popup.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.positionBy.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.tablesorter.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.timers.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.validate.min.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.watcherkeys.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/gde.common.js?20210919"></script>
+	<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/gde.42.js?20210919"></script>
+	<script type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3315545-3']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/dropdown_menu.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/gde.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/tabs.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.datepicker.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.fancybox.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jcontext.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jdMenu.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.jhelpertip.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.popup.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.ui.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/fullcalendar.css?20210919" type="text/css" />
+	<link rel="stylesheet" href="https://grade.daconline.unicamp.br/web/css/jquery.tablesorter.css?20210919" type="text/css" />
+	<link rel="apple-touch-icon" href="https://grade.daconline.unicamp.br/web/images/apple-touch-icon.png" />
+</head>
+<body id="page_bg">
+<a href="https://github.com/guaycuru/gde" target="_blank" title="Colabore com o GDE, abra seu Pull Request!" id="fork-me-ribbon">
+	<img style="position: absolute; top: 0; right: 0; border: 0; z-index: 99;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+</a>
+<script type="text/javascript">
+// <![CDATA[
+var CONFIG_URL = 'https://grade.daconline.unicamp.br/';
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+// Informacoes para o chat
+var ID_USUARIO = '40017';
+var meu_status = 'z';
+var minha_foto_th = 'https://grade.daconline.unicamp.br/web/fts/ncNDZJ0b5PY8vrRR_th.jpg';
+$(document).ready(function(){
+	$('body').watcherkeys({callback: $.guaycuru.changeIt});
+	$("#menu_input_busca").Valor_Padrao('Buscar...', 'padrao');
+	$("#form_busca_universal").submit(function() {
+		if($("#menu_input_busca").val().length < 1 || $("#menu_input_busca").hasClass('padrao'))
+			return false;
+	});
+	$("#toggle_menu_busca_avancada").click(function() {
+		$("#div_menu_busca_avancada").toggle('fast', function() {
+			if($(this).is(":visible"))
+				$(document).click(function() { $("#div_menu_busca_avancada").hide('fast'); });
+		});
+		return false;
+	});
+});
+// ]]>
+</script>
+	<iframe src="about:blank" width="0" height="0" frameborder="0" id="controle" name="controle"></iframe>
+		<div id="top">
+			<div id="mini_logo">
+				<a href="https://grade.daconline.unicamp.br/" title="Home"><img src="https://grade.daconline.unicamp.br/web/images/mini_logo.gif" alt="GDE" width="128" height="38" /></a>
+			</div> 
+				<div id="top_menu" class="menu ui-corner-bottom">
+				<ul>
+							<li><a href="#" onclick="return false;">Acad&ecirc;mico</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/arvore/">&Aacute;rvore / Integraliza&ccedil;&atilde;o</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/avaliar/">Avaliar Professores</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/eliminador/">Eliminar Disciplinas</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/mapa/">Mapa do Campus</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/planejador/">Planejador</a></li>
+							<!-- <li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/rankings/">Rankings</a></li> -->
+						</ul>
+					</li>
+					<li><a href="#" onclick="return false;">Social</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/editar-perfil/">Editar Perfil</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/configuracoes/">Configura&ccedil;&otilde;es da Conta</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/amigos/">Meus Amigos</a></li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="return false;">Ajuda</a>
+						<ul>
+							<li><a href="https://grade.daconline.unicamp.br/contato/">Contato</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/estatisticas/">Estat&iacute;sticas</a></li>
+							<li><a href="https://github.com/guaycuru/gde/wiki/FAQ" target="_blank">Perguntas Frequentes</a></li>
+							<li><a href="https://grade.daconline.unicamp.br/sobre/">Sobre o GDE</a></li>
+							<li><a class="ui-corner-bottom" href="https://grade.daconline.unicamp.br/termos/">Termos de Uso</a></li>
+						</ul>
+					</li>
+					<li><a href="#" onclick="Logout(); return false;">Sair</a></li>
+				</ul>
+			</div>
+			<form id="form_busca_universal" method="get" action="https://grade.daconline.unicamp.br/busca/">
+				<div id="top_busca_simples">
+					<input type="text" id="menu_input_busca" name="q" />
+				</div>
+				<div id="top_botoes_busca">
+					<input type="submit" id="botao_busca_universal" name="buscar" value="OK" />
+					<div id="busca_avancada_wrapper">
+						<a href="https://grade.daconline.unicamp.br/busca/" title="Busca Avan&ccedil;ada" id="toggle_menu_busca_avancada"><img id="botao_busca_avancada" src="https://grade.daconline.unicamp.br/web/images/menu-avancado.png" alt="+" width="11" height="38" /></a>
+						<div id="div_menu_busca_avancada">
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_alunos">Buscar Alunos</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_professores">Buscar Professores</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_disciplinas">Buscar Disciplinas</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_oferecimentos">Buscar Oferecimentos</a>
+							<a href="https://grade.daconline.unicamp.br/busca/#tab_salas">Buscar Salas</a>
+						</div>
+					</div>
+				</div>
+			</form>
+			</div>
+	<div id="wrapper" class="center">
+		<div id="content_bg">
+			<div id="content">
+<script type="text/javascript" src="https://grade.daconline.unicamp.br/web/js/jquery.jcontext.js?20210919"></script>
+<script type="text/javascript">
+	// <![CDATA[
+	$(document).ready(function() {
+		
+	$("#Shape_2746").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_F_229"
+	});
+
+	$("#Shape_2746").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_F_229.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_4193").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC613"
+	});
+
+	$("#Shape_4193").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC613.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6772").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC458"
+	});
+
+	$("#Shape_6772").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC458.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_4184").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC536"
+	});
+
+	$("#Shape_4184").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC536.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6775").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC558"
+	});
+
+	$("#Shape_6775").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC558.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_10586").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC832"
+	});
+
+	$("#Shape_10586").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC832.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_4203").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC714"
+	});
+
+	$("#Shape_4203").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC714.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_6983").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC833"
+	});
+
+	$("#Shape_6983").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC833.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_11376").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC921"
+	});
+
+	$("#Shape_11376").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC921.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});
+	$("#Shape_4156").showMenu({
+		opacity: 0.9,
+		left: true,
+		query: "#Menu_MC030"
+	});
+
+	$("#Shape_4156").hover(function() {
+		$("img.img_ov_arvore").attr("src", "../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC030.png");
+		$("div.div_img_ov_arvore").fadeTo('slow', 0.9);
+	}, function () {
+		$("div.div_img_ov_arvore").fadeOut('fast');
+		$("#img_ov_arvore").attr("src", "https://grade.daconline.unicamp.br/web/images/spacer.gif");
+	});	$("a#inline").fancybox({
+		'width': 720,
+		'height': 1035,
+		'hideOnContentClick': false,
+		'autoDimensions' : false,
+		'autoScale' : false,
+		'centerOnScroll': false
+	});
+		$("a.iframe").fancybox({
+			'zoomSpeedIn': 300,
+			'zoomSpeedOut': 300,
+			'hideOnContentClick': false,
+			'width': 700,
+			'height': 500
+		});
+		var evt = $.browser.msie ? "click" : "change";
+		$("#curso").bind(evt, atualiza_modalidades);
+		$("#catalogo").bind(evt, atualiza_modalidades);
+		$("#ok").click(manda_form);
+		$("#limpar").click(limpa_form);
+		$('#select_modalidade').addClass("ac_loading");
+		$('#select_modalidade').load('https://grade.daconline.unicamp.br/ajax/modalidades.php?c=34&a=2022&s=AA&o=1', {}, function(){$('#select_modalidade').removeClass("ac_loading");});
+
+		$.guaycuru.tooltip("TT_tips", "Dicas:", "<ul><li>Para eliminar uma Disciplina da &Aacute;rvore, clique nela.</li><li>Para colocar uma disciplina de volta na &Aacute;rvore, busque pela disciplina (no menu Disciplinas) e, na p&aacute;gina dela, selecione a op&ccedil;&atilde;o \"Nenhuma das Anteriores\".</li><li>Para eliminar uma Eletiva, busque pela disciplina que foi cursada como eletiva, e marque que a mesma foi cursada.</li></ul>", {});
+
+	});
+	atualiza_modalidades = function() {
+		$('#select_modalidade').addClass("ac_loading");
+		$('#select_modalidade').load('https://grade.daconline.unicamp.br/ajax/modalidades.php?c='+$('#curso').val()+'&a='+$('#catalogo').val()+'&o=1', {}, function(){
+			$('#select_modalidade').removeClass("ac_loading");
+		});
+	};
+	manda_form = function() {
+		document.location = 'https://grade.daconline.unicamp.br/arvore/?curso='+$("#curso").val()+'&modalidade='+$("#modalidade").val()+'&catalogo='+$("#catalogo").val()+'&cp='+$("#cp").val();
+	};
+	limpa_form = function() {
+		document.location = 'https://grade.daconline.unicamp.br/arvore/';
+	};
+	Elimina = function(id, a, r) {
+		$.post('https://grade.daconline.unicamp.br/ajax/disciplina.php', {id: id, e: '1', a: a, r: r, v: '1'}, function() {
+			history.go(0);
+		});
+	}
+	// ]]>
+</script>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_F_229.png" alt="" /></div><div id="Menu_F_229" style="display:none;" class="RMenu">
+   <ul>
+   <li>Física Experimental II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/2746/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('2746', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('2746', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('2746', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC613.png" alt="" /></div><div id="Menu_MC613" style="display:none;" class="RMenu">
+   <ul>
+   <li>Laboratório de Circuitos Digitais</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/4193/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('4193', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('4193', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('4193', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC458.png" alt="" /></div><div id="Menu_MC458" style="display:none;" class="RMenu">
+   <ul>
+   <li>Projeto e Análise de Algoritmos I</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6772/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6772', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6772', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6772', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC536.png" alt="" /></div><div id="Menu_MC536" style="display:none;" class="RMenu">
+   <ul>
+   <li>Bancos de Dados: Teoria e Prática</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/4184/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('4184', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('4184', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('4184', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC558.png" alt="" /></div><div id="Menu_MC558" style="display:none;" class="RMenu">
+   <ul>
+   <li>Projeto e Análise de Algoritmos II</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6775/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6775', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6775', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6775', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC832.png" alt="" /></div><div id="Menu_MC832" style="display:none;" class="RMenu">
+   <ul>
+   <li>Redes de Computadores</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/10586/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('10586', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('10586', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('10586', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC714.png" alt="" /></div><div id="Menu_MC714" style="display:none;" class="RMenu">
+   <ul>
+   <li>Sistemas Distribuídos</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/4203/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('4203', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('4203', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('4203', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC833.png" alt="" /></div><div id="Menu_MC833" style="display:none;" class="RMenu">
+   <ul>
+   <li>Programação de Redes de Computadores</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/6983/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('6983', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('6983', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('6983', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC921.png" alt="" /></div><div id="Menu_MC921" style="display:none;" class="RMenu">
+   <ul>
+   <li>Projeto e Construção de Compiladores</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/11376/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('11376', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('11376', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('11376', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<div style="display: none;"><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF_MC030.png" alt="" /></div><div id="Menu_MC030" style="display:none;" class="RMenu">
+   <ul>
+   <li>Projeto Final de Graduação</li>
+   <li><a href="https://grade.daconline.unicamp.br/disciplina/4156/" target="_blank">Informa&ccedil;&otilde;es</a></li>
+   <li><a href="#" onclick="Elimina('4156', 0 ,0); return false;">Eliminar Normalmente</a></li>
+   <li><a href="#" onclick="Elimina('4156', 1 ,0); return false;">Eliminar Parcialmente</a></li>
+   <li><a href="#" onclick="Elimina('4156', 0 ,1); return false;">Eliminar Por Profici&ecirc;ncia</a></li>
+   </ul>
+</div>
+<h2>Curr&iacute;culo de Maria Eduarda Xavier Messias</h2>
+	<form method="get" action="https://grade.daconline.unicamp.br/arvore/">
+		<table cellpadding="1" cellspacing="0" border="0" width="90%">
+			<tr>
+				<td width="10%">Cat&aacute;logo:</td>
+				<td><select id="catalogo" name="catalogo"><option value='1998'>1998</option><option value='1999'>1999</option><option value='2000'>2000</option><option value='2001'>2001</option><option value='2002'>2002</option><option value='2003'>2003</option><option value='2004'>2004</option><option value='2005'>2005</option><option value='2006'>2006</option><option value='2007'>2007</option><option value='2008'>2008</option><option value='2009'>2009</option><option value='2010'>2010</option><option value='2011'>2011</option><option value='2012'>2012</option><option value='2013'>2013</option><option value='2014'>2014</option><option value='2015'>2015</option><option value='2016'>2016</option><option value='2017'>2017</option><option value='2018'>2018</option><option value='2019'>2019</option><option value='2020'>2020</option><option value='2021'>2021</option><option value='2022' selected="selected">2022</option><option value='2023'>2023</option><option value='2024'>2024</option><option value='2025'>2025</option><option value='2026'>2026</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Curso:</td>
+				<td><select id="curso" name="curso"><option value="109">Administração (109)</option><option value="110">Administração Pública (110)</option><option value="48">Arquitetura e Urbanismo (48)</option><option value="26">Artes Cênicas (26)</option><option value="25">Artes Visuais (25)</option><option value="42">Ciência da Computação (42)</option><option value="3">Ciência da Computação (3)</option><option value="6">Ciências Biológicas (6)</option><option value="52">Ciências da Terra (52)</option><option value="100">Ciências do Esporte (100)</option><option value="17">Ciências Econômicas (17)</option><option value="47">Ciências Econômicas (47)</option><option value="16">Ciências Sociais (16)</option><option value="44">Ciências Sociais (44)</option><option value="64">Comunicação Social - Midialogia (64)</option><option value="70">Curso de Música Composição e Regência (70)</option><option value="71">Curso de Música Instrumento (71)</option><option value="72">Curso de Música Popular (72)</option><option value="37">Curso Superior de Tecnologia da Construção Civil (37)</option><option value="82">Curso Superior de Tecnologia da Construção Civil (82)</option><option value="32">Curso Superior de Tecnologia da Construção Civil - Edifícios (32)</option><option value="33">Curso Superior de Tecnologia da Construção Civil - Obras de Solos (33)</option><option value="36">Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (36)</option><option value="60">Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (60)</option><option value="83">Curso Superior de Tecnologia em Construção de Edifícios (83)</option><option value="84">Curso Superior de Tecnologia em Estradas (84)</option><option value="62">Curso Superior de Tecnologia em Saneamento Ambiental (62)</option><option value="73">Curso Superior de Tecnologia em Saneamento Ambiental (73)</option><option value="87">Curso Superior de Tecnologia em Saneamento Ambiental (87)</option><option value="74">Curso Superior de Tecnologia em Sistemas de Telecomunicações (74)</option><option value="31">Curso Superior de Tecnologia Sanitária (31)</option><option value="23">Dança (23)</option><option value="27">Educação Física (27)</option><option value="45">Educação Física (45)</option><option value="21">Enfermagem (21)</option><option value="8">Engenharia Agrícola (8)</option><option value="89">Engenharia Ambiental (89)</option><option value="12">Engenharia Civil (12)</option><option value="13">Engenharia de Alimentos (13)</option><option value="43">Engenharia de Alimentos (43)</option><option value="34" selected="selected">Engenharia de Computação (34)</option><option value="49">Engenharia de Controle e Automação (49)</option><option value="101">Engenharia de Manufatura (101)</option><option value="102">Engenharia de Produção (102)</option><option value="88">Engenharia de Telecomunicações (88)</option><option value="111">Engenharia de Transportes (111)</option><option value="11">Engenharia Elétrica (11)</option><option value="41">Engenharia Elétrica (41)</option><option value="108">Engenharia Física (108)</option><option value="10">Engenharia Mecânica (10)</option><option value="9">Engenharia Química (9)</option><option value="39">Engenharia Química (39)</option><option value="2">Estatística (2)</option><option value="75">Estudos Literários (75)</option><option value="63">Farmácia (63)</option><option value="30">Filosofia (30)</option><option value="4">Física (4)</option><option value="999">Fisioterapia (999)</option><option value="58">Fonoaudiologia (58)</option><option value="54">Geografia (54)</option><option value="55">Geografia (55)</option><option value="53">Geologia (53)</option><option value="104">Gestão de Comércio Internacional (104)</option><option value="105">Gestão de Empresas (105)</option><option value="106">Gestão de Políticas Públicas (106)</option><option value="103">Gestão do Agronegócio (103)</option><option value="19">História (19)</option><option value="46">Licenciatura em Ciências Biológicas (46)</option><option value="35">Licenciatura em Esquema I (35)</option><option value="40">Licenciatura em Física (40)</option><option value="24">Licenciatura em Letras (24)</option><option value="7">Licenciatura em Letras - Português (7)</option><option value="57">Licenciatura em Letras - Português (57)</option><option value="29">Licenciatura em Matemática (29)</option><option value="112">Licenciatura em Teatro (112)</option><option value="201">Licenciatura em Teatro (201)</option><option value="56">Licenciatura Integrada Química/Física (56)</option><option value="18">Linguística (18)</option><option value="1">Matemática (1)</option><option value="28">Matemática Aplicada e Computacional (28)</option><option value="51">Matemática/Física/Matemática Aplicada e Computacional (51)</option><option value="15">Medicina (15)</option><option value="22">Música (22)</option><option value="90">Música (90)</option><option value="91">Música (91)</option><option value="92">Música (92)</option><option value="93">Música (93)</option><option value="107">Nutrição (107)</option><option value="14">Odontologia (14)</option><option value="20">Pedagogia (20)</option><option value="38">Pedagogia (38)</option><option value="59">Pedagogia (59)</option><option value="65">Pedagogia (65)</option><option value="66">Pedagogia (66)</option><option value="67">Pedagogia (67)</option><option value="200">Programa de Formação Interdisciplinar Superior - ProFIS (200)</option><option value="5">Química (5)</option><option value="50">Química Tecnológica (50)</option><option value="94">Sistemas de Informação (94)</option><option value="85">Superior de Tecnologia Ambiental (85)</option><option value="86">Superior Tecnologia em Saneamento Ambiental (86)</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Modalidade:</td>
+				<td id="select_modalidade"><select id="modalidade" name="modalidade"><option value="">Indiferente</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Per&iacute;odo:</td>
+				<td><select id="periodo" name="periodo"><option value="20262">2026 - 2&ordm; Semestre</option><option value="20261">2026 - 1.&ordm; Semestre</option><option value="20260">2026 - F&eacute;rias de Ver&atilde;o</option><option value="20252" selected="selected">2025 - 2&ordm; Semestre</option><option value="20251">2025 - 1.&ordm; Semestre</option><option value="20250">2025 - F&eacute;rias de Ver&atilde;o</option><option value="20242">2024 - 2&ordm; Semestre</option><option value="20241">2024 - 1&ordm; Semestre</option><option value="20240">2024 - F&eacute;rias de Ver&atilde;o</option><option value="20232">2023 - 2&ordm; Semestre</option><option value="20231">2023 - 1&ordm; Semestre</option><option value="20230">2023 - F&eacute;rias de Ver&atilde;o</option><option value="20222">2022 - 2&ordm; Semestre</option><option value="20221">2022 - 1&ordm; Semestre</option><option value="20220">2022 - F&eacute;rias de Ver&atilde;o</option><option value="20212">2021 - 2&ordm; Semestre</option><option value="20211">2021 - 1&ordm; Semestre</option><option value="20210">2021 - F&eacute;rias de Ver&atilde;o</option><option value="20202">2020 - 2&ordm; Semestre</option><option value="20201">2020 - 1&ordm; Semestre</option><option value="20200">2020 - F&eacute;rias de Ver&atilde;o</option><option value="20192">2019 - 2&ordm; Semestre</option><option value="20191">2019 - 1&ordm; Semestre</option><option value="20190">2019 - F&eacute;rias de Ver&atilde;o</option><option value="20182">2018 - 2&ordm; Semestre</option><option value="20181">2018 - 1&ordm; Semestre</option><option value="20180">2018 - F&eacute;rias de Ver&atilde;o</option><option value="20172">2017 - 2&ordm; Semestre</option><option value="20171">2017 - 1&ordm; Semestre</option><option value="20170">2017 - F&eacute;rias de Ver&atilde;o</option><option value="20162">2016 - 2&ordm; Semestre</option><option value="20161">2016 - 1&ordm; Semestre</option><option value="20160">2016 - F&eacute;rias de Ver&atilde;o</option><option value="20152">2015 - 2&ordm; Semestre</option><option value="20151">2015 - 1&ordm; Semestre</option><option value="20150">2015 - F&eacute;rias de Ver&atilde;o</option><option value="20142">2014 - 2&ordm; Semestre</option><option value="20141">2014 - 1&ordm; Semestre</option><option value="20140">2014 - F&eacute;rias de Ver&atilde;o</option><option value="20132">2013 - 2&ordm; Semestre</option><option value="20131">2013 - 1&ordm; Semestre</option><option value="20130">2013 - F&eacute;rias de Ver&atilde;o</option><option value="20122">2012 - 2&ordm; Semestre</option><option value="20121">2012 - 1&ordm; Semestre</option><option value="20120">2012 - F&eacute;rias de Ver&atilde;o</option><option value="20112">2011 - 2&ordm; Semestre</option><option value="20111">2011 - 1&ordm; Semestre</option><option value="20110">2011 - F&eacute;rias de Ver&atilde;o</option><option value="20102">2010 - 2&ordm; Semestre</option><option value="20101">2010 - 1&ordm; Semestre</option><option value="20100">2010 - F&eacute;rias de Ver&atilde;o</option><option value="20092">2009 - 2&ordm; Semestre</option><option value="20091">2009 - 1&ordm; Semestre</option><option value="20090">2009 - F&eacute;rias de Ver&atilde;o</option><option value="20082">2008 - 2&ordm; Semestre</option><option value="20081">2008 - 1&ordm; Semestre</option><option value="20080">2008 - F&eacute;rias de Ver&atilde;o</option><option value="20072">2007 - 2&ordm; Semestre</option><option value="20071">2007 - 1&ordm; Semestre</option><option value="20070">2007 - F&eacute;rias de Ver&atilde;o</option></select></td>
+			</tr>
+			<tr>
+				<td width="10%">Completa:</td>
+				<td><select id="cp" name="cp"><option value='0' selected="selected">N&atilde;o</option><option value='1'>Sim</option></select></td>
+			</tr>
+		</table>
+		<br />
+		<table cellpadding="0" cellspacing="0" border="0" width="90%">
+			<tr>
+				<td colspan='2'><input type="submit" id="ok" value=" " alt="Consultar" class="botao_consultar" /> <input type="button" id="limpar" value=" " alt="Limpar" class="botao_limpar" /></td>
+			</tr>
+		</table>
+	</form>
+	<br /><br />
+	<div style="display: block" id="mostra">
+		<a href="#" onclick="document.getElementById('integralizacao').style.display='block'; document.getElementById('mostra').style.display='none'; return false;">Mostrar Integraliza&ccedil;&atilde;o</a>
+	</div>
+	<div style="display: none" id="integralizacao">
+		<a href="#" onclick="document.getElementById('integralizacao').style.display='none'; document.getElementById('mostra').style.display='block'; return false;">Ocultar Integraliza&ccedil;&atilde;o</a>
+		<br /><div><br />
+<pre>
+  <strong>Aviso:</strong> Esta n&atilde;o &eacute; a integraliza&ccedil;&atilde;o oficial da DAC e pode ou n&atilde;o refletir a realidade.
+  <strong>Aluno:</strong> <a href="https://grade.daconline.unicamp.br/perfil/usuario=dudamx">Maria Eduarda Xavier Messias</a>
+  <strong>Registro Acad&ecirc;mico (RA):</strong> 183611
+  <strong>Curso:</strong> 34 - Engenharia de Computação
+  <strong>Modalidade:</strong> AA - Sistemas de Computação
+  <strong>Cat&aacute;logo:</strong> 2022
+  <strong>Ingresso:</strong> 1&ordm; semestre de 2023
+  <strong>Limite para Integraliza&ccedil;&atilde;o:</strong> 1&ordm; semestre de 2030
+  <strong><i>Semestre Atual</i>:</strong> 2025 - 2&ordm; Semestre
+  <strong><i>Neste semestre</i> ->    CP :</strong> 0,6872  <strong>Cr&eacute;ditos Obtidos:</strong> 167  <strong>Cr&eacute;ditos Faltantes:</strong> 76
+  <strong><i>Final do semestre </i>-> CPF:</strong> 0,6872  <strong>Cr&eacute;ditos Obtidos:</strong> 167  <strong>Cr&eacute;ditos Faltantes:</strong> 76
+
+
+  <strong>Disciplinas j&aacute; cursadas:</strong>
+  <a href="https://grade.daconline.unicamp.br/disciplina/2101/" class="sigla" title="Resistência dos Materiais" target="_blank">EM423</a>(03)+ ??????  <a href="https://grade.daconline.unicamp.br/disciplina/17666/" class="sigla" title="Tecnologia das Ligas Metálicas" target="_blank">EM727</a>(02)X ??????  <a href="https://grade.daconline.unicamp.br/disciplina/2742/" class="sigla" title="Física Geral I" target="_blank">F 128</a>(04)+ ??????  <a href="https://grade.daconline.unicamp.br/disciplina/3904/" class="sigla" title="Inglês Instrumental I" target="_blank">LA122</a>(04)+ ??????<br />  <a href="https://grade.daconline.unicamp.br/disciplina/4171/" class="sigla" title="Organização Básica de Computadores e Linguagem de Montagem" target="_blank">MC404</a>(04)+ ??????  <a href="https://grade.daconline.unicamp.br/disciplina/2081/" class="sigla" title="Desenho Técnico" target="_blank">EM102</a>(04)* 1S2020  <a href="https://grade.daconline.unicamp.br/disciplina/4084/" class="sigla" title="Cálculo I" target="_blank">MA111</a>(06)+ 1S2020  <a href="https://grade.daconline.unicamp.br/disciplina/4086/" class="sigla" title="Geometria Analítica e Vetores" target="_blank">MA141</a>(04)+ 1S2020<br />  <a href="https://grade.daconline.unicamp.br/disciplina/11718/" class="sigla" title="Química Teórica" target="_blank">QG111</a>(02)+ 1S2020  <a href="https://grade.daconline.unicamp.br/disciplina/11719/" class="sigla" title="Química Experimental" target="_blank">QG122</a>(02)+ 1S2020  <a href="https://grade.daconline.unicamp.br/disciplina/2082/" class="sigla" title="Metodologia de Pesquisa e Redação Científica" target="_blank">EM103</a>(02)X 2S2020  <a href="https://grade.daconline.unicamp.br/disciplina/2086/" class="sigla" title="Desenho Assistido por Computador" target="_blank">EM200</a>(02)X 2S2020<br />  <a href="https://grade.daconline.unicamp.br/disciplina/2092/" class="sigla" title="Estrutura e Propriedades dos Materiais" target="_blank">EM240</a>(04)* 2S2020  <a href="https://grade.daconline.unicamp.br/disciplina/2093/" class="sigla" title="Estática" target="_blank">EM306</a>(04)* 2S2020  <a href="https://grade.daconline.unicamp.br/disciplina/2743/" class="sigla" title="Física Experimental I" target="_blank">F 129</a>(02)+ 2S2020  <a href="https://grade.daconline.unicamp.br/disciplina/2750/" class="sigla" title="Física Geral III" target="_blank">F 328</a>(04)+ 2S2020<br />  <a href="https://grade.daconline.unicamp.br/disciplina/4091/" class="sigla" title="Cálculo II" target="_blank">MA211</a>(06)+ 2S2020  <a href="https://grade.daconline.unicamp.br/disciplina/4100/" class="sigla" title="Álgebra Linear" target="_blank">MA327</a>(04)+ 2S2020  <a href="https://grade.daconline.unicamp.br/disciplina/4443/" class="sigla" title="Estatística para Experimentalistas" target="_blank">ME414</a>(04)* 2S2020  <a href="https://grade.daconline.unicamp.br/disciplina/2097/" class="sigla" title="Tecnologia Mecânica" target="_blank">EM335</a>(04)X 1S2021<br />  <a href="https://grade.daconline.unicamp.br/disciplina/2098/" class="sigla" title="Termodinâmica I" target="_blank">EM360</a>(04)X 1S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2100/" class="sigla" title="Resistência dos Materiais I" target="_blank">EM406</a>(04)X 1S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2751/" class="sigla" title="Física Experimental III" target="_blank">F 329</a>(02)+ 1S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2753/" class="sigla" title="Física Geral IV" target="_blank">F 428</a>(04)+ 1S2021<br />  <a href="https://grade.daconline.unicamp.br/disciplina/4099/" class="sigla" title="Cálculo III" target="_blank">MA311</a>(06)+ 1S2021  <a href="https://grade.daconline.unicamp.br/disciplina/4162/" class="sigla" title="Algoritmos e Programação de Computadores" target="_blank">MC102</a>(06)+ 1S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2084/" class="sigla" title="Introdução à Engenharia Mecânica" target="_blank">EM110</a>(02)X 2S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2099/" class="sigla" title="Dinâmica" target="_blank">EM404</a>(04)X 2S2021<br />  <a href="https://grade.daconline.unicamp.br/disciplina/2104/" class="sigla" title="Termodinâmica II" target="_blank">EM460</a>(04)X 2S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2105/" class="sigla" title="Mecânica dos Fluidos I" target="_blank">EM461</a>(04)X 2S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2128/" class="sigla" title="Ensaios dos Materiais" target="_blank">EM641</a>(02)X 2S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2754/" class="sigla" title="Física Experimental IV" target="_blank">F 429</a>(02)+ 2S2021<br />  <a href="https://grade.daconline.unicamp.br/disciplina/4756/" class="sigla" title="Cálculo Numérico" target="_blank">MS211</a>(04)+ 2S2021  <a href="https://grade.daconline.unicamp.br/disciplina/2019/" class="sigla" title="Materiais Poliméricos" target="_blank">EM014</a>(02)X 1S2022  <a href="https://grade.daconline.unicamp.br/disciplina/6712/" class="sigla" title="Mecânica e Mecanismos da Fratura" target="_blank">EM638</a>(02)X 1S2022  <a href="https://grade.daconline.unicamp.br/disciplina/2140/" class="sigla" title="Tecnologia de Ligas Metálicas" target="_blank">EM737</a>(04)X 1S2022<br />  <a href="https://grade.daconline.unicamp.br/disciplina/2106/" class="sigla" title="Introdução aos Métodos Numéricos Aplicados à Engenharia" target="_blank">EM503</a>(04)X 2S2022  <a href="https://grade.daconline.unicamp.br/disciplina/2111/" class="sigla" title="Usinagem dos Materiais" target="_blank">EM535</a>(04)X 2S2022  <a href="https://grade.daconline.unicamp.br/disciplina/6341/" class="sigla" title="Processos Metalúrgicos de Fabricação" target="_blank">EM665</a>(04)X 2S2022  <a href="https://grade.daconline.unicamp.br/disciplina/2137/" class="sigla" title="Sistemas Produtivos" target="_blank">EM733</a>(04)X 2S2022<br />  <a href="https://grade.daconline.unicamp.br/disciplina/2191/" class="sigla" title="Projeto de Sistemas Mecânicos" target="_blank">EM909</a>(04)X 2S2022  <a href="https://grade.daconline.unicamp.br/disciplina/3739/" class="sigla" title="Tópicos Especiais de Humanidades I" target="_blank">HZ291</a>(02)+ 1S2023  <a href="https://grade.daconline.unicamp.br/disciplina/14320/" class="sigla" title="Inglês Instrumental I à distância" target="_blank">LA142</a>(04)X 1S2023  <a href="https://grade.daconline.unicamp.br/disciplina/631/" class="sigla" title="Ciências do Ambiente" target="_blank">BE310</a>(02)+ 2S2023<br />  <a href="https://grade.daconline.unicamp.br/disciplina/896/" class="sigla" title="Contabilidade para Engenharia" target="_blank">CE838</a>(02)+ 2S2023  <a href="https://grade.daconline.unicamp.br/disciplina/1343/" class="sigla" title="Circuitos Lógicos" target="_blank">EA772</a>(04)+ 2S2023  <a href="https://grade.daconline.unicamp.br/disciplina/1336/" class="sigla" title="Circuitos Elétricos" target="_blank">EA513</a>(04)+ 1S2024  <a href="https://grade.daconline.unicamp.br/disciplina/4440/" class="sigla" title="Introdução aos Modelos Probabilísticos" target="_blank">ME323</a>(04)+ 1S2024<br />  <a href="https://grade.daconline.unicamp.br/disciplina/1338/" class="sigla" title="Análise de Sinais" target="_blank">EA614</a>(04)+ 2S2024  <a href="https://grade.daconline.unicamp.br/disciplina/4165/" class="sigla" title="Estruturas de Dados" target="_blank">MC202</a>(06)+ 2S2024  <a href="https://grade.daconline.unicamp.br/disciplina/845/" class="sigla" title="Direito" target="_blank">CE304</a>(02)+ 1S2025  <a href="https://grade.daconline.unicamp.br/disciplina/890/" class="sigla" title="Economia para Engenharia" target="_blank">CE738</a>(04)+ 1S2025<br />  <a href="https://grade.daconline.unicamp.br/disciplina/17180/" class="sigla" title="Eletrônica Básica I" target="_blank">EE533</a>(04)+ 1S2025  <a href="https://grade.daconline.unicamp.br/disciplina/9197/" class="sigla" title="Programação Orientada a Objetos" target="_blank">MC322</a>(04)+ 1S2025  <a href="https://grade.daconline.unicamp.br/disciplina/6770/" class="sigla" title="Fundamentos Matemáticos da Computação" target="_blank">MC358</a>(04)+ 1S2025  <a href="https://grade.daconline.unicamp.br/disciplina/6868/" class="sigla" title="Aprendizado de Máquina" target="_blank">MC886</a>(04)* 1S2025<br />  <a href="https://grade.daconline.unicamp.br/disciplina/7524/" class="sigla" title="Introdução à Programação Paralela" target="_blank">MC970</a>(04)* 1S2025  <a href="https://grade.daconline.unicamp.br/disciplina/897/" class="sigla" title="Introdução à Administração para Computação" target="_blank">CE839</a>(02)+ 2S2025  <a href="https://grade.daconline.unicamp.br/disciplina/6771/" class="sigla" title="Laboratório de Eletrônica Aplicada" target="_blank">EE534</a>(02)+ 2S2025  <a href="https://grade.daconline.unicamp.br/disciplina/2745/" class="sigla" title="Física Geral II" target="_blank">F 228</a>(04)+ 2S2025<br />  <a href="https://grade.daconline.unicamp.br/disciplina/2748/" class="sigla" title="Mecânica Geral I" target="_blank">F 315</a>(04)+ 2S2025  <a href="https://grade.daconline.unicamp.br/disciplina/4172/" class="sigla" title="Engenharia de Software" target="_blank">MC426</a>(04)+ 2S2025  <a href="https://grade.daconline.unicamp.br/disciplina/4177/" class="sigla" title="Sistemas Operacionais" target="_blank">MC504</a>(04)+ 2S2025  <a href="https://grade.daconline.unicamp.br/disciplina/10585/" class="sigla" title="Projeto de Sistemas Computacionais" target="_blank">MC732</a>(04)+ 2S2025<br />  <a href="https://grade.daconline.unicamp.br/disciplina/4210/" class="sigla" title="Construção de Interfaces Homem-Computador" target="_blank">MC750</a>(04)+ 2S2025
+
+  <strong>Disciplinas Obrigat&oacute;rias que ainda devem ser cursadas:</strong>
+  <a href="https://grade.daconline.unicamp.br/disciplina/2746/" class="sigla" title="Física Experimental II" target="_blank">F 229</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/4193/" class="sigla" title="Laboratório de Circuitos Digitais" target="_blank">MC613</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6772/" class="sigla" title="Projeto e Análise de Algoritmos I" target="_blank">MC458</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4184/" class="sigla" title="Bancos de Dados: Teoria e Prática" target="_blank">MC536</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/6775/" class="sigla" title="Projeto e Análise de Algoritmos II" target="_blank">MC558</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/10586/" class="sigla" title="Redes de Computadores" target="_blank">MC832</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4203/" class="sigla" title="Sistemas Distribuídos" target="_blank">MC714</a>(04)
+  <a href="https://grade.daconline.unicamp.br/disciplina/6983/" class="sigla" title="Programação de Redes de Computadores" target="_blank">MC833</a>(02)  <a href="https://grade.daconline.unicamp.br/disciplina/11376/" class="sigla" title="Projeto e Construção de Compiladores" target="_blank">MC921</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/4156/" class="sigla" title="Projeto Final de Graduação" target="_blank">MC030</a>(12)
+
+  <strong>Disciplinas Eletivas que ainda devem ser cursadas:</strong>
+  Obter 12 Cr&eacute;dito(s) dentre a(s) seguinte(s) disciplina(s):   <a href="https://grade.daconline.unicamp.br/disciplina/6859/" class="sigla" title="Estudo Dirigido II" target="_blank">MC033</a>(06)  <a href="https://grade.daconline.unicamp.br/disciplina/4159/" class="sigla" title="Estágio de Iniciação Científica I" target="_blank">MC040</a>(12)  <a href="https://grade.daconline.unicamp.br/disciplina/4160/" class="sigla" title="Estágio de Iniciação Científica II" target="_blank">MC041</a>(12)  <a href="https://grade.daconline.unicamp.br/disciplina/10634/" class="sigla" title="Monitoria II" target="_blank">MC051</a>(08)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/4161/" class="sigla" title="Monitoria" target="_blank">MC050</a>(08)  <a href="https://grade.daconline.unicamp.br/disciplina/4154/" class="sigla" title="Estágio Supervisionado em Ciência da Computação II" target="_blank">MC020</a>(12)  <a href="https://grade.daconline.unicamp.br/disciplina/4153/" class="sigla" title="Estágio Supervisionado em Ciência da Computação" target="_blank">MC019</a>(12)  <a href="https://grade.daconline.unicamp.br/disciplina/4157/" class="sigla" title="Estudo Dirigido" target="_blank">MC032</a>(06)
+                                                             
+  Obter 12 Cr&eacute;dito(s) dentre a(s) seguinte(s) disciplina(s):   <a href="https://grade.daconline.unicamp.br/disciplina/11148/" class="sigla" title="Projeto em Computação III" target="_blank">MC871</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6866/" class="sigla" title="Projeto em Teoria da Computação" target="_blank">MC859</a>(12)  <a href="https://grade.daconline.unicamp.br/disciplina/6863/" class="sigla" title="Projeto em Computação I" target="_blank">MC851</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6867/" class="sigla" title="Projeto em Computação II" target="_blank">MC861</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/11149/" class="sigla" title="Projeto em Computação IV" target="_blank">MC881</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6864/" class="sigla" title="Projeto em Sistemas de Programação" target="_blank">MC853</a>(12)  <a href="https://grade.daconline.unicamp.br/disciplina/6777/" class="sigla" title="Projeto em Sistemas de Computação" target="_blank">MC855</a>(12)  <a href="https://grade.daconline.unicamp.br/disciplina/6865/" class="sigla" title="Projeto em Sistemas de Informação" target="_blank">MC857</a>(04)
+                                                             
+  Obter  4 Cr&eacute;dito(s) dentre a(s) seguinte(s) disciplina(s):   <a href="https://grade.daconline.unicamp.br/disciplina/6776/" class="sigla" title="Projeto e Análise de Algoritmos III" target="_blank">MC658</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4247/" class="sigla" title="Processamento e Análise de Imagens" target="_blank">MC940</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/11437/" class="sigla" title="Introdução à Programação Concorrente" target="_blank">MC971</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4233/" class="sigla" title="Tópicos Especiais em Processamento Gráfico" target="_blank">MC919</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/6773/" class="sigla" title="Paradigmas de Programação" target="_blank">MC346</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/6868/" class="sigla" title="Aprendizado de Máquina" target="_blank">MC886</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/10636/" class="sigla" title="Desafios de Programação II" target="_blank">MC621</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4252/" class="sigla" title="Recuperação de Imagens por Conteúdo" target="_blank">MC950</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/12247/" class="sigla" title="Robótica Móvel" target="_blank">MC907</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/10639/" class="sigla" title="Computação Gráfica" target="_blank">MC937</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/7524/" class="sigla" title="Introdução à Programação Paralela" target="_blank">MC970</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4227/" class="sigla" title="Introdução à Inteligência Artificial" target="_blank">MC906</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/4251/" class="sigla" title="Visão Computacional" target="_blank">MC949</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/10638/" class="sigla" title="Desafios de Programação IV" target="_blank">MC821</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4234/" class="sigla" title="Introdução ao Processamento de Imagem Digital" target="_blank">MC920</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/10635/" class="sigla" title="Desafios de Programação I" target="_blank">MC521</a>(04)
+                                                               <a href="https://grade.daconline.unicamp.br/disciplina/6869/" class="sigla" title="Processamento de Línguas Naturais" target="_blank">MC896</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/12245/" class="sigla" title="Verificação, Validação e Testes de Software" target="_blank">MC646</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/10637/" class="sigla" title="Desafios de Programação III" target="_blank">MC721</a>(04)  <a href="https://grade.daconline.unicamp.br/disciplina/4256/" class="sigla" title="Tópicos em Inteligência Artificial I" target="_blank">MC959</a>(04)
+                                                             
+
+
+  <strong>Disciplinas sendo cursadas atualmente:</strong>
+
+
+
+
+  <strong>C&oacute;digos utilizados:</strong>
+     ---------------------------------------------------------------
+
+  Formato:  LLXXXT(DD)I PPAAAA
+
+    LLXXX = Sigla da Disciplina DD = Cr&eacute;ditos da Disciplina
+    I = Tipo de Aproveitamento PP = Periodo AAAA = Ano
+
+  Tipos de Aproveitamento:
+
+    + = Obrigat&oacute;ria   * = Eletiva    X = Extra-Curricular
+</pre></div>
+	</div><br/>
+	<span class="formInfo"><a href="#" id="TT_tips">Dicas</a></span>
+	<br /><br />
+	<div class="div_img_ov_arvore" style="opacity: 0; position: absolute; display: none; z-index: 100;"><img class="img_ov_arvore" src="" alt="" /></div><div id="div_img_ov_mapa" style="position: absolute; z-index: 110;"><img id="img_ov_mapa" usemap="#mapa" src="https://grade.daconline.unicamp.br/web/images/spacer.gif" width="720" height="1035" alt="" /></div><img src="../cache/arvores/arvore_1frSMCNYOh9DI0UF.png" id="img_arvore" border="0" alt="Arvore" /><map name="mapa" id="mapa">
+<area shape='rect' coords='80,155,170,185' title='Física Experimental II' alt='Física Experimental II' href='#' id='Shape_2746' class='Shapes' /><area shape='rect' coords='80,470,170,500' title='Laboratório de Circuitos Digitais' alt='Laboratório de Circuitos Digitais' href='#' id='Shape_4193' class='Shapes' /><area shape='rect' coords='225,470,315,500' title='Projeto e Análise de Algoritmos I' alt='Projeto e Análise de Algoritmos I' href='#' id='Shape_6772' class='Shapes' /><area shape='rect' coords='370,470,460,500' title='Bancos de Dados: Teoria e Prática' alt='Bancos de Dados: Teoria e Prática' href='#' id='Shape_4184' class='Shapes' /><area shape='rect' coords='80,575,170,605' title='Projeto e Análise de Algoritmos II' alt='Projeto e Análise de Algoritmos II' href='#' id='Shape_6775' class='Shapes' /><area shape='rect' coords='80,785,170,815' title='Redes de Computadores' alt='Redes de Computadores' href='#' id='Shape_10586' class='Shapes' /><area shape='rect' coords='80,890,170,920' title='Sistemas Distribuídos' alt='Sistemas Distribuídos' href='#' id='Shape_4203' class='Shapes' /><area shape='rect' coords='225,890,315,920' title='Programação de Redes de Computadores' alt='Programação de Redes de Computadores' href='#' id='Shape_6983' class='Shapes' /><area shape='rect' coords='370,890,460,920' title='Projeto e Construção de Compiladores' alt='Projeto e Construção de Compiladores' href='#' id='Shape_11376' class='Shapes' /><area shape='rect' coords='80,995,170,1025' title='Projeto Final de Graduação' alt='Projeto Final de Graduação' href='#' id='Shape_4156' class='Shapes' />
+</map>	<br />Obs: Caso existam dois conjuntos de pr&eacute;-requisitos presentes integralmente no cat&aacute;logo, apenas um deles ser&aacute; exibido.<br />
+	
+				<div id="rodape">
+					<hr style="color: #B2B2B2; background-color: #B2B2B2; height: 1px; margin: 10px 0 10px 0; border: 0 none" />
+					<div id="usuarios_online"><span>Usu&aacute;rios online</span>: <span id="contador_usuarios_online">7</span></div>
+					<br />&Uacute;ltima Atualiza&ccedil;&atilde;o do sistema: 15/11/2024 - Vers&atilde;o 2.6
+					<br /><br /><strong>Aviso:</strong> O GDE n&atilde;o &eacute; um sistema oficial da Unicamp, e tem por &uacute;nico objetivo auxiliar alunos na vida acad&ecirc;mica.
+					<br /><br /><i>A economia é a base da porcaria! - Hélio Guaycuru de Carvalho</i>
+					<hr style="color: #B2B2B2; background-color: #B2B2B2; height: 1px; margin: 10px 0 10px 0; border: 0 none" />
+					<div style="width: 210px; height: 42px; margin: auto;">
+						<a href="http://www.guaycuru.net" title="Desenvolvido por Felipe Guaycuru de C. B. Franco" target="_blank" style="float: left; margin-top: 10px;"><img src="https://grade.daconline.unicamp.br/web/images/logo_guaycuru.gif" border="0" alt="Desenvolvido por Felipe Guaycuru de C. B. Franco" width="100" height="21" /></a>
+					</div>
+					<!-- <br /><div style="width: 125px; margin: auto;"><a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="https://grade.daconline.unicamp.br/web/images/w3c_xhtml.gif" border="0" alt="Valid XHTML 1.0 Transitional !" width="60" height="21" /></a> <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="https://grade.daconline.unicamp.br/web/images/w3c_css.gif" alt="Valid CSS !" width="60" height="21" /></a></div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

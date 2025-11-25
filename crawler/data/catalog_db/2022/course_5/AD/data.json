@@ -10,32 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "AD",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "4084",
-      "codigo": "MA111",
-      "nome": "Cálculo I",
-      "creditos": 6,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "AD",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4086",
-      "codigo": "MA141",
-      "nome": "Geometria Analítica e Vetores",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "AD",
-      "prereqs": []
-    },
     {
       "disciplina_id": "5336",
       "codigo": "QG005",
@@ -81,31 +59,26 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "2743",
-      "codigo": "F 129",
-      "nome": "Física Experimental I",
-      "creditos": 2,
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 1,
       "modalidade": "AD",
       "prereqs": []
     },
     {
-      "disciplina_id": "4091",
-      "codigo": "MA211",
-      "nome": "Cálculo II",
-      "creditos": 6,
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 1,
       "modalidade": "AD",
-      "prereqs": [
-        [
-          "MA111",
-          "MA141"
-        ]
-      ]
+      "prereqs": []
     },
     {
       "disciplina_id": "5289",
@@ -169,32 +142,29 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "12178",
-      "codigo": "QA381",
-      "nome": "Espectroanalítica",
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "AD",
-      "prereqs": [
-        [
-          "QA282"
-        ]
-      ]
+      "prereqs": []
     },
     {
-      "disciplina_id": "12179",
-      "codigo": "QA383",
-      "nome": "Eletroanalítica",
-      "creditos": 2,
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "AD",
       "prereqs": [
         [
-          "QA282"
+          "MA111",
+          "MA141"
         ]
       ]
     },
@@ -260,13 +230,13 @@
       ]
     },
     {
-      "disciplina_id": "12180",
-      "codigo": "QA481",
-      "nome": "Métodos de Separação",
+      "disciplina_id": "12178",
+      "codigo": "QA381",
+      "nome": "Espectroanalítica",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "AD",
       "prereqs": [
         [
@@ -275,13 +245,13 @@
       ]
     },
     {
-      "disciplina_id": "12181",
-      "codigo": "QA483",
-      "nome": "Estatística Aplicada à Química Analítica",
+      "disciplina_id": "12179",
+      "codigo": "QA383",
+      "nome": "Eletroanalítica",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "AD",
       "prereqs": [
         [
@@ -391,50 +361,32 @@
       ]
     },
     {
-      "disciplina_id": "5404",
-      "codigo": "QO551",
-      "nome": "Bioquímica I",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "AD",
-      "prereqs": [
-        [
-          "QO321"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "15130",
-      "codigo": "EQ482",
-      "nome": "Introdução aos Cálculos de Processos Químicos",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "AD",
-      "prereqs": [
-        [
-          "QF531"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "12183",
-      "codigo": "QA583",
-      "nome": "Preparo de Amostras",
+      "disciplina_id": "12180",
+      "codigo": "QA481",
+      "nome": "Métodos de Separação",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "AD",
       "prereqs": [
         [
-          "QA381",
-          "QA383",
-          "QA481",
-          "QA483"
+          "QA282"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12181",
+      "codigo": "QA483",
+      "nome": "Estatística Aplicada à Química Analítica",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "QA282"
         ]
       ]
     },
@@ -505,17 +457,50 @@
       ]
     },
     {
-      "disciplina_id": "6711",
-      "codigo": "EQ582",
-      "nome": "Fenômenos de Transporte e Operações Unitárias",
+      "disciplina_id": "5404",
+      "codigo": "QO551",
+      "nome": "Bioquímica I",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 5,
       "modalidade": "AD",
       "prereqs": [
         [
-          "EQ482"
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15130",
+      "codigo": "EQ482",
+      "nome": "Introdução aos Cálculos de Processos Químicos",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "QF531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12183",
+      "codigo": "QA583",
+      "nome": "Preparo de Amostras",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "QA381",
+          "QA383",
+          "QA481",
+          "QA483"
         ]
       ]
     },
@@ -598,31 +583,17 @@
       ]
     },
     {
-      "disciplina_id": "2095",
-      "codigo": "EM312",
-      "nome": "Desenho Técnico",
+      "disciplina_id": "6711",
+      "codigo": "EQ582",
+      "nome": "Fenômenos de Transporte e Operações Unitárias",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "AD",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "5313",
-      "codigo": "QF053",
-      "nome": "Laboratório de Química Aplicada",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
+      "semestre": 6,
       "modalidade": "AD",
       "prereqs": [
         [
           "EQ482"
-        ],
-        [
-          "EQ481"
         ]
       ]
     },
@@ -669,6 +640,35 @@
       "prereqs": [
         [
           "QO551"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2095",
+      "codigo": "EM312",
+      "nome": "Desenho Técnico",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5313",
+      "codigo": "QF053",
+      "nome": "Laboratório de Química Aplicada",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "EQ482"
+        ],
+        [
+          "EQ481"
         ]
       ]
     },

@@ -4,8 +4,8 @@ from __future__ import annotations
 BASE = "https://grade.daconline.unicamp.br"
 
 # Defaults
-CATALOGO_TARGET = "2022"  # Catálogo padrão
-PERIODO_TARGET = "20251"   # 2025 - 1º semestre
+CATALOGO_TARGET = "2026"  # Catálogo padrão
+PERIODO_TARGET = "20261"   # 2026 - 1º semestre
 CP_TARGET = "1"            # Completa=Sim
 
 # Modo de coleta

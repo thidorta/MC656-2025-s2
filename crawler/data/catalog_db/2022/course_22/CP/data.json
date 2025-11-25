@@ -10,10 +10,32 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "CP",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "4664",
+      "codigo": "MP101",
+      "nome": "Cordas I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4672",
+      "codigo": "MP140",
+      "nome": "História e Linguagem da Música Popular I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CP",
+      "prereqs": []
+    },
     {
       "disciplina_id": "4674",
       "codigo": "MP150",
@@ -59,26 +81,60 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "4664",
-      "codigo": "MP101",
-      "nome": "Cordas I",
+      "disciplina_id": "4919",
+      "codigo": "MU205",
+      "nome": "Estruturação Musical II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CP",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4670",
+      "codigo": "MP120",
+      "nome": "Prática Instrumental I",
       "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "CP",
       "prereqs": []
     },
     {
-      "disciplina_id": "4672",
-      "codigo": "MP140",
-      "nome": "História e Linguagem da Música Popular I",
-      "creditos": 2,
+      "disciplina_id": "4975",
+      "codigo": "MU293",
+      "nome": "Percepção Musical II",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "CP",
-      "prereqs": []
+      "prereqs": [
+        [
+          "MU193"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4677",
+      "codigo": "MP201",
+      "nome": "Cordas II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CP",
+      "prereqs": [
+        [
+          "MP101"
+        ]
+      ]
     },
     {
       "disciplina_id": "4685",
@@ -141,58 +197,32 @@
       ]
     },
     {
-      "disciplina_id": "4919",
-      "codigo": "MU205",
-      "nome": "Estruturação Musical II",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "CP",
-      "prereqs": [
-        [
-          "MU105"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4670",
-      "codigo": "MP120",
-      "nome": "Prática Instrumental I",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "CP",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4975",
-      "codigo": "MU293",
-      "nome": "Percepção Musical II",
+      "disciplina_id": "5018",
+      "codigo": "MU393",
+      "nome": "Percepção Musical III",
       "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "CP",
       "prereqs": [
         [
-          "MU193"
+          "MU293"
         ]
       ]
     },
     {
-      "disciplina_id": "4677",
-      "codigo": "MP201",
-      "nome": "Cordas II",
-      "creditos": 3,
+      "disciplina_id": "4671",
+      "codigo": "MP130",
+      "nome": "Harmonia I",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "CP",
       "prereqs": [
         [
-          "MP101"
+          "MU205"
         ]
       ]
     },
@@ -257,32 +287,32 @@
       ]
     },
     {
-      "disciplina_id": "5018",
-      "codigo": "MU393",
-      "nome": "Percepção Musical III",
+      "disciplina_id": "4843",
+      "codigo": "MU061",
+      "nome": "Rítmica IV",
       "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "CP",
       "prereqs": [
         [
-          "MU293"
+          "MU060"
         ]
       ]
     },
     {
-      "disciplina_id": "4671",
-      "codigo": "MP130",
-      "nome": "Harmonia I",
-      "creditos": 2,
+      "disciplina_id": "5060",
+      "codigo": "MU493",
+      "nome": "Percepção Musical IV",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "CP",
       "prereqs": [
         [
-          "MU205"
+          "MU393"
         ]
       ]
     },
@@ -347,34 +377,45 @@
       ]
     },
     {
-      "disciplina_id": "4843",
-      "codigo": "MU061",
-      "nome": "Rítmica IV",
-      "creditos": 5,
+      "disciplina_id": "4709",
+      "codigo": "MP420",
+      "nome": "Prática Instrumental IV",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "CP",
       "prereqs": [
         [
-          "MU060"
+          "MP320"
         ]
       ]
     },
     {
-      "disciplina_id": "5060",
-      "codigo": "MU493",
-      "nome": "Percepção Musical IV",
-      "creditos": 5,
+      "disciplina_id": "4716",
+      "codigo": "MP501",
+      "nome": "Cordas V",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "CP",
       "prereqs": [
         [
-          "MU393"
+          "MP401"
         ]
       ]
+    },
+    {
+      "disciplina_id": "4862",
+      "codigo": "MU111",
+      "nome": "Música Industrializada I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CP",
+      "prereqs": []
     },
     {
       "disciplina_id": "4875",
@@ -418,45 +459,34 @@
       ]
     },
     {
-      "disciplina_id": "4709",
-      "codigo": "MP420",
-      "nome": "Prática Instrumental IV",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "CP",
-      "prereqs": [
-        [
-          "MP320"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4716",
-      "codigo": "MP501",
-      "nome": "Cordas V",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "CP",
-      "prereqs": [
-        [
-          "MP401"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4862",
-      "codigo": "MU111",
-      "nome": "Música Industrializada I",
+      "disciplina_id": "4710",
+      "codigo": "MP430",
+      "nome": "Harmonia IV",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 6,
       "modalidade": "CP",
-      "prereqs": []
+      "prereqs": [
+        [
+          "MP330"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4722",
+      "codigo": "MP520",
+      "nome": "Prática Instrumental V",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CP",
+      "prereqs": [
+        [
+          "MP420"
+        ]
+      ]
     },
     {
       "disciplina_id": "4726",
@@ -526,36 +556,6 @@
       "prereqs": [
         [
           "MP110"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4710",
-      "codigo": "MP430",
-      "nome": "Harmonia IV",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "CP",
-      "prereqs": [
-        [
-          "MP330"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4722",
-      "codigo": "MP520",
-      "nome": "Prática Instrumental V",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "CP",
-      "prereqs": [
-        [
-          "MP420"
         ]
       ]
     },

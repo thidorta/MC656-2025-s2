@@ -10,10 +10,25 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "LI",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "5002",
+      "codigo": "MU360",
+      "nome": "História da Música I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU260"
+        ]
+      ]
+    },
     {
       "disciplina_id": "478",
       "codigo": "AR101",
@@ -81,17 +96,17 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "5002",
-      "codigo": "MU360",
-      "nome": "História da Música I",
+      "disciplina_id": "4924",
+      "codigo": "MU212",
+      "nome": "Técnica Vocal II",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "LI",
       "prereqs": [
         [
-          "MU260"
+          "MU112"
         ]
       ]
     },
@@ -219,21 +234,6 @@
       ]
     },
     {
-      "disciplina_id": "4924",
-      "codigo": "MU212",
-      "nome": "Técnica Vocal II",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU112"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "4842",
       "codigo": "MU060",
       "nome": "Rítmica III",
@@ -316,6 +316,17 @@
       "prereqs": []
     },
     {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "LI",
+      "prereqs": []
+    },
+    {
       "disciplina_id": "4843",
       "codigo": "MU061",
       "nome": "Rítmica IV",
@@ -376,15 +387,30 @@
       ]
     },
     {
-      "disciplina_id": "6837",
-      "codigo": "EL212",
-      "nome": "Política Educacional: Organização da Educação Brasileira",
-      "creditos": 6,
+      "disciplina_id": "484",
+      "codigo": "AR301",
+      "nome": "Psicologia do Desenvolvimento Aplicado às Artes I",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "LI",
       "prereqs": []
+    },
+    {
+      "disciplina_id": "11132",
+      "codigo": "MU699",
+      "nome": "Atividades Científico Culturais II",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU599"
+        ]
+      ]
     },
     {
       "disciplina_id": "1985",
@@ -446,32 +472,6 @@
       "prereqs": [
         [
           "MU219"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "484",
-      "codigo": "AR301",
-      "nome": "Psicologia do Desenvolvimento Aplicado às Artes I",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "LI",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "11132",
-      "codigo": "MU699",
-      "nome": "Atividades Científico Culturais II",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU599"
         ]
       ]
     },
@@ -542,6 +542,17 @@
       ]
     },
     {
+      "disciplina_id": "10583",
+      "codigo": "AR601",
+      "nome": "Processos Pedagógicos Voltados para o Corpo na Arte",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "LI",
+      "prereqs": []
+    },
+    {
       "disciplina_id": "11362",
       "codigo": "LA001",
       "nome": "LIBRAS e Educação de Surdos",
@@ -577,17 +588,6 @@
           "EL874"
         ]
       ]
-    },
-    {
-      "disciplina_id": "10583",
-      "codigo": "AR601",
-      "nome": "Processos Pedagógicos Voltados para o Corpo na Arte",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "LI",
-      "prereqs": []
     },
     {
       "disciplina_id": "5120",
@@ -664,6 +664,152 @@
       "prereqs": [
         [
           "MU162"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4667",
+      "codigo": "MP104",
+      "nome": "Teclados I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4977",
+      "codigo": "MU296",
+      "nome": "Canto II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU196"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4933",
+      "codigo": "MU227",
+      "nome": "Violoncelo II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU127"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4991",
+      "codigo": "MU326",
+      "nome": "Viola III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU226"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5033",
+      "codigo": "MU424",
+      "nome": "Cravo IV",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU324"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4681",
+      "codigo": "MP205",
+      "nome": "Voz II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MP105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4988",
+      "codigo": "MU321",
+      "nome": "Contrabaixo III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU221"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4706",
+      "codigo": "MP404",
+      "nome": "Teclados IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MP304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5020",
+      "codigo": "MU396",
+      "nome": "Canto III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU296"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5061",
+      "codigo": "MU494",
+      "nome": "Violão IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU394"
         ]
       ]
     },
@@ -1642,152 +1788,6 @@
       ]
     },
     {
-      "disciplina_id": "4667",
-      "codigo": "MP104",
-      "nome": "Teclados I",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4977",
-      "codigo": "MU296",
-      "nome": "Canto II",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU196"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4933",
-      "codigo": "MU227",
-      "nome": "Violoncelo II",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU127"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4991",
-      "codigo": "MU326",
-      "nome": "Viola III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU226"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5033",
-      "codigo": "MU424",
-      "nome": "Cravo IV",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU324"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4681",
-      "codigo": "MP205",
-      "nome": "Voz II",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MP105"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4988",
-      "codigo": "MU321",
-      "nome": "Contrabaixo III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU221"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4706",
-      "codigo": "MP404",
-      "nome": "Teclados IV",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MP304"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5020",
-      "codigo": "MU396",
-      "nome": "Canto III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU296"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5061",
-      "codigo": "MU494",
-      "nome": "Violão IV",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU394"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "4881",
       "codigo": "MU146",
       "nome": "Harmonia do Período Barroco",
@@ -1908,6 +1908,36 @@
       ]
     },
     {
+      "disciplina_id": "4671",
+      "codigo": "MP130",
+      "nome": "Harmonia I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4697",
+      "codigo": "MP330",
+      "nome": "Harmonia III",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "LI",
+      "prereqs": [
+        [
+          "MP230"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "4682",
       "codigo": "MP210",
       "nome": "Arranjo II",
@@ -1990,36 +2020,6 @@
       "prereqs": [
         [
           "MU111"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4671",
-      "codigo": "MP130",
-      "nome": "Harmonia I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MU205"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4697",
-      "codigo": "MP330",
-      "nome": "Harmonia III",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "LI",
-      "prereqs": [
-        [
-          "MP230"
         ]
       ]
     }

@@ -10,10 +10,25 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "TP",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "5002",
+      "codigo": "MU360",
+      "nome": "História da Música I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TP",
+      "prereqs": [
+        [
+          "MU260"
+        ]
+      ]
+    },
     {
       "disciplina_id": "4840",
       "codigo": "MU058",
@@ -81,17 +96,17 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "5002",
-      "codigo": "MU360",
-      "nome": "História da Música I",
-      "creditos": 2,
+      "disciplina_id": "4969",
+      "codigo": "MU284",
+      "nome": "Trompete II",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "TP",
       "prereqs": [
         [
-          "MU260"
+          "MU184"
         ]
       ]
     },
@@ -197,21 +212,6 @@
       "prereqs": [
         [
           "MU179"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4969",
-      "codigo": "MU284",
-      "nome": "Trompete II",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "TP",
-      "prereqs": [
-        [
-          "MU184"
         ]
       ]
     },
@@ -332,6 +332,36 @@
       "prereqs": []
     },
     {
+      "disciplina_id": "5117",
+      "codigo": "MU660",
+      "nome": "História da Música IV",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TP",
+      "prereqs": [
+        [
+          "MU560"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4925",
+      "codigo": "MU214",
+      "nome": "Análise II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TP",
+      "prereqs": [
+        [
+          "MU114"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "4943",
       "codigo": "MU246",
       "nome": "Harmonia do Classicismo ao Romantismo",
@@ -422,32 +452,17 @@
       ]
     },
     {
-      "disciplina_id": "5117",
-      "codigo": "MU660",
-      "nome": "História da Música IV",
-      "creditos": 2,
+      "disciplina_id": "5090",
+      "codigo": "MU579",
+      "nome": "Prática Orquestral V",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "TP",
       "prereqs": [
         [
-          "MU560"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4925",
-      "codigo": "MU214",
-      "nome": "Análise II",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 4,
-      "modalidade": "TP",
-      "prereqs": [
-        [
-          "MU114"
+          "MU479"
         ]
       ]
     },
@@ -527,17 +542,17 @@
       ]
     },
     {
-      "disciplina_id": "5090",
-      "codigo": "MU579",
-      "nome": "Prática Orquestral V",
-      "creditos": 4,
+      "disciplina_id": "5037",
+      "codigo": "MU446",
+      "nome": "Harmonia do Século XX",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 6,
       "modalidade": "TP",
       "prereqs": [
         [
-          "MU479"
+          "MU346"
         ]
       ]
     },
@@ -624,21 +639,6 @@
       "prereqs": [
         [
           "MU314"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5037",
-      "codigo": "MU446",
-      "nome": "Harmonia do Século XX",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "TP",
-      "prereqs": [
-        [
-          "MU346"
         ]
       ]
     },
