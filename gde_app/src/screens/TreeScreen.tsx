@@ -11,9 +11,20 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../navigation/types';
-import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
 import { API_BASE_URL } from '../config/api';
+
+const palette = {
+  bg: '#000000',
+  surface: '#0D0D0D',
+  card: '#1A1A1A',
+  border: '#262626',
+  text: '#E0E0E0',
+  textMuted: '#CFCFCF',
+  accent: '#00E5FF',
+  accentSoft: 'rgba(0, 229, 255, 0.14)',
+  accentBorder: '#00B8D9',
+};
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Tree'>;
 
@@ -23,6 +34,11 @@ type Discipline = {
   semestre?: number | null;
   tipo?: string | null;
   prereqs?: string[][];
+  offers?: any[];
+  status?: string;
+  tem?: boolean;
+  missing?: boolean;
+  isCurrent?: boolean;
 };
 
 type Semester = {
@@ -31,6 +47,7 @@ type Semester = {
   courses: {
     code: string;
     prereqs: string[][];
+    isCurrent?: boolean;
   }[];
 };
 
@@ -38,6 +55,16 @@ type PlannerOption = {
   courseId: number;
   courseName?: string;
   year?: number;
+};
+
+type PlannerSnapshotCourse = {
+  course_id: number;
+  course_name?: string;
+  year?: number;
+  data?: {
+    curriculum?: Discipline[];
+    integralizacao_meta?: Record<string, any>;
+  };
 };
 
 type CurriculumOption = {
@@ -89,7 +116,7 @@ const DropdownSelector = ({
         <MaterialCommunityIcons
           name={open ? 'chevron-up' : 'chevron-down'}
           size={20}
-          color={colors.text}
+          color={palette.text}
         />
       </TouchableOpacity>
 
@@ -120,16 +147,15 @@ const DropdownSelector = ({
 const CourseChip = ({
   course,
   isActive,
+  isCurrent,
   onToggle,
 }: {
-  course: { code: string; prereqs: string[][] };
+  course: { code: string; prereqs: string[][]; isCurrent?: boolean };
   isActive: boolean;
-  onToggle: (course: { code: string; prereqs: string[][] }) => void;
+  isCurrent?: boolean;
+  onToggle: (course: { code: string; prereqs: string[][]; isCurrent?: boolean }) => void;
 }) => {
   const formatPrereqs = (prereqs: any): string[] => {
-    // debug shape of the data coming in
-    console.log('[TreeScreen] prereqs raw', course.code, prereqs);
-
     if (!Array.isArray(prereqs) || prereqs.length === 0) return ['sem requisitos'];
     const groups = prereqs.map((group) => {
       if (!group) return '';
@@ -147,7 +173,11 @@ const CourseChip = ({
   };
 
   return (
-    <TouchableOpacity activeOpacity={0.85} style={styles.courseChip} onPress={() => onToggle(course)}>
+    <TouchableOpacity
+      activeOpacity={0.9}
+      style={[styles.courseChip, isCurrent ? styles.courseChipCurrent : null]}
+      onPress={() => onToggle(course)}
+    >
       <Text style={styles.courseChipText}>{course.code}</Text>
       {isActive && (
         <View style={styles.tooltip}>
@@ -187,7 +217,7 @@ const SemesterSection = ({
         <MaterialCommunityIcons
           name={isCollapsed ? 'chevron-down' : 'chevron-up'}
           size={22}
-          color={colors.text}
+          color={palette.text}
         />
       </TouchableOpacity>
       {!isCollapsed && (
@@ -197,6 +227,7 @@ const SemesterSection = ({
               key={index}
               course={course}
               isActive={activeCourse?.code === course.code}
+              isCurrent={course.isCurrent}
               onToggle={onToggleCourse}
             />
           ))}
@@ -213,14 +244,14 @@ export default function TreeScreen({ navigation }: Props) {
   const [selectedCourseId, setSelectedCourseId] = useState<number | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [selectedModalidade, setSelectedModalidade] = useState<string | null>(null);
-  const [selectedPeriodo, setSelectedPeriodo] = useState<string | null>(null);
   const [isCompleta, setIsCompleta] = useState<'Sim' | 'Nao'>('Nao');
   const [loadingPlanner, setLoadingPlanner] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [disciplines, setDisciplines] = useState<Discipline[]>([]);
-  const [currentPeriodRaw, setCurrentPeriodRaw] = useState<string | null>(null);
   const [activeCourse, setActiveCourse] = useState<{ code: string; prereqs: string[][] } | null>(null);
+  const [plannerCourses, setPlannerCourses] = useState<PlannerSnapshotCourse[]>([]);
+  const [catalogDisciplines, setCatalogDisciplines] = useState<Discipline[]>([]);
 
   const loadCurriculumOptions = async () => {
     try {
@@ -260,16 +291,13 @@ export default function TreeScreen({ navigation }: Props) {
           courseId: entry.course_id,
           courseName: entry.course_name,
           year: entry.year,
+          data: entry.data,
         }))
         .filter((item) => item.courseId);
+      setPlannerCourses(data.courses || []);
 
       if (!options.length) {
         throw new Error('Nenhum curso com catalogo encontrado para este planner.');
-      }
-
-      if (data.current_period) {
-        setCurrentPeriodRaw(String(data.current_period));
-        setSelectedPeriodo(String(data.current_period));
       }
 
       const curriculumList = curriculumData ?? curriculumOptions;
@@ -289,6 +317,7 @@ export default function TreeScreen({ navigation }: Props) {
       setSelectedYear(null);
       setSelectedModalidade(null);
       setDisciplines([]);
+      setPlannerCourses([]);
       setError(err?.message || 'Erro ao carregar planner');
     } finally {
       setLoadingPlanner(false);
@@ -308,11 +337,34 @@ export default function TreeScreen({ navigation }: Props) {
         throw new Error(`HTTP ${resp.status}`);
       }
       const data = await resp.json();
-      const all = [
+      const catalogAll: Discipline[] = [
         ...(data.disciplinas_obrigatorias || []),
         ...(data.disciplinas_eletivas || []),
       ];
-      setDisciplines(all);
+      setCatalogDisciplines(catalogAll);
+
+      if (isCompleta === 'Nao') {
+        const snapshot = plannerCourses.find((c) => c.course_id === courseId);
+        const plannerCurriculum = snapshot?.data?.curriculum;
+        if (plannerCurriculum && Array.isArray(plannerCurriculum)) {
+          const prereqMap = new Map<string, string[][]>();
+          catalogAll.forEach((d) => {
+            prereqMap.set(d.codigo, Array.isArray(d.prereqs) ? d.prereqs : []);
+          });
+          const merged = (plannerCurriculum as Discipline[]).map((d) => ({
+            ...d,
+            prereqs: prereqMap.get(d.codigo) ?? d.prereqs ?? [],
+            isCurrent: Array.isArray((d as any).offers) && (d as any).offers.length > 0,
+          }));
+          setDisciplines(merged);
+        } else {
+          setDisciplines([]);
+          setError('Nenhum dado de planner encontrado para este curso.');
+        }
+        return;
+      }
+
+      setDisciplines(catalogAll);
     } catch (err: any) {
       setDisciplines([]);
       setError(err?.message || 'Erro ao buscar curriculo');
@@ -322,7 +374,6 @@ export default function TreeScreen({ navigation }: Props) {
   };
 
   useEffect(() => {
-    // carrega catalogos/modalidades primeiro, depois planner
     loadCurriculumOptions()
       .then((parsed) => loadPlanner(parsed))
       .catch(() => loadPlanner());
@@ -332,7 +383,7 @@ export default function TreeScreen({ navigation }: Props) {
     if (selectedCourseId) {
       fetchCurriculum(selectedCourseId, selectedYear, selectedModalidade);
     }
-  }, [selectedCourseId, selectedYear, selectedModalidade]);
+  }, [selectedCourseId, selectedYear, selectedModalidade, isCompleta, plannerCourses]);
 
   const semestersData: Semester[] = useMemo(() => {
     if (!disciplines.length) return [];
@@ -350,6 +401,7 @@ export default function TreeScreen({ navigation }: Props) {
       grouped[key].courses.push({
         code: d.codigo,
         prereqs: Array.isArray(d.prereqs) ? d.prereqs : [],
+        isCurrent: d.isCurrent,
       });
     });
     const orderValue = (id: string) => (id === 'eletivas' ? Number.MAX_SAFE_INTEGER : Number(id));
@@ -375,10 +427,6 @@ export default function TreeScreen({ navigation }: Props) {
     if (!entry || !selectedYear) return [];
     return entry.options.filter((o) => o.year === selectedYear);
   }, [curriculumOptions, selectedCourseId, selectedYear]);
-
-  const periodOptions = useMemo(() => {
-    return ['1o semestre', '2o semestre'];
-  }, []);
 
   const handleCourseChange = (courseId: number) => {
     setSelectedCourseId(courseId);
@@ -411,13 +459,10 @@ export default function TreeScreen({ navigation }: Props) {
           <Text style={styles.integralizacaoTitle}>Catalogo e modalidade</Text>
         </View>
         <View style={styles.headerRight}>
-          <View style={styles.badge}>
-            <Text style={styles.badgeText}>{selectedPeriodo ?? '---'}</Text>
-          </View>
           <MaterialCommunityIcons
             name={showContext ? 'chevron-up' : 'chevron-down'}
             size={20}
-            color={colors.text}
+            color={palette.text}
           />
         </View>
       </TouchableOpacity>
@@ -455,13 +500,6 @@ export default function TreeScreen({ navigation }: Props) {
           />
 
           <DropdownSelector
-            label="Periodo"
-            value={selectedPeriodo}
-            options={periodOptions.map((p) => ({ label: p, value: p }))}
-            onSelect={(val) => setSelectedPeriodo(String(val))}
-          />
-
-          <DropdownSelector
             label="Completa"
             value={isCompleta}
             options={[
@@ -480,7 +518,7 @@ export default function TreeScreen({ navigation }: Props) {
       <View style={styles.page}>
         <View style={styles.header}>
           <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-            <MaterialCommunityIcons name="arrow-left" size={20} color="#39FF14" />
+            <MaterialCommunityIcons name="arrow-left" size={20} color={palette.accent} />
           </TouchableOpacity>
           <View>
             <Text style={styles.headerEyebrow}>Planejamento</Text>
@@ -496,7 +534,7 @@ export default function TreeScreen({ navigation }: Props) {
 
           {loading && (
             <View style={styles.loader}>
-              <ActivityIndicator size="large" color={colors.text} />
+              <ActivityIndicator size="large" color={palette.text} />
               <Text style={styles.helperText}>Carregando curriculo...</Text>
             </View>
           )}
@@ -525,7 +563,7 @@ export default function TreeScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: colors.bg,
+    backgroundColor: palette.bg,
   },
   page: {
     flex: 1,
@@ -536,31 +574,31 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing(3),
     paddingVertical: spacing(2),
-    backgroundColor: colors.surface,
+    backgroundColor: palette.surface,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    borderBottomColor: palette.border,
     shadowColor: '#000',
-    shadowOpacity: 0.12,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 6,
+    shadowOpacity: 0.4,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 10,
   },
   backButton: {
     padding: spacing(1),
     borderRadius: 12,
-    backgroundColor: colors.surfaceAlt,
+    backgroundColor: palette.card,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
   },
   headerEyebrow: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     fontSize: 12,
     letterSpacing: 0.6,
     marginBottom: 2,
     fontFamily: 'monospace',
   },
   headerTitle: {
-    color: colors.text,
+    color: palette.text,
     fontSize: 22,
     fontWeight: '800',
     fontFamily: 'monospace',
@@ -573,40 +611,40 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: spacing(3),
     paddingVertical: spacing(2),
-    backgroundColor: colors.bg,
+    backgroundColor: palette.bg,
   },
   contentContainer: {
     paddingBottom: spacing(8),
     rowGap: spacing(2),
   },
   panel: {
-    backgroundColor: colors.surface,
+    backgroundColor: palette.surface,
     borderRadius: 14,
     padding: spacing(2),
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
     shadowColor: '#000',
-    shadowOpacity: 0.15,
-    shadowRadius: 10,
+    shadowOpacity: 0.35,
+    shadowRadius: 12,
     shadowOffset: { width: 0, height: 8 },
-    elevation: 6,
+    elevation: 8,
   },
   badgeMuted: {
-    backgroundColor: colors.surfaceAlt,
+    backgroundColor: palette.card,
     paddingVertical: spacing(0.5),
     paddingHorizontal: spacing(1.25),
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
   },
   badgeMutedText: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     fontWeight: '700',
     fontSize: 12,
     fontFamily: 'monospace',
   },
   eyebrow: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     fontSize: 12,
     letterSpacing: 0.3,
     marginBottom: 2,
@@ -618,12 +656,17 @@ const styles = StyleSheet.create({
     columnGap: spacing(1),
   },
   integralizacaoCard: {
-    backgroundColor: colors.surfaceAlt,
+    backgroundColor: palette.card,
     borderRadius: 12,
     padding: spacing(2),
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
     rowGap: spacing(1.25),
+    shadowColor: '#000',
+    shadowOpacity: 0.25,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 6,
   },
   integralizacaoHeader: {
     flexDirection: 'row',
@@ -632,21 +675,21 @@ const styles = StyleSheet.create({
     marginBottom: spacing(0.5),
   },
   integralizacaoTitle: {
-    color: colors.text,
+    color: palette.text,
     fontWeight: '800',
     fontSize: 17,
     fontFamily: 'monospace',
   },
   badge: {
-    backgroundColor: colors.surface,
+    backgroundColor: palette.surface,
     paddingVertical: spacing(0.5),
     paddingHorizontal: spacing(1.5),
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
   },
   badgeText: {
-    color: colors.text,
+    color: palette.text,
     fontWeight: '700',
     fontSize: 13,
   },
@@ -654,36 +697,36 @@ const styles = StyleSheet.create({
     marginBottom: spacing(1.25),
   },
   dropdownHeader: {
-    backgroundColor: colors.surface,
+    backgroundColor: palette.surface,
     borderRadius: 12,
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(1.25),
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   dropdownLabel: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     fontSize: 12,
     marginBottom: 2,
     fontFamily: 'monospace',
   },
   dropdownValue: {
-    color: colors.text,
+    color: palette.text,
     fontWeight: '700',
     fontSize: 14,
     fontFamily: 'monospace',
   },
   dropdownPlaceholder: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     fontWeight: '500',
   },
   dropdownList: {
-    backgroundColor: colors.surface,
+    backgroundColor: palette.surface,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
     borderRadius: 12,
     marginTop: spacing(0.5),
   },
@@ -691,19 +734,19 @@ const styles = StyleSheet.create({
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(1.25),
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    borderBottomColor: palette.border,
   },
   dropdownEmpty: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(1.25),
   },
   optionText: {
-    color: colors.text,
+    color: palette.text,
     fontFamily: 'monospace',
   },
   helperText: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     marginBottom: spacing(1),
     fontFamily: 'monospace',
   },
@@ -712,21 +755,21 @@ const styles = StyleSheet.create({
     marginVertical: spacing(2),
   },
   errorText: {
-    color: colors.primary,
+    color: palette.accent,
     marginBottom: spacing(2),
     fontFamily: 'monospace',
   },
   semesterCard: {
-    backgroundColor: colors.surface,
+    backgroundColor: palette.surface,
     borderRadius: 12,
     marginBottom: spacing(1.5),
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
     shadowColor: '#000',
-    shadowOpacity: 0.12,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 6,
+    shadowOpacity: 0.25,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 8,
     overflow: 'visible',
     zIndex: 1,
   },
@@ -736,17 +779,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: spacing(1.5),
     paddingHorizontal: spacing(2),
-    backgroundColor: 'rgba(255,255,255,0.02)',
+    backgroundColor: '#0F0F0F',
   },
   semesterBadge: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     fontSize: 12,
     fontWeight: '700',
     letterSpacing: 0.6,
     fontFamily: 'monospace',
   },
   semesterTitle: {
-    color: colors.text,
+    color: palette.text,
     fontSize: 16,
     fontWeight: '800',
     fontFamily: 'monospace',
@@ -762,22 +805,31 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   courseChip: {
-    backgroundColor: colors.surfaceAlt,
+    backgroundColor: palette.card,
     borderRadius: 10,
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(1.25),
     minWidth: 96,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
     position: 'relative',
     overflow: 'visible',
     flexGrow: 1,
     zIndex: 1,
     marginHorizontal: spacing(0.5),
   },
+  courseChipCurrent: {
+    backgroundColor: palette.accentSoft,
+    borderColor: palette.accentBorder,
+    shadowColor: palette.accentBorder,
+    shadowOpacity: 0.4,
+    shadowRadius: 14,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 10,
+  },
   courseChipText: {
-    color: colors.text,
+    color: palette.text,
     fontSize: 13,
     fontWeight: '800',
     marginBottom: 0,
@@ -791,9 +843,9 @@ const styles = StyleSheet.create({
     right: -spacing(1),
     alignSelf: 'center',
     maxWidth: 240,
-    backgroundColor: colors.surface,
+    backgroundColor: palette.surface,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.border,
     borderRadius: 10,
     padding: spacing(1.25),
     zIndex: 99999,
@@ -805,13 +857,13 @@ const styles = StyleSheet.create({
     transform: [{ translateY: 0 }],
   },
   tooltipLabel: {
-    color: colors.textMuted,
+    color: palette.textMuted,
     fontSize: 12,
     fontFamily: 'monospace',
     marginBottom: 6,
   },
   tooltipText: {
-    color: colors.text,
+    color: palette.text,
     fontSize: 13,
     fontFamily: 'monospace',
     lineHeight: 18,
