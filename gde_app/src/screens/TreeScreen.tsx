@@ -10,6 +10,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 import { RootStackParamList } from '../navigation/types';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
@@ -78,7 +79,7 @@ const DropdownSelector = ({
       <TouchableOpacity
         style={styles.dropdownHeader}
         onPress={() => setOpen((prev) => !prev)}
-        activeOpacity={0.8}
+        activeOpacity={0.85}
       >
         <View>
           <Text style={styles.dropdownLabel}>{label}</Text>
@@ -88,7 +89,7 @@ const DropdownSelector = ({
         </View>
         <MaterialCommunityIcons
           name={open ? 'chevron-up' : 'chevron-down'}
-          size={22}
+          size={20}
           color={colors.text}
         />
       </TouchableOpacity>
@@ -129,11 +130,16 @@ const SemesterSection = ({ semester }: { semester: Semester }) => {
   return (
     <View style={styles.semesterCard}>
       <TouchableOpacity onPress={() => setIsCollapsed(!isCollapsed)} style={styles.semesterHeader}>
-        <Text style={styles.semesterTitle}>{semester.title}</Text>
+        <View>
+          <Text style={styles.semesterBadge}>
+            {semester.id === 'eletivas' ? 'Eletivas' : `Semestre ${semester.id}`}
+          </Text>
+          <Text style={styles.semesterTitle}>{semester.title}</Text>
+        </View>
         <MaterialCommunityIcons
           name={isCollapsed ? 'chevron-down' : 'chevron-up'}
-          size={24}
-          color={colors.buttonText}
+          size={22}
+          color={colors.text}
         />
       </TouchableOpacity>
       {!isCollapsed && (
@@ -318,15 +324,8 @@ export default function TreeScreen({ navigation }: Props) {
   }, [curriculumOptions, selectedCourseId, selectedYear]);
 
   const periodOptions = useMemo(() => {
-    const opts: string[] = [];
-    if (currentPeriodRaw) {
-      opts.push(currentPeriodRaw);
-    }
-    yearsForSelectedCourse.forEach((y) => {
-      if (!opts.includes(String(y))) opts.push(String(y));
-    });
-    return opts;
-  }, [currentPeriodRaw, yearsForSelectedCourse]);
+    return ['1º semestre', '2º semestre'];
+  }, []);
 
   const handleCourseChange = (courseId: number) => {
     setSelectedCourseId(courseId);
@@ -345,93 +344,125 @@ export default function TreeScreen({ navigation }: Props) {
     setSelectedModalidade(modForYear);
   };
 
+  const [showContext, setShowContext] = useState(true);
+
   const IntegralizacaoInfo = () => (
     <View style={styles.integralizacaoCard}>
-      <Text style={styles.integralizacaoTitle}>Selecione o contexto da arvore</Text>
+      <TouchableOpacity
+        style={styles.integralizacaoHeader}
+        onPress={() => setShowContext((prev) => !prev)}
+        activeOpacity={0.9}
+      >
+        <View>
+          <Text style={styles.eyebrow}>Contexto</Text>
+          <Text style={styles.integralizacaoTitle}>Catalogo e modalidade</Text>
+        </View>
+        <View style={styles.headerRight}>
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>{selectedPeriodo ?? '---'}</Text>
+          </View>
+          <MaterialCommunityIcons
+            name={showContext ? 'chevron-up' : 'chevron-down'}
+            size={20}
+            color={colors.text}
+          />
+        </View>
+      </TouchableOpacity>
 
-      <DropdownSelector
-        label="Curso"
-        value={selectedCourseId}
-        options={courseOptionsForSelect.map((c) => ({
-          label: c.courseName || `Curso ${c.courseId}`,
-          value: c.courseId,
-        }))}
-        onSelect={(val) => handleCourseChange(Number(val))}
-      />
+      {showContext && (
+        <>
+          <DropdownSelector
+            label="Curso"
+            value={selectedCourseId}
+            options={courseOptionsForSelect.map((c) => ({
+              label: c.courseName || `Curso ${c.courseId}`,
+              value: c.courseId,
+            }))}
+            onSelect={(val) => handleCourseChange(Number(val))}
+          />
 
-      <DropdownSelector
-        label="Catalogo"
-        value={selectedYear}
-        options={yearsForSelectedCourse.map((year) => ({
-          label: String(year),
-          value: year,
-        }))}
-        onSelect={(val) => handleYearChange(Number(val))}
-      />
+          <DropdownSelector
+            label="Catalogo"
+            value={selectedYear}
+            options={yearsForSelectedCourse.map((year) => ({
+              label: String(year),
+              value: year,
+            }))}
+            onSelect={(val) => handleYearChange(Number(val))}
+          />
 
-      <DropdownSelector
-        label="Modalidade"
-        value={selectedModalidade}
-        options={modalitiesForSelected.map((opt) => ({
-          label: opt.modalidadeLabel
-            ? `${opt.modalidadeLabel} (${opt.modalidade})`
-            : opt.modalidade,
-          value: opt.modalidade,
-        }))}
-        onSelect={(val) => setSelectedModalidade(String(val))}
-      />
+          <DropdownSelector
+            label="Modalidade"
+            value={selectedModalidade}
+            options={modalitiesForSelected.map((opt) => ({
+              label: opt.modalidadeLabel ? `${opt.modalidadeLabel} (${opt.modalidade})` : opt.modalidade,
+              value: opt.modalidade,
+            }))}
+            onSelect={(val) => setSelectedModalidade(String(val))}
+          />
 
-      <DropdownSelector
-        label="Periodo"
-        value={selectedPeriodo}
-        options={periodOptions.map((p) => ({ label: p, value: p }))}
-        onSelect={(val) => setSelectedPeriodo(String(val))}
-      />
+          <DropdownSelector
+            label="Periodo"
+            value={selectedPeriodo}
+            options={periodOptions.map((p) => ({ label: p, value: p }))}
+            onSelect={(val) => setSelectedPeriodo(String(val))}
+          />
 
-      <DropdownSelector
-        label="Completa"
-        value={isCompleta}
-        options={[
-          { label: 'Sim', value: 'Sim' },
-          { label: 'Nao', value: 'Nao' },
-        ]}
-        onSelect={(val) => setIsCompleta(val as 'Sim' | 'Nao')}
-      />
+          <DropdownSelector
+            label="Completa"
+            value={isCompleta}
+            options={[
+              { label: 'Sim', value: 'Sim' },
+              { label: 'Nao', value: 'Nao' },
+            ]}
+            onSelect={(val) => setIsCompleta(val as 'Sim' | 'Nao')}
+          />
+        </>
+      )}
     </View>
   );
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
-      <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-          <MaterialCommunityIcons name="arrow-left" size={24} color={colors.text} />
-        </TouchableOpacity>
-        <Text style={styles.headerTitle}>Arvore</Text>
-        <View style={styles.placeholder} />
-      </View>
+      <LinearGradient
+        colors={['#0b1220', '#0d1730', '#0b1220']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={styles.backgroundGradient}
+      />
 
-      <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-        <View style={styles.controls}>
-        </View>
-
-        <View style={styles.filters}>
-          <IntegralizacaoInfo />
-        </View>
-
-        {loading && (
-          <View style={styles.loader}>
-            <ActivityIndicator size="large" color={colors.text} />
-            <Text style={styles.helperText}>Carregando curriculo...</Text>
+      <View style={styles.page}>
+        <View style={styles.header}>
+          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
+            <MaterialCommunityIcons name="arrow-left" size={20} color={colors.text} />
+          </TouchableOpacity>
+          <View>
+            <Text style={styles.headerEyebrow}>Planejamento</Text>
+            <Text style={styles.headerTitle}>Arvore de Materias</Text>
           </View>
-        )}
-        {error && <Text style={styles.errorText}>{error}</Text>}
-        {!loading && !error && semestersData.length === 0 && (
-          <Text style={styles.helperText}>Nenhuma disciplina encontrada.</Text>
-        )}
-        {!loading &&
-          !error &&
-          semestersData.map((semester) => <SemesterSection key={semester.id} semester={semester} />)}
-      </ScrollView>
+          <View style={styles.placeholder} />
+        </View>
+
+        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+          <View style={styles.panel}>
+            <IntegralizacaoInfo />
+          </View>
+
+          {loading && (
+            <View style={styles.loader}>
+              <ActivityIndicator size="large" color={colors.text} />
+              <Text style={styles.helperText}>Carregando curriculo...</Text>
+            </View>
+          )}
+          {error && <Text style={styles.errorText}>{error}</Text>}
+          {!loading && !error && semestersData.length === 0 && (
+            <Text style={styles.helperText}>Nenhuma disciplina encontrada.</Text>
+          )}
+          {!loading &&
+            !error &&
+            semestersData.map((semester) => <SemesterSection key={semester.id} semester={semester} />)}
+        </ScrollView>
+      </View>
     </SafeAreaView>
   );
 }
@@ -441,133 +472,137 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.bg,
   },
+  backgroundGradient: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  page: {
+    flex: 1,
+  },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: spacing(3),
     paddingVertical: spacing(2),
-    backgroundColor: '#333333',
+    backgroundColor: 'rgba(13, 19, 48, 0.85)',
+    borderBottomWidth: 1,
+    borderBottomColor: '#1b2741',
+    shadowColor: '#000',
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 6,
   },
   backButton: {
     padding: spacing(1),
+    borderRadius: 12,
+    backgroundColor: 'rgba(255,255,255,0.06)',
+  },
+  headerEyebrow: {
+    color: '#9ca3af',
+    fontSize: 12,
+    letterSpacing: 0.3,
+    marginBottom: 2,
   },
   headerTitle: {
     color: colors.text,
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 22,
+    fontWeight: '800',
   },
   placeholder: {
     width: 24 + spacing(2),
   },
   container: {
     flex: 1,
-    padding: spacing(3),
-    backgroundColor: colors.bg,
+    paddingHorizontal: spacing(3),
+    paddingVertical: spacing(2),
+    backgroundColor: 'transparent',
   },
   contentContainer: {
     paddingBottom: spacing(8),
+    rowGap: spacing(2),
   },
-  controls: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-    columnGap: spacing(2),
-    marginBottom: spacing(2),
-  },
-  reloadButton: {
-    backgroundColor: '#333333',
-    paddingVertical: spacing(1.5),
-    paddingHorizontal: spacing(2),
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  reloadButtonText: {
-    color: colors.text,
-    fontWeight: '800',
-  },
-  filters: {
-    marginBottom: spacing(2),
-    rowGap: spacing(1),
-  },
-  optionText: {
-    color: colors.text,
-  },
-  helperText: {
-    color: colors.text,
-    marginBottom: spacing(1),
-  },
-  loader: {
-    alignItems: 'center',
-    marginVertical: spacing(2),
-  },
-  errorText: {
-    color: '#ff6b6b',
-    marginBottom: spacing(2),
-  },
-  semesterCard: {
-    backgroundColor: '#E0E0E0',
-    borderRadius: 8,
-    marginBottom: spacing(2),
-    overflow: 'hidden',
-  },
-  semesterHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+  panel: {
+    backgroundColor: 'rgba(15, 23, 42, 0.82)',
+    borderRadius: 18,
     padding: spacing(2),
-    backgroundColor: '#C0C0C0',
+    borderWidth: 1,
+    borderColor: '#1f2a44',
+    shadowColor: '#000',
+    shadowOpacity: 0.18,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 7,
   },
-  semesterTitle: {
-    color: colors.buttonText,
-    fontSize: 16,
-    fontWeight: 'bold',
+  badgeMuted: {
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    paddingVertical: spacing(0.5),
+    paddingHorizontal: spacing(1.25),
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#1f2a44',
   },
-  courseContainer: {
+  badgeMutedText: {
+    color: '#cbd5e1',
+    fontWeight: '700',
+    fontSize: 12,
+  },
+  eyebrow: {
+    color: '#9ca3af',
+    fontSize: 12,
+    letterSpacing: 0.3,
+    marginBottom: 2,
+  },
+  headerRight: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    padding: spacing(2),
-    rowGap: spacing(1),
+    alignItems: 'center',
     columnGap: spacing(1),
   },
-  courseChip: {
-    backgroundColor: '#333333',
-    borderRadius: 6,
-    paddingVertical: spacing(0.75),
-    paddingHorizontal: spacing(1),
-    minWidth: 72,
-    alignItems: 'center',
-  },
-  courseChipText: {
-    color: colors.text,
-    fontSize: 12,
-    fontWeight: '600',
-    marginBottom: 0,
-  },
   integralizacaoCard: {
-    backgroundColor: '#e5e7eb',
-    borderRadius: 12,
-    padding: spacing(2),
-    marginBottom: spacing(1),
+    rowGap: spacing(1.25),
+  },
+  integralizacaoHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: spacing(0.5),
   },
   integralizacaoTitle: {
-    color: '#0f172a',
+    color: colors.text,
     fontWeight: '800',
-    marginBottom: spacing(1.5),
+    fontSize: 17,
+  },
+  badge: {
+    backgroundColor: 'rgba(91, 140, 255, 0.18)',
+    paddingVertical: spacing(0.5),
+    paddingHorizontal: spacing(1.5),
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#5B8CFF',
+  },
+  badgeText: {
+    color: '#dfe8ff',
+    fontWeight: '700',
+    fontSize: 13,
   },
   dropdownWrapper: {
-    marginBottom: spacing(1.5),
+    marginBottom: spacing(1.25),
   },
   dropdownHeader: {
-    backgroundColor: '#111827',
-    borderRadius: 10,
-    paddingVertical: spacing(1.2),
-    paddingHorizontal: spacing(1.5),
+    backgroundColor: '#0f1628',
+    borderRadius: 12,
+    paddingVertical: spacing(1),
+    paddingHorizontal: spacing(1.25),
     borderWidth: 1,
-    borderColor: '#1f2937',
+    borderColor: '#1f2d49',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    shadowColor: '#000',
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 4,
   },
   dropdownLabel: {
     color: '#9ca3af',
@@ -586,19 +621,98 @@ const styles = StyleSheet.create({
   dropdownList: {
     backgroundColor: '#0f172a',
     borderWidth: 1,
-    borderColor: '#1f2937',
-    borderRadius: 10,
+    borderColor: '#1f2a44',
+    borderRadius: 12,
     marginTop: spacing(0.5),
+    shadowColor: '#000',
+    shadowOpacity: 0.25,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 6,
   },
   dropdownOption: {
     paddingVertical: spacing(1),
-    paddingHorizontal: spacing(1.5),
+    paddingHorizontal: spacing(1.25),
     borderBottomWidth: 1,
-    borderBottomColor: '#1f2937',
+    borderBottomColor: '#1f2a44',
   },
   dropdownEmpty: {
     color: '#9ca3af',
     paddingVertical: spacing(1),
-    paddingHorizontal: spacing(1.5),
+    paddingHorizontal: spacing(1.25),
+  },
+  optionText: {
+    color: colors.text,
+  },
+  helperText: {
+    color: colors.text,
+    marginBottom: spacing(1),
+  },
+  loader: {
+    alignItems: 'center',
+    marginVertical: spacing(2),
+  },
+  errorText: {
+    color: '#ff6b6b',
+    marginBottom: spacing(2),
+  },
+  semesterCard: {
+    backgroundColor: 'rgba(15, 23, 42, 0.82)',
+    borderRadius: 16,
+    marginBottom: spacing(1.5),
+    borderWidth: 1,
+    borderColor: '#1b2741',
+    shadowColor: '#000',
+    shadowOpacity: 0.16,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 6,
+  },
+  semesterHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: spacing(1.5),
+    paddingHorizontal: spacing(2),
+    backgroundColor: 'rgba(255,255,255,0.02)',
+  },
+  semesterBadge: {
+    color: '#9ca3af',
+    fontSize: 12,
+    fontWeight: '700',
+    letterSpacing: 0.3,
+  },
+  semesterTitle: {
+    color: '#e5e7eb',
+    fontSize: 16,
+    fontWeight: '800',
+  },
+  courseContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    padding: spacing(1.5),
+    rowGap: spacing(1),
+    columnGap: spacing(1),
+  },
+  courseChip: {
+    backgroundColor: '#101a2f',
+    borderRadius: 8,
+    paddingVertical: spacing(0.75),
+    paddingHorizontal: spacing(1),
+    minWidth: 70,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#1d2b46',
+    shadowColor: '#000',
+    shadowOpacity: 0.12,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 3,
+  },
+  courseChipText: {
+    color: '#dce4ff',
+    fontSize: 12,
+    fontWeight: '700',
+    marginBottom: 0,
   },
 });
