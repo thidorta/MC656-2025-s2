@@ -174,6 +174,45 @@ def build_user_nodes(
     cp_disciplines: List[Dict[str, Any]] = []
     cp_value = plane_payload.get("c")
 
+    def _normalize_offers(raw_offers: Dict[str, Any]) -> List[Dict[str, Any]]:
+        offers_out: List[Dict[str, Any]] = []
+        for offer in (raw_offers or {}).values():
+            offer_entry: Dict[str, Any] = dict(offer)
+            events = []
+            event_src = (offer or {}).get("eventSources", {}) or {}
+            for evt in event_src.get("events", []) or []:
+                start_iso = evt.get("start")
+                end_iso = evt.get("end")
+                day_idx = None
+                start_hour = None
+                end_hour = None
+                try:
+                    from datetime import datetime
+
+                    if start_iso:
+                        dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
+                        day_idx = dt.weekday()
+                        start_hour = dt.hour
+                    if end_iso:
+                        dt_end = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00"))
+                        end_hour = dt_end.hour
+                except Exception:
+                    pass
+                events.append(
+                    {
+                        "title": evt.get("title"),
+                        "start": start_iso,
+                        "end": end_iso,
+                        "day": day_idx,
+                        "start_hour": start_hour,
+                        "end_hour": end_hour,
+                    }
+                )
+            if events:
+                offer_entry["events"] = events
+            offers_out.append(offer_entry)
+        return offers_out
+
     for item in plane_payload.get("Oferecimentos", {}).values():
         disc = item.get("Disciplina", {})
         if not disc:
@@ -200,17 +239,13 @@ def build_user_nodes(
             "cp_group": disc.get("c"),
             "prereqs": prereq_lookup.get(code, []),
         }
-        offers_subset = []
-        for offer in (item.get("Oferecimentos") or {}).values():
-            offers_subset.append(dict(offer))
+        offers_subset = _normalize_offers(item.get("Oferecimentos") or {})
         if offers_subset:
             node["offers"] = offers_subset
         user_nodes.append(node)
 
         if disc.get("c") == cp_value:
-            cp_offers = []
-            for offer in (item.get("Oferecimentos") or {}).values():
-                cp_offers.append(dict(offer))
+            cp_offers = _normalize_offers(item.get("Oferecimentos") or {})
             cp_disciplines.append(
                 {
                     "disciplina": dict(disc),
