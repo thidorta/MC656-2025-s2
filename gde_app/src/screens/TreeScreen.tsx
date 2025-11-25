@@ -10,7 +10,6 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { LinearGradient } from 'expo-linear-gradient';
 import { RootStackParamList } from '../navigation/types';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
@@ -324,7 +323,7 @@ export default function TreeScreen({ navigation }: Props) {
   }, [curriculumOptions, selectedCourseId, selectedYear]);
 
   const periodOptions = useMemo(() => {
-    return ['1º semestre', '2º semestre'];
+    return ['1o semestre', '2o semestre'];
   }, []);
 
   const handleCourseChange = (courseId: number) => {
@@ -424,17 +423,10 @@ export default function TreeScreen({ navigation }: Props) {
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
-      <LinearGradient
-        colors={['#0b1220', '#0d1730', '#0b1220']}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
-        style={styles.backgroundGradient}
-      />
-
       <View style={styles.page}>
         <View style={styles.header}>
           <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-            <MaterialCommunityIcons name="arrow-left" size={20} color={colors.text} />
+            <MaterialCommunityIcons name="arrow-left" size={20} color="#39FF14" />
           </TouchableOpacity>
           <View>
             <Text style={styles.headerEyebrow}>Planejamento</Text>
@@ -472,9 +464,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.bg,
   },
-  backgroundGradient: {
-    ...StyleSheet.absoluteFillObject,
-  },
   page: {
     flex: 1,
   },
@@ -484,11 +473,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing(3),
     paddingVertical: spacing(2),
-    backgroundColor: 'rgba(13, 19, 48, 0.85)',
+    backgroundColor: colors.surface,
     borderBottomWidth: 1,
-    borderBottomColor: '#1b2741',
+    borderBottomColor: colors.border,
     shadowColor: '#000',
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.12,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 6 },
     elevation: 6,
@@ -496,18 +485,23 @@ const styles = StyleSheet.create({
   backButton: {
     padding: spacing(1),
     borderRadius: 12,
-    backgroundColor: 'rgba(255,255,255,0.06)',
+    backgroundColor: colors.surfaceAlt,
+    borderWidth: 1,
+    borderColor: colors.border,
   },
   headerEyebrow: {
-    color: '#9ca3af',
+    color: colors.textMuted,
     fontSize: 12,
-    letterSpacing: 0.3,
+    letterSpacing: 0.6,
     marginBottom: 2,
+    fontFamily: 'monospace',
   },
   headerTitle: {
     color: colors.text,
     fontSize: 22,
     fontWeight: '800',
+    fontFamily: 'monospace',
+    letterSpacing: 0.3,
   },
   placeholder: {
     width: 24 + spacing(2),
@@ -516,42 +510,44 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: spacing(3),
     paddingVertical: spacing(2),
-    backgroundColor: 'transparent',
+    backgroundColor: colors.bg,
   },
   contentContainer: {
     paddingBottom: spacing(8),
     rowGap: spacing(2),
   },
   panel: {
-    backgroundColor: 'rgba(15, 23, 42, 0.82)',
-    borderRadius: 18,
+    backgroundColor: colors.surface,
+    borderRadius: 14,
     padding: spacing(2),
     borderWidth: 1,
-    borderColor: '#1f2a44',
+    borderColor: colors.border,
     shadowColor: '#000',
-    shadowOpacity: 0.18,
-    shadowRadius: 12,
+    shadowOpacity: 0.15,
+    shadowRadius: 10,
     shadowOffset: { width: 0, height: 8 },
-    elevation: 7,
+    elevation: 6,
   },
   badgeMuted: {
-    backgroundColor: 'rgba(255,255,255,0.05)',
+    backgroundColor: colors.surfaceAlt,
     paddingVertical: spacing(0.5),
     paddingHorizontal: spacing(1.25),
     borderRadius: 10,
     borderWidth: 1,
-    borderColor: '#1f2a44',
+    borderColor: colors.border,
   },
   badgeMutedText: {
-    color: '#cbd5e1',
+    color: colors.textMuted,
     fontWeight: '700',
     fontSize: 12,
+    fontFamily: 'monospace',
   },
   eyebrow: {
-    color: '#9ca3af',
+    color: colors.textMuted,
     fontSize: 12,
     letterSpacing: 0.3,
     marginBottom: 2,
+    fontFamily: 'monospace',
   },
   headerRight: {
     flexDirection: 'row',
@@ -559,6 +555,11 @@ const styles = StyleSheet.create({
     columnGap: spacing(1),
   },
   integralizacaoCard: {
+    backgroundColor: colors.surfaceAlt,
+    borderRadius: 12,
+    padding: spacing(2),
+    borderWidth: 1,
+    borderColor: colors.border,
     rowGap: spacing(1.25),
   },
   integralizacaoHeader: {
@@ -571,17 +572,18 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontWeight: '800',
     fontSize: 17,
+    fontFamily: 'monospace',
   },
   badge: {
-    backgroundColor: 'rgba(91, 140, 255, 0.18)',
+    backgroundColor: colors.surface,
     paddingVertical: spacing(0.5),
     paddingHorizontal: spacing(1.5),
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#5B8CFF',
+    borderColor: colors.border,
   },
   badgeText: {
-    color: '#dfe8ff',
+    color: colors.text,
     fontWeight: '700',
     fontSize: 13,
   },
@@ -589,81 +591,76 @@ const styles = StyleSheet.create({
     marginBottom: spacing(1.25),
   },
   dropdownHeader: {
-    backgroundColor: '#0f1628',
+    backgroundColor: colors.surface,
     borderRadius: 12,
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(1.25),
     borderWidth: 1,
-    borderColor: '#1f2d49',
+    borderColor: colors.border,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    shadowColor: '#000',
-    shadowOpacity: 0.15,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 4,
   },
   dropdownLabel: {
-    color: '#9ca3af',
+    color: colors.textMuted,
     fontSize: 12,
     marginBottom: 2,
+    fontFamily: 'monospace',
   },
   dropdownValue: {
     color: colors.text,
     fontWeight: '700',
     fontSize: 14,
+    fontFamily: 'monospace',
   },
   dropdownPlaceholder: {
-    color: '#9ca3af',
+    color: colors.textMuted,
     fontWeight: '500',
   },
   dropdownList: {
-    backgroundColor: '#0f172a',
+    backgroundColor: colors.surface,
     borderWidth: 1,
-    borderColor: '#1f2a44',
+    borderColor: colors.border,
     borderRadius: 12,
     marginTop: spacing(0.5),
-    shadowColor: '#000',
-    shadowOpacity: 0.25,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 8 },
-    elevation: 6,
   },
   dropdownOption: {
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(1.25),
     borderBottomWidth: 1,
-    borderBottomColor: '#1f2a44',
+    borderBottomColor: colors.border,
   },
   dropdownEmpty: {
-    color: '#9ca3af',
+    color: colors.textMuted,
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(1.25),
   },
   optionText: {
     color: colors.text,
+    fontFamily: 'monospace',
   },
   helperText: {
-    color: colors.text,
+    color: colors.textMuted,
     marginBottom: spacing(1),
+    fontFamily: 'monospace',
   },
   loader: {
     alignItems: 'center',
     marginVertical: spacing(2),
   },
   errorText: {
-    color: '#ff6b6b',
+    color: colors.primary,
     marginBottom: spacing(2),
+    fontFamily: 'monospace',
   },
   semesterCard: {
-    backgroundColor: 'rgba(15, 23, 42, 0.82)',
-    borderRadius: 16,
+    backgroundColor: colors.surface,
+    borderRadius: 12,
     marginBottom: spacing(1.5),
     borderWidth: 1,
-    borderColor: '#1b2741',
+    borderColor: colors.border,
     shadowColor: '#000',
-    shadowOpacity: 0.16,
+    shadowOpacity: 0.12,
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 6 },
     elevation: 6,
@@ -677,15 +674,17 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.02)',
   },
   semesterBadge: {
-    color: '#9ca3af',
+    color: colors.textMuted,
     fontSize: 12,
     fontWeight: '700',
-    letterSpacing: 0.3,
+    letterSpacing: 0.6,
+    fontFamily: 'monospace',
   },
   semesterTitle: {
-    color: '#e5e7eb',
+    color: colors.text,
     fontSize: 16,
     fontWeight: '800',
+    fontFamily: 'monospace',
   },
   courseContainer: {
     flexDirection: 'row',
@@ -695,24 +694,21 @@ const styles = StyleSheet.create({
     columnGap: spacing(1),
   },
   courseChip: {
-    backgroundColor: '#101a2f',
-    borderRadius: 8,
-    paddingVertical: spacing(0.75),
-    paddingHorizontal: spacing(1),
-    minWidth: 70,
+    backgroundColor: colors.surfaceAlt,
+    borderRadius: 10,
+    paddingVertical: spacing(1),
+    paddingHorizontal: spacing(1.25),
+    minWidth: 96,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#1d2b46',
-    shadowColor: '#000',
-    shadowOpacity: 0.12,
-    shadowRadius: 6,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 3,
+    borderColor: colors.border,
   },
   courseChipText: {
-    color: '#dce4ff',
-    fontSize: 12,
-    fontWeight: '700',
+    color: colors.text,
+    fontSize: 13,
+    fontWeight: '800',
     marginBottom: 0,
+    letterSpacing: 0.4,
+    fontFamily: 'monospace',
   },
 });

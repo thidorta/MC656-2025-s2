@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Alert, Text, TouchableOpacity, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import { Alert, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { API_BASE_URL } from '../config/api';
-import { ScreenContent } from 'components/ScreenContent';
-import { apiService } from '../services/api'; // Nova importação
+import { apiService } from '../services/api';
+import { colors } from '../theme/colors';
+import { spacing } from '../theme/spacing';
 
 export default function DebugScreen() {
   const [isLoading, setIsLoading] = useState(false);
@@ -11,54 +13,123 @@ export default function DebugScreen() {
   const fetchPopupMessage = async () => {
     setIsLoading(true);
     try {
-      const data = await apiService.getPopupMessage(); // Usando o serviço
+      const data = await apiService.getPopupMessage();
       Alert.alert(
         data.title,
-        `${data.message}\n\n📡 Framework: ${data.backend_info.framework}\n🔗 Endpoint: ${data.backend_info.endpoint}`
+        `${data.message}\n\nFramework: ${data.backend_info.framework}\nEndpoint: ${data.backend_info.endpoint}`
       );
     } catch (error) {
-      // O erro já é tratado no apiService, mas pode adicionar um feedback local aqui se quiser.
-      // Alert.alert('Erro', 'Falha ao buscar mensagem. Verifique a conexão do servidor.');
+      // handled in apiService
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <>
-      <ScreenContent title="GDE App - UNICAMP" path="DebugScreen.tsx">
-        <View className="mt-8 p-4 bg-blue-100 rounded-lg">
-          <Text className="text-lg font-semibold text-blue-800 text-center">🎓 Sistema GDE</Text>
-          <Text className="text-sm text-blue-600 text-center mt-2">MC656 - Engenharia de Software</Text>
-          <Text className="text-xs text-gray-600 text-center mt-2">Debug de Conexão ✅</Text>
-        </View>
+    <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
+      <View style={styles.container}>
+        <View style={styles.card}>
+          <Text style={styles.title}>Diagnostico de conexao</Text>
+          <Text style={styles.subtitle}>Teste rapido de disponibilidade do backend FastAPI.</Text>
 
-        <TouchableOpacity
-          onPress={fetchPopupMessage}
-          disabled={isLoading}
-          className={`mt-6 px-8 py-4 rounded-lg shadow-lg ${
-            isLoading ? 'bg-gray-400' : 'bg-green-500 active:bg-green-600'
-          }`}
-        >
-          <Text className="text-white font-bold text-lg text-center">
-            {isLoading ? '⏳ Conectando...' : '🌐 Testar Servidor!'}
-          </Text>
-        </TouchableOpacity>
+          <View style={styles.infoRow}>
+            <Text style={styles.infoLabel}>Endpoint</Text>
+            <Text style={styles.infoValue}>{`${API_BASE_URL}/popup-message`}</Text>
+          </View>
 
-        <View className="mt-4 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
-          <Text className="text-sm text-yellow-800 text-center">
-            💡 Toque para fazer requisição HTTP ao backend
-          </Text>
-          <Text className="text-xs text-yellow-600 text-center mt-1">🔗 GET {API_BASE_URL}/popup-message</Text>
+          <TouchableOpacity
+            onPress={fetchPopupMessage}
+            disabled={isLoading}
+            style={[styles.button, isLoading && styles.buttonDisabled]}
+          >
+            <MaterialCommunityIcons
+              name="signal-variant"
+              size={18}
+              color={colors.buttonText}
+              style={{ marginRight: spacing(1) }}
+            />
+            <Text style={styles.buttonText}>{isLoading ? 'Conectando...' : 'Testar servidor'}</Text>
+          </TouchableOpacity>
+          <Text style={styles.hint}>Certifique-se de que o FastAPI esta ativo na porta 8000.</Text>
         </View>
-
-        <View className="mt-3 p-2 bg-gray-100 rounded-lg">
-          <Text className="text-xs text-gray-600 text-center">
-            🔧 Certifique-se de que o FastAPI está na porta 8000
-          </Text>
-        </View>
-      </ScreenContent>
-      <StatusBar style="auto" />
-    </>
+      </View>
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: colors.bg,
+  },
+  container: {
+    flex: 1,
+    padding: spacing(3),
+    backgroundColor: colors.bg,
+    justifyContent: 'center',
+  },
+  card: {
+    backgroundColor: colors.surface,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: spacing(3),
+    gap: spacing(1.5),
+  },
+  title: {
+    color: colors.text,
+    fontSize: 20,
+    fontWeight: '800',
+    letterSpacing: 0.4,
+    fontFamily: 'monospace',
+  },
+  subtitle: {
+    color: colors.textMuted,
+    fontSize: 14,
+    lineHeight: 20,
+    fontFamily: 'monospace',
+  },
+  infoRow: {
+    backgroundColor: colors.surfaceAlt,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: spacing(1.5),
+    gap: spacing(0.5),
+  },
+  infoLabel: {
+    color: colors.textMuted,
+    fontSize: 12,
+    fontFamily: 'monospace',
+  },
+  infoValue: {
+    color: colors.text,
+    fontSize: 14,
+    fontWeight: '700',
+    fontFamily: 'monospace',
+  },
+  button: {
+    marginTop: spacing(1),
+    backgroundColor: colors.primary,
+    borderRadius: 12,
+    paddingVertical: spacing(1.25),
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonDisabled: {
+    opacity: 0.5,
+  },
+  buttonText: {
+    color: colors.buttonText,
+    fontWeight: '800',
+    fontSize: 15,
+    letterSpacing: 0.4,
+    fontFamily: 'monospace',
+  },
+  hint: {
+    color: colors.textMuted,
+    fontSize: 12,
+    fontFamily: 'monospace',
+  },
+});

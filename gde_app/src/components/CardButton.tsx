@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet, ViewStyle, Platform, Dimensions } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, ViewStyle, Dimensions } from 'react-native';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
 
@@ -8,58 +8,41 @@ const { width } = Dimensions.get('window');
 type CardButtonProps = {
   label: string;
   onPress: () => void;
-  variant: 'dark' | 'light';
   style?: ViewStyle;
 };
 
-export const CardButton = ({ label, onPress, variant, style }: CardButtonProps) => {
-  const buttonStyle = variant === 'dark' ? styles.darkButton : styles.lightButton;
-  const textStyle = variant === 'dark' ? styles.darkButtonText : styles.lightButtonText;
-
+export const CardButton = ({ label, onPress, style }: CardButtonProps) => {
   return (
-    <TouchableOpacity
-      activeOpacity={0.8}
-      onPress={onPress}
-      style={[styles.baseButton, buttonStyle, style]}
-    >
-      <Text style={[styles.baseButtonText, textStyle]}>{label}</Text>
+    <TouchableOpacity activeOpacity={0.85} onPress={onPress} style={[styles.card, style]}>
+      <Text style={styles.label}>{label}</Text>
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
-  baseButton: {
-    borderRadius: 16,
-    padding: spacing(2),
+  card: {
+    width: width * 0.4,
+    maxWidth: 200,
+    aspectRatio: 1,
+    backgroundColor: colors.surface,
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: colors.border,
     alignItems: 'center',
     justifyContent: 'center',
-    width: Platform.select({
-      web: width * 0.15,
-      android: width * 0.4
-    }),
-    aspectRatio: 1, // Make it square
+    padding: spacing(2),
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
+    shadowOpacity: 0.18,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 4,
   },
-  darkButton: {
-    backgroundColor: '#333333', // Dark background as per Figma
-  },
-  lightButton: {
-    backgroundColor: '#E0E0E0', // Light background as per Figma
-  },
-  baseButtonText: {
+  label: {
+    color: colors.text,
     fontWeight: '800',
     fontSize: 16,
-    letterSpacing: 0.2,
+    letterSpacing: 0.4,
     textAlign: 'center',
-  },
-  darkButtonText: {
-    color: colors.text, // White text
-  },
-  lightButtonText: {
-    color: '#333333', // Dark text
+    fontFamily: 'monospace',
   },
 });

@@ -2,6 +2,7 @@ import React from 'react';
 import { View, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { colors } from '../src/theme/colors';
+import { spacing } from '../src/theme/spacing';
 
 type PasswordInputProps = {
   value: string;
@@ -9,28 +10,24 @@ type PasswordInputProps = {
   placeholder?: string;
 };
 
-export const PasswordInput = ({ value, onChangeText, placeholder = "Digite sua senha" }: PasswordInputProps) => {
+export const PasswordInput = ({ value, onChangeText, placeholder = 'Digite sua senha' }: PasswordInputProps) => {
   const [showPassword, setShowPassword] = React.useState(false);
-
-  const toggleShowPassword = () => {
-    setShowPassword(!showPassword);
-  };
 
   return (
     <View style={styles.passwordContainer}>
       <TextInput
         secureTextEntry={!showPassword}
-        style={[styles.input, { flex: 1 }]}
+        style={styles.input}
         placeholder={placeholder}
-        placeholderTextColor="rgba(0, 0, 0, 0.8)"
+        placeholderTextColor="#5c5c5c"
         value={value}
         onChangeText={onChangeText}
       />
-      <TouchableOpacity onPress={toggleShowPassword} style={styles.iconButton}>
+      <TouchableOpacity onPress={() => setShowPassword((prev) => !prev)} style={styles.iconButton}>
         <MaterialCommunityIcons
-          name={showPassword ? 'eye-off' : 'eye'}
-          size={22}
-          color="#00000099"
+          name={showPassword ? 'eye-off-outline' : 'eye-outline'}
+          size={20}
+          color={colors.text}
         />
       </TouchableOpacity>
     </View>
@@ -42,17 +39,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.textMuted,
-    borderRadius: 8,
-    marginBottom: 16,
-    paddingHorizontal: 8,
-    backgroundColor: '#ffffff'
+    borderColor: colors.border,
+    borderRadius: 12,
+    paddingHorizontal: spacing(1),
+    backgroundColor: colors.surface,
   },
   input: {
-    paddingVertical: 8,
-    fontSize: 16,
+    flex: 1,
+    paddingVertical: spacing(1),
+    paddingHorizontal: spacing(0.5),
+    fontSize: 15,
+    color: colors.text,
+    fontFamily: 'monospace',
   },
   iconButton: {
-    padding: 6,
+    padding: spacing(0.5),
   },
 });

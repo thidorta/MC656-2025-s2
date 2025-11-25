@@ -70,12 +70,12 @@ const DaySection = ({ schedule }: { schedule: DaySchedule }) => {
           <MaterialCommunityIcons
             name={isCollapsed ? 'chevron-down' : 'chevron-up'}
             size={24}
-            color={colors.buttonText}
+            color={colors.text}
           />
           <Text style={plannerStyles.dayTitle}>{schedule.day}</Text>
         </View>
         <TouchableOpacity style={plannerStyles.addCourseButton} onPress={() => { /* Add course logic */ }}>
-          <MaterialCommunityIcons name="plus" size={24} color={colors.buttonText} />
+          <MaterialCommunityIcons name="plus" size={24} color={colors.text} />
         </TouchableOpacity>
       </TouchableOpacity>
       {!isCollapsed && schedule.courses.length > 0 && (
@@ -187,13 +187,19 @@ const plannerStyles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: spacing(3),
     paddingVertical: spacing(2),
-    backgroundColor: '#333333', // Dark background for header
+    backgroundColor: colors.surface,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.border,
   },
-    placeholder: {
-    width: 24 + spacing(2), // Match back button size for center alignment
+  placeholder: {
+    width: 24 + spacing(2),
   },
   backButton: {
     padding: spacing(1),
+    borderRadius: 12,
+    backgroundColor: colors.surfaceAlt,
+    borderWidth: 1,
+    borderColor: colors.border,
   },
   addCourseButtonHeader: {
     padding: spacing(1),
@@ -201,7 +207,9 @@ const plannerStyles = StyleSheet.create({
   headerTitle: {
     color: colors.text,
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: '800',
+    letterSpacing: 0.4,
+    fontFamily: 'monospace',
   },
   container: {
     flex: 1,
@@ -209,12 +217,14 @@ const plannerStyles = StyleSheet.create({
     backgroundColor: colors.bg,
   },
   contentContainer: {
-    paddingBottom: spacing(8), // Garante que o botão de exportação seja visível e rolagem
+    paddingBottom: spacing(8),
   },
   dayCard: {
-    backgroundColor: '#E0E0E0', // Light background for day card
-    borderRadius: 8,
+    backgroundColor: colors.surface,
+    borderRadius: 12,
     marginBottom: spacing(2),
+    borderWidth: 1,
+    borderColor: colors.border,
     overflow: 'hidden',
   },
   dayHeader: {
@@ -222,17 +232,18 @@ const plannerStyles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: spacing(2),
-    backgroundColor: '#C0C0C0', // Slightly darker for header
+    backgroundColor: colors.surfaceAlt,
   },
   dayTitleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   dayTitle: {
-    color: colors.buttonText, // Dark text on light background
+    color: colors.text,
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: '800',
     marginLeft: spacing(1),
+    fontFamily: 'monospace',
   },
   addCourseButton: {
     padding: spacing(1),
@@ -241,41 +252,45 @@ const plannerStyles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     padding: spacing(2),
-    gap: spacing(1), // Spacing between chips
+    gap: spacing(1),
   },
   noCoursesContainer: {
     padding: spacing(2),
     alignItems: 'center',
   },
   noCoursesText: {
-    color:'#333333',
+    color: colors.textMuted,
     fontSize: 14,
+    fontFamily: 'monospace',
   },
   courseChip: {
-    backgroundColor: '#333333', // Dark background for chips
-    borderRadius: 8,
+    backgroundColor: colors.surfaceAlt,
+    borderRadius: 10,
     paddingVertical: spacing(1),
     paddingHorizontal: spacing(2),
+    borderWidth: 1,
+    borderColor: colors.border,
   },
   courseChipText: {
-    color: colors.text, // White text on dark chip
+    color: colors.text,
     fontSize: 14,
-    fontWeight: '600',
+    fontWeight: '700',
+    fontFamily: 'monospace',
   },
   gridContainer: {
     marginTop: spacing(4),
-    backgroundColor: '#FFFFFF', // White background for the grid
-    borderRadius: 8,
+    backgroundColor: colors.surface,
+    borderRadius: 12,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: '#E0E0E0',
-    position: 'relative', // Crucial for absolute positioning of course blocks
+    borderColor: colors.border,
+    position: 'relative',
   },
   gridHeaderRow: {
     flexDirection: 'row',
     borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
-    backgroundColor: '#F0F0F0', // Light grey for header
+    borderBottomColor: colors.border,
+    backgroundColor: colors.surfaceAlt,
   },
   gridCornerCell: {
     paddingVertical: spacing(1),
@@ -285,87 +300,88 @@ const plannerStyles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: spacing(1),
     borderLeftWidth: 1,
-    borderLeftColor: '#E0E0E0',
+    borderLeftColor: colors.border,
   },
   gridDayHeaderText: {
     fontSize: 12,
-    fontWeight: 'bold',
-    color: '#333333',
+    fontWeight: '800',
+    color: colors.text,
+    fontFamily: 'monospace',
   },
   gridRow: {
     flexDirection: 'row',
     borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
+    borderBottomColor: colors.border,
   },
   gridTimeCell: {
-    justifyContent: 'flex-start', // Align time text to the top of the cell
+    justifyContent: 'flex-start',
     alignItems: 'center',
     paddingVertical: spacing(0.5),
     paddingRight: spacing(1),
-    backgroundColor: '#F9F9F9', // Slightly different background for time column
+    backgroundColor: colors.surfaceAlt,
     borderRightWidth: 1,
-    borderRightColor: '#E0E0E0',
+    borderRightColor: colors.border,
   },
   gridTimeText: {
     fontSize: 10,
-    color: '#666666',
-    marginTop: -spacing(0.5), // Adjust to align with the top of the hour slot
+    color: colors.textMuted,
+    marginTop: -spacing(0.5),
+    fontFamily: 'monospace',
   },
   gridCell: {
     borderLeftWidth: 1,
-    borderLeftColor: '#E0E0E0',
+    borderLeftColor: colors.border,
   },
   courseBlock: {
     position: 'absolute',
-    backgroundColor: '#333333', // Dark background for course block
-    borderRadius: 4,
+    backgroundColor: colors.primary,
+    borderRadius: 6,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: spacing(0.5),
     zIndex: 1,
   },
   courseBlockText: {
-    color: colors.text,
+    color: colors.buttonText,
     fontSize: 12,
-    fontWeight: '600',
+    fontWeight: '800',
+    fontFamily: 'monospace',
   },
   exportButton: {
     flexDirection: 'row',
-    backgroundColor: '#333333', // Dark background for export button
+    backgroundColor: colors.primary,
     paddingVertical: spacing(2),
     paddingHorizontal: spacing(3),
-    borderRadius: 16,
+    borderRadius: 14,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: spacing(4),
     marginBottom: spacing(2),
     alignSelf: 'center',
     minWidth: 280,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
   },
   exportButtonText: {
-    color: colors.text, // White text
+    color: colors.buttonText,
     fontWeight: '800',
     fontSize: 16,
+    letterSpacing: 0.3,
+    fontFamily: 'monospace',
   },
   googleCalendarIconPlaceholder: {
-    backgroundColor: '#ffffff', // White background as per Figma image
-    borderRadius: 4,
+    backgroundColor: colors.surface,
+    borderRadius: 6,
     paddingHorizontal: 4,
     paddingVertical: 2,
     marginLeft: spacing(1),
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: '#e0e0e0', // Light border
+    borderColor: colors.border,
     borderWidth: 1,
   },
   googleCalendarIconText: {
-    color: '#333333', // Dark text color
+    color: colors.text,
     fontSize: 12,
-    fontWeight: 'bold',
+    fontWeight: '800',
+    fontFamily: 'monospace',
   },
 });
