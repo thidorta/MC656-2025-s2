@@ -108,11 +108,18 @@ class PlannerStore:
         payload, semester = _load_user_db_payload(planner_id, self.settings.user_db_root)
         self._upsert("planner_original", planner_id, semester, payload)
         existing_modified = self._fetch_one("planner_modified", planner_id)
-        if existing_modified:
-            # Reset modified whenever semester changes OR the modified lacks offers (to avoid stale payloads)
-            has_offers = self._payload_has_offers(existing_modified.get("payload"))
-            if existing_modified.get("semester") != semester or not has_offers:
-                self._upsert("planner_modified", planner_id, semester, payload)
+        if existing_modified and existing_modified.get("semester") == semester:
+            payload_mod = dict(payload)
+            planned_codes = None
+            try:
+                planned_codes = existing_modified.get("payload", {}).get("planned_codes")
+            except Exception:
+                planned_codes = None
+            if planned_codes is not None:
+                payload_mod["planned_codes"] = planned_codes
+            self._upsert("planner_modified", planner_id, semester, payload_mod)
+        else:
+            self._upsert("planner_modified", planner_id, semester, payload)
         self._persist_events(planner_id, payload)
         return self.load(planner_id)
 
