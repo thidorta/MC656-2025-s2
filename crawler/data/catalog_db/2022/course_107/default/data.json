@@ -10,7 +10,7 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
@@ -77,6 +77,17 @@
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12133",
+      "codigo": "NC104",
+      "nome": "Introdução à Ciência dos Dados e à Informação",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
       "modalidade": "",
       "prereqs": []
     },
@@ -158,17 +169,6 @@
       "codigo": "SL209",
       "nome": "Matemática para Ciências da Saúde",
       "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "12133",
-      "codigo": "NC104",
-      "nome": "Introdução à Ciência dos Dados e à Informação",
-      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 2,
@@ -326,6 +326,24 @@
       ]
     },
     {
+      "disciplina_id": "11355",
+      "codigo": "NT407",
+      "nome": "Planejamento em Alimentação Coletiva",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT305"
+        ],
+        [
+          "NT212"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "9929",
       "codigo": "NT508",
       "nome": "Nutrição e Dietética nos Ciclos da Vida",
@@ -373,24 +391,6 @@
       "prereqs": [
         [
           "NT405"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "11355",
-      "codigo": "NT407",
-      "nome": "Planejamento em Alimentação Coletiva",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "NT305"
-        ],
-        [
-          "NT212"
         ]
       ]
     },
@@ -471,6 +471,23 @@
       ]
     },
     {
+      "disciplina_id": "9934",
+      "codigo": "NT610",
+      "nome": "Nutrição em Saúde Coletiva",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT507",
+          "NT508",
+          "NT603"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "9931",
       "codigo": "NT607",
       "nome": "Dietoterapia I",
@@ -503,23 +520,6 @@
           "NT600",
           "NT603",
           "SL208"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "9934",
-      "codigo": "NT610",
-      "nome": "Nutrição em Saúde Coletiva",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "NT507",
-          "NT508",
-          "NT603"
         ]
       ]
     },

@@ -1,0 +1,488 @@
+{
+  "course": {
+    "id": 36,
+    "name": "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (36)",
+    "code": "36"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2026,
+  "parameters": {
+    "catalogo": "2026",
+    "modalidade": "",
+    "periodo": "20262",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "10134",
+      "codigo": "SI220",
+      "nome": "Matemática Discreta",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6148",
+      "codigo": "TT106",
+      "nome": "Organização e Arquitetura de Computadores",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9730",
+      "codigo": "SI100",
+      "nome": "Algoritmos e Programação de Computadores I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "19496",
+      "codigo": "SI103",
+      "nome": "Laboratório de Ferramentas de Programação",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "19497",
+      "codigo": "SI104",
+      "nome": "Atividades Práticas de Algoritmos",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9963",
+      "codigo": "SI800",
+      "nome": "Empreendedorismo e Inovação",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5557",
+      "codigo": "ST211",
+      "nome": "Estatística",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "19498",
+      "codigo": "SI204",
+      "nome": "Algoritmos e Programação de Computadores II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19499",
+      "codigo": "SI205",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "19500",
+      "codigo": "SI206",
+      "nome": "Engenharia de Software I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9957",
+      "codigo": "SI305",
+      "nome": "Análise de Sistemas de Informação I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6993",
+      "codigo": "ST567",
+      "nome": "Banco de Dados I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9954",
+      "codigo": "SI300",
+      "nome": "Programação Orientada a Objetos I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9955",
+      "codigo": "SI304",
+      "nome": "Engenharia de Software II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST266"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19501",
+      "codigo": "SI306",
+      "nome": "Matemática para Ciência de Dados",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9956",
+      "codigo": "SI404",
+      "nome": "Introdução a Interfaces Humano-Computador",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST266"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6165",
+      "codigo": "TT304",
+      "nome": "Sistemas Operacionais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9951",
+      "codigo": "SI201",
+      "nome": "Estrutura de Dados I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9958",
+      "codigo": "SI400",
+      "nome": "Programação Orientada a Objetos II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9961",
+      "codigo": "SI401",
+      "nome": "Programação para a Web",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18118",
+      "codigo": "SI406",
+      "nome": "Atividades práticas em Interação Humano-Computador",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6999",
+      "codigo": "ST767",
+      "nome": "Banco de Dados II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST567"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9953",
+      "codigo": "SI010",
+      "nome": "Estrutura de Dados II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9959",
+      "codigo": "SI405",
+      "nome": "Análise de Sistemas de Informação II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI305"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19502",
+      "codigo": "SI503",
+      "nome": "Projeto Integrador",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI201",
+          "SI300",
+          "SI304",
+          "SI305",
+          "SI404",
+          "ST767"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10140",
+      "codigo": "SI702",
+      "nome": "Inteligência Artificial",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI120",
+          "SI200",
+          "SI201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6994",
+      "codigo": "ST568",
+      "nome": "Redes de Comunicação I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TT106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7176",
+      "codigo": "TT060",
+      "nome": "Gestão de Projetos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST266"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19503",
+      "codigo": "SI602",
+      "nome": "Introdução ao Aprendizado de Máquina",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI204",
+          "SI306",
+          "ST211"
+        ],
+        [
+          "EB101",
+          "EB102",
+          "SI203",
+          "ST211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19504",
+      "codigo": "SI603",
+      "nome": "Processamento Paralelo e Distribuído",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI201",
+          "ST568",
+          "TT106",
+          "TT304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9962",
+      "codigo": "SI700",
+      "nome": "Programação para Dispositivos Móveis",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SI201",
+          "SI400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18121",
+      "codigo": "SI919",
+      "nome": "Atividades Complementares de Extensão",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18122",
+      "codigo": "SI920",
+      "nome": "Atividades Complementares",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

@@ -10,21 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "VZ",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "4913",
-      "codigo": "MU193",
-      "nome": "Percepção Musical I",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "VZ",
-      "prereqs": []
-    },
     {
       "disciplina_id": "4915",
       "codigo": "MU196",
@@ -107,19 +96,15 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "4928",
-      "codigo": "MU220",
-      "nome": "Coral II",
-      "creditos": 2,
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 1,
       "modalidade": "VZ",
-      "prereqs": [
-        [
-          "MU120"
-        ]
-      ]
+      "prereqs": []
     },
     {
       "disciplina_id": "4956",
@@ -242,17 +227,17 @@
       ]
     },
     {
-      "disciplina_id": "4864",
-      "codigo": "MU114",
-      "nome": "Análise I",
+      "disciplina_id": "4928",
+      "codigo": "MU220",
+      "nome": "Coral II",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "VZ",
       "prereqs": [
         [
-          "MU205"
+          "MU120"
         ]
       ]
     },
@@ -373,17 +358,17 @@
       ]
     },
     {
-      "disciplina_id": "5030",
-      "codigo": "MU420",
-      "nome": "Coral IV",
+      "disciplina_id": "4864",
+      "codigo": "MU114",
+      "nome": "Análise I",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "VZ",
       "prereqs": [
         [
-          "MU320"
+          "MU205"
         ]
       ]
     },
@@ -508,17 +493,17 @@
       ]
     },
     {
-      "disciplina_id": "4911",
-      "codigo": "MU190",
-      "nome": "História da Música Brasileira I",
+      "disciplina_id": "5030",
+      "codigo": "MU420",
+      "nome": "Coral IV",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "VZ",
       "prereqs": [
         [
-          "MU360"
+          "MU320"
         ]
       ]
     },
@@ -598,17 +583,17 @@
       ]
     },
     {
-      "disciplina_id": "4973",
-      "codigo": "MU290",
-      "nome": "História da Música Brasileira II",
+      "disciplina_id": "4911",
+      "codigo": "MU190",
+      "nome": "História da Música Brasileira I",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 5,
       "modalidade": "VZ",
       "prereqs": [
         [
-          "MU190"
+          "MU360"
         ]
       ]
     },
@@ -697,6 +682,21 @@
       "semestre": 6,
       "modalidade": "VZ",
       "prereqs": []
+    },
+    {
+      "disciplina_id": "4973",
+      "codigo": "MU290",
+      "nome": "História da Música Brasileira II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VZ",
+      "prereqs": [
+        [
+          "MU190"
+        ]
+      ]
     },
     {
       "disciplina_id": "16224",

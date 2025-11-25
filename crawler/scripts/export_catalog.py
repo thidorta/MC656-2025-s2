@@ -251,25 +251,75 @@ def fetch_arvore_html(client: GDEApiClient, *, course_id: int, catalogo: str, mo
     return client._request_html(client.paths["arvore"], params=params, raw_name=raw_name)
 
 
+def _fallback_nodes_from_plane_payload(
+    plane_payload: Dict[str, Any] | None,
+    *,
+    year: int,
+    modality_code: str,
+    client: GDEApiClient,
+    prereq_cache: Dict[str, List[List[str]]],
+) -> List[Dict[str, Any]]:
+    """Build discipline list directly from the planner JSON when the integralizacao HTML is missing."""
+    if not plane_payload or not plane_payload.get("Oferecimentos"):
+        return []
+
+    tipo_map = {str(k): html.unescape(v) for k, v in (plane_payload.get("Arvore", {}).get("tipos") or {}).items()}
+    nodes: List[Dict[str, Any]] = []
+
+    for item in plane_payload.get("Oferecimentos", {}).values():
+        disc = item.get("Disciplina", {}) or {}
+        disc_id = disc.get("id")
+        code = normalize_code(disc.get("sigla") or disc.get("siglan"))
+        if not code:
+            continue
+
+        nodes.append(
+            {
+                "disciplina_id": str(disc_id) if disc_id is not None else None,
+                "codigo": code,
+                "nome": str(disc.get("nome") or code),
+                "creditos": disc.get("creditos"),
+                "catalogo": int(year),
+                "tipo": tipo_map.get(str(disc_id)) if disc_id is not None else None,
+                "semestre": coerce_semester(disc.get("semestre")),
+                "modalidade": modality_code,
+                "prereqs": get_prereqs_for_discipline(
+                    client,
+                    disc_id=disc_id if isinstance(disc_id, int) else None,
+                    year=year,
+                    cache=prereq_cache,
+                ),
+                "cp_group": disc.get("c"),
+                "status": "completed" if disc.get("tem") else "pending" if disc.get("tem") is not None else None,
+                "tem": disc.get("tem"),
+                "pode": disc.get("pode"),
+                "obs": disc.get("obs"),
+                "color": disc.get("cor"),
+            }
+        )
+
+    return nodes
+
+
 def export_catalog(year: int, output_dir: Path | None = None) -> None:
     client = build_client()
 
     # Clear previous captures for the target year
     catalog_db_dir = DATA_DIR / "catalog_db" / str(year)
     if catalog_db_dir.exists():
-        shutil.rmtree(catalog_db_dir)
+        shutil.rmtree(catalog_db_dir, ignore_errors=True)
     raw_year_dir = client.raw_dir / str(year)
     if raw_year_dir.exists():
-        shutil.rmtree(raw_year_dir)
+        shutil.rmtree(raw_year_dir, ignore_errors=True)
     user_db_root = DATA_DIR / "user_db"
     if user_db_root.exists():
-        shutil.rmtree(user_db_root)
+        shutil.rmtree(user_db_root, ignore_errors=True)
 
     if output_dir is None:
         output_dir = _resolve_output_dir(year)
     output_dir = output_dir.resolve()
     if output_dir.exists():
-        shutil.rmtree(output_dir)
+        shutil.rmtree(output_dir, ignore_errors=True)
 
     raw_year_dir.mkdir(parents=True, exist_ok=True)
     catalog_db_dir.mkdir(parents=True, exist_ok=True)
@@ -438,6 +488,14 @@ def export_catalog(year: int, output_dir: Path | None = None) -> None:
                                 ),
                             }
                         )
+                if not catalog_nodes:
+                    catalog_nodes = _fallback_nodes_from_plane_payload(
+                        plane_payload,
+                        year=year,
+                        modality_code=modality_code,
+                        client=client,
+                        prereq_cache=prereq_cache,
+                    )
 
                 catalog_record = {
                     "course": course.model_dump(),

@@ -10,21 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "VP",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "4857",
-      "codigo": "MU105",
-      "nome": "Estruturação Musical I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "VP",
-      "prereqs": []
-    },
     {
       "disciplina_id": "4913",
       "codigo": "MU193",
@@ -85,6 +74,17 @@
       "codigo": "MU058",
       "nome": "Rítmica I",
       "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4857",
+      "codigo": "MU105",
+      "nome": "Estruturação Musical I",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 1,
@@ -223,21 +223,6 @@
       ]
     },
     {
-      "disciplina_id": "4694",
-      "codigo": "MP305",
-      "nome": "Voz III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "VP",
-      "prereqs": [
-        [
-          "MP205"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "4698",
       "codigo": "MP340",
       "nome": "História e Linguagem da Música Popular III",
@@ -324,6 +309,21 @@
       "prereqs": [
         [
           "MP120"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4694",
+      "codigo": "MP305",
+      "nome": "Voz III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VP",
+      "prereqs": [
+        [
+          "MP205"
         ]
       ]
     },
@@ -433,21 +433,6 @@
       ]
     },
     {
-      "disciplina_id": "6970",
-      "codigo": "MP541",
-      "nome": "Canto na Música Popular V",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "VP",
-      "prereqs": [
-        [
-          "MP441"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "4862",
       "codigo": "MU111",
       "nome": "Música Industrializada I",
@@ -526,6 +511,21 @@
       "prereqs": [
         [
           "MP405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6970",
+      "codigo": "MP541",
+      "nome": "Canto na Música Popular V",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VP",
+      "prereqs": [
+        [
+          "MP441"
         ]
       ]
     },
@@ -646,21 +646,6 @@
       ]
     },
     {
-      "disciplina_id": "16224",
-      "codigo": "MP107",
-      "nome": "Atividades complementares II",
-      "creditos": 7,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "VP",
-      "prereqs": [
-        [
-          "MP106"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "4732",
       "codigo": "MP620",
       "nome": "Prática Instrumental VI",
@@ -702,6 +687,21 @@
       "prereqs": [
         [
           "MP641"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "16224",
+      "codigo": "MP107",
+      "nome": "Atividades complementares II",
+      "creditos": 7,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "VP",
+      "prereqs": [
+        [
+          "MP106"
         ]
       ]
     },

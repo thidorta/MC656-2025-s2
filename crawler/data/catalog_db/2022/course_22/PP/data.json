@@ -10,7 +10,7 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "PP",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
@@ -79,6 +79,21 @@
       "semestre": 1,
       "modalidade": "PP",
       "prereqs": []
+    },
+    {
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU058"
+        ]
+      ]
     },
     {
       "disciplina_id": "4919",
@@ -182,17 +197,17 @@
       ]
     },
     {
-      "disciplina_id": "4841",
-      "codigo": "MU059",
-      "nome": "Rítmica II",
-      "creditos": 5,
+      "disciplina_id": "4698",
+      "codigo": "MP340",
+      "nome": "História e Linguagem da Música Popular III",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "PP",
       "prereqs": [
         [
-          "MU058"
+          "MP240"
         ]
       ]
     },
@@ -272,17 +287,17 @@
       ]
     },
     {
-      "disciplina_id": "4698",
-      "codigo": "MP340",
-      "nome": "História e Linguagem da Música Popular III",
+      "disciplina_id": "4711",
+      "codigo": "MP440",
+      "nome": "História e Linguagem da Música Popular IV",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "PP",
       "prereqs": [
         [
-          "MP240"
+          "MP340"
         ]
       ]
     },
@@ -362,17 +377,17 @@
       ]
     },
     {
-      "disciplina_id": "4711",
-      "codigo": "MP440",
-      "nome": "História e Linguagem da Música Popular IV",
+      "disciplina_id": "4697",
+      "codigo": "MP330",
+      "nome": "Harmonia III",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "PP",
       "prereqs": [
         [
-          "MP340"
+          "MP230"
         ]
       ]
     },
@@ -440,21 +455,6 @@
       "prereqs": [
         [
           "MU205"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4697",
-      "codigo": "MP330",
-      "nome": "Harmonia III",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "PP",
-      "prereqs": [
-        [
-          "MP230"
         ]
       ]
     },
@@ -605,21 +605,6 @@
       ]
     },
     {
-      "disciplina_id": "4744",
-      "codigo": "MP802",
-      "nome": "Percussão VIII",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 8,
-      "modalidade": "PP",
-      "prereqs": [
-        [
-          "MP702"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "5188",
       "codigo": "MU999",
       "nome": "Projeto Final de Graduação",
@@ -649,6 +634,21 @@
         ],
         [
           "MU671"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4744",
+      "codigo": "MP802",
+      "nome": "Percussão VIII",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP702"
         ]
       ]
     }

@@ -10,21 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "2297",
-      "codigo": "EP107",
-      "nome": "Introdução à Pedagogia - Organização do Trabalho Pedagógico",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "",
-      "prereqs": []
-    },
     {
       "disciplina_id": "2300",
       "codigo": "EP110",
@@ -74,6 +63,17 @@
       "disciplina_id": "11731",
       "codigo": "EP570",
       "nome": "Estudo e Produção Acadêmica",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2297",
+      "codigo": "EP107",
+      "nome": "Introdução à Pedagogia - Organização do Trabalho Pedagógico",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
@@ -155,17 +155,6 @@
       ]
     },
     {
-      "disciplina_id": "2373",
-      "codigo": "EP330",
-      "nome": "Filosofia da Educação III",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "",
-      "prereqs": []
-    },
-    {
       "disciplina_id": "2377",
       "codigo": "EP340",
       "nome": "Sociologia da Educação I",
@@ -241,24 +230,15 @@
       ]
     },
     {
-      "disciplina_id": "2396",
-      "codigo": "EP412",
-      "nome": "História da Educação III",
+      "disciplina_id": "2373",
+      "codigo": "EP330",
+      "nome": "Filosofia da Educação III",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "",
-      "prereqs": [
-        [
-          "EP152",
-          "EP210",
-          "EP340"
-        ],
-        [
-          "EP210"
-        ]
-      ]
+      "prereqs": []
     },
     {
       "disciplina_id": "2324",
@@ -309,6 +289,26 @@
       "semestre": 4,
       "modalidade": "",
       "prereqs": []
+    },
+    {
+      "disciplina_id": "2396",
+      "codigo": "EP412",
+      "nome": "História da Educação III",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EP152",
+          "EP210",
+          "EP340"
+        ],
+        [
+          "EP210"
+        ]
+      ]
     },
     {
       "disciplina_id": "2336",
@@ -370,17 +370,6 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "2390",
-      "codigo": "EP377",
-      "nome": "Planejamento Educacional e Estágio Supervisionado em Gestão Escolar",
-      "creditos": 8,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "",
-      "prereqs": []
-    },
-    {
       "disciplina_id": "2412",
       "codigo": "EP473",
       "nome": "Escola e Cultura Matemática",
@@ -425,13 +414,13 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "6761",
-      "codigo": "EP790",
-      "nome": "Políticas de Educação Infantil",
-      "creditos": 4,
+      "disciplina_id": "2390",
+      "codigo": "EP377",
+      "nome": "Planejamento Educacional e Estágio Supervisionado em Gestão Escolar",
+      "creditos": 8,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 7,
+      "semestre": 6,
       "modalidade": "",
       "prereqs": []
     },
@@ -478,6 +467,17 @@
           "EP340"
         ]
       ]
+    },
+    {
+      "disciplina_id": "6761",
+      "codigo": "EP790",
+      "nome": "Políticas de Educação Infantil",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
     },
     {
       "disciplina_id": "2317",

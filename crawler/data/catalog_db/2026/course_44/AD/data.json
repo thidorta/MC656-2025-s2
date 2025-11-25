@@ -1,0 +1,213 @@
+{
+  "course": {
+    "id": 44,
+    "name": "Ciências Sociais (44)",
+    "code": "44"
+  },
+  "modalidade": "AD",
+  "modalidade_label": "AD - Bacharelado em Ciências Sociais - Geral",
+  "year": 2026,
+  "parameters": {
+    "catalogo": "2026",
+    "modalidade": "AD",
+    "periodo": "20262",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "10577",
+      "codigo": "HZ160",
+      "nome": "Introdução a Antropologia: Natureza e Cultura",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "834",
+      "codigo": "CE131",
+      "nome": "Introdução à Economia para Ciências Sociais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3692",
+      "codigo": "HZ141",
+      "nome": "Política I: Introdução à Ciência Política",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3706",
+      "codigo": "HZ158",
+      "nome": "Sociologia de Durkheim",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17950",
+      "codigo": "HZ211",
+      "nome": "Extensão em Humanidades I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3723",
+      "codigo": "HZ248",
+      "nome": "Política II: Política Brasileira",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3729",
+      "codigo": "HZ258",
+      "nome": "Sociologia de Marx",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "HZ158"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10578",
+      "codigo": "HZ260",
+      "nome": "Antropologia II: Troca, Sociedade e Estrutura",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3745",
+      "codigo": "HZ345",
+      "nome": "Política III: Teorias do Estado",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "HZ141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3752",
+      "codigo": "HZ358",
+      "nome": "Sociologia de Weber",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "HZ258"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10579",
+      "codigo": "HZ360",
+      "nome": "Antropologia III: Teorias e Experimentações Etnográficas",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "HZ260"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9202",
+      "codigo": "HZ431",
+      "nome": "Metodologia e Técnicas de Pesquisa I",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "HZ141",
+          "HZ158",
+          "HZ160"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9203",
+      "codigo": "HZ631",
+      "nome": "Estatística para Ciências Sociais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "HZ431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "888",
+      "codigo": "CE730",
+      "nome": "Economia Brasileira",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "CE131",
+          "HZ141",
+          "HZ158",
+          "HZ160"
+        ]
+      ]
+    }
+  ]
+}

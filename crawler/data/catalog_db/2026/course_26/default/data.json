@@ -1,0 +1,571 @@
+{
+  "course": {
+    "id": 26,
+    "name": "Artes Cênicas (26)",
+    "code": "26"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2026,
+  "parameters": {
+    "catalogo": "2026",
+    "modalidade": "",
+    "periodo": "20262",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9740",
+      "codigo": "AC129",
+      "nome": "Formas Espetaculares e Cultura Popular Brasileira I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14850",
+      "codigo": "AC133",
+      "nome": "Artes do Corpo I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14851",
+      "codigo": "AC134",
+      "nome": "Artes da Voz I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "47",
+      "codigo": "AC218",
+      "nome": "Máscara: Elementos Técnicos de Artes Visuais I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "28",
+      "codigo": "AC109",
+      "nome": "Música e Ritmo I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6978",
+      "codigo": "AC316",
+      "nome": "Estudos de Dramaturgia",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9739",
+      "codigo": "AC110",
+      "nome": "Improvisação Teatral",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12159",
+      "codigo": "AC115",
+      "nome": "Formas do Teatro Ocidental I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12161",
+      "codigo": "AC210",
+      "nome": "Improvisação Teatral II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12163",
+      "codigo": "AC214",
+      "nome": "Linguagens Circenses",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12164",
+      "codigo": "AC215",
+      "nome": "Formas do Teatro Ocidental II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC115"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19230",
+      "codigo": "AC222",
+      "nome": "Formas do Teatro Pré-colombiano e Latino-americano",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14852",
+      "codigo": "AC233",
+      "nome": "Artes do Corpo II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC133"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14853",
+      "codigo": "AC234",
+      "nome": "Artes da Voz II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC134"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "44",
+      "codigo": "AC209",
+      "nome": "Música e Ritmo II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6977",
+      "codigo": "AC315",
+      "nome": "Teatro Brasileiro I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "111",
+      "codigo": "AC890",
+      "nome": "Metodologia e Criação em Artes Cênicas",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "27",
+      "codigo": "AC105",
+      "nome": "Canto para o Ator I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC109",
+          "AC209"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4",
+      "codigo": "AC331",
+      "nome": "Corpo e Teatralidades Brasileiras I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC129",
+          "AC233",
+          "AC234"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14854",
+      "codigo": "AC333",
+      "nome": "Artes do Corpo III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC233"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14855",
+      "codigo": "AC334",
+      "nome": "Artes da Voz III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC234"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6765",
+      "codigo": "AC340",
+      "nome": "Princípios da Ação Cênica",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6979",
+      "codigo": "AC415",
+      "nome": "Teatro Brasileiro II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12169",
+      "codigo": "AC441",
+      "nome": "Atuação e Mídias",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC340"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "32",
+      "codigo": "AC121",
+      "nome": "Práticas de Ação Teatral na Comunidade I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC205",
+          "AC212",
+          "AC410",
+          "AC413",
+          "AC420",
+          "AC611"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "43",
+      "codigo": "AC205",
+      "nome": "Canto para o Ator II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6980",
+      "codigo": "AC317",
+      "nome": "Estudos de Cenografia e Figurino",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC215",
+          "AC218"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19231",
+      "codigo": "AC416",
+      "nome": "Formas do Teatro Asiático",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "19232",
+      "codigo": "AC417",
+      "nome": "Formas do Teatro Afro-diaspórico",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6766",
+      "codigo": "AC440",
+      "nome": "Linguagem da Ação Cênica",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC340"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6982",
+      "codigo": "AC321",
+      "nome": "Produção Teatral",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "85",
+      "codigo": "AC555",
+      "nome": "Projeto Integrado de Criação Cênica I",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC316",
+          "AC440"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12170",
+      "codigo": "AC557",
+      "nome": "Estudos Teóricos no Processo de Criação I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "98",
+      "codigo": "AC666",
+      "nome": "Projeto Integrado de Criação Cênica II",
+      "creditos": 10,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC555"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17402",
+      "codigo": "AC500",
+      "nome": "Atividades Complementares I",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12171",
+      "codigo": "AC657",
+      "nome": "Estudos Teóricos no Processo de Criação II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC557"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12172",
+      "codigo": "AC757",
+      "nome": "Estudos Teóricos no Processo de Criação III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC657"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "103",
+      "codigo": "AC777",
+      "nome": "Projeto Integrado de Criação Cênica III",
+      "creditos": 10,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC666"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "109",
+      "codigo": "AC888",
+      "nome": "Projeto Integrado de Criação Cênica IV",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC777"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12173",
+      "codigo": "AC857",
+      "nome": "Poéticas Cênicas",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "AC757"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6767",
+      "codigo": "AC887",
+      "nome": "Memorial",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

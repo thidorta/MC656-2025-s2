@@ -10,21 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "TB",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "4913",
-      "codigo": "MU193",
-      "nome": "Percepção Musical I",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "TB",
-      "prereqs": []
-    },
     {
       "disciplina_id": "5002",
       "codigo": "MU360",
@@ -89,6 +78,17 @@
       "codigo": "MU186",
       "nome": "Trombone I",
       "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 1,
@@ -216,17 +216,6 @@
       ]
     },
     {
-      "disciplina_id": "4904",
-      "codigo": "MU178",
-      "nome": "Música de Câmera I",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "TB",
-      "prereqs": []
-    },
-    {
       "disciplina_id": "5011",
       "codigo": "MU379",
       "nome": "Prática Orquestral III",
@@ -330,6 +319,17 @@
           "MU205"
         ]
       ]
+    },
+    {
+      "disciplina_id": "4904",
+      "codigo": "MU178",
+      "nome": "Música de Câmera I",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": []
     },
     {
       "disciplina_id": "5117",
@@ -452,21 +452,6 @@
       ]
     },
     {
-      "disciplina_id": "5010",
-      "codigo": "MU378",
-      "nome": "Música de Câmera III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "TB",
-      "prereqs": [
-        [
-          "MU278"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "5090",
       "codigo": "MU579",
       "nome": "Prática Orquestral V",
@@ -538,6 +523,21 @@
       "prereqs": [
         [
           "MU246"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5010",
+      "codigo": "MU378",
+      "nome": "Música de Câmera III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU278"
         ]
       ]
     },
@@ -643,21 +643,6 @@
       ]
     },
     {
-      "disciplina_id": "5151",
-      "codigo": "MU779",
-      "nome": "Prática Orquestral VII",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "TB",
-      "prereqs": [
-        [
-          "MU679"
-        ]
-      ]
-    },
-    {
       "disciplina_id": "5153",
       "codigo": "MU786",
       "nome": "Trombone VII",
@@ -684,6 +669,21 @@
       "prereqs": [
         [
           "MP106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5151",
+      "codigo": "MU779",
+      "nome": "Prática Orquestral VII",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU679"
         ]
       ]
     },

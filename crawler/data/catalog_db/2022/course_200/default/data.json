@@ -10,21 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "7181",
-      "codigo": "TL106",
-      "nome": "Textos Fundamentais de Literatura",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "",
-      "prereqs": []
-    },
     {
       "disciplina_id": "7179",
       "codigo": "BG091",
@@ -74,6 +63,17 @@
       "codigo": "QG191",
       "nome": "Química",
       "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7181",
+      "codigo": "TL106",
+      "nome": "Textos Fundamentais de Literatura",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 1,
@@ -151,17 +151,6 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "9230",
-      "codigo": "PF095",
-      "nome": "As Profissões",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "",
-      "prereqs": []
-    },
-    {
       "disciplina_id": "9225",
       "codigo": "CS093",
       "nome": "Comunicação, Arte, Cultura e Sociedade",
@@ -228,6 +217,17 @@
       "prereqs": []
     },
     {
+      "disciplina_id": "9230",
+      "codigo": "PF095",
+      "nome": "As Profissões",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
       "disciplina_id": "9109",
       "codigo": "CV043",
       "nome": "Engenharia do Ambiente",
@@ -284,7 +284,11 @@
       "tipo": "obrigatoria",
       "semestre": 4,
       "modalidade": "",
-      "prereqs": []
+      "prereqs": [
+        [
+          "PF093"
+        ]
+      ]
     },
     {
       "disciplina_id": "9231",

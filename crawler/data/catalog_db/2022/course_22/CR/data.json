@@ -10,10 +10,36 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "CR",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CR",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5002",
+      "codigo": "MU360",
+      "nome": "História da Música I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CR",
+      "prereqs": [
+        [
+          "MU260"
+        ]
+      ]
+    },
     {
       "disciplina_id": "4840",
       "codigo": "MU058",
@@ -62,36 +88,40 @@
       "disciplina_id": "4873",
       "codigo": "MU129",
       "nome": "Baixo Cifrado I",
-      "creditos": 1,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "CR",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4913",
-      "codigo": "MU193",
-      "nome": "Percepção Musical I",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "CR",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "5002",
-      "codigo": "MU360",
-      "nome": "História da Música I",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 1,
       "modalidade": "CR",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4928",
+      "codigo": "MU220",
+      "nome": "Coral II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CR",
       "prereqs": [
         [
-          "MU260"
+          "MU120"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4931",
+      "codigo": "MU224",
+      "nome": "Cravo II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CR",
+      "prereqs": [
+        [
+          "MU124"
         ]
       ]
     },
@@ -99,7 +129,7 @@
       "disciplina_id": "4935",
       "codigo": "MU229",
       "nome": "Baixo Cifrado II",
-      "creditos": 1,
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 2,
@@ -186,32 +216,47 @@
       ]
     },
     {
-      "disciplina_id": "4928",
-      "codigo": "MU220",
-      "nome": "Coral II",
-      "creditos": 2,
+      "disciplina_id": "4842",
+      "codigo": "MU060",
+      "nome": "Rítmica III",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "CR",
       "prereqs": [
         [
-          "MU120"
+          "MU059"
         ]
       ]
     },
     {
-      "disciplina_id": "4931",
-      "codigo": "MU224",
-      "nome": "Cravo II",
+      "disciplina_id": "5084",
+      "codigo": "MU560",
+      "nome": "História da Música III",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "CR",
       "prereqs": [
         [
-          "MU124"
+          "MU460"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4864",
+      "codigo": "MU114",
+      "nome": "Análise I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CR",
+      "prereqs": [
+        [
+          "MU205"
         ]
       ]
     },
@@ -260,7 +305,7 @@
       "disciplina_id": "4993",
       "codigo": "MU329",
       "nome": "Baixo Cifrado III",
-      "creditos": 1,
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 3,
@@ -287,47 +332,32 @@
       ]
     },
     {
-      "disciplina_id": "4842",
-      "codigo": "MU060",
-      "nome": "Rítmica III",
-      "creditos": 5,
+      "disciplina_id": "4966",
+      "codigo": "MU278",
+      "nome": "Música de Câmera II",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "CR",
       "prereqs": [
         [
-          "MU059"
+          "MU178"
         ]
       ]
     },
     {
-      "disciplina_id": "5084",
-      "codigo": "MU560",
-      "nome": "História da Música III",
+      "disciplina_id": "5033",
+      "codigo": "MU424",
+      "nome": "Cravo IV",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "CR",
       "prereqs": [
         [
-          "MU460"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4864",
-      "codigo": "MU114",
-      "nome": "Análise I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "CR",
-      "prereqs": [
-        [
-          "MU205"
+          "MU324"
         ]
       ]
     },
@@ -335,7 +365,7 @@
       "disciplina_id": "5036",
       "codigo": "MU429",
       "nome": "Baixo Cifrado IV",
-      "creditos": 1,
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 4,
@@ -422,32 +452,32 @@
       ]
     },
     {
-      "disciplina_id": "4966",
-      "codigo": "MU278",
-      "nome": "Música de Câmera II",
-      "creditos": 3,
+      "disciplina_id": "4911",
+      "codigo": "MU190",
+      "nome": "História da Música Brasileira I",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "CR",
       "prereqs": [
         [
-          "MU178"
+          "MU360"
         ]
       ]
     },
     {
-      "disciplina_id": "5033",
-      "codigo": "MU424",
-      "nome": "Cravo IV",
+      "disciplina_id": "4986",
+      "codigo": "MU314",
+      "nome": "Análise III",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "CR",
       "prereqs": [
         [
-          "MU324"
+          "MU214"
         ]
       ]
     },
@@ -485,7 +515,7 @@
       "disciplina_id": "5075",
       "codigo": "MU524",
       "nome": "Cravo V",
-      "creditos": 2,
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 5,
@@ -500,7 +530,7 @@
       "disciplina_id": "5078",
       "codigo": "MU529",
       "nome": "Baixo Cifrado V",
-      "creditos": 1,
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 5,
@@ -512,34 +542,45 @@
       ]
     },
     {
-      "disciplina_id": "4911",
-      "codigo": "MU190",
-      "nome": "História da Música Brasileira I",
-      "creditos": 2,
+      "disciplina_id": "5110",
+      "codigo": "MU624",
+      "nome": "Cravo VI",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 6,
       "modalidade": "CR",
       "prereqs": [
         [
-          "MU360"
+          "MU524"
         ]
       ]
     },
     {
-      "disciplina_id": "4986",
-      "codigo": "MU314",
-      "nome": "Análise III",
+      "disciplina_id": "5113",
+      "codigo": "MU629",
+      "nome": "Baixo Cifrado VI",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 6,
       "modalidade": "CR",
       "prereqs": [
         [
-          "MU214"
+          "MU529"
         ]
       ]
+    },
+    {
+      "disciplina_id": "16223",
+      "codigo": "MP106",
+      "nome": "Atividades complementares I",
+      "creditos": 7,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CR",
+      "prereqs": []
     },
     {
       "disciplina_id": "4973",
@@ -602,47 +643,6 @@
       ]
     },
     {
-      "disciplina_id": "5110",
-      "codigo": "MU624",
-      "nome": "Cravo VI",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "CR",
-      "prereqs": [
-        [
-          "MU524"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5113",
-      "codigo": "MU629",
-      "nome": "Baixo Cifrado VI",
-      "creditos": 1,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "CR",
-      "prereqs": [
-        [
-          "MU529"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "16223",
-      "codigo": "MP106",
-      "nome": "Atividades complementares I",
-      "creditos": 7,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "CR",
-      "prereqs": []
-    },
-    {
       "disciplina_id": "16224",
       "codigo": "MP107",
       "nome": "Atividades complementares II",
@@ -661,7 +661,7 @@
       "disciplina_id": "5143",
       "codigo": "MU724",
       "nome": "Cravo VII",
-      "creditos": 2,
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 7,
@@ -669,21 +669,6 @@
       "prereqs": [
         [
           "MU624"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5168",
-      "codigo": "MU824",
-      "nome": "Cravo VIII",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 8,
-      "modalidade": "CR",
-      "prereqs": [
-        [
-          "MU724"
         ]
       ]
     },
@@ -741,6 +726,21 @@
         ],
         [
           "MU696"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5168",
+      "codigo": "MU824",
+      "nome": "Cravo VIII",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "CR",
+      "prereqs": [
+        [
+          "MU724"
         ]
       ]
     }

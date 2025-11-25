@@ -9,6 +9,6 @@ PERIODO_TARGET = "20261"   # 2026 - 1º semestre
 CP_TARGET = "1"            # Completa=Sim
 
 # Modo de coleta
-COLLECT_ALL_COURSES = False  # True = todos os cursos, False = apenas CURSO_TARGET
+COLLECT_ALL_COURSES = True  # True = todos os cursos, False = apenas CURSO_TARGET
 CURSO_TARGET = "34"         # Usado apenas se COLLECT_ALL_COURSES = False
 

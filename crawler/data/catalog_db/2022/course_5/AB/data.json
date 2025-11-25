@@ -10,10 +10,21 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "AB",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
     {
       "disciplina_id": "5336",
       "codigo": "QG005",
@@ -70,13 +81,13 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "4086",
-      "codigo": "MA141",
-      "nome": "Geometria Analítica e Vetores",
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "AB",
       "prereqs": []
     },
@@ -154,15 +165,29 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "2742",
-      "codigo": "F 128",
-      "nome": "Física Geral I",
-      "creditos": 4,
+      "disciplina_id": "2323",
+      "codigo": "EP152",
+      "nome": "Didática - Teoria Pedagógica",
+      "creditos": 6,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 3,
       "modalidade": "AB",
-      "prereqs": []
+      "prereqs": [
+        [
+          "EP110",
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ],
+        [
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ]
+      ]
     },
     {
       "disciplina_id": "5318",
@@ -229,29 +254,15 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "2323",
-      "codigo": "EP152",
-      "nome": "Didática - Teoria Pedagógica",
-      "creditos": 6,
+      "disciplina_id": "2388",
+      "codigo": "EP372",
+      "nome": "Avaliação",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 4,
       "modalidade": "AB",
-      "prereqs": [
-        [
-          "EP110",
-          "EP123",
-          "EP140",
-          "EP208",
-          "EP230"
-        ],
-        [
-          "EP123",
-          "EP140",
-          "EP208",
-          "EP230"
-        ]
-      ]
+      "prereqs": []
     },
     {
       "disciplina_id": "2750",
@@ -329,17 +340,6 @@
       "codigo": "EL212",
       "nome": "Política Educacional: Organização da Educação Brasileira",
       "creditos": 6,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 4,
-      "modalidade": "AB",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "2388",
-      "codigo": "EP372",
-      "nome": "Avaliação",
-      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 4,
@@ -431,6 +431,26 @@
       ]
     },
     {
+      "disciplina_id": "5326",
+      "codigo": "QF632",
+      "nome": "Físico-Química Experimental I",
+      "creditos": 8,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QA282",
+          "QF531"
+        ],
+        [
+          "QA217",
+          "QF531"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "1948",
       "codigo": "EL485",
       "nome": "Filosofia e História da Educação",
@@ -474,26 +494,6 @@
       "prereqs": [
         [
           "F 328"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5326",
-      "codigo": "QF632",
-      "nome": "Físico-Química Experimental I",
-      "creditos": 8,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "AB",
-      "prereqs": [
-        [
-          "QA282",
-          "QF531"
-        ],
-        [
-          "QA217",
-          "QF531"
         ]
       ]
     },
@@ -545,6 +545,17 @@
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11371",
+      "codigo": "EP879",
+      "nome": "Educação de Jovens e Adultos",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
       "modalidade": "AB",
       "prereqs": []
     },
@@ -617,13 +628,13 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "11371",
-      "codigo": "EP879",
-      "nome": "Educação de Jovens e Adultos",
-      "creditos": 3,
+      "disciplina_id": "11472",
+      "codigo": "QG982",
+      "nome": "Tópicos Especiais em Ensino de Química II",
+      "creditos": 2,
       "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 8,
+      "tipo": "eletiva",
+      "semestre": null,
       "modalidade": "AB",
       "prereqs": []
     },
@@ -653,17 +664,6 @@
       "disciplina_id": "11471",
       "codigo": "QG981",
       "nome": "Tópicos Especiais em Ensino de Química I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "AB",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "11472",
-      "codigo": "QG982",
-      "nome": "Tópicos Especiais em Ensino de Química II",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "eletiva",

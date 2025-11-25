@@ -10,43 +10,10 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "VA",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
-    {
-      "disciplina_id": "4866",
-      "codigo": "MU120",
-      "nome": "Coral I",
-      "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "VA",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4870",
-      "codigo": "MU126",
-      "nome": "Viola I",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "VA",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4905",
-      "codigo": "MU179",
-      "nome": "Prática Orquestral I",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "VA",
-      "prereqs": []
-    },
     {
       "disciplina_id": "4913",
       "codigo": "MU193",
@@ -96,49 +63,37 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "4841",
-      "codigo": "MU059",
-      "nome": "Rítmica II",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "VA",
-      "prereqs": [
-        [
-          "MU058"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4919",
-      "codigo": "MU205",
-      "nome": "Estruturação Musical II",
+      "disciplina_id": "4866",
+      "codigo": "MU120",
+      "nome": "Coral I",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 1,
       "modalidade": "VA",
-      "prereqs": [
-        [
-          "MU105"
-        ]
-      ]
+      "prereqs": []
     },
     {
-      "disciplina_id": "4928",
-      "codigo": "MU220",
-      "nome": "Coral II",
-      "creditos": 2,
+      "disciplina_id": "4870",
+      "codigo": "MU126",
+      "nome": "Viola I",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 2,
+      "semestre": 1,
       "modalidade": "VA",
-      "prereqs": [
-        [
-          "MU120"
-        ]
-      ]
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4905",
+      "codigo": "MU179",
+      "nome": "Prática Orquestral I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "VA",
+      "prereqs": []
     },
     {
       "disciplina_id": "4932",
@@ -216,62 +171,47 @@
       ]
     },
     {
-      "disciplina_id": "5018",
-      "codigo": "MU393",
-      "nome": "Percepção Musical III",
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
       "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU293"
+          "MU058"
         ]
       ]
     },
     {
-      "disciplina_id": "4842",
-      "codigo": "MU060",
-      "nome": "Rítmica III",
-      "creditos": 5,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 3,
-      "modalidade": "VA",
-      "prereqs": [
-        [
-          "MU059"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5084",
-      "codigo": "MU560",
-      "nome": "História da Música III",
+      "disciplina_id": "4919",
+      "codigo": "MU205",
+      "nome": "Estruturação Musical II",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU460"
+          "MU105"
         ]
       ]
     },
     {
-      "disciplina_id": "4864",
-      "codigo": "MU114",
-      "nome": "Análise I",
+      "disciplina_id": "4928",
+      "codigo": "MU220",
+      "nome": "Coral II",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 3,
+      "semestre": 2,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU205"
+          "MU120"
         ]
       ]
     },
@@ -332,47 +272,62 @@
       ]
     },
     {
-      "disciplina_id": "4966",
-      "codigo": "MU278",
-      "nome": "Música de Câmera II",
-      "creditos": 3,
+      "disciplina_id": "5018",
+      "codigo": "MU393",
+      "nome": "Percepção Musical III",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU178"
+          "MU293"
         ]
       ]
     },
     {
-      "disciplina_id": "5034",
-      "codigo": "MU426",
-      "nome": "Viola IV",
-      "creditos": 3,
+      "disciplina_id": "4842",
+      "codigo": "MU060",
+      "nome": "Rítmica III",
+      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU326"
+          "MU059"
         ]
       ]
     },
     {
-      "disciplina_id": "5053",
-      "codigo": "MU479",
-      "nome": "Prática Orquestral IV",
-      "creditos": 4,
+      "disciplina_id": "5084",
+      "codigo": "MU560",
+      "nome": "História da Música III",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 3,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU379"
+          "MU460"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4864",
+      "codigo": "MU114",
+      "nome": "Análise I",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "VA",
+      "prereqs": [
+        [
+          "MU205"
         ]
       ]
     },
@@ -452,47 +407,47 @@
       ]
     },
     {
-      "disciplina_id": "4911",
-      "codigo": "MU190",
-      "nome": "História da Música Brasileira I",
-      "creditos": 2,
+      "disciplina_id": "4966",
+      "codigo": "MU278",
+      "nome": "Música de Câmera II",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU360"
+          "MU178"
         ]
       ]
     },
     {
-      "disciplina_id": "4986",
-      "codigo": "MU314",
-      "nome": "Análise III",
-      "creditos": 2,
+      "disciplina_id": "5034",
+      "codigo": "MU426",
+      "nome": "Viola IV",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU214"
+          "MU326"
         ]
       ]
     },
     {
-      "disciplina_id": "4994",
-      "codigo": "MU346",
-      "nome": "Harmonia do Romantismo ao Século XX",
-      "creditos": 2,
+      "disciplina_id": "5053",
+      "codigo": "MU479",
+      "nome": "Prática Orquestral IV",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 5,
+      "semestre": 4,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU246"
+          "MU379"
         ]
       ]
     },
@@ -542,43 +497,47 @@
       ]
     },
     {
-      "disciplina_id": "5123",
-      "codigo": "MU679",
-      "nome": "Prática Orquestral VI",
-      "creditos": 4,
+      "disciplina_id": "4911",
+      "codigo": "MU190",
+      "nome": "História da Música Brasileira I",
+      "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 5,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU579"
+          "MU360"
         ]
       ]
     },
     {
-      "disciplina_id": "16223",
-      "codigo": "MP106",
-      "nome": "Atividades complementares I",
-      "creditos": 7,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 6,
-      "modalidade": "VA",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4973",
-      "codigo": "MU290",
-      "nome": "História da Música Brasileira II",
+      "disciplina_id": "4986",
+      "codigo": "MU314",
+      "nome": "Análise III",
       "creditos": 2,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 6,
+      "semestre": 5,
       "modalidade": "VA",
       "prereqs": [
         [
-          "MU190"
+          "MU214"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4994",
+      "codigo": "MU346",
+      "nome": "Harmonia do Romantismo ao Século XX",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "VA",
+      "prereqs": [
+        [
+          "MU246"
         ]
       ]
     },
@@ -639,6 +598,47 @@
       "prereqs": [
         [
           "MU526"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5123",
+      "codigo": "MU679",
+      "nome": "Prática Orquestral VI",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VA",
+      "prereqs": [
+        [
+          "MU579"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "16223",
+      "codigo": "MP106",
+      "nome": "Atividades complementares I",
+      "creditos": 7,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4973",
+      "codigo": "MU290",
+      "nome": "História da Música Brasileira II",
+      "creditos": 2,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "VA",
+      "prereqs": [
+        [
+          "MU190"
         ]
       ]
     },

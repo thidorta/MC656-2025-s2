@@ -10,10 +10,21 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "RG",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "RG",
+      "prereqs": []
+    },
     {
       "disciplina_id": "4840",
       "codigo": "MU058",
@@ -89,17 +100,6 @@
       "codigo": "MU162",
       "nome": "Laboratório de Expressão Corporal I",
       "creditos": 2,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 1,
-      "modalidade": "RG",
-      "prereqs": []
-    },
-    {
-      "disciplina_id": "4913",
-      "codigo": "MU193",
-      "nome": "Percepção Musical I",
-      "creditos": 5,
       "catalogo": 2022,
       "tipo": "obrigatoria",
       "semestre": 1,
@@ -347,6 +347,21 @@
       ]
     },
     {
+      "disciplina_id": "4843",
+      "codigo": "MU061",
+      "nome": "Rítmica IV",
+      "creditos": 5,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "RG",
+      "prereqs": [
+        [
+          "MU060"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "4925",
       "codigo": "MU214",
       "nome": "Análise II",
@@ -437,17 +452,17 @@
       ]
     },
     {
-      "disciplina_id": "4843",
-      "codigo": "MU061",
-      "nome": "Rítmica IV",
-      "creditos": 5,
+      "disciplina_id": "4995",
+      "codigo": "MU348",
+      "nome": "Regência Coral III",
+      "creditos": 6,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "RG",
       "prereqs": [
         [
-          "MU060"
+          "MU248"
         ]
       ]
     },
@@ -549,21 +564,6 @@
       "prereqs": [
         [
           "MU246"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4995",
-      "codigo": "MU348",
-      "nome": "Regência Coral III",
-      "creditos": 6,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "RG",
-      "prereqs": [
-        [
-          "MU248"
         ]
       ]
     },
@@ -759,6 +759,21 @@
       ]
     },
     {
+      "disciplina_id": "4965",
+      "codigo": "MU275",
+      "nome": "Regência Orquestral II",
+      "creditos": 6,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "RG",
+      "prereqs": [
+        [
+          "MU175"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "5042",
       "codigo": "MU455",
       "nome": "Contraponto II",
@@ -785,21 +800,6 @@
       "prereqs": [
         [
           "MU165"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4965",
-      "codigo": "MU275",
-      "nome": "Regência Orquestral II",
-      "creditos": 6,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 8,
-      "modalidade": "RG",
-      "prereqs": [
-        [
-          "MU175"
         ]
       ]
     },
@@ -887,6 +887,21 @@
         ],
         [
           "MU696"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10627",
+      "codigo": "MU399",
+      "nome": "Tópicos Especiais em Regência Orquestral III",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "RG",
+      "prereqs": [
+        [
+          "MU299"
         ]
       ]
     },
@@ -1048,17 +1063,77 @@
       ]
     },
     {
-      "disciplina_id": "10627",
-      "codigo": "MU399",
-      "nome": "Tópicos Especiais em Regência Orquestral III",
-      "creditos": 4,
+      "disciplina_id": "4681",
+      "codigo": "MP205",
+      "nome": "Voz II",
+      "creditos": 3,
       "catalogo": 2022,
       "tipo": "eletiva",
       "semestre": null,
       "modalidade": "RG",
       "prereqs": [
         [
-          "MU299"
+          "MP105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4988",
+      "codigo": "MU321",
+      "nome": "Contrabaixo III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "RG",
+      "prereqs": [
+        [
+          "MU221"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4706",
+      "codigo": "MP404",
+      "nome": "Teclados IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "RG",
+      "prereqs": [
+        [
+          "MP304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5020",
+      "codigo": "MU396",
+      "nome": "Canto III",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "RG",
+      "prereqs": [
+        [
+          "MU296"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5061",
+      "codigo": "MU494",
+      "nome": "Violão IV",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "RG",
+      "prereqs": [
+        [
+          "MU394"
         ]
       ]
     },
@@ -2104,81 +2179,6 @@
       "prereqs": [
         [
           "MU324"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4681",
-      "codigo": "MP205",
-      "nome": "Voz II",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "RG",
-      "prereqs": [
-        [
-          "MP105"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4988",
-      "codigo": "MU321",
-      "nome": "Contrabaixo III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "RG",
-      "prereqs": [
-        [
-          "MU221"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "4706",
-      "codigo": "MP404",
-      "nome": "Teclados IV",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "RG",
-      "prereqs": [
-        [
-          "MP304"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5020",
-      "codigo": "MU396",
-      "nome": "Canto III",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "RG",
-      "prereqs": [
-        [
-          "MU296"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "5061",
-      "codigo": "MU494",
-      "nome": "Violão IV",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "eletiva",
-      "semestre": null,
-      "modalidade": "RG",
-      "prereqs": [
-        [
-          "MU394"
         ]
       ]
     }

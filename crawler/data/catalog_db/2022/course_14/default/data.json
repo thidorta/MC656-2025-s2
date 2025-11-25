@@ -10,10 +10,21 @@
   "parameters": {
     "catalogo": "2022",
     "modalidade": "",
-    "periodo": "20252",
+    "periodo": "20222",
     "cp": "1"
   },
   "disciplines": [
+    {
+      "disciplina_id": "7859",
+      "codigo": "DM011",
+      "nome": "Cárie I",
+      "creditos": 4,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
     {
       "disciplina_id": "8618",
       "codigo": "DM012",
@@ -59,13 +70,13 @@
       "prereqs": []
     },
     {
-      "disciplina_id": "7859",
-      "codigo": "DM011",
-      "nome": "Cárie I",
+      "disciplina_id": "9133",
+      "codigo": "DM022",
+      "nome": "Diagnóstico Oral II",
       "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 1,
+      "semestre": 2,
       "modalidade": "",
       "prereqs": []
     },
@@ -109,17 +120,6 @@
           "DM011"
         ]
       ]
-    },
-    {
-      "disciplina_id": "9133",
-      "codigo": "DM022",
-      "nome": "Diagnóstico Oral II",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 2,
-      "modalidade": "",
-      "prereqs": []
     },
     {
       "disciplina_id": "9138",
@@ -192,6 +192,21 @@
       "prereqs": []
     },
     {
+      "disciplina_id": "9143",
+      "codigo": "DM041",
+      "nome": "Cárie IV",
+      "creditos": 10,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DM031"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "9144",
       "codigo": "DM042",
       "nome": "Diagnóstico Oral IV",
@@ -255,17 +270,17 @@
       ]
     },
     {
-      "disciplina_id": "9143",
-      "codigo": "DM041",
-      "nome": "Cárie IV",
-      "creditos": 10,
+      "disciplina_id": "9147",
+      "codigo": "DM051",
+      "nome": "Cárie V",
+      "creditos": 8,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 4,
+      "semestre": 5,
       "modalidade": "",
       "prereqs": [
         [
-          "DM031"
+          "DM041"
         ]
       ]
     },
@@ -311,21 +326,6 @@
           "DM043",
           "DM045",
           "DM046"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "9147",
-      "codigo": "DM051",
-      "nome": "Cárie V",
-      "creditos": 8,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 5,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "DM041"
         ]
       ]
     },
@@ -410,6 +410,21 @@
       ]
     },
     {
+      "disciplina_id": "9160",
+      "codigo": "DS071",
+      "nome": "Odontologia Social II",
+      "creditos": 3,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DS061"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "12146",
       "codigo": "DC072",
       "nome": "Clínica Odontológica Integrada III",
@@ -484,21 +499,6 @@
       "prereqs": [
         [
           "DM068"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "9160",
-      "codigo": "DS071",
-      "nome": "Odontologia Social II",
-      "creditos": 3,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 7,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "DS061"
         ]
       ]
     },
@@ -583,6 +583,21 @@
       ]
     },
     {
+      "disciplina_id": "12150",
+      "codigo": "DC092",
+      "nome": "Clínica Odontológica Integrada V",
+      "creditos": 16,
+      "catalogo": 2022,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "DC082"
+        ]
+      ]
+    },
+    {
       "disciplina_id": "12151",
       "codigo": "DC093",
       "nome": "Clínica Odontológica Integrada Infantil III",
@@ -629,17 +644,17 @@
       ]
     },
     {
-      "disciplina_id": "12150",
-      "codigo": "DC092",
-      "nome": "Clínica Odontológica Integrada V",
-      "creditos": 16,
+      "disciplina_id": "9162",
+      "codigo": "DS101",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 4,
       "catalogo": 2022,
       "tipo": "obrigatoria",
-      "semestre": 9,
+      "semestre": 10,
       "modalidade": "",
       "prereqs": [
         [
-          "DC082"
+          "DS011"
         ]
       ]
     },
@@ -686,21 +701,6 @@
         [
           "DC082",
           "DC083"
-        ]
-      ]
-    },
-    {
-      "disciplina_id": "9162",
-      "codigo": "DS101",
-      "nome": "Trabalho de Conclusão de Curso",
-      "creditos": 4,
-      "catalogo": 2022,
-      "tipo": "obrigatoria",
-      "semestre": 10,
-      "modalidade": "",
-      "prereqs": [
-        [
-          "DS011"
         ]
       ]
     }
