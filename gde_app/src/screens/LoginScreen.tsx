@@ -48,6 +48,18 @@ export default function LoginScreen({ navigation }: Props) {
           >
             <Text style={styles.secondaryButtonText}>Registre-se no GDE</Text>
           </TouchableOpacity>
+
+          {/* 
+          DEBUG BUTTON TO GO TO HOME
+          REMOVE LATER
+           */}
+
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Home')}
+            style={styles.secondaryButton}
+          >
+            <Text style={styles.secondaryButtonText}>DEBUG GO TO HOME</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>

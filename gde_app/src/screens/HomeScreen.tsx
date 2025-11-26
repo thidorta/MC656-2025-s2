@@ -13,15 +13,30 @@ export default function HomeScreen({ navigation }: Props) {
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
       <View style={styles.container}>
         <View style={styles.profileHeader}>
-          <View style={styles.avatarContainer}>
-            <Text style={styles.avatarText}>JD</Text>
-            <View style={styles.onlineIndicator} />
-          </View>
-          <View style={styles.profileInfo}>
-            <Text style={styles.profileName}>Fulano Ciclano Beltrano</Text>
-            <Text style={styles.profileDetails}>Curso: Ciencia da Computacao</Text>
-            <Text style={styles.profileDetails}>Catalogo: 2023</Text>
-          </View>
+          {/* Mocked user profile section */}
+          {(() => {
+            // Generate initials from a mocked profile name
+            const profileName = 'Julano Ciclano Beltrano';
+            const parts = profileName.trim().split(/\s+/);
+            const initials = (
+              (parts[0]?.[0] ?? '') +
+              (parts[parts.length - 1]?.[0] ?? '')
+            ).toUpperCase();
+
+            return (
+              <>
+                <View style={styles.avatarContainer}>
+                  <Text style={styles.avatarText}>{initials}</Text>
+                  <View style={styles.onlineIndicator} />
+                </View>
+                <View style={styles.profileInfo}>
+                  <Text style={styles.profileName}>{profileName}</Text>
+                  <Text style={styles.profileDetails}>Curso: Ciencia da Computacao</Text>
+                  <Text style={styles.profileDetails}>Catalogo: 2023</Text>
+                </View>
+              </>
+            );
+          })()}
         </View>
 
         <View style={styles.gridContainer}>

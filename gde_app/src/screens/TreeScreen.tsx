@@ -123,7 +123,7 @@ const DropdownSelector = ({
       {open && (
         <View style={styles.dropdownList}>
           {options.length === 0 ? (
-            <Text style={styles.dropdownEmpty}>Nenhuma opcao disponivel</Text>
+            <Text style={styles.dropdownEmpty}>Nenhuma opção disponível</Text>
           ) : (
             options.map((opt) => (
               <TouchableOpacity
@@ -504,9 +504,9 @@ export default function TreeScreen({ navigation }: Props) {
             value={isCompleta}
             options={[
               { label: 'Sim', value: 'Sim' },
-              { label: 'Não', value: 'Não' },
+              { label: 'Nao', value: 'Nao' },
             ]}
-            onSelect={(val) => setIsCompleta(val as 'Sim' | 'Não')}
+            onSelect={(val) => setIsCompleta(val as 'Sim' | 'Nao')}
           />
         </>
       )}

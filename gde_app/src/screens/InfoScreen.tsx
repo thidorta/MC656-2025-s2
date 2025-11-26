@@ -1,9 +1,6 @@
-import { useState } from 'react';
-import { Alert, Text, TouchableOpacity, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { API_BASE_URL } from '../config/api';
-import { apiService } from '../services/api';
+
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
 
@@ -77,30 +74,6 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontSize: 14,
     fontWeight: '700',
-    fontFamily: 'monospace',
-  },
-  button: {
-    marginTop: spacing(1),
-    backgroundColor: colors.primary,
-    borderRadius: 12,
-    paddingVertical: spacing(1.25),
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  buttonDisabled: {
-    opacity: 0.5,
-  },
-  buttonText: {
-    color: colors.buttonText,
-    fontWeight: '800',
-    fontSize: 15,
-    letterSpacing: 0.4,
-    fontFamily: 'monospace',
-  },
-  hint: {
-    color: colors.textMuted,
-    fontSize: 12,
     fontFamily: 'monospace',
   },
 });
