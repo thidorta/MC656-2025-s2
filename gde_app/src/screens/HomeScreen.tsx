@@ -37,8 +37,9 @@ export default function HomeScreen({ navigation }: Props) {
         </View>
 
         <View style={styles.gridContainer}>
-          <CardButton label="Árvore" onPress={() => navigation.navigate('Tree')} />
+          <CardButton label="Arvore" onPress={() => navigation.navigate('Tree')} />
           <CardButton label="Planejador" onPress={() => navigation.navigate('Planner')} />
+          <CardButton label="Faltas" onPress={() => navigation.navigate('Attendance')} />
           <CardButton label="Info" onPress={() => navigation.navigate('Info')} />
           <CardButton label="Configurar" onPress={() => navigation.navigate('Debug')} />
         </View>

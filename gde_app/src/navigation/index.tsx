@@ -7,6 +7,7 @@ import HomeScreen from '~/screens/HomeScreen';
 import TreeScreen from '../screens/Tree/TreeScreen'; 
 import PlannerScreen from '../screens/PlannerScreen';
 import InfoScreen from '../screens/InfoScreen';
+import AttendanceScreen from '../screens/Attendance/AttendanceScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -14,6 +15,7 @@ export default function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Welcome">
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Attendance" component={AttendanceScreen} />
       <Stack.Screen name="Tree" component={TreeScreen} />
       <Stack.Screen name="Planner" component={PlannerScreen} />
       <Stack.Screen name="Debug" component={DebugScreen} />

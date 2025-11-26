@@ -23,9 +23,46 @@ export default function useTreeLogic() {
   const [activeCourse, setActiveCourse] = useState<{ code: string; prereqs: string[][] } | null>(null);
   const [showContext, setShowContext] = useState(true);
 
+  const normalizeModalidade = (value: string | null | undefined) =>
+    value && value !== '-' && value.trim() !== '' ? value : null;
+
   useEffect(() => {
     loadCurriculumOptions().then((parsed) => loadPlanner(parsed)).catch(() => loadPlanner());
   }, []);
+
+  useEffect(() => {
+    if (selectedCourseId || plannerCourses.length === 0 || curriculumOptions.length === 0) return;
+
+    const planner = plannerCourses[0];
+    const snapshot = planner.data;
+    const courseId = planner.course_id;
+    const entry = curriculumOptions.find((c) => c.courseId === courseId);
+
+    const desiredYear =
+      (snapshot?.year && entry?.options.some((o) => o.year === snapshot.year) && snapshot.year) ||
+      entry?.options[0]?.year ||
+      null;
+
+    const rawModalidade = (snapshot?.integralizacao_meta as Record<string, unknown> | undefined)?.modalidade;
+    const hasModalities = (entry?.options || []).some((opt) => normalizeModalidade(opt.modalidade));
+    const desiredModalidade =
+      normalizeModalidade(
+        entry?.options.find(
+          (opt) =>
+            opt.year === desiredYear &&
+            rawModalidade &&
+            typeof rawModalidade === 'string' &&
+            normalizeModalidade(opt.modalidade)?.toLowerCase() === rawModalidade.toLowerCase(),
+        )?.modalidade,
+      ) ||
+      normalizeModalidade(entry?.options.find((opt) => opt.year === desiredYear)?.modalidade) ||
+      normalizeModalidade(typeof rawModalidade === 'string' ? rawModalidade : null) ||
+      (hasModalities ? normalizeModalidade(entry?.options[0]?.modalidade) : null);
+
+    setSelectedCourseId(courseId);
+    setSelectedYear(desiredYear);
+    setSelectedModalidade(desiredModalidade);
+  }, [selectedCourseId, plannerCourses, curriculumOptions]);
 
   useEffect(() => {
     if (selectedCourseId) {
@@ -81,7 +118,9 @@ export default function useTreeLogic() {
   const modalitiesForSelected = useMemo(() => {
     const entry = curriculumOptions.find((c) => c.courseId === selectedCourseId);
     if (!entry || !selectedYear) return [];
-    return entry.options.filter((o) => o.year === selectedYear);
+    return entry.options
+      .filter((o) => o.year === selectedYear && normalizeModalidade(o.modalidade))
+      .map((o) => ({ ...o, modalidade: normalizeModalidade(o.modalidade) as string }));
   }, [curriculumOptions, selectedCourseId, selectedYear]);
 
   const handleCourseChange = (courseId: number) => {
@@ -89,16 +128,18 @@ export default function useTreeLogic() {
     const entry = curriculumOptions.find((c) => c.courseId === courseId);
     const nextYear = entry?.options[0]?.year ?? null;
     const nextMod =
-      entry?.options.find((o) => o.year === nextYear)?.modalidade ?? entry?.options[0]?.modalidade ?? null;
+      normalizeModalidade(entry?.options.find((o) => o.year === nextYear)?.modalidade) ??
+      normalizeModalidade(entry?.options[0]?.modalidade);
     setSelectedYear(nextYear);
-    setSelectedModalidade(nextMod);
+    setSelectedModalidade(nextMod ?? null);
   };
 
   const handleYearChange = (year: number) => {
     setSelectedYear(year);
     const entry = curriculumOptions.find((c) => c.courseId === selectedCourseId);
-    const modForYear = entry?.options.find((opt) => opt.year === year)?.modalidade ?? null;
-    setSelectedModalidade(modForYear);
+    const modForYear =
+      normalizeModalidade(entry?.options.find((opt) => opt.year === year)?.modalidade);
+    setSelectedModalidade(modForYear ?? null);
   };
 
   const toggleActiveCourse = (course: { code: string; prereqs: string[][] }) => {
