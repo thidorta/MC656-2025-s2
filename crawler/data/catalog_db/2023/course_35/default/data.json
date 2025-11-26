@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 35,
+    "name": "Licenciatura em Esquema I (35)",
+    "code": "35"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

@@ -1,0 +1,1023 @@
+{
+  "course": {
+    "id": 10,
+    "name": "Engenharia Mecânica (10)",
+    "code": "10"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "17665",
+      "codigo": "EM120",
+      "nome": "Introdução à Prática de Extensão em Engenharia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5343",
+      "codigo": "QG101",
+      "nome": "Química I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2081",
+      "codigo": "EM102",
+      "nome": "Desenho Técnico",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2084",
+      "codigo": "EM110",
+      "nome": "Introdução à Engenharia Mecânica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2082",
+      "codigo": "EM103",
+      "nome": "Metodologia de Pesquisa e Redação Científica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2086",
+      "codigo": "EM200",
+      "nome": "Desenho Assistido por Computador",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2092",
+      "codigo": "EM240",
+      "nome": "Estrutura e Propriedades dos Materiais",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG111",
+          "QG122"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2093",
+      "codigo": "EM306",
+      "nome": "Estática",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2096",
+      "codigo": "EM330",
+      "nome": "Oficinas I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2097",
+      "codigo": "EM335",
+      "nome": "Tecnologia Mecânica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM102"
+        ],
+        [
+          "EM104"
+        ],
+        [
+          "EM312"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2098",
+      "codigo": "EM360",
+      "nome": "Termodinâmica I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2751",
+      "codigo": "F 329",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 129",
+          "GE504"
+        ],
+        [
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2753",
+      "codigo": "F 428",
+      "nome": "Física Geral IV",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2105",
+      "codigo": "EM461",
+      "nome": "Mecânica dos Fluidos I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2128",
+      "codigo": "EM641",
+      "nome": "Ensaios dos Materiais",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM240"
+        ],
+        [
+          "ES242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2754",
+      "codigo": "F 429",
+      "nome": "Física Experimental IV",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE521",
+          "F 129"
+        ],
+        [
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2099",
+      "codigo": "EM404",
+      "nome": "Dinâmica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM306",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2100",
+      "codigo": "EM406",
+      "nome": "Resistência dos Materiais I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM306",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2104",
+      "codigo": "EM460",
+      "nome": "Termodinâmica II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17666",
+      "codigo": "EM727",
+      "nome": "Tecnologia das Ligas Metálicas",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM240"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2106",
+      "codigo": "EM503",
+      "nome": "Introdução aos Métodos Numéricos Aplicados à Engenharia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM102",
+          "EM406",
+          "EM461",
+          "MA327",
+          "MS211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2107",
+      "codigo": "EM504",
+      "nome": "Mecanismos e Dinâmica das Máquinas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2108",
+      "codigo": "EM506",
+      "nome": "Resistência dos Materiais II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2112",
+      "codigo": "EM561",
+      "nome": "Mecânica dos Fluidos II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM461"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2113",
+      "codigo": "EM570",
+      "nome": "Transferência de Calor I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM360",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6712",
+      "codigo": "EM638",
+      "nome": "Mecânica e Mecanismos da Fratura",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM240",
+          "EM406"
+        ],
+        [
+          "EM406",
+          "ES242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2019",
+      "codigo": "EM014",
+      "nome": "Materiais Poliméricos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM240"
+        ],
+        [
+          "ES242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9894",
+      "codigo": "ET017",
+      "nome": "Circuitos e Eletrotécnica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 328",
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2111",
+      "codigo": "EM535",
+      "nome": "Usinagem dos Materiais",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM335"
+        ],
+        [
+          "ES235"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2120",
+      "codigo": "EM607",
+      "nome": "Vibrações de Sistemas Mecânicos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM404",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6341",
+      "codigo": "EM665",
+      "nome": "Processos Metalúrgicos de Fabricação",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM240"
+        ],
+        [
+          "ES242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2129",
+      "codigo": "EM670",
+      "nome": "Transferência de Calor II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM561",
+          "EM570"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2137",
+      "codigo": "EM733",
+      "nome": "Sistemas Produtivos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM335"
+        ],
+        [
+          "ES365"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6713",
+      "codigo": "EM783",
+      "nome": "Laboratório de Calor e Fluidos I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM561",
+          "EM570"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2162",
+      "codigo": "EM833",
+      "nome": "Seleção de Materiais",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM240"
+        ],
+        [
+          "ES242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2166",
+      "codigo": "EM853",
+      "nome": "Engenharia Econômica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2121",
+      "codigo": "EM608",
+      "nome": "Elementos de Máquinas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM504",
+          "EM506",
+          "EM638",
+          "EM909"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2182",
+      "codigo": "EM884",
+      "nome": "Sistemas Fluidotérmicos II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM460",
+          "EM461"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2132",
+      "codigo": "EM703",
+      "nome": "Instrumentação",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM461",
+          "EM570",
+          "EM607"
+        ],
+        [
+          "EM607",
+          "ES506"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2133",
+      "codigo": "EM707",
+      "nome": "Controle de Sistemas Mecânicos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM590"
+        ],
+        [
+          "EM607"
+        ],
+        [
+          "ES595"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2135",
+      "codigo": "EM730",
+      "nome": "Conformação Mecânica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM240",
+          "EM335"
+        ],
+        [
+          "ES235",
+          "ES242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2143",
+      "codigo": "EM740",
+      "nome": "Laboratório de Engenharia dos Materiais",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM641"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2148",
+      "codigo": "EM790",
+      "nome": "Engenharia Assistida por Computador",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM200",
+          "EM503",
+          "EM608"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2156",
+      "codigo": "EM807",
+      "nome": "Laboratório de Dinâmica e Vibrações",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM703",
+          "EM707"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2224",
+      "codigo": "EM984",
+      "nome": "Sistemas Fluidotérmicos III",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM460",
+          "EM461"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "631",
+      "codigo": "BE310",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "890",
+      "codigo": "CE738",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11343",
+      "codigo": "EM105",
+      "nome": "Introdução ao Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2191",
+      "codigo": "EM909",
+      "nome": "Projeto de Sistemas Mecânicos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM200"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9896",
+      "codigo": "EM928",
+      "nome": "Projeto do Processo",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM335",
+          "EM535",
+          "EM665",
+          "EM730",
+          "EM733"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "845",
+      "codigo": "CE304",
+      "nome": "Direito",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17664",
+      "codigo": "EM107",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EM105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2195",
+      "codigo": "EM916",
+      "nome": "Estágio Supervisionado",
+      "creditos": 12,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

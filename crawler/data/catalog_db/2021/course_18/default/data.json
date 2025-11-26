@@ -1,0 +1,403 @@
+{
+  "course": {
+    "id": 18,
+    "name": "Linguística (18)",
+    "code": "18"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "6019",
+      "codigo": "TL222",
+      "nome": "Pesquisa XII: Historiografia Literária I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3579",
+      "codigo": "HL111",
+      "nome": "Introdução aos Estudos da Linguagem I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3580",
+      "codigo": "HL120",
+      "nome": "Linguagem e Investigação em Ciências Humanas",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3589",
+      "codigo": "HL143",
+      "nome": "Latim I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3644",
+      "codigo": "HL533",
+      "nome": "História das Ideias Linguísticas",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5951",
+      "codigo": "TL118",
+      "nome": "Textos em Teoria, Crítica e História Literária I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11722",
+      "codigo": "HL080",
+      "nome": "Estudos Gramaticais",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3610",
+      "codigo": "HL221",
+      "nome": "Fonética e Fonologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3620",
+      "codigo": "HL260",
+      "nome": "Sociolinguística",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3641",
+      "codigo": "HL531",
+      "nome": "Semântica e Pragmática",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11723",
+      "codigo": "HL081",
+      "nome": "Estudos Gramaticais: Sintaxe",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL080"
+        ],
+        [
+          "HL220"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11724",
+      "codigo": "HL085",
+      "nome": "Linguística de Corpus",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL080"
+        ],
+        [
+          "HL220"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3638",
+      "codigo": "HL521",
+      "nome": "Modelos de Análise Fonológica",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL221"
+        ],
+        [
+          "HL121"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3639",
+      "codigo": "HL524",
+      "nome": "Semântica da Enunciação",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11367",
+      "codigo": "HL341",
+      "nome": "Fonética Instrumental",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL221"
+        ],
+        [
+          "HL121"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3635",
+      "codigo": "HL445",
+      "nome": "Linguística Românica",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3636",
+      "codigo": "HL481",
+      "nome": "Línguas Indígenas I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3671",
+      "codigo": "HL832",
+      "nome": "Análise do Discurso",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL733"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11725",
+      "codigo": "HL082",
+      "nome": "Estudos Gramaticais: Morfologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL081"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3643",
+      "codigo": "HL532",
+      "nome": "Linguística Textual",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3648",
+      "codigo": "HL545",
+      "nome": "Linguística Histórica do Português I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3649",
+      "codigo": "HL550",
+      "nome": "Aquisição da Linguagem",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3655",
+      "codigo": "HL631",
+      "nome": "Linguagem e Processos Cognitivos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL331"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3565",
+      "codigo": "HL052",
+      "nome": "Psicolinguística",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL750"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3626",
+      "codigo": "HL330",
+      "nome": "Semântica Formal",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3566",
+      "codigo": "HL053",
+      "nome": "Neurolinguística",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11368",
+      "codigo": "HL505",
+      "nome": "Pesquisa em Linguística I",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3654",
+      "codigo": "HL624",
+      "nome": "Lexicologia e Lexicografia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3659",
+      "codigo": "HL645",
+      "nome": "Linguística Histórica do Português II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11369",
+      "codigo": "HL506",
+      "nome": "Pesquisa em Linguística II",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15145",
+      "codigo": "HL509",
+      "nome": "Monografia em Linguística",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,1126 @@
+{
+  "course": {
+    "id": 58,
+    "name": "Fonoaudiologia (58)",
+    "code": "58"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2026,
+  "parameters": {
+    "catalogo": "2026",
+    "modalidade": "",
+    "periodo": "20262",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "10632",
+      "codigo": "BH132",
+      "nome": "Embriologia Humana",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3579",
+      "codigo": "HL111",
+      "nome": "Introdução aos Estudos da Linguagem I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2739",
+      "codigo": "F 105",
+      "nome": "Física da Fala e Audição",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4328",
+      "codigo": "MD223",
+      "nome": "Atenção à Saúde no Brasil",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2969",
+      "codigo": "FN102",
+      "nome": "História da Fonoaudiologia",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2970",
+      "codigo": "FN103",
+      "nome": "Políticas Públicas, Direitos e Cidadania",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2971",
+      "codigo": "FN104",
+      "nome": "Fundamentos Teóricos do Trabalho com Família",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10630",
+      "codigo": "BA132",
+      "nome": "Anatomia",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17753",
+      "codigo": "FN106",
+      "nome": "Acolhimento Fonoaudiológico",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10631",
+      "codigo": "BH131",
+      "nome": "Biologia Tecidual",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "19325",
+      "codigo": "FN107",
+      "nome": "Desenvolvimento Humano e Sociedade",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3607",
+      "codigo": "HL201",
+      "nome": "Introdução à Semântica e à Pragmática",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7031",
+      "codigo": "FN209",
+      "nome": "Motricidade Orofacial I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3610",
+      "codigo": "HL221",
+      "nome": "Fonética e Fonologia",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17754",
+      "codigo": "FN210",
+      "nome": "Promoção e Práticas em Saúde Coletiva",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17755",
+      "codigo": "FN211",
+      "nome": "Observação de Prática Fonoaudiológica I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "761",
+      "codigo": "BS280",
+      "nome": "Neurociências para a Fonoaudiologia",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17756",
+      "codigo": "FN217",
+      "nome": "Atividades para Aprimoramento Acadêmico e de Extensão I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2974",
+      "codigo": "FN203",
+      "nome": "Introdução à Ciência e ao Conhecimento",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2995",
+      "codigo": "FN504",
+      "nome": "Metodologia da Pesquisa I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2975",
+      "codigo": "FN205",
+      "nome": "Fundamentos da Audiologia I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3017",
+      "codigo": "FN710",
+      "nome": "A Interdisciplinaridade na Reabilitação das Deficiências Sensoriais",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7029",
+      "codigo": "FN207",
+      "nome": "Desenvolvimento Motor na Infância",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4346",
+      "codigo": "MD350",
+      "nome": "Funções Corticais na Infância",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS280"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2983",
+      "codigo": "FN307",
+      "nome": "Fundamentos da Audiologia II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9998",
+      "codigo": "FN512",
+      "nome": "Fonoaudiologia - Voz I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "649",
+      "codigo": "BF180",
+      "nome": "Fisiologia Humana Geral",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3004",
+      "codigo": "FN604",
+      "nome": "Metodologia da Pesquisa II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2979",
+      "codigo": "FN302",
+      "nome": "Genética Médica Aplicada à Fonoaudiologia I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3621",
+      "codigo": "HL304",
+      "nome": "Introdução à Teoria Gramatical",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "19326",
+      "codigo": "FN303",
+      "nome": "Aspectos Psíquicos e Socioculturais do Desenvolvimento",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3625",
+      "codigo": "HL321",
+      "nome": "Fonética Experimental",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL221"
+        ],
+        [
+          "HL121"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2980",
+      "codigo": "FN304",
+      "nome": "Relações Interpessoais e Dinâmica de Grupo",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4326",
+      "codigo": "MD215",
+      "nome": "Epidemiologia e Saúde",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2982",
+      "codigo": "FN306",
+      "nome": "Introdução à Ética",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3623",
+      "codigo": "HL311",
+      "nome": "Fundamentos da Aquisição de Linguagem",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17757",
+      "codigo": "FN411",
+      "nome": "Observação de Prática Fonoaudiológica II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2976",
+      "codigo": "FN206",
+      "nome": "Sistemas de Linguagem Não-Verbal e Linguagens Alternativas",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3671",
+      "codigo": "HL832",
+      "nome": "Análise do Discurso",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "HL733"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11384",
+      "codigo": "FN413",
+      "nome": "Fundamentos para a Prática em Saúde Coletiva",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2984",
+      "codigo": "FN400",
+      "nome": "Patologias dos Órgãos da Fala e Audição",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BF180"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11387",
+      "codigo": "MD410",
+      "nome": "Aspectos Neurológicos do Desenvolvimento e seus Distúrbios",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17758",
+      "codigo": "FN417",
+      "nome": "Atividades para Aprimoramento Acadêmico e de Extensão II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2985",
+      "codigo": "FN401",
+      "nome": "Audiologia I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN307"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17265",
+      "codigo": "FN418",
+      "nome": "Introdução a Língua Brasileira de Sinais",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2986",
+      "codigo": "FN404",
+      "nome": "Aspectos Teóricos e Metodológicos da Avaliação de Linguagem",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11385",
+      "codigo": "FN420",
+      "nome": "Estudo de Casos na Clínica Fonoaudiológica: Enfoque Multidisciplinar",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7032",
+      "codigo": "FN409",
+      "nome": "Motricidade Orofacial II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN209"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10000",
+      "codigo": "FN612",
+      "nome": "Fonoaudiologia - Voz II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN512"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14877",
+      "codigo": "FN410",
+      "nome": "Processos Terapêuticos Fonoaudiológicos da Surdez",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3001",
+      "codigo": "FN511",
+      "nome": "Linguagem e Intervenção Fonoaudiológica I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11770",
+      "codigo": "FN742",
+      "nome": "Prática Fonoaudiológica em Voz I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN512",
+          "FN612"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17760",
+      "codigo": "FN516",
+      "nome": "Fundamentos Epidemiológicos e Biológicos de Gerontologia",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3637",
+      "codigo": "HL503",
+      "nome": "Processamento de Linguagem",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17761",
+      "codigo": "FN518",
+      "nome": "Prática Fonoaudiológica em Surdez I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17762",
+      "codigo": "FN519",
+      "nome": "Prática Fonoaudiológica em Motricidade Orofacial e Linguagem Oral I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2993",
+      "codigo": "FN501",
+      "nome": "Audiologia II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11759",
+      "codigo": "FN536",
+      "nome": "Prática em Audiologia I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17759",
+      "codigo": "FN505",
+      "nome": "Saúde do Trabalhador e da Trabalhadora",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3011",
+      "codigo": "FN701",
+      "nome": "Audiologia IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3000",
+      "codigo": "FN510",
+      "nome": "Aquisição, Desenvolvimento e Processos Terapêuticos da Surdez",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11389",
+      "codigo": "FN704",
+      "nome": "Disfagia I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17764",
+      "codigo": "FN616",
+      "nome": "Fundamentos psicológicos, socioculturais e cognitivos de Gerontologia",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3566",
+      "codigo": "HL053",
+      "nome": "Neurolinguística",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17765",
+      "codigo": "FN617",
+      "nome": "Atividades para Aprimoramento Acadêmico e de Extensão III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17766",
+      "codigo": "FN618",
+      "nome": "Prática Fonoaudiológica em Surdez II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11763",
+      "codigo": "FN602",
+      "nome": "Audiologia III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17767",
+      "codigo": "FN619",
+      "nome": "Prática Fonoaudiológica em Motricidade Orofacial e Linguagem Oral II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11764",
+      "codigo": "FN603",
+      "nome": "Fundamentos em Otoneurologia",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11765",
+      "codigo": "FN636",
+      "nome": "Prática em Audiologia II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN536"
+        ],
+        [
+          "FN506"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17763",
+      "codigo": "FN605",
+      "nome": "Telefonoaudiologia",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11390",
+      "codigo": "FN804",
+      "nome": "Disfagia II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN704"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3009",
+      "codigo": "FN611",
+      "nome": "Linguagem e Intervenção Fonoaudiológica II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11775",
+      "codigo": "FN842",
+      "nome": "Prática Fonoaudiológica em Voz II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN512",
+          "FN612"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17770",
+      "codigo": "FN722",
+      "nome": "Prática das Especialidades Fonoaudiológicas I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17771",
+      "codigo": "FN731",
+      "nome": "Prática em Dispositivos Eletrônicos de Amplificação Sonora",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN701"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11769",
+      "codigo": "FN736",
+      "nome": "Prática em Audiologia III",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN636"
+        ],
+        [
+          "FN606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11762",
+      "codigo": "FN543",
+      "nome": "Prática em Fonoaudiologia e Saúde Coletiva I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN404",
+          "FN409"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3012",
+      "codigo": "FN705",
+      "nome": "Monografia I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN504",
+          "FN604"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17768",
+      "codigo": "FN720",
+      "nome": "Prática Fonoaudiológica em Saúde da Criança e do Adolescente I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17769",
+      "codigo": "FN721",
+      "nome": "Prática Fonoaudiológica em Saúde do Adulto e do Idoso I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17773",
+      "codigo": "FN820",
+      "nome": "Prática Fonoaudiológica em Saúde da Criança e do Adolescente II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17774",
+      "codigo": "FN821",
+      "nome": "Prática Fonoaudiológica em Saúde do Adulto e do Idoso II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17775",
+      "codigo": "FN822",
+      "nome": "Prática das Especialidades Fonoaudiológicas II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11774",
+      "codigo": "FN836",
+      "nome": "Prática em Audiologia IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN701",
+          "FN736"
+        ],
+        [
+          "FN706"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11768",
+      "codigo": "FN643",
+      "nome": "Prática em Fonoaudiologia e Saúde Coletiva II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN543"
+        ],
+        [
+          "FN513"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3021",
+      "codigo": "FN805",
+      "nome": "Monografia II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FN705"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17772",
+      "codigo": "FN817",
+      "nome": "Atividades para Aprimoramento Acadêmico e de Extensão IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,697 @@
+{
+  "course": {
+    "id": 5,
+    "name": "Química (5)",
+    "code": "5"
+  },
+  "modalities": [
+    {
+      "code": "AA",
+      "label": "AA - Bacharelado em Química",
+      "selected": false
+    },
+    {
+      "code": "AB",
+      "label": "AB - Licenciatura em Química",
+      "selected": false
+    },
+    {
+      "code": "AD",
+      "label": "AD - Bacharelado em Química Tecnológica",
+      "selected": false
+    }
+  ],
+  "curriculum": {
+    "course_id": 5,
+    "year": 2020,
+    "modality": "AA",
+    "nodes": [
+      {
+        "code": "MA111",
+        "name": "Cálculo I",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "MA141",
+        "name": "Geometria Analítica e Vetores",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG005",
+        "name": "Química e Mercado de Trabalho",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG108",
+        "name": "Química Geral Teórica",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG109",
+        "name": "Química Geral Experimental",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG362",
+        "name": "Química com Segurança",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "F 129",
+        "name": "Física Experimental I",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "MA211",
+        "name": "Cálculo II",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QA282",
+        "name": "Química Clássica",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QI145",
+        "name": "Interações Químicas",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QO321",
+        "name": "Química Orgânica I",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "F 128",
+        "name": "Física Geral I",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QA381",
+        "name": "Espectroanalítica",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QA383",
+        "name": "Eletroanalítica",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QF431",
+        "name": "Físico-Química I",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QI345",
+        "name": "Química de Coordenação",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QO521",
+        "name": "Química Orgânica II",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "MA311",
+        "name": "Cálculo III",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QA481",
+        "name": "Métodos de Separação",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QA483",
+        "name": "Estatística Aplicada à Química Analítica",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QF531",
+        "name": "Físico-Química II",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG464",
+        "name": "Laboratório Integrado",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QI245",
+        "name": "Química de Sólidos",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QO423",
+        "name": "Fundamentos da Espectrometria de Massas",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "F 328",
+        "name": "Física Geral III",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QO424",
+        "name": "Fundamentos em Espectroscopia e Ressonância Magnética Nuclear",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QA583",
+        "name": "Preparo de Amostras",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QA584",
+        "name": "Laboratório de Química Analítica Instrumental",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QF536",
+        "name": "Química Quântica",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG564",
+        "name": "Química Orgânica e Inorgânica Experimental",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QI545",
+        "name": "Química de Organometálicos",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QO551",
+        "name": "Bioquímica I",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QA815",
+        "name": "Química do Meio Ambiente",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QF632",
+        "name": "Físico-Química Experimental I",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QF661",
+        "name": "Química Aplicada",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG664",
+        "name": "Espectroscopia Molecular",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QO622",
+        "name": "Química Orgânica Experimental II",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QO653",
+        "name": "Bioquímica II",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG770",
+        "name": "Projetos de Pesquisa em Química I",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QI542",
+        "name": "Química Inorgânica Experimental II",
+        "period": 1,
+        "category": "obrigatoria"
+      },
+      {
+        "code": "QG870",
+        "name": "Projetos de Pesquisa em Química II",
+        "period": 1,
+        "category": "obrigatoria"
+      }
+    ],
+    "edges": []
+  },
+  "offers": [
+    {
+      "course_code": "MA111",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "MA141",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG005",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG108",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG109",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG362",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "F 129",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "MA211",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QA282",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QI145",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QO321",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "F 128",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QA381",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QA383",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QF431",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QI345",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QO521",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "MA311",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QA481",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QA483",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QF531",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG464",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QI245",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QO423",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "F 328",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QO424",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QA583",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QA584",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QF536",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG564",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QI545",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QO551",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QA815",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QF632",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QF661",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG664",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QO622",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QO653",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG770",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QI542",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    },
+    {
+      "course_code": "QG870",
+      "term": null,
+      "class_id": null,
+      "raw": {}
+    }
+  ],
+  "prereqs": [],
+  "semester_map": {
+    "course_id": 5,
+    "year": 2020,
+    "entries": [
+      {
+        "code": "MA111",
+        "recommended_semester": 1
+      },
+      {
+        "code": "MA141",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG005",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG108",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG109",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG362",
+        "recommended_semester": 1
+      },
+      {
+        "code": "F 129",
+        "recommended_semester": 1
+      },
+      {
+        "code": "MA211",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QA282",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QI145",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QO321",
+        "recommended_semester": 1
+      },
+      {
+        "code": "F 128",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QA381",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QA383",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QF431",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QI345",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QO521",
+        "recommended_semester": 1
+      },
+      {
+        "code": "MA311",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QA481",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QA483",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QF531",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG464",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QI245",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QO423",
+        "recommended_semester": 1
+      },
+      {
+        "code": "F 328",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QO424",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QA583",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QA584",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QF536",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG564",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QI545",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QO551",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QA815",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QF632",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QF661",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG664",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QO622",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QO653",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG770",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QI542",
+        "recommended_semester": 1
+      },
+      {
+        "code": "QG870",
+        "recommended_semester": 1
+      }
+    ]
+  }
+}

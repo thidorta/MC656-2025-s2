@@ -1,0 +1,690 @@
+{
+  "course": {
+    "id": 107,
+    "name": "Nutrição (107)",
+    "code": "107"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9720",
+      "codigo": "NC103",
+      "nome": "Natureza e Tecnologia na Sociedade Contemporânea",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5197",
+      "codigo": "NT100",
+      "nome": "Nutrição: Ciência e Profissão",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9721",
+      "codigo": "NT103",
+      "nome": "Composição de Alimentos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9722",
+      "codigo": "SL105",
+      "nome": "Biologia Celular e Molecular",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11352",
+      "codigo": "SL109",
+      "nome": "Anatomia e Histologia Aplicadas à Nutrição",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11353",
+      "codigo": "SL110",
+      "nome": "Saúde e Sociedade",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11348",
+      "codigo": "SL209",
+      "nome": "Matemática para Ciências da Saúde",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9920",
+      "codigo": "NT204",
+      "nome": "Análise de Alimentos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9921",
+      "codigo": "NT205",
+      "nome": "Microbiologia e Higiene dos Alimentos I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14445",
+      "codigo": "NT210",
+      "nome": "Bioquímica",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9924",
+      "codigo": "NT306",
+      "nome": "Metodologia de Pesquisa Aplicada à Nutrição",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11346",
+      "codigo": "SL108",
+      "nome": "Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL106"
+        ],
+        [
+          "SL109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6894",
+      "codigo": "SL205",
+      "nome": "Saúde Coletiva",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL110"
+        ],
+        [
+          "SL104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12133",
+      "codigo": "NC104",
+      "nome": "Introdução à Ciência dos Dados e à Informação",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9902",
+      "codigo": "NC301",
+      "nome": "Filosofia e Ciências Humanas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9923",
+      "codigo": "NT305",
+      "nome": "Microbiologia e Higiene dos Alimentos II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5203",
+      "codigo": "NT402",
+      "nome": "Técnica Dietética",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11349",
+      "codigo": "SL208",
+      "nome": "Fisiologia Humana II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT210",
+          "SL108",
+          "SL109"
+        ],
+        [
+          "CP307",
+          "SL108",
+          "SL206"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6889",
+      "codigo": "SL303",
+      "nome": "Estatística e Bioestatística",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL209"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6924",
+      "codigo": "NT202",
+      "nome": "Parasitologia",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9922",
+      "codigo": "NT304",
+      "nome": "Tecnologia de Alimentos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9925",
+      "codigo": "NT405",
+      "nome": "Nutrição e Dietética",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT402",
+          "SL208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5208",
+      "codigo": "NT503",
+      "nome": "Epidemiologia Aplicada à Nutrição",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5210",
+      "codigo": "NT600",
+      "nome": "Avaliação do Estado Nutricional",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "SL208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9929",
+      "codigo": "NT508",
+      "nome": "Nutrição e Dietética nos Ciclos da Vida",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT405",
+          "NT600"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9930",
+      "codigo": "NT509",
+      "nome": "Farmacologia Aplicada à Nutrição",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT210",
+          "NT405"
+        ],
+        [
+          "NT203",
+          "NT405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5213",
+      "codigo": "NT603",
+      "nome": "Avaliação do Consumo Alimentar",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11355",
+      "codigo": "NT407",
+      "nome": "Planejamento em Alimentação Coletiva",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT305"
+        ],
+        [
+          "NT212"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11356",
+      "codigo": "NT408",
+      "nome": "Metodologias Pedagógicas em Saúde",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11357",
+      "codigo": "NT511",
+      "nome": "Gestão em Alimentação Coletiva",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT405",
+          "NT407"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11358",
+      "codigo": "NT512",
+      "nome": "Educação Alimentar e Nutricional",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6926",
+      "codigo": "NT606",
+      "nome": "Nutrição Materno-Infantil",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT508",
+          "NT603"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5189",
+      "codigo": "NC100",
+      "nome": "Ética e Cidadania",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9928",
+      "codigo": "NT507",
+      "nome": "Segurança Alimentar e Nutricional",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT503"
+        ],
+        [
+          "SL500"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9935",
+      "codigo": "NT611",
+      "nome": "Psicologia da Nutrição I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT512"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5222",
+      "codigo": "NT801",
+      "nome": "Nutrigenômica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9931",
+      "codigo": "NT607",
+      "nome": "Dietoterapia I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT508",
+          "NT600",
+          "NT603",
+          "SL208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9932",
+      "codigo": "NT608",
+      "nome": "Fisiopatologia da Nutrição I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT508",
+          "NT600",
+          "NT603",
+          "SL208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9934",
+      "codigo": "NT610",
+      "nome": "Nutrição em Saúde Coletiva",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT507",
+          "NT508",
+          "NT603"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9936",
+      "codigo": "NT706",
+      "nome": "Psicologia e Nutrição II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT607",
+          "NT611"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9937",
+      "codigo": "NT707",
+      "nome": "Dietoterapia II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT607"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9938",
+      "codigo": "NT708",
+      "nome": "Fisiopatologia da Nutrição II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT608"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14450",
+      "codigo": "NT900",
+      "nome": "Estágio em Nutrição Clínica",
+      "creditos": 20,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT511",
+          "NT610",
+          "NT707",
+          "NT708"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14451",
+      "codigo": "NT901",
+      "nome": "Estágio em Nutrição e Saúde Coletiva",
+      "creditos": 20,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT511",
+          "NT610",
+          "NT707",
+          "NT708"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6301",
+      "codigo": "SL800",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14452",
+      "codigo": "NT902",
+      "nome": "Estágio em Unidades de Alimentação e Nutrição",
+      "creditos": 20,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NT511",
+          "NT610",
+          "NT707",
+          "NT708"
+        ]
+      ]
+    }
+  ]
+}

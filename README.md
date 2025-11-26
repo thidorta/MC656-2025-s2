@@ -6,8 +6,7 @@ This project implements a crawler to collect and organize information from the *
 ## 👥 Team
 - **250502** – Johatan dos Reis Lima  
 - **219255** – José Mauricio de Vasconcellos Junior  
-- **231413** – Thiago Salvador Teixeira Dorta  
-- **250453** – Chris Araújo Felipe Souza  
+- **231413** – Thiago Salvador Teixeira Dorta
 - **183611** – Maria Eduarda Xavier Messias  
 
 ---
@@ -21,6 +20,35 @@ This project consists of three main components:
 2. **Backend API**: A FastAPI-based REST API that provides structured access to the collected data with automatic documentation.
 
 3. **Mobile App**: A React Native application built with Expo that provides a user interface to interact with the collected data.
+
+## Arquitetura - Crawler
+O crawler fecha o circuito App -> Backend -> Crawler/DB: o app aciona o backend, o backend consulta os dados coletados previamente e o crawler abastece o repositorio com HTML, JSON e SQLite obtidos do GDE.
+
+- Pipeline/Dataflow (etapas: coleta -> parsing -> normalizacao -> persistencia)
+- Ports & Adapters (coleta HTTP como port; parsers e DB writers como adapters)
+- Config-Driven via `.env` (com `CrawlerSettings`)
+
+Documentacao detalhada: [docs/crawler/ARCHITECTURE.md](docs/crawler/ARCHITECTURE.md) e [docs/crawler/IMPORTING.md](docs/crawler/IMPORTING.md) para o processo de importacao do catalogo em SQLite.
+
+## Arquitetura - GDE App
+O GDE App é a interface de usuário do sistema, permitindo aos usuários consultar, visualizar e interagir com os dados provenientes do backend.
+
+- Frontend baseado em arquitetura MVC, separando lógica de apresentação, controle e visualização de dados.
+- Comunicação via API RESTful com o backend, promovendo desacoplamento entre camadas.
+- Configuração e parametrização via arquivos de ambiente e settings próprios do app.
+- Reutilização de componentes visuais para otimizar manutenção e extensibilidade.
+
+Documentação detalhada: [docs/gde_app/ARCHITECTURE.md](docs/gde_app/ARCHITECTURE.md)
+
+## Arquitetura - Backend
+O backend atua como camada de orquestração e provedor de dados, servindo como ponte entre o GDE App e os dados coletados pelo crawler.
+
+- Arquitetura desacoplada orientada a serviços, com foco em APIs RESTful para consumo externo.
+- Validação, agregação e normalização dos dados recebidos do crawler antes de disponibilizá-los ao app.
+- Camada de persistência abstrata, facilitando substituição de fornecedores de dados (ex: SQLite, arquivos JSON).
+- Configuração por variáveis de ambiente e arquivos .env, centralizando settings críticos.
+
+Documentação detalhada: [docs/backend/ARCHITECTURE.md](docs/backend/ARCHITECTURE.md)
 
 ---
 

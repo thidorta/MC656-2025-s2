@@ -1,0 +1,795 @@
+{
+  "course": {
+    "id": 21,
+    "name": "Enfermagem (21)",
+    "code": "21"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Licenciatura em Enfermagem",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "AB",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "575",
+      "codigo": "BB125",
+      "nome": "Fundamentos de Biologia Molecular",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "688",
+      "codigo": "BH125",
+      "nome": "Citologia e Histologia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2236",
+      "codigo": "EN112",
+      "nome": "Enfermagem em Saúde Coletiva I",
+      "creditos": 5,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2241",
+      "codigo": "EN280",
+      "nome": "Exercício da Enfermagem I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2248",
+      "codigo": "EN390",
+      "nome": "Metodologia de Pesquisa I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "ME172"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "562",
+      "codigo": "BA133",
+      "nome": "Anatomia Humana Básica II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4429",
+      "codigo": "ME176",
+      "nome": "Introdução à Estatística Vital",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "574",
+      "codigo": "BB123",
+      "nome": "Bioquímica Básica I",
+      "creditos": 5,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "651",
+      "codigo": "BF284",
+      "nome": "Fisiologia e Biofísica Humana Básica",
+      "creditos": 7,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BA133",
+          "BB123"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4323",
+      "codigo": "MD212",
+      "nome": "Psicologia Geral e do Desenvolvimento",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "710",
+      "codigo": "BI214",
+      "nome": "Imunologia",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BB123",
+          "BH125"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4339",
+      "codigo": "MD311",
+      "nome": "Genética para Enfermagem I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "721",
+      "codigo": "BM215",
+      "nome": "Microbiologia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BB123",
+          "BH125"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14845",
+      "codigo": "BP223",
+      "nome": "Parasitologia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BA133",
+          "BH125"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2237",
+      "codigo": "EN212",
+      "nome": "Enfermagem em Saúde Coletiva II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN112"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2238",
+      "codigo": "EN230",
+      "nome": "Enfermagem em Saúde Mental I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN112"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2246",
+      "codigo": "EN321",
+      "nome": "Semiologia Aplicada à Enfermagem I",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BA133"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2258",
+      "codigo": "EN490",
+      "nome": "Metodologia de Pesquisa II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN390"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4329",
+      "codigo": "MD231",
+      "nome": "Patologia Geral",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BH125"
+        ],
+        [
+          "BH280",
+          "BH381"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4347",
+      "codigo": "MD362",
+      "nome": "Farmacologia Básica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BB123",
+          "BF284"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11732",
+      "codigo": "EN232",
+      "nome": "Elementos das Ciências Sociais Aplicados à Enfermagem",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2247",
+      "codigo": "EN322",
+      "nome": "Aspectos Fundamentais do Processo de Cuidar em Enfermagem",
+      "creditos": 13,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BA133",
+          "BF284",
+          "BM215"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2251",
+      "codigo": "EN421",
+      "nome": "Semiologia Aplicada à Enfermagem II",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BF284",
+          "EN321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6968",
+      "codigo": "EN470",
+      "nome": "Processo de Enfermagem",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BF284",
+          "BI214",
+          "BM215",
+          "EN212"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2252",
+      "codigo": "EN430",
+      "nome": "Enfermagem em Saúde Mental II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN230",
+          "EN322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14847",
+      "codigo": "EN445",
+      "nome": "Nutrição e Cuidado Nutricional",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4357",
+      "codigo": "MD462",
+      "nome": "Farmacologia Aplicada",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MD362"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15743",
+      "codigo": "EN214",
+      "nome": "Epidemiologia e Saúde",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14846",
+      "codigo": "EN405",
+      "nome": "Processo de Cuidar do Adulto e Idoso I",
+      "creditos": 12,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN322",
+          "EN421",
+          "EN470"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4369",
+      "codigo": "MD636",
+      "nome": "Genética para Enfermagem II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MD311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2244",
+      "codigo": "EN312",
+      "nome": "Enfermagem na Organização do Sistema de Saúde",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN212"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14848",
+      "codigo": "EN505",
+      "nome": "Processo de Cuidar do Adulto e Idoso II",
+      "creditos": 12,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN405",
+          "EN430",
+          "EN445",
+          "MD462"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2262",
+      "codigo": "EN532",
+      "nome": "Processo de Cuidar em Enfermagem Psiquiátrica",
+      "creditos": 7,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN322",
+          "EN421",
+          "EN430"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "689",
+      "codigo": "BH127",
+      "nome": "Embriologia",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10581",
+      "codigo": "EL221",
+      "nome": "Práticas de Educação e Saúde",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14849",
+      "codigo": "EN605",
+      "nome": "Enfermagem na Atenção Integral à Saúde da Família",
+      "creditos": 20,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BP223",
+          "EN212",
+          "EN312",
+          "EN322",
+          "EN421",
+          "EN430"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2267",
+      "codigo": "EN590",
+      "nome": "Administração em Enfermagem",
+      "creditos": 3,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN280",
+          "EN312",
+          "EN322"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2272",
+      "codigo": "EN665",
+      "nome": "Assistência de Enfermagem a Criança e Adolescente II",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN405",
+          "EN605"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2279",
+      "codigo": "EN766",
+      "nome": "Assistência de Enfermagem à Saúde da Mulher e Recém-Nascido",
+      "creditos": 11,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN505",
+          "EN605"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2243",
+      "codigo": "EN304",
+      "nome": "Informática em Saúde",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11372",
+      "codigo": "FN468",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2253",
+      "codigo": "EN433",
+      "nome": "Antropologia Filosófica, Educação e Enfermagem",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN232"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2275",
+      "codigo": "EN690",
+      "nome": "Estágio Supervisionado de Administração em Enfermagem Hospitalar",
+      "creditos": 11,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN421",
+          "EN505",
+          "EN590",
+          "EN605",
+          "EN665"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2282",
+      "codigo": "EN780",
+      "nome": "Exercício da Enfermagem II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN280"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10582",
+      "codigo": "EL921",
+      "nome": "Estágio Supervisionado no Ensino de Enfermagem",
+      "creditos": 19,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2283",
+      "codigo": "EN790",
+      "nome": "Tópicos de Administração em Enfermagem",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN690"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2284",
+      "codigo": "EN791",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 22,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN505",
+          "EN665",
+          "EN690",
+          "EN766"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2285",
+      "codigo": "EN792",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "creditos": 1,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2288",
+      "codigo": "EN892",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2287",
+      "codigo": "EN891",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 23,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EN505",
+          "EN665",
+          "EN690",
+          "EN766"
+        ]
+      ]
+    }
+  ]
+}

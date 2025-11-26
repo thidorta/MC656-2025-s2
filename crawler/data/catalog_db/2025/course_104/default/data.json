@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 104,
+    "name": "Gestão de Comércio Internacional (104)",
+    "code": "104"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

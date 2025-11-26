@@ -1,0 +1,591 @@
+{
+  "course": {
+    "id": 40,
+    "name": "Licenciatura em Física (40)",
+    "code": "40"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "12175",
+      "codigo": "F 008",
+      "nome": "Introdução à Física",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2961",
+      "codigo": "FM003",
+      "nome": "Seminários sobre a Profissão",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2962",
+      "codigo": "FM201",
+      "nome": "Atividades Científico - Culturais I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4754",
+      "codigo": "MS149",
+      "nome": "Complementos de Matemática",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1937",
+      "codigo": "EL285",
+      "nome": "Conhecimento em Física Escolar I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2963",
+      "codigo": "FM301",
+      "nome": "Atividades Científico - Culturais II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2746",
+      "codigo": "F 229",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2751",
+      "codigo": "F 329",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 129",
+          "GE504"
+        ],
+        [
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2753",
+      "codigo": "F 428",
+      "nome": "Física Geral IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2754",
+      "codigo": "F 429",
+      "nome": "Física Experimental IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE521",
+          "F 129"
+        ],
+        [
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2749",
+      "codigo": "F 320",
+      "nome": "Termodinâmica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2767",
+      "codigo": "F 609",
+      "nome": "Tópicos de Ensino de Física I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 328",
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2756",
+      "codigo": "F 502",
+      "nome": "Eletromagnetismo I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2763",
+      "codigo": "F 589",
+      "nome": "Estrutura da Matéria",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 428",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2958",
+      "codigo": "FL701",
+      "nome": "Projetos Integrados do Ensino de Física",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "F 609"
+        ],
+        [
+          "F 901"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12176",
+      "codigo": "FL801",
+      "nome": "Práticas de Ensino de Física",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2755",
+      "codigo": "F 489",
+      "nome": "Estrutura de Matéria II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2777",
+      "codigo": "F 740",
+      "nome": "Métodos da Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2800",
+      "codigo": "F 901",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 10,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12174",
+      "codigo": "F 897",
+      "nome": "Monografia em Ensino de Física I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2801",
+      "codigo": "F 902",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 10,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 901"
+        ]
+      ]
+    }
+  ]
+}

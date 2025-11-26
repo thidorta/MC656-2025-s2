@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native'; // Importar StyleSheet
 
 export const EditScreenInfo = ({ path }: { path: string }) => {
   const title = 'Open up the code for this screen:';
@@ -7,23 +7,23 @@ export const EditScreenInfo = ({ path }: { path: string }) => {
 
   return (
     <View>
-      <View className={styles.getStartedContainer}>
-        <Text className={styles.getStartedText}>{title}</Text>
-        <View className={styles.codeHighlightContainer + styles.homeScreenFilename}>
+      <View style={styles.getStartedContainer}> {/* Usar style */}
+        <Text style={styles.getStartedText}>{title}</Text> {/* Usar style */}
+        <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}> {/* Usar style */}
           <Text>{path}</Text>
         </View>
-        <Text className={styles.getStartedText}>{description}</Text>
+        <Text style={styles.getStartedText}>{description}</Text> {/* Usar style */}
       </View>
     </View>
   );
 };
-
-const styles = {
-  codeHighlightContainer: `rounded-md px-1`,
-  getStartedContainer: `items-center mx-12`,
-  getStartedText: `text-lg leading-6 text-center`,
-  helpContainer: `items-center mx-5 mt-4`,
-  helpLink: `py-4`,
-  helpLinkText: `text-center`,
-  homeScreenFilename: `my-2`,
-};
+// Definir styles com StyleSheet.create
+const styles = StyleSheet.create({
+  codeHighlightContainer: { borderRadius: 4, paddingHorizontal: 4 }, // rounded-md px-1
+  getStartedContainer: { alignItems: 'center', marginHorizontal: 48 }, // items-center mx-12
+  getStartedText: { fontSize: 18, lineHeight: 24, textAlign: 'center' }, // text-lg leading-6 text-center
+  helpContainer: { alignItems: 'center', marginHorizontal: 20, marginTop: 16 }, // items-center mx-5 mt-4
+  helpLink: { paddingVertical: 16 }, // py-4
+  helpLinkText: { textAlign: 'center' }, // text-center
+  homeScreenFilename: { marginVertical: 8 }, // my-2
+});

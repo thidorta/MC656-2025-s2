@@ -1,0 +1,832 @@
+{
+  "course": {
+    "id": 53,
+    "name": "Geologia (53)",
+    "code": "53"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5345",
+      "codigo": "QG104",
+      "nome": "Química",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3141",
+      "codigo": "GE300",
+      "nome": "Mineralogia I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3280",
+      "codigo": "GN101",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3286",
+      "codigo": "GN107",
+      "nome": "Ciência do Sistema Mundo I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14869",
+      "codigo": "GN111",
+      "nome": "Sistema Terra",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5314",
+      "codigo": "QF331",
+      "nome": "Físico-Química",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "QG101"
+        ],
+        [
+          "MA111",
+          "QG104"
+        ],
+        [
+          "MA111",
+          "QG108"
+        ],
+        [
+          "MS220",
+          "QG101"
+        ],
+        [
+          "MS220",
+          "QG104"
+        ],
+        [
+          "MS220",
+          "QG108"
+        ],
+        [
+          "MS380",
+          "QG101"
+        ],
+        [
+          "MS380",
+          "QG104"
+        ],
+        [
+          "MS380",
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14870",
+      "codigo": "GE207",
+      "nome": "Introdução ao Sensoriamento Remoto e Fotogeologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3146",
+      "codigo": "GE406",
+      "nome": "Mineralogia II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3227",
+      "codigo": "GF508",
+      "nome": "Pedologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3930",
+      "codigo": "LA242",
+      "nome": "Inglês Instrumental à Distância",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA142"
+        ],
+        [
+          "LA122"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "607",
+      "codigo": "BD101",
+      "nome": "Biologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3149",
+      "codigo": "GE502",
+      "nome": "Petrografia Sedimentar",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3155",
+      "codigo": "GE601",
+      "nome": "Sedimentologia",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN111"
+        ],
+        [
+          "GN106",
+          "GN208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3210",
+      "codigo": "GF303",
+      "nome": "Geomorfologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3284",
+      "codigo": "GN105",
+      "nome": "Teorias e Métodos da Ciência",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3298",
+      "codigo": "GN304",
+      "nome": "Trabalho de Campo",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GN107",
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3143",
+      "codigo": "GE402",
+      "nome": "Elementos de Paleontologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3147",
+      "codigo": "GE407",
+      "nome": "Desenho Geológico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3222",
+      "codigo": "GF503",
+      "nome": "Sociologia",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14871",
+      "codigo": "GE507",
+      "nome": "Sensoriamento Remoto",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14872",
+      "codigo": "GE512",
+      "nome": "Gestão, Governança e Sustentabilidade",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1152",
+      "codigo": "CV323",
+      "nome": "Topografia",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE207"
+        ],
+        [
+          "FA173"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3150",
+      "codigo": "GE503",
+      "nome": "Geoquímica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406",
+          "QF331"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3152",
+      "codigo": "GE506",
+      "nome": "Petrografia e Petrologia Ígnea",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3159",
+      "codigo": "GE606",
+      "nome": "Petrografia e Petrologia Metamórfica",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3172",
+      "codigo": "GE804",
+      "nome": "Sistemas de Informações Georreferenciadas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE507"
+        ],
+        [
+          "GE707"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3134",
+      "codigo": "GE117",
+      "nome": "Geoquímica Analítica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3154",
+      "codigo": "GE511",
+      "nome": "Geologia de Campo I",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601",
+          "GN304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3157",
+      "codigo": "GE603",
+      "nome": "Geologia Estrutural",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE407"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3178",
+      "codigo": "GE903",
+      "nome": "Geologia Urbana",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3162",
+      "codigo": "GE703",
+      "nome": "Geofísica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3163",
+      "codigo": "GE704",
+      "nome": "Estratigrafia",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601",
+          "GE603"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3167",
+      "codigo": "GE708",
+      "nome": "Geologia de Campo II",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE506",
+          "GE511",
+          "GE603",
+          "GE606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3170",
+      "codigo": "GE802",
+      "nome": "Geotectônica",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE603",
+          "GE606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3175",
+      "codigo": "GE806",
+      "nome": "Mecânica de Solos e Rochas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6280",
+      "codigo": "GE910",
+      "nome": "Geologia de Campo III",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE708"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3165",
+      "codigo": "GE706",
+      "nome": "Geologia Histórica e do Brasil",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE402",
+          "GE802"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3168",
+      "codigo": "GE711",
+      "nome": "Geologia de Hidrocarbonetos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE603",
+          "GE704"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3171",
+      "codigo": "GE803",
+      "nome": "Geologia Econômica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE503",
+          "GE603",
+          "GE606"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3173",
+      "codigo": "GE805",
+      "nome": "Hidrogeologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11380",
+      "codigo": "GE007",
+      "nome": "Estágio Supervisionado",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3156",
+      "codigo": "GE602",
+      "nome": "Economia dos Recursos Minerais e Energéticos",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3176",
+      "codigo": "GE901",
+      "nome": "Prospecção",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE503",
+          "GE603",
+          "GE803"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3179",
+      "codigo": "GE904",
+      "nome": "Geotecnia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GE806"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3118",
+      "codigo": "GE001",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

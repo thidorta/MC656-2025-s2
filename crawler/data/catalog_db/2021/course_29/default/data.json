@@ -1,0 +1,570 @@
+{
+  "course": {
+    "id": 29,
+    "name": "Licenciatura em Matemática (29)",
+    "code": "29"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "11086",
+      "codigo": "MA104",
+      "nome": "Seminários Sobre o Ensino de Matemática",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11087",
+      "codigo": "MA105",
+      "nome": "Matemática Elementar",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4087",
+      "codigo": "MA148",
+      "nome": "Fundamentos da Matemática",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7108",
+      "codigo": "MA750",
+      "nome": "Recursos Computacionais no Ensino de Matemática",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA105"
+        ],
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11223",
+      "codigo": "MA521",
+      "nome": "Geometria Plana",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11226",
+      "codigo": "MA621",
+      "nome": "Geometria Espacial",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1936",
+      "codigo": "EL284",
+      "nome": "Educação Matemática Escolar I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11225",
+      "codigo": "MA507",
+      "nome": "Introdução à Análise",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4092",
+      "codigo": "MA220",
+      "nome": "Matemática Discreta",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4140",
+      "codigo": "MA811",
+      "nome": "Cultura Matemática I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EL284",
+          "MA211"
+        ],
+        [
+          "EL285",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7651",
+      "codigo": "MS213",
+      "nome": "Introdução à Matemática Computacional",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4079",
+      "codigo": "MA044",
+      "nome": "Matemática IV",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4141",
+      "codigo": "MA812",
+      "nome": "Cultura Matemática II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EL284",
+          "MA211"
+        ],
+        [
+          "EL285",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4093",
+      "codigo": "MA224",
+      "nome": "Resolução de Problemas Matemáticos",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11224",
+      "codigo": "MA312",
+      "nome": "Modelagem Matemática e Equações Diferenciais",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4117",
+      "codigo": "MA553",
+      "nome": "Teoria Aritmética dos Números",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1972",
+      "codigo": "EL684",
+      "nome": "Educação Matemática Escolar II",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EL284"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11228",
+      "codigo": "MA740",
+      "nome": "Matemática do Ensino Médio para Professores I",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4479",
+      "codigo": "ME951",
+      "nome": "Estatística e Probabilidade I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2003",
+      "codigo": "EL883",
+      "nome": "Práticas Pedagógicas em Matemática",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4127",
+      "codigo": "MA673",
+      "nome": "Elementos de Álgebra",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA553"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6851",
+      "codigo": "MA752",
+      "nome": "História da Matemática",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6852",
+      "codigo": "MA840",
+      "nome": "Matemática do Ensino Médio para Professores II",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4147",
+      "codigo": "MA901",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11227",
+      "codigo": "MA705",
+      "nome": "Currículo e Didática da Matemática: Teoria e Prática",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4142",
+      "codigo": "MA813",
+      "nome": "Cultura Matemática III",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EL284",
+          "MA211"
+        ],
+        [
+          "EL285",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4148",
+      "codigo": "MA902",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4094",
+      "codigo": "MA225",
+      "nome": "Análise de Livros e Materiais Didáticos de Matemática",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

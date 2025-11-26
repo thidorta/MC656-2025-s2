@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  backend:
+    build: .
+    container_name: gde-backend
+    env_file:
+      - .env
+    environment:
+      - CATALOG_DB_PATH=/app/catalog.db
+      - USER_DB_ROOT=/app/user_db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../crawler/data/db/catalog.db:/app/catalog.db:ro
+      - ../crawler/data/user_db:/app/user_db:ro
+    restart: unless-stopped

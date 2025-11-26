@@ -1,0 +1,612 @@
+{
+  "curso": "Licenciatura em Matemática (29)",
+  "numero_curso": 29,
+  "catalogo": "2026",
+  "modalidade": "UNICA",
+  "periodo": "20261",
+  "disciplinas": [
+    {
+      "disciplina_id": "11086",
+      "codigo": "MA104",
+      "nome": "Seminários Sobre o Ensino de Matemática",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "11087",
+      "codigo": "MA105",
+      "nome": "Matemática Elementar",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "4087",
+      "codigo": "MA148",
+      "nome": "Fundamentos da Matemática",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "19446",
+      "codigo": "MA045",
+      "nome": "Números Complexos",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "4092",
+      "codigo": "MA220",
+      "nome": "Matemática Discreta",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "1936",
+      "codigo": "EL284",
+      "nome": "Educação Matemática Escolar I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "11225",
+      "codigo": "MA507",
+      "nome": "Introdução à Análise",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "11223",
+      "codigo": "MA521",
+      "nome": "Geometria Plana",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "7108",
+      "codigo": "MA750",
+      "nome": "Recursos Computacionais no Ensino de Matemática",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "11226",
+      "codigo": "MA621",
+      "nome": "Geometria Espacial",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "4479",
+      "codigo": "ME951",
+      "nome": "Estatística e Probabilidade I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "7651",
+      "codigo": "MS213",
+      "nome": "Introdução à Matemática Computacional",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "19447",
+      "codigo": "MA640",
+      "nome": "Modelagem Matemática para o Ensino Básico",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "4093",
+      "codigo": "MA224",
+      "nome": "Resolução de Problemas Matemáticos",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "11224",
+      "codigo": "MA312",
+      "nome": "Modelagem Matemática e Equações Diferenciais",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "1972",
+      "codigo": "EL684",
+      "nome": "Educação Matemática Escolar II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "4117",
+      "codigo": "MA553",
+      "nome": "Teoria Aritmética dos Números",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "11228",
+      "codigo": "MA740",
+      "nome": "Matemática do Ensino Médio para Professores I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "2003",
+      "codigo": "EL883",
+      "nome": "Práticas Pedagógicas em Matemática",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "4127",
+      "codigo": "MA673",
+      "nome": "Elementos de Álgebra",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "6851",
+      "codigo": "MA752",
+      "nome": "História da Matemática",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "6852",
+      "codigo": "MA840",
+      "nome": "Matemática do Ensino Médio para Professores II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "4147",
+      "codigo": "MA901",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "4094",
+      "codigo": "MA225",
+      "nome": "Análise de Livros e Materiais Didáticos de Matemática",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "11227",
+      "codigo": "MA705",
+      "nome": "Currículo e Didática da Matemática: Teoria e Prática",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "4148",
+      "codigo": "MA902",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "18025",
+      "codigo": "MA887",
+      "nome": "Atividades Extensão VII",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18024",
+      "codigo": "MA886",
+      "nome": "Atividades Extensão VI",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18027",
+      "codigo": "MA889",
+      "nome": "Atividades Extensão IX",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18052",
+      "codigo": "ME882",
+      "nome": "Tópicos de Extensão II",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19101",
+      "codigo": "MS014",
+      "nome": "Construção de oficinas de matemática para olimpíadas II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18020",
+      "codigo": "MA882",
+      "nome": "Atividades Extensão II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18023",
+      "codigo": "MA885",
+      "nome": "Atividades Extensão V",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18070",
+      "codigo": "MS944",
+      "nome": "Tópicos de Extensão IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19100",
+      "codigo": "MS013",
+      "nome": "Construção de oficinas de matemática para olimpíadas I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18019",
+      "codigo": "MA881",
+      "nome": "Atividades de Extensão I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18017",
+      "codigo": "MA815",
+      "nome": "Atividade de Cultura Matemática II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18051",
+      "codigo": "ME881",
+      "nome": "Tópicos de Extensão I",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18069",
+      "codigo": "MS943",
+      "nome": "Tópicos de Extensão III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19098",
+      "codigo": "MA014",
+      "nome": "Formação para mediação em oficinas de matemática para olimpíadas II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19097",
+      "codigo": "MA013",
+      "nome": "Formação para mediação em oficinas de matemática para olimpíadas I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18022",
+      "codigo": "MA884",
+      "nome": "Atividades Extensão IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18026",
+      "codigo": "MA888",
+      "nome": "Atividades Extensão VIII",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18068",
+      "codigo": "MS942",
+      "nome": "Tópicos de Extensão II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18067",
+      "codigo": "MS941",
+      "nome": "Tópicos de Extensão I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18016",
+      "codigo": "MA814",
+      "nome": "Atividade de Cultura Matemática I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18021",
+      "codigo": "MA883",
+      "nome": "Atividades Extensão III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19448",
+      "codigo": "MA642",
+      "nome": "Matemática Financeira para o Ensino Básico",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "14265",
+      "codigo": "EP916",
+      "nome": "Histórias e Culturas de Povos Indígenas Brasileiros",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "4141",
+      "codigo": "MA812",
+      "nome": "Cultura Matemática II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19450",
+      "codigo": "MA819",
+      "nome": "Educação Étnico-Raciais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "4142",
+      "codigo": "MA813",
+      "nome": "Cultura Matemática III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "4140",
+      "codigo": "MA811",
+      "nome": "Cultura Matemática I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19449",
+      "codigo": "MA818",
+      "nome": "Diversidade e Inclusão",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "14264",
+      "codigo": "EP915",
+      "nome": "Histórias e Culturas Afro-brasileiras e Africanas",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    }
+  ]
+}

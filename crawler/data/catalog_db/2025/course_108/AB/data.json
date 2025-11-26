@@ -1,0 +1,851 @@
+{
+  "course": {
+    "id": 108,
+    "name": "Engenharia Física (108)",
+    "code": "108"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Ênfase em Produção Tecnológica",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "AB",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2961",
+      "codigo": "FM003",
+      "nome": "Seminários sobre a Profissão",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4754",
+      "codigo": "MS149",
+      "nome": "Complementos de Matemática",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18282",
+      "codigo": "F 259",
+      "nome": "Introdução à Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128",
+          "F 159"
+        ],
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4432",
+      "codigo": "ME210",
+      "nome": "Probabilidade I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18193",
+      "codigo": "F 359",
+      "nome": "Introdução à Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 259",
+          "GE504"
+        ],
+        [
+          "F 259",
+          "MA111"
+        ],
+        [
+          "F 129"
+        ],
+        [
+          "F 229"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19008",
+      "codigo": "FX004",
+      "nome": "Introdução às Práticas de Extensão",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4079",
+      "codigo": "MA044",
+      "nome": "Matemática IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA141",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4165",
+      "codigo": "MC202",
+      "nome": "Estruturas de Dados",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2753",
+      "codigo": "F 428",
+      "nome": "Física Geral IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17261",
+      "codigo": "FM449",
+      "nome": "Projetos Integrados em Engenharia Física I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2763",
+      "codigo": "F 589",
+      "nome": "Estrutura da Matéria",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4019",
+      "codigo": "LE100",
+      "nome": "Desenho Técnico Assistido por Computador",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5343",
+      "codigo": "QG101",
+      "nome": "Química I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17180",
+      "codigo": "EE533",
+      "nome": "Eletrônica Básica I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EA513"
+        ],
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2756",
+      "codigo": "F 502",
+      "nome": "Eletromagnetismo I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2758",
+      "codigo": "F 520",
+      "nome": "Métodos Matemáticos da Física I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2773",
+      "codigo": "F 689",
+      "nome": "Mecânica Quântica I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 589",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17262",
+      "codigo": "FM649",
+      "nome": "Projetos Integrados em Engenharia Física II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "FM449"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4034",
+      "codigo": "LE401",
+      "nome": "Estrutura e Propriedade dos Materiais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "LE200"
+        ],
+        [
+          "QG101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2749",
+      "codigo": "F 320",
+      "nome": "Termodinâmica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 228",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2765",
+      "codigo": "F 602",
+      "nome": "Eletromagnetismo II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2777",
+      "codigo": "F 740",
+      "nome": "Métodos da Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4041",
+      "codigo": "LE500",
+      "nome": "Resistência dos Materiais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 315"
+        ],
+        [
+          "LE400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "631",
+      "codigo": "BE310",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9944",
+      "codigo": "F 449",
+      "nome": "Lasers e Aplicações",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2766",
+      "codigo": "F 604",
+      "nome": "Física Estatística",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 320",
+          "ME210"
+        ],
+        [
+          "F 320",
+          "ME414"
+        ],
+        [
+          "QF431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "890",
+      "codigo": "CE738",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2796",
+      "codigo": "F 888",
+      "nome": "Física do Estado Sólido",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 689"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17263",
+      "codigo": "FM849",
+      "nome": "Projetos Integrados em Engenharia Física III",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "845",
+      "codigo": "CE304",
+      "nome": "Direito",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12141",
+      "codigo": "F 894",
+      "nome": "Projeto de Curso em Engenharia Física",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17264",
+      "codigo": "FM901",
+      "nome": "Formação Profissional I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17853",
+      "codigo": "FX949",
+      "nome": "Atividades supervisionadas em Engenharia Física I (Extensão)",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9945",
+      "codigo": "F 949",
+      "nome": "Estágio em Engenharia Física",
+      "creditos": 20,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2096",
+      "codigo": "EM330",
+      "nome": "Oficinas I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10286",
+      "codigo": "F 849",
+      "nome": "Instrumentação Científica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EE530"
+        ],
+        [
+          "F 540"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4055",
+      "codigo": "LE703",
+      "nome": "Sistemas Produtivos",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4052",
+      "codigo": "LE700",
+      "nome": "Engenharia de Qualidade",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "LE409"
+        ],
+        [
+          "F 428",
+          "LE602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10283",
+      "codigo": "F 549",
+      "nome": "Fontes Alternativas de Energia",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4053",
+      "codigo": "LE701",
+      "nome": "Gestão de Projetos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "LE205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9946",
+      "codigo": "F 749",
+      "nome": "Engenharia de Materiais Estruturados e Dispositivos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 888"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10284",
+      "codigo": "F 149",
+      "nome": "Desenvolvimento de Novos Materiais",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2770",
+      "codigo": "F 640",
+      "nome": "Métodos da Física Experimental II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4054",
+      "codigo": "LE702",
+      "nome": "Gestão de Recursos Humanos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4047",
+      "codigo": "LE602",
+      "nome": "Usinagem de Materiais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 589"
+        ],
+        [
+          "LE401",
+          "LE503"
+        ]
+      ]
+    }
+  ]
+}

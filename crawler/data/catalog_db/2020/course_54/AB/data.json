@@ -1,0 +1,1042 @@
+{
+  "course": {
+    "id": 54,
+    "name": "Geografia (54)",
+    "code": "54"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Licenciatura em Geografia",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "AB",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "3208",
+      "codigo": "GF301",
+      "nome": "História do Pensamento Geográfico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3280",
+      "codigo": "GN101",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3286",
+      "codigo": "GN107",
+      "nome": "Ciência do Sistema Mundo I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14869",
+      "codigo": "GN111",
+      "nome": "Sistema Terra",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7109",
+      "codigo": "GF129",
+      "nome": "Geografia Econômica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14873",
+      "codigo": "GF136",
+      "nome": "Cartografia Sistemática",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11382",
+      "codigo": "GF411",
+      "nome": "Didática da Geografia",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3222",
+      "codigo": "GF503",
+      "nome": "Sociologia",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3229",
+      "codigo": "GF601",
+      "nome": "Geografia Regional (Teoria e Regionalização Mundial)",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3284",
+      "codigo": "GN105",
+      "nome": "Teorias e Métodos da Ciência",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3212",
+      "codigo": "GF402",
+      "nome": "História Econômica, Política e Sociedade do Brasil",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3219",
+      "codigo": "GF410",
+      "nome": "Climatologia I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3210",
+      "codigo": "GF303",
+      "nome": "Geomorfologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14874",
+      "codigo": "GF306",
+      "nome": "Geografia Regional: América Latina",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3232",
+      "codigo": "GF604",
+      "nome": "Geografia Urbana",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3209",
+      "codigo": "GF302",
+      "nome": "Sensoriamento Remoto",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GN207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3211",
+      "codigo": "GF401",
+      "nome": "Metodologia da Geografia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14876",
+      "codigo": "GF413",
+      "nome": "Geografia Regional: África",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3226",
+      "codigo": "GF507",
+      "nome": "Cartografia Temática",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3298",
+      "codigo": "GN304",
+      "nome": "Trabalho de Campo",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GN107",
+          "GN111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11381",
+      "codigo": "GF305",
+      "nome": "Práticas de Geociências na Educação Básica",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3221",
+      "codigo": "GF502",
+      "nome": "Geografia das Indústrias",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3225",
+      "codigo": "GF506",
+      "nome": "Geomorfologia (Climática e Litorânea)",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3227",
+      "codigo": "GF508",
+      "nome": "Pedologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11383",
+      "codigo": "GF607",
+      "nome": "Representações e Linguagens no Ensino de Geografia",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3220",
+      "codigo": "GF501",
+      "nome": "Geografia Agrária",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3233",
+      "codigo": "GF605",
+      "nome": "Geomorfologia do Brasil",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF506"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3239",
+      "codigo": "GF801",
+      "nome": "Geografia das Relações Internacionais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "770",
+      "codigo": "BT201",
+      "nome": "Biogeografia",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "BD101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3215",
+      "codigo": "GF405",
+      "nome": "Geografia do Brasil",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9212",
+      "codigo": "GF714",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3244",
+      "codigo": "GF806",
+      "nome": "Estágio Supervisionado de Geografia I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774",
+          "EL874"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11754",
+      "codigo": "GF902",
+      "nome": "Tópicos Especiais em Atividades Científicas e Culturais I",
+      "creditos": 7,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11372",
+      "codigo": "FN468",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3230",
+      "codigo": "GF602",
+      "nome": "Análise Redes e Fluxos (Transportes e Comunicação)",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3231",
+      "codigo": "GF603",
+      "nome": "Estudos Populacionais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11755",
+      "codigo": "GF903",
+      "nome": "Tópicos Especiais em Atividades Científicas e Culturais II",
+      "creditos": 7,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3216",
+      "codigo": "GF406",
+      "nome": "Geografia Política",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF301",
+          "GF401",
+          "GF601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3243",
+      "codigo": "GF805",
+      "nome": "Planejamento Territorial",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF401"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9213",
+      "codigo": "GF814",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6281",
+      "codigo": "GF901",
+      "nome": "Estágio Supervisionado de Geografia II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF806"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6855",
+      "codigo": "GF003",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7113",
+      "codigo": "GF131",
+      "nome": "Mapeamento Pedológico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF508"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6846",
+      "codigo": "GE914",
+      "nome": "Ciência e Linguagens",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6203",
+      "codigo": "GF123",
+      "nome": "Tópicos Especiais em Geografia I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3161",
+      "codigo": "GE702",
+      "nome": "História e Teoria das Organizações",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3193",
+      "codigo": "GF111",
+      "nome": "Mudanças Globais no Sistema Terra",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3288",
+      "codigo": "GN110",
+      "nome": "Ciência do Sistema Mundo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3182",
+      "codigo": "GF100",
+      "nome": "Geomorfologia e Meio Ambiente",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7114",
+      "codigo": "GF132",
+      "nome": "Logística e Território Brasileiro",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF508"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6847",
+      "codigo": "GE915",
+      "nome": "Educação, Ciência, Tecnologia e Sociedade",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3203",
+      "codigo": "GF124",
+      "nome": "Tópicos Especiais em Geografia II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3169",
+      "codigo": "GE801",
+      "nome": "História das Ciências Naturais",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3194",
+      "codigo": "GF112",
+      "nome": "Organização do Espaço Regional",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3293",
+      "codigo": "GN207",
+      "nome": "Introdução ao Sensoriamento Remoto",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GN108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3184",
+      "codigo": "GF102",
+      "nome": "Movimentos Sociais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7115",
+      "codigo": "GF133",
+      "nome": "Fundamentos de Micromorfologia de Solos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GF508"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6848",
+      "codigo": "GE916",
+      "nome": "Ensino de Ciências da Terra e do Ambiente",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3204",
+      "codigo": "GF125",
+      "nome": "Tópicos Avançados em Geografia I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6844",
+      "codigo": "GE911",
+      "nome": "Comunicação Científica em Ciências da Terra",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3197",
+      "codigo": "GF115",
+      "nome": "Economia do Desenvolvimento",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3294",
+      "codigo": "GN208",
+      "nome": "Ciência do Sistema Terra II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "GN106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3187",
+      "codigo": "GF105",
+      "nome": "Metrópoles e Metropolização",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7111",
+      "codigo": "GF134",
+      "nome": "Fotointerpretação e Mapeamento Térmico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3181",
+      "codigo": "GF001",
+      "nome": "Iniciação Científica",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3205",
+      "codigo": "GF126",
+      "nome": "Tópicos Avançados em Geografia II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6845",
+      "codigo": "GE912",
+      "nome": "Mapas e Linguagem Visual no Ensino de Ciências Naturais",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6202",
+      "codigo": "GF120",
+      "nome": "Tópicos Especiais em Geografia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11847",
+      "codigo": "GT105",
+      "nome": "Teorias e Métodos da Ciência",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3144",
+      "codigo": "GE403",
+      "nome": "Micropalentologia e Palinologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3188",
+      "codigo": "GF106",
+      "nome": "Turismo e Novas Territorialidades",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11846",
+      "codigo": "GF135",
+      "nome": "Antropologia da Moral e da Ética",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6854",
+      "codigo": "GF002",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7110",
+      "codigo": "GF130",
+      "nome": "Geografia Regional do Brasil",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6853",
+      "codigo": "GE913",
+      "nome": "Ciências Naturais e Ambiente",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7112",
+      "codigo": "GF121",
+      "nome": "Tópicos Avançados em Geografia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3145",
+      "codigo": "GE405",
+      "nome": "Direito dos Recursos Naturais",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3189",
+      "codigo": "GF107",
+      "nome": "América Latina - Novas Relações",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3224",
+      "codigo": "GF505",
+      "nome": "Recursos Naturais, Meio Ambiente e Desenvolvimento",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AB",
+      "prereqs": []
+    }
+  ]
+}

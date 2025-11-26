@@ -1,0 +1,1080 @@
+{
+  "course": {
+    "id": 15,
+    "name": "Medicina (15)",
+    "code": "15"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "15141",
+      "codigo": "BS100",
+      "nome": "Bases Moleculares das Células",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4334",
+      "codigo": "MD243",
+      "nome": "Medicina e Saúde",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD148"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15142",
+      "codigo": "BS101",
+      "nome": "Bases Anatômicas do Corpo Humano I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15143",
+      "codigo": "BS102",
+      "nome": "Bases do Desenvolvimento e dos Tecidos do Corpo Humano I",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15144",
+      "codigo": "BS103",
+      "nome": "Bases Funcionais do Corpo Humano I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4295",
+      "codigo": "MD141",
+      "nome": "Prática de Ciências I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4297",
+      "codigo": "MD142",
+      "nome": "Ações de Saúde Pública I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4298",
+      "codigo": "MD148",
+      "nome": "Ética I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4333",
+      "codigo": "MD242",
+      "nome": "Ações de Saúde Pública II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD142"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4336",
+      "codigo": "MD248",
+      "nome": "Ética II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15304",
+      "codigo": "BS201",
+      "nome": "Bases Anatômicas do Corpo Humano II",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15305",
+      "codigo": "BS202",
+      "nome": "Bases do Desenvolvimento e dos Tecidos do Corpo Humano II",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15306",
+      "codigo": "BS203",
+      "nome": "Bases Funcionais do Corpo Humano II",
+      "creditos": 10,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9192",
+      "codigo": "BS340",
+      "nome": "Relação Patógeno-Hospedeiro II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS100"
+        ],
+        [
+          "BS111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4332",
+      "codigo": "MD241",
+      "nome": "Prática de Ciências II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4343",
+      "codigo": "MD343",
+      "nome": "Princípios de Farmacologia",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS100",
+          "BS103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4344",
+      "codigo": "MD344",
+      "nome": "Laboratório de Habilidades I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4345",
+      "codigo": "MD348",
+      "nome": "Bioética I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9190",
+      "codigo": "BS320",
+      "nome": "Neurociências I",
+      "creditos": 14,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS111",
+          "BS121",
+          "BS122",
+          "BS123",
+          "BS124",
+          "BS221",
+          "BS222",
+          "BS223",
+          "BS224"
+        ],
+        [
+          "BS100",
+          "BS201",
+          "BS202",
+          "BS203"
+        ],
+        [
+          "BS110",
+          "BS111",
+          "BS210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4360",
+      "codigo": "MD542",
+      "nome": "Epidemiologia e Saúde I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD341",
+          "MD441"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9191",
+      "codigo": "BS330",
+      "nome": "Relação Patógeno-Hospedeiro I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS100"
+        ],
+        [
+          "BS111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4335",
+      "codigo": "MD244",
+      "nome": "Introdução à Imunologia Médica",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4342",
+      "codigo": "MD342",
+      "nome": "Saúde e Sociedade I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD142",
+          "MD242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4352",
+      "codigo": "MD443",
+      "nome": "Introdução à Patologia",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS100",
+          "BS101",
+          "BS102",
+          "BS103",
+          "BS201",
+          "BS202",
+          "BS203",
+          "BS320"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4353",
+      "codigo": "MD444",
+      "nome": "Laboratório de Habilidades II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD344"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4354",
+      "codigo": "MD445",
+      "nome": "Anatomia Aplicada à Prática Médica I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS100",
+          "BS101",
+          "BS102",
+          "BS103",
+          "BS201",
+          "BS202",
+          "BS203",
+          "BS320"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4356",
+      "codigo": "MD448",
+      "nome": "Bioética II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9193",
+      "codigo": "BS420",
+      "nome": "Relação Patógeno-Hospedeiro III",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS340"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11118",
+      "codigo": "MD449",
+      "nome": "Neurociências Clínicas",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS320"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9194",
+      "codigo": "BS430",
+      "nome": "Relação Patógeno-Hospedeiro IV",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS330",
+          "BS340"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4371",
+      "codigo": "MD642",
+      "nome": "Epidemiologia e Saúde II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD542"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4351",
+      "codigo": "MD442",
+      "nome": "Saúde e Sociedade II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD142",
+          "MD242",
+          "MD342"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4361",
+      "codigo": "MD543",
+      "nome": "Semiotécnica da Observação Clínica",
+      "creditos": 20,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS100",
+          "BS101",
+          "BS102",
+          "BS103",
+          "BS201",
+          "BS202",
+          "BS203",
+          "BS320",
+          "MD449"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4362",
+      "codigo": "MD544",
+      "nome": "Fisiopatologia Integrada",
+      "creditos": 12,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD443"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4363",
+      "codigo": "MD546",
+      "nome": "Anatomia Aplicada à Prática Médica II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD445"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4364",
+      "codigo": "MD548",
+      "nome": "Ética Médica I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4383",
+      "codigo": "MD748",
+      "nome": "Medicina Legal I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD148",
+          "MD248",
+          "MD348",
+          "MD448",
+          "MD548"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4372",
+      "codigo": "MD643",
+      "nome": "Semiologia e Propedêutica",
+      "creditos": 20,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD543"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4373",
+      "codigo": "MD644",
+      "nome": "Fisiopatologia Integrada II",
+      "creditos": 12,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD443"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4375",
+      "codigo": "MD646",
+      "nome": "Anatomia Aplicada à Prática Médica III",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD546"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11361",
+      "codigo": "MD759",
+      "nome": "Atenção Clínica Hospitalar",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD148",
+          "MD248",
+          "MD348",
+          "MD444",
+          "MD448",
+          "MD544",
+          "MD548",
+          "MD642",
+          "MD643",
+          "MD644"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9093",
+      "codigo": "MD447",
+      "nome": "Farmacologia",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD343"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4385",
+      "codigo": "MD752",
+      "nome": "Atenção Clínico-Cirúrgica Integradas I",
+      "creditos": 15,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD148",
+          "MD248",
+          "MD348",
+          "MD444",
+          "MD448",
+          "MD544",
+          "MD548",
+          "MD642",
+          "MD643",
+          "MD644"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4386",
+      "codigo": "MD753",
+      "nome": "Atenção Clínico-Cirúrgica Integrada II",
+      "creditos": 12,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD148",
+          "MD248",
+          "MD348",
+          "MD444",
+          "MD448",
+          "MD544",
+          "MD548",
+          "MD642",
+          "MD643",
+          "MD644"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4387",
+      "codigo": "MD754",
+      "nome": "Atenção Clínico-Cirúrgica Integrada III",
+      "creditos": 15,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD148",
+          "MD248",
+          "MD348",
+          "MD444",
+          "MD448",
+          "MD544",
+          "MD548",
+          "MD642",
+          "MD643",
+          "MD644"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4390",
+      "codigo": "MD758",
+      "nome": "Atenção Integral à Saúde",
+      "creditos": 40,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD148",
+          "MD248",
+          "MD348",
+          "MD444",
+          "MD448",
+          "MD544",
+          "MD548",
+          "MD642",
+          "MD643",
+          "MD644"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12154",
+      "codigo": "MD951",
+      "nome": "Plantão em Pediatria",
+      "creditos": 17,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD752",
+          "MD753",
+          "MD754",
+          "MD758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12155",
+      "codigo": "MD952",
+      "nome": "Plantão em Tocoginecologia",
+      "creditos": 21,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD752",
+          "MD753",
+          "MD754",
+          "MD758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4407",
+      "codigo": "MD941",
+      "nome": "Atenção Integral à Saúde da Criança e do Adolescente I",
+      "creditos": 29,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD752",
+          "MD753",
+          "MD754",
+          "MD758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4408",
+      "codigo": "MD942",
+      "nome": "Atenção Integral à Saúde da Mulher I",
+      "creditos": 29,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD752",
+          "MD753",
+          "MD754",
+          "MD758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4409",
+      "codigo": "MD943",
+      "nome": "Atenção Integral à Saúde do Adulto I",
+      "creditos": 29,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD752",
+          "MD753",
+          "MD754",
+          "MD758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4410",
+      "codigo": "MD944",
+      "nome": "Atenção Clínico-Cirúrgica I",
+      "creditos": 16,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD752",
+          "MD753",
+          "MD754",
+          "MD758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4411",
+      "codigo": "MD945",
+      "nome": "Saúde Coletiva",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD752",
+          "MD753",
+          "MD754",
+          "MD758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4288",
+      "codigo": "MD134",
+      "nome": "Atenção Clínico-Cirúrgica III",
+      "creditos": 21,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4289",
+      "codigo": "MD135",
+      "nome": "Anestesiologia",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12156",
+      "codigo": "MD126",
+      "nome": "Plantão de Emergência Cirúrgica",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4290",
+      "codigo": "MD136",
+      "nome": "Emergência",
+      "creditos": 21,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4281",
+      "codigo": "MD127",
+      "nome": "Plantão de Emergência Médica",
+      "creditos": 17,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4292",
+      "codigo": "MD138",
+      "nome": "Cirurgia do Trauma",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4285",
+      "codigo": "MD131",
+      "nome": "Atenção Integral à Saúde da Criança e do Adolescente II",
+      "creditos": 16,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4293",
+      "codigo": "MD139",
+      "nome": "Atenção Clínico-Cirúrgica IV",
+      "creditos": 16,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4286",
+      "codigo": "MD132",
+      "nome": "Atenção Integral à Saúde da Mulher II",
+      "creditos": 11,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4287",
+      "codigo": "MD133",
+      "nome": "Atenção Clínico-Cirúrgica II",
+      "creditos": 13,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MD941",
+          "MD942",
+          "MD943",
+          "MD944",
+          "MD951",
+          "MD952"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,974 @@
+{
+  "course": {
+    "id": 34,
+    "name": "Engenharia de Computação (34)",
+    "code": "34"
+  },
+  "modalidade": "AX",
+  "modalidade_label": "AX - Para Matrícula Antes da Opção",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "AX",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11719",
+      "codigo": "QG122",
+      "nome": "Química Experimental",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3739",
+      "codigo": "HZ291",
+      "nome": "Tópicos Especiais de Humanidades I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11718",
+      "codigo": "QG111",
+      "nome": "Química Teórica",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4165",
+      "codigo": "MC202",
+      "nome": "Estruturas de Dados",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2746",
+      "codigo": "F 229",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9197",
+      "codigo": "MC322",
+      "nome": "Programação Orientada a Objetos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1336",
+      "codigo": "EA513",
+      "nome": "Circuitos Elétricos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2751",
+      "codigo": "F 329",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "F 129",
+          "GE504"
+        ],
+        [
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1338",
+      "codigo": "EA614",
+      "nome": "Análise de Sinais",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1343",
+      "codigo": "EA772",
+      "nome": "Circuitos Lógicos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2753",
+      "codigo": "F 428",
+      "nome": "Física Geral IV",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2754",
+      "codigo": "F 429",
+      "nome": "Física Experimental IV",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EE521",
+          "F 129"
+        ],
+        [
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6770",
+      "codigo": "MC358",
+      "nome": "Fundamentos Matemáticos da Computação",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4171",
+      "codigo": "MC404",
+      "nome": "Organização Básica de Computadores e Linguagem de Montagem",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MC202"
+        ],
+        [
+          "MC602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4440",
+      "codigo": "ME323",
+      "nome": "Introdução aos Modelos Probabilísticos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1344",
+      "codigo": "EA773",
+      "nome": "Laboratório de Circuitos Lógicos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA772"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6723",
+      "codigo": "EA871",
+      "nome": "Laboratório de Programação Básica de Sistemas Digitais",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA869"
+        ],
+        [
+          "MC404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1348",
+      "codigo": "EA876",
+      "nome": "Introdução a Software de Sistema",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA869"
+        ],
+        [
+          "MC404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1581",
+      "codigo": "EE400",
+      "nome": "Métodos da Engenharia Elétrica",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6769",
+      "codigo": "EE532",
+      "nome": "Eletrônica Aplicada",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA513"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6772",
+      "codigo": "MC458",
+      "nome": "Projeto e Análise de Algoritmos I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MC202",
+          "MS328"
+        ],
+        [
+          "MC202",
+          "MC358"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11735",
+      "codigo": "EA202",
+      "nome": "Engenharia de Software: Teoria e Prática",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA876"
+        ],
+        [
+          "EA877"
+        ],
+        [
+          "EA879"
+        ],
+        [
+          "EA550"
+        ],
+        [
+          "MC202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6779",
+      "codigo": "EA872",
+      "nome": "Laboratório de Programação de Software Básico",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA876"
+        ],
+        [
+          "EA877"
+        ],
+        [
+          "EA879"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1359",
+      "codigo": "EA960",
+      "nome": "Organização de Computadores",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA772",
+          "EA869"
+        ],
+        [
+          "EA772",
+          "MC404"
+        ],
+        [
+          "EA877"
+        ],
+        [
+          "EA879"
+        ],
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6771",
+      "codigo": "EE534",
+      "nome": "Laboratório de Eletrônica Aplicada",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EE533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2101",
+      "codigo": "EM423",
+      "nome": "Resistência dos Materiais",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "F 313"
+        ],
+        [
+          "F 315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1326",
+      "codigo": "EA074",
+      "nome": "Introdução às Redes de Computadores",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA876"
+        ],
+        [
+          "EA877"
+        ],
+        [
+          "EA879"
+        ],
+        [
+          "EA550"
+        ],
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11736",
+      "codigo": "EA201",
+      "nome": "Sistemas Embarcados: Teoria e Prática",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA773",
+          "EA869",
+          "EA871",
+          "EE531"
+        ],
+        [
+          "EA773",
+          "EA869",
+          "EA871",
+          "EE534"
+        ],
+        [
+          "EA773",
+          "EA871",
+          "EE531",
+          "MC404"
+        ],
+        [
+          "EA773",
+          "EA871",
+          "EE534",
+          "MC404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1339",
+      "codigo": "EA616",
+      "nome": "Análise Linear de Sistemas",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA513",
+          "EE400",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1340",
+      "codigo": "EA619",
+      "nome": "Laboratório de Análise Linear",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA513",
+          "EE400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1364",
+      "codigo": "EA979",
+      "nome": "Introdução à Computação Gráfica e ao Processamento de Imagem",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA614",
+          "MC102"
+        ],
+        [
+          "EA877"
+        ],
+        [
+          "EA879"
+        ],
+        [
+          "MC504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1325",
+      "codigo": "EA072",
+      "nome": "Inteligência Artificial em Aplicações Industriais",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA876"
+        ],
+        [
+          "EA550"
+        ],
+        [
+          "MC346"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6984",
+      "codigo": "EA080",
+      "nome": "Laboratório de Redes de Computadores",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA074"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1341",
+      "codigo": "EA721",
+      "nome": "Princípios de Controle e Servomecanismo",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA616"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1342",
+      "codigo": "EA722",
+      "nome": "Laboratório de Controle e Servomecanismo",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA616",
+          "EA619"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1898",
+      "codigo": "EG950",
+      "nome": "Processamento Digital de Sinais",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EA614",
+          "EA616"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "631",
+      "codigo": "BE310",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "845",
+      "codigo": "CE304",
+      "nome": "Direito",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "896",
+      "codigo": "CE838",
+      "nome": "Contabilidade para Engenharia",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EC306"
+        ],
+        [
+          "MA311"
+        ],
+        [
+          "CE151"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1311",
+      "codigo": "EA006",
+      "nome": "Trabalho de Fim de Curso",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1320",
+      "codigo": "EA044",
+      "nome": "Planejamento e Análise de Sistemas de Produção",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "MA211",
+          "MA327",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1590",
+      "codigo": "EE610",
+      "nome": "Eletrônica Digital I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EE530"
+        ],
+        [
+          "EE532"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "890",
+      "codigo": "CE738",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1567",
+      "codigo": "EE017",
+      "nome": "Estágio em Empresa",
+      "creditos": 12,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1565",
+      "codigo": "EE015",
+      "nome": "Estágio Científico e Tecnológico I",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AX",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1566",
+      "codigo": "EE016",
+      "nome": "Estágio Científico e Tecnológico II",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AX",
+      "prereqs": [
+        [
+          "EE015"
+        ]
+      ]
+    }
+  ]
+}

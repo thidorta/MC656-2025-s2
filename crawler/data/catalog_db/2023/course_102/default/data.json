@@ -1,0 +1,1156 @@
+{
+  "course": {
+    "id": 102,
+    "name": "Engenharia de Produção (102)",
+    "code": "102"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9720",
+      "codigo": "NC103",
+      "nome": "Natureza e Tecnologia na Sociedade Contemporânea",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4019",
+      "codigo": "LE100",
+      "nome": "Desenho Técnico Assistido por Computador",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4020",
+      "codigo": "LE101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6884",
+      "codigo": "LE105",
+      "nome": "Introdução à Engenharia",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6885",
+      "codigo": "LE106",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4024",
+      "codigo": "LE200",
+      "nome": "Química Geral",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12133",
+      "codigo": "NC104",
+      "nome": "Introdução à Ciência dos Dados e à Informação",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4025",
+      "codigo": "LE201",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4026",
+      "codigo": "LE202",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4027",
+      "codigo": "LE203",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101",
+          "LE106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4031",
+      "codigo": "LE303",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4033",
+      "codigo": "LE400",
+      "nome": "Mecânica Geral",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101",
+          "LE106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4041",
+      "codigo": "LE500",
+      "nome": "Resistência dos Materiais",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 315"
+        ],
+        [
+          "LE400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9902",
+      "codigo": "NC301",
+      "nome": "Filosofia e Ciências Humanas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5195",
+      "codigo": "NC400",
+      "nome": "Noções de Administração e Gestão",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4022",
+      "codigo": "LE103",
+      "nome": "Oficinas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4028",
+      "codigo": "LE300",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4029",
+      "codigo": "LE301",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4030",
+      "codigo": "LE302",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4037",
+      "codigo": "LE404",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4038",
+      "codigo": "LE405",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE301",
+          "LE302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6903",
+      "codigo": "LE408",
+      "nome": "Termodinâmica I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE101",
+          "LE200"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10541",
+      "codigo": "LE409",
+      "nome": "Estatística e Probabilidade para Engenharia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10546",
+      "codigo": "ER402",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4044",
+      "codigo": "LE503",
+      "nome": "Tecnologia Mecânica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE100",
+          "LE103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4034",
+      "codigo": "LE401",
+      "nome": "Estrutura e Propriedade dos Materiais",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE200"
+        ],
+        [
+          "QG101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4035",
+      "codigo": "LE402",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE106",
+          "LE303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17701",
+      "codigo": "ER904",
+      "nome": "Inteligência Artificial Aplicada à Engenharia",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE303",
+          "LE409"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4039",
+      "codigo": "LE406",
+      "nome": "Eletrotécnica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4042",
+      "codigo": "LE501",
+      "nome": "Fenômenos de Transporte",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 320"
+        ],
+        [
+          "LE301",
+          "LE408"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6905",
+      "codigo": "LE504",
+      "nome": "Termodinâmica II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE408"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12137",
+      "codigo": "LE505",
+      "nome": "Pesquisa Operacional I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18005",
+      "codigo": "LE690",
+      "nome": "Metrologia Industrial",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10543",
+      "codigo": "ER201",
+      "nome": "Gestão Sustentável",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10547",
+      "codigo": "ER603",
+      "nome": "Noções Gerais dos Processos de Manufatura",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE503"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10544",
+      "codigo": "LE609",
+      "nome": "Fundamentos de Finanças e Custos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12140",
+      "codigo": "LE611",
+      "nome": "Pesquisa Operacional II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE505"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18008",
+      "codigo": "LE699",
+      "nome": "Operações Unitárias",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4059",
+      "codigo": "LE801",
+      "nome": "Planejamento e Controle de Produção",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE602"
+        ],
+        [
+          "LE703"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4053",
+      "codigo": "LE701",
+      "nome": "Gestão de Projetos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2560",
+      "codigo": "ER701",
+      "nome": "Simulação de Sistemas",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE303",
+          "LE409"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4055",
+      "codigo": "LE703",
+      "nome": "Sistemas Produtivos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10548",
+      "codigo": "ER704",
+      "nome": "Engenharia Econômica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ER402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17702",
+      "codigo": "ER905",
+      "nome": "Aplicação dos Materiais em Engenharia",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE401",
+          "LE500"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3264",
+      "codigo": "GL601",
+      "nome": "Estratégia e Planejamento",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18003",
+      "codigo": "LE207",
+      "nome": "Laboratório de Fluidos e Transferência de Calor",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ER600",
+          "LE501",
+          "LE504"
+        ],
+        [
+          "LE501",
+          "LE504",
+          "LE699"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18004",
+      "codigo": "LE619",
+      "nome": "Gestão da Qualidade",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18010",
+      "codigo": "LE906",
+      "nome": "Gestão do Desenvolvimento de Produto",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE701"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10549",
+      "codigo": "MG600",
+      "nome": "Gestão da Cadeia de Suprimentos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE409",
+          "LE703"
+        ],
+        [
+          "MG500"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6910",
+      "codigo": "ER808",
+      "nome": "Projeto de Fábrica",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE703"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10550",
+      "codigo": "ER903",
+      "nome": "Controle Estatístico da Qualidade",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE409",
+          "LE700"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4018",
+      "codigo": "LE012",
+      "nome": "Manutenção Industrial",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE103",
+          "LE406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18006",
+      "codigo": "LE691",
+      "nome": "Ergonomia e Saúde no Trabalho",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18009",
+      "codigo": "LE905",
+      "nome": "Planejamento de Experimento e Otimização de Processos",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ER903",
+          "LE409"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18011",
+      "codigo": "LE907",
+      "nome": "Estágio em Engenharia I",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18012",
+      "codigo": "LE917",
+      "nome": "Estágio em Engenharia II",
+      "creditos": 10,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE907"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6893",
+      "codigo": "NC202",
+      "nome": "Sociedade e Ambiente",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18089",
+      "codigo": "NC224",
+      "nome": "Biologia e cultura",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9519",
+      "codigo": "NC005",
+      "nome": "Tópicos Especiais em Humanidades V",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5189",
+      "codigo": "NC100",
+      "nome": "Ética e Cidadania",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18087",
+      "codigo": "NC222",
+      "nome": "Ciência e sociedade",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9518",
+      "codigo": "NC001",
+      "nome": "Tópicos Especiais em Humanidades I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14429",
+      "codigo": "NC007",
+      "nome": "Tópicos Especiais em Humanidades VII",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18086",
+      "codigo": "NC112",
+      "nome": "Linguagens e discursividades",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18088",
+      "codigo": "NC223",
+      "nome": "Tecnologia e sociedade",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11890",
+      "codigo": "NC003",
+      "nome": "Tópicos Especiais em Humanidades III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10364",
+      "codigo": "NC013",
+      "nome": "Fenomenologia, Ciência e Geografia",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10370",
+      "codigo": "NC020",
+      "nome": "O Utilitarismo e seus Críticos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12005",
+      "codigo": "NC004",
+      "nome": "Tópicos Especiais em Humanidades IV",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14413",
+      "codigo": "NC023",
+      "nome": "Estudos de Laboratório",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14430",
+      "codigo": "NC008",
+      "nome": "Tópicos Especiais em Humanidades VIII",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10362",
+      "codigo": "NC010",
+      "nome": "Cinema e Percepção Pública da Ciência",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10371",
+      "codigo": "NC502",
+      "nome": "Lógica",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10367",
+      "codigo": "NC017",
+      "nome": "Urbanização e Dinâmicas de Uso e Cobertura de Terra",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18091",
+      "codigo": "NC505",
+      "nome": "Debates Interdisciplinares em políticas, institucionalidades e inovação",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9520",
+      "codigo": "NC006",
+      "nome": "Tópicos Especiais em Humanidades VI",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10407",
+      "codigo": "NC002",
+      "nome": "Tópicos Especiais em Humanidades II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3640",
+      "codigo": "NC022",
+      "nome": "Quartas Interdisciplinares: Seminários de Pesquisa",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18090",
+      "codigo": "NC504",
+      "nome": "Debates Interdisciplinares em metabolismo, movimento e alimentação",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14414",
+      "codigo": "NC024",
+      "nome": "Fundamentos e Metodologias de Extensão Universitária",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10366",
+      "codigo": "NC016",
+      "nome": "Aplicações em Ciências Humanas e Sociais",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3642",
+      "codigo": "NC021",
+      "nome": "Etnografia e Interdisciplinaridade",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10369",
+      "codigo": "NC019",
+      "nome": "Sociedade da Informação",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18092",
+      "codigo": "NC506",
+      "nome": "Debates Interdisciplinares em processos técnicos e tecnologias",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17985",
+      "codigo": "LE014",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18001",
+      "codigo": "LE034",
+      "nome": "Projeto de Extensão Aplicado",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

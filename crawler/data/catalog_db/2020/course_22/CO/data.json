@@ -1,0 +1,1998 @@
+{
+  "course": {
+    "id": 22,
+    "name": "Música (22)",
+    "code": "22"
+  },
+  "modalidade": "CO",
+  "modalidade_label": "CO - Composição",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "CO",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4866",
+      "codigo": "MU120",
+      "nome": "Coral I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4879",
+      "codigo": "MU143",
+      "nome": "Iniciação à Composição I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5002",
+      "codigo": "MU360",
+      "nome": "História da Música I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU260"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4840",
+      "codigo": "MU058",
+      "nome": "Rítmica I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4857",
+      "codigo": "MU105",
+      "nome": "Estruturação Musical I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4919",
+      "codigo": "MU205",
+      "nome": "Estruturação Musical II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4928",
+      "codigo": "MU220",
+      "nome": "Coral II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU120"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4941",
+      "codigo": "MU243",
+      "nome": "Iniciação à Composição II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU143"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4975",
+      "codigo": "MU293",
+      "nome": "Percepção Musical II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU193"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5045",
+      "codigo": "MU460",
+      "nome": "História da Música II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9170",
+      "codigo": "MU049",
+      "nome": "Introdução à Pesquisa",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU058"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4864",
+      "codigo": "MU114",
+      "nome": "Análise I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4881",
+      "codigo": "MU146",
+      "nome": "Harmonia do Período Barroco",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4900",
+      "codigo": "MU171",
+      "nome": "Composição I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU243"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5018",
+      "codigo": "MU393",
+      "nome": "Percepção Musical III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU293"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5084",
+      "codigo": "MU560",
+      "nome": "História da Música III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU460"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4828",
+      "codigo": "MU035",
+      "nome": "Acústica Musical I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4842",
+      "codigo": "MU060",
+      "nome": "Rítmica III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU059"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5117",
+      "codigo": "MU660",
+      "nome": "História da Música IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU560"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4829",
+      "codigo": "MU036",
+      "nome": "Acústica Musical II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU035"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4843",
+      "codigo": "MU061",
+      "nome": "Rítmica IV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU060"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4925",
+      "codigo": "MU214",
+      "nome": "Análise II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU114"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4943",
+      "codigo": "MU246",
+      "nome": "Harmonia do Classicismo ao Romantismo",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU146"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4962",
+      "codigo": "MU271",
+      "nome": "Composição II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU171"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5060",
+      "codigo": "MU493",
+      "nome": "Percepção Musical IV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU393"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4994",
+      "codigo": "MU346",
+      "nome": "Harmonia do Romantismo ao Século XX",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU246"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5006",
+      "codigo": "MU371",
+      "nome": "Composição III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU271"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4876",
+      "codigo": "MU140",
+      "nome": "Instrumentação I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9176",
+      "codigo": "MU372",
+      "nome": "Port-Folio de Composição Musical I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU271"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4889",
+      "codigo": "MU155",
+      "nome": "Contraponto e Fuga I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9173",
+      "codigo": "MU189",
+      "nome": "Criação Musical com Novos Suportes Tecnológicos I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU036"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4911",
+      "codigo": "MU190",
+      "nome": "História da Música Brasileira I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4986",
+      "codigo": "MU314",
+      "nome": "Análise III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU214"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4973",
+      "codigo": "MU290",
+      "nome": "História da Música Brasileira II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU190"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5029",
+      "codigo": "MU414",
+      "nome": "Análise IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU314"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5037",
+      "codigo": "MU446",
+      "nome": "Harmonia do Século XX",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU346"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5048",
+      "codigo": "MU471",
+      "nome": "Composição IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU371"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4939",
+      "codigo": "MU240",
+      "nome": "Instrumentação II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU140"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9180",
+      "codigo": "MU472",
+      "nome": "Port-Folio de Composição Musical II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU372"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4951",
+      "codigo": "MU255",
+      "nome": "Contraponto e Fuga II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU155"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9174",
+      "codigo": "MU289",
+      "nome": "Criação Musical com Novos Suportes Tecnológicos II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU189"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4999",
+      "codigo": "MU355",
+      "nome": "Contraponto I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU255"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9177",
+      "codigo": "MU389",
+      "nome": "Criação Musical com Novos Suportes Tecnológicos III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU289"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5086",
+      "codigo": "MU571",
+      "nome": "Composição V",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU471"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9183",
+      "codigo": "MU572",
+      "nome": "Port-Folio de Composição Musical III",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU472"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4896",
+      "codigo": "MU165",
+      "nome": "Orquestração I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU240"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4958",
+      "codigo": "MU265",
+      "nome": "Orquestração II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU165"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5042",
+      "codigo": "MU455",
+      "nome": "Contraponto II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU355"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9181",
+      "codigo": "MU489",
+      "nome": "Criação Musical com Novos Suportes Tecnológicos IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU389"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5119",
+      "codigo": "MU671",
+      "nome": "Composição VI",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU571"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9185",
+      "codigo": "MU672",
+      "nome": "Port-Folio de Composição Musical IV",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU572"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5149",
+      "codigo": "MU771",
+      "nome": "Composição VII",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU671"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9187",
+      "codigo": "MU772",
+      "nome": "Port-Folio de Composição Musical V",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU672"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5175",
+      "codigo": "MU871",
+      "nome": "Composição VIII",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU771"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9188",
+      "codigo": "MU872",
+      "nome": "Port-Folio de Composição Musical VI",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU772"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5188",
+      "codigo": "MU999",
+      "nome": "Projeto Final de Graduação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "EL874"
+        ],
+        [
+          "MP601"
+        ],
+        [
+          "MP602"
+        ],
+        [
+          "MP603"
+        ],
+        [
+          "MP604"
+        ],
+        [
+          "MP605"
+        ],
+        [
+          "MU671"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4703",
+      "codigo": "MP401",
+      "nome": "Cordas IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4908",
+      "codigo": "MU186",
+      "nome": "Trombone I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4974",
+      "codigo": "MU292",
+      "nome": "Percussão II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU192"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5019",
+      "codigo": "MU394",
+      "nome": "Violão III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU294"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5062",
+      "codigo": "MU496",
+      "nome": "Canto IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU396"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4690",
+      "codigo": "MP301",
+      "nome": "Cordas III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4868",
+      "codigo": "MU123",
+      "nome": "Piano I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4931",
+      "codigo": "MU224",
+      "nome": "Cravo II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU124"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4991",
+      "codigo": "MU326",
+      "nome": "Viola III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU226"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5035",
+      "codigo": "MU427",
+      "nome": "Violoncelo IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4677",
+      "codigo": "MP201",
+      "nome": "Cordas II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4855",
+      "codigo": "MU103",
+      "nome": "Flauta I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4918",
+      "codigo": "MU204",
+      "nome": "Oboé II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4981",
+      "codigo": "MU306",
+      "nome": "Clarineta III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU206"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5027",
+      "codigo": "MU409",
+      "nome": "Violino IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU309"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4664",
+      "codigo": "MP101",
+      "nome": "Cordas I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4704",
+      "codigo": "MP402",
+      "nome": "Percussão IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4912",
+      "codigo": "MU192",
+      "nome": "Percussão I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4976",
+      "codigo": "MU294",
+      "nome": "Violão II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU194"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5020",
+      "codigo": "MU396",
+      "nome": "Canto III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU296"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4691",
+      "codigo": "MP302",
+      "nome": "Percussão III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4869",
+      "codigo": "MU124",
+      "nome": "Cravo I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4932",
+      "codigo": "MU226",
+      "nome": "Viola II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU126"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4992",
+      "codigo": "MU327",
+      "nome": "Violoncelo III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU227"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5055",
+      "codigo": "MU484",
+      "nome": "Trompete IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU384"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4678",
+      "codigo": "MP202",
+      "nome": "Percussão II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4856",
+      "codigo": "MU104",
+      "nome": "Oboé I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4920",
+      "codigo": "MU206",
+      "nome": "Clarineta II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4984",
+      "codigo": "MU309",
+      "nome": "Violino III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU209"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5031",
+      "codigo": "MU421",
+      "nome": "Contrabaixo IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4665",
+      "codigo": "MP102",
+      "nome": "Percussão I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4705",
+      "codigo": "MP403",
+      "nome": "Sopros IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4914",
+      "codigo": "MU194",
+      "nome": "Violão I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4977",
+      "codigo": "MU296",
+      "nome": "Canto II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU196"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5021",
+      "codigo": "MU402",
+      "nome": "Instrumento IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4692",
+      "codigo": "MP303",
+      "nome": "Sopros III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4870",
+      "codigo": "MU126",
+      "nome": "Viola I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4933",
+      "codigo": "MU227",
+      "nome": "Violoncelo II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU127"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5013",
+      "codigo": "MU384",
+      "nome": "Trompete III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU284"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5056",
+      "codigo": "MU486",
+      "nome": "Trombone IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU386"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4679",
+      "codigo": "MP203",
+      "nome": "Sopros II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4858",
+      "codigo": "MU106",
+      "nome": "Clarineta I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4923",
+      "codigo": "MU209",
+      "nome": "Violino II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4988",
+      "codigo": "MU321",
+      "nome": "Contrabaixo III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU221"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5032",
+      "codigo": "MU423",
+      "nome": "Piano IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4666",
+      "codigo": "MP103",
+      "nome": "Sopros I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4706",
+      "codigo": "MP404",
+      "nome": "Teclados IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4915",
+      "codigo": "MU196",
+      "nome": "Canto I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4978",
+      "codigo": "MU302",
+      "nome": "Instrumento III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5022",
+      "codigo": "MU403",
+      "nome": "Flauta IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4693",
+      "codigo": "MP304",
+      "nome": "Teclados III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4871",
+      "codigo": "MU127",
+      "nome": "Violoncelo I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4969",
+      "codigo": "MU284",
+      "nome": "Trompete II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU184"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5014",
+      "codigo": "MU386",
+      "nome": "Trombone III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU286"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5059",
+      "codigo": "MU492",
+      "nome": "Percussão IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU392"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4680",
+      "codigo": "MP204",
+      "nome": "Teclados II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4861",
+      "codigo": "MU109",
+      "nome": "Violino I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4929",
+      "codigo": "MU221",
+      "nome": "Contrabaixo II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU121"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4989",
+      "codigo": "MU323",
+      "nome": "Piano III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5033",
+      "codigo": "MU424",
+      "nome": "Cravo IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU324"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4667",
+      "codigo": "MP104",
+      "nome": "Teclados I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4707",
+      "codigo": "MP405",
+      "nome": "Voz IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP305"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4916",
+      "codigo": "MU202",
+      "nome": "Instrumento II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4979",
+      "codigo": "MU303",
+      "nome": "Flauta III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5023",
+      "codigo": "MU404",
+      "nome": "Oboé IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU304"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4694",
+      "codigo": "MP305",
+      "nome": "Voz III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4907",
+      "codigo": "MU184",
+      "nome": "Trompete I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4970",
+      "codigo": "MU286",
+      "nome": "Trombone II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU186"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5017",
+      "codigo": "MU392",
+      "nome": "Percussão III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU292"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5061",
+      "codigo": "MU494",
+      "nome": "Violão IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU394"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4681",
+      "codigo": "MP205",
+      "nome": "Voz II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MP105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4867",
+      "codigo": "MU121",
+      "nome": "Contrabaixo I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4930",
+      "codigo": "MU223",
+      "nome": "Piano II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU123"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4990",
+      "codigo": "MU324",
+      "nome": "Cravo III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU224"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5034",
+      "codigo": "MU426",
+      "nome": "Viola IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU326"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4668",
+      "codigo": "MP105",
+      "nome": "Voz I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4854",
+      "codigo": "MU102",
+      "nome": "Instrumento I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4917",
+      "codigo": "MU203",
+      "nome": "Flauta II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4980",
+      "codigo": "MU304",
+      "nome": "Oboé III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5024",
+      "codigo": "MU406",
+      "nome": "Clarineta IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "CO",
+      "prereqs": [
+        [
+          "MU306"
+        ]
+      ]
+    }
+  ]
+}

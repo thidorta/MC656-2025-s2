@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 52,
+    "name": "Ciências da Terra (52)",
+    "code": "52"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

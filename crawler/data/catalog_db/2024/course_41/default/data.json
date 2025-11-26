@@ -1,0 +1,1032 @@
+{
+  "course": {
+    "id": 41,
+    "name": "Engenharia Elétrica (41)",
+    "code": "41"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1343",
+      "codigo": "EA772",
+      "nome": "Circuitos Lógicos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18282",
+      "codigo": "F 259",
+      "nome": "Introdução à Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "F 159"
+        ],
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1336",
+      "codigo": "EA513",
+      "nome": "Circuitos Elétricos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1344",
+      "codigo": "EA773",
+      "nome": "Laboratório de Circuitos Lógicos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA772"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1337",
+      "codigo": "EA611",
+      "nome": "Circuitos II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1578",
+      "codigo": "EE300",
+      "nome": "Fundamentos da Física Moderna",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 228",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1346",
+      "codigo": "EA869",
+      "nome": "Introdução a Sistemas de Computação Digital",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA772",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1577",
+      "codigo": "EE103",
+      "nome": "Laboratório de Engenharia Elétrica I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1582",
+      "codigo": "EE410",
+      "nome": "Introdução à Ciência dos Materiais para Engenharia Elétrica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "845",
+      "codigo": "CE304",
+      "nome": "Direito",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18439",
+      "codigo": "EE523",
+      "nome": "Introdução à Teoria Eletromagnética",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17180",
+      "codigo": "EE533",
+      "nome": "Eletrônica Básica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513"
+        ],
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4440",
+      "codigo": "ME323",
+      "nome": "Introdução aos Modelos Probabilísticos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1579",
+      "codigo": "EE301",
+      "nome": "Laboratório de Fundamentos Físicos para a Engenharia Elétrica",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 229"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1581",
+      "codigo": "EE400",
+      "nome": "Métodos da Engenharia Elétrica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1338",
+      "codigo": "EA614",
+      "nome": "Análise de Sinais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18440",
+      "codigo": "EE541",
+      "nome": "Teoria Eletromagnética",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE400",
+          "EE523"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1339",
+      "codigo": "EA616",
+      "nome": "Análise Linear de Sistemas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513",
+          "EE400",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1340",
+      "codigo": "EA619",
+      "nome": "Laboratório de Análise Linear",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513",
+          "EE400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6771",
+      "codigo": "EE534",
+      "nome": "Laboratório de Eletrônica Aplicada",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1602",
+      "codigo": "EE881",
+      "nome": "Princípios de Comunicações I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA614",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17175",
+      "codigo": "EA701",
+      "nome": "Introdução aos Sistemas Embarcados",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA773",
+          "EA869"
+        ],
+        [
+          "EA773",
+          "MC404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1585",
+      "codigo": "EE522",
+      "nome": "Laboratório de Eletromagnetismo",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE103",
+          "F 228",
+          "F 229",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18441",
+      "codigo": "EE642",
+      "nome": "Eletrônica II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2634",
+      "codigo": "ET520",
+      "nome": "Princípios de Conversão de Energia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA611",
+          "EE521"
+        ],
+        [
+          "EA611",
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2635",
+      "codigo": "ET521",
+      "nome": "Laboratório de Princípios de Conversão de Energia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA611",
+          "EE521"
+        ],
+        [
+          "EA611",
+          "F 328",
+          "F 428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1320",
+      "codigo": "EA044",
+      "nome": "Planejamento e Análise de Sistemas de Produção",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "MA327",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1342",
+      "codigo": "EA722",
+      "nome": "Laboratório de Controle e Servomecanismo",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA616",
+          "EA619"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17176",
+      "codigo": "EA801",
+      "nome": "Laboratório de Projetos de Sistemas Embarcados",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA701",
+          "EE533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1592",
+      "codigo": "EE641",
+      "nome": "Laboratório de Eletrônica Básica II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE531",
+          "EE640"
+        ],
+        [
+          "EE533",
+          "EE640"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1603",
+      "codigo": "EE882",
+      "nome": "Laboratório de Comunicações I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE881"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2637",
+      "codigo": "ET620",
+      "nome": "Máquinas Elétricas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2638",
+      "codigo": "ET621",
+      "nome": "Laboratório de Máquinas Elétricas",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET520",
+          "ET521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1341",
+      "codigo": "EA721",
+      "nome": "Princípios de Controle e Servomecanismo",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA616"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2110",
+      "codigo": "EM524",
+      "nome": "Fenômenos de Transporte",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 228",
+          "F 229"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2639",
+      "codigo": "ET720",
+      "nome": "Sistemas de Energia Elétrica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5343",
+      "codigo": "QG101",
+      "nome": "Química I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15751",
+      "codigo": "ET911",
+      "nome": "Projeto de instalações elétricas I (industrial)",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "890",
+      "codigo": "CE738",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1597",
+      "codigo": "EE833",
+      "nome": "Eletrônica de Potência",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE530"
+        ],
+        [
+          "EE533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "896",
+      "codigo": "CE838",
+      "nome": "Contabilidade para Engenharia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EC306"
+        ],
+        [
+          "MA311"
+        ],
+        [
+          "CE151"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15577",
+      "codigo": "EA018",
+      "nome": "Trabalho de Fim de Curso I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2101",
+      "codigo": "EM423",
+      "nome": "Resistência dos Materiais",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 313"
+        ],
+        [
+          "F 315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15578",
+      "codigo": "EA019",
+      "nome": "Trabalho de Fim de Curso II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 13,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA018"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "631",
+      "codigo": "BE310",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 13,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1567",
+      "codigo": "EE017",
+      "nome": "Estágio em Empresa",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1565",
+      "codigo": "EE015",
+      "nome": "Estágio Científico e Tecnológico I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1566",
+      "codigo": "EE016",
+      "nome": "Estágio Científico e Tecnológico II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE015"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6227",
+      "codigo": "HZ293",
+      "nome": "Tópicos Especiais de Humanidades III",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3301",
+      "codigo": "GT001",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3305",
+      "codigo": "HG023",
+      "nome": "Introdução à Filosofia da Ciência",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3739",
+      "codigo": "HZ291",
+      "nome": "Tópicos Especiais de Humanidades I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3740",
+      "codigo": "HZ292",
+      "nome": "Tópicos Especiais de Humanidades II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18445",
+      "codigo": "EE758",
+      "nome": "Comunicações Ópticas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE541"
+        ],
+        [
+          "EE756",
+          "EE881"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18443",
+      "codigo": "EE756",
+      "nome": "Linhas de Transmissão",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE522"
+        ],
+        [
+          "EE541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18444",
+      "codigo": "EE757",
+      "nome": "Antenas e Propagação",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE541"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "course": {
+    "id": 22,
+    "name": "Música (22)",
+    "code": "22"
+  },
+  "modalidade": "PP",
+  "modalidade_label": "PP - Percussão - Música Popular",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "PP",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4665",
+      "codigo": "MP102",
+      "nome": "Percussão I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4672",
+      "codigo": "MP140",
+      "nome": "História e Linguagem da Música Popular I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4674",
+      "codigo": "MP150",
+      "nome": "Música e Tecnologia I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4840",
+      "codigo": "MU058",
+      "nome": "Rítmica I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4857",
+      "codigo": "MU105",
+      "nome": "Estruturação Musical I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4975",
+      "codigo": "MU293",
+      "nome": "Percepção Musical II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU193"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4678",
+      "codigo": "MP202",
+      "nome": "Percussão II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4685",
+      "codigo": "MP240",
+      "nome": "História e Linguagem da Música Popular II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP140"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4687",
+      "codigo": "MP250",
+      "nome": "Música e Tecnologia II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP150"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9170",
+      "codigo": "MU049",
+      "nome": "Introdução à Pesquisa",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU058"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4919",
+      "codigo": "MU205",
+      "nome": "Estruturação Musical II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4670",
+      "codigo": "MP120",
+      "nome": "Prática Instrumental I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5018",
+      "codigo": "MU393",
+      "nome": "Percepção Musical III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU293"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4671",
+      "codigo": "MP130",
+      "nome": "Harmonia I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4683",
+      "codigo": "MP220",
+      "nome": "Prática Instrumental II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP120"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4691",
+      "codigo": "MP302",
+      "nome": "Percussão III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4698",
+      "codigo": "MP340",
+      "nome": "História e Linguagem da Música Popular III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP240"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4842",
+      "codigo": "MU060",
+      "nome": "Rítmica III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU059"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5060",
+      "codigo": "MU493",
+      "nome": "Percepção Musical IV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU393"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4684",
+      "codigo": "MP230",
+      "nome": "Harmonia II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP130"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4696",
+      "codigo": "MP320",
+      "nome": "Prática Instrumental III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP220"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4704",
+      "codigo": "MP402",
+      "nome": "Percussão IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP302"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4711",
+      "codigo": "MP440",
+      "nome": "História e Linguagem da Música Popular IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP340"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4713",
+      "codigo": "MP450",
+      "nome": "Música e Tecnologia IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP250"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4843",
+      "codigo": "MU061",
+      "nome": "Rítmica IV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU060"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4862",
+      "codigo": "MU111",
+      "nome": "Música Industrializada I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4875",
+      "codigo": "MU132",
+      "nome": "Trilhas Sonoras I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "PP",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4669",
+      "codigo": "MP110",
+      "nome": "Arranjo I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4697",
+      "codigo": "MP330",
+      "nome": "Harmonia III",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4709",
+      "codigo": "MP420",
+      "nome": "Prática Instrumental IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP320"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4717",
+      "codigo": "MP502",
+      "nome": "Percussão V",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4727",
+      "codigo": "MP602",
+      "nome": "Percussão VI",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4936",
+      "codigo": "MU231",
+      "nome": "Música Industrializada II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4937",
+      "codigo": "MU232",
+      "nome": "Trilhas Sonoras II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MU132"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4682",
+      "codigo": "MP210",
+      "nome": "Arranjo II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4710",
+      "codigo": "MP430",
+      "nome": "Harmonia IV",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP330"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4722",
+      "codigo": "MP520",
+      "nome": "Prática Instrumental V",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP420"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4732",
+      "codigo": "MP620",
+      "nome": "Prática Instrumental VI",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4737",
+      "codigo": "MP702",
+      "nome": "Percussão VII",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP602"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4744",
+      "codigo": "MP802",
+      "nome": "Percussão VIII",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "MP702"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5188",
+      "codigo": "MU999",
+      "nome": "Projeto Final de Graduação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "PP",
+      "prereqs": [
+        [
+          "EL874"
+        ],
+        [
+          "MP601"
+        ],
+        [
+          "MP602"
+        ],
+        [
+          "MP603"
+        ],
+        [
+          "MP604"
+        ],
+        [
+          "MP605"
+        ],
+        [
+          "MU671"
+        ]
+      ]
+    }
+  ]
+}

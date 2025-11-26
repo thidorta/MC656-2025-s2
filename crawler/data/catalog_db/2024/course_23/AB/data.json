@@ -1,0 +1,797 @@
+{
+  "course": {
+    "id": 23,
+    "name": "Dança (23)",
+    "code": "23"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Licenciatura em Artes - Dança",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "AB",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "15139",
+      "codigo": "AD136",
+      "nome": "Dança do Brasil I: corpo e contexto",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "478",
+      "codigo": "AR101",
+      "nome": "Fundamentos Filosóficos da Arte Educação",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18253",
+      "codigo": "AD002",
+      "nome": "História da Dança Cênica Ocidental I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6707",
+      "codigo": "BA123",
+      "nome": "Anatomia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11030",
+      "codigo": "AD013",
+      "nome": "Ateliê de Prática e Ensino da Dança I",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "115",
+      "codigo": "AD021",
+      "nome": "Ateliê de Criação I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "121",
+      "codigo": "AD030",
+      "nome": "Ateliê de Produção Cênica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "122",
+      "codigo": "AD041",
+      "nome": "Técnica I: Investigação e Percepção",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15230",
+      "codigo": "AD036",
+      "nome": "Técnica II: Investigação e Percepção",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD041"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15232",
+      "codigo": "AD038",
+      "nome": "Técnica IX Estudos Técnicos de Dança Clássica I: Passado e Presente",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD041"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "650",
+      "codigo": "BF223",
+      "nome": "Fisiologia do Movimento",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD116"
+        ],
+        [
+          "BA123"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18340",
+      "codigo": "AD003",
+      "nome": "História da Dança Cênica Ocidental II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD002"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10584",
+      "codigo": "AD014",
+      "nome": "Ateliê de Prática e Ensino da Dança II",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD013"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11129",
+      "codigo": "AD015",
+      "nome": "Dança do Brasil II: Prática e Ensino",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD136"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "116",
+      "codigo": "AD022",
+      "nome": "Ateliê de Criação II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD021"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15131",
+      "codigo": "AD018",
+      "nome": "Técnica III: Prática, Análise e Ensino da Dança",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD036"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1757",
+      "codigo": "EF920",
+      "nome": "Cinesiologia I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15132",
+      "codigo": "AD019",
+      "nome": "Técnica X: Estudos Técnicos de Dança Clássica II: Tradição e contemporaneidade",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD038"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "117",
+      "codigo": "AD023",
+      "nome": "Ateliê de Criação III",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD022"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15134",
+      "codigo": "AD057",
+      "nome": "Atividade Científico Cultural I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15140",
+      "codigo": "AD137",
+      "nome": "Dança do Brasil III: desierarquização de saberes",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD015"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "484",
+      "codigo": "AR301",
+      "nome": "Psicologia do Desenvolvimento Aplicado às Artes I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18254",
+      "codigo": "AD004",
+      "nome": "História da Dança Cênica no Brasil",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD003"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "152",
+      "codigo": "AD213",
+      "nome": "Introdução à Metodologia de Pesquisa",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1758",
+      "codigo": "EF921",
+      "nome": "Cinesiologia II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF920"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11130",
+      "codigo": "AD017",
+      "nome": "Ateliê de Criação IV: Prática e Ensino",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD023"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15231",
+      "codigo": "AD037",
+      "nome": "Técnica IV: Prática e Análise",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD018"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15233",
+      "codigo": "AD039",
+      "nome": "Técnica XI: Estudos Técnicos de Dança Clássica III: Transformações e Rupturas",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD019"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15238",
+      "codigo": "AD138",
+      "nome": "Dança do Brasil IV: vivências de alteridade",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD137"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "126",
+      "codigo": "AD045",
+      "nome": "Técnica V: Variação e Exploração",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD036",
+          "AD037"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "138",
+      "codigo": "AD071",
+      "nome": "Estágio I",
+      "creditos": 7,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AR101",
+          "AR301",
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10583",
+      "codigo": "AR601",
+      "nome": "Processos Pedagógicos Voltados para o Corpo na Arte",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15133",
+      "codigo": "AD027",
+      "nome": "Ateliê de Criação Dança e Novas Tecnologias",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD017"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15135",
+      "codigo": "AD058",
+      "nome": "Atividade Científico Cultural II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "139",
+      "codigo": "AD072",
+      "nome": "Estágio II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD071"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15237",
+      "codigo": "AD128",
+      "nome": "Visualidades na Dança",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD017",
+          "AD037",
+          "AD138",
+          "AD601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14288",
+      "codigo": "AD621",
+      "nome": "Pedagogia e Didática da Dança",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "120",
+      "codigo": "AD026",
+      "nome": "Ateliê de Criação VI",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD017"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15234",
+      "codigo": "AD040",
+      "nome": "Técnica VI: Variação e Exploração",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD037"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "128",
+      "codigo": "AD047",
+      "nome": "Técnica VII: Expressão e Integração",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD040"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15137",
+      "codigo": "AD063",
+      "nome": "Trabalho de Conclusão de Curso em Dança I",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD014",
+          "AD019",
+          "AD026",
+          "AD027",
+          "AD030",
+          "AD040",
+          "AD045",
+          "AD138"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15138",
+      "codigo": "AD065",
+      "nome": "Extensão I: Planejamento e gestão de projetos de dança",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD014",
+          "AD019",
+          "AD026",
+          "AD027",
+          "AD030",
+          "AD040",
+          "AD045",
+          "AD138"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14289",
+      "codigo": "AD083",
+      "nome": "Trabalho de Conclusão de Curso I: Licenciatura em Dança",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD013",
+          "AD026",
+          "AD030",
+          "AD046",
+          "AD072",
+          "AD435",
+          "EL874"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15235",
+      "codigo": "AD064",
+      "nome": "Trabalho de Conclusão de Curso em Dança  II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD063",
+          "AD065"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15236",
+      "codigo": "AD066",
+      "nome": "Extensão II: Realização e Difusão de Projetos Artísticos em Dança",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD063",
+          "AD065"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14290",
+      "codigo": "AD084",
+      "nome": "Trabalho de Conclusão de Curso II: Licenciatura em Dança",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD081"
+        ],
+        [
+          "AD083"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18339",
+      "codigo": "AD001",
+      "nome": "Técnica VIII: Expressão e Integração",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "AD047"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15136",
+      "codigo": "AD059",
+      "nome": "Atividade Científico Cultural III",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": []
+    }
+  ]
+}

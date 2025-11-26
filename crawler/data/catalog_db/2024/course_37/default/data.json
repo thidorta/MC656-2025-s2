@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 37,
+    "name": "Curso Superior de Tecnologia da Construção Civil (37)",
+    "code": "37"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

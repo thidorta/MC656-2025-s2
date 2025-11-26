@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 85,
+    "name": "Superior de Tecnologia Ambiental (85)",
+    "code": "85"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

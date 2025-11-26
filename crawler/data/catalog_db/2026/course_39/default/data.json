@@ -1,0 +1,1231 @@
+{
+  "course": {
+    "id": 39,
+    "name": "Engenharia Química (39)",
+    "code": "39"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2026,
+  "parameters": {
+    "catalogo": "2026",
+    "modalidade": "",
+    "periodo": "20262",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "845",
+      "codigo": "CE304",
+      "nome": "Direito",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17673",
+      "codigo": "EQ210",
+      "nome": "Modelagem em Engenharia 1",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5371",
+      "codigo": "QI242",
+      "nome": "Química Inorgânica Teórica",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101",
+          "QG102"
+        ],
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5373",
+      "codigo": "QI244",
+      "nome": "Química Inorgânica Experimental",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101",
+          "QG102"
+        ],
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17674",
+      "codigo": "EQ211",
+      "nome": "Balanços Macroscópicos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ210",
+          "MA111"
+        ],
+        [
+          "EQ101",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17675",
+      "codigo": "EQ212",
+      "nome": "Sistemas Biológicos 1",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17676",
+      "codigo": "EQ213",
+      "nome": "Modelos Cinéticos e Termodinâmicos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ201",
+          "MA211",
+          "MC102"
+        ],
+        [
+          "EQ211",
+          "MA211",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17677",
+      "codigo": "EQ214",
+      "nome": "Sistemas Biológicos 2",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ212",
+          "MA211"
+        ],
+        [
+          "EQ583",
+          "EQ712",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17683",
+      "codigo": "EQ220",
+      "nome": "Métodos Numéricos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141",
+          "MA211",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18730",
+      "codigo": "QA317",
+      "nome": "Química Analítica (Engenharia Química)",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101"
+        ],
+        [
+          "QI242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5402",
+      "codigo": "QO427",
+      "nome": "Química Orgânica I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18282",
+      "codigo": "F 259",
+      "nome": "Introdução à Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "F 159"
+        ],
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18731",
+      "codigo": "QA318",
+      "nome": "Química Analítica Experimental (Engenharia Química)",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA317",
+          "QG101",
+          "QG102"
+        ],
+        [
+          "QA317",
+          "QI244"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5396",
+      "codigo": "QO327",
+      "nome": "Química Orgânica II (Engenharia Química)",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO427"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17678",
+      "codigo": "EQ215",
+      "nome": "Materiais e suas aplicações",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QI242"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17685",
+      "codigo": "EQ230",
+      "nome": "Método científico e planejamento de experimentos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ213",
+          "F 259",
+          "MA141",
+          "QI244"
+        ],
+        [
+          "EQ213",
+          "F 329",
+          "MA141",
+          "QI244"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17687",
+      "codigo": "EQ240",
+      "nome": "Engenharia e Sociedade 1",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CE304",
+          "EQ210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4440",
+      "codigo": "ME323",
+      "nome": "Introdução aos Modelos Probabilísticos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17679",
+      "codigo": "EQ216",
+      "nome": "Balanços Microscópicos 1",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ201",
+          "MA311"
+        ],
+        [
+          "EQ211",
+          "EQ220",
+          "F 328",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17680",
+      "codigo": "EQ217",
+      "nome": "Equilíbrio de fases e Equilíbrio Químico",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ211",
+          "EQ213",
+          "EQ220"
+        ],
+        [
+          "EQ415"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17688",
+      "codigo": "EQ241",
+      "nome": "Engenharia e Sociedade 2",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ240"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17684",
+      "codigo": "EQ221",
+      "nome": "Análise Sistêmica de Processos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ201",
+          "EQ502"
+        ],
+        [
+          "EQ210",
+          "EQ211",
+          "EQ220"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17686",
+      "codigo": "EQ231",
+      "nome": "Laboratório de Integração",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17681",
+      "codigo": "EQ218",
+      "nome": "Balanços Microscópicos 2",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ216"
+        ],
+        [
+          "EQ502",
+          "EQ541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17689",
+      "codigo": "EQ242",
+      "nome": "Engenharia e Sociedade 3",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ241"
+        ],
+        [
+          "EQ201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17695",
+      "codigo": "EQ270",
+      "nome": "Simulação de Processos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ217",
+          "EQ220"
+        ],
+        [
+          "EQ712",
+          "EQ812"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17696",
+      "codigo": "EQ271",
+      "nome": "Otimização de Processos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ270"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17697",
+      "codigo": "EQ280",
+      "nome": "Engenharia e Sustentabilidade 1",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ213",
+          "EQ218",
+          "EQ241"
+        ],
+        [
+          "EQ651",
+          "EQ712",
+          "EQ741"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17682",
+      "codigo": "EQ219",
+      "nome": "Modelagem em Engenharia 2",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ214",
+          "EQ217",
+          "EQ218"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17690",
+      "codigo": "EQ250",
+      "nome": "Projeto de Processos 1",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ211",
+          "EQ214",
+          "EQ215",
+          "EQ217",
+          "EQ218",
+          "EQ241"
+        ],
+        [
+          "EQ712"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17691",
+      "codigo": "EQ251",
+      "nome": "Projeto de Processos 2",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ250"
+        ],
+        [
+          "EQ515",
+          "EQ741",
+          "EQ751"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17693",
+      "codigo": "EQ260",
+      "nome": "Operação de Processos 1",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ219",
+          "EQ221",
+          "MA141",
+          "MA311"
+        ],
+        [
+          "EQ502",
+          "EQ771"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17698",
+      "codigo": "EQ281",
+      "nome": "Engenharia e Sustentabilidade 2",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ280"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17692",
+      "codigo": "EQ252",
+      "nome": "Projeto de Processos 3",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ251"
+        ],
+        [
+          "EQ541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17694",
+      "codigo": "EQ261",
+      "nome": "Operação de Processos 2",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ260",
+          "EQ271"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17699",
+      "codigo": "EQ282",
+      "nome": "Análise de Riscos Industriais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ216",
+          "EQ218",
+          "EQ221"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2541",
+      "codigo": "EQ950",
+      "nome": "Introdução ao Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17672",
+      "codigo": "EQ202",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ240"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2490",
+      "codigo": "EQ004",
+      "nome": "Estágio de Engenharia Química II",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ201",
+          "EQ515",
+          "EQ651"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2496",
+      "codigo": "EQ050",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 9,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ812",
+          "EQ852",
+          "EQ861",
+          "EQ950"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2501",
+      "codigo": "EQ081",
+      "nome": "Tópicos em Engenharia de Segurança",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ751",
+          "EQ771"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11555",
+      "codigo": "EQ026",
+      "nome": "Tópicos em Tecnologia dos Materiais II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11693",
+      "codigo": "EQ022",
+      "nome": "Tópicos em Processos de Separação",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ852"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11554",
+      "codigo": "EQ025",
+      "nome": "Tópicos em Tecnologia dos Materiais I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11826",
+      "codigo": "EQ044",
+      "nome": "Tópicos em Automação de Processos Químicos II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ817"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11820",
+      "codigo": "EQ024",
+      "nome": "Tópicos em Fenômenos de Transporte, Sistemas Particulados e Meios Porosos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ651"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11819",
+      "codigo": "EQ023",
+      "nome": "Tópicos em Engenharia das Reações Químicas",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ812"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2498",
+      "codigo": "EQ061",
+      "nome": "Tópicos em Análise Técnico-Econômica",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ481",
+          "EQ791"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11695",
+      "codigo": "EQ045",
+      "nome": "Tópicos em Processos Químicos I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11697",
+      "codigo": "EQ048",
+      "nome": "Tópicos em Ferramentas Computacionais para Engenharia Química",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ481",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11556",
+      "codigo": "EQ036",
+      "nome": "Tópicos em Engenharia de Processos II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11696",
+      "codigo": "EQ047",
+      "nome": "Tópicos em Engenharia de Produtos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11827",
+      "codigo": "EQ046",
+      "nome": "Tópicos em Processos Químicos II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ852"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11824",
+      "codigo": "EQ037",
+      "nome": "Tópicos em Engenharia de Processos III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ852"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11825",
+      "codigo": "EQ043",
+      "nome": "Tópicos em Automação de Processos Químicos I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2500",
+      "codigo": "EQ071",
+      "nome": "Tópicos em Catálise",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ712"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2495",
+      "codigo": "EQ042",
+      "nome": "Qualidade na Engenharia Química",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2494",
+      "codigo": "EQ041",
+      "nome": "Tópicos em Projeto Químico",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ852"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11823",
+      "codigo": "EQ035",
+      "nome": "Tópicos em Engenharia de Processos I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11694",
+      "codigo": "EQ027",
+      "nome": "Tópicos em Engenharia de Bioprocessos I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11822",
+      "codigo": "EQ030",
+      "nome": "Tópicos em Engenharia Ambiental II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ861"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11818",
+      "codigo": "EQ029",
+      "nome": "Tópicos em Engenharia Ambiental I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11821",
+      "codigo": "EQ028",
+      "nome": "Tópicos em Engenharia de Bioprocessos II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ883"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2504",
+      "codigo": "EQ098",
+      "nome": "Tópicos em Engenharia de Processos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ651",
+          "EQ751",
+          "EQ852"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2499",
+      "codigo": "EQ062",
+      "nome": "Tópicos em Gestão Industrial",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ812",
+          "EQ852",
+          "EQ861"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12217",
+      "codigo": "EQ082",
+      "nome": "Tópicos em Análise de Risco",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ641"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2545",
+      "codigo": "EQ961",
+      "nome": "Tópicos em Energia",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EQ712",
+          "EQ791"
+        ]
+      ]
+    }
+  ]
+}

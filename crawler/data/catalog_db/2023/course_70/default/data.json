@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 70,
+    "name": "Curso de Música Composição e Regência (70)",
+    "code": "70"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

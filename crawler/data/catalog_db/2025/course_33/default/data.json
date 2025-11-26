@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 33,
+    "name": "Curso Superior de Tecnologia da Construção Civil - Obras de Solos (33)",
+    "code": "33"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

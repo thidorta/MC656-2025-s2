@@ -1,0 +1,778 @@
+{
+  "course": {
+    "id": 22,
+    "name": "Música (22)",
+    "code": "22"
+  },
+  "modalidade": "TB",
+  "modalidade_label": "TB - Trombone",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "TB",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4913",
+      "codigo": "MU193",
+      "nome": "Percepção Musical I",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5002",
+      "codigo": "MU360",
+      "nome": "História da Música I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU260"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4840",
+      "codigo": "MU058",
+      "nome": "Rítmica I",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4857",
+      "codigo": "MU105",
+      "nome": "Estruturação Musical I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4866",
+      "codigo": "MU120",
+      "nome": "Coral I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4905",
+      "codigo": "MU179",
+      "nome": "Prática Orquestral I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4908",
+      "codigo": "MU186",
+      "nome": "Trombone I",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4970",
+      "codigo": "MU286",
+      "nome": "Trombone II",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU186"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4975",
+      "codigo": "MU293",
+      "nome": "Percepção Musical II",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU193"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9170",
+      "codigo": "MU049",
+      "nome": "Introdução à Pesquisa",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5045",
+      "codigo": "MU460",
+      "nome": "História da Música II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4841",
+      "codigo": "MU059",
+      "nome": "Rítmica II",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU058"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4919",
+      "codigo": "MU205",
+      "nome": "Estruturação Musical II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4928",
+      "codigo": "MU220",
+      "nome": "Coral II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU120"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4967",
+      "codigo": "MU279",
+      "nome": "Prática Orquestral II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU179"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4904",
+      "codigo": "MU178",
+      "nome": "Música de Câmera I",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5011",
+      "codigo": "MU379",
+      "nome": "Prática Orquestral III",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU279"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5014",
+      "codigo": "MU386",
+      "nome": "Trombone III",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU286"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5018",
+      "codigo": "MU393",
+      "nome": "Percepção Musical III",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU293"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4842",
+      "codigo": "MU060",
+      "nome": "Rítmica III",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU059"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5084",
+      "codigo": "MU560",
+      "nome": "História da Música III",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU460"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4864",
+      "codigo": "MU114",
+      "nome": "Análise I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4881",
+      "codigo": "MU146",
+      "nome": "Harmonia do Período Barroco",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5117",
+      "codigo": "MU660",
+      "nome": "História da Música IV",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU560"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4925",
+      "codigo": "MU214",
+      "nome": "Análise II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU114"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4943",
+      "codigo": "MU246",
+      "nome": "Harmonia do Classicismo ao Romantismo",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU146"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4966",
+      "codigo": "MU278",
+      "nome": "Música de Câmera II",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU178"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5053",
+      "codigo": "MU479",
+      "nome": "Prática Orquestral IV",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU379"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5056",
+      "codigo": "MU486",
+      "nome": "Trombone IV",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU386"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5060",
+      "codigo": "MU493",
+      "nome": "Percepção Musical IV",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU393"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4843",
+      "codigo": "MU061",
+      "nome": "Rítmica IV",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU060"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5010",
+      "codigo": "MU378",
+      "nome": "Música de Câmera III",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU278"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5090",
+      "codigo": "MU579",
+      "nome": "Prática Orquestral V",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU479"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5093",
+      "codigo": "MU586",
+      "nome": "Trombone V",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU486"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4911",
+      "codigo": "MU190",
+      "nome": "História da Música Brasileira I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU360"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4986",
+      "codigo": "MU314",
+      "nome": "Análise III",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU214"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4994",
+      "codigo": "MU346",
+      "nome": "Harmonia do Romantismo ao Século XX",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU246"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5037",
+      "codigo": "MU446",
+      "nome": "Harmonia do Século XX",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU346"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5052",
+      "codigo": "MU478",
+      "nome": "Música de Câmera IV",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU378"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5123",
+      "codigo": "MU679",
+      "nome": "Prática Orquestral VI",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU579"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5126",
+      "codigo": "MU686",
+      "nome": "Trombone VI",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU586"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "16223",
+      "codigo": "MP106",
+      "nome": "Atividades complementares I",
+      "creditos": 7,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4973",
+      "codigo": "MU290",
+      "nome": "História da Música Brasileira II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU190"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5029",
+      "codigo": "MU414",
+      "nome": "Análise IV",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU314"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5151",
+      "codigo": "MU779",
+      "nome": "Prática Orquestral VII",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU679"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5153",
+      "codigo": "MU786",
+      "nome": "Trombone VII",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU686"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "16224",
+      "codigo": "MP107",
+      "nome": "Atividades complementares II",
+      "creditos": 7,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MP106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5177",
+      "codigo": "MU879",
+      "nome": "Prática Orquestral VIII",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU779"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5179",
+      "codigo": "MU886",
+      "nome": "Trombone VIII",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU786"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5187",
+      "codigo": "MU998",
+      "nome": "Recital",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "TB",
+      "prereqs": [
+        [
+          "MU448"
+        ],
+        [
+          "MU603"
+        ],
+        [
+          "MU604"
+        ],
+        [
+          "MU606"
+        ],
+        [
+          "MU609"
+        ],
+        [
+          "MU621"
+        ],
+        [
+          "MU623"
+        ],
+        [
+          "MU624"
+        ],
+        [
+          "MU626"
+        ],
+        [
+          "MU627"
+        ],
+        [
+          "MU684"
+        ],
+        [
+          "MU686"
+        ],
+        [
+          "MU692"
+        ],
+        [
+          "MU694"
+        ],
+        [
+          "MU696"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "course": {
+    "id": 200,
+    "name": "Programa de Formação Interdisciplinar Superior - ProFIS (200)",
+    "code": "200"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2018,
+  "parameters": {
+    "catalogo": "2018",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "7183",
+      "codigo": "MA091",
+      "nome": "Matemática Básica",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7184",
+      "codigo": "QG191",
+      "nome": "Química",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7179",
+      "codigo": "BG091",
+      "nome": "Evolução",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7181",
+      "codigo": "TL106",
+      "nome": "Textos Fundamentais de Literatura",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7178",
+      "codigo": "EF091",
+      "nome": "Atividade Física, Promoção da Saúde e Qualidade de Vida",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7182",
+      "codigo": "GM091",
+      "nome": "Planeta Terra",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9755",
+      "codigo": "LA083",
+      "nome": "Leitura e Produção de Textos Acadêmicos I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7185",
+      "codigo": "LA091",
+      "nome": "Língua Inglesa I",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9947",
+      "codigo": "LA084",
+      "nome": "Leitura e Produção de Textos Acadêmicos II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA083"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "8754",
+      "codigo": "LA092",
+      "nome": "Língua Inglesa II",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA091"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12158",
+      "codigo": "MA093",
+      "nome": "Matemática Básica 2",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8758",
+      "codigo": "BF092",
+      "nome": "O Corpo Humano",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8755",
+      "codigo": "EN092",
+      "nome": "Primeiros Socorros",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8761",
+      "codigo": "FI092",
+      "nome": "Física",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8760",
+      "codigo": "HH092",
+      "nome": "Introdução à História",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9091",
+      "codigo": "MD163",
+      "nome": "Ética e Bioética I",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9215",
+      "codigo": "ME093",
+      "nome": "Introdução à Estatística",
+      "creditos": 6,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9228",
+      "codigo": "PF093",
+      "nome": "Introdução à Prática de Ciências e Artes I",
+      "creditos": 8,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9230",
+      "codigo": "PF095",
+      "nome": "As Profissões",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9225",
+      "codigo": "CS093",
+      "nome": "Comunicação, Arte, Cultura e Sociedade",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3301",
+      "codigo": "GT001",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9222",
+      "codigo": "LA093",
+      "nome": "Língua Inglesa III",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA092"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9223",
+      "codigo": "LA094",
+      "nome": "Língua Inglesa IV",
+      "creditos": 3,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA093"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4149",
+      "codigo": "MC001",
+      "nome": "Tecnologias da Informação",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9229",
+      "codigo": "PF094",
+      "nome": "Introdução à Prática de Ciências e Artes II",
+      "creditos": 8,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9231",
+      "codigo": "PF096",
+      "nome": "Introdução à Economia",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9109",
+      "codigo": "CV043",
+      "nome": "Engenharia do Ambiente",
+      "creditos": 2,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9097",
+      "codigo": "EP094",
+      "nome": "Juventudes, Cidadania e Psicologia",
+      "creditos": 4,
+      "catalogo": 2018,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

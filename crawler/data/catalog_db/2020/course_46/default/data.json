@@ -1,0 +1,736 @@
+{
+  "course": {
+    "id": 46,
+    "name": "Licenciatura em Ciências Biológicas (46)",
+    "code": "46"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9751",
+      "codigo": "BZ183",
+      "nome": "Sistemática Zoológica e Biodiversidade",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5346",
+      "codigo": "QG107",
+      "nome": "Química I (Biologia)",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9743",
+      "codigo": "BC183",
+      "nome": "Biologia Celular I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9747",
+      "codigo": "BG181",
+      "nome": "Introdução à Evolução",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14859",
+      "codigo": "BT285",
+      "nome": "Sistemática de Criptógamas e Gimnospermas",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14860",
+      "codigo": "BZ285",
+      "nome": "Zoologia de Invertebrados I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9972",
+      "codigo": "BB281",
+      "nome": "Bioquímica de Proteínas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9973",
+      "codigo": "BC283",
+      "nome": "Biologia Celular II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11144",
+      "codigo": "BL583",
+      "nome": "Construção de Mídias para o Ensino de Ciências e Biologia",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4763",
+      "codigo": "MS380",
+      "nome": "Matemática Aplicada para Biologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9977",
+      "codigo": "BB381",
+      "nome": "Metabolismo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10196",
+      "codigo": "BD692",
+      "nome": "Temas Transversais no Ensino de Biologia I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14861",
+      "codigo": "BT385",
+      "nome": "Morfologia e Anatomia de Angiospermas",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14862",
+      "codigo": "BZ385",
+      "nome": "Zoologia de Invertebrados II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BZ285"
+        ],
+        [
+          "BZ280"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9981",
+      "codigo": "BA480",
+      "nome": "Anatomia Humana Geral",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9982",
+      "codigo": "BF483",
+      "nome": "Biofísica e Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11737",
+      "codigo": "BG200",
+      "nome": "Bioestatística",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MS380"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "697",
+      "codigo": "BH482",
+      "nome": "Fundamentos da Biologia Tecidual",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14863",
+      "codigo": "BT485",
+      "nome": "Sistemática de Angiospermas I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BT382"
+        ],
+        [
+          "BT385"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "628",
+      "codigo": "BE180",
+      "nome": "Introdução à Ecologia",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9986",
+      "codigo": "BF583",
+      "nome": "Biofísica e Fisiologia Humana II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BF381"
+        ],
+        [
+          "BF483"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11739",
+      "codigo": "BL300",
+      "nome": "Introdução à Filosofia das Ciências Naturais",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9994",
+      "codigo": "BM720",
+      "nome": "Microbiologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2740",
+      "codigo": "F 107",
+      "nome": "Física (Biologia)",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9983",
+      "codigo": "BG481",
+      "nome": "Genética I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BG180"
+        ],
+        [
+          "BG181"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9990",
+      "codigo": "BH620",
+      "nome": "Embriologia Comparada",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BH282"
+        ],
+        [
+          "BH482"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9991",
+      "codigo": "BV620",
+      "nome": "Fisiologia Vegetal Geral: Metabolismo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14864",
+      "codigo": "BZ485",
+      "nome": "Zoologia de Vertebrados",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "632",
+      "codigo": "BE480",
+      "nome": "Ecologia Básica",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BE180"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14865",
+      "codigo": "BL036",
+      "nome": "Metodologia e Práticas de Ensino em Ciências e Biologia: Genética, Evolução e Vida na Terra",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9995",
+      "codigo": "BV720",
+      "nome": "Fisiologia Vegetal Geral: Desenvolvimento",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11372",
+      "codigo": "FN468",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3275",
+      "codigo": "GM280",
+      "nome": "Elementos de Geologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9987",
+      "codigo": "BG520",
+      "nome": "Genética Fisiológica e Molecular",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BG282"
+        ],
+        [
+          "BG481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14866",
+      "codigo": "BL037",
+      "nome": "Metodologia e Práticas de Ensino em Ciências e Biologia: Morfofisiologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11738",
+      "codigo": "BL600",
+      "nome": "Produção e Análise de Textos em Ciências Biológicas",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9996",
+      "codigo": "BP820",
+      "nome": "Zooparasitologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2005",
+      "codigo": "EL885",
+      "nome": "Estágio Supervisionado III",
+      "creditos": 13,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3278",
+      "codigo": "GM450",
+      "nome": "Fundamentos da Paleontologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6932",
+      "codigo": "BD520",
+      "nome": "Fundamentos Éticos para o Exercício Profissional do Biólogo",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9993",
+      "codigo": "BH780",
+      "nome": "Biologia do Desenvolvimento",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BG380",
+          "BH420"
+        ],
+        [
+          "BG520",
+          "BH620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9988",
+      "codigo": "BI520",
+      "nome": "Imunologia Básica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BC282"
+        ],
+        [
+          "BC283"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11141",
+      "codigo": "BL034",
+      "nome": "Metodologia e Práticas de Ensino em Biologia e Ciências da Natureza I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14867",
+      "codigo": "BT205",
+      "nome": "Biogeografia",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1927",
+      "codigo": "EL142",
+      "nome": "Tópicos Especiais em Ciências Sociais Aplicadas à Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1998",
+      "codigo": "EL876",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10198",
+      "codigo": "BD694",
+      "nome": "Temas Transversais no Ensino de Biologia II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9989",
+      "codigo": "BG680",
+      "nome": "Genética e Evolução",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BG380"
+        ],
+        [
+          "BG520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11139",
+      "codigo": "BL031",
+      "nome": "Metodologia e Prática de Ensino em Biologia IV: Doenças Infecciosas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11142",
+      "codigo": "BL035",
+      "nome": "Metodologia e Prática de Ensino em Biologia: Ecologia e Fauna",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "787",
+      "codigo": "BT681",
+      "nome": "Botânica Econômica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

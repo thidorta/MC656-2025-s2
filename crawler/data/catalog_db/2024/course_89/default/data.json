@@ -1,0 +1,899 @@
+{
+  "course": {
+    "id": 89,
+    "name": "Engenharia Ambiental (89)",
+    "code": "89"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9726",
+      "codigo": "EB102",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10080",
+      "codigo": "EB105",
+      "nome": "Biologia Geral",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9729",
+      "codigo": "EB106",
+      "nome": "Introdução à Engenharia Ambiental",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10090",
+      "codigo": "EB205",
+      "nome": "Metodologia Científica e Tecnológica",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10081",
+      "codigo": "EB201",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST101",
+          "ST201"
+        ],
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10082",
+      "codigo": "EB202",
+      "nome": "Química Geral",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10085",
+      "codigo": "EB207",
+      "nome": "Microbiologia Aplicada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB105"
+        ],
+        [
+          "ST107"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9727",
+      "codigo": "EB103",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9728",
+      "codigo": "EB104",
+      "nome": "Laboratório de Física I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17619",
+      "codigo": "EB307",
+      "nome": "Química Sanitária e Experimental",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17620",
+      "codigo": "EB308",
+      "nome": "Introdução à Extensão Universitária",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10096",
+      "codigo": "EB407",
+      "nome": "Climatologia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10083",
+      "codigo": "EB203",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST109"
+        ],
+        [
+          "EB103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10084",
+      "codigo": "EB204",
+      "nome": "Laboratório de Física II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB103",
+          "EB104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10086",
+      "codigo": "EB301",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10098",
+      "codigo": "EB404",
+      "nome": "Geologia e Pedologia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10095",
+      "codigo": "EB405",
+      "nome": "Mecânica dos Sólidos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB103",
+          "EB201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10087",
+      "codigo": "EB303",
+      "nome": "Expressão Gráfica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10092",
+      "codigo": "EB305",
+      "nome": "Química Orgânica Aplicada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB202"
+        ],
+        [
+          "ST108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10089",
+      "codigo": "EB306",
+      "nome": "Ética, Educação e Ambiente",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17631",
+      "codigo": "EB807",
+      "nome": "Introdução à Administração de Organizações",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10097",
+      "codigo": "EB302",
+      "nome": "Algoritmos e Programação e Computadores I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10094",
+      "codigo": "EB402",
+      "nome": "Fenômenos de Transporte",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB203",
+          "EB301"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10102",
+      "codigo": "EB403",
+      "nome": "Estatística",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10099",
+      "codigo": "EB502",
+      "nome": "Topografia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB303"
+        ],
+        [
+          "ST103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10100",
+      "codigo": "EB504",
+      "nome": "Resistência dos Materiais I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB201",
+          "EB405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18150",
+      "codigo": "TT219",
+      "nome": "Fundamentos de  Eletricidade",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10103",
+      "codigo": "EB406",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10104",
+      "codigo": "EB501",
+      "nome": "Hidráulica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10105",
+      "codigo": "EB503",
+      "nome": "Mecânica dos Solos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB404",
+          "ST101",
+          "ST201"
+        ],
+        [
+          "EB101",
+          "EB404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14232",
+      "codigo": "EB941",
+      "nome": "Hidrologia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB403",
+          "EB938"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10106",
+      "codigo": "EB505",
+      "nome": "Ecologia Geral e Aplicada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB105"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10107",
+      "codigo": "EB506",
+      "nome": "Saúde Ambiental",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB207"
+        ],
+        [
+          "ST207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10108",
+      "codigo": "EB601",
+      "nome": "Hidráulica II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10111",
+      "codigo": "EB705",
+      "nome": "Recursos Energéticos e Meio Ambiente",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10112",
+      "codigo": "EB706",
+      "nome": "Recuperação de Áreas Degradadas",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17628",
+      "codigo": "EB708",
+      "nome": "Introdução à Economia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10113",
+      "codigo": "EB602",
+      "nome": "Operações Unitárias",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17627",
+      "codigo": "EB707",
+      "nome": "Sistemas de Abastecimento e Tratamento de Água",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17629",
+      "codigo": "EB709",
+      "nome": "Atmosfera: Qualidade e Monitoramento",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17632",
+      "codigo": "EB808",
+      "nome": "Qualidade do Solo e gerenciamento de áreas contaminadas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17633",
+      "codigo": "EB810",
+      "nome": "Hidrogeologia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB404",
+          "EB407",
+          "EB502"
+        ],
+        [
+          "EB502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10101",
+      "codigo": "EB604",
+      "nome": "Toxicologia Regulatória",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB304"
+        ],
+        [
+          "ST405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17630",
+      "codigo": "EB806",
+      "nome": "Sistemas de Esgotamento e Tratamento de Águas Residuárias",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10120",
+      "codigo": "EB906",
+      "nome": "Ergonomia e Segurança do Trabalho",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10121",
+      "codigo": "EB907",
+      "nome": "Produção Mais Limpa",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB602"
+        ],
+        [
+          "EB605"
+        ],
+        [
+          "ST310"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14388",
+      "codigo": "EB973",
+      "nome": "Drenagem Urbana",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB941"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17621",
+      "codigo": "EB607",
+      "nome": "Gerenciamento de  Resíduos Sólidos",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB304",
+          "EB404"
+        ],
+        [
+          "EB307",
+          "EB404"
+        ],
+        [
+          "ST912"
+        ],
+        [
+          "ST405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10123",
+      "codigo": "EB801",
+      "nome": "Sistemas de Informações Geográficas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10124",
+      "codigo": "EB803",
+      "nome": "Controle da Poluição do Ar",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB605"
+        ],
+        [
+          "ST310"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10125",
+      "codigo": "EB902",
+      "nome": "Direito e Legislação Ambiental",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10128",
+      "codigo": "EB903",
+      "nome": "Avaliação dos Impactos Ambientais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB605",
+          "EB606",
+          "EB803"
+        ],
+        [
+          "EB606",
+          "ST310"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10129",
+      "codigo": "EB904",
+      "nome": "Planejamento e Gestão Ambiental",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB605",
+          "EB606"
+        ],
+        [
+          "EB803",
+          "ST310"
+        ],
+        [
+          "ST310",
+          "ST411"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10130",
+      "codigo": "EB905",
+      "nome": "Introdução ao Trabalho de Conclusão de Curso",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17634",
+      "codigo": "EB908",
+      "nome": "Projeto Integrador",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10127",
+      "codigo": "EB901",
+      "nome": "Modelos Computacionais para Sistemas Ambientais",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB302",
+          "EB406"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17637",
+      "codigo": "EB928",
+      "nome": "Atividades Complementares: Extensão",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10133",
+      "codigo": "EB930",
+      "nome": "Atividades Complementares",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10131",
+      "codigo": "EB910",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB905"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10132",
+      "codigo": "EB920",
+      "nome": "Estágio Supervisionado",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

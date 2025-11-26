@@ -1,0 +1,701 @@
+{
+  "course": {
+    "id": 56,
+    "name": "Licenciatura Integrada Química/Física (56)",
+    "code": "56"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Licenciatura em Física",
+  "year": 2019,
+  "parameters": {
+    "catalogo": "2019",
+    "modalidade": "AB",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "1924",
+      "codigo": "EL103",
+      "nome": "Colóquios I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11756",
+      "codigo": "EL111",
+      "nome": "Leitura, Produção de Textos e Docência",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14263",
+      "codigo": "EL112",
+      "nome": "Fundamentos Conceituais e Pedagógicos da Matemática Elementar",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5348",
+      "codigo": "QG109",
+      "nome": "Química Geral Experimental",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5347",
+      "codigo": "QG108",
+      "nome": "Química Geral Teórica",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1931",
+      "codigo": "EL203",
+      "nome": "Colóquios II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5289",
+      "codigo": "QA282",
+      "nome": "Química Clássica",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1939",
+      "codigo": "EL303",
+      "nome": "Colóquios III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2746",
+      "codigo": "F 229",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1926",
+      "codigo": "EL136",
+      "nome": "Problemas do Ensino de Física e Química",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1940",
+      "codigo": "EL403",
+      "nome": "Colóquios IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5318",
+      "codigo": "QF431",
+      "nome": "Físico-Química I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "MA211",
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5370",
+      "codigo": "QI145",
+      "nome": "Interações Químicas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11757",
+      "codigo": "EL109",
+      "nome": "Introdução à Pesquisa no Ensino de Ciências",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1932",
+      "codigo": "EL204",
+      "nome": "Seminários Integrados de Atividades em Física e Química",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2751",
+      "codigo": "F 329",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 129",
+          "GE504"
+        ],
+        [
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3301",
+      "codigo": "GT001",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5322",
+      "codigo": "QF531",
+      "nome": "Físico-Química II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QF335"
+        ],
+        [
+          "QF431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5374",
+      "codigo": "QI245",
+      "nome": "Química de Sólidos",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "QI145"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11720",
+      "codigo": "EL105",
+      "nome": "Tecnologias e Processos Educativos",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2753",
+      "codigo": "F 428",
+      "nome": "Física Geral IV",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2754",
+      "codigo": "F 429",
+      "nome": "Física Experimental IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EE521",
+          "F 129"
+        ],
+        [
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2760",
+      "codigo": "F 540",
+      "nome": "Métodos da Física Experimental I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2767",
+      "codigo": "F 609",
+      "nome": "Tópicos de Ensino de Física I",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 328",
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2763",
+      "codigo": "F 589",
+      "nome": "Estrutura da Matéria",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2775",
+      "codigo": "F 709",
+      "nome": "Tópicos de Ensino de Física II",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 609"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2800",
+      "codigo": "F 901",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 10,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2958",
+      "codigo": "FL701",
+      "nome": "Projetos Integrados do Ensino de Física",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "F 609"
+        ],
+        [
+          "F 901"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2755",
+      "codigo": "F 489",
+      "nome": "Estrutura de Matéria II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2777",
+      "codigo": "F 740",
+      "nome": "Métodos da Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2787",
+      "codigo": "F 839",
+      "nome": "Métodos da Física Experimental VI",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2801",
+      "codigo": "F 902",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 10,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "F 901"
+        ]
+      ]
+    }
+  ]
+}

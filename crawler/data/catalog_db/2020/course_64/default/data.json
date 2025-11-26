@@ -1,0 +1,374 @@
+{
+  "course": {
+    "id": 64,
+    "name": "Comunicação Social - Midialogia (64)",
+    "code": "64"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "1047",
+      "codigo": "CS103",
+      "nome": "Teorias da Comunicação",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1048",
+      "codigo": "CS104",
+      "nome": "História da Fotografia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8131",
+      "codigo": "CS106",
+      "nome": "Métodos e Técnicas de Pesquisa e de Desenvolvimento de Produtos em Midialogia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1044",
+      "codigo": "CS100",
+      "nome": "Cultura Moderna e Imagem",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1046",
+      "codigo": "CS102",
+      "nome": "Fotografia I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1053",
+      "codigo": "CS203",
+      "nome": "Planejamento e Produção de Produtos Audiovisuais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1055",
+      "codigo": "CS204",
+      "nome": "Comunicação, Cultura e Sociedade",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11396",
+      "codigo": "CS206",
+      "nome": "Teoria da Imagem",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11395",
+      "codigo": "CS107",
+      "nome": "Introdução ao Pensamento Computacional",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1050",
+      "codigo": "CS200",
+      "nome": "Captação e Edição de Áudio",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1061",
+      "codigo": "CS302",
+      "nome": "História da TV e do Vídeo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1063",
+      "codigo": "CS304",
+      "nome": "História do Cinema I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1066",
+      "codigo": "CS400",
+      "nome": "Computação Gráfica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1024",
+      "codigo": "CS039",
+      "nome": "Oficina de Roteiro I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS304",
+          "CS401"
+        ],
+        [
+          "CS401",
+          "CS404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1037",
+      "codigo": "CS052",
+      "nome": "Fotografia II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1059",
+      "codigo": "CS300",
+      "nome": "Recursos Eletrônicos Aplicados à Produção Sonora",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS200"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1060",
+      "codigo": "CS301",
+      "nome": "História do Rádio",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1067",
+      "codigo": "CS401",
+      "nome": "Teoria do Cinema",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1068",
+      "codigo": "CS402",
+      "nome": "Fotografia e Movimento",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1070",
+      "codigo": "CS404",
+      "nome": "História do Cinema II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1071",
+      "codigo": "CS405",
+      "nome": "Educação e Tecnologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1025",
+      "codigo": "CS040",
+      "nome": "Oficina de Roteiro II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS039"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1057",
+      "codigo": "CS205",
+      "nome": "Tecnologias da Informação e da Comunicação",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1062",
+      "codigo": "CS303",
+      "nome": "Edição de Produtos Audiovisuais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11397",
+      "codigo": "CS508",
+      "nome": "Redes: Convergência e Sociedade",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11237",
+      "codigo": "CS601",
+      "nome": "História e Imagem: Laboratório de Cultura Visual e Mídia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "CS100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1072",
+      "codigo": "CS500",
+      "nome": "História do Cinema Brasileiro",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1052",
+      "codigo": "CS202",
+      "nome": "Antropologia da Imagem",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

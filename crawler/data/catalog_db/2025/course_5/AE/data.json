@@ -1,0 +1,685 @@
+{
+  "course": {
+    "id": 5,
+    "name": "Química (5)",
+    "code": "5"
+  },
+  "modalidade": "AE",
+  "modalidade_label": "AE - Licenciatura em Química e em Ciências",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "AE",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "18105",
+      "codigo": "QE100",
+      "nome": "Concepção e Princípios da Integração entre Ensino, Pesquisa e Extensão",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5347",
+      "codigo": "QG108",
+      "nome": "Química Geral Teórica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5348",
+      "codigo": "QG109",
+      "nome": "Química Geral Experimental",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5289",
+      "codigo": "QA282",
+      "nome": "Química Clássica",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5393",
+      "codigo": "QO321",
+      "nome": "Química Orgânica I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QG101",
+          "QG102"
+        ],
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5318",
+      "codigo": "QF431",
+      "nome": "Físico-Química I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "MA211",
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18109",
+      "codigo": "QG332",
+      "nome": "Estudos de Problemas de Ensino de Ciências",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5403",
+      "codigo": "QO521",
+      "nome": "Química Orgânica II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17150",
+      "codigo": "BS156",
+      "nome": "Princípios de Ecologia e Evolução",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11756",
+      "codigo": "EL111",
+      "nome": "Leitura, Produção de Textos e Docência",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2323",
+      "codigo": "EP152",
+      "nome": "Didática - Teoria Pedagógica",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "EP110",
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ],
+        [
+          "EP123",
+          "EP140",
+          "EP208",
+          "EP230"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5322",
+      "codigo": "QF531",
+      "nome": "Físico-Química II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QF335"
+        ],
+        [
+          "QF431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12182",
+      "codigo": "QG464",
+      "nome": "Laboratório Integrado",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5375",
+      "codigo": "QI246",
+      "nome": "Química Inorgânica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17152",
+      "codigo": "BS456",
+      "nome": "Biodiversidade e Seres Vivos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14318",
+      "codigo": "QG551",
+      "nome": "Didática e Metodologia do Ensino de Química",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "EL212",
+          "EL511",
+          "EL683",
+          "EP152",
+          "EP372",
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5351",
+      "codigo": "QG564",
+      "nome": "Química Orgânica e Inorgânica Experimental",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QG109",
+          "QI145",
+          "QO521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5404",
+      "codigo": "QO551",
+      "nome": "Bioquímica I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3275",
+      "codigo": "GM280",
+      "nome": "Elementos de Geologia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18107",
+      "codigo": "QF634",
+      "nome": "Físico-Química Experimental I",
+      "creditos": 5,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QF531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17244",
+      "codigo": "EL886",
+      "nome": "Estágio Supervisionado em Ciências",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "EL774"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5323",
+      "codigo": "QF535",
+      "nome": "Introdução à Química Quântica",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11757",
+      "codigo": "EL109",
+      "nome": "Introdução à Pesquisa no Ensino de Ciências",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18106",
+      "codigo": "QE101",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QE100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5357",
+      "codigo": "QG680",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "EL886"
+        ],
+        [
+          "EL874"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5359",
+      "codigo": "QG760",
+      "nome": "Projetos de Ensino em Química",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17153",
+      "codigo": "BS656",
+      "nome": "Corpo Humano e Saúde",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "BS456"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11371",
+      "codigo": "EP879",
+      "nome": "Educação de Jovens e Adultos",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5302",
+      "codigo": "QA815",
+      "nome": "Química do Meio Ambiente",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QA282",
+          "QF531"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14319",
+      "codigo": "QG771",
+      "nome": "Tecnologias de Informação e Comunicação Aplicadas ao Ensino de Química",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5364",
+      "codigo": "QG880",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QG680"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6207",
+      "codigo": "QL701",
+      "nome": "Projetos Integrados",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AE",
+      "prereqs": [
+        [
+          "QG760"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11473",
+      "codigo": "QG983",
+      "nome": "Tópicos Especiais em Ensino de Química III",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11474",
+      "codigo": "QG984",
+      "nome": "Tópicos Especiais em Ensino de Química IV",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11471",
+      "codigo": "QG981",
+      "nome": "Tópicos Especiais em Ensino de Química I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AE",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11472",
+      "codigo": "QG982",
+      "nome": "Tópicos Especiais em Ensino de Química II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AE",
+      "prereqs": []
+    }
+  ]
+}

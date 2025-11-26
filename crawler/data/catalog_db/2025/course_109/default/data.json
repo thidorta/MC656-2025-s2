@@ -1,0 +1,830 @@
+{
+  "course": {
+    "id": 109,
+    "name": "Administração (109)",
+    "code": "109"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "3245",
+      "codigo": "GL100",
+      "nome": "Matemática I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14425",
+      "codigo": "GL102",
+      "nome": "Integridade Acadêmica e Metodologia Científica",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3250",
+      "codigo": "GL203",
+      "nome": "Contabilidade I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3257",
+      "codigo": "GL403",
+      "nome": "Instituições de Direito",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9720",
+      "codigo": "NC103",
+      "nome": "Natureza e Tecnologia na Sociedade Contemporânea",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5195",
+      "codigo": "NC400",
+      "nome": "Noções de Administração e Gestão",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3248",
+      "codigo": "GL201",
+      "nome": "Matemática II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL100"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3251",
+      "codigo": "GL300",
+      "nome": "Contabilidade II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3253",
+      "codigo": "GL302",
+      "nome": "Evolução do Pensamento em Gestão",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10557",
+      "codigo": "GL608",
+      "nome": "Administração de Sistemas de Informação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10554",
+      "codigo": "MG400",
+      "nome": "Direito para Administração I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL403"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3249",
+      "codigo": "GL202",
+      "nome": "Microeconomia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4054",
+      "codigo": "LE702",
+      "nome": "Gestão de Recursos Humanos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12133",
+      "codigo": "NC104",
+      "nome": "Introdução à Ciência dos Dados e à Informação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9902",
+      "codigo": "NC301",
+      "nome": "Filosofia e Ciências Humanas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12142",
+      "codigo": "GL303",
+      "nome": "Estatística para Administração",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL201",
+          "NC104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3266",
+      "codigo": "GL603",
+      "nome": "Mercado, Concorrência e Competitividade",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10555",
+      "codigo": "MG500",
+      "nome": "Gestão de Operações",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10553",
+      "codigo": "ER401",
+      "nome": "Pesquisa Operacional",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL201"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3247",
+      "codigo": "GL200",
+      "nome": "Matemática Financeira",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL201"
+        ],
+        [
+          "LE101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10549",
+      "codigo": "MG600",
+      "nome": "Gestão da Cadeia de Suprimentos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LE409",
+          "LE703"
+        ],
+        [
+          "MG500"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14431",
+      "codigo": "GL507",
+      "nome": "Macroeconomia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL603"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3263",
+      "codigo": "GL600",
+      "nome": "Estudos de Mercado e Marketing",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3264",
+      "codigo": "GL601",
+      "nome": "Estratégia e Planejamento",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10556",
+      "codigo": "MG501",
+      "nome": "Administração Financeira I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL200"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "13708",
+      "codigo": "MG813",
+      "nome": "Gestão da Inovação",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL601"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10560",
+      "codigo": "MG900",
+      "nome": "Empreendedorismo",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10543",
+      "codigo": "ER201",
+      "nome": "Gestão Sustentável",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "NC400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3260",
+      "codigo": "GL502",
+      "nome": "Economia Brasileira",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL507"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14432",
+      "codigo": "GL609",
+      "nome": "Comportamento do Consumidor",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL600"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10558",
+      "codigo": "MG601",
+      "nome": "Administração Financeira II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MG501"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14434",
+      "codigo": "GL710",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10562",
+      "codigo": "MG811",
+      "nome": "Direito para Administração II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL403"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17880",
+      "codigo": "GL510",
+      "nome": "MODELO DE NEGÓCIOS SUSTENTÁVEIS",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14433",
+      "codigo": "GL704",
+      "nome": "Estágio em Administração",
+      "creditos": 20,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12143",
+      "codigo": "GL304",
+      "nome": "Métodos Quantitativos Aplicados",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "GL303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9518",
+      "codigo": "NC001",
+      "nome": "Tópicos Especiais em Humanidades I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18087",
+      "codigo": "NC222",
+      "nome": "Ciência e sociedade",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18086",
+      "codigo": "NC112",
+      "nome": "Linguagens e discursividades",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14429",
+      "codigo": "NC007",
+      "nome": "Tópicos Especiais em Humanidades VII",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11890",
+      "codigo": "NC003",
+      "nome": "Tópicos Especiais em Humanidades III",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18088",
+      "codigo": "NC223",
+      "nome": "Tecnologia e sociedade",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6893",
+      "codigo": "NC202",
+      "nome": "Sociedade e Ambiente",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18089",
+      "codigo": "NC224",
+      "nome": "Biologia e cultura",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9519",
+      "codigo": "NC005",
+      "nome": "Tópicos Especiais em Humanidades V",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5189",
+      "codigo": "NC100",
+      "nome": "Ética e Cidadania",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14414",
+      "codigo": "NC024",
+      "nome": "Fundamentos e Metodologias de Extensão Universitária",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10367",
+      "codigo": "NC017",
+      "nome": "Urbanização e Dinâmicas de Uso e Cobertura de Terra",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18091",
+      "codigo": "NC505",
+      "nome": "Debates Interdisciplinares em políticas, institucionalidades e inovação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9520",
+      "codigo": "NC006",
+      "nome": "Tópicos Especiais em Humanidades VI",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10369",
+      "codigo": "NC019",
+      "nome": "Sociedade da Informação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10407",
+      "codigo": "NC002",
+      "nome": "Tópicos Especiais em Humanidades II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3640",
+      "codigo": "NC022",
+      "nome": "Quartas Interdisciplinares: Seminários de Pesquisa",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18090",
+      "codigo": "NC504",
+      "nome": "Debates Interdisciplinares em metabolismo, movimento e alimentação",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12005",
+      "codigo": "NC004",
+      "nome": "Tópicos Especiais em Humanidades IV",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10366",
+      "codigo": "NC016",
+      "nome": "Aplicações em Ciências Humanas e Sociais",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3642",
+      "codigo": "NC021",
+      "nome": "Etnografia e Interdisciplinaridade",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10371",
+      "codigo": "NC502",
+      "nome": "Lógica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18092",
+      "codigo": "NC506",
+      "nome": "Debates Interdisciplinares em processos técnicos e tecnologias",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10364",
+      "codigo": "NC013",
+      "nome": "Fenomenologia, Ciência e Geografia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10370",
+      "codigo": "NC020",
+      "nome": "O Utilitarismo e seus Críticos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14413",
+      "codigo": "NC023",
+      "nome": "Estudos de Laboratório",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14430",
+      "codigo": "NC008",
+      "nome": "Tópicos Especiais em Humanidades VIII",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10362",
+      "codigo": "NC010",
+      "nome": "Cinema e Percepção Pública da Ciência",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

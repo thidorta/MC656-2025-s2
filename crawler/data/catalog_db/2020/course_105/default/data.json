@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 105,
+    "name": "Gestão de Empresas (105)",
+    "code": "105"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

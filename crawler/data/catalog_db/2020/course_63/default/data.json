@@ -1,0 +1,919 @@
+{
+  "course": {
+    "id": 63,
+    "name": "Farmácia (63)",
+    "code": "63"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "14880",
+      "codigo": "FR105",
+      "nome": "Saúde Pública nas Ciências Farmacêuticas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14881",
+      "codigo": "FR106",
+      "nome": "Metodologia e Informação Científica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "757",
+      "codigo": "BS115",
+      "nome": "Estrutura e Função de Células e Tecidos",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4763",
+      "codigo": "MS380",
+      "nome": "Matemática Aplicada para Biologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2740",
+      "codigo": "F 107",
+      "nome": "Física (Biologia)",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5347",
+      "codigo": "QG108",
+      "nome": "Química Geral Teórica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14878",
+      "codigo": "FR102",
+      "nome": "Boas Práticas de Laboratório e Gestão de Resíduos",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5348",
+      "codigo": "QG109",
+      "nome": "Química Geral Experimental",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3089",
+      "codigo": "FR103",
+      "nome": "Introdução à Profissão Farmacêutica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14879",
+      "codigo": "FR104",
+      "nome": "Ética e Bioética",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14883",
+      "codigo": "FR205",
+      "nome": "Princípios de Farmacocinética",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14884",
+      "codigo": "FR206",
+      "nome": "Assistência e Atenção Farmacêutica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR103",
+          "FR104",
+          "FR107"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14885",
+      "codigo": "FR207",
+      "nome": "Genética Humana",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5375",
+      "codigo": "QI246",
+      "nome": "Química Inorgânica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5393",
+      "codigo": "QO321",
+      "nome": "Química Orgânica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101",
+          "QG102"
+        ],
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "760",
+      "codigo": "BS215",
+      "nome": "Estrutura e Função de Órgãos e Sistemas",
+      "creditos": 12,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS115"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14882",
+      "codigo": "FR202",
+      "nome": "Estágio em Assistência Farmacêutica na Atenção Básica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "772",
+      "codigo": "BT315",
+      "nome": "Farmacobotânica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14886",
+      "codigo": "FR302",
+      "nome": "Gestão Farmacêutica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14887",
+      "codigo": "FR305",
+      "nome": "Deontologia e Legislação Farmacêutica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14888",
+      "codigo": "FR306",
+      "nome": "Farmacologia",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR205"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14889",
+      "codigo": "FR307",
+      "nome": "Estágio em Farmácia",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR104",
+          "FR107",
+          "FR206"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5314",
+      "codigo": "QF331",
+      "nome": "Físico-Química",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "QG101"
+        ],
+        [
+          "MA111",
+          "QG104"
+        ],
+        [
+          "MA111",
+          "QG108"
+        ],
+        [
+          "MS220",
+          "QG101"
+        ],
+        [
+          "MS220",
+          "QG104"
+        ],
+        [
+          "MS220",
+          "QG108"
+        ],
+        [
+          "MS380",
+          "QG101"
+        ],
+        [
+          "MS380",
+          "QG104"
+        ],
+        [
+          "MS380",
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "711",
+      "codigo": "BI315",
+      "nome": "Imunologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS115"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5397",
+      "codigo": "QO421",
+      "nome": "Química Orgânica II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO321"
+        ],
+        [
+          "QO325"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "578",
+      "codigo": "BB315",
+      "nome": "Bioquímica",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "726",
+      "codigo": "BM415",
+      "nome": "Microbiologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BI315",
+          "BS115"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14890",
+      "codigo": "FR402",
+      "nome": "Tecnologia Farmacêutica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 107",
+          "FR102",
+          "FR205",
+          "FR307",
+          "QF331"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14891",
+      "codigo": "FR404",
+      "nome": "Estágio em Farmácia Hospitalar",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR104",
+          "FR105",
+          "FR206"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14808",
+      "codigo": "QA218",
+      "nome": "Química Analítica",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101"
+        ],
+        [
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5409",
+      "codigo": "QO623",
+      "nome": "Química Orgânica Experimental",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6787",
+      "codigo": "BP515",
+      "nome": "Parasitologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS115"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14892",
+      "codigo": "FR502",
+      "nome": "Epidemiologia para Ciências Farmacêuticas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ME414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6791",
+      "codigo": "FR507",
+      "nome": "Introdução à Química Farmacêutica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QO421"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6792",
+      "codigo": "FR508",
+      "nome": "Análise Instrumental",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA218",
+          "QO421"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14893",
+      "codigo": "FR511",
+      "nome": "Bromatologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BB315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14894",
+      "codigo": "FR512",
+      "nome": "Biologia Molecular",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BB315",
+          "FR306"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14895",
+      "codigo": "FR604",
+      "nome": "Química Farmacêutica Aplicada",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR507"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14896",
+      "codigo": "FR610",
+      "nome": "Laboratório Clínico I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BM415",
+          "BP515",
+          "BS215"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14897",
+      "codigo": "FR611",
+      "nome": "Estágio Supervisionado em Laboratório Clínico I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BM415",
+          "BP515",
+          "BS215"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14898",
+      "codigo": "FR612",
+      "nome": "Tecnologia Farmacêutica II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14899",
+      "codigo": "FR613",
+      "nome": "Tecnologia Farmacêutica III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14900",
+      "codigo": "FR614",
+      "nome": "Farmacognosia",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BB315",
+          "BT315",
+          "FR508",
+          "QO623"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14904",
+      "codigo": "FR711",
+      "nome": "Estágio Supervisionado em Laboratório Clínico II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR610",
+          "FR611"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11393",
+      "codigo": "FR704",
+      "nome": "Cosmetologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR402",
+          "FR612"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11394",
+      "codigo": "FR706",
+      "nome": "Fitoterapia",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR306",
+          "FR614"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14901",
+      "codigo": "FR708",
+      "nome": "Toxicologia",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR306",
+          "FR508"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14902",
+      "codigo": "FR709",
+      "nome": "Controle de Qualidade Biológico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BM415"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14903",
+      "codigo": "FR710",
+      "nome": "Laboratório Clínico II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR610"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6800",
+      "codigo": "FR806",
+      "nome": "Farmacoterapia e Interações Medicamentosas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR608"
+        ],
+        [
+          "FR306"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14905",
+      "codigo": "FR809",
+      "nome": "Análises Toxicológicas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR708"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14906",
+      "codigo": "FR810",
+      "nome": "Biotecnologia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BM415",
+          "FR512"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14907",
+      "codigo": "FR811",
+      "nome": "Tecnologia Farmacêutica IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR612",
+          "FR613"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14908",
+      "codigo": "FR812",
+      "nome": "Cuidado Farmacêutico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FR107",
+          "FR206"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3115",
+      "codigo": "FR901",
+      "nome": "Estágio Supervisionado Profissionalizante I",
+      "creditos": 27,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6803",
+      "codigo": "FR904",
+      "nome": "Atividades Complementares",
+      "creditos": 10,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14909",
+      "codigo": "FR905",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3116",
+      "codigo": "FR902",
+      "nome": "Estágio Supervisionado Profissionalizante II",
+      "creditos": 28,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14910",
+      "codigo": "FR906",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+{
+  "course": {
+    "id": 56,
+    "name": "Licenciatura Integrada Química/Física (56)",
+    "code": "56"
+  },
+  "modalidade": "AD",
+  "modalidade_label": "AD - Licenciatura em Física  e em Ciências",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "AD",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "17150",
+      "codigo": "BS156",
+      "nome": "Princípios de Ecologia e Evolução",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17239",
+      "codigo": "EL106",
+      "nome": "Colóquios",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14263",
+      "codigo": "EL112",
+      "nome": "Fundamentos Conceituais e Pedagógicos da Matemática Elementar",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5347",
+      "codigo": "QG108",
+      "nome": "Química Geral Teórica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3284",
+      "codigo": "GN105",
+      "nome": "Teorias e Métodos da Ciência",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5348",
+      "codigo": "QG109",
+      "nome": "Química Geral Experimental",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11757",
+      "codigo": "EL109",
+      "nome": "Introdução à Pesquisa no Ensino de Ciências",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5289",
+      "codigo": "QA282",
+      "nome": "Química Clássica",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "QG108",
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17240",
+      "codigo": "EL208",
+      "nome": "Seminários integrados I: Educação para as diferenças",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17152",
+      "codigo": "BS456",
+      "nome": "Biodiversidade e Seres Vivos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17243",
+      "codigo": "EL436",
+      "nome": "Ensino da Química e da Física na Educação Básica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18282",
+      "codigo": "F 259",
+      "nome": "Introdução à Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 128",
+          "F 159"
+        ],
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18193",
+      "codigo": "F 359",
+      "nome": "Introdução à Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 259",
+          "GE504"
+        ],
+        [
+          "F 259",
+          "MA111"
+        ],
+        [
+          "F 129"
+        ],
+        [
+          "F 229"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3275",
+      "codigo": "GM280",
+      "nome": "Elementos de Geologia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18110",
+      "codigo": "QI146",
+      "nome": "Interações Químicas",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "QG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17241",
+      "codigo": "EL308",
+      "nome": "Seminários Integrados II - educação especial e inclusiva",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2753",
+      "codigo": "F 428",
+      "nome": "Física Geral IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17153",
+      "codigo": "BS656",
+      "nome": "Corpo Humano e Saúde",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "BS456"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2749",
+      "codigo": "F 320",
+      "nome": "Termodinâmica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 228",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17244",
+      "codigo": "EL886",
+      "nome": "Estágio Supervisionado em Ciências",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "EL774"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2763",
+      "codigo": "F 589",
+      "nome": "Estrutura da Matéria",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 428",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2755",
+      "codigo": "F 489",
+      "nome": "Estrutura de Matéria II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2767",
+      "codigo": "F 609",
+      "nome": "Tópicos de Ensino de Física I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 328",
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2777",
+      "codigo": "F 740",
+      "nome": "Métodos da Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2800",
+      "codigo": "F 901",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2958",
+      "codigo": "FL701",
+      "nome": "Projetos Integrados do Ensino de Física",
+      "creditos": 8,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "F 609"
+        ],
+        [
+          "F 901"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11720",
+      "codigo": "EL105",
+      "nome": "Tecnologias e Processos Educativos",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17242",
+      "codigo": "EL408",
+      "nome": "Atividades Integradas de Ensino e Extensão: Educação Ambiental",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AD",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2801",
+      "codigo": "F 902",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 10,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "AD",
+      "prereqs": [
+        [
+          "F 901"
+        ]
+      ]
+    }
+  ]
+}

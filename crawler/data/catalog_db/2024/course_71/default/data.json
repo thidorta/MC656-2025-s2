@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 71,
+    "name": "Curso de Música Instrumento (71)",
+    "code": "71"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

@@ -1,0 +1,423 @@
+{
+  "curso": "Licenciatura Integrada Química/Física (56)",
+  "numero_curso": 56,
+  "catalogo": "2026",
+  "modalidade": "AC",
+  "periodo": "20261",
+  "disciplinas": [
+    {
+      "disciplina_id": "17150",
+      "codigo": "BS156",
+      "nome": "Princípios de Ecologia e Evolução",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "17239",
+      "codigo": "EL106",
+      "nome": "Colóquios",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "14263",
+      "codigo": "EL112",
+      "nome": "Fundamentos Conceituais e Pedagógicos da Matemática Elementar",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "5347",
+      "codigo": "QG108",
+      "nome": "Química Geral Teórica",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "3284",
+      "codigo": "GN105",
+      "nome": "Teorias e Métodos da Ciência",
+      "creditos": 3,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "5348",
+      "codigo": "QG109",
+      "nome": "Química Geral Experimental",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "11757",
+      "codigo": "EL109",
+      "nome": "Introdução à Pesquisa no Ensino de Ciências",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "5289",
+      "codigo": "QA282",
+      "nome": "Química Clássica",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "17240",
+      "codigo": "EL208",
+      "nome": "Seminários integrados I: Educação para as diferenças",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "17152",
+      "codigo": "BS456",
+      "nome": "Biodiversidade e Seres Vivos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "17243",
+      "codigo": "EL436",
+      "nome": "Ensino da Química e da Física na Educação Básica",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "3275",
+      "codigo": "GM280",
+      "nome": "Elementos de Geologia",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "14317",
+      "codigo": "QG331",
+      "nome": "Estudos de Problemas de Ensino de Química",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3
+    },
+    {
+      "disciplina_id": "18110",
+      "codigo": "QI146",
+      "nome": "Interações Químicas",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "18282",
+      "codigo": "F 259",
+      "nome": "Introdução à Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "17241",
+      "codigo": "EL308",
+      "nome": "Seminários Integrados II - educação especial e inclusiva",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "5318",
+      "codigo": "QF431",
+      "nome": "Físico-Química I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "17153",
+      "codigo": "BS656",
+      "nome": "Corpo Humano e Saúde",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4
+    },
+    {
+      "disciplina_id": "11720",
+      "codigo": "EL105",
+      "nome": "Tecnologias e Processos Educativos",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "5374",
+      "codigo": "QI245",
+      "nome": "Química de Sólidos",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "5393",
+      "codigo": "QO321",
+      "nome": "Química Orgânica I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "5322",
+      "codigo": "QF531",
+      "nome": "Físico-Química II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "17244",
+      "codigo": "EL886",
+      "nome": "Estágio Supervisionado em Ciências",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "5323",
+      "codigo": "QF535",
+      "nome": "Introdução à Química Quântica",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5
+    },
+    {
+      "disciplina_id": "18108",
+      "codigo": "QF635",
+      "nome": "Físico-Química Experimental",
+      "creditos": 5,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "5403",
+      "codigo": "QO521",
+      "nome": "Química Orgânica II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "5302",
+      "codigo": "QA815",
+      "nome": "Química do Meio Ambiente",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "5357",
+      "codigo": "QG680",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "5359",
+      "codigo": "QG760",
+      "nome": "Projetos de Ensino em Química",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "5364",
+      "codigo": "QG880",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6
+    },
+    {
+      "disciplina_id": "6207",
+      "codigo": "QL701",
+      "nome": "Projetos Integrados",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "5404",
+      "codigo": "QO551",
+      "nome": "Bioquímica I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "17242",
+      "codigo": "EL408",
+      "nome": "Atividades Integradas de Ensino e Extensão: Educação Ambiental",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    },
+    {
+      "disciplina_id": "5354",
+      "codigo": "QG650",
+      "nome": "Laboratório de Síntese Orgânica e Inorgânica",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 7
+    }
+  ]
+}

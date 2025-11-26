@@ -1,0 +1,468 @@
+{
+  "course": {
+    "id": 1,
+    "name": "Matemática (1)",
+    "code": "1"
+  },
+  "modalidade": "AA",
+  "modalidade_label": "AA - Bacharelado em Matemática",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "AA",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2961",
+      "codigo": "FM003",
+      "nome": "Seminários sobre a Profissão",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4754",
+      "codigo": "MS149",
+      "nome": "Complementos de Matemática",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2746",
+      "codigo": "F 229",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4432",
+      "codigo": "ME210",
+      "nome": "Probabilidade I",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2751",
+      "codigo": "F 329",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "F 129",
+          "GE504"
+        ],
+        [
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4117",
+      "codigo": "MA553",
+      "nome": "Teoria Aritmética dos Números",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4131",
+      "codigo": "MA719",
+      "nome": "Álgebra Linear Avançada",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4079",
+      "codigo": "MA044",
+      "nome": "Matemática IV",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA141",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4112",
+      "codigo": "MA502",
+      "nome": "Análise I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4107",
+      "codigo": "MA446",
+      "nome": "Grupos e Representações",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA719"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4120",
+      "codigo": "MA602",
+      "nome": "Análise II",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4121",
+      "codigo": "MA604",
+      "nome": "Topologia dos Espaços Métricos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4104",
+      "codigo": "MA419",
+      "nome": "Análise Real",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA602"
+        ],
+        [
+          "MA720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4106",
+      "codigo": "MA445",
+      "nome": "Anéis e Corpos",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA446"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4109",
+      "codigo": "MA453",
+      "nome": "Topologia Geral",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA604"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4110",
+      "codigo": "MA456",
+      "nome": "Equações Diferenciais Ordinárias",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA602"
+        ],
+        [
+          "MA720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4132",
+      "codigo": "MA720",
+      "nome": "Análise no R(n)",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA211",
+          "MA327",
+          "MA502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4108",
+      "codigo": "MA449",
+      "nome": "Introdução às Equações Diferenciais Parciais",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA602"
+        ],
+        [
+          "MA720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4144",
+      "codigo": "MA852",
+      "nome": "Geometria Diferencial",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AA",
+      "prereqs": [
+        [
+          "MA720"
+        ]
+      ]
+    }
+  ]
+}

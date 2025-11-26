@@ -1,0 +1,1568 @@
+{
+  "course": {
+    "id": 6,
+    "name": "Ciências Biológicas (6)",
+    "code": "6"
+  },
+  "modalidade": "AJ",
+  "modalidade_label": "AJ - Licenciatura Plena em Ciências Biológicas",
+  "year": 2021,
+  "parameters": {
+    "catalogo": "2021",
+    "modalidade": "AJ",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9742",
+      "codigo": "BC182",
+      "nome": "Biologia Celular I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "628",
+      "codigo": "BE180",
+      "nome": "Introdução à Ecologia",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9746",
+      "codigo": "BG180",
+      "nome": "Introdução à Evolução",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9751",
+      "codigo": "BZ183",
+      "nome": "Sistemática Zoológica e Biodiversidade",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4763",
+      "codigo": "MS380",
+      "nome": "Matemática Aplicada para Biologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5346",
+      "codigo": "QG107",
+      "nome": "Química I (Biologia)",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14859",
+      "codigo": "BT285",
+      "nome": "Sistemática de Criptógamas e Gimnospermas",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10011",
+      "codigo": "BA281",
+      "nome": "Anatomia Humana Geral",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14860",
+      "codigo": "BZ285",
+      "nome": "Zoologia de Invertebrados I",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9972",
+      "codigo": "BB281",
+      "nome": "Bioquímica de Proteínas",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10012",
+      "codigo": "BC282",
+      "nome": "Biologia Celular II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2740",
+      "codigo": "F 107",
+      "nome": "Física (Biologia)",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11737",
+      "codigo": "BG200",
+      "nome": "Bioestatística",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "MS380"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10013",
+      "codigo": "BG282",
+      "nome": "Genética I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BG180"
+        ],
+        [
+          "BG181"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "692",
+      "codigo": "BH282",
+      "nome": "Fundamentos da Biologia Tecidual",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10015",
+      "codigo": "BF381",
+      "nome": "Biofísica e Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "672",
+      "codigo": "BG380",
+      "nome": "Genética Fisiológica e Molecular",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BG282"
+        ],
+        [
+          "BG481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "712",
+      "codigo": "BI381",
+      "nome": "Imunologia Básica",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BC282"
+        ],
+        [
+          "BC283"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "723",
+      "codigo": "BM382",
+      "nome": "Microbiologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BB280",
+          "BC180"
+        ],
+        [
+          "BB280",
+          "BC181"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14861",
+      "codigo": "BT385",
+      "nome": "Morfologia e Anatomia de Angiospermas",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9977",
+      "codigo": "BB381",
+      "nome": "Metabolismo",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14862",
+      "codigo": "BZ385",
+      "nome": "Zoologia de Invertebrados II",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BZ285"
+        ],
+        [
+          "BZ280"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10196",
+      "codigo": "BD692",
+      "nome": "Temas Transversais no Ensino de Biologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14863",
+      "codigo": "BT485",
+      "nome": "Sistemática de Angiospermas I",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BT382"
+        ],
+        [
+          "BT385"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6932",
+      "codigo": "BD520",
+      "nome": "Fundamentos Éticos para o Exercício Profissional do Biólogo",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10020",
+      "codigo": "BV481",
+      "nome": "Fisiologia Vegetal Básica: Metabolismo",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "632",
+      "codigo": "BE480",
+      "nome": "Ecologia Básica",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BE180"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14864",
+      "codigo": "BZ485",
+      "nome": "Zoologia de Vertebrados",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10017",
+      "codigo": "BF481",
+      "nome": "Biofísica e Fisiologia Humana II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BF381"
+        ],
+        [
+          "BF483"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "673",
+      "codigo": "BG480",
+      "nome": "Genética e Evolução",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BG380"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10018",
+      "codigo": "BH420",
+      "nome": "Embriologia Comparada",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BH282"
+        ],
+        [
+          "BH482"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11144",
+      "codigo": "BL583",
+      "nome": "Construção de Mídias para o Ensino de Ciências e Biologia",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10023",
+      "codigo": "BV581",
+      "nome": "Fisiologia Vegetal Básica: Desenvolvimento",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BV481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10021",
+      "codigo": "BH520",
+      "nome": "Biologia do Desenvolvimento",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BG380",
+          "BH420"
+        ],
+        [
+          "BG520",
+          "BH620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3275",
+      "codigo": "GM280",
+      "nome": "Elementos de Geologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14865",
+      "codigo": "BL036",
+      "nome": "Metodologia e Práticas de Ensino em Ciências e Biologia: Genética, Evolução e Vida na Terra",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11739",
+      "codigo": "BL300",
+      "nome": "Introdução à Filosofia das Ciências Naturais",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10022",
+      "codigo": "BP582",
+      "nome": "Parasitologia Animal I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11738",
+      "codigo": "BL600",
+      "nome": "Produção e Análise de Textos em Ciências Biológicas",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2005",
+      "codigo": "EL885",
+      "nome": "Estágio Supervisionado III",
+      "creditos": 13,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11372",
+      "codigo": "FN468",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3278",
+      "codigo": "GM450",
+      "nome": "Fundamentos da Paleontologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11142",
+      "codigo": "BL035",
+      "nome": "Metodologia e Prática de Ensino em Biologia: Ecologia e Fauna",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14866",
+      "codigo": "BL037",
+      "nome": "Metodologia e Práticas de Ensino em Ciências e Biologia: Morfofisiologia",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11141",
+      "codigo": "BL034",
+      "nome": "Metodologia e Práticas de Ensino em Biologia e Ciências da Natureza I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "BT285",
+          "BT485",
+          "BV481",
+          "BV581"
+        ],
+        [
+          "BT285",
+          "BT485",
+          "BV620",
+          "BV720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14867",
+      "codigo": "BT205",
+      "nome": "Biogeografia",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1927",
+      "codigo": "EL142",
+      "nome": "Tópicos Especiais em Ciências Sociais Aplicadas à Educação",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1998",
+      "codigo": "EL876",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AJ",
+      "prereqs": [
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10198",
+      "codigo": "BD694",
+      "nome": "Temas Transversais no Ensino de Biologia II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1948",
+      "codigo": "EL485",
+      "nome": "Filosofia e História da Educação",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11139",
+      "codigo": "BL031",
+      "nome": "Metodologia e Prática de Ensino em Biologia IV: Doenças Infecciosas",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "787",
+      "codigo": "BT681",
+      "nome": "Botânica Econômica",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "674",
+      "codigo": "BG500",
+      "nome": "Iniciação Científica em Genética I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "660",
+      "codigo": "BF500",
+      "nome": "Iniciação Científica em Fisiologia e Biofísica I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10243",
+      "codigo": "BT501",
+      "nome": "Iniciação Científica em Ecologia Vegetal I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9088",
+      "codigo": "BD500",
+      "nome": "Iniciação Científica I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "580",
+      "codigo": "BB500",
+      "nome": "Iniciação Científica em Bioquímica I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1949",
+      "codigo": "EL505",
+      "nome": "Iniciação Científica em Ensino de Ciências I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "821",
+      "codigo": "BZ500",
+      "nome": "Iniciação Científica em Zoologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10225",
+      "codigo": "BH502",
+      "nome": "Iniciação Científica em Biologia Tecidual I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "778",
+      "codigo": "BT500",
+      "nome": "Iniciação Científica em Botânica I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "727",
+      "codigo": "BM500",
+      "nome": "Iniciação Científica em Microbiologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "593",
+      "codigo": "BC500",
+      "nome": "Iniciação Científica em Biologia Celular I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "567",
+      "codigo": "BA500",
+      "nome": "Iniciação Científica em Anatomia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10207",
+      "codigo": "BE501",
+      "nome": "Iniciação Científica em Ecologia Animal I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "700",
+      "codigo": "BH501",
+      "nome": "Iniciação Científica em Embriologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "742",
+      "codigo": "BP500",
+      "nome": "Iniciação Científica em Parasitologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "713",
+      "codigo": "BI500",
+      "nome": "Iniciação Científica em Imunologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "801",
+      "codigo": "BV500",
+      "nome": "Iniciação Científica em Fisiologia Vegetal I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12238",
+      "codigo": "BL500",
+      "nome": "Iniciação Científica em Ensino I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10219",
+      "codigo": "BG501",
+      "nome": "Iniciação Científica em Evolução I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10213",
+      "codigo": "BF501",
+      "nome": "Iniciação Científica em Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10226",
+      "codigo": "BH511",
+      "nome": "Iniciação Científica em Biologia do Desenvolvimento I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "633",
+      "codigo": "BE500",
+      "nome": "Iniciação Científica em Ecologia I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1950",
+      "codigo": "EL506",
+      "nome": "Iniciação Científica em Ensino de Biologia I",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1929",
+      "codigo": "EL201",
+      "nome": "Iniciação Científica em Educação II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "663",
+      "codigo": "BF600",
+      "nome": "Iniciação Científica em Fisiologia e Biofísica II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10247",
+      "codigo": "BT601",
+      "nome": "Iniciação Científica em Ecologia Vegetal II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "747",
+      "codigo": "BP600",
+      "nome": "Iniciação Científica em Parasitologia II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "585",
+      "codigo": "BB600",
+      "nome": "Iniciação Científica em Bioquímica II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "825",
+      "codigo": "BZ600",
+      "nome": "Iniciação Científica em Zoologia II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10228",
+      "codigo": "BH602",
+      "nome": "Iniciação Científica em Biologia Tecidual II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10222",
+      "codigo": "BG601",
+      "nome": "Iniciação Científica em Evolução II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "730",
+      "codigo": "BM600",
+      "nome": "Iniciação Científica em Microbiologia II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "569",
+      "codigo": "BA600",
+      "nome": "Iniciação Científica em Anatomia II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10208",
+      "codigo": "BE601",
+      "nome": "Iniciação Científica em Ecologia Animal II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12239",
+      "codigo": "BL601",
+      "nome": "Iniciação Científica em Ensino II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "785",
+      "codigo": "BT600",
+      "nome": "Iniciação Científica em Botânica II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "679",
+      "codigo": "BG600",
+      "nome": "Iniciação Científica em Genética II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "716",
+      "codigo": "BI600",
+      "nome": "Iniciação Científica em Imunologia II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "802",
+      "codigo": "BV600",
+      "nome": "Iniciação Científica em Fisiologia Vegetal II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8757",
+      "codigo": "BD600",
+      "nome": "Iniciação Científica II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "706",
+      "codigo": "BH601",
+      "nome": "Iniciação Científica em Embriologia II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1954",
+      "codigo": "EL606",
+      "nome": "Iniciação Científica em Ensino de Biologia II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10217",
+      "codigo": "BF601",
+      "nome": "Iniciação Científica em Fisiologia Humana II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10229",
+      "codigo": "BH611",
+      "nome": "Iniciação Científica em Biologia do Desenvolvimento I",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "642",
+      "codigo": "BE600",
+      "nome": "Iniciação Científica em Ecologia II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "595",
+      "codigo": "BC600",
+      "nome": "Iniciação Científica em Biologia Celular II",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1953",
+      "codigo": "EL605",
+      "nome": "Iniciação Científica em Ensino de Ciências II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10169",
+      "codigo": "BD007",
+      "nome": "Atividades Acadêmico-Científicas VII",
+      "creditos": 1,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6586",
+      "codigo": "BD020",
+      "nome": "Atividades Acadêmico-Científicas XX",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10184",
+      "codigo": "BD025",
+      "nome": "Atividades Acadêmico-Científicas XXV",
+      "creditos": 10,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10164",
+      "codigo": "BD002",
+      "nome": "Atividades Acadêmico-Científicas II",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10168",
+      "codigo": "BD006",
+      "nome": "Atividades Acadêmico-Científicas VI",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "423",
+      "codigo": "BD010",
+      "nome": "Atividades Acadêmico-Científicas X",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10174",
+      "codigo": "BD014",
+      "nome": "Atividades Acadêmico-Científicas XIV",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10179",
+      "codigo": "BD019",
+      "nome": "Atividades Acadêmico-Científicas XIX",
+      "creditos": 1,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10183",
+      "codigo": "BD024",
+      "nome": "Atividades Acadêmico-Científicas XXIV",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10171",
+      "codigo": "BD009",
+      "nome": "Atividades Acadêmico-Científicas IX",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10163",
+      "codigo": "BD001",
+      "nome": "Atividades Acadêmicos-Científicas I",
+      "creditos": 1,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10167",
+      "codigo": "BD005",
+      "nome": "Atividades Acadêmico-Científicas V",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10173",
+      "codigo": "BD013",
+      "nome": "Atividades Acadêmico-Científicas XIII",
+      "creditos": 1,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10178",
+      "codigo": "BD018",
+      "nome": "Atividades Acadêmico-Científicas XVIII",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10181",
+      "codigo": "BD022",
+      "nome": "Atividades Acadêmico-Científicas XXII",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10182",
+      "codigo": "BD023",
+      "nome": "Atividades Acadêmico-Científicas XXIII",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10170",
+      "codigo": "BD008",
+      "nome": "Atividades Acadêmico-Científicas VIII",
+      "creditos": 2,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10166",
+      "codigo": "BD004",
+      "nome": "Atividades Acadêmico-Científicas IV",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10172",
+      "codigo": "BD012",
+      "nome": "Atividades Acadêmico-Científicas XII",
+      "creditos": 6,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10177",
+      "codigo": "BD017",
+      "nome": "Atividades Acadêmico-Científicas XVII",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10180",
+      "codigo": "BD021",
+      "nome": "Atividades Acadêmico-Científicas XXI",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10176",
+      "codigo": "BD016",
+      "nome": "Atividades Acadêmico-Científicas XVI",
+      "creditos": 4,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10185",
+      "codigo": "BD026",
+      "nome": "Atividades Acadêmico-Científicas XXVI",
+      "creditos": 12,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10165",
+      "codigo": "BD003",
+      "nome": "Integralização de Atividades Acadêmico-Científicas III",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "424",
+      "codigo": "BD011",
+      "nome": "Atividades Acadêmico-Científicas XI",
+      "creditos": 5,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10175",
+      "codigo": "BD015",
+      "nome": "Atividades Acadêmico-Científicas XV",
+      "creditos": 3,
+      "catalogo": 2021,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AJ",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 24,
+    "name": "Licenciatura em Letras (24)",
+    "code": "24"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

@@ -1,0 +1,422 @@
+{
+  "course": {
+    "id": 87,
+    "name": "Curso Superior de Tecnologia em Saneamento Ambiental (87)",
+    "code": "87"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2026,
+  "parameters": {
+    "catalogo": "2026",
+    "modalidade": "",
+    "periodo": "20262",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "10090",
+      "codigo": "EB205",
+      "nome": "Metodologia Científica e Tecnológica",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10087",
+      "codigo": "EB303",
+      "nome": "Expressão Gráfica",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12188",
+      "codigo": "ST117",
+      "nome": "Introdução à Tecnologia em Saneamento Ambiental",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18298",
+      "codigo": "ST911",
+      "nome": "Química Aplicada",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10099",
+      "codigo": "EB502",
+      "nome": "Topografia",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB303"
+        ],
+        [
+          "ST103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18741",
+      "codigo": "ST910",
+      "nome": "Biologia e Ecologia Aplicada ao Saneamento",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18742",
+      "codigo": "ST912",
+      "nome": "Química Sanitária",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST911"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9727",
+      "codigo": "EB103",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10089",
+      "codigo": "EB306",
+      "nome": "Ética, Educação e Ambiente",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18743",
+      "codigo": "ST913",
+      "nome": "Sistemas de Abastecimento de Água e Redes Coletoras de Esgoto",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18744",
+      "codigo": "ST914",
+      "nome": "Hidrotécnica",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17620",
+      "codigo": "EB308",
+      "nome": "Introdução à Extensão Universitária",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10102",
+      "codigo": "EB403",
+      "nome": "Estatística",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11399",
+      "codigo": "ST314",
+      "nome": "Segurança, Saúde e Meio Ambiente",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11402",
+      "codigo": "ST517",
+      "nome": "Tratamento de Água de Abastecimento",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST411"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10085",
+      "codigo": "EB207",
+      "nome": "Microbiologia Aplicada",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB105"
+        ],
+        [
+          "ST107"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17621",
+      "codigo": "EB607",
+      "nome": "Gerenciamento de  Resíduos Sólidos",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB304",
+          "EB404"
+        ],
+        [
+          "EB307",
+          "EB404"
+        ],
+        [
+          "ST912"
+        ],
+        [
+          "ST405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17633",
+      "codigo": "EB810",
+      "nome": "Hidrogeologia",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB404",
+          "EB407",
+          "EB502"
+        ],
+        [
+          "EB502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14232",
+      "codigo": "EB941",
+      "nome": "Hidrologia",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB403",
+          "EB938"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10107",
+      "codigo": "EB506",
+      "nome": "Saúde Ambiental",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB207"
+        ],
+        [
+          "ST207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10101",
+      "codigo": "EB604",
+      "nome": "Toxicologia Regulatória",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB304"
+        ],
+        [
+          "ST405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14388",
+      "codigo": "EB973",
+      "nome": "Drenagem Urbana",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB941"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18123",
+      "codigo": "ST906",
+      "nome": "Projeto Integrador",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18124",
+      "codigo": "ST907",
+      "nome": "Atividades Complementares - Extensão",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18740",
+      "codigo": "ST909",
+      "nome": "Planejamento, Legislação e Gestão de Sistemas de Saneamento",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18745",
+      "codigo": "ST915",
+      "nome": "Tratamento de Águas Residuárias",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST913"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11405",
+      "codigo": "ST752",
+      "nome": "Trabalho de Conclusão de Curso",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11406",
+      "codigo": "ST753",
+      "nome": "Estágio Supervisionado",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,2619 @@
+{
+  "course": {
+    "id": 6,
+    "name": "Ciências Biológicas (6)",
+    "code": "6"
+  },
+  "modalidade": "AL",
+  "modalidade_label": "AL - Bacharelado em Ciências Biológicas",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "AL",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9742",
+      "codigo": "BC182",
+      "nome": "Biologia Celular I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "628",
+      "codigo": "BE180",
+      "nome": "Introdução à Ecologia",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9746",
+      "codigo": "BG180",
+      "nome": "Introdução à Evolução",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9751",
+      "codigo": "BZ183",
+      "nome": "Sistemática Zoológica e Biodiversidade",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4763",
+      "codigo": "MS380",
+      "nome": "Matemática Aplicada para Biologia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5348",
+      "codigo": "QG109",
+      "nome": "Química Geral Experimental",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14860",
+      "codigo": "BZ285",
+      "nome": "Zoologia de Invertebrados I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9972",
+      "codigo": "BB281",
+      "nome": "Bioquímica de Proteínas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17725",
+      "codigo": "F 106",
+      "nome": "Fundamentos de Física para a Biologia",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10012",
+      "codigo": "BC282",
+      "nome": "Biologia Celular II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11737",
+      "codigo": "BG200",
+      "nome": "Bioestatística",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "MS380"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10013",
+      "codigo": "BG282",
+      "nome": "Genética I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG180"
+        ],
+        [
+          "BG181"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "692",
+      "codigo": "BH282",
+      "nome": "Fundamentos da Biologia Tecidual",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14859",
+      "codigo": "BT285",
+      "nome": "Sistemática de Criptógamas e Gimnospermas",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10011",
+      "codigo": "BA281",
+      "nome": "Anatomia Humana Geral",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "723",
+      "codigo": "BM382",
+      "nome": "Microbiologia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BB280",
+          "BC180"
+        ],
+        [
+          "BB280",
+          "BC181"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14861",
+      "codigo": "BT385",
+      "nome": "Morfologia e Anatomia de Angiospermas",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14862",
+      "codigo": "BZ385",
+      "nome": "Zoologia de Invertebrados II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BZ285"
+        ],
+        [
+          "BZ280"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9977",
+      "codigo": "BB381",
+      "nome": "Metabolismo",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10015",
+      "codigo": "BF381",
+      "nome": "Biofísica e Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "672",
+      "codigo": "BG380",
+      "nome": "Genética Fisiológica e Molecular",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG282"
+        ],
+        [
+          "BG481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "712",
+      "codigo": "BI381",
+      "nome": "Imunologia Básica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC282"
+        ],
+        [
+          "BC283"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "673",
+      "codigo": "BG480",
+      "nome": "Genética e Evolução",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG380"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10018",
+      "codigo": "BH420",
+      "nome": "Embriologia Comparada",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BH282"
+        ],
+        [
+          "BH482"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14863",
+      "codigo": "BT485",
+      "nome": "Sistemática de Angiospermas I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BT382"
+        ],
+        [
+          "BT385"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10020",
+      "codigo": "BV481",
+      "nome": "Fisiologia Vegetal Básica: Metabolismo",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6932",
+      "codigo": "BD520",
+      "nome": "Fundamentos Éticos para o Exercício Profissional do Biólogo",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14864",
+      "codigo": "BZ485",
+      "nome": "Zoologia de Vertebrados",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "632",
+      "codigo": "BE480",
+      "nome": "Ecologia Básica",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BE180"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10017",
+      "codigo": "BF481",
+      "nome": "Biofísica e Fisiologia Humana II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BF381"
+        ],
+        [
+          "BF483"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10024",
+      "codigo": "BD621",
+      "nome": "Legislação e Normas para o Profissional de Biologia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BD520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10021",
+      "codigo": "BH520",
+      "nome": "Biologia do Desenvolvimento",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG380",
+          "BH420"
+        ],
+        [
+          "BG520",
+          "BH620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11739",
+      "codigo": "BL300",
+      "nome": "Introdução à Filosofia das Ciências Naturais",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10022",
+      "codigo": "BP582",
+      "nome": "Parasitologia Animal I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10023",
+      "codigo": "BV581",
+      "nome": "Fisiologia Vegetal Básica: Desenvolvimento",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BV481"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17426",
+      "codigo": "BX001",
+      "nome": "Práticas de Extensão em Ciências Biológicas I",
+      "creditos": 10,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11738",
+      "codigo": "BL600",
+      "nome": "Produção e Análise de Textos em Ciências Biológicas",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17884",
+      "codigo": "GM460",
+      "nome": "Geologia e Paleontologia Básicas",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17418",
+      "codigo": "BD783",
+      "nome": "Construção de Mídias para Difusão e Comunicação das Ciências Biológicas",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14867",
+      "codigo": "BT205",
+      "nome": "Biogeografia",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11423",
+      "codigo": "BV925",
+      "nome": "Procedimentos Analíticos para Estudos em Biologia Vegetal e Biociências",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11433",
+      "codigo": "BV886",
+      "nome": "Tópicos em Fisiologia Vegetal",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BV481"
+        ],
+        [
+          "BV620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9750",
+      "codigo": "BV782",
+      "nome": "Genética e Genômica Vegetal",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG380"
+        ],
+        [
+          "BG520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10248",
+      "codigo": "BT685",
+      "nome": "Biossistemática, Reprodução, Polinização e Dispersão",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BT482"
+        ],
+        [
+          "BT483"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "754",
+      "codigo": "BP915",
+      "nome": "Qualidade de Água, Saúde e Saneamento",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BS415"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "743",
+      "codigo": "BP580",
+      "nome": "Parasitologia Animal II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BP582"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10261",
+      "codigo": "BZ817",
+      "nome": "Biodiversidade de Comunidades Macrobentônicas de Praias",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BZ280",
+          "BZ380"
+        ],
+        [
+          "BZ281",
+          "BZ382"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "707",
+      "codigo": "BH684",
+      "nome": "Embriologia Humana",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BH420",
+          "BH520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10215",
+      "codigo": "BF587",
+      "nome": "Neurociência",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BF481"
+        ],
+        [
+          "BF583"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10211",
+      "codigo": "BE781",
+      "nome": "Ecologia Animal",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BE180"
+        ],
+        [
+          "BE480"
+        ],
+        [
+          "BE581",
+          "BE681",
+          "BE682"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10161",
+      "codigo": "BB585",
+      "nome": "Enzimologia Teórica e Aplicada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "631",
+      "codigo": "BE310",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11841",
+      "codigo": "BV586",
+      "nome": "Propagação e Reprodução de Plantas",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BV581"
+        ],
+        [
+          "BV720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10258",
+      "codigo": "BZ587",
+      "nome": "História Natural, Sistemática e Evolução de Invertebrados",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11434",
+      "codigo": "BV888",
+      "nome": "Práticas em Bioquímica de Plantas",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BV481"
+        ],
+        [
+          "BV620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10253",
+      "codigo": "BV880",
+      "nome": "Melhoramento Genético de Plantas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG380"
+        ],
+        [
+          "BG520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9882",
+      "codigo": "BT792",
+      "nome": "Ecologia Vegetal no Campo",
+      "creditos": 15,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10244",
+      "codigo": "BT582",
+      "nome": "Sistemática de Angiospermas II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BT482"
+        ],
+        [
+          "BT485"
+        ],
+        [
+          "BT483"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "746",
+      "codigo": "BP590",
+      "nome": "Introdução à Sistemática Molecular",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "715",
+      "codigo": "BI583",
+      "nome": "Imunologia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BI381"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "676",
+      "codigo": "BG580",
+      "nome": "Mecanismos de Evolução",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG480"
+        ],
+        [
+          "BG680"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10212",
+      "codigo": "BE782",
+      "nome": "Ecologia Animal no Campo",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BE180"
+        ],
+        [
+          "BE480"
+        ],
+        [
+          "BE581",
+          "BE681",
+          "BE682"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "596",
+      "codigo": "BC680",
+      "nome": "Biologia Celular e Molecular",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "787",
+      "codigo": "BT681",
+      "nome": "Botânica Econômica",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11832",
+      "codigo": "BV587",
+      "nome": "Cultura de Tecidos Vegetais",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BV581"
+        ],
+        [
+          "BV720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "826",
+      "codigo": "BZ680",
+      "nome": "História Natural de Vertebrados",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BZ480"
+        ],
+        [
+          "BZ681"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6813",
+      "codigo": "BV916",
+      "nome": "Expressão do Genoma: RNAs Reguladores e Epigenética",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG380"
+        ],
+        [
+          "BG520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11432",
+      "codigo": "BV884",
+      "nome": "Metabolismo de Plantas sob Estresse",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BV481"
+        ],
+        [
+          "BV620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11422",
+      "codigo": "BT916",
+      "nome": "Botânica Forense e Plantas Tóxicas",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "788",
+      "codigo": "BT682",
+      "nome": "Ecologia Vegetal",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11425",
+      "codigo": "BB017",
+      "nome": "A Teoria do Proteoma e da Proteômica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "729",
+      "codigo": "BM584",
+      "nome": "Microbiologia (Biologia Molecular)",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BM382"
+        ],
+        [
+          "BM720"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10220",
+      "codigo": "BG582",
+      "nome": "Genética Molecular",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BG380"
+        ],
+        [
+          "BG520"
+        ],
+        [
+          "BG680"
+        ],
+        [
+          "BG480"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10214",
+      "codigo": "BF586",
+      "nome": "Fisiologia Animal Comparada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BF481"
+        ],
+        [
+          "BF583"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "598",
+      "codigo": "BC692",
+      "nome": "Princípios de Cultura Celular",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11426",
+      "codigo": "BB018",
+      "nome": "O Proteoma e a Proteômica na Prática",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BB017"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "810",
+      "codigo": "BV915",
+      "nome": "Metabolismo Vegetal e Produção de Fitofármacos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BT315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "748",
+      "codigo": "BP670",
+      "nome": "História Natural dos Insetos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11831",
+      "codigo": "BE587",
+      "nome": "Tópicos em Ecologia de Organismos, Populações, Comunidades e Ecossistemas IV",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12235",
+      "codigo": "BC591",
+      "nome": "Sinalização Celular",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC282"
+        ],
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ],
+        [
+          "BC283"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10256",
+      "codigo": "BV885",
+      "nome": "Mudanças Climáticas",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BV481"
+        ],
+        [
+          "BV620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11833",
+      "codigo": "BC699",
+      "nome": "Introdução à Biologia Sintética",
+      "creditos": 5,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC182",
+          "BC282",
+          "BG380"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3280",
+      "codigo": "GN101",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12228",
+      "codigo": "BP325",
+      "nome": "Tópicos em Parasitologia Contemporânea",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "680",
+      "codigo": "BG691",
+      "nome": "Genética Molecular e Genômica Básica",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17737",
+      "codigo": "FA506",
+      "nome": "Princípios de Bioquímica e Microbiologia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "QG101",
+          "QG102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "594",
+      "codigo": "BC590",
+      "nome": "Ultraestrutura Celular I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12231",
+      "codigo": "BZ560",
+      "nome": "Tópicos em Zoologia II",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12233",
+      "codigo": "BZ590",
+      "nome": "Tópicos em Zoologia IV",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12230",
+      "codigo": "BZ550",
+      "nome": "Tópicos em Zoologia I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "602",
+      "codigo": "BC695",
+      "nome": "Citogenética",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "637",
+      "codigo": "BE593",
+      "nome": "Ecologia Genética e Evolutiva",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12236",
+      "codigo": "BC592",
+      "nome": "Biologia Celular do Câncer",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC282"
+        ],
+        [
+          "BC182"
+        ],
+        [
+          "BC183"
+        ],
+        [
+          "BC283"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10158",
+      "codigo": "BA582",
+      "nome": "Bases Anatômicas da Neurobiologia",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BA281"
+        ],
+        [
+          "BA480"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11837",
+      "codigo": "BE584",
+      "nome": "Tópicos em Ecologia de Organismos, Populações, Comunidades e Ecossistemas I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BE480"
+        ],
+        [
+          "BE581",
+          "BE681"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2942",
+      "codigo": "FA874",
+      "nome": "Saneamento Ambiental",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "FA733"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6853",
+      "codigo": "GE913",
+      "nome": "Ciências Naturais e Ambiente",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2802",
+      "codigo": "FA001",
+      "nome": "Saneamento Rural",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "FA874"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11839",
+      "codigo": "BE586",
+      "nome": "Tópicos em Ecologia de Organismos, Populações, Comunidades e Ecossistemas III",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BE480"
+        ],
+        [
+          "BE581",
+          "BE681"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "638",
+      "codigo": "BE594",
+      "nome": "Ecologia de Interações",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BE480"
+        ],
+        [
+          "BE881"
+        ],
+        [
+          "BE581"
+        ],
+        [
+          "BE681"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "597",
+      "codigo": "BC690",
+      "nome": "Ultraestrutura Celular II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11840",
+      "codigo": "BH555",
+      "nome": "Biologia do Envelhecimento Animal",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BB381",
+          "BC282",
+          "BG380"
+        ],
+        [
+          "BB381",
+          "BC283",
+          "BG520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14291",
+      "codigo": "BG870",
+      "nome": "Introdução a Biologia Computacional",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12237",
+      "codigo": "BI573",
+      "nome": "Imunologia Comparada",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BI214"
+        ],
+        [
+          "BI315"
+        ],
+        [
+          "BI381"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12242",
+      "codigo": "BP326",
+      "nome": "Tópicos Avançados em Parasitologia I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BP323",
+          "BP515",
+          "BP582",
+          "BP820",
+          "BS420"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12227",
+      "codigo": "BH530",
+      "nome": "Análise Crítica de Artigos Científicos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17155",
+      "codigo": "BV592",
+      "nome": "Diversidade Molecular em Plantas e Bioprocessos: Fundamentos e Aplicações",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11838",
+      "codigo": "BE585",
+      "nome": "Tópicos em Ecologia de Organismos, Populações, Comunidades e Ecossistemas II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BE480"
+        ],
+        [
+          "BE581",
+          "BE681"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12232",
+      "codigo": "BZ570",
+      "nome": "Tópicos em Zoologia III",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6848",
+      "codigo": "GE916",
+      "nome": "Ensino de Ciências da Terra e do Ambiente",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9744",
+      "codigo": "BC698",
+      "nome": "Cromatina e Epigenética",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BC182",
+          "BC282"
+        ],
+        [
+          "BC183",
+          "BC283"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "662",
+      "codigo": "BF590",
+      "nome": "Fisiologia Humana do Desenvolvimento",
+      "creditos": 3,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10157",
+      "codigo": "BA581",
+      "nome": "Esplancnologia",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BA281"
+        ],
+        [
+          "BA133"
+        ],
+        [
+          "BS215"
+        ],
+        [
+          "BA480"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10159",
+      "codigo": "BA583",
+      "nome": "Biologia da Regeneração Nervosa",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BA281"
+        ],
+        [
+          "BA480"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17154",
+      "codigo": "BV591",
+      "nome": "Toxicologia, Plantas Tóxicas e Análises Toxicológicas: Conceitos e Aplicações",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3169",
+      "codigo": "GE801",
+      "nome": "História das Ciências Naturais",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12243",
+      "codigo": "BP327",
+      "nome": "Tópicos Avançados em Parasitologia II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": [
+        [
+          "BP323",
+          "BP515",
+          "BP582",
+          "BP820",
+          "BS420"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "674",
+      "codigo": "BG500",
+      "nome": "Iniciação Científica em Genética I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10213",
+      "codigo": "BF501",
+      "nome": "Iniciação Científica em Fisiologia Humana I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10225",
+      "codigo": "BH502",
+      "nome": "Iniciação Científica em Biologia Tecidual I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "742",
+      "codigo": "BP500",
+      "nome": "Iniciação Científica em Parasitologia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9088",
+      "codigo": "BD500",
+      "nome": "Iniciação Científica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "593",
+      "codigo": "BC500",
+      "nome": "Iniciação Científica em Biologia Celular I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "660",
+      "codigo": "BF500",
+      "nome": "Iniciação Científica em Fisiologia e Biofísica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "700",
+      "codigo": "BH501",
+      "nome": "Iniciação Científica em Embriologia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "821",
+      "codigo": "BZ500",
+      "nome": "Iniciação Científica em Zoologia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "801",
+      "codigo": "BV500",
+      "nome": "Iniciação Científica em Fisiologia Vegetal I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "580",
+      "codigo": "BB500",
+      "nome": "Iniciação Científica em Bioquímica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10207",
+      "codigo": "BE501",
+      "nome": "Iniciação Científica em Ecologia Animal I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "727",
+      "codigo": "BM500",
+      "nome": "Iniciação Científica em Microbiologia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10243",
+      "codigo": "BT501",
+      "nome": "Iniciação Científica em Ecologia Vegetal I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "567",
+      "codigo": "BA500",
+      "nome": "Iniciação Científica em Anatomia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10219",
+      "codigo": "BG501",
+      "nome": "Iniciação Científica em Evolução I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "713",
+      "codigo": "BI500",
+      "nome": "Iniciação Científica em Imunologia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10226",
+      "codigo": "BH511",
+      "nome": "Iniciação Científica em Biologia do Desenvolvimento I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "778",
+      "codigo": "BT500",
+      "nome": "Iniciação Científica em Botânica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "633",
+      "codigo": "BE500",
+      "nome": "Iniciação Científica em Ecologia I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "595",
+      "codigo": "BC600",
+      "nome": "Iniciação Científica em Biologia Celular II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "663",
+      "codigo": "BF600",
+      "nome": "Iniciação Científica em Fisiologia e Biofísica II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "706",
+      "codigo": "BH601",
+      "nome": "Iniciação Científica em Embriologia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "730",
+      "codigo": "BM600",
+      "nome": "Iniciação Científica em Microbiologia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "802",
+      "codigo": "BV600",
+      "nome": "Iniciação Científica em Fisiologia Vegetal II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "585",
+      "codigo": "BB600",
+      "nome": "Iniciação Científica em Bioquímica II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10208",
+      "codigo": "BE601",
+      "nome": "Iniciação Científica em Ecologia Animal II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "716",
+      "codigo": "BI600",
+      "nome": "Iniciação Científica em Imunologia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10247",
+      "codigo": "BT601",
+      "nome": "Iniciação Científica em Ecologia Vegetal II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "569",
+      "codigo": "BA600",
+      "nome": "Iniciação Científica em Anatomia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10222",
+      "codigo": "BG601",
+      "nome": "Iniciação Científica em Evolução II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "679",
+      "codigo": "BG600",
+      "nome": "Iniciação Científica em Genética II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10229",
+      "codigo": "BH611",
+      "nome": "Iniciação Científica em Biologia do Desenvolvimento I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "785",
+      "codigo": "BT600",
+      "nome": "Iniciação Científica em Botânica II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "642",
+      "codigo": "BE600",
+      "nome": "Iniciação Científica em Ecologia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "8757",
+      "codigo": "BD600",
+      "nome": "Iniciação Científica II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10217",
+      "codigo": "BF601",
+      "nome": "Iniciação Científica em Fisiologia Humana II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10228",
+      "codigo": "BH602",
+      "nome": "Iniciação Científica em Biologia Tecidual II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "747",
+      "codigo": "BP600",
+      "nome": "Iniciação Científica em Parasitologia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "825",
+      "codigo": "BZ600",
+      "nome": "Iniciação Científica em Zoologia II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "603",
+      "codigo": "BC700",
+      "nome": "Estágio Supervisionado em Biologia Celular I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10223",
+      "codigo": "BG712",
+      "nome": "Estágio Supervisionado em Evolução I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10234",
+      "codigo": "BH712",
+      "nome": "Estágio Supervisionado em Biologia do Desenvolvimento I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17147",
+      "codigo": "BD705",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "587",
+      "codigo": "BB700",
+      "nome": "Estágio Supervisionado em Bioquímica I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "681",
+      "codigo": "BG700",
+      "nome": "Estágio Supervisionado em Genética I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "665",
+      "codigo": "BF700",
+      "nome": "Estágio Supervisionado em Fisiologia e Biofísica I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "791",
+      "codigo": "BT700",
+      "nome": "Estágio Supervisionado em Botânica I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10249",
+      "codigo": "BT701",
+      "nome": "Estágio Supervisionado em Ecologia Vegetal I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "570",
+      "codigo": "BA700",
+      "nome": "Estágio Supervisionado em Anatomia I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "829",
+      "codigo": "BZ700",
+      "nome": "Estágio Supervisionado em Zoologia I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10233",
+      "codigo": "BH711",
+      "nome": "Estágio Supervisionado em Embriologia I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "751",
+      "codigo": "BP700",
+      "nome": "Estágio Supervisionado em Parasitologia I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12240",
+      "codigo": "BL700",
+      "nome": "Estágio Supervisionado em Ensino I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "717",
+      "codigo": "BI700",
+      "nome": "Estágio Supervisionado em Imunologia I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "643",
+      "codigo": "BE700",
+      "nome": "Estágio Supervisionado em Ecologia I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10232",
+      "codigo": "BH702",
+      "nome": "Estágio Supervisionado em Biologia Tecidual I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "732",
+      "codigo": "BM710",
+      "nome": "Estágio Supervisionado na Área de Microbiologia I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "806",
+      "codigo": "BV700",
+      "nome": "Estágio Supervisionado em Fisiologia Vegetal I",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "667",
+      "codigo": "BF800",
+      "nome": "Estágio Supervisionado em Fisiologia e Biofísica II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10250",
+      "codigo": "BT801",
+      "nome": "Estágio Supervisionado em Ecologia Vegetal II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10235",
+      "codigo": "BH802",
+      "nome": "Estágio Supervisionado em Biologia Tecidual II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "753",
+      "codigo": "BP800",
+      "nome": "Estágio Supervisionado em Parasitologia II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "830",
+      "codigo": "BZ800",
+      "nome": "Estágio Supervisionado em Zoologia II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10236",
+      "codigo": "BH811",
+      "nome": "Estágio Supervisionado em Embriologia II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10224",
+      "codigo": "BG812",
+      "nome": "Estágio Supervisionado em Evolução II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "733",
+      "codigo": "BM800",
+      "nome": "Estágio Supervisionado em Microbiologia II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "646",
+      "codigo": "BE800",
+      "nome": "Estágio Supervisionado em Ecologia II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "589",
+      "codigo": "BB800",
+      "nome": "Estágio Supervisionado em Bioquímica II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "682",
+      "codigo": "BG800",
+      "nome": "Estágio Supervisionado em Genética II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "808",
+      "codigo": "BV800",
+      "nome": "Estágio Supervisionado em Fisiologia Vegetal II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "17148",
+      "codigo": "BD805",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "571",
+      "codigo": "BA800",
+      "nome": "Estágio Supervisionado em Anatomia II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "719",
+      "codigo": "BI800",
+      "nome": "Estágio Supervisionado em Imunologia II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "605",
+      "codigo": "BC800",
+      "nome": "Estágio Supervisionado em Biologia Celular II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "794",
+      "codigo": "BT800",
+      "nome": "Estágio Supervisionado em Botânica II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12241",
+      "codigo": "BL800",
+      "nome": "Estágio Supervisionado em Ensino II",
+      "creditos": 12,
+      "catalogo": 2024,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AL",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,991 @@
+{
+  "course": {
+    "id": 41,
+    "name": "Engenharia Elétrica (41)",
+    "code": "41"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1343",
+      "codigo": "EA772",
+      "nome": "Circuitos Lógicos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2091",
+      "codigo": "EM230",
+      "nome": "Oficinas em Instalações Elétricas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2096",
+      "codigo": "EM330",
+      "nome": "Oficinas I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2746",
+      "codigo": "F 229",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1336",
+      "codigo": "EA513",
+      "nome": "Circuitos Elétricos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1344",
+      "codigo": "EA773",
+      "nome": "Laboratório de Circuitos Lógicos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA772"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1337",
+      "codigo": "EA611",
+      "nome": "Circuitos II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1578",
+      "codigo": "EE300",
+      "nome": "Fundamentos da Física Moderna",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 228",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "845",
+      "codigo": "CE304",
+      "nome": "Direito",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1346",
+      "codigo": "EA869",
+      "nome": "Introdução a Sistemas de Computação Digital",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA772",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1577",
+      "codigo": "EE103",
+      "nome": "Laboratório de Engenharia Elétrica I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1582",
+      "codigo": "EE410",
+      "nome": "Introdução à Ciência dos Materiais para Engenharia Elétrica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE300"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1579",
+      "codigo": "EE301",
+      "nome": "Laboratório de Fundamentos Físicos para a Engenharia Elétrica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 229"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1581",
+      "codigo": "EE400",
+      "nome": "Métodos da Engenharia Elétrica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1584",
+      "codigo": "EE521",
+      "nome": "Introdução à Teoria Eletromagnética",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513",
+          "F 128",
+          "F 129",
+          "MA211"
+        ],
+        [
+          "EA513",
+          "F 228",
+          "F 229",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1586",
+      "codigo": "EE530",
+      "nome": "Eletrônica Básica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513",
+          "EE410"
+        ],
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4440",
+      "codigo": "ME323",
+      "nome": "Introdução aos Modelos Probabilísticos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6723",
+      "codigo": "EA871",
+      "nome": "Laboratório de Programação Básica de Sistemas Digitais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA869"
+        ],
+        [
+          "MC404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1588",
+      "codigo": "EE540",
+      "nome": "Teoria Eletromagnética",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE400",
+          "EE521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3904",
+      "codigo": "LA122",
+      "nome": "Inglês Instrumental I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1338",
+      "codigo": "EA614",
+      "nome": "Análise de Sinais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1594",
+      "codigo": "EE754",
+      "nome": "Ondas Guiadas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE540"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1602",
+      "codigo": "EE881",
+      "nome": "Princípios de Comunicações I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA614",
+          "ME323"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1339",
+      "codigo": "EA616",
+      "nome": "Análise Linear de Sistemas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513",
+          "EE400",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1340",
+      "codigo": "EA619",
+      "nome": "Laboratório de Análise Linear",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA513",
+          "EE400"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1587",
+      "codigo": "EE531",
+      "nome": "Laboratório de Eletrônica Básica I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE530"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1591",
+      "codigo": "EE640",
+      "nome": "Eletrônica Básica II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE530"
+        ],
+        [
+          "EE533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2634",
+      "codigo": "ET520",
+      "nome": "Princípios de Conversão de Energia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA611",
+          "EE521"
+        ],
+        [
+          "EA611",
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2635",
+      "codigo": "ET521",
+      "nome": "Laboratório de Princípios de Conversão de Energia",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA611",
+          "EE521"
+        ],
+        [
+          "EA611",
+          "F 328",
+          "F 428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1320",
+      "codigo": "EA044",
+      "nome": "Planejamento e Análise de Sistemas de Produção",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211",
+          "MA327",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1351",
+      "codigo": "EA879",
+      "nome": "Introdução a Software Básico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA869"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1585",
+      "codigo": "EE522",
+      "nome": "Laboratório de Eletromagnetismo",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE103",
+          "F 228",
+          "F 229",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1603",
+      "codigo": "EE882",
+      "nome": "Laboratório de Comunicações I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE881"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2637",
+      "codigo": "ET620",
+      "nome": "Máquinas Elétricas",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2638",
+      "codigo": "ET621",
+      "nome": "Laboratório de Máquinas Elétricas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET520",
+          "ET521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1341",
+      "codigo": "EA721",
+      "nome": "Princípios de Controle e Servomecanismo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA616"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1342",
+      "codigo": "EA722",
+      "nome": "Laboratório de Controle e Servomecanismo",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA616",
+          "EA619"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1590",
+      "codigo": "EE610",
+      "nome": "Eletrônica Digital I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE530"
+        ],
+        [
+          "EE532"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1592",
+      "codigo": "EE641",
+      "nome": "Laboratório de Eletrônica Básica II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE531",
+          "EE640"
+        ],
+        [
+          "EE533",
+          "EE640"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2639",
+      "codigo": "ET720",
+      "nome": "Sistemas de Energia Elétrica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11718",
+      "codigo": "QG111",
+      "nome": "Química Teórica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11719",
+      "codigo": "QG122",
+      "nome": "Química Experimental",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6724",
+      "codigo": "EA075",
+      "nome": "Introdução ao Projeto de Sistemas Embarcados",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA869"
+        ],
+        [
+          "MC404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1595",
+      "codigo": "EE755",
+      "nome": "Laboratório de Ondas Guiadas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE522",
+          "EE754"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2110",
+      "codigo": "EM524",
+      "nome": "Fenômenos de Transporte",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 228",
+          "F 229"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2095",
+      "codigo": "EM312",
+      "nome": "Desenho Técnico",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "890",
+      "codigo": "CE738",
+      "nome": "Economia para Engenharia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6725",
+      "codigo": "EA076",
+      "nome": "Laboratório de Sistemas Embarcados",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA075",
+          "EA773",
+          "EA871"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1597",
+      "codigo": "EE833",
+      "nome": "Eletrônica de Potência",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 11,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE530"
+        ],
+        [
+          "EE533"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "896",
+      "codigo": "CE838",
+      "nome": "Contabilidade para Engenharia",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EC306"
+        ],
+        [
+          "MA311"
+        ],
+        [
+          "CE151"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2101",
+      "codigo": "EM423",
+      "nome": "Resistência dos Materiais",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 12,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 313"
+        ],
+        [
+          "F 315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "631",
+      "codigo": "BE310",
+      "nome": "Ciências do Ambiente",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 13,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1311",
+      "codigo": "EA006",
+      "nome": "Trabalho de Fim de Curso",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 13,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

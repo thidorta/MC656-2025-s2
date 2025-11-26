@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 103,
+    "name": "Gestão do Agronegócio (103)",
+    "code": "103"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

@@ -1,0 +1,981 @@
+{
+  "course": {
+    "id": 60,
+    "name": "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (60)",
+    "code": "60"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2026,
+  "parameters": {
+    "catalogo": "2026",
+    "modalidade": "",
+    "periodo": "20262",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2746",
+      "codigo": "F 229",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ],
+      "cp_group": 0,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#D96666"
+    },
+    {
+      "disciplina_id": "6772",
+      "codigo": "MC458",
+      "nome": "Projeto e Análise de Algoritmos I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "Obrigatória",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202",
+          "MS328"
+        ],
+        [
+          "MC202",
+          "MC358"
+        ]
+      ],
+      "cp_group": 1,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#E67399"
+    },
+    {
+      "disciplina_id": "4184",
+      "codigo": "MC536",
+      "nome": "Bancos de Dados: Teoria e Prática",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "Obrigatória",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ],
+      "cp_group": 2,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#E6804D"
+    },
+    {
+      "disciplina_id": "4193",
+      "codigo": "MC613",
+      "nome": "Laboratório de Circuitos Digitais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "Obrigatória",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA772"
+        ],
+        [
+          "MC602"
+        ]
+      ],
+      "cp_group": 3,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#A7A77D"
+    },
+    {
+      "disciplina_id": "6775",
+      "codigo": "MC558",
+      "nome": "Projeto e Análise de Algoritmos II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC458"
+        ]
+      ],
+      "cp_group": 4,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#B373B3"
+    },
+    {
+      "disciplina_id": "10586",
+      "codigo": "MC832",
+      "nome": "Redes de Computadores",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "Obrigatória",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ],
+      "cp_group": 5,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#DDDD00"
+    },
+    {
+      "disciplina_id": "4203",
+      "codigo": "MC714",
+      "nome": "Sistemas Distribuídos",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "Obrigatória",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EA876"
+        ],
+        [
+          "MC504"
+        ]
+      ],
+      "cp_group": 6,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#65AD89"
+    },
+    {
+      "disciplina_id": "6983",
+      "codigo": "MC833",
+      "nome": "Programação de Redes de Computadores",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC832"
+        ]
+      ],
+      "cp_group": 7,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#8C66D9"
+    },
+    {
+      "disciplina_id": "11376",
+      "codigo": "MC921",
+      "nome": "Projeto e Construção de Compiladores",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "Obrigatória",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ],
+      "cp_group": 8,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#C244AB"
+    },
+    {
+      "disciplina_id": "4156",
+      "codigo": "MC030",
+      "nome": "Projeto Final de Graduação",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 9,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#A992A9"
+    },
+    {
+      "disciplina_id": "4153",
+      "codigo": "MC019",
+      "nome": "Estágio Supervisionado em Ciência da Computação",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 10,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": "AA200",
+      "color": "#D1BC36"
+    },
+    {
+      "disciplina_id": "4154",
+      "codigo": "MC020",
+      "nome": "Estágio Supervisionado em Ciência da Computação II",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC019"
+        ]
+      ],
+      "cp_group": 11,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#668CB3"
+    },
+    {
+      "disciplina_id": "4157",
+      "codigo": "MC032",
+      "nome": "Estudo Dirigido",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 12,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": "AA200",
+      "color": "#4650BD"
+    },
+    {
+      "disciplina_id": "6859",
+      "codigo": "MC033",
+      "nome": "Estudo Dirigido II",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 13,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": "AA200",
+      "color": "#59BFB3"
+    },
+    {
+      "disciplina_id": "4159",
+      "codigo": "MC040",
+      "nome": "Estágio de Iniciação Científica I",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 14,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": "AA200",
+      "color": "#F2A640"
+    },
+    {
+      "disciplina_id": "4160",
+      "codigo": "MC041",
+      "nome": "Estágio de Iniciação Científica II",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 15,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": "AA200",
+      "color": "#C7561E"
+    },
+    {
+      "disciplina_id": "4161",
+      "codigo": "MC050",
+      "nome": "Monitoria",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 16,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": "AA200",
+      "color": "#94A2BE"
+    },
+    {
+      "disciplina_id": "10634",
+      "codigo": "MC051",
+      "nome": "Monitoria II",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 17,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": "AA200",
+      "color": "#668CD9"
+    },
+    {
+      "disciplina_id": "6773",
+      "codigo": "MC346",
+      "nome": "Paradigmas de Programação",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ],
+      "cp_group": 18,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#B5515D"
+    },
+    {
+      "disciplina_id": "10635",
+      "codigo": "MC521",
+      "nome": "Desafios de Programação I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ],
+      "cp_group": 19,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#E0C240"
+    },
+    {
+      "disciplina_id": "10636",
+      "codigo": "MC621",
+      "nome": "Desafios de Programação II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ],
+      "cp_group": 20,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#BE9494"
+    },
+    {
+      "disciplina_id": "12245",
+      "codigo": "MC646",
+      "nome": "Verificação, Validação e Testes de Software",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC426"
+        ]
+      ],
+      "cp_group": 0,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#D96666"
+    },
+    {
+      "disciplina_id": "6776",
+      "codigo": "MC658",
+      "nome": "Projeto e Análise de Algoritmos III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ],
+      "cp_group": 1,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#E67399"
+    },
+    {
+      "disciplina_id": "10637",
+      "codigo": "MC721",
+      "nome": "Desafios de Programação III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC521"
+        ],
+        [
+          "MC621"
+        ]
+      ],
+      "cp_group": 2,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#E6804D"
+    },
+    {
+      "disciplina_id": "10638",
+      "codigo": "MC821",
+      "nome": "Desafios de Programação IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC521"
+        ],
+        [
+          "MC621"
+        ]
+      ],
+      "cp_group": 3,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#A7A77D"
+    },
+    {
+      "disciplina_id": "6863",
+      "codigo": "MC851",
+      "nome": "Projeto em Computação I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 4,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#B373B3"
+    },
+    {
+      "disciplina_id": "6864",
+      "codigo": "MC853",
+      "nome": "Projeto em Sistemas de Programação",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ],
+      "cp_group": 5,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#DDDD00"
+    },
+    {
+      "disciplina_id": "6777",
+      "codigo": "MC855",
+      "nome": "Projeto em Sistemas de Computação",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC714"
+        ]
+      ],
+      "cp_group": 6,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#65AD89"
+    },
+    {
+      "disciplina_id": "6865",
+      "codigo": "MC857",
+      "nome": "Projeto em Sistemas de Informação",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC426"
+        ]
+      ],
+      "cp_group": 7,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#8C66D9"
+    },
+    {
+      "disciplina_id": "6866",
+      "codigo": "MC859",
+      "nome": "Projeto em Teoria da Computação",
+      "creditos": 12,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC558"
+        ]
+      ],
+      "cp_group": 8,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#C244AB"
+    },
+    {
+      "disciplina_id": "6867",
+      "codigo": "MC861",
+      "nome": "Projeto em Computação II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 9,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#A992A9"
+    },
+    {
+      "disciplina_id": "11148",
+      "codigo": "MC871",
+      "nome": "Projeto em Computação III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 10,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#D1BC36"
+    },
+    {
+      "disciplina_id": "11149",
+      "codigo": "MC881",
+      "nome": "Projeto em Computação IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [],
+      "cp_group": 11,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#668CB3"
+    },
+    {
+      "disciplina_id": "6868",
+      "codigo": "MC886",
+      "nome": "Aprendizado de Máquina",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC102",
+          "ME210"
+        ],
+        [
+          "MA327",
+          "MC102",
+          "ME323"
+        ]
+      ],
+      "cp_group": 12,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "ja_cursou",
+      "color": "#4650BD"
+    },
+    {
+      "disciplina_id": "6869",
+      "codigo": "MC896",
+      "nome": "Processamento de Línguas Naturais",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC322"
+        ]
+      ],
+      "cp_group": 13,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#59BFB3"
+    },
+    {
+      "disciplina_id": "4227",
+      "codigo": "MC906",
+      "nome": "Introdução à Inteligência Artificial",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "Eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC322",
+          "ME323"
+        ]
+      ],
+      "cp_group": 14,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#F2A640"
+    },
+    {
+      "disciplina_id": "12247",
+      "codigo": "MC907",
+      "nome": "Robótica Móvel",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC906"
+        ],
+        [
+          "MC886"
+        ]
+      ],
+      "cp_group": 15,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#C7561E"
+    },
+    {
+      "disciplina_id": "4233",
+      "codigo": "MC919",
+      "nome": "Tópicos Especiais em Processamento Gráfico",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC920"
+        ]
+      ],
+      "cp_group": 16,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#94A2BE"
+    },
+    {
+      "disciplina_id": "4234",
+      "codigo": "MC920",
+      "nome": "Introdução ao Processamento de Imagem Digital",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327",
+          "MC202"
+        ]
+      ],
+      "cp_group": 17,
+      "status": "completed",
+      "tem": true,
+      "pode": true,
+      "obs": null,
+      "color": "#668CD9"
+    },
+    {
+      "disciplina_id": "10639",
+      "codigo": "MC937",
+      "nome": "Computação Gráfica",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC202"
+        ]
+      ],
+      "cp_group": 18,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#B5515D"
+    },
+    {
+      "disciplina_id": "4247",
+      "codigo": "MC940",
+      "nome": "Processamento e Análise de Imagens",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC920"
+        ]
+      ],
+      "cp_group": 19,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#E0C240"
+    },
+    {
+      "disciplina_id": "4251",
+      "codigo": "MC949",
+      "nome": "Visão Computacional",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA327",
+          "MC102",
+          "ME210"
+        ],
+        [
+          "MA327",
+          "MC102",
+          "ME323"
+        ]
+      ],
+      "cp_group": 20,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#BE9494"
+    },
+    {
+      "disciplina_id": "4252",
+      "codigo": "MC950",
+      "nome": "Recuperação de Imagens por Conteúdo",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC536",
+          "MC920"
+        ]
+      ],
+      "cp_group": 0,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "falta_pre",
+      "color": "#D96666"
+    },
+    {
+      "disciplina_id": "4256",
+      "codigo": "MC959",
+      "nome": "Tópicos em Inteligência Artificial I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC906"
+        ],
+        [
+          "MC886"
+        ]
+      ],
+      "cp_group": 1,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#E67399"
+    },
+    {
+      "disciplina_id": "7524",
+      "codigo": "MC970",
+      "nome": "Introdução à Programação Paralela",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC202"
+        ]
+      ],
+      "cp_group": 2,
+      "status": "pending",
+      "tem": false,
+      "pode": false,
+      "obs": "ja_cursou",
+      "color": "#E6804D"
+    },
+    {
+      "disciplina_id": "11437",
+      "codigo": "MC971",
+      "nome": "Introdução à Programação Concorrente",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": null,
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MC504"
+        ]
+      ],
+      "cp_group": 3,
+      "status": "pending",
+      "tem": false,
+      "pode": true,
+      "obs": null,
+      "color": "#A7A77D"
+    }
+  ]
+}

@@ -1,0 +1,1587 @@
+{
+  "course": {
+    "id": 12,
+    "name": "Engenharia Civil (12)",
+    "code": "12"
+  },
+  "modalidade": "ET",
+  "modalidade_label": "ET - Ênfase em Transportes e Geotecnia",
+  "year": 2019,
+  "parameters": {
+    "catalogo": "2019",
+    "modalidade": "ET",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1142",
+      "codigo": "CV101",
+      "nome": "Desenho Projetivo",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5344",
+      "codigo": "QG102",
+      "nome": "Química Experimental I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6963",
+      "codigo": "CV111",
+      "nome": "Sistemas Estruturais",
+      "creditos": 1,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1143",
+      "codigo": "CV141",
+      "nome": "Química para Engenharia Civil",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1144",
+      "codigo": "CV151",
+      "nome": "Introdução à Engenharia Civil",
+      "creditos": 1,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3277",
+      "codigo": "GM420",
+      "nome": "Geologia Geral",
+      "creditos": 5,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1145",
+      "codigo": "CV201",
+      "nome": "Desenho Assistido por Computador",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1146",
+      "codigo": "CV202",
+      "nome": "Material de Construção Civil I",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV141",
+          "QG102"
+        ],
+        [
+          "QG102",
+          "QG191"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2743",
+      "codigo": "F 129",
+      "nome": "Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1151",
+      "codigo": "CV321",
+      "nome": "Topografia e Geodésia I",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1153",
+      "codigo": "CV332",
+      "nome": "Materiais de Construção Civil II",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1154",
+      "codigo": "CV351",
+      "nome": "Introdução à Economia",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2746",
+      "codigo": "F 229",
+      "nome": "Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1148",
+      "codigo": "CV301",
+      "nome": "Física para Engenharia Civil",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "F 128",
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1150",
+      "codigo": "CV312",
+      "nome": "Mecânica Geral",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV111",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2751",
+      "codigo": "F 329",
+      "nome": "Física Experimental III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "F 129",
+          "GE504"
+        ],
+        [
+          "F 129",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1156",
+      "codigo": "CV402",
+      "nome": "Projeto Arquitetônico",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1157",
+      "codigo": "CV411",
+      "nome": "Mecânica dos Sólidos I",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV111",
+          "CV312"
+        ],
+        [
+          "CV111",
+          "F 315"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1158",
+      "codigo": "CV421",
+      "nome": "Topografia e Geodésia II",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1160",
+      "codigo": "CV431",
+      "nome": "Mecânica dos Fluidos",
+      "creditos": 5,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV312",
+          "MA211"
+        ],
+        [
+          "F 315",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1161",
+      "codigo": "CV450",
+      "nome": "Metodologia Científica e Redação Científica",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1155",
+      "codigo": "CV401",
+      "nome": "Administração Aplicada à Empresas de Construção",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV351"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1166",
+      "codigo": "CV531",
+      "nome": "Engenharia Hidráulica",
+      "creditos": 5,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1167",
+      "codigo": "CV532",
+      "nome": "Eletrotécnica e Energia",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "F 328",
+          "F 329"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1168",
+      "codigo": "CV541",
+      "nome": "Qualidade Sanitária do Meio",
+      "creditos": 5,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV141",
+          "QG102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1162",
+      "codigo": "CV501",
+      "nome": "Planejamento Urbano",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV402"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1163",
+      "codigo": "CV511",
+      "nome": "Mecânica dos Sólidos II",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV411",
+          "F 315",
+          "MA311",
+          "MA327"
+        ],
+        [
+          "CV312",
+          "CV411",
+          "MA311",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1164",
+      "codigo": "CV521",
+      "nome": "Geotecnia I",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "GM420"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1165",
+      "codigo": "CV522",
+      "nome": "Técnica dos Transportes",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV351"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1172",
+      "codigo": "CV622",
+      "nome": "Estradas I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV201",
+          "CV321",
+          "CV421",
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1173",
+      "codigo": "CV631",
+      "nome": "Sistemas Elétricos Prediais",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV201",
+          "CV532"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1174",
+      "codigo": "CV632",
+      "nome": "Hidrologia Básica",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV531",
+          "MC102",
+          "ME414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1175",
+      "codigo": "CV633",
+      "nome": "Técnicas Construtivas I",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV332"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1169",
+      "codigo": "CV612",
+      "nome": "Teoria das Estruturas I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV411",
+          "CV511"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1176",
+      "codigo": "CV641",
+      "nome": "Sistemas de Abastecimento de Águas",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV531",
+          "CV541"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1170",
+      "codigo": "CV613",
+      "nome": "Estruturas de Madeira",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV511"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1171",
+      "codigo": "CV621",
+      "nome": "Geotecnia II",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV511",
+          "CV521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1177",
+      "codigo": "CV701",
+      "nome": "Planejamento e Controle de Empreendimentos",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV401",
+          "ME414"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1184",
+      "codigo": "CV741",
+      "nome": "Sistemas de Esgotamento Hídrico: Sanitário e Pluvial",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV632",
+          "CV641"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1178",
+      "codigo": "CV702",
+      "nome": "Sistemas Prediais, Hidráulico-Sanitários e Gás I",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV201",
+          "CV531",
+          "CV632"
+        ],
+        [
+          "AU300",
+          "AU502",
+          "AU504"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1179",
+      "codigo": "CV712",
+      "nome": "Teoria das Estruturas II",
+      "creditos": 5,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV511",
+          "CV612"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1180",
+      "codigo": "CV713",
+      "nome": "Estruturas Metálicas I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV511",
+          "CV612"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1181",
+      "codigo": "CV714",
+      "nome": "Estruturas de Concreto Armado I",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV332",
+          "CV511",
+          "CV612"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1182",
+      "codigo": "CV721",
+      "nome": "Fundações",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV621"
+        ],
+        [
+          "CV521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1183",
+      "codigo": "CV722",
+      "nome": "Estradas II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV421",
+          "CV622",
+          "CV632"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1190",
+      "codigo": "CV822",
+      "nome": "Estradas III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV722"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1191",
+      "codigo": "CV823",
+      "nome": "Aeroportos",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV522",
+          "CV622"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1185",
+      "codigo": "CV811",
+      "nome": "Estruturas de Concreto Protendido I",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV714"
+        ],
+        [
+          "EC702"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1192",
+      "codigo": "CV831",
+      "nome": "Regulamentações da Engenharia Civil",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1186",
+      "codigo": "CV812",
+      "nome": "Estruturas de Pontes",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV714"
+        ],
+        [
+          "EC702"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1193",
+      "codigo": "CV832",
+      "nome": "Portos, Rios e Canais",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV531",
+          "CV632"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1187",
+      "codigo": "CV813",
+      "nome": "Estruturas Metálicas II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV612",
+          "CV712",
+          "CV713"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1194",
+      "codigo": "CV841",
+      "nome": "Ecologia Aplicada à Engenharia Civil",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1188",
+      "codigo": "CV814",
+      "nome": "Estruturas de Concreto Armado II",
+      "creditos": 6,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV612",
+          "CV712",
+          "CV714"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1189",
+      "codigo": "CV821",
+      "nome": "Economia dos Transportes",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1245",
+      "codigo": "CV951",
+      "nome": "Estágio Supervisionado",
+      "creditos": 12,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6965",
+      "codigo": "CV954",
+      "nome": "Trabalho Final de Curso I",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV450"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6966",
+      "codigo": "CV955",
+      "nome": "Trabalho Final de Curso II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV954"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3739",
+      "codigo": "HZ291",
+      "nome": "Tópicos Especiais de Humanidades I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3740",
+      "codigo": "HZ292",
+      "nome": "Tópicos Especiais de Humanidades II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6227",
+      "codigo": "HZ293",
+      "nome": "Tópicos Especiais de Humanidades III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10613",
+      "codigo": "CV052",
+      "nome": "Tópicos em Geotecnia e Transportes II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6285",
+      "codigo": "CV953",
+      "nome": "Iniciação Científica em Engenharia Civil II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV952"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "7068",
+      "codigo": "CV025",
+      "nome": "Barragens de Terra",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1220",
+      "codigo": "CV926",
+      "nome": "Apoio à Tomada de Decisão",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1102",
+      "codigo": "CV020",
+      "nome": "Geotecnia Ambiental",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1215",
+      "codigo": "CV921",
+      "nome": "Superestrutura Ferroviária",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV522",
+          "CV622"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12203",
+      "codigo": "CV976",
+      "nome": "Tópicos em Geotecnia e Transportes VI",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9110",
+      "codigo": "CV087",
+      "nome": "Posicionamento Geodésico por Satélite",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV321"
+        ],
+        [
+          "CV323"
+        ],
+        [
+          "AU223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "531",
+      "codigo": "CV956",
+      "nome": "Tópicos Avançados em Engenharia Civil I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7069",
+      "codigo": "CV026",
+      "nome": "Ensaios de Campo em Geotecnia",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1221",
+      "codigo": "CV927",
+      "nome": "Engenharia de Tráfego",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1103",
+      "codigo": "CV021",
+      "nome": "Laboratório de Mecânica dos Solos",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1216",
+      "codigo": "CV922",
+      "nome": "Serviços Logísticos: Gestão e Projeto",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9111",
+      "codigo": "CV088",
+      "nome": "Sistema de Informação Geográfica",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV321"
+        ],
+        [
+          "CV323"
+        ],
+        [
+          "AU223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "532",
+      "codigo": "CV957",
+      "nome": "Tópicos Avançados em Engenharia Civil II",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "7070",
+      "codigo": "CV027",
+      "nome": "Posicionamento Geodésico",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV321"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1222",
+      "codigo": "CV928",
+      "nome": "Laboratório de Aprendizagem em Logística e Transportes",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1104",
+      "codigo": "CV022",
+      "nome": "Manutenção de Pavimentos",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV722"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1217",
+      "codigo": "CV923",
+      "nome": "Geotecnia III",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV621"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9112",
+      "codigo": "CV089",
+      "nome": "Cartografia Digital",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV421"
+        ],
+        [
+          "AU223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12200",
+      "codigo": "CV973",
+      "nome": "Tópicos em Geotecnia e Transportes III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11128",
+      "codigo": "CV028",
+      "nome": "Dimensionamento de Pavimentos Flexíveis",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV822"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1223",
+      "codigo": "CV929",
+      "nome": "Transporte Público Urbano",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1105",
+      "codigo": "CV023",
+      "nome": "Segurança Viária",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1218",
+      "codigo": "CV924",
+      "nome": "Complementos de Fundações",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV721"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9113",
+      "codigo": "CV090",
+      "nome": "Cadastro Técnico Multifinalitário",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV321"
+        ],
+        [
+          "CV323"
+        ],
+        [
+          "AU223"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12201",
+      "codigo": "CV974",
+      "nome": "Tópicos em Geotecnia e Transportes IV",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10612",
+      "codigo": "CV051",
+      "nome": "Tópicos em Geotecnia e Transportes I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1246",
+      "codigo": "CV952",
+      "nome": "Iniciação Científica em Engenharia Civil I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1106",
+      "codigo": "CV024",
+      "nome": "Complementos de Aeroportos",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV823"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1219",
+      "codigo": "CV925",
+      "nome": "Terminais de Transporte",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV522"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1090",
+      "codigo": "CV002",
+      "nome": "Planejamento e Logística de Canteiro de Obras",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV701"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1214",
+      "codigo": "CV920",
+      "nome": "Geomática",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": [
+        [
+          "CV421"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "12202",
+      "codigo": "CV975",
+      "nome": "Tópicos em Geotecnia e Transportes V",
+      "creditos": 3,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "ET",
+      "prereqs": []
+    }
+  ]
+}

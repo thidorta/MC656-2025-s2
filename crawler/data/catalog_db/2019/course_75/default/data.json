@@ -1,0 +1,2393 @@
+{
+  "course": {
+    "id": 75,
+    "name": "Estudos Literários (75)",
+    "code": "75"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2019,
+  "parameters": {
+    "catalogo": "2019",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "5986",
+      "codigo": "TL155",
+      "nome": "Tópicos em Literatura Clássica I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6019",
+      "codigo": "TL222",
+      "nome": "Pesquisa XII: Historiografia Literária I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5941",
+      "codigo": "TL108",
+      "nome": "Introdução à Literatura e Cultura Brasileira",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5942",
+      "codigo": "TL109",
+      "nome": "Introdução aos Estudos Literários",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5951",
+      "codigo": "TL118",
+      "nome": "Textos em Teoria, Crítica e História Literária I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6051",
+      "codigo": "TL255",
+      "nome": "Tópicos em Literatura Clássica II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6113",
+      "codigo": "TL908",
+      "nome": "Monografia I",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6200",
+      "codigo": "TL909",
+      "nome": "Monografia II",
+      "creditos": 8,
+      "catalogo": 2019,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TL908"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11861",
+      "codigo": "TL144",
+      "nome": "Tópicos Especiais em Prosa Não-Ficcional I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11868",
+      "codigo": "TL193",
+      "nome": "Tópicos Especiais em Poesia IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5998",
+      "codigo": "TL169",
+      "nome": "Tópicos Especiais em Prosa Não-Ficcional II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11878",
+      "codigo": "TL265",
+      "nome": "Tópicos Especiais em Teoria, Crítica e História Literária IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5984",
+      "codigo": "TL153",
+      "nome": "Tópicos XV: Textos em Prosa de Ficção IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11874",
+      "codigo": "TL199",
+      "nome": "Tópicos Especiais em Prosa de Ficção V",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5977",
+      "codigo": "TL145",
+      "nome": "Tópicos X: Textos em Teatro III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11869",
+      "codigo": "TL194",
+      "nome": "Tópicos Especiais em Poesia V",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11864",
+      "codigo": "TL173",
+      "nome": "Tópicos Especiais em Prosa Não-Ficcional III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5985",
+      "codigo": "TL154",
+      "nome": "Tópicos XVI: Textos em Prosa Não-Ficcional III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11875",
+      "codigo": "TL206",
+      "nome": "Tópicos Especiais em Prosa Não-Ficcional IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5978",
+      "codigo": "TL146",
+      "nome": "Tópicos XI: Textos em Teatro IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11870",
+      "codigo": "TL195",
+      "nome": "Tópicos Especiais em Prosa de Ficção I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11865",
+      "codigo": "TL190",
+      "nome": "Tópicos Especiais em Poesia I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5987",
+      "codigo": "TL156",
+      "nome": "Tópicos XVII: Textos em Prosa Não-Ficcional IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6007",
+      "codigo": "TL210",
+      "nome": "Tópicos Especiais em Teoria, Crítica e História Literária I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5981",
+      "codigo": "TL149",
+      "nome": "Tópicos XII: Textos em Poesia III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11871",
+      "codigo": "TL196",
+      "nome": "Tópicos Especiais em Prosa de Ficção II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5962",
+      "codigo": "TL129",
+      "nome": "Tópicos Especiais em Teatro I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11866",
+      "codigo": "TL191",
+      "nome": "Tópicos Especiais em Poesia II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5990",
+      "codigo": "TL159",
+      "nome": "Tópicos XVIII: Textos em Teoria, Crítica e História Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11876",
+      "codigo": "TL226",
+      "nome": "Tópicos Especiais em Teoria, Crítica e História Literária II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6876",
+      "codigo": "TL151",
+      "nome": "Tópicos XIII: Textos em Poesia IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11872",
+      "codigo": "TL197",
+      "nome": "Tópicos Especiais em Prosa de Ficção III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5972",
+      "codigo": "TL139",
+      "nome": "Tópicos Especiais em Teatro II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11867",
+      "codigo": "TL192",
+      "nome": "Tópicos Especiais em Poesia III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5992",
+      "codigo": "TL161",
+      "nome": "Tópicos XIX: Textos em Teoria, Crítica e História Literária IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11877",
+      "codigo": "TL264",
+      "nome": "Tópicos Especiais em Teoria, Crítica e História Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5983",
+      "codigo": "TL152",
+      "nome": "Tópicos XIV: Textos em Prosa de Ficção III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11873",
+      "codigo": "TL198",
+      "nome": "Tópicos Especiais em Prosa de Ficção IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11863",
+      "codigo": "TL166",
+      "nome": "Tópicos em Pesquisa II: Crítica Literária I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6035",
+      "codigo": "TL239",
+      "nome": "Tópicos em Pesquisa XXX: Tradução Literária II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6052",
+      "codigo": "TL256",
+      "nome": "Tópicos em Pesquisa XLVI: Historiografia Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6029",
+      "codigo": "TL233",
+      "nome": "Tópicos em Pesquisa XXV: Literatura e suas Fontes Históricas III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6046",
+      "codigo": "TL250",
+      "nome": "Tópicos em Pesquisa XL: Teoria Literária IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6022",
+      "codigo": "TL225",
+      "nome": "Tópicos em Pesquisa XXI: Literatura e Suportes Materiais IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6041",
+      "codigo": "TL245",
+      "nome": "Tópicos em Pesquisa XXXVI: Literatura e Arquivos II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5999",
+      "codigo": "TL170",
+      "nome": "Tópicos em Pesquisa XV: Literatura e Outras Artes II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6036",
+      "codigo": "TL240",
+      "nome": "Tópicos em Pesquisa XXXI: Tradução Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6053",
+      "codigo": "TL257",
+      "nome": "Tópicos em Pesquisa XLVII: Historiografia Literária IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5993",
+      "codigo": "TL162",
+      "nome": "Tópicos em Pesquisa XIII: Literatura e Imprensa II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6030",
+      "codigo": "TL234",
+      "nome": "Tópicos em Pesquisa XXVI: Literatura e suas Fontes Históricas IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6047",
+      "codigo": "TL251",
+      "nome": "Tópicos em Pesquisa XLII: Crítica Literária II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6025",
+      "codigo": "TL229",
+      "nome": "Tópicos em Pesquisa XXI: Literatura e Ensino II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6042",
+      "codigo": "TL246",
+      "nome": "Tópicos em Pesquisa XXXVII: Literatura e Arquivos III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6000",
+      "codigo": "TL171",
+      "nome": "Tópicos em Pesquisa XV: Literatura e Outras Artes III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6037",
+      "codigo": "TL241",
+      "nome": "Tópicos em Pesquisa XXXII: Tradução Literária IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5994",
+      "codigo": "TL163",
+      "nome": "Tópicos em Pesquisa XIV: Literatura e Imprensa III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6031",
+      "codigo": "TL235",
+      "nome": "Tópicos em Pesquisa XXVII: Literatura e Práticas de Leitura II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6048",
+      "codigo": "TL252",
+      "nome": "Tópicos em Pesquisa XLIII: Crítica Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6026",
+      "codigo": "TL230",
+      "nome": "Tópicos em Pesquisa XXII: Literatura e Ensino III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6043",
+      "codigo": "TL247",
+      "nome": "Tópicos em Pesquisa XXXVIII: Literatura e Arquivos IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6001",
+      "codigo": "TL172",
+      "nome": "Tópicos em Pesquisa XV: Literatura e Outras Artes IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6038",
+      "codigo": "TL242",
+      "nome": "Tópicos em Pesquisa XXXIII: Temas e Questões de Literatura Brasileira II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5995",
+      "codigo": "TL164",
+      "nome": "Tópicos em Pesquisa XIV: Literatura e Imprensa IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6032",
+      "codigo": "TL236",
+      "nome": "Tópicos em Pesquisa XXVIII: Literatura e Práticas de Leitura III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6049",
+      "codigo": "TL253",
+      "nome": "Tópicos em Pesquisa XLIV: Crítica Literária IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6027",
+      "codigo": "TL231",
+      "nome": "Tópicos em Pesquisa XXIII: Literatura e Ensino IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6044",
+      "codigo": "TL248",
+      "nome": "Tópicos em Pesquisa XXXIX: Teoria Literária II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6020",
+      "codigo": "TL223",
+      "nome": "Tópicos em Pesquisa XVIII: Literatura e Suportes Materiais II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6039",
+      "codigo": "TL243",
+      "nome": "Tópicos em Pesquisa XXXIV: Temas e Questões de Literatura Brasileira III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11862",
+      "codigo": "TL165",
+      "nome": "Tópicos em Pesquisa I: Teoria Literária I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6033",
+      "codigo": "TL237",
+      "nome": "Tópicos em Pesquisa XXIX: Literatura e Práticas de Leitura IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6050",
+      "codigo": "TL254",
+      "nome": "Tópicos em Pesquisa XLV: Historiografia Literária II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6028",
+      "codigo": "TL232",
+      "nome": "Tópicos em Pesquisa XXIV: Literatura e suas Fontes Históricas II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6045",
+      "codigo": "TL249",
+      "nome": "Tópicos em Pesquisa XL: Teoria Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6021",
+      "codigo": "TL224",
+      "nome": "Tópicos em Pesquisa XX: Literatura e Suportes Materiais III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6040",
+      "codigo": "TL244",
+      "nome": "Tópicos em Pesquisa XXXV: Temas e Questões de Literatura Brasileira V",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5914",
+      "codigo": "TL073",
+      "nome": "Tópicos Especiais de Literatura e Sociedade II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5933",
+      "codigo": "TL092",
+      "nome": "Tópicos Especiais de Literatura Portuguesa III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5965",
+      "codigo": "TL132",
+      "nome": "Tópicos Especiais de Literatura Italiana II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6006",
+      "codigo": "TL209",
+      "nome": "Tópicos em Literatura Hispano-Americana",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6072",
+      "codigo": "TL319",
+      "nome": "Tópicos Especiais em Literatura em Língua Alemã II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5908",
+      "codigo": "TL067",
+      "nome": "Tópicos Especiais em Crítica Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5925",
+      "codigo": "TL084",
+      "nome": "Tópicos Especiais de Literatura Comparada I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5958",
+      "codigo": "TL125",
+      "nome": "Tópicos Especiais de Literatura e Filosofia II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5982",
+      "codigo": "TL150",
+      "nome": "Tópicos em Teoria e História Literária IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6066",
+      "codigo": "TL313",
+      "nome": "Tópicos Especiais em Literatura em Língua Inglesa III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6107",
+      "codigo": "TL809",
+      "nome": "Tópico em Literatura em Línguas Estrangeiras",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5903",
+      "codigo": "TL062",
+      "nome": "Tópicos Especiais em Teoria Literária I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5920",
+      "codigo": "TL079",
+      "nome": "Tópicos Especiais de Literatura e Cultura Popular II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5953",
+      "codigo": "TL120",
+      "nome": "Tópicos em Teoria e História Literária I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5973",
+      "codigo": "TL140",
+      "nome": "Tópicos em Teoria e História Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6058",
+      "codigo": "TL305",
+      "nome": "Tópicos Especiais em Literatura Comparada II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6082",
+      "codigo": "TL409",
+      "nome": "Tópico em Literatura Espanhola",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5915",
+      "codigo": "TL074",
+      "nome": "Tópicos Especiais de Literatura e Sociedade III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5935",
+      "codigo": "TL096",
+      "nome": "Tópicos Especiais de Literatura e Outras Produções Culturais I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5966",
+      "codigo": "TL133",
+      "nome": "Tópicos Especiais de Literatura Italiana III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6023",
+      "codigo": "TL227",
+      "nome": "Tópicos em Literatura de Língua Portuguesa: Ásia",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6073",
+      "codigo": "TL320",
+      "nome": "Tópicos em Teoria Literária",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5909",
+      "codigo": "TL068",
+      "nome": "Tópicos Especiais em História Literária I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5926",
+      "codigo": "TL085",
+      "nome": "Tópicos Especiais de Literatura Comparada II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5959",
+      "codigo": "TL126",
+      "nome": "Tópicos Especiais de Literatura e Filosofia III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5988",
+      "codigo": "TL157",
+      "nome": "Tópicos em História Literária Portuguesa V",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6067",
+      "codigo": "TL314",
+      "nome": "Tópicos Especiais em Literatura em Língua Francesa I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5904",
+      "codigo": "TL063",
+      "nome": "Tópicos Especiais em Teoria Literária II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5921",
+      "codigo": "TL080",
+      "nome": "Tópicos Especiais de Literatura e Cultura Popular III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5954",
+      "codigo": "TL121",
+      "nome": "Tópicos Especiais de Literatura e Identidade Cultural I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5974",
+      "codigo": "TL141",
+      "nome": "Tópicos Especiais em Tradução Literária I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6059",
+      "codigo": "TL306",
+      "nome": "Tópicos Especiais em Literatura Comparada III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6086",
+      "codigo": "TL420",
+      "nome": "Tópicos em Literatura Comparada",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5896",
+      "codigo": "TL055",
+      "nome": "Tópicos Especiais em Literatura Infantil",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5916",
+      "codigo": "TL075",
+      "nome": "Tópicos Especiais de Literatura e História I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5936",
+      "codigo": "TL097",
+      "nome": "Tópicos Especiais de Literatura e Outras Produções Culturais II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5967",
+      "codigo": "TL134",
+      "nome": "Tópicos Especiais de Literatura e Geografia I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6054",
+      "codigo": "TL258",
+      "nome": "Tópicos Especiais em Literatura Espanhola I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6074",
+      "codigo": "TL321",
+      "nome": "Tópicos Especiais em Literatura em Língua Alemã III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5910",
+      "codigo": "TL069",
+      "nome": "Tópicos Especiais em História Literária II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5927",
+      "codigo": "TL086",
+      "nome": "Tópicos Especiais de Literatura Comparada III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5960",
+      "codigo": "TL127",
+      "nome": "Tópicos em História Literária Portuguesa II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5991",
+      "codigo": "TL160",
+      "nome": "Tópicos em Teoria e História Literária V",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6068",
+      "codigo": "TL315",
+      "nome": "Tópicos Especiais em Literatura em Língua Francesa II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5905",
+      "codigo": "TL064",
+      "nome": "Tópicos Especiais em Teoria Literária III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5922",
+      "codigo": "TL081",
+      "nome": "Tópicos Especiais de Literatura e Psicanálise I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5955",
+      "codigo": "TL122",
+      "nome": "Tópicos Especiais de Literatura e Identidade Cultural II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5975",
+      "codigo": "TL142",
+      "nome": "Tópicos Especiais em Tradução Literária II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6062",
+      "codigo": "TL309",
+      "nome": "Tópico em Literatura Italiana",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6091",
+      "codigo": "TL509",
+      "nome": "Tópico em Literatura em Língua Inglesa",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5900",
+      "codigo": "TL059",
+      "nome": "Tópicos Especiais em Estética e Literatura I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5917",
+      "codigo": "TL076",
+      "nome": "Tópicos Especiais de Literatura e História II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5937",
+      "codigo": "TL098",
+      "nome": "Tópicos Especiais de Literatura e Outras Produções Culturais III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5968",
+      "codigo": "TL135",
+      "nome": "Tópicos Especiais de Literatura e Geografia II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6055",
+      "codigo": "TL259",
+      "nome": "Tópicos Especiais em Literatura Espanhola II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6075",
+      "codigo": "TL322",
+      "nome": "Tópicos Especiais em Literatura em Línguas Estrangeiras I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5911",
+      "codigo": "TL070",
+      "nome": "Tópicos Especiais em História Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5931",
+      "codigo": "TL090",
+      "nome": "Tópicos Especiais de Literatura Portuguesa I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5963",
+      "codigo": "TL130",
+      "nome": "Tópicos em Teoria e História Literária II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5996",
+      "codigo": "TL167",
+      "nome": "Tópicos em História Literária Portuguesa VI",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6069",
+      "codigo": "TL316",
+      "nome": "Tópicos Especiais em Literatura em Língua Francesa III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5906",
+      "codigo": "TL065",
+      "nome": "Tópicos Especiais em Crítica Literária I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5923",
+      "codigo": "TL082",
+      "nome": "Tópicos Especiais de Literatura e Psicanálise II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5956",
+      "codigo": "TL123",
+      "nome": "Tópicos Especiais de Literatura e Identidade Cultural III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5976",
+      "codigo": "TL143",
+      "nome": "Tópicos Especiais em Tradução Literária III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6064",
+      "codigo": "TL311",
+      "nome": "Tópicos Especiais em Literatura em Língua Inglesa I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6098",
+      "codigo": "TL609",
+      "nome": "Tópico em Literatura em Língua Francesa",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5901",
+      "codigo": "TL060",
+      "nome": "Tópicos Especiais em Estética e Literatura II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5918",
+      "codigo": "TL077",
+      "nome": "Tópicos Especiais de Literatura e História III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11860",
+      "codigo": "TL099",
+      "nome": "Tópicos em Literatura Infantil",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5969",
+      "codigo": "TL136",
+      "nome": "Tópicos Especiais de Literatura e Geografia III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6056",
+      "codigo": "TL260",
+      "nome": "Tópicos Especiais em Literatura Espanhola III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6076",
+      "codigo": "TL323",
+      "nome": "Tópicos Especiais em Literatura em Línguas Estrangeiras II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5913",
+      "codigo": "TL072",
+      "nome": "Tópicos Especiais de Literatura e Sociedade I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5932",
+      "codigo": "TL091",
+      "nome": "Tópicos Especiais de Literatura Portuguesa II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5964",
+      "codigo": "TL131",
+      "nome": "Tópicos Especiais de Literatura Italiana I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6004",
+      "codigo": "TL207",
+      "nome": "Tópicos em Literatura de Língua Portuguesa: África",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6070",
+      "codigo": "TL317",
+      "nome": "Tópicos Especiais em Literatura em Língua Alemã I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5907",
+      "codigo": "TL066",
+      "nome": "Tópicos Especiais em Crítica Literária II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5924",
+      "codigo": "TL083",
+      "nome": "Tópicos Especiais de Literatura e Psicanálise III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5957",
+      "codigo": "TL124",
+      "nome": "Tópicos Especiais de Literatura e Filosofia I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5979",
+      "codigo": "TL147",
+      "nome": "Tópicos em História Literária Portuguesa IV",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6065",
+      "codigo": "TL312",
+      "nome": "Tópicos Especiais em Literatura em Língua Inglesa II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6105",
+      "codigo": "TL709",
+      "nome": "Tópico em Literatura em Língua Alemã",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5902",
+      "codigo": "TL061",
+      "nome": "Tópicos Especiais em Estética e Literatura III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5919",
+      "codigo": "TL078",
+      "nome": "Tópicos Especiais de Literatura e Cultura Popular I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5940",
+      "codigo": "TL107",
+      "nome": "Tópicos em História Literária Portuguesa I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5970",
+      "codigo": "TL137",
+      "nome": "Tópicos em História Literária Portuguesa III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6057",
+      "codigo": "TL304",
+      "nome": "Tópicos Especiais em Literatura Comparada I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6077",
+      "codigo": "TL324",
+      "nome": "Tópicos Especiais em Literatura em Línguas Estrangeiras III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5971",
+      "codigo": "TL138",
+      "nome": "Tópicos em Literatura Brasileira II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6100",
+      "codigo": "TL618",
+      "nome": "Tópicos em Literatura Brasileira: Marginais I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6087",
+      "codigo": "TL428",
+      "nome": "Tópicos em Literatura Brasileira: Movimentos II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6034",
+      "codigo": "TL238",
+      "nome": "Tópicos em Literatura Brasileira: Autores III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5980",
+      "codigo": "TL148",
+      "nome": "Tópicos em Literatura Brasileira III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6101",
+      "codigo": "TL628",
+      "nome": "Tópicos em Literatura Brasileira: Marginais II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5928",
+      "codigo": "TL087",
+      "nome": "Tópicos Especiais de Literatura Brasileira I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6088",
+      "codigo": "TL438",
+      "nome": "Tópicos em Literatura Brasileira: Movimentos III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6071",
+      "codigo": "TL318",
+      "nome": "Tópicos em Literatura Brasileira: Regiões I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5989",
+      "codigo": "TL158",
+      "nome": "Tópicos em Literatura Brasileira IV",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6102",
+      "codigo": "TL638",
+      "nome": "Tópicos em Literatura Brasileira: Marginais III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5929",
+      "codigo": "TL088",
+      "nome": "Tópicos Especiais de Literatura Brasileira II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6093",
+      "codigo": "TL518",
+      "nome": "Tópicos em Literatura Brasileira: Gêneros I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6078",
+      "codigo": "TL328",
+      "nome": "Tópicos em Literatura Brasileira: Regiões II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5997",
+      "codigo": "TL168",
+      "nome": "Tópicos em Literatura Brasileira V",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5930",
+      "codigo": "TL089",
+      "nome": "Tópicos Especiais de Literatura Brasileira III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6094",
+      "codigo": "TL528",
+      "nome": "Tópicos em Literatura Brasileira: Gêneros II",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6079",
+      "codigo": "TL338",
+      "nome": "Tópicos em Literatura Brasileira: Regiões III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6005",
+      "codigo": "TL208",
+      "nome": "Tópicos em Literatura Brasileira: Autores I",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5961",
+      "codigo": "TL128",
+      "nome": "Tópicos em Literatura Brasileira I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6095",
+      "codigo": "TL538",
+      "nome": "Tópicos em Literatura Brasileira: Gêneros III",
+      "creditos": 2,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6085",
+      "codigo": "TL418",
+      "nome": "Tópicos em Literatura Brasileira: Movimentos I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6024",
+      "codigo": "TL228",
+      "nome": "Tópicos em Literatura Brasileira: Autores II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3942",
+      "codigo": "LA318",
+      "nome": "Italiano III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA218"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3918",
+      "codigo": "LA214",
+      "nome": "Alemão II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA114"
+        ],
+        [
+          "LA144"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3896",
+      "codigo": "LA113",
+      "nome": "Francês I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3956",
+      "codigo": "LA418",
+      "nome": "Italiano IV",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA318"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3938",
+      "codigo": "LA314",
+      "nome": "Alemão III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA214"
+        ],
+        [
+          "LA244"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3917",
+      "codigo": "LA213",
+      "nome": "Francês II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA113"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3895",
+      "codigo": "LA112",
+      "nome": "Inglês I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3902",
+      "codigo": "LA119",
+      "nome": "Espanhol I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3953",
+      "codigo": "LA414",
+      "nome": "Alemão IV",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA234"
+        ],
+        [
+          "LA314"
+        ],
+        [
+          "LA344"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3937",
+      "codigo": "LA313",
+      "nome": "Francês III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA213"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3916",
+      "codigo": "LA212",
+      "nome": "Inglês II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA112"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3923",
+      "codigo": "LA219",
+      "nome": "Espanhol II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA119"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3901",
+      "codigo": "LA118",
+      "nome": "Italiano I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3952",
+      "codigo": "LA413",
+      "nome": "Francês IV",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA313"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3936",
+      "codigo": "LA312",
+      "nome": "Inglês III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA212"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3943",
+      "codigo": "LA319",
+      "nome": "Espanhol III",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA219"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3922",
+      "codigo": "LA218",
+      "nome": "Italiano II",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA118"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3897",
+      "codigo": "LA114",
+      "nome": "Alemão I",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3951",
+      "codigo": "LA412",
+      "nome": "Inglês IV",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA312"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3957",
+      "codigo": "LA419",
+      "nome": "Espanhol IV",
+      "creditos": 4,
+      "catalogo": 2019,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "LA319"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1618 @@
+{
+  "course": {
+    "id": 25,
+    "name": "Artes Visuais (25)",
+    "code": "25"
+  },
+  "modalidade": "AG",
+  "modalidade_label": "AG - Licenciatura em Artes - Artes Visuais",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "AG",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "266",
+      "codigo": "AP100",
+      "nome": "Práticas de Oficina I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "269",
+      "codigo": "AP103",
+      "nome": "Pintura I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "270",
+      "codigo": "AP104",
+      "nome": "Desenho Artístico I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "275",
+      "codigo": "AP110",
+      "nome": "Modelagem I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "283",
+      "codigo": "AP198",
+      "nome": "História da Arte I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "478",
+      "codigo": "AR101",
+      "nome": "Fundamentos Filosóficos da Arte Educação",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "288",
+      "codigo": "AP204",
+      "nome": "Desenho Artístico II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP104"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "303",
+      "codigo": "AP298",
+      "nome": "História da Arte II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP198"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "332",
+      "codigo": "AP415",
+      "nome": "Escultura I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP110"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "287",
+      "codigo": "AP203",
+      "nome": "Pintura II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10154",
+      "codigo": "AP313",
+      "nome": "Arte Fotográfica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "317",
+      "codigo": "AP398",
+      "nome": "História da Arte III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP298"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "284",
+      "codigo": "AP199",
+      "nome": "Atividades Artísticas - Culturais - Ensino I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11733",
+      "codigo": "AP301",
+      "nome": "Elementos da Prática de Pesquisa",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "308",
+      "codigo": "AP304",
+      "nome": "Desenho Artístico III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "324",
+      "codigo": "AP404",
+      "nome": "Desenho Artístico IV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10155",
+      "codigo": "AP413",
+      "nome": "Arte Fotográfica II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP313"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "336",
+      "codigo": "AP498",
+      "nome": "História da Arte IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP398"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "350",
+      "codigo": "AP520",
+      "nome": "Gravura I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP204"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "304",
+      "codigo": "AP299",
+      "nome": "Atividades Artísticas - Culturais - Ensino II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "348",
+      "codigo": "AP518",
+      "nome": "Cerâmica I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "353",
+      "codigo": "AP598",
+      "nome": "História da Arte V",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP498"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "484",
+      "codigo": "AR301",
+      "nome": "Psicologia do Desenvolvimento Aplicado às Artes I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "318",
+      "codigo": "AP399",
+      "nome": "Atividades Artísticas - Culturais - Ensino III",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "355",
+      "codigo": "AP600",
+      "nome": "Metodologia de Pesquisa em Artes Visuais",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "371",
+      "codigo": "AP625",
+      "nome": "História da Arte Brasileira I",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "380",
+      "codigo": "AP709",
+      "nome": "Arte e Novos Meios I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11372",
+      "codigo": "FN468",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "337",
+      "codigo": "AP499",
+      "nome": "Atividades Artísticas - Culturais - Ensino IV",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "354",
+      "codigo": "AP599",
+      "nome": "Atividades Artísticas - Culturais - Ensino V",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "11734",
+      "codigo": "AP707",
+      "nome": "Gestão de Espaços de Arte / Educação",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "386",
+      "codigo": "AP725",
+      "nome": "História da Arte Brasileira II",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP625"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9164",
+      "codigo": "AP735",
+      "nome": "Projeto Experimental em Artes Visuais I",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP600"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "398",
+      "codigo": "AP762",
+      "nome": "Estágio Pedagógico I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "EL874"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10583",
+      "codigo": "AR601",
+      "nome": "Processos Pedagógicos Voltados para o Corpo na Arte",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "342",
+      "codigo": "AP509",
+      "nome": "Computação Gráfica I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "361",
+      "codigo": "AP609",
+      "nome": "Computação Gráfica II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP509"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "375",
+      "codigo": "AP699",
+      "nome": "Atividades Artísticas - Culturais - Ensino VI",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "9167",
+      "codigo": "AP836",
+      "nome": "Projeto Experimental em Artes Visuais II",
+      "creditos": 14,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP735"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "434",
+      "codigo": "AP862",
+      "nome": "Estágio Pedagógico II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP762"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "272",
+      "codigo": "AP106",
+      "nome": "Plástica I",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "339",
+      "codigo": "AP502",
+      "nome": "Tópicos Especiais em História da Arte II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "382",
+      "codigo": "AP714",
+      "nome": "Tópicos Especiais em Processos Criativos VII",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "449",
+      "codigo": "AP896",
+      "nome": "Tópicos Especiais em Processos Criativos XIII",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "467",
+      "codigo": "AP940",
+      "nome": "Tópicos Especiais em Teorias das Artes X",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "328",
+      "codigo": "AP409",
+      "nome": "Iniciação Científica II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "365",
+      "codigo": "AP614",
+      "nome": "Tópicos Especiais em Processos Criativos V",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "417",
+      "codigo": "AP810",
+      "nome": "Tópicos Especiais em Processos Criativos VIII",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "462",
+      "codigo": "AP935",
+      "nome": "Tópicos Especiais em Teorias da Artes V",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "6277",
+      "codigo": "AP993",
+      "nome": "Design III: Princípios de Projeto em Projeto de Produto",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "312",
+      "codigo": "AP308",
+      "nome": "Cultura Popular",
+      "creditos": 3,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "357",
+      "codigo": "AP602",
+      "nome": "Tópicos Especiais em História da Arte III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "390",
+      "codigo": "AP734",
+      "nome": "Desenho Artístico VII",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6274",
+      "codigo": "AP917",
+      "nome": "Tópicos Especiais em História da Arte XII",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "473",
+      "codigo": "AP981",
+      "nome": "Preservação e Restauro I: Fundamentos e Conceitos",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15246",
+      "codigo": "AP113",
+      "nome": "Perfomance Artística",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "340",
+      "codigo": "AP503",
+      "nome": "Pintura V",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP403"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "383",
+      "codigo": "AP717",
+      "nome": "Tópicos Especiais em História da Arte IX",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "450",
+      "codigo": "AP897",
+      "nome": "Tópicos Especiais em Processos Criativos XIV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "468",
+      "codigo": "AP941",
+      "nome": "Tópicos Especiais em Teorias das Artes XI",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "330",
+      "codigo": "AP412",
+      "nome": "Tópicos Especiais em História da Arte IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "367",
+      "codigo": "AP617",
+      "nome": "Tópicos Especiais em História da Arte VIII",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "419",
+      "codigo": "AP812",
+      "nome": "Tópicos Especiais em História da Arte X",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "463",
+      "codigo": "AP936",
+      "nome": "Tópicos Especiais em Teorias das Artes VI",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2329",
+      "codigo": "EP158",
+      "nome": "Educação, Corpo e Arte",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "313",
+      "codigo": "AP309",
+      "nome": "Iniciação Científica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "358",
+      "codigo": "AP603",
+      "nome": "Pintura VI",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP403"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "393",
+      "codigo": "AP745",
+      "nome": "Escultura IV",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP615"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "458",
+      "codigo": "AP931",
+      "nome": "Tópicos Especiais em Teorias das Artes I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "474",
+      "codigo": "AP982",
+      "nome": "Tópicos Especiais em Preservação e Restauro I: Análise de Experiências",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP981"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "282",
+      "codigo": "AP140",
+      "nome": "Ateliê Experimental Multidisciplinar I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "341",
+      "codigo": "AP504",
+      "nome": "Desenho Artístico V",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "384",
+      "codigo": "AP718",
+      "nome": "Cerâmica III",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP618"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "451",
+      "codigo": "AP898",
+      "nome": "Tópicos Especiais em Processos Criativos XV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "469",
+      "codigo": "AP975",
+      "nome": "Tópicos Especiais em Ensino de Artes Visuais I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "333",
+      "codigo": "AP417",
+      "nome": "Tópicos Especiais em História da Arte V",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "372",
+      "codigo": "AP632",
+      "nome": "Desenho Animado I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "420",
+      "codigo": "AP814",
+      "nome": "Tópicos Especiais em Processos Criativos IX",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "464",
+      "codigo": "AP937",
+      "nome": "Tópicos Especiais em Teorias das Artes VII",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "316",
+      "codigo": "AP340",
+      "nome": "Ateliê Experimental Multidisciplinar III",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "359",
+      "codigo": "AP604",
+      "nome": "Desenho Artístico VI",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP404"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "397",
+      "codigo": "AP760",
+      "nome": "Computação Gráfica e Multimídia",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP660"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "459",
+      "codigo": "AP932",
+      "nome": "Tópicos Especiais em Teorias das Artes II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "475",
+      "codigo": "AP983",
+      "nome": "Tópicos Especiais em Preservação e Restauro II: Técnicas e Métodos",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP981"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "290",
+      "codigo": "AP206",
+      "nome": "Plástica II",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP106"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "343",
+      "codigo": "AP510",
+      "nome": "Tópicos Especiais em Processos Criativos III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "385",
+      "codigo": "AP724",
+      "nome": "Gravura III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "453",
+      "codigo": "AP901",
+      "nome": "Tópicos Especiais em Processos Criativos X",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "470",
+      "codigo": "AP976",
+      "nome": "Tópicos Especiais em Ensino de Artes Visuais II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "335",
+      "codigo": "AP440",
+      "nome": "Ateliê Experimental Multidisciplinar IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "376",
+      "codigo": "AP701",
+      "nome": "Tópicos Especiais em Processos Criativos I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "322",
+      "codigo": "AP863",
+      "nome": "Pedagogia e Didática de Artes Visuais II",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP763"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "465",
+      "codigo": "AP938",
+      "nome": "Tópicos Especiais em Teorias das Artes VIII",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "319",
+      "codigo": "AP401",
+      "nome": "Monitoria I",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "362",
+      "codigo": "AP610",
+      "nome": "Tópicos Especiais em Processos Criativos IV",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "399",
+      "codigo": "AP764",
+      "nome": "Gravura IV",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP620"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "460",
+      "codigo": "AP933",
+      "nome": "Tópicos Especiais em Teorias das Artes III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "476",
+      "codigo": "AP991",
+      "nome": "Design I: Princípios de Projeto em Programação Visual",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "15248",
+      "codigo": "AP212",
+      "nome": "O livro-ilustrado: construções de narrativas visuais",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "345",
+      "codigo": "AP512",
+      "nome": "Tópicos Especiais em História da Arte VI",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "388",
+      "codigo": "AP732",
+      "nome": "Desenho Animado II",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP632"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "455",
+      "codigo": "AP910",
+      "nome": "Tópicos Especiais em Processos Criativos XI",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "471",
+      "codigo": "AP977",
+      "nome": "Tópicos Especiais em Ensino de Artes Visuais III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "338",
+      "codigo": "AP501",
+      "nome": "Monitoria II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "381",
+      "codigo": "AP710",
+      "nome": "Tópicos Especiais em Processos Criativos VI",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "448",
+      "codigo": "AP895",
+      "nome": "Tópicos Especiais em Processos Criativos XII",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "466",
+      "codigo": "AP939",
+      "nome": "Tópicos Especiais em Teorias das Artes IX",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "320",
+      "codigo": "AP402",
+      "nome": "Tópicos Especiais em História da Arte",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP202"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "364",
+      "codigo": "AP612",
+      "nome": "Tópicos Especiais em História da Arte VII",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "413",
+      "codigo": "AP801",
+      "nome": "Tópicos Especiais em Processos Criativos II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "461",
+      "codigo": "AP934",
+      "nome": "Tópicos Especiais em Teorias das Artes IV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "477",
+      "codigo": "AP992",
+      "nome": "Design II: Princípios de Tipografia",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "302",
+      "codigo": "AP240",
+      "nome": "Ateliê Experimental Multidisciplinar II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "356",
+      "codigo": "AP601",
+      "nome": "Monitoria III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "389",
+      "codigo": "AP733",
+      "nome": "Pintura VII",
+      "creditos": 8,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP403"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "457",
+      "codigo": "AP912",
+      "nome": "Tópicos Especiais em História da Arte XI",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "472",
+      "codigo": "AP978",
+      "nome": "Tópicos Especiais em Ensino de Artes Visuais IV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "346",
+      "codigo": "AP763",
+      "nome": "Pedagogia e Didática de Artes Visuais I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "347",
+      "codigo": "AP515",
+      "nome": "Escultura II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP415"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "366",
+      "codigo": "AP615",
+      "nome": "Escultura III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP515"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "368",
+      "codigo": "AP618",
+      "nome": "Cerâmica II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP518"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "370",
+      "codigo": "AP620",
+      "nome": "Gravura II",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP520"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "307",
+      "codigo": "AP303",
+      "nome": "Pintura III",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP203"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "321",
+      "codigo": "AP403",
+      "nome": "Pintura IV",
+      "creditos": 5,
+      "catalogo": 2020,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AG",
+      "prereqs": [
+        [
+          "AP303"
+        ]
+      ]
+    }
+  ]
+}

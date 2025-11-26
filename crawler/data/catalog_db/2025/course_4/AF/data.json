@@ -1,0 +1,805 @@
+{
+  "course": {
+    "id": 4,
+    "name": "Física (4)",
+    "code": "4"
+  },
+  "modalidade": "AF",
+  "modalidade_label": "AF - Bacharelado em Física Médica",
+  "year": 2025,
+  "parameters": {
+    "catalogo": "2025",
+    "modalidade": "AF",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "4754",
+      "codigo": "MS149",
+      "nome": "Complementos de Matemática",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2961",
+      "codigo": "FM003",
+      "nome": "Seminários sobre a Profissão",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18282",
+      "codigo": "F 259",
+      "nome": "Introdução à Física Experimental II",
+      "creditos": 2,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 128",
+          "F 159"
+        ],
+        [
+          "F 128",
+          "F 129"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4100",
+      "codigo": "MA327",
+      "nome": "Álgebra Linear",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18193",
+      "codigo": "F 359",
+      "nome": "Introdução à Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 259",
+          "GE504"
+        ],
+        [
+          "F 259",
+          "MA111"
+        ],
+        [
+          "F 129"
+        ],
+        [
+          "F 229"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4432",
+      "codigo": "ME210",
+      "nome": "Probabilidade I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "19008",
+      "codigo": "FX004",
+      "nome": "Introdução às Práticas de Extensão",
+      "creditos": 3,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4079",
+      "codigo": "MA044",
+      "nome": "Matemática IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MA141",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5343",
+      "codigo": "QG101",
+      "nome": "Química I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5344",
+      "codigo": "QG102",
+      "nome": "Química Experimental I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "2748",
+      "codigo": "F 315",
+      "nome": "Mecânica Geral I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 128",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2753",
+      "codigo": "F 428",
+      "nome": "Física Geral IV",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2758",
+      "codigo": "F 520",
+      "nome": "Métodos Matemáticos da Física I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MA311",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2763",
+      "codigo": "F 589",
+      "nome": "Estrutura da Matéria",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 428",
+          "MA311"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9969",
+      "codigo": "BS580",
+      "nome": "Fundamentos de Biologia Celular e Molecular para Física Médica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2756",
+      "codigo": "F 502",
+      "nome": "Eletromagnetismo I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 428"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2762",
+      "codigo": "F 550",
+      "nome": "Radiação: Interação e Detecção",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2773",
+      "codigo": "F 689",
+      "nome": "Mecânica Quântica I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 589",
+          "MA327"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9970",
+      "codigo": "BS681",
+      "nome": "Fundamentos de Anatomia, Histologia e Fisiologia Humana para Física Médica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "BD580"
+        ],
+        [
+          "BS580"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2749",
+      "codigo": "F 320",
+      "nome": "Termodinâmica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 228",
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2755",
+      "codigo": "F 489",
+      "nome": "Estrutura de Matéria II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6708",
+      "codigo": "F 758",
+      "nome": "Radiobiologia e Radioproteção",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "BD580",
+          "F 550"
+        ],
+        [
+          "BS580",
+          "F 550"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14314",
+      "codigo": "F 551",
+      "nome": "Radiação: Interação e Detecção II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 550"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2766",
+      "codigo": "F 604",
+      "nome": "Física Estatística",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 320",
+          "ME210"
+        ],
+        [
+          "F 320",
+          "ME414"
+        ],
+        [
+          "QF431"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2779",
+      "codigo": "F 751",
+      "nome": "Imagens Médicas com Radiação Não-Ionizantes",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 520",
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2791",
+      "codigo": "F 854",
+      "nome": "Física da Radioterapia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14315",
+      "codigo": "F 857",
+      "nome": "Imagens Médicas com Radiação Ionizante",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 551"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2795",
+      "codigo": "F 887",
+      "nome": "Física Nuclear",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 489"
+        ],
+        [
+          "F 689"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4391",
+      "codigo": "MD760",
+      "nome": "Aspectos Clínicos da Física Médica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "BD681",
+          "F 758"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18041",
+      "codigo": "MD967",
+      "nome": "Extensão Supervisionada Física Médica I - Radiologia, Med. Nuclear e Radioterapia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 758",
+          "F 854",
+          "F 857"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18039",
+      "codigo": "MD957",
+      "nome": "Estágio Supervisionado Física Médica I - Radiologia, Med. Nuclear e Radioterapia",
+      "creditos": 20,
+      "catalogo": 2025,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 758",
+          "F 854",
+          "F 857"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2777",
+      "codigo": "F 740",
+      "nome": "Métodos da Física Experimental III",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2760",
+      "codigo": "F 540",
+      "nome": "Métodos da Física Experimental I",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9971",
+      "codigo": "F 790",
+      "nome": "Ferramentas para Processamento de Sinais e Imagens Médicas",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 428",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2786",
+      "codigo": "F 838",
+      "nome": "Métodos de Física Experimental VII",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2787",
+      "codigo": "F 839",
+      "nome": "Métodos da Física Experimental VI",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 428",
+          "F 429"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2793",
+      "codigo": "F 856",
+      "nome": "Biofotônica",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "F 589"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "18040",
+      "codigo": "MD958",
+      "nome": "Estágio Supervisionado Física Médica II - Radiologia, Med. Nuclear e Radioterapia",
+      "creditos": 20,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MD760",
+          "MD957",
+          "MD967"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17726",
+      "codigo": "F 958",
+      "nome": "Estágio Supervisionado em Atividades de Física Médica",
+      "creditos": 20,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18042",
+      "codigo": "MD968",
+      "nome": "Extensão Supervisionada Física Médica II - Radiologia, Med. Nuclear e Radioterapia",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": [
+        [
+          "MD760",
+          "MD957",
+          "MD967"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17855",
+      "codigo": "FX968",
+      "nome": "Extensão supervisionada em Física Médica II",
+      "creditos": 4,
+      "catalogo": 2025,
+      "tipo": "eletiva",
+      "semestre": null,
+      "modalidade": "AF",
+      "prereqs": []
+    }
+  ]
+}

@@ -1,0 +1,1003 @@
+{
+  "course": {
+    "id": 13,
+    "name": "Engenharia de Alimentos (13)",
+    "code": "13"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2024,
+  "parameters": {
+    "catalogo": "2024",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "2742",
+      "codigo": "F 128",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14806",
+      "codigo": "FT100",
+      "nome": "Introdução à Engenharia de Alimentos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4084",
+      "codigo": "MA111",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4086",
+      "codigo": "MA141",
+      "nome": "Geometria Analítica e Vetores",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "4162",
+      "codigo": "MC102",
+      "nome": "Algoritmos e Programação de Computadores",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5343",
+      "codigo": "QG101",
+      "nome": "Química I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14807",
+      "codigo": "FT210",
+      "nome": "Fundamentos do Processamento de Alimentos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "MA111"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4091",
+      "codigo": "MA211",
+      "nome": "Cálculo II",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14808",
+      "codigo": "QA218",
+      "nome": "Química Analítica",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101"
+        ],
+        [
+          "QG109"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5402",
+      "codigo": "QO427",
+      "nome": "Química Orgânica I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QG101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2745",
+      "codigo": "F 228",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2750",
+      "codigo": "F 328",
+      "nome": "Física Geral III",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "GE504",
+          "MA141"
+        ],
+        [
+          "F 128",
+          "MA111",
+          "MA141"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14809",
+      "codigo": "FT310",
+      "nome": "Termodinâmica dos Processos",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 228",
+          "FT210",
+          "MA211"
+        ],
+        [
+          "QF331"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14810",
+      "codigo": "FT311",
+      "nome": "Química de Alimentos",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA218",
+          "QO427"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4099",
+      "codigo": "MA311",
+      "nome": "Cálculo III",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17151",
+      "codigo": "BS313",
+      "nome": "Princípios Básicos de Biologia Celular, Microbiologia e Parasitologia",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "18281",
+      "codigo": "F 159",
+      "nome": "Introdução à Física Experimental I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14811",
+      "codigo": "FT410",
+      "nome": "Fenômenos de Transporte I",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT310",
+          "MA311"
+        ],
+        [
+          "TA331",
+          "TA332"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14812",
+      "codigo": "FT411",
+      "nome": "Mecânica e Ciência de Materiais",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "F 128",
+          "MA311"
+        ],
+        [
+          "F 129",
+          "F 228",
+          "FT210"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14813",
+      "codigo": "FT412",
+      "nome": "Bioquímica Básica",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS313",
+          "FT311"
+        ],
+        [
+          "BM320",
+          "FT311"
+        ],
+        [
+          "BM320",
+          "TA411"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14814",
+      "codigo": "FT430",
+      "nome": "Microbiologia de Alimentos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "BS313"
+        ],
+        [
+          "BM320"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4443",
+      "codigo": "ME414",
+      "nome": "Estatística para Experimentalistas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111"
+        ],
+        [
+          "MS123"
+        ],
+        [
+          "MS220"
+        ],
+        [
+          "MS380"
+        ],
+        [
+          "AU222"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "835",
+      "codigo": "CE138",
+      "nome": "Estratégias de Empresas para Engenharia",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA211"
+        ],
+        [
+          "CE141",
+          "CE641"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "4756",
+      "codigo": "MS211",
+      "nome": "Cálculo Numérico",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "MA111",
+          "MA141",
+          "MC102"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "2632",
+      "codigo": "ET016",
+      "nome": "Eletrotécnica",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EE521"
+        ],
+        [
+          "F 328"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14816",
+      "codigo": "FT511",
+      "nome": "Transformações Enzimáticas em Alimentos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT412"
+        ],
+        [
+          "TA514"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14817",
+      "codigo": "FT512",
+      "nome": "Nutrição e Qualidade Nutricional dos Alimentos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT412"
+        ],
+        [
+          "TA514",
+          "TA516"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14818",
+      "codigo": "FT530",
+      "nome": "Métodos de Análise Físico-Química de Alimentos",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311"
+        ],
+        [
+          "TA411"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14819",
+      "codigo": "FT531",
+      "nome": "Análise Sensorial de Alimentos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "ME414"
+        ],
+        [
+          "ME414",
+          "TA411"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14820",
+      "codigo": "FT540",
+      "nome": "Alimentos e Sociedade",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT100"
+        ],
+        [
+          "CE138"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14815",
+      "codigo": "FT510",
+      "nome": "Fenômenos de Transporte II",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT410"
+        ],
+        [
+          "TA331",
+          "TA332"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14821",
+      "codigo": "FT620",
+      "nome": "Processos com Aplicação de Calor",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT430",
+          "FT510"
+        ],
+        [
+          "TA411",
+          "TA534",
+          "TA615"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14822",
+      "codigo": "FT621",
+      "nome": "Processos Mecânicos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT410",
+          "FT411"
+        ],
+        [
+          "TA431",
+          "TA534"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14823",
+      "codigo": "FT622",
+      "nome": "Processamento de Cereais, Raízes e Tubérculos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT412"
+        ],
+        [
+          "BM320",
+          "TA322",
+          "TA411",
+          "TA516"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14824",
+      "codigo": "FT630",
+      "nome": "Toxicologia de Alimentos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT512"
+        ],
+        [
+          "TA411",
+          "TA514",
+          "TA516"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14825",
+      "codigo": "FT640",
+      "nome": "Embalagem e Estabilidade de Alimentos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT411",
+          "FT412",
+          "FT430"
+        ],
+        [
+          "TA431",
+          "TA534",
+          "TA615"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14827",
+      "codigo": "FT721",
+      "nome": "Processos Biotecnológicos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT310",
+          "FT411",
+          "FT430",
+          "FT510",
+          "FT511"
+        ],
+        [
+          "TA534",
+          "TA610",
+          "TA615"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14828",
+      "codigo": "FT722",
+      "nome": "Processamento de Óleos e Gorduras",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT412",
+          "FT620"
+        ],
+        [
+          "BM320",
+          "TA221",
+          "TA322",
+          "TA411",
+          "TA516"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14829",
+      "codigo": "FT723",
+      "nome": "Processamento de Leite e Ovos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT412",
+          "FT620"
+        ],
+        [
+          "BM320",
+          "TA221",
+          "TA322",
+          "TA411",
+          "TA421",
+          "TA516"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14830",
+      "codigo": "FT740",
+      "nome": "Instalações Industriais",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT411",
+          "FT430",
+          "FT621",
+          "FT622"
+        ],
+        [
+          "TA431",
+          "TA631"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14831",
+      "codigo": "FT741",
+      "nome": "Instrumentação e Controle de Processos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ET016",
+          "F 328",
+          "FT510",
+          "MS211"
+        ],
+        [
+          "F 328",
+          "TA534"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14832",
+      "codigo": "FT742",
+      "nome": "Formulação e Avaliação de Projetos",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "TA542"
+        ],
+        [
+          "CE138",
+          "FT540",
+          "FT620",
+          "FT622"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14826",
+      "codigo": "FT720",
+      "nome": "Processos com Remoção de Calor",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT430",
+          "FT510"
+        ],
+        [
+          "TA731"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14838",
+      "codigo": "FT841",
+      "nome": "Projeto Industrial",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT742"
+        ],
+        [
+          "TA832"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14833",
+      "codigo": "FT820",
+      "nome": "Processos de Transferência de Massa e Redução de Atividade de Água",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT510"
+        ],
+        [
+          "TA534"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14834",
+      "codigo": "FT821",
+      "nome": "Processamento de Frutas, Hortaliças e Leguminosas",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT412",
+          "FT620"
+        ],
+        [
+          "BM320",
+          "TA221",
+          "TA411",
+          "TA516",
+          "TA521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14835",
+      "codigo": "FT822",
+      "nome": "Processamento de Carnes",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT311",
+          "FT412",
+          "FT620"
+        ],
+        [
+          "BM320",
+          "TA411",
+          "TA421",
+          "TA516",
+          "TA521"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14836",
+      "codigo": "FT830",
+      "nome": "Gestão da Segurança e da Qualidade de Alimentos",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "QA218",
+          "QO427",
+          "TA615"
+        ],
+        [
+          "FT430",
+          "FT531",
+          "FT622",
+          "FT630",
+          "FT723",
+          "FT741"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14837",
+      "codigo": "FT840",
+      "nome": "Desenvolvimento de Produtos e Processos",
+      "creditos": 6,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT531",
+          "FT540",
+          "FT622",
+          "FT722",
+          "FT742"
+        ],
+        [
+          "TA623",
+          "TA724"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "14839",
+      "codigo": "FT550",
+      "nome": "Atividades de Extensão Científica",
+      "creditos": 7,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14840",
+      "codigo": "FT551",
+      "nome": "Atividades de Extensão Industrial",
+      "creditos": 11,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14841",
+      "codigo": "FT552",
+      "nome": "Atividades de Extensão Comunitária",
+      "creditos": 8,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14842",
+      "codigo": "FT901",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 9,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14843",
+      "codigo": "FT900",
+      "nome": "Estágio Supervisionado",
+      "creditos": 24,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "14844",
+      "codigo": "FT902",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "creditos": 2,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 10,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "FT901"
+        ]
+      ]
+    }
+  ]
+}

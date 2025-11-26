@@ -1,0 +1,585 @@
+{
+  "course": {
+    "id": 87,
+    "name": "Curso Superior de Tecnologia em Saneamento Ambiental (87)",
+    "code": "87"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2020,
+  "parameters": {
+    "catalogo": "2020",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "9725",
+      "codigo": "EB101",
+      "nome": "Cálculo I",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10080",
+      "codigo": "EB105",
+      "nome": "Biologia Geral",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10090",
+      "codigo": "EB205",
+      "nome": "Metodologia Científica e Tecnológica",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10087",
+      "codigo": "EB303",
+      "nome": "Expressão Gráfica",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5534",
+      "codigo": "ST108",
+      "nome": "Química Aplicada",
+      "creditos": 6,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "12188",
+      "codigo": "ST117",
+      "nome": "Introdução à Tecnologia em Saneamento Ambiental",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10085",
+      "codigo": "EB207",
+      "nome": "Microbiologia Aplicada",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB105"
+        ],
+        [
+          "ST107"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10092",
+      "codigo": "EB305",
+      "nome": "Química Orgânica Aplicada",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB202"
+        ],
+        [
+          "ST108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10089",
+      "codigo": "EB306",
+      "nome": "Ética, Educação e Ambiente",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10099",
+      "codigo": "EB502",
+      "nome": "Topografia",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB303"
+        ],
+        [
+          "ST103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5570",
+      "codigo": "ST305",
+      "nome": "Química Sanitária e Laboratório de Saneamento I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "9727",
+      "codigo": "EB103",
+      "nome": "Física Geral I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "10102",
+      "codigo": "EB403",
+      "nome": "Estatística",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB101"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10111",
+      "codigo": "EB705",
+      "nome": "Recursos Energéticos e Meio Ambiente",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5568",
+      "codigo": "ST303",
+      "nome": "Hidrotécnica I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST209",
+          "TT101"
+        ],
+        [
+          "EB101",
+          "EB103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11398",
+      "codigo": "ST310",
+      "nome": "Caracterização e Monitoramento de Poluentes do Ar e do Solo",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11399",
+      "codigo": "ST314",
+      "nome": "Segurança, Saúde e Meio Ambiente",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5583",
+      "codigo": "ST405",
+      "nome": "Química Sanitária e Laboratório de Saneamento II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST305"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10083",
+      "codigo": "EB203",
+      "nome": "Física Geral II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST109"
+        ],
+        [
+          "EB103"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10122",
+      "codigo": "EB606",
+      "nome": "Gerenciamento de Resíduos Sólidos",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB304",
+          "EB404"
+        ],
+        [
+          "ST405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10109",
+      "codigo": "EB701",
+      "nome": "Hidrologia e Drenagem",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST211",
+          "ST301"
+        ],
+        [
+          "EB304",
+          "EB404"
+        ],
+        [
+          "EB403",
+          "EB502"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10112",
+      "codigo": "EB706",
+      "nome": "Recuperação de Áreas Degradadas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5582",
+      "codigo": "ST403",
+      "nome": "Hidrotécnica II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST303"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11400",
+      "codigo": "ST411",
+      "nome": "Sistemas de Abastecimento de Água",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST303",
+          "ST405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5623",
+      "codigo": "ST571",
+      "nome": "Geologia Ambiental",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "5659",
+      "codigo": "ST676",
+      "nome": "Ecologia Aplicada ao Saneamento",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10101",
+      "codigo": "EB604",
+      "nome": "Toxicologia Regulatória",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB304"
+        ],
+        [
+          "ST405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10129",
+      "codigo": "EB904",
+      "nome": "Planejamento e Gestão Ambiental",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB605",
+          "EB606"
+        ],
+        [
+          "EB803",
+          "ST310"
+        ],
+        [
+          "ST310",
+          "ST411"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10121",
+      "codigo": "EB907",
+      "nome": "Produção Mais Limpa",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB602"
+        ],
+        [
+          "EB605"
+        ],
+        [
+          "ST310"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11401",
+      "codigo": "ST516",
+      "nome": "Tratamento de Águas Residuárias I",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST405"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11402",
+      "codigo": "ST517",
+      "nome": "Tratamento de Água de Abastecimento",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST411"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10107",
+      "codigo": "EB506",
+      "nome": "Saúde Ambiental",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB207"
+        ],
+        [
+          "ST207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10124",
+      "codigo": "EB803",
+      "nome": "Controle da Poluição do Ar",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB605"
+        ],
+        [
+          "ST310"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "10128",
+      "codigo": "EB903",
+      "nome": "Avaliação dos Impactos Ambientais",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB605",
+          "EB606",
+          "EB803"
+        ],
+        [
+          "EB606",
+          "ST310"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11403",
+      "codigo": "ST616",
+      "nome": "Tratamento de Águas Residuárias II",
+      "creditos": 4,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "ST516"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11404",
+      "codigo": "ST620",
+      "nome": "Biorremediação de Áreas Contaminadas",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": [
+        [
+          "EB207"
+        ],
+        [
+          "ST207"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "5692",
+      "codigo": "ST777",
+      "nome": "Legislação Ambiental",
+      "creditos": 2,
+      "catalogo": 2020,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "",
+      "prereqs": []
+    }
+  ]
+}

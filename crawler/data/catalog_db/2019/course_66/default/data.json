@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 66,
+    "name": "Pedagogia (66)",
+    "code": "66"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2019,
+  "parameters": {
+    "catalogo": "2019",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

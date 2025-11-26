@@ -1,0 +1,359 @@
+{
+  "course": {
+    "id": 30,
+    "name": "Filosofia (30)",
+    "code": "30"
+  },
+  "modalidade": "AB",
+  "modalidade_label": "AB - Licenciatura em Filosofia",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "AB",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": [
+    {
+      "disciplina_id": "3312",
+      "codigo": "HG107",
+      "nome": "Redação Filosófica I",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3313",
+      "codigo": "HG108",
+      "nome": "Introdução à Filosofia Geral I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3316",
+      "codigo": "HG207",
+      "nome": "Redação Filosófica II",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG107"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3317",
+      "codigo": "HG208",
+      "nome": "Introdução à Filosofia Geral II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG108"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "17885",
+      "codigo": "HG211",
+      "nome": "Práticas de extensão em humanidades I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3318",
+      "codigo": "HG301",
+      "nome": "História da Filosofia Antiga I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3319",
+      "codigo": "HG302",
+      "nome": "História da Filosofia Medieval I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3321",
+      "codigo": "HG304",
+      "nome": "Teoria do Conhecimento I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 3,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3322",
+      "codigo": "HG401",
+      "nome": "História da Filosofia Moderna I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3323",
+      "codigo": "HG402",
+      "nome": "História da Filosofia Contemporânea I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3325",
+      "codigo": "HG404",
+      "nome": "Introdução à Lógica",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "15851",
+      "codigo": "HG408",
+      "nome": "Metodologias e Práticas de Ensino em Filosofia",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 4,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207",
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1971",
+      "codigo": "EL683",
+      "nome": "Escola e Cultura",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1985",
+      "codigo": "EL774",
+      "nome": "Estágio Supervisionado I",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EF632",
+          "EF832",
+          "EL683"
+        ],
+        [
+          "EL212",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3320",
+      "codigo": "HG303",
+      "nome": "Ética I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "11342",
+      "codigo": "EL213",
+      "nome": "LIBRAS e Educação de Surdos",
+      "creditos": 4,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 5,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3385",
+      "codigo": "HG861",
+      "nome": "Estágio Supervisionado em Filosofia",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207",
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "1951",
+      "codigo": "EL511",
+      "nome": "Psicologia e Educação",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "1997",
+      "codigo": "EL874",
+      "nome": "Estágio Supervisionado II",
+      "creditos": 8,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "EL774"
+        ],
+        [
+          "EL212",
+          "EL221",
+          "EL511",
+          "EL683"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "3324",
+      "codigo": "HG403",
+      "nome": "Estética I",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 6,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG207"
+        ],
+        [
+          "HG208"
+        ]
+      ]
+    },
+    {
+      "disciplina_id": "6837",
+      "codigo": "EL212",
+      "nome": "Política Educacional: Organização da Educação Brasileira",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 7,
+      "modalidade": "AB",
+      "prereqs": []
+    },
+    {
+      "disciplina_id": "3386",
+      "codigo": "HG862",
+      "nome": "Estágio Supervisionado em Filosofia II",
+      "creditos": 6,
+      "catalogo": 2023,
+      "tipo": "obrigatoria",
+      "semestre": 8,
+      "modalidade": "AB",
+      "prereqs": [
+        [
+          "HG861"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1386 @@
+{
+  "curso": "Estudos Literários (75)",
+  "numero_curso": 75,
+  "catalogo": "2026",
+  "modalidade": "UNICA",
+  "periodo": "20261",
+  "disciplinas": [
+    {
+      "disciplina_id": "5986",
+      "codigo": "TL155",
+      "nome": "Tópicos em Literatura Clássica I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "19508",
+      "codigo": "TL295",
+      "nome": "Teoria, Crítica e História Literária I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "5942",
+      "codigo": "TL109",
+      "nome": "Introdução aos Estudos Literários",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "19509",
+      "codigo": "TL296",
+      "nome": "Teoria, Crítica e História Literária II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "19510",
+      "codigo": "TL297",
+      "nome": "Introdução às literaturas africanas de língua portuguesa",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "5941",
+      "codigo": "TL108",
+      "nome": "Introdução à Literatura e Cultura Brasileira",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "6051",
+      "codigo": "TL255",
+      "nome": "Tópicos em Literatura Clássica II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 1
+    },
+    {
+      "disciplina_id": "19511",
+      "codigo": "TL298",
+      "nome": "Literatura Brasileira: crítica e prosa",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "19512",
+      "codigo": "TL299",
+      "nome": "Literatura Brasileira: crítica e poesia",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "17360",
+      "codigo": "TL913",
+      "nome": "Investigação em Estudos Literário IV",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "17361",
+      "codigo": "TL914",
+      "nome": "Monografia",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "obrigatoria",
+      "semestre": 2
+    },
+    {
+      "disciplina_id": "19532",
+      "codigo": "TL382",
+      "nome": "Tópicos em Prosa Não Ficcional II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19517",
+      "codigo": "TL345",
+      "nome": "Tópicos em Prosa De Ficção V",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19518",
+      "codigo": "TL346",
+      "nome": "Tópicos em Prosa De Ficção VI",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19513",
+      "codigo": "TL341",
+      "nome": "Tópicos em Prosa De Ficção I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19515",
+      "codigo": "TL343",
+      "nome": "Tópicos em Prosa De Ficção III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19531",
+      "codigo": "TL381",
+      "nome": "Tópicos em Prosa Não Ficcional I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19533",
+      "codigo": "TL383",
+      "nome": "Tópicos em Prosa Não Ficcional III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19514",
+      "codigo": "TL342",
+      "nome": "Tópicos em Prosa De Ficção II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19516",
+      "codigo": "TL344",
+      "nome": "Tópicos em Prosa De Ficção IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19527",
+      "codigo": "TL363",
+      "nome": "Tópicos em Teatro III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19530",
+      "codigo": "TL373",
+      "nome": "Tópicos em Teoria, Crítica e História Literária III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19528",
+      "codigo": "TL371",
+      "nome": "Tópicos em Teoria, Crítica e História Literária I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19522",
+      "codigo": "TL354",
+      "nome": "Tópicos em Poesia IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19525",
+      "codigo": "TL361",
+      "nome": "Tópicos em Teatro I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19523",
+      "codigo": "TL355",
+      "nome": "Tópicos em Poesia V",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19520",
+      "codigo": "TL352",
+      "nome": "Tópicos em Poesia II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19529",
+      "codigo": "TL372",
+      "nome": "Tópicos em Teoria, Crítica e História Literária II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19526",
+      "codigo": "TL362",
+      "nome": "Tópicos em Teatro II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19524",
+      "codigo": "TL356",
+      "nome": "Tópicos em Poesia VI",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19521",
+      "codigo": "TL353",
+      "nome": "Tópicos em Poesia III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "19519",
+      "codigo": "TL351",
+      "nome": "Tópicos em Poesia I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6068",
+      "codigo": "TL315",
+      "nome": "Tópicos Especiais em Literatura em Língua Francesa II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6098",
+      "codigo": "TL609",
+      "nome": "Tópico em Literatura em Língua Francesa",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6006",
+      "codigo": "TL209",
+      "nome": "Tópicos em Literatura Hispano-Americana",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5932",
+      "codigo": "TL091",
+      "nome": "Tópicos Especiais de Literatura Portuguesa II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5903",
+      "codigo": "TL062",
+      "nome": "Tópicos Especiais em Teoria Literária I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5982",
+      "codigo": "TL150",
+      "nome": "Tópicos em Teoria e História Literária IV",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5957",
+      "codigo": "TL124",
+      "nome": "Tópicos Especiais de Literatura e Filosofia I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5913",
+      "codigo": "TL072",
+      "nome": "Tópicos Especiais de Literatura e Sociedade I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6086",
+      "codigo": "TL420",
+      "nome": "Tópicos em Literatura Comparada",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5927",
+      "codigo": "TL086",
+      "nome": "Tópicos Especiais de Literatura Comparada III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18129",
+      "codigo": "TL922",
+      "nome": "Tópicos Especiais de Extensão em Literatura III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6066",
+      "codigo": "TL313",
+      "nome": "Tópicos Especiais em Literatura em Língua Inglesa III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5955",
+      "codigo": "TL122",
+      "nome": "Tópicos Especiais de Literatura e Identidade Cultural II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18127",
+      "codigo": "TL920",
+      "nome": "Tópicos Especiais de Extensão em Literatura I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5910",
+      "codigo": "TL069",
+      "nome": "Tópicos Especiais em História Literária II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6076",
+      "codigo": "TL323",
+      "nome": "Tópicos Especiais em Literatura em Línguas Estrangeiras II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5975",
+      "codigo": "TL142",
+      "nome": "Tópicos Especiais em Tradução Literária II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5925",
+      "codigo": "TL084",
+      "nome": "Tópicos Especiais de Literatura Comparada I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6074",
+      "codigo": "TL321",
+      "nome": "Tópicos Especiais em Literatura em Língua Alemã III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6064",
+      "codigo": "TL311",
+      "nome": "Tópicos Especiais em Literatura em Língua Inglesa I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5953",
+      "codigo": "TL120",
+      "nome": "Tópicos em Teoria e História Literária I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5908",
+      "codigo": "TL067",
+      "nome": "Tópicos Especiais em Crítica Literária III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5973",
+      "codigo": "TL140",
+      "nome": "Tópicos em Teoria e História Literária III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5918",
+      "codigo": "TL077",
+      "nome": "Tópicos Especiais de Literatura e História III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "11860",
+      "codigo": "TL099",
+      "nome": "Tópicos em Literatura Infantil",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6059",
+      "codigo": "TL306",
+      "nome": "Tópicos Especiais em Literatura Comparada III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5936",
+      "codigo": "TL097",
+      "nome": "Tópicos Especiais de Literatura e Outras Produções Culturais II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5906",
+      "codigo": "TL065",
+      "nome": "Tópicos Especiais em Crítica Literária I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6072",
+      "codigo": "TL319",
+      "nome": "Tópicos Especiais em Literatura em Língua Alemã II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5965",
+      "codigo": "TL132",
+      "nome": "Tópicos Especiais de Literatura Italiana II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5904",
+      "codigo": "TL063",
+      "nome": "Tópicos Especiais em Teoria Literária II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5916",
+      "codigo": "TL075",
+      "nome": "Tópicos Especiais de Literatura e História I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6105",
+      "codigo": "TL709",
+      "nome": "Tópico em Literatura em Língua Alemã",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6057",
+      "codigo": "TL304",
+      "nome": "Tópicos Especiais em Literatura Comparada I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5933",
+      "codigo": "TL092",
+      "nome": "Tópicos Especiais de Literatura Portuguesa III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6069",
+      "codigo": "TL316",
+      "nome": "Tópicos Especiais em Literatura em Língua Francesa III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5963",
+      "codigo": "TL130",
+      "nome": "Tópicos em Teoria e História Literária II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5914",
+      "codigo": "TL073",
+      "nome": "Tópicos Especiais de Literatura e Sociedade II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6091",
+      "codigo": "TL509",
+      "nome": "Tópico em Literatura em Língua Inglesa",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5991",
+      "codigo": "TL160",
+      "nome": "Tópicos em Teoria e História Literária V",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5931",
+      "codigo": "TL090",
+      "nome": "Tópicos Especiais de Literatura Portuguesa I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5896",
+      "codigo": "TL055",
+      "nome": "Tópicos Especiais em Literatura Infantil",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6067",
+      "codigo": "TL314",
+      "nome": "Tópicos Especiais em Literatura em Língua Francesa I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5926",
+      "codigo": "TL085",
+      "nome": "Tópicos Especiais de Literatura Comparada II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5956",
+      "codigo": "TL123",
+      "nome": "Tópicos Especiais de Literatura e Identidade Cultural III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5911",
+      "codigo": "TL070",
+      "nome": "Tópicos Especiais em História Literária III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6077",
+      "codigo": "TL324",
+      "nome": "Tópicos Especiais em Literatura em Línguas Estrangeiras III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5976",
+      "codigo": "TL143",
+      "nome": "Tópicos Especiais em Tradução Literária III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18128",
+      "codigo": "TL921",
+      "nome": "Tópicos Especiais de Extensão em Literatura II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6065",
+      "codigo": "TL312",
+      "nome": "Tópicos Especiais em Literatura em Língua Inglesa II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5954",
+      "codigo": "TL121",
+      "nome": "Tópicos Especiais de Literatura e Identidade Cultural I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5909",
+      "codigo": "TL068",
+      "nome": "Tópicos Especiais em História Literária I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6075",
+      "codigo": "TL322",
+      "nome": "Tópicos Especiais em Literatura em Línguas Estrangeiras I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5974",
+      "codigo": "TL141",
+      "nome": "Tópicos Especiais em Tradução Literária I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5919",
+      "codigo": "TL078",
+      "nome": "Tópicos Especiais de Literatura e Cultura Popular I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17355",
+      "codigo": "TL281",
+      "nome": "Tópicos Especiais em Literaturas Africanas",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5966",
+      "codigo": "TL133",
+      "nome": "Tópicos Especiais de Literatura Italiana III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6062",
+      "codigo": "TL309",
+      "nome": "Tópico em Literatura Italiana",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5937",
+      "codigo": "TL098",
+      "nome": "Tópicos Especiais de Literatura e Outras Produções Culturais III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5907",
+      "codigo": "TL066",
+      "nome": "Tópicos Especiais em Crítica Literária II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6073",
+      "codigo": "TL320",
+      "nome": "Tópicos em Teoria Literária",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5917",
+      "codigo": "TL076",
+      "nome": "Tópicos Especiais de Literatura e História II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6107",
+      "codigo": "TL809",
+      "nome": "Tópico em Literatura em Línguas Estrangeiras",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6058",
+      "codigo": "TL305",
+      "nome": "Tópicos Especiais em Literatura Comparada II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5935",
+      "codigo": "TL096",
+      "nome": "Tópicos Especiais de Literatura e Outras Produções Culturais I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5905",
+      "codigo": "TL064",
+      "nome": "Tópicos Especiais em Teoria Literária III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6070",
+      "codigo": "TL317",
+      "nome": "Tópicos Especiais em Literatura em Língua Alemã I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5964",
+      "codigo": "TL131",
+      "nome": "Tópicos Especiais de Literatura Italiana I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5915",
+      "codigo": "TL074",
+      "nome": "Tópicos Especiais de Literatura e Sociedade III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6088",
+      "codigo": "TL438",
+      "nome": "Tópicos em Literatura Brasileira: Movimentos III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6087",
+      "codigo": "TL428",
+      "nome": "Tópicos em Literatura Brasileira: Movimentos II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6079",
+      "codigo": "TL338",
+      "nome": "Tópicos em Literatura Brasileira: Regiões III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6085",
+      "codigo": "TL418",
+      "nome": "Tópicos em Literatura Brasileira: Movimentos I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6078",
+      "codigo": "TL328",
+      "nome": "Tópicos em Literatura Brasileira: Regiões II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6071",
+      "codigo": "TL318",
+      "nome": "Tópicos em Literatura Brasileira: Regiões I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6034",
+      "codigo": "TL238",
+      "nome": "Tópicos em Literatura Brasileira: Autores III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6024",
+      "codigo": "TL228",
+      "nome": "Tópicos em Literatura Brasileira: Autores II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5997",
+      "codigo": "TL168",
+      "nome": "Tópicos em Literatura Brasileira V",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6005",
+      "codigo": "TL208",
+      "nome": "Tópicos em Literatura Brasileira: Autores I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5989",
+      "codigo": "TL158",
+      "nome": "Tópicos em Literatura Brasileira IV",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5980",
+      "codigo": "TL148",
+      "nome": "Tópicos em Literatura Brasileira III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18132",
+      "codigo": "TL925",
+      "nome": "Tópicos Especiais de Extensão em Literatura Brasileira III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18130",
+      "codigo": "TL923",
+      "nome": "Tópicos Especiais de Extensão em Literatura Brasileira I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18131",
+      "codigo": "TL924",
+      "nome": "Tópicos Especiais de Extensão em Literatura Brasileira II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6102",
+      "codigo": "TL638",
+      "nome": "Tópicos em Literatura Brasileira: Marginais III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6101",
+      "codigo": "TL628",
+      "nome": "Tópicos em Literatura Brasileira: Marginais II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5971",
+      "codigo": "TL138",
+      "nome": "Tópicos em Literatura Brasileira II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5930",
+      "codigo": "TL089",
+      "nome": "Tópicos Especiais de Literatura Brasileira III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5961",
+      "codigo": "TL128",
+      "nome": "Tópicos em Literatura Brasileira I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5929",
+      "codigo": "TL088",
+      "nome": "Tópicos Especiais de Literatura Brasileira II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "5928",
+      "codigo": "TL087",
+      "nome": "Tópicos Especiais de Literatura Brasileira I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6100",
+      "codigo": "TL618",
+      "nome": "Tópicos em Literatura Brasileira: Marginais I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6094",
+      "codigo": "TL528",
+      "nome": "Tópicos em Literatura Brasileira: Gêneros II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6095",
+      "codigo": "TL538",
+      "nome": "Tópicos em Literatura Brasileira: Gêneros III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "6093",
+      "codigo": "TL518",
+      "nome": "Tópicos em Literatura Brasileira: Gêneros I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18137",
+      "codigo": "TL930",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17941",
+      "codigo": "HL496",
+      "nome": "Atividades de Extensão em Assessoria Linguística e Políticas Públicas de Linguagem IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17936",
+      "codigo": "HL395",
+      "nome": "Atividades de Extensão em Métodos Experimentais e Computacionais em Linguística III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17940",
+      "codigo": "HL495",
+      "nome": "Atividades de Extensão em Métodos Experimentais e Computacionais em Linguística IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17939",
+      "codigo": "HL494",
+      "nome": "Atividades de Extensão em Linguística IV",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17937",
+      "codigo": "HL396",
+      "nome": "Atividades de Extensão em Assessoria Linguística e Políticas Públicas de Linguagem III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17935",
+      "codigo": "HL394",
+      "nome": "Atividades de Extensão em Linguística III",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17929",
+      "codigo": "HL196",
+      "nome": "Atividades de Extensão em Assessoria Linguística e Políticas Públicas de Linguagem I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17933",
+      "codigo": "HL296",
+      "nome": "Atividades de Extensão em Assessoria Linguística e Políticas Públicas de Linguagem II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17932",
+      "codigo": "HL295",
+      "nome": "Atividades de Extensão em Métodos Experimentais e Computacionais em Linguística II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17931",
+      "codigo": "HL294",
+      "nome": "Atividades de Extensão em Linguística II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17928",
+      "codigo": "HL195",
+      "nome": "Atividades de Extensão em Métodos Experimentais e Computacionais em Linguística I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17927",
+      "codigo": "HL194",
+      "nome": "Atividades de Extensão em Linguística I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18144",
+      "codigo": "TL937",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão VIII: Estágio em Estudos Literários IV",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18143",
+      "codigo": "TL936",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão VII: Estágio em Estudos Literários III",
+      "creditos": 6,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18606",
+      "codigo": "LA294",
+      "nome": "Atividades de extensão em Linguística Aplicada II",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18142",
+      "codigo": "TL935",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão VI: Estágio em Estudos Literários II",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18605",
+      "codigo": "LA194",
+      "nome": "Atividades de extensão em Linguística Aplicada I",
+      "creditos": 4,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17942",
+      "codigo": "HL499",
+      "nome": "Atividades Complementares de Integração Ensino-Extensão IV",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17938",
+      "codigo": "HL399",
+      "nome": "Atividades Complementares de Integração Ensino-Extensão III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18141",
+      "codigo": "TL934",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão V: Estágio em Estudos Literários I",
+      "creditos": 8,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17934",
+      "codigo": "HL299",
+      "nome": "Atividades Complementares de Integração Ensino-Extensão II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18140",
+      "codigo": "TL933",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão IV",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18139",
+      "codigo": "TL932",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão III",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "18138",
+      "codigo": "TL931",
+      "nome": "Atividades Complementares de Integração Ensino e Extensão II",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    },
+    {
+      "disciplina_id": "17930",
+      "codigo": "HL199",
+      "nome": "Atividades Complementares de Integração Ensino-Extensão I",
+      "creditos": 2,
+      "catalogo": 2026,
+      "tipo": "eletiva",
+      "semestre": null
+    }
+  ]
+}

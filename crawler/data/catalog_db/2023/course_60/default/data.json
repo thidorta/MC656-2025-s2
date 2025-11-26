@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 60,
+    "name": "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (60)",
+    "code": "60"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2023,
+  "parameters": {
+    "catalogo": "2023",
+    "modalidade": "",
+    "periodo": "20252",
+    "cp": "1"
+  },
+  "disciplines": []
+}

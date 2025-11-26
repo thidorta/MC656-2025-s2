@@ -1,0 +1,17 @@
+{
+  "course": {
+    "id": 86,
+    "name": "Superior Tecnologia em Saneamento Ambiental (86)",
+    "code": "86"
+  },
+  "modalidade": "",
+  "modalidade_label": "",
+  "year": 2022,
+  "parameters": {
+    "catalogo": "2022",
+    "modalidade": "",
+    "periodo": "20222",
+    "cp": "1"
+  },
+  "disciplines": []
+}
