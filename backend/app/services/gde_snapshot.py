@@ -3,6 +3,8 @@ from __future__ import annotations
 import html
 import os
 import re
+import json
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
@@ -152,12 +154,17 @@ def _extract_user_info(integralizacao_html: str) -> tuple[Optional[str], Optiona
 
 
 def _extract_meta_from_integralizacao(integralizacao_html: str) -> Dict[str, Any]:
-    soup = BeautifulSoup(integralizacao_html or "", "html.parser")
+    raw_html = html.unescape(integralizacao_html or "")
+    soup = BeautifulSoup(raw_html, "html.parser")
     text = soup.get_text(" ")
     norm = " ".join(text.split())
 
     def find_first(pattern: str) -> Optional[str]:
         m = re.search(pattern, norm, re.IGNORECASE)
+        return m.group(1).strip() if m else None
+
+    def find_first_raw(pattern: str) -> Optional[str]:
+        m = re.search(pattern, raw_html, re.IGNORECASE)
         return m.group(1).strip() if m else None
 
     course_name = None
@@ -167,20 +174,41 @@ def _extract_meta_from_integralizacao(integralizacao_html: str) -> Dict[str, Any
         course_id = int(m_course.group(1))
         course_name = m_course.group(2).strip()
 
+    ra_val = (
+        find_first(r"Registro\s+Acad[eê]mico\s*\(RA\):\s*([0-9]{3,})")
+        or find_first_raw(r"Registro\s+Acad(?:&ecirc;|ê|e)mico\s*\(RA\):\s*([0-9]{3,})")
+    )
+    catalogo_val = find_first(r"Cat[aá]logo:\s*([0-9]{4})") or find_first_raw(r"Cat(?:&aacute;|á|a)logo:\s*([0-9]{4})")
+    ingresso_val = find_first(r"Ingresso:\s*(.+?)\s+(?:Limite|Semestre\s+Atual|CP|CPF)")
+    if not ingresso_val:
+        ingresso_val = find_first_raw(r"Ingresso:\s*(.+?)\s+(?:Limite|Semestre\s+Atual|CP|CPF)")
+
     return {
         "name": find_first(r"Aluno:\s*([^\n]+)"),
-        "ra": find_first(r"Registro Acad[eǦ]mico\s*\(RA\):\s*(\d+)"),
+        "ra": ra_val,
         "course_id": course_id,
         "course_name": course_name,
-        "modalidade": find_first(r"Modalidade:\s*(.+?)\s+Cat[aǭ]logo:"),
-        "catalogo": find_first(r"Cat[aǭ]logo:\s*(\d{4})"),
-        "ingresso": find_first(r"Ingresso:\s*(.+?)\s+Limite para Integraliza[c��][aǜ]o:"),
-        "limite_integralizacao": find_first(r"Limite para Integraliza[c��][aǜ]o:\s*(.+?)\s+Semestre Atual"),
-        "semestre_atual": find_first(r"Semestre Atual\s*:\s*([0-9\-\.\s��o��]+)"),
+        "modalidade": find_first(r"Modalidade:\s*(.+?)\s+Cat"),
+        "catalogo": catalogo_val,
+        "ingresso": ingresso_val,
+        "limite_integralizacao": find_first(r"Limite para Integraliza[çc][aã]o:\s*(.+?)\s+Semestre Atual"),
+        "semestre_atual": find_first(r"Semestre Atual\s*:\s*([0-9\-.\sºo]+)"),
         "cp_atual": find_first(r"CP\s*:\s*([\d\.,]+)"),
         "cpf_previsto": find_first(r"CPF\s*:\s*([\d\.,]+)"),
     }
 
+def _extract_ra_fallback(integralizacao_html: str) -> Optional[str]:
+    text = " ".join(BeautifulSoup(html.unescape(integralizacao_html or ""), "html.parser").get_text(" ").split())
+    patterns = [
+        r"RA[:\s]*([0-9]{3,})",
+        r"Registro\s+Academico[:\s]*([0-9]{3,})",
+        r"Registro\s+Acad[eêEÊ]mico[:\s]*([0-9]{3,})",
+    ]
+    for pat in patterns:
+        m = re.search(pat, text, re.IGNORECASE)
+        if m:
+            return m.group(1)
+    return None
 
 def _slice_section(text: str, start_phrase: str, end_markers: List[str]) -> str:
     txt_low = text.lower()
@@ -361,10 +389,28 @@ def _infer_catalog_year(payload: Dict[str, Any], meta: Dict[str, Any]) -> int:
     return 0
 
 
+def _maybe_dump_raw_payload(payload: Dict[str, Any]) -> None:
+    """
+    Saves the raw planner payload to a debug file before it is normalized.
+    The output lives under gde_app/debug-data/generated (gitignored).
+    Any failure here should not break the login flow.
+    """
+    try:
+        root = Path(__file__).resolve().parents[3]
+        out_dir = root / "gde_app" / "debug-data" / "generated"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_file = out_dir / "raw-planner.json"
+        out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:
+        # best-effort; swallow errors to avoid impacting normal operation
+        pass
+
+
 def build_user_db_snapshot(planner_id: str, payload: Dict[str, Any]) -> Dict[str, Any]:
     integralizacao_html = payload.get("Arvore", {}).get("integralizacao", "") or ""
     user_name, payload_course_id = _extract_user_info(integralizacao_html)
     meta = _extract_meta_from_integralizacao(integralizacao_html)
+    ra_fallback = _extract_ra_fallback(integralizacao_html)
     catalog_year = _infer_catalog_year(payload, meta)
     current_period = str(payload.get("Planejado", {}).get("periodo") or os.getenv("PERIODO_TARGET", ""))
     cp_value = payload.get("c")
@@ -377,7 +423,7 @@ def build_user_db_snapshot(planner_id: str, payload: Dict[str, Any]) -> Dict[str
 
     return {
         "planner_id": str(planner_id),
-        "user": {"name": user_name or meta.get("name"), "ra": meta.get("ra")},
+        "user": {"name": user_name or meta.get("name"), "ra": meta.get("ra") or ra_fallback},
         "course": {"id": resolved_course_id, "name": course_name} if resolved_course_id else {},
         "year": catalog_year,
         "current_period": current_period,
@@ -426,5 +472,6 @@ def fetch_user_db_with_credentials(username: str, password: str) -> Tuple[str, D
     csrf = _ensure_csrf(session, base_url)
     planner_id = _login(session, base_url, username, password, csrf)
     payload = _fetch_planejador_payload(session, base_url, planner_id)
+    _maybe_dump_raw_payload(payload)
     snapshot = build_user_db_snapshot(planner_id, payload)
     return planner_id, snapshot, payload

@@ -138,3 +138,8 @@ __pypackages__/
 /crawler/src/tools/__pycache__/
 /crawler/src/db/__pycache__/
 /crawler/data/user_db/
+/crawler/data/raw/
+/crawler/data/json/
+/crawler/data/js_catalog/
+/gde_app/debug-data/generated/
+/gde_app/debug-data/*.log
