@@ -5,4 +5,5 @@ export type RootStackParamList = {
   Home: undefined;
   Tree: undefined;
   Planner: undefined; 
+  Info: undefined;
 };

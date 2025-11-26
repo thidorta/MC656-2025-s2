@@ -480,7 +480,7 @@ export default function TreeScreen({ navigation }: Props) {
           />
 
           <DropdownSelector
-            label="Catalogo"
+            label="Catálogo"
             value={selectedYear}
             options={yearsForSelectedCourse.map((year) => ({
               label: String(year),
@@ -504,9 +504,9 @@ export default function TreeScreen({ navigation }: Props) {
             value={isCompleta}
             options={[
               { label: 'Sim', value: 'Sim' },
-              { label: 'Nao', value: 'Nao' },
+              { label: 'Não', value: 'Não' },
             ]}
-            onSelect={(val) => setIsCompleta(val as 'Sim' | 'Nao')}
+            onSelect={(val) => setIsCompleta(val as 'Sim' | 'Não')}
           />
         </>
       )}
@@ -522,7 +522,7 @@ export default function TreeScreen({ navigation }: Props) {
           </TouchableOpacity>
           <View>
             <Text style={styles.headerEyebrow}>Planejamento</Text>
-            <Text style={styles.headerTitle}>Arvore de Materias</Text>
+            <Text style={styles.headerTitle}>Árvore de Matérias</Text>
           </View>
           <View style={styles.placeholder} />
         </View>
@@ -535,7 +535,7 @@ export default function TreeScreen({ navigation }: Props) {
           {loading && (
             <View style={styles.loader}>
               <ActivityIndicator size="large" color={palette.text} />
-              <Text style={styles.helperText}>Carregando curriculo...</Text>
+              <Text style={styles.helperText}>Carregando currículo...</Text>
             </View>
           )}
           {error && <Text style={styles.errorText}>{error}</Text>}

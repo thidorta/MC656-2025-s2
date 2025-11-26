@@ -6,6 +6,7 @@ import DebugScreen from '../screens/DebugScreen';
 import HomeScreen from '~/screens/HomeScreen';
 import TreeScreen from '../screens/TreeScreen'; 
 import PlannerScreen from '../screens/PlannerScreen';
+import InfoScreen from '../screens/InfoScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -18,6 +19,7 @@ export default function RootNavigator() {
       <Stack.Screen name="Debug" component={DebugScreen} />
       <Stack.Screen name="Welcome" component={WelcomeScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Info" component={InfoScreen} />
     </Stack.Navigator>
   );
 }
