@@ -182,6 +182,20 @@ def _extract_meta_from_integralizacao(integralizacao_html: str) -> Dict[str, Any
     }
 
 
+def _extract_ra_fallback(integralizacao_html: str) -> Optional[str]:
+    text = " ".join(BeautifulSoup(integralizacao_html or "", "html.parser").get_text(" ").split())
+    patterns = [
+        r"RA[:\s]*([0-9]{3,})",
+        r"Registro\s+Academico[:\s]*([0-9]{3,})",
+        r"Registro\s+Acad[eA]mico[:\s]*([0-9]{3,})",
+    ]
+    for pat in patterns:
+        m = re.search(pat, text, re.IGNORECASE)
+        if m:
+            return m.group(1)
+    return None
+
+
 def _slice_section(text: str, start_phrase: str, end_markers: List[str]) -> str:
     txt_low = text.lower()
     start = txt_low.find(start_phrase.lower())
@@ -365,6 +379,7 @@ def build_user_db_snapshot(planner_id: str, payload: Dict[str, Any]) -> Dict[str
     integralizacao_html = payload.get("Arvore", {}).get("integralizacao", "") or ""
     user_name, payload_course_id = _extract_user_info(integralizacao_html)
     meta = _extract_meta_from_integralizacao(integralizacao_html)
+    ra_fallback = _extract_ra_fallback(integralizacao_html)
     catalog_year = _infer_catalog_year(payload, meta)
     current_period = str(payload.get("Planejado", {}).get("periodo") or os.getenv("PERIODO_TARGET", ""))
     cp_value = payload.get("c")
@@ -377,7 +392,7 @@ def build_user_db_snapshot(planner_id: str, payload: Dict[str, Any]) -> Dict[str
 
     return {
         "planner_id": str(planner_id),
-        "user": {"name": user_name or meta.get("name"), "ra": meta.get("ra")},
+        "user": {"name": user_name or meta.get("name"), "ra": meta.get("ra") or ra_fallback},
         "course": {"id": resolved_course_id, "name": course_name} if resolved_course_id else {},
         "year": catalog_year,
         "current_period": current_period,

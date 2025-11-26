@@ -23,15 +23,20 @@ export default function useTreeLogic() {
   const [activeCourse, setActiveCourse] = useState<{ code: string; prereqs: string[][] } | null>(null);
   const [showContext, setShowContext] = useState(true);
 
-  // initial load: curriculum options then planner
   useEffect(() => {
     loadCurriculumOptions().then((parsed) => loadPlanner(parsed)).catch(() => loadPlanner());
   }, []);
 
-  // fetch curriculum when selection changes
   useEffect(() => {
     if (selectedCourseId) {
-      fetchCurriculum({ courseId: selectedCourseId, year: selectedYear, modalidade: selectedModalidade, isCompleta, plannerCourses, setDisciplinesExternal: setDisciplines });
+      fetchCurriculum({
+        courseId: selectedCourseId,
+        year: selectedYear,
+        modalidade: selectedModalidade,
+        isCompleta,
+        plannerCourses,
+        setDisciplinesExternal: setDisciplines,
+      });
     }
   }, [selectedCourseId, selectedYear, selectedModalidade, isCompleta, plannerCourses]);
 
@@ -42,43 +47,49 @@ export default function useTreeLogic() {
     disciplines.forEach((d) => {
       const sem = d.semestre && Number.isInteger(d.semestre) ? Number(d.semestre) : 0;
       const key = sem > 0 ? String(sem) : 'eletivas';
-
       if (!grouped[key]) {
-        grouped[key] = { id: key, title: sem > 0 ? `Semestre ${sem}` : 'Eletivas', courses: [] };
+        grouped[key] = {
+          id: key,
+          title: sem > 0 ? `Semestre ${sem}` : 'Eletivas',
+          courses: [],
+        };
       }
-
-      grouped[key].courses.push({ code: d.codigo, prereqs: Array.isArray(d.prereqs) ? d.prereqs : [], isCurrent: d.isCurrent });
+      grouped[key].courses.push({
+        code: d.codigo,
+        prereqs: Array.isArray(d.prereqs) ? d.prereqs : [],
+        isCurrent: d.isCurrent,
+      });
     });
-
     const orderValue = (id: string) => (id === 'eletivas' ? Number.MAX_SAFE_INTEGER : Number(id));
     return Object.values(grouped).sort((a, b) => orderValue(a.id) - orderValue(b.id));
   }, [disciplines]);
 
   const courseOptionsForSelect = useMemo(() => {
-    const set = new Map<number, { label: string; value: number }>();
-    curriculumOptions.forEach((c) => set.set(c.courseId, { label: c.courseName || `Curso ${c.courseId}`, value: c.courseId }));
+    const set = new Map<number, { courseId: number; courseName: string; courseCode: string }>();
+    curriculumOptions.forEach((c) => {
+      set.set(c.courseId, { courseId: c.courseId, courseName: c.courseName, courseCode: c.courseCode });
+    });
     return Array.from(set.values());
   }, [curriculumOptions]);
 
   const yearsForSelectedCourse = useMemo(() => {
     const entry = curriculumOptions.find((c) => c.courseId === selectedCourseId);
-    if (!entry) return [] as number[];
+    if (!entry) return [];
     return Array.from(new Set(entry.options.map((o) => o.year))).sort((a, b) => b - a);
   }, [curriculumOptions, selectedCourseId]);
 
   const modalitiesForSelected = useMemo(() => {
     const entry = curriculumOptions.find((c) => c.courseId === selectedCourseId);
-    if (!entry || !selectedYear) return [] as { modalidade: string; modalidadeLabel?: string | null; year: number }[];
-    return entry.options.filter((o) => o.year === selectedYear) as { modalidade: string; modalidadeLabel?: string | null; year: number }[];
+    if (!entry || !selectedYear) return [];
+    return entry.options.filter((o) => o.year === selectedYear);
   }, [curriculumOptions, selectedCourseId, selectedYear]);
 
   const handleCourseChange = (courseId: number) => {
     setSelectedCourseId(courseId);
-
     const entry = curriculumOptions.find((c) => c.courseId === courseId);
     const nextYear = entry?.options[0]?.year ?? null;
-    const nextMod = entry?.options.find((o) => o.year === nextYear)?.modalidade ?? entry?.options[0]?.modalidade ?? null;
-
+    const nextMod =
+      entry?.options.find((o) => o.year === nextYear)?.modalidade ?? entry?.options[0]?.modalidade ?? null;
     setSelectedYear(nextYear);
     setSelectedModalidade(nextMod);
   };
@@ -95,37 +106,29 @@ export default function useTreeLogic() {
   };
 
   return {
-    // selections
+    plannerCourses,
+    loadingPlanner,
+    plannerError,
+    loadPlanner,
+    curriculumOptions,
+    disciplines,
+    loadingCurriculum,
+    curriculumError,
+    semestersData,
+    courseOptionsForSelect,
+    yearsForSelectedCourse,
+    modalitiesForSelected,
     selectedCourseId,
     selectedYear,
     selectedModalidade,
     isCompleta,
     setIsCompleta,
-
-    // data
-    curriculumOptions,
-    plannerCourses,
-    semestersData,
-
-    // loading / errors
-    loading: loadingCurriculum,
-    loadingPlanner,
-    error: curriculumError ?? plannerError,
-
-    // ui state
-    activeCourse,
-    toggleActiveCourse,
-    showContext,
-    setShowContext,
-
-    // helpers
-    courseOptionsForSelect,
-    yearsForSelectedCourse,
-    modalitiesForSelected,
     handleCourseChange,
     handleYearChange,
+    toggleActiveCourse,
+    activeCourse,
+    showContext,
+    setShowContext,
     setSelectedModalidade,
-    loadCurriculumOptions,
-    loadPlanner,
   };
 }

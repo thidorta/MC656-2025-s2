@@ -4,7 +4,7 @@ import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import DebugScreen from '../screens/DebugScreen';
 import HomeScreen from '~/screens/HomeScreen';
-import TreeScreen from '../screens/TreeScreen'; 
+import TreeScreen from '../screens/Tree/TreeScreen'; 
 import PlannerScreen from '../screens/PlannerScreen';
 import InfoScreen from '../screens/InfoScreen';
 

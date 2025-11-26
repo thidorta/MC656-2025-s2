@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { PlannerSnapshotCourse, CurriculumOption } from '../types';
+import { apiService } from '../../../services/api';
+import { sessionStore } from '../../../services/session';
+import { CurriculumOption, PlannerSnapshotCourse, PlannerSnapshot } from '../types';
 
 export default function usePlanner() {
   const [plannerCourses, setPlannerCourses] = useState<PlannerSnapshotCourse[]>([]);
@@ -15,40 +17,30 @@ export default function usePlanner() {
         throw new Error('Faca login para carregar o planner.');
       }
 
-
-      let snapshot = sessionStore.getUserDb();
+      let snapshot = sessionStore.getUserDb() as PlannerSnapshot | null;
       if (!snapshot) {
-        snapshot = await apiService.fetchUserDb();
+        snapshot = (await apiService.fetchUserDb()) as PlannerSnapshot;
       }
 
-      const snapObj = snapshot as Record<string, unknown> | undefined;
-      if (!snapObj) {
+      if (!snapshot || !snapshot.course || typeof snapshot.course.id !== 'number') {
         throw new Error('Nenhum snapshot de planner encontrado. Faca login primeiro.');
       }
 
-      const courseField = snapObj['course'] as Record<string, unknown> | undefined;
-      const idField = courseField?.['id'];
-      if (!courseField || typeof idField !== 'number') {
-        throw new Error('Nenhum snapshot de planner encontrado. Faca login primeiro.');
-      }
-
-      const courseId = idField as number;
-
+      const courseId = snapshot.course.id;
       const record: PlannerSnapshotCourse = {
         course_id: courseId,
-        course_name: (courseField['name'] as string) ?? undefined,
-        year: (snapObj['year'] as number) ?? undefined,
-        data: snapshot as any,
+        course_name: snapshot.course?.name ?? undefined,
+        year: snapshot.year ?? undefined,
+        data: snapshot,
       };
 
       setPlannerCourses([record]);
-
-      return { plannerCourses: [record] };
+      return { plannerCourses: [record], curriculumData };
     } catch (err: unknown) {
-      setPlannerCourses([]);
       const message = err instanceof Error ? err.message : String(err);
+      setPlannerCourses([]);
       setError(message || 'Erro ao carregar planner');
-      return { plannerCourses: [] };
+      return { plannerCourses: [], curriculumData };
     } finally {
       setLoadingPlanner(false);
     }
