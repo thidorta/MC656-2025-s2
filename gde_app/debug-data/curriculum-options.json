@@ -1,0 +1,21 @@
+[
+  {
+    "course_id": 34,
+    "course_code": "CC",
+    "course_name": "Ciencia da Computacao",
+    "options": [
+      {
+        "curriculum_id": 1,
+        "year": 2024,
+        "modalidade": "AA",
+        "modalidade_label": "Padrao"
+      },
+      {
+        "curriculum_id": 2,
+        "year": 2023,
+        "modalidade": "AB",
+        "modalidade_label": "Alternativa"
+      }
+    ]
+  }
+]

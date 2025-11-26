@@ -1,0 +1,75 @@
+{
+  "planner_id": "debug-0001",
+  "user": { "name": "Aluno Exemplo", "ra": "123456" },
+  "course": { "id": 34, "name": "Ciencia da Computacao" },
+  "year": 2024,
+  "current_period": "20241",
+  "cp": 1,
+  "parameters": { "catalogo": "2024", "periodo": "20241", "cp": "0" },
+  "integralizacao_meta": {
+    "catalogo": "2024",
+    "modalidade": "AA",
+    "ingresso": "2024-01",
+    "limite_integralizacao": "2028-01",
+    "semestre_atual": "2024-1",
+    "cp_atual": "1.0",
+    "cpf_previsto": "1.0"
+  },
+  "curriculum": [
+    {
+      "disciplina_id": "100",
+      "codigo": "MC101",
+      "nome": "Algoritmos",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 1,
+      "modalidade": "AA",
+      "prereqs": [],
+      "cp_group": 1,
+      "status": "completed",
+      "missing": false,
+      "tem": true,
+      "pode": true,
+      "offers": [
+        {
+          "title": "Seg 10h",
+          "start": "2024-03-10T13:00:00Z",
+          "end": "2024-03-10T15:00:00Z",
+          "day": 0,
+          "start_hour": 10,
+          "end_hour": 12
+        }
+      ]
+    },
+    {
+      "disciplina_id": "101",
+      "codigo": "MC102",
+      "nome": "Estruturas de Dados",
+      "creditos": 4,
+      "catalogo": 2024,
+      "tipo": "obrigatoria",
+      "semestre": 2,
+      "modalidade": "AA",
+      "prereqs": [["MC101"]],
+      "cp_group": 2,
+      "status": "pending",
+      "missing": true,
+      "tem": false,
+      "pode": true
+    }
+  ],
+  "disciplines": [
+    {
+      "disciplina": {
+        "id": 101,
+        "sigla": "MC102",
+        "nome": "Estruturas de Dados",
+        "creditos": 4,
+        "semestre": 2,
+        "c": 2
+      },
+      "offers": []
+    }
+  ]
+}
