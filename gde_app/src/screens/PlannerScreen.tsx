@@ -6,7 +6,8 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../navigation/types';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
-import { API_BASE_URL } from '../config/api';
+import { apiService } from '../services/api';
+import { sessionStore } from '../services/session';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Planner'>;
 
@@ -23,8 +24,6 @@ const screenPaddingHorizontal = spacing(3);
 const totalGridAvailableWidth = width - 2 * screenPaddingHorizontal;
 const timeColumnWidth = totalGridAvailableWidth * 0.18;
 const dayColumnWidth = (totalGridAvailableWidth - timeColumnWidth) / daysOfWeek.length;
-
-const DEFAULT_PLANNER_ID = process.env.EXPO_PUBLIC_PLANNER_ID || '620818';
 
 const CourseChip = ({ code, onPress }: { code: string; onPress?: () => void }) => (
   <TouchableOpacity activeOpacity={0.85} onPress={onPress} style={plannerStyles.courseChip}>
@@ -79,9 +78,10 @@ export default function PlannerScreen({ navigation }: Props) {
     setLoading(true);
     setError(null);
     try {
-      const resp = await fetch(`${API_BASE_URL}/planner/${DEFAULT_PLANNER_ID}`);
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const data = await resp.json();
+      if (!sessionStore.getToken()) {
+        throw new Error('Faca login para acessar o planner.');
+      }
+      const data = await apiService.fetchPlanner();
       setPlanner(data);
       const basePayload = data.modified?.payload || data.original?.payload || {};
       const curriculum = Array.isArray(basePayload.curriculum) ? basePayload.curriculum : [];
@@ -115,13 +115,7 @@ export default function PlannerScreen({ navigation }: Props) {
     const payload = (planner.modified?.payload || planner.original?.payload || {}) as any;
     const newPayload = { ...payload, planned_codes: Array.from(plannedSet) };
     try {
-      const resp = await fetch(`${API_BASE_URL}/planner/${DEFAULT_PLANNER_ID}/modified`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ payload: newPayload }),
-      });
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const data = await resp.json();
+      const data = await apiService.savePlanner(newPayload);
       setPlanner(data);
     } catch (err: any) {
       setError(err?.message || 'Erro ao salvar planner');
@@ -134,19 +128,7 @@ export default function PlannerScreen({ navigation }: Props) {
     setLoading(true);
     setError(null);
     try {
-      const resp = await fetch(`${API_BASE_URL}/planner/${DEFAULT_PLANNER_ID}/refresh`, { method: 'POST' });
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const data = await resp.json();
-      setPlanner(data);
-      const basePayload = data.modified?.payload || data.original?.payload || {};
-      const curriculum = Array.isArray(basePayload.curriculum) ? basePayload.curriculum : [];
-      const currentCodes = curriculum
-        .filter((c: any) => Array.isArray(c.offers) && c.offers.length > 0)
-        .map((c: any) => String(c.codigo));
-      const planned = (basePayload.planned_codes || []).map((c: any) => String(c));
-      const initial = new Set([...planned, ...currentCodes]);
-      setCurrentSet(new Set(currentCodes));
-      setPlannedSet(initial);
+      await loadPlanner();
     } catch (err: any) {
       setError(err?.message || 'Erro ao atualizar planner');
     } finally {

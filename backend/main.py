@@ -38,7 +38,7 @@ async def root():
 async def health_check():
     settings = get_settings()
     catalog_ok = settings.catalog_db_path.exists()
-    user_db_ok = settings.user_db_root.exists()
+    user_db_ok = True  # planner/user data não depende mais de arquivos locais
     db_ok = False
     try:
         conn = open_catalog_connection(settings)

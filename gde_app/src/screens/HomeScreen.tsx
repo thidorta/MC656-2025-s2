@@ -5,22 +5,34 @@ import { RootStackParamList } from '../navigation/types';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
 import { CardButton } from '../components/CardButton';
+import { sessionStore } from '../services/session';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 export default function HomeScreen({ navigation }: Props) {
+  const snapshot = sessionStore.getUserDb();
+  const profileName = snapshot?.user?.name || 'Usuario';
+  const courseName = snapshot?.course?.name || 'Curso nao carregado';
+  const catalogYear = snapshot?.year ? String(snapshot.year) : '-';
+  const initials = profileName
+    .split(' ')
+    .filter((p) => p.length > 0)
+    .slice(0, 2)
+    .map((p) => p[0].toUpperCase())
+    .join('') || 'GD';
+
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
       <View style={styles.container}>
         <View style={styles.profileHeader}>
           <View style={styles.avatarContainer}>
-            <Text style={styles.avatarText}>JD</Text>
+            <Text style={styles.avatarText}>{initials}</Text>
             <View style={styles.onlineIndicator} />
           </View>
           <View style={styles.profileInfo}>
-            <Text style={styles.profileName}>Fulano Ciclano Beltrano</Text>
-            <Text style={styles.profileDetails}>Curso: Ciencia da Computacao</Text>
-            <Text style={styles.profileDetails}>Catalogo: 2023</Text>
+            <Text style={styles.profileName}>{profileName}</Text>
+            <Text style={styles.profileDetails}>Curso: {courseName}</Text>
+            <Text style={styles.profileDetails}>Catalogo: {catalogYear}</Text>
           </View>
         </View>
 

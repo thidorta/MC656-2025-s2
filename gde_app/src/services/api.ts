@@ -1,5 +1,6 @@
 import { Alert } from 'react-native';
 import { API_BASE_URL } from '../config/api';
+import { sessionStore } from './session';
 
 interface PopupMessageResponse {
   title: string;
@@ -16,7 +17,21 @@ interface PopupMessageResponse {
 interface LoginResponse {
   access_token: string;
   token_type: string;
+  planner_id: string;
+  user_db?: any;
+  user?: any;
+  course?: any;
+  year?: number;
 }
+
+const withAuthHeaders = (init: RequestInit = {}) => {
+  const token = sessionStore.getToken();
+  const headers = {
+    ...(init.headers || {}),
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
+  };
+  return { ...init, headers };
+};
 
 export const apiService = {
   getPopupMessage: async (): Promise<PopupMessageResponse> => {
@@ -29,15 +44,15 @@ export const apiService = {
     } catch (error) {
       console.error('API Service - Error fetching popup message:', error);
       Alert.alert(
-        'Erro de Conexão',
-        `Não foi possível conectar ao backend.\n\nDetalhes: ${
+        'Erro de Conexao',
+        `Nao foi possivel conectar ao backend.\n\nDetalhes: ${
           error instanceof Error ? error.message : 'Erro desconhecido'
         }`
       );
       throw error;
     }
   },
-  login: async (username: string, password: string): Promise<LoginResponse> => {
+  login: async (username: string, password: string, remember = false): Promise<LoginResponse> => {
     try {
       const response = await fetch(`${API_BASE_URL}/auth/login`, {
         method: 'POST',
@@ -45,10 +60,19 @@ export const apiService = {
         body: JSON.stringify({ username, password }),
       });
       if (!response.ok) {
-        const detail = await response.text();
-        throw new Error(`HTTP ${response.status}: ${detail || 'Login falhou'}`);
+        let detail = `HTTP ${response.status}`;
+        try {
+          const parsed = await response.json();
+          detail = parsed?.detail || detail;
+        } catch (err) {
+          const text = await response.text();
+          detail = text || detail;
+        }
+        throw new Error(detail || 'Login invalido. Verifique usuario e senha.');
       }
-      return await response.json();
+      const data = await response.json();
+      sessionStore.setSession(data.access_token, data.user_db, remember);
+      return data;
     } catch (error) {
       console.error('API Service - Error logging in:', error);
       Alert.alert(
@@ -59,5 +83,31 @@ export const apiService = {
       );
       throw error;
     }
+  },
+  fetchUserDb: async () => {
+    const token = sessionStore.getToken();
+    if (!token) throw new Error('Sessao inexistente. Faca login.');
+    const resp = await fetch(`${API_BASE_URL}/user-db/me`, withAuthHeaders());
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    sessionStore.setSession(token, data.user_db);
+    return data.user_db;
+  },
+  fetchPlanner: async () => {
+    const resp = await fetch(`${API_BASE_URL}/planner/`, withAuthHeaders());
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return resp.json();
+  },
+  savePlanner: async (payload: any) => {
+    const resp = await fetch(
+      `${API_BASE_URL}/planner/modified`,
+      withAuthHeaders({
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ payload }),
+      })
+    );
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return resp.json();
   },
 };
