@@ -8,11 +8,13 @@ import { RootStackParamList } from '../navigation/types';
 import { useLoginViewModel } from '../hooks/useLoginViewModel';
 import { PasswordInput } from '../../components/PasswordInput';
 import PrimaryButton from '../../components/PrimaryButton';
+import { Switch } from 'react-native';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 export default function LoginScreen({ navigation }: Props) {
-  const { email, setEmail, password, setPassword, isLoading, handleLogin } = useLoginViewModel();
+  const { email, setEmail, password, setPassword, isLoading, handleLogin, remember, setRemember } =
+    useLoginViewModel();
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
@@ -35,6 +37,11 @@ export default function LoginScreen({ navigation }: Props) {
           <Text style={[styles.label, styles.passwordLabelMargin]}>Senha</Text>
           <PasswordInput value={password} onChangeText={setPassword} placeholder="Digite sua senha" />
           <Text style={styles.helperText}>Deve ser o mesmo do GDE</Text>
+
+          <View style={styles.rememberRow}>
+            <Switch value={remember} onValueChange={setRemember} />
+            <Text style={styles.rememberText}>Permanecer logado</Text>
+          </View>
 
           <PrimaryButton
             label={isLoading ? 'Entrando...' : 'Login'}
@@ -110,6 +117,17 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: colors.textMuted,
     marginBottom: spacing(1),
+    fontFamily: 'monospace',
+  },
+  rememberRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing(1),
+    marginTop: spacing(1),
+  },
+  rememberText: {
+    color: colors.text,
+    fontSize: 14,
     fontFamily: 'monospace',
   },
   secondaryButton: {
