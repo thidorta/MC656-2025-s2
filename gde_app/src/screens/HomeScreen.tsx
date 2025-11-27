@@ -14,12 +14,20 @@ export default function HomeScreen({ navigation }: Props) {
   const profileName = snapshot?.user?.name || 'Usuario';
   const courseName = snapshot?.course?.name || 'Curso nao carregado';
   const catalogYear = snapshot?.year ? String(snapshot.year) : '-';
-  const initials = profileName
-    .split(' ')
-    .filter((p) => p.length > 0)
-    .slice(0, 2)
-    .map((p) => p[0].toUpperCase())
-    .join('') || 'GD';
+  const nameParts: string[] = (profileName ?? '')
+    .trim()
+    .split(/\s+/)
+    .filter((p: string) => p.length > 0);
+
+  const initials =
+    nameParts.length === 0
+      ? 'GD'
+        : nameParts.length >= 3
+        ? (nameParts[0][0] + nameParts[nameParts.length - 1][0]).toLocaleUpperCase()
+        : nameParts
+          .slice(0, 2)
+          .map((p: string) => p[0].toLocaleUpperCase())
+          .join('');
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
