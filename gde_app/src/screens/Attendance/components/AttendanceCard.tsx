@@ -20,8 +20,8 @@ const AttendanceCard: React.FC<Props> = ({
   onToggleAlertEnabled,
 }) => {
   const [expanded, setExpanded] = useState(false);
-  const meterWidth =
-    course.maxAbsences === 0 ? '0%' : `${Math.min(1, Math.max(0, course.absencesUsed / course.maxAbsences)) * 100}%`;
+  const meterScale =
+    course.maxAbsences === 0 ? 0 : Math.min(1, Math.max(0, course.absencesUsed / course.maxAbsences));
   const absencePercent = Number.isFinite(course.absencePercent) ? course.absencePercent : 0;
   const riskThreshold = course.riskThreshold ?? 25;
   const isAtRisk = course.isAtRisk ?? absencePercent >= riskThreshold;
@@ -36,7 +36,7 @@ const AttendanceCard: React.FC<Props> = ({
         </View>
         <View style={styles.cellRight}>
           <View style={styles.creditsPill}>
-            <Text style={styles.creditsText}>{course.credits} cr</Text>
+            <Text style={styles.creditsText}>{course.credits} créditos</Text>
           </View>
           <MaterialCommunityIcons
             name={expanded ? 'chevron-up' : 'chevron-right'}
@@ -68,7 +68,7 @@ const AttendanceCard: React.FC<Props> = ({
           </View>
 
           <View style={styles.meter}>
-            <View style={[styles.meterFill, { width: meterWidth }]} />
+            <View style={[styles.meterFill, { transform: [{ scaleX: meterScale }] }]} />
           </View>
 
           <View style={styles.statRow}>

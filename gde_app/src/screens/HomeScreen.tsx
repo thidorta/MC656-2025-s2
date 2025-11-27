@@ -1,55 +1,82 @@
-import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../navigation/types';
-import { colors } from '../theme/colors';
-import { spacing } from '../theme/spacing';
-import { CardButton } from '../components/CardButton';
 import { sessionStore } from '../services/session';
+import { spacing } from '../theme/spacing';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
+const palette = {
+  bg: '#0B0B0F',
+  surface: '#11131A',
+  surfaceElevated: '#151824',
+  text: '#E8ECF5',
+  textMuted: '#8A8F9B',
+  divider: 'rgba(255,255,255,0.08)',
+  accent: '#33E1D3',
+};
+
+const actions = [
+  { label: 'Árvore', description: 'Visualizar currículo', icon: 'tree-outline', route: 'Tree' as const },
+  { label: 'Planejador', description: 'Organizar horários', icon: 'calendar-month', route: 'Planner' as const },
+  { label: 'Faltas', description: 'Gerir presenças', icon: 'account-check', route: 'Attendance' as const },
+  { label: 'Info', description: 'Sobre o aplicativo', icon: 'information-outline', route: 'Info' as const },
+  { label: 'Configurar', description: 'Ajustes e debug', icon: 'cog-outline', route: 'Debug' as const },
+];
+
 export default function HomeScreen({ navigation }: Props) {
   const snapshot = sessionStore.getUserDb();
-  const profileName = snapshot?.user?.name || 'Usuario';
-  const courseName = snapshot?.course?.name || 'Curso nao carregado';
+  const profileName = snapshot?.user?.name || 'Usuário';
+  const courseName = snapshot?.course?.name || 'Curso não carregado';
   const catalogYear = snapshot?.year ? String(snapshot.year) : '-';
-  const nameParts: string[] = (profileName ?? '')
-    .trim()
-    .split(/\s+/)
-    .filter((p: string) => p.length > 0);
-
+  const nameParts = profileName.trim().split(/\s+/).filter(Boolean);
   const initials =
     nameParts.length === 0
       ? 'GD'
-        : nameParts.length >= 3
-        ? (nameParts[0][0] + nameParts[nameParts.length - 1][0]).toLocaleUpperCase()
-        : nameParts
+      : nameParts.length >= 3
+      ? (nameParts[0][0] + nameParts[nameParts.length - 1][0]).toUpperCase()
+      : nameParts
           .slice(0, 2)
-          .map((p: string) => p[0].toLocaleUpperCase())
+          .map((p) => p[0].toUpperCase())
           .join('');
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
-      <View style={styles.container}>
-        <View style={styles.profileHeader}>
-          <View style={styles.avatarContainer}>
+      <View style={styles.page}>
+        <View style={styles.profileCard}>
+          <View style={styles.avatar}>
             <Text style={styles.avatarText}>{initials}</Text>
-            <View style={styles.onlineIndicator} />
+            <View style={styles.statusDot} />
           </View>
           <View style={styles.profileInfo}>
+            <Text style={styles.profileEyebrow}>Resumo do aluno</Text>
             <Text style={styles.profileName}>{profileName}</Text>
-            <Text style={styles.profileDetails}>Curso: {courseName}</Text>
-            <Text style={styles.profileDetails}>Catalogo: {catalogYear}</Text>
+            <Text style={styles.profileDetail}>{courseName}</Text>
+            <Text style={styles.profileDetail}>Catálogo {catalogYear}</Text>
           </View>
         </View>
 
-        <View style={styles.gridContainer}>
-          <CardButton label="Arvore" onPress={() => navigation.navigate('Tree')} />
-          <CardButton label="Planejador" onPress={() => navigation.navigate('Planner')} />
-          <CardButton label="Faltas" onPress={() => navigation.navigate('Attendance')} />
-          <CardButton label="Info" onPress={() => navigation.navigate('Info')} />
-          <CardButton label="Configurar" onPress={() => navigation.navigate('Debug')} />
+        <View style={styles.section}>
+          {actions.map((action) => (
+            <TouchableOpacity
+              key={action.label}
+              style={styles.actionRow}
+              activeOpacity={0.85}
+              onPress={() => navigation.navigate(action.route)}
+            >
+              <View style={styles.actionIcon}>
+                <MaterialCommunityIcons name={action.icon} size={20} color={palette.accent} />
+              </View>
+              <View style={styles.actionCopy}>
+                <Text style={styles.actionLabel}>{action.label}</Text>
+                <Text style={styles.actionDescription}>{action.description}</Text>
+              </View>
+              <MaterialCommunityIcons name="chevron-right" size={20} color={palette.textMuted} />
+            </TouchableOpacity>
+          ))}
         </View>
       </View>
     </SafeAreaView>
@@ -57,74 +84,66 @@ export default function HomeScreen({ navigation }: Props) {
 }
 
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: colors.bg,
-  },
-  container: {
-    flex: 1,
-    backgroundColor: colors.bg,
-    paddingHorizontal: spacing(3),
-    paddingTop: spacing(3),
-    gap: spacing(3),
-  },
-  profileHeader: {
+  safeArea: { flex: 1, backgroundColor: palette.bg },
+  page: { flex: 1, backgroundColor: palette.bg, paddingHorizontal: 20, paddingTop: spacing(2), gap: spacing(2) },
+  profileCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: colors.surface,
-    borderRadius: 14,
-    padding: spacing(2),
-    borderWidth: 1,
-    borderColor: colors.border,
-    gap: spacing(2),
-  },
-  avatarContainer: {
-    width: 64,
-    height: 64,
+    backgroundColor: palette.surface,
     borderRadius: 18,
-    backgroundColor: colors.surfaceAlt,
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'relative',
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.divider,
+    padding: spacing(2),
+    gap: spacing(1.5),
   },
-  avatarText: {
-    color: colors.text,
-    fontSize: 22,
-    fontWeight: '800',
-    fontFamily: 'monospace',
+  avatar: {
+    width: 70,
+    height: 70,
+    borderRadius: 16,
+    backgroundColor: palette.surfaceElevated,
+    borderWidth: 1,
+    borderColor: palette.divider,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
   },
-  onlineIndicator: {
+  avatarText: { color: palette.text, fontSize: 24, fontWeight: '700' },
+  statusDot: {
     position: 'absolute',
-    bottom: 8,
-    right: 8,
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    backgroundColor: colors.primary,
+    bottom: 10,
+    right: 10,
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    backgroundColor: palette.accent,
   },
-  profileInfo: {
-    flex: 1,
-    gap: spacing(0.5),
+  profileInfo: { flex: 1, gap: 4 },
+  profileEyebrow: { color: palette.textMuted, fontSize: 12, letterSpacing: 0.4 },
+  profileName: { color: palette.text, fontSize: 20, fontWeight: '700' },
+  profileDetail: { color: palette.textMuted, fontSize: 13 },
+  section: {
+    backgroundColor: palette.surface,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: palette.divider,
+    paddingVertical: spacing(0.5),
   },
-  profileName: {
-    color: colors.text,
-    fontSize: 18,
-    fontWeight: '800',
-    letterSpacing: 0.4,
-    fontFamily: 'monospace',
-  },
-  profileDetails: {
-    color: colors.textMuted,
-    fontSize: 14,
-    lineHeight: 20,
-    fontFamily: 'monospace',
-  },
-  gridContainer: {
+  actionRow: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    rowGap: spacing(2),
+    alignItems: 'center',
+    paddingHorizontal: spacing(1.5),
+    paddingVertical: spacing(1.1),
+    gap: spacing(1.25),
   },
+  actionIcon: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: palette.surfaceElevated,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  actionCopy: { flex: 1 },
+  actionLabel: { color: palette.text, fontSize: 15, fontWeight: '600' },
+  actionDescription: { color: palette.textMuted, fontSize: 12, marginTop: 2 },
 });

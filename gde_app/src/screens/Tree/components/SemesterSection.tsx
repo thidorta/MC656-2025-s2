@@ -14,23 +14,23 @@ interface Props {
 const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCourse }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
+  const label = semester.id === 'eletivas' ? 'Eletivas' : `Semestre ${semester.id}`;
+  const courseCount = semester.courses.length;
+
   return (
-    <View style={styles.semesterCard}>
-      <TouchableOpacity onPress={() => setIsCollapsed(!isCollapsed)} style={styles.semesterHeader}>
+    <View style={styles.card}>
+      <TouchableOpacity onPress={() => setIsCollapsed(!isCollapsed)} style={styles.header} activeOpacity={0.85}>
         <View>
-          <Text style={styles.semesterBadge}>
-            {semester.id === 'eletivas' ? 'Eletivas' : `Semestre ${semester.id}`}
-          </Text>
-          <Text style={styles.semesterTitle}>{semester.title}</Text>
+          <Text style={styles.badge}>{label}</Text>
+          <Text style={styles.title}>{semester.title}</Text>
         </View>
-        <MaterialCommunityIcons
-          name={isCollapsed ? 'chevron-down' : 'chevron-up'}
-          size={22}
-          color={palette.text}
-        />
+        <View style={styles.headerRight}>
+          <Text style={styles.meta}>{courseCount} disciplinas</Text>
+          <MaterialCommunityIcons name={isCollapsed ? 'chevron-down' : 'chevron-up'} size={22} color={palette.text} />
+        </View>
       </TouchableOpacity>
       {!isCollapsed && (
-        <View style={styles.courseContainer}>
+        <View style={styles.chipGrid}>
           {semester.courses.map((course, index) => (
             <CourseChip
               key={`${course.code}-${index}`}
@@ -46,50 +46,46 @@ const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCour
 };
 
 const styles = StyleSheet.create({
-  semesterCard: {
+  card: {
     backgroundColor: palette.surface,
-    borderRadius: 12,
-    marginBottom: spacing(1.5),
+    borderRadius: 14,
     borderWidth: 1,
-    borderColor: palette.border,
-    shadowColor: '#000',
-    shadowOpacity: 0.25,
-    shadowRadius: 12,
-    shadowOffset: { width: 0, height: 8 },
-    elevation: 8,
-    overflow: 'visible',
-    zIndex: 1,
+    borderColor: palette.divider,
+    overflow: 'hidden',
   },
-  semesterHeader: {
+  header: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: spacing(1.5),
-    paddingHorizontal: spacing(2),
-    backgroundColor: '#0F0F0F',
+    justifyContent: 'space-between',
+    paddingHorizontal: spacing(1.5),
+    paddingVertical: spacing(1.25),
   },
-  semesterBadge: {
+  badge: {
     color: palette.textMuted,
     fontSize: 12,
-    fontWeight: '700',
-    letterSpacing: 0.6,
-    fontFamily: 'monospace',
+    letterSpacing: 0.4,
+    marginBottom: 2,
   },
-  semesterTitle: {
+  title: {
     color: palette.text,
     fontSize: 16,
-    fontWeight: '800',
-    fontFamily: 'monospace',
+    fontWeight: '600',
   },
-  courseContainer: {
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    columnGap: spacing(0.5),
+  },
+  meta: {
+    color: palette.textMuted,
+    fontSize: 12,
+  },
+  chipGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    padding: spacing(1.5),
-    rowGap: spacing(1),
-    columnGap: spacing(1),
-    justifyContent: 'center',
-    overflow: 'visible',
-    zIndex: 2,
+    paddingHorizontal: spacing(1.25),
+    paddingBottom: spacing(1.25),
+    gap: spacing(0.75),
   },
 });
 

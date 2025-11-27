@@ -4,7 +4,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../navigation/types';
-import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
 import { apiService } from '../services/api';
 import { sessionStore } from '../services/session';
@@ -12,6 +11,19 @@ import { sessionStore } from '../services/session';
 type Props = NativeStackScreenProps<RootStackParamList, 'Planner'>;
 
 const { width } = Dimensions.get('window');
+
+const palette = {
+  bg: '#0B0B0F',
+  surface: '#11131A',
+  surfaceElevated: '#161A24',
+  text: '#E8ECF5',
+  textMuted: '#8A8F9B',
+  divider: 'rgba(255,255,255,0.08)',
+  accent: '#33E1D3',
+  accentSoft: 'rgba(51,225,211,0.16)',
+  danger: '#ff5c8d',
+  buttonText: '#031920',
+};
 
 type DaySchedule = { id: string; day: string; courses: string[] };
 type CourseBlock = { id: string; code: string; dayIndex: number; startTime: number; durationHours: number };
@@ -33,27 +45,34 @@ const CourseChip = ({ code, onPress }: { code: string; onPress?: () => void }) =
 
 const DaySection = ({ schedule, onToggle }: { schedule: DaySchedule; onToggle: (code: string) => void }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const courseCount = schedule.courses.length;
+  const metaLabel = courseCount === 0 ? 'Sem disciplinas' : `${courseCount} disciplina${courseCount > 1 ? 's' : ''}`;
 
   return (
     <View style={plannerStyles.dayCard}>
-      <TouchableOpacity onPress={() => setIsCollapsed(!isCollapsed)} style={plannerStyles.dayHeader}>
-        <View style={plannerStyles.dayTitleContainer}>
-          <MaterialCommunityIcons
-            name={isCollapsed ? 'chevron-down' : 'chevron-up'}
-            size={24}
-            color={colors.text}
-          />
-          <Text style={plannerStyles.dayTitle}>{schedule.day}</Text>
+      <TouchableOpacity
+        onPress={() => setIsCollapsed(!isCollapsed)}
+        style={plannerStyles.dayHeader}
+        activeOpacity={0.85}
+      >
+        <View>
+          <Text style={plannerStyles.dayLabel}>{schedule.day}</Text>
+          <Text style={plannerStyles.dayMeta}>{metaLabel}</Text>
         </View>
+        <MaterialCommunityIcons
+          name={isCollapsed ? 'chevron-down' : 'chevron-up'}
+          size={22}
+          color={palette.text}
+        />
       </TouchableOpacity>
-      {!isCollapsed && schedule.courses.length > 0 && (
+      {!isCollapsed && courseCount > 0 && (
         <View style={plannerStyles.courseContainer}>
           {schedule.courses.map((course, index) => (
             <CourseChip key={index} code={course} onPress={() => onToggle(course)} />
           ))}
         </View>
       )}
-      {!isCollapsed && schedule.courses.length === 0 && (
+      {!isCollapsed && courseCount === 0 && (
         <View style={plannerStyles.noCoursesContainer}>
           <Text style={plannerStyles.noCoursesText}>Nenhuma matéria agendada.</Text>
         </View>
@@ -257,82 +276,90 @@ export default function PlannerScreen({ navigation }: Props) {
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={plannerStyles.safeArea}>
-      <View style={plannerStyles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={plannerStyles.backButton}>
-          <MaterialCommunityIcons name="arrow-left" size={24} color={colors.text} />
-        </TouchableOpacity>
-        <Text style={plannerStyles.headerTitle}>Planejador</Text>
-        <View style={plannerStyles.headerActions}>
-          <TouchableOpacity onPress={refreshPlanner} style={plannerStyles.headerIcon}>
-            <MaterialCommunityIcons name="refresh" size={20} color={colors.text} />
+      <View style={plannerStyles.page}>
+        <View style={plannerStyles.navbar}>
+          <TouchableOpacity onPress={() => navigation.goBack()} style={plannerStyles.backButton} hitSlop={12}>
+            <MaterialCommunityIcons name="chevron-left" size={24} color={palette.text} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={savePlanner} disabled={saving} style={plannerStyles.headerIcon}>
-            <MaterialCommunityIcons name="content-save" size={20} color={colors.text} />
-          </TouchableOpacity>
+          <Text style={plannerStyles.navTitle}>Planejador</Text>
+          <View style={plannerStyles.navActions}>
+            <TouchableOpacity onPress={refreshPlanner} style={plannerStyles.iconButton}>
+              <MaterialCommunityIcons name="refresh" size={20} color={palette.text} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={savePlanner} disabled={saving} style={plannerStyles.iconButton}>
+              <MaterialCommunityIcons name="content-save" size={20} color={palette.text} />
+            </TouchableOpacity>
+          </View>
         </View>
-      </View>
 
-      <ScrollView style={plannerStyles.container} contentContainerStyle={plannerStyles.contentContainer}>
-        {loading && <Text style={plannerStyles.helperText}>Carregando planner...</Text>}
-        {error && <Text style={plannerStyles.errorText}>{error}</Text>}
+        <ScrollView style={plannerStyles.scrollArea} contentContainerStyle={plannerStyles.contentContainer}>
+          <View style={plannerStyles.headerBlock}>
+            <Text style={plannerStyles.headerEyebrow}>Planejamento</Text>
+            <Text style={plannerStyles.headerTitle}>Planejador semanal</Text>
+            <Text style={plannerStyles.headerDescription}>
+              Distribua suas materias nos dias da semana e visualize o horario completo.
+            </Text>
+          </View>
 
-        {/* Daily schedule sections */}
-        {coursesByDay.map((schedule) => (
-          <DaySection key={schedule.id} schedule={schedule} onToggle={togglePlanned} />
-        ))}
+          {loading && <Text style={plannerStyles.helperText}>Carregando planner...</Text>}
+          {error && <Text style={plannerStyles.errorText}>{error}</Text>}
 
-        {/* Weekly Schedule Grid */}
-        <View style={plannerStyles.gridContainer}>
-          {/* Grid Header (Days of Week) */}
-          <View style={[plannerStyles.gridHeaderRow, { height: headerRowHeight }]}>
-            <View style={[plannerStyles.gridCornerCell, { width: timeColumnWidth }]} />
-            {daysOfWeek.map((day, index) => (
-              <View key={index} style={[plannerStyles.gridDayHeaderCell, { width: dayColumnWidth }]}>
-                <Text style={plannerStyles.gridDayHeaderText}>{day}</Text>
+          <Text style={plannerStyles.sectionLabel}>Dias e materias</Text>
+          <View style={plannerStyles.sectionList}>
+            {coursesByDay.map((schedule) => (
+              <DaySection key={schedule.id} schedule={schedule} onToggle={togglePlanned} />
+            ))}
+          </View>
+
+          <Text style={plannerStyles.sectionLabel}>Horario semanal</Text>
+          <View style={plannerStyles.gridCard}>
+            <View style={[plannerStyles.gridHeaderRow, { height: headerRowHeight }]}>
+              <View style={[plannerStyles.gridCornerCell, { width: timeColumnWidth }]} />
+              {daysOfWeek.map((day, index) => (
+                <View key={index} style={[plannerStyles.gridDayHeaderCell, { width: dayColumnWidth }]}>
+                  <Text style={plannerStyles.gridDayHeaderText}>{day}</Text>
+                </View>
+              ))}
+            </View>
+
+            {timeSlots.map((time, timeIndex) => (
+              <View key={timeIndex} style={[plannerStyles.gridRow, { height: cellHeight }]}>
+                <View style={[plannerStyles.gridTimeCell, { width: timeColumnWidth }]}>
+                  <Text style={plannerStyles.gridTimeText}>{time}</Text>
+                </View>
+                {daysOfWeek.map((_, dayIndex) => (
+                  <View key={dayIndex} style={[plannerStyles.gridCell, { width: dayColumnWidth }]} />
+                ))}
+              </View>
+            ))}
+
+            {scheduleBlocks.map((block) => (
+              <View
+                key={block.id}
+                style={[
+                  plannerStyles.courseBlock,
+                  {
+                    top: headerRowHeight + (block.startTime - 8) * cellHeight + 1,
+                    left: timeColumnWidth + block.dayIndex * dayColumnWidth + 1,
+                    width: dayColumnWidth - 2,
+                    height: block.durationHours * cellHeight - 2,
+                  },
+                ]}
+              >
+                <Text style={plannerStyles.courseBlockText}>{block.code}</Text>
               </View>
             ))}
           </View>
 
-          {/* Grid Rows (Time Slots) */}
-          {timeSlots.map((time, timeIndex) => (
-            <View key={timeIndex} style={[plannerStyles.gridRow, { height: cellHeight }]}>
-              <View style={[plannerStyles.gridTimeCell, { width: timeColumnWidth }]}>
-                <Text style={plannerStyles.gridTimeText}>{time}</Text>
-              </View>
-              {daysOfWeek.map((_, dayIndex) => (
-                <View key={dayIndex} style={[plannerStyles.gridCell, { width: dayColumnWidth }]} />
-              ))}
+          <TouchableOpacity onPress={() => {}} style={plannerStyles.exportButton}>
+            <MaterialCommunityIcons name="calendar-export" size={22} color={palette.buttonText} />
+            <Text style={plannerStyles.exportButtonText}>Exportar para Google Calendar</Text>
+            <View style={plannerStyles.calendarBadge}>
+              <Text style={plannerStyles.calendarBadgeText}>31</Text>
             </View>
-          ))}
-
-          {/* Render Course Blocks on top of the grid */}
-          {scheduleBlocks.map((block) => (
-            <View
-              key={block.id}
-              style={[
-                plannerStyles.courseBlock,
-                {
-                  top: headerRowHeight + (block.startTime - 8) * cellHeight + 1,
-                  left: timeColumnWidth + block.dayIndex * dayColumnWidth + 1,
-                  width: dayColumnWidth - 2,
-                  height: block.durationHours * cellHeight - 2,
-                },
-              ]}
-            >
-              <Text style={plannerStyles.courseBlockText}>{block.code}</Text>
-            </View>
-          ))}
-        </View>
-
-        {/* Export to Google Calendar Button */}
-        <TouchableOpacity onPress={() => {}} style={plannerStyles.exportButton}>
-          <MaterialCommunityIcons name="calendar-export" size={24} color={colors.text} style={{ marginRight: spacing(1) }} />
-          <Text style={plannerStyles.exportButtonText}>Exportar para GOOGLE CALENDAR</Text>
-          <View style={plannerStyles.googleCalendarIconPlaceholder}>
-            <Text style={plannerStyles.googleCalendarIconText}>31</Text>
-          </View>
-        </TouchableOpacity>
-      </ScrollView>
+          </TouchableOpacity>
+        </ScrollView>
+      </View>
     </SafeAreaView>
   );
 }
@@ -340,123 +367,158 @@ export default function PlannerScreen({ navigation }: Props) {
 const plannerStyles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: colors.bg,
+    backgroundColor: palette.bg,
   },
-  header: {
+  page: {
+    flex: 1,
+    backgroundColor: palette.bg,
+  },
+  navbar: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: spacing(3),
-    paddingVertical: spacing(2),
-    backgroundColor: colors.surface,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 12,
   },
-  headerActions: {
+  navTitle: {
+    color: palette.text,
+    fontSize: 17,
+    fontWeight: '600',
+  },
+  navActions: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing(1),
+    columnGap: spacing(0.75),
   },
-  headerIcon: {
-    padding: spacing(1),
+  iconButton: {
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: palette.surface,
+    borderWidth: 1,
+    borderColor: palette.divider,
   },
   backButton: {
-    padding: spacing(1),
-    borderRadius: 12,
-    backgroundColor: colors.surfaceAlt,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: palette.surface,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.divider,
   },
-  addCourseButtonHeader: {
-    padding: spacing(1),
-  },
-  headerTitle: {
-    color: colors.text,
-    fontSize: 20,
-    fontWeight: '800',
-    letterSpacing: 0.4,
-    fontFamily: 'monospace',
-  },
-  container: {
+  scrollArea: {
     flex: 1,
-    padding: spacing(3),
-    backgroundColor: colors.bg,
   },
   contentContainer: {
-    paddingBottom: spacing(8),
+    paddingHorizontal: 20,
+    paddingBottom: spacing(4),
+    rowGap: spacing(1.25),
+  },
+  headerBlock: {
+    gap: 4,
+  },
+  headerEyebrow: {
+    color: palette.textMuted,
+    fontSize: 13,
+    letterSpacing: 0.4,
+  },
+  headerTitle: {
+    color: palette.text,
+    fontSize: 24,
+    fontWeight: '700',
+  },
+  headerDescription: {
+    color: palette.textMuted,
+    fontSize: 13,
+    lineHeight: 18,
+  },
+  helperText: {
+    color: palette.textMuted,
+    fontSize: 13,
+  },
+  errorText: {
+    color: palette.danger,
+    fontSize: 13,
+  },
+  sectionLabel: {
+    color: palette.textMuted,
+    fontSize: 13,
+    marginTop: spacing(1),
+  },
+  sectionList: {
+    rowGap: spacing(1),
   },
   dayCard: {
-    backgroundColor: colors.surface,
-    borderRadius: 12,
-    marginBottom: spacing(2),
+    backgroundColor: palette.surface,
+    borderRadius: 14,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.divider,
     overflow: 'hidden',
   },
   dayHeader: {
     flexDirection: 'row',
+    alignItems: 'center',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: spacing(2),
-    backgroundColor: colors.surfaceAlt,
+    paddingHorizontal: spacing(1.5),
+    paddingVertical: spacing(1.25),
   },
-  dayTitleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  dayTitle: {
-    color: colors.text,
+  dayLabel: {
+    color: palette.text,
     fontSize: 16,
-    fontWeight: '800',
-    marginLeft: spacing(1),
-    fontFamily: 'monospace',
+    fontWeight: '600',
   },
-  addCourseButton: {
-    padding: spacing(1),
+  dayMeta: {
+    color: palette.textMuted,
+    fontSize: 12,
+    marginTop: 2,
   },
   courseContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    padding: spacing(2),
-    gap: spacing(1),
+    paddingHorizontal: spacing(1.25),
+    paddingBottom: spacing(1.25),
+    gap: spacing(0.75),
   },
   noCoursesContainer: {
-    padding: spacing(2),
-    alignItems: 'center',
+    paddingHorizontal: spacing(1.5),
+    paddingBottom: spacing(1.5),
   },
   noCoursesText: {
-    color: colors.textMuted,
-    fontSize: 14,
-    fontFamily: 'monospace',
+    color: palette.textMuted,
+    fontSize: 13,
   },
   courseChip: {
-    backgroundColor: colors.surfaceAlt,
-    borderRadius: 10,
-    paddingVertical: spacing(1),
-    paddingHorizontal: spacing(2),
+    backgroundColor: palette.surfaceElevated,
+    borderRadius: 12,
+    paddingVertical: spacing(0.8),
+    paddingHorizontal: spacing(1.5),
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.divider,
   },
   courseChipText: {
-    color: colors.text,
+    color: palette.text,
     fontSize: 14,
-    fontWeight: '700',
-    fontFamily: 'monospace',
+    fontWeight: '600',
   },
-  gridContainer: {
-    marginTop: spacing(4),
-    backgroundColor: colors.surface,
-    borderRadius: 12,
-    overflow: 'hidden',
+  gridCard: {
+    marginTop: spacing(0.5),
+    backgroundColor: palette.surface,
+    borderRadius: 16,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: palette.divider,
+    overflow: 'hidden',
     position: 'relative',
   },
   gridHeaderRow: {
     flexDirection: 'row',
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
-    backgroundColor: colors.surfaceAlt,
+    borderBottomColor: palette.divider,
+    backgroundColor: palette.surfaceElevated,
   },
   gridCornerCell: {
     paddingVertical: spacing(1),
@@ -464,92 +526,76 @@ const plannerStyles = StyleSheet.create({
   gridDayHeaderCell: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: spacing(1),
+    paddingVertical: spacing(0.8),
     borderLeftWidth: 1,
-    borderLeftColor: colors.border,
+    borderLeftColor: palette.divider,
   },
   gridDayHeaderText: {
     fontSize: 12,
-    fontWeight: '800',
-    color: colors.text,
-    fontFamily: 'monospace',
+    fontWeight: '600',
+    color: palette.text,
   },
   gridRow: {
     flexDirection: 'row',
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    borderBottomColor: palette.divider,
   },
   gridTimeCell: {
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    paddingVertical: spacing(0.5),
-    paddingRight: spacing(1),
-    backgroundColor: colors.surfaceAlt,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    paddingHorizontal: spacing(1),
+    backgroundColor: palette.surfaceElevated,
     borderRightWidth: 1,
-    borderRightColor: colors.border,
+    borderRightColor: palette.divider,
   },
   gridTimeText: {
-    fontSize: 10,
-    color: colors.textMuted,
-    marginTop: -spacing(0.5),
-    fontFamily: 'monospace',
+    fontSize: 11,
+    color: palette.textMuted,
   },
   gridCell: {
     borderLeftWidth: 1,
-    borderLeftColor: colors.border,
+    borderLeftColor: palette.divider,
   },
   courseBlock: {
     position: 'absolute',
-    backgroundColor: colors.primary,
-    borderRadius: 6,
+    backgroundColor: palette.accent,
+    borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: spacing(0.5),
     zIndex: 1,
   },
   courseBlockText: {
-    color: colors.buttonText,
-    fontSize: 12,
-    fontWeight: '800',
-    fontFamily: 'monospace',
+    color: palette.buttonText,
+    fontSize: 13,
+    fontWeight: '700',
   },
   exportButton: {
     flexDirection: 'row',
-    backgroundColor: colors.primary,
-    paddingVertical: spacing(2),
-    paddingHorizontal: spacing(3),
-    borderRadius: 14,
     alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: spacing(4),
-    marginBottom: spacing(2),
-    alignSelf: 'center',
-    minWidth: 280,
+    justifyContent: 'space-between',
+    backgroundColor: palette.accent,
+    borderRadius: 16,
+    paddingVertical: spacing(1.5),
+    paddingHorizontal: spacing(1.75),
+    marginTop: spacing(2),
   },
   exportButtonText: {
-    color: colors.buttonText,
-    fontWeight: '800',
-    fontSize: 16,
-    letterSpacing: 0.3,
-    fontFamily: 'monospace',
+    color: palette.buttonText,
+    fontWeight: '700',
+    fontSize: 15,
   },
-  googleCalendarIconPlaceholder: {
-    backgroundColor: colors.surface,
-    borderRadius: 6,
-    paddingHorizontal: 4,
-    paddingVertical: 2,
-    marginLeft: spacing(1),
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderColor: colors.border,
+  calendarBadge: {
+    backgroundColor: palette.surface,
+    borderRadius: 10,
+    paddingHorizontal: spacing(0.75),
+    paddingVertical: spacing(0.4),
     borderWidth: 1,
+    borderColor: palette.divider,
   },
-  googleCalendarIconText: {
-    color: colors.text,
+  calendarBadgeText: {
+    color: palette.text,
+    fontWeight: '700',
     fontSize: 12,
-    fontWeight: '800',
-    fontFamily: 'monospace',
   },
-  helperText: { color: colors.textMuted, marginBottom: spacing(1), fontFamily: 'monospace' },
-  errorText: { color: colors.primary, marginBottom: spacing(1), fontFamily: 'monospace' },
 });

@@ -28,8 +28,6 @@ function mapFromSnapshot(): AttendanceCourse[] {
   const snapshot = sessionStore.getUserDb() as any;
   const curriculum: any[] = Array.isArray(snapshot?.curriculum) ? snapshot.curriculum : [];
   const active = curriculum.filter((c) => c?.status !== 'completed');
-  if (!active.length) return [];
-
   return active.slice(0, 12).map((c) => {
     const credits = Number(c.creditos) || 0;
     const { semesterHours, weeklyHours, maxAbsences } = computeHours(credits);
@@ -48,39 +46,6 @@ function mapFromSnapshot(): AttendanceCourse[] {
   });
 }
 
-const FALLBACK_COURSES: AttendanceCourse[] = [
-  {
-    code: 'MC656',
-    name: 'Engenharia de Software',
-    credits: 4,
-    professor: '',
-    requiresAttendance: true,
-    alertEnabled: true,
-    absencesUsed: 0,
-    ...computeHours(4),
-  },
-  {
-    code: 'MC658',
-    name: 'Redes de Computadores',
-    credits: 4,
-    professor: '',
-    requiresAttendance: true,
-    alertEnabled: true,
-    absencesUsed: 0,
-    ...computeHours(4),
-  },
-  {
-    code: 'MS211',
-    name: 'Calculo Numerico',
-    credits: 2,
-    professor: '',
-    requiresAttendance: true,
-    alertEnabled: true,
-    absencesUsed: 0,
-    ...computeHours(2),
-  },
-];
-
 export default function useAttendanceManager() {
   const [courses, setCourses] = useState<AttendanceCourse[]>([]);
   const [overrides, setOverrides] = useState<AttendanceOverridesMap>({});
@@ -91,7 +56,7 @@ export default function useAttendanceManager() {
 
   useEffect(() => {
     const mapped = mapFromSnapshot();
-    setCourses(mapped.length ? mapped : FALLBACK_COURSES);
+    setCourses(mapped);
   }, []);
 
   useEffect(() => {

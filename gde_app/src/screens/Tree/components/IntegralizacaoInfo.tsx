@@ -37,27 +37,17 @@ const IntegralizacaoInfo: React.FC<Props> = ({
   setShowContext,
 }) => {
   return (
-    <View style={styles.integralizacaoCard}>
-      <TouchableOpacity
-        style={styles.integralizacaoHeader}
-        onPress={() => setShowContext((prev) => !prev)}
-        activeOpacity={0.9}
-      >
+    <View style={styles.card}>
+      <TouchableOpacity style={styles.header} onPress={() => setShowContext((prev) => !prev)} activeOpacity={0.85}>
         <View>
-          <Text style={styles.eyebrow}>Contexto</Text>
-          <Text style={styles.integralizacaoTitle}>Catalogo e modalidade</Text>
+          <Text style={styles.eyebrow}>Contexto do curso</Text>
+          <Text style={styles.title}>Catalogo e modalidade</Text>
         </View>
-        <View style={styles.headerRight}>
-          <MaterialCommunityIcons
-            name={showContext ? 'chevron-up' : 'chevron-down'}
-            size={20}
-            color={palette.text}
-          />
-        </View>
+        <MaterialCommunityIcons name={showContext ? 'chevron-up' : 'chevron-down'} size={22} color={palette.text} />
       </TouchableOpacity>
 
       {showContext && (
-        <>
+        <View style={styles.fields}>
           <DropdownSelector
             label="Curso"
             value={selectedCourseId}
@@ -88,49 +78,39 @@ const IntegralizacaoInfo: React.FC<Props> = ({
             ]}
             onSelect={(val) => setIsCompleta(val as 'Sim' | 'Nao')}
           />
-        </>
+        </View>
       )}
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  eyebrow: {
-    color: palette.textMuted,
-    fontSize: 12,
-    letterSpacing: 0.3,
-    marginBottom: 2,
-    fontFamily: 'monospace',
-  },
-  headerRight: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    columnGap: spacing(1),
-  },
-  integralizacaoCard: {
-    backgroundColor: palette.card,
-    borderRadius: 12,
-    padding: spacing(2),
+  card: {
+    backgroundColor: palette.surface,
+    borderRadius: 14,
+    padding: spacing(1.75),
     borderWidth: 1,
-    borderColor: palette.border,
-    rowGap: spacing(1.25),
-    shadowColor: '#000',
-    shadowOpacity: 0.25,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 6,
+    borderColor: palette.divider,
+    gap: spacing(1),
   },
-  integralizacaoHeader: {
+  header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: spacing(0.5),
   },
-  integralizacaoTitle: {
+  eyebrow: {
+    color: palette.textMuted,
+    fontSize: 12,
+    letterSpacing: 0.4,
+    marginBottom: 2,
+  },
+  title: {
     color: palette.text,
-    fontWeight: '800',
-    fontSize: 17,
-    fontFamily: 'monospace',
+    fontSize: 18,
+    fontWeight: '700',
+  },
+  fields: {
+    gap: spacing(1),
   },
 });
 

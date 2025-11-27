@@ -38,44 +38,47 @@ export default function ArvoreIntegralizacaoScreen({ navigation }: Props) {
   return (
     <SafeAreaView edges={['top', 'bottom']} style={globalStyles.safeArea}>
       <View style={globalStyles.page}>
-        <View style={globalStyles.header}>
-          <TouchableOpacity onPress={() => navigation.goBack()} style={globalStyles.backButton}>
-            <MaterialCommunityIcons name="arrow-left" size={20} color={palette.accent} />
+        <View style={globalStyles.navbar}>
+          <TouchableOpacity onPress={() => navigation.goBack()} style={globalStyles.backButton} hitSlop={12}>
+            <MaterialCommunityIcons name="chevron-left" size={24} color={palette.text} />
           </TouchableOpacity>
-          <View>
-            <Text style={globalStyles.headerEyebrow}>Planejamento</Text>
-            <Text style={globalStyles.headerTitle}>Arvore de Materias</Text>
-          </View>
-          <View style={globalStyles.placeholder} />
+          <Text style={globalStyles.navTitle}>Planejamento</Text>
+          <View style={{ width: 32 }} />
         </View>
 
-        <ScrollView style={globalStyles.container} contentContainerStyle={globalStyles.contentContainer}>
-          <View style={globalStyles.panel}>
-            <IntegralizacaoInfo
-              courseOptions={courseOptionsForSelect.map((c) => ({
-                label: c.courseName || `Curso ${c.courseId}`,
-                value: c.courseId,
-              }))}
-              yearsOptions={yearsForSelectedCourse.map((year) => ({
-                label: String(year),
-                value: year,
-              }))}
-              modalityOptions={modalitiesForSelected.map((opt) => ({
-                label: opt.modalidadeLabel ? `${opt.modalidadeLabel} (${opt.modalidade})` : opt.modalidade,
-                value: opt.modalidade,
-              }))}
-              selectedCourseId={selectedCourseId}
-              selectedYear={selectedYear}
-              selectedModalidade={selectedModalidade}
-              isCompleta={isCompleta}
-              setIsCompleta={setIsCompleta}
-              handleCourseChange={handleCourseChange}
-              handleYearChange={handleYearChange}
-              setSelectedModalidade={setSelectedModalidade}
-              showContext={showContext}
-              setShowContext={setShowContext}
-            />
+        <ScrollView style={globalStyles.scrollArea} contentContainerStyle={globalStyles.contentContainer}>
+          <View style={globalStyles.headerBlock}>
+            <Text style={globalStyles.headerEyebrow}>Planejamento</Text>
+            <Text style={globalStyles.headerTitle}>Arvore de Materias</Text>
+            <Text style={globalStyles.headerDescription}>
+              Visualize seu curriculo semestre a semestre e selecione as materias para montar o plano ideal.
+            </Text>
           </View>
+
+          <IntegralizacaoInfo
+            courseOptions={courseOptionsForSelect.map((c) => ({
+              label: c.courseName || `Curso ${c.courseId}`,
+              value: c.courseId,
+            }))}
+            yearsOptions={yearsForSelectedCourse.map((year) => ({
+              label: String(year),
+              value: year,
+            }))}
+            modalityOptions={modalitiesForSelected.map((opt) => ({
+              label: opt.modalidadeLabel ? `${opt.modalidadeLabel} (${opt.modalidade})` : opt.modalidade,
+              value: opt.modalidade,
+            }))}
+            selectedCourseId={selectedCourseId}
+            selectedYear={selectedYear}
+            selectedModalidade={selectedModalidade}
+            isCompleta={isCompleta}
+            setIsCompleta={setIsCompleta}
+            handleCourseChange={handleCourseChange}
+            handleYearChange={handleYearChange}
+            setSelectedModalidade={setSelectedModalidade}
+            showContext={showContext}
+            setShowContext={setShowContext}
+          />
 
           {(loadingPlanner || loadingCurriculum) && (
             <View style={globalStyles.loader}>

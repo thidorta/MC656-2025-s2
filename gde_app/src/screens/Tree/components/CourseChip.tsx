@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, TouchableOpacity, View, StyleSheet } from 'react-native';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { spacing, palette } from '../styles';
 
 interface CourseChipProps {
@@ -28,10 +27,14 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
   return (
     <TouchableOpacity
       activeOpacity={0.9}
-      style={[styles.courseChip, course.isCurrent ? styles.courseChipCurrent : null]}
+      style={[
+        styles.chip,
+        course.isCurrent && styles.currentChip,
+        isActive && styles.activeChip,
+      ]}
       onPress={() => onToggle(course)}
     >
-      <Text style={styles.courseChipText}>{course.code}</Text>
+      <Text style={styles.chipText}>{course.code}</Text>
       {isActive && (
         <View style={styles.tooltip}>
           <Text style={styles.tooltipLabel}>Requisitos</Text>
@@ -48,66 +51,57 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
 };
 
 const styles = StyleSheet.create({
-  courseChip: {
-    backgroundColor: palette.card,
-    borderRadius: 10,
-    paddingVertical: spacing(1),
+  chip: {
+    backgroundColor: palette.surfaceElevated,
+    borderRadius: 12,
+    paddingVertical: spacing(0.9),
     paddingHorizontal: spacing(1.25),
-    minWidth: 96,
+    minWidth: 88,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: palette.border,
+    borderColor: palette.divider,
     position: 'relative',
     overflow: 'visible',
     flexGrow: 1,
-    zIndex: 1,
-    marginHorizontal: spacing(0.5),
   },
-  courseChipCurrent: {
-    backgroundColor: palette.accentSoft,
+  currentChip: {
     borderColor: palette.accentBorder,
-    shadowColor: palette.accentBorder,
-    shadowOpacity: 0.4,
-    shadowRadius: 14,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 10,
+    backgroundColor: palette.accentSoft,
   },
-  courseChipText: {
+  activeChip: {
+    borderColor: palette.accent,
+  },
+  chipText: {
     color: palette.text,
-    fontSize: 13,
-    fontWeight: '800',
-    letterSpacing: 0.4,
-    fontFamily: 'monospace',
+    fontSize: 14,
+    fontWeight: '700',
+    letterSpacing: 0.3,
   },
   tooltip: {
     position: 'absolute',
-    bottom: spacing(1.5),
-    left: -spacing(1),
-    right: -spacing(1),
-    alignSelf: 'center',
-    maxWidth: 240,
-    backgroundColor: palette.surface,
+    bottom: '110%',
+    left: 0,
+    right: 0,
+    marginHorizontal: spacing(0.25),
+    backgroundColor: palette.surfaceElevated,
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: palette.border,
-    borderRadius: 10,
-    padding: spacing(1.25),
-    zIndex: 99999,
+    borderColor: palette.divider,
+    padding: spacing(1),
     shadowColor: '#000',
-    shadowOpacity: 0.3,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 20,
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 10 },
+    elevation: 8,
   },
   tooltipLabel: {
     color: palette.textMuted,
     fontSize: 12,
-    fontFamily: 'monospace',
-    marginBottom: 6,
+    marginBottom: 4,
   },
   tooltipText: {
     color: palette.text,
     fontSize: 13,
-    fontFamily: 'monospace',
     lineHeight: 18,
   },
 });
