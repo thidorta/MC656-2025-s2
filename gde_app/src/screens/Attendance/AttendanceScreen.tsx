@@ -11,10 +11,16 @@ import { globalStyles, palette } from './styles';
 type Props = NativeStackScreenProps<RootStackParamList, 'Attendance'>;
 
 export default function AttendanceScreen({ navigation }: Props) {
-  const { courses, incrementAbsence, decrementAbsence, setProfessor, toggleRequiresAttendance } =
-    useAttendanceManager();
-
-  const isLoading = false;
+  const {
+    courses,
+    incrementAbsence,
+    decrementAbsence,
+    toggleRequiresAttendance,
+    toggleAlertEnabled,
+    isLoading,
+    isSaving,
+    error,
+  } = useAttendanceManager();
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={globalStyles.safeArea}>
@@ -34,9 +40,11 @@ export default function AttendanceScreen({ navigation }: Props) {
           <View style={globalStyles.panel}>
             <Text style={globalStyles.headerEyebrow}>Disciplinas em andamento</Text>
             <Text style={globalStyles.helperText}>
-              Cada crédito = 2h semanais · 25% de tolerância no semestre. Ajuste as faltas e registre se o professor
-              controla presença.
+              Cada credito = 2h semanais e 25% de tolerancia no semestre. Ajuste as faltas e registre se o professor
+              controla presenca.
             </Text>
+            {error && <Text style={globalStyles.errorText}>{error}</Text>}
+            {isSaving && <Text style={globalStyles.helperText}>Sincronizando faltas...</Text>}
 
             {isLoading && <ActivityIndicator size="large" color={palette.text} />}
 
@@ -47,8 +55,8 @@ export default function AttendanceScreen({ navigation }: Props) {
                   course={course}
                   onIncrement={incrementAbsence}
                   onDecrement={decrementAbsence}
-                  onProfessorChange={setProfessor}
                   onToggleRequiresAttendance={toggleRequiresAttendance}
+                  onToggleAlertEnabled={toggleAlertEnabled}
                 />
               ))}
 
