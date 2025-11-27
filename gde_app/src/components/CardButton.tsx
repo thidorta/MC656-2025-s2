@@ -1,9 +1,19 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet, ViewStyle, Dimensions } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, ViewStyle, Dimensions, Platform } from 'react-native';
 import { colors } from '../theme/colors';
 import { spacing } from '../theme/spacing';
 
 const { width } = Dimensions.get('window');
+const cardShadow =
+  Platform.OS === 'web'
+    ? ({ boxShadow: '0px 6px 10px rgba(0,0,0,0.18)' } as const)
+    : ({
+        shadowColor: '#000',
+        shadowOpacity: 0.18,
+        shadowRadius: 10,
+        shadowOffset: { width: 0, height: 6 },
+        elevation: 4,
+      } as const);
 
 type CardButtonProps = {
   label: string;
@@ -31,11 +41,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: spacing(2),
-    shadowColor: '#000',
-    shadowOpacity: 0.18,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 4,
+    ...cardShadow,
   },
   label: {
     color: colors.text,

@@ -3,8 +3,8 @@ from __future__ import annotations
 import secrets
 import threading
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
-from typing import Any, Dict, Optional
+from datetime import datetime, timezone, timedelta
+from typing import Any, Dict
 
 from fastapi import HTTPException, status
 
@@ -13,10 +13,15 @@ from fastapi import HTTPException, status
 class SessionData:
     token: str
     created_at: datetime
+    expires_at: datetime
     planner_id: str
+    user_id: int
     user_db: Dict[str, Any]
     original_payload: Dict[str, Any]
     modified_payload: Dict[str, Any] = field(default_factory=dict)
+
+    def is_expired(self) -> bool:
+        return datetime.now(tz=timezone.utc) >= self.expires_at
 
     def serialize_planner(self) -> Dict[str, Any]:
         return {
@@ -51,27 +56,27 @@ class SessionData:
 
 
 class SessionStore:
-    """
-    In-memory store for session-scoped planner snapshots.
-    Nothing is persisted to disk; restart clears all sessions.
-    """
-
-    def __init__(self) -> None:
+    def __init__(self, ttl_minutes: int = 120) -> None:
         self._sessions: Dict[str, SessionData] = {}
         self._lock = threading.Lock()
+        self.ttl = ttl_minutes
 
     def create_session(
         self,
         *,
         planner_id: str,
+        user_id: int,
         user_db: Dict[str, Any],
         original_payload: Dict[str, Any],
     ) -> SessionData:
         token = secrets.token_urlsafe(32)
+        now = datetime.now(tz=timezone.utc)
         data = SessionData(
             token=token,
-            created_at=datetime.now(tz=timezone.utc),
+            created_at=now,
+            expires_at=now + timedelta(minutes=self.ttl),
             planner_id=str(planner_id),
+            user_id=user_id,
             user_db=user_db,
             original_payload=original_payload,
             modified_payload=original_payload,
@@ -83,10 +88,10 @@ class SessionStore:
     def get(self, token: str) -> SessionData:
         with self._lock:
             data = self._sessions.get(token)
-        if not data:
+        if not data or data.is_expired():
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
-                detail="Sessão não encontrada ou expirada. Faça login novamente.",
+                detail="Sessao nao encontrada ou expirada. Faca login novamente.",
             )
         return data
 
@@ -95,6 +100,13 @@ class SessionStore:
         with self._lock:
             data.modified_payload = payload
         return data
+
+    def cleanup(self):
+        now = datetime.now(tz=timezone.utc)
+        with self._lock:
+            for sid in list(self._sessions.keys()):
+                if self._sessions[sid].expires_at <= now:
+                    del self._sessions[sid]
 
 
 _store = SessionStore()

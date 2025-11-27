@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
+import { apiService } from '../../../services/api';
 import { sessionStore } from '../../../services/session';
-import { AttendanceCourse } from '../types';
+import { AttendanceCourse, AttendanceCourseComputed, AttendanceOverridesMap } from '../types';
 
-const CREDIT_TO_SEMESTER_HOURS = 15; // 4 créditos -> 60h, 2 créditos -> 30h, 6 créditos -> 90h
+const CREDIT_TO_SEMESTER_HOURS = 15; // 4 creditos -> 60h, 2 creditos -> 30h, 6 creditos -> 90h
 const MAX_ABSENCE_RATIO = 0.25;
 
 function computeHours(credits: number) {
@@ -10,6 +11,17 @@ function computeHours(credits: number) {
   const weeklyHours = credits * 2;
   const maxAbsences = Math.floor(semesterHours * MAX_ABSENCE_RATIO);
   return { semesterHours, weeklyHours, maxAbsences };
+}
+
+function applyOverrides(courses: AttendanceCourse[], overrides: AttendanceOverridesMap): AttendanceCourse[] {
+  return courses.map((course) => {
+    const override = overrides[course.code];
+    if (!override) return course;
+    return {
+      ...course,
+      ...override,
+    };
+  });
 }
 
 function mapFromSnapshot(): AttendanceCourse[] {
@@ -27,6 +39,7 @@ function mapFromSnapshot(): AttendanceCourse[] {
       credits,
       professor: '',
       requiresAttendance: true,
+      alertEnabled: true,
       absencesUsed: 0,
       semesterHours,
       weeklyHours,
@@ -36,21 +49,104 @@ function mapFromSnapshot(): AttendanceCourse[] {
 }
 
 const FALLBACK_COURSES: AttendanceCourse[] = [
-  { code: 'MC656', name: 'Engenharia de Software', credits: 4, professor: '', requiresAttendance: true, absencesUsed: 0, ...computeHours(4) },
-  { code: 'MC658', name: 'Redes de Computadores', credits: 4, professor: '', requiresAttendance: true, absencesUsed: 0, ...computeHours(4) },
-  { code: 'MS211', name: 'Cálculo Numérico', credits: 2, professor: '', requiresAttendance: true, absencesUsed: 0, ...computeHours(2) },
+  {
+    code: 'MC656',
+    name: 'Engenharia de Software',
+    credits: 4,
+    professor: '',
+    requiresAttendance: true,
+    alertEnabled: true,
+    absencesUsed: 0,
+    ...computeHours(4),
+  },
+  {
+    code: 'MC658',
+    name: 'Redes de Computadores',
+    credits: 4,
+    professor: '',
+    requiresAttendance: true,
+    alertEnabled: true,
+    absencesUsed: 0,
+    ...computeHours(4),
+  },
+  {
+    code: 'MS211',
+    name: 'Calculo Numerico',
+    credits: 2,
+    professor: '',
+    requiresAttendance: true,
+    alertEnabled: true,
+    absencesUsed: 0,
+    ...computeHours(2),
+  },
 ];
 
 export default function useAttendanceManager() {
   const [courses, setCourses] = useState<AttendanceCourse[]>([]);
+  const [overrides, setOverrides] = useState<AttendanceOverridesMap>({});
+  const [isLoading, setIsLoading] = useState(true);
+  const [isSaving, setIsSaving] = useState(false);
+  const [dirty, setDirty] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const mapped = mapFromSnapshot();
     setCourses(mapped.length ? mapped : FALLBACK_COURSES);
   }, []);
 
+  useEffect(() => {
+    let cancelled = false;
+    const loadOverrides = async () => {
+      const pending = sessionStore.getPendingOverrides() || {};
+      let remote: AttendanceOverridesMap = {};
+      try {
+        const resp = await apiService.fetchAttendanceOverrides();
+        remote = resp.overrides || {};
+      } catch (err) {
+        console.warn('Nao foi possivel carregar overrides de frequencia', err);
+        setError((prev) => prev || 'Falha ao carregar overrides. Usando dados locais.');
+      }
+
+      const merged = { ...remote, ...pending };
+      if (!cancelled && Object.keys(merged).length) {
+        setOverrides(merged);
+        setCourses((prev) => applyOverrides(prev, merged));
+        setDirty(Object.keys(pending).length > 0);
+      }
+      if (!cancelled) setIsLoading(false);
+    };
+    loadOverrides();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const queueOverride = (course: AttendanceCourse) => {
+    const { code, absencesUsed, requiresAttendance, alertEnabled = true } = course;
+    setOverrides((prev) => {
+      const next = {
+        ...prev,
+        [code]: { absencesUsed, requiresAttendance, alertEnabled },
+      };
+      sessionStore.setPendingOverrides(next);
+      return next;
+    });
+    setDirty(true);
+  };
+
   const updateCourse = (code: string, updater: (c: AttendanceCourse) => AttendanceCourse) => {
-    setCourses((prev) => prev.map((c) => (c.code === code ? updater(c) : c)));
+    let updatedCourse: AttendanceCourse | null = null;
+    setCourses((prev) =>
+      prev.map((c) => {
+        if (c.code !== code) return c;
+        const next = updater(c);
+        updatedCourse = next;
+        return next;
+      }),
+    );
+    if (updatedCourse) {
+      queueOverride(updatedCourse);
+    }
   };
 
   const incrementAbsence = (code: string) => {
@@ -69,14 +165,44 @@ export default function useAttendanceManager() {
     updateCourse(code, (c) => ({ ...c, requiresAttendance: value }));
   };
 
-  const data = useMemo(
-    () =>
-      courses.map((c) => ({
+  const toggleAlertEnabled = (code: string, value: boolean) => {
+    updateCourse(code, (c) => ({ ...c, alertEnabled: value }));
+  };
+
+  useEffect(() => {
+    const persist = async () => {
+      if (!dirty) return;
+      setIsSaving(true);
+      try {
+        await apiService.saveAttendanceOverrides(overrides);
+        sessionStore.setPendingOverrides(null);
+        setDirty(false);
+        setError(null);
+      } catch (err) {
+        console.warn('Falha ao salvar overrides de frequencia', err);
+        sessionStore.setPendingOverrides(overrides);
+        setError('Nao foi possivel salvar as faltas. Tentaremos novamente.');
+        setDirty(false);
+      } finally {
+        setIsSaving(false);
+      }
+    };
+    void persist();
+  }, [dirty, overrides]);
+
+  const data: AttendanceCourseComputed[] = useMemo(() => {
+    const riskThreshold = 25;
+    return courses.map((c) => {
+      const absencePercent = c.semesterHours ? (c.absencesUsed / c.semesterHours) * 100 : 0;
+      return {
         ...c,
         remaining: Math.max(c.maxAbsences - c.absencesUsed, 0),
-      })),
-    [courses],
-  );
+        absencePercent,
+        riskThreshold,
+        isAtRisk: absencePercent >= riskThreshold,
+      };
+    });
+  }, [courses]);
 
   return {
     courses: data,
@@ -84,5 +210,9 @@ export default function useAttendanceManager() {
     decrementAbsence,
     setProfessor,
     toggleRequiresAttendance,
+    toggleAlertEnabled,
+    isLoading,
+    isSaving,
+    error,
   };
 }

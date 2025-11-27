@@ -18,10 +18,39 @@ interface LoginResponse {
   access_token: string;
   token_type: string;
   planner_id: string;
+  refresh_token?: string;
   user_db?: any;
   user?: any;
   course?: any;
   year?: number;
+}
+
+interface AttendanceOverridesResponse {
+  planner_id: string;
+  overrides: Record<string, any>;
+}
+
+async function withRefreshRetry<T>(fn: () => Promise<T>): Promise<T> {
+  try {
+    return await fn();
+  } catch (err: any) {
+    if (err?.status !== 401) throw err;
+    const refresh = sessionStore.getRefreshToken();
+    if (!refresh) throw err;
+    try {
+      const resp = await fetch(`${API_BASE_URL}/auth/refresh`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${refresh}` },
+      });
+      if (!resp.ok) throw new Error('refresh failed');
+      const data = await resp.json();
+      sessionStore.setSession(data.access_token, refresh, sessionStore.getUserDb(), true);
+      return await fn();
+    } catch {
+      sessionStore.clear();
+      throw err;
+    }
+  }
 }
 
 const withAuthHeaders = (init: RequestInit = {}) => {
@@ -32,6 +61,19 @@ const withAuthHeaders = (init: RequestInit = {}) => {
   };
   return { ...init, headers };
 };
+
+async function fetchAuth(url: string, init?: RequestInit) {
+  const doFetch = async () => {
+    const resp = await fetch(url, withAuthHeaders(init));
+    if (!resp.ok) {
+      const error: any = new Error(`HTTP ${resp.status}`);
+      error.status = resp.status;
+      throw error;
+    }
+    return resp;
+  };
+  return withRefreshRetry(doFetch);
+}
 
 export const apiService = {
   getPopupMessage: async (): Promise<PopupMessageResponse> => {
@@ -71,7 +113,7 @@ export const apiService = {
         throw new Error(detail || 'Login invalido. Verifique usuario e senha.');
       }
       const data = await response.json();
-      sessionStore.setSession(data.access_token, data.user_db, remember);
+      sessionStore.setSession(data.access_token, data.refresh_token || null, data.user_db, remember);
       return data;
     } catch (error) {
       console.error('API Service - Error logging in:', error);
@@ -87,27 +129,39 @@ export const apiService = {
   fetchUserDb: async () => {
     const token = sessionStore.getToken();
     if (!token) throw new Error('Sessao inexistente. Faca login.');
-    const resp = await fetch(`${API_BASE_URL}/user-db/me`, withAuthHeaders());
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const resp = await fetchAuth(`${API_BASE_URL}/user-db/me`);
     const data = await resp.json();
-    sessionStore.setSession(token, data.user_db);
+    sessionStore.setSession(token, sessionStore.getRefreshToken(), data.user_db);
     return data.user_db;
   },
   fetchPlanner: async () => {
-    const resp = await fetch(`${API_BASE_URL}/planner/`, withAuthHeaders());
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const resp = await fetchAuth(`${API_BASE_URL}/planner/`);
     return resp.json();
   },
   savePlanner: async (payload: any) => {
-    const resp = await fetch(
+    const resp = await fetchAuth(
       `${API_BASE_URL}/planner/modified`,
-      withAuthHeaders({
+      {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ payload }),
-      })
+      }
     );
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return resp.json();
+  },
+  fetchAttendanceOverrides: async (): Promise<AttendanceOverridesResponse> => {
+    const resp = await fetchAuth(`${API_BASE_URL}/attendance/`);
+    return resp.json();
+  },
+  saveAttendanceOverrides: async (overrides: Record<string, any>) => {
+    const resp = await fetchAuth(
+      `${API_BASE_URL}/attendance/`,
+      {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ overrides }),
+      }
+    );
     return resp.json();
   },
 };
