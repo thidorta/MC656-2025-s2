@@ -9,7 +9,8 @@ const MAX_ABSENCE_RATIO = 0.25;
 function computeHours(credits: number) {
   const semesterHours = credits * CREDIT_TO_SEMESTER_HOURS;
   const weeklyHours = credits * 2;
-  const maxAbsences = Math.floor(semesterHours * MAX_ABSENCE_RATIO);
+  const allowedHours = Math.floor(semesterHours * MAX_ABSENCE_RATIO);
+  const maxAbsences = Math.floor(allowedHours / 2);
   return { semesterHours, weeklyHours, maxAbsences };
 }
 
@@ -28,8 +29,6 @@ function mapFromSnapshot(): AttendanceCourse[] {
   const snapshot = sessionStore.getUserDb() as any;
   const curriculum: any[] = Array.isArray(snapshot?.curriculum) ? snapshot.curriculum : [];
   const active = curriculum.filter((c) => c?.status !== 'completed');
-  if (!active.length) return [];
-
   return active.slice(0, 12).map((c) => {
     const credits = Number(c.creditos) || 0;
     const { semesterHours, weeklyHours, maxAbsences } = computeHours(credits);
@@ -48,42 +47,11 @@ function mapFromSnapshot(): AttendanceCourse[] {
   });
 }
 
-const FALLBACK_COURSES: AttendanceCourse[] = [
-  {
-    code: 'MC656',
-    name: 'Engenharia de Software',
-    credits: 4,
-    professor: '',
-    requiresAttendance: true,
-    alertEnabled: true,
-    absencesUsed: 0,
-    ...computeHours(4),
-  },
-  {
-    code: 'MC658',
-    name: 'Redes de Computadores',
-    credits: 4,
-    professor: '',
-    requiresAttendance: true,
-    alertEnabled: true,
-    absencesUsed: 0,
-    ...computeHours(4),
-  },
-  {
-    code: 'MS211',
-    name: 'Calculo Numerico',
-    credits: 2,
-    professor: '',
-    requiresAttendance: true,
-    alertEnabled: true,
-    absencesUsed: 0,
-    ...computeHours(2),
-  },
-];
-
 export default function useAttendanceManager() {
+  const [initialCourses, setInitialCourses] = useState<AttendanceCourse[]>([]);
   const [courses, setCourses] = useState<AttendanceCourse[]>([]);
   const [overrides, setOverrides] = useState<AttendanceOverridesMap>({});
+  const [plannedCodes, setPlannedCodes] = useState<Set<string>>(new Set());
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const [dirty, setDirty] = useState(false);
@@ -91,7 +59,8 @@ export default function useAttendanceManager() {
 
   useEffect(() => {
     const mapped = mapFromSnapshot();
-    setCourses(mapped.length ? mapped : FALLBACK_COURSES);
+    setInitialCourses(mapped);
+    setCourses(mapped);
   }, []);
 
   useEffect(() => {
@@ -110,7 +79,7 @@ export default function useAttendanceManager() {
       const merged = { ...remote, ...pending };
       if (!cancelled && Object.keys(merged).length) {
         setOverrides(merged);
-        setCourses((prev) => applyOverrides(prev, merged));
+        setOverrides(merged);
         setDirty(Object.keys(pending).length > 0);
       }
       if (!cancelled) setIsLoading(false);
@@ -120,6 +89,49 @@ export default function useAttendanceManager() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    const loadPlannerCourses = async () => {
+      try {
+        const planner = await apiService.fetchPlanner();
+        const modifiedPayload = planner.modified?.payload || null;
+        const basePayload = modifiedPayload || planner.original?.payload || {};
+        const curriculum = Array.isArray(basePayload.curriculum) ? basePayload.curriculum : [];
+
+        const rawPlanned = Array.isArray(modifiedPayload?.planned_codes)
+          ? modifiedPayload!.planned_codes
+          : basePayload.planned_codes || [];
+        const planned = rawPlanned.map((c: any) => String(c));
+        const plannedSet = new Set(planned);
+
+        // garante que ofertas marcadas como adicionado entram no conjunto
+        curriculum.forEach((course: any) => {
+          if (Array.isArray(course.offers) && course.offers.some((offer: any) => offer?.adicionado)) {
+            plannedSet.add(String(course.codigo));
+          }
+        });
+
+        setPlannedCodes(plannedSet);
+      } catch (err) {
+        console.warn('Nao foi possivel carregar planner para faltas', err);
+      }
+    };
+    loadPlannerCourses();
+  }, []);
+
+  useEffect(() => {
+    setCourses((prev) => {
+      const map = new Map(prev.map((c) => [c.code, c]));
+      const base = plannedCodes.size
+        ? initialCourses.filter((c) => plannedCodes.has(c.code))
+        : initialCourses;
+      return base.map((course) => map.get(course.code) || course);
+    });
+  }, [initialCourses, plannedCodes]);
+
+  useEffect(() => {
+    setCourses((prev) => applyOverrides(prev, overrides));
+  }, [overrides]);
 
   const queueOverride = (course: AttendanceCourse) => {
     const { code, absencesUsed, requiresAttendance, alertEnabled = true } = course;
@@ -169,6 +181,13 @@ export default function useAttendanceManager() {
     updateCourse(code, (c) => ({ ...c, alertEnabled: value }));
   };
 
+  const resetAttendance = () => {
+    setOverrides({});
+    sessionStore.setPendingOverrides(null);
+    setCourses(mapFromSnapshot());
+    setDirty(false);
+  };
+
   useEffect(() => {
     const persist = async () => {
       if (!dirty) return;
@@ -177,7 +196,6 @@ export default function useAttendanceManager() {
         await apiService.saveAttendanceOverrides(overrides);
         sessionStore.setPendingOverrides(null);
         setDirty(false);
-        setError(null);
       } catch (err) {
         console.warn('Falha ao salvar overrides de frequencia', err);
         sessionStore.setPendingOverrides(overrides);
@@ -191,9 +209,9 @@ export default function useAttendanceManager() {
   }, [dirty, overrides]);
 
   const data: AttendanceCourseComputed[] = useMemo(() => {
-    const riskThreshold = 25;
+    const riskThreshold = 50;
     return courses.map((c) => {
-      const absencePercent = c.semesterHours ? (c.absencesUsed / c.semesterHours) * 100 : 0;
+      const absencePercent = c.maxAbsences ? (c.absencesUsed / c.maxAbsences) * 100 : 0;
       return {
         ...c,
         remaining: Math.max(c.maxAbsences - c.absencesUsed, 0),
@@ -211,6 +229,7 @@ export default function useAttendanceManager() {
     setProfessor,
     toggleRequiresAttendance,
     toggleAlertEnabled,
+    resetAttendance,
     isLoading,
     isSaving,
     error,

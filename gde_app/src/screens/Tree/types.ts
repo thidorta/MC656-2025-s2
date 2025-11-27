@@ -9,6 +9,9 @@ export interface Discipline {
   tem?: boolean;
   missing?: boolean;
   isCurrent?: boolean;
+  planned?: boolean;
+  missingPrereqs?: boolean;
+  notOffered?: boolean;
 }
 
 export interface Offer {
@@ -27,6 +30,9 @@ export interface Semester {
     code: string;
     prereqs: string[][];
     isCurrent?: boolean;
+    planned?: boolean;
+    missingPrereqs?: boolean;
+    notOffered?: boolean;
   }[];
 }
 

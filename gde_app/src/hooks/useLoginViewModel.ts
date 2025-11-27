@@ -11,7 +11,7 @@ export const useLoginViewModel = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [remember, setRemember] = useState(false);
+  const [remember, setRemember] = useState(true);
   const navigation = useNavigation<LoginNavigationProp>();
 
   const handleLogin = async () => {

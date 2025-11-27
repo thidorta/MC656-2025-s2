@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ActivityIndicator, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, FlatList, Text, TouchableOpacity, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../../navigation/types';
@@ -17,54 +17,69 @@ export default function AttendanceScreen({ navigation }: Props) {
     decrementAbsence,
     toggleRequiresAttendance,
     toggleAlertEnabled,
+    resetAttendance,
     isLoading,
-    isSaving,
     error,
   } = useAttendanceManager();
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={globalStyles.safeArea}>
       <View style={globalStyles.page}>
-        <View style={globalStyles.header}>
-          <TouchableOpacity onPress={() => navigation.goBack()} style={globalStyles.backButton}>
-            <MaterialCommunityIcons name="arrow-left" size={20} color={palette.accent} />
+        <View style={globalStyles.navbar}>
+          <TouchableOpacity
+            accessibilityLabel="Voltar"
+            hitSlop={12}
+            onPress={() => navigation.goBack()}
+            style={globalStyles.backButton}
+          >
+            <MaterialCommunityIcons name="chevron-left" size={24} color={palette.text} />
           </TouchableOpacity>
-          <View>
-            <Text style={globalStyles.headerEyebrow}>Faltas</Text>
-            <Text style={globalStyles.headerTitle}>Gerenciador de Faltas</Text>
-          </View>
-          <View style={globalStyles.placeholder} />
+          <Text style={globalStyles.navTitle}>Gerenciador de Faltas</Text>
+          <View style={{ width: 32 }} />
         </View>
 
-        <ScrollView style={globalStyles.container} contentContainerStyle={globalStyles.contentContainer}>
-          <View style={globalStyles.panel}>
-            <Text style={globalStyles.headerEyebrow}>Disciplinas em andamento</Text>
-            <Text style={globalStyles.helperText}>
-              Cada credito = 2h semanais e 25% de tolerancia no semestre. Ajuste as faltas e registre se o professor
-              controla presenca.
+        <View style={globalStyles.headerBlock}>
+          <Text style={globalStyles.title}>Gerenciador de Faltas</Text>
+          <View style={globalStyles.infoBanner}>
+            <Text style={globalStyles.infoText}>
+              Disciplinas em andamento. Cada credito = 2h semanais e 25% de tolerancia no semestre.
+              Ajuste as faltas e registre se o professor controla presenca.
             </Text>
-            {error && <Text style={globalStyles.errorText}>{error}</Text>}
-            {isSaving && <Text style={globalStyles.helperText}>Sincronizando faltas...</Text>}
+          </View>
+          {error && <Text style={globalStyles.errorText}>{error}</Text>}
+          <TouchableOpacity style={globalStyles.resetButton} onPress={resetAttendance}>
+            <MaterialCommunityIcons name="refresh" size={16} color={palette.accent} />
+            <Text style={globalStyles.resetButtonText}>Limpar faltas</Text>
+          </TouchableOpacity>
+        </View>
 
-            {isLoading && <ActivityIndicator size="large" color={palette.text} />}
-
-            {!isLoading &&
-              courses.map((course) => (
+        {isLoading ? (
+          <ActivityIndicator size="large" color={palette.text} />
+        ) : (
+          <View style={globalStyles.listContainer}>
+            <FlatList
+              data={courses}
+              keyExtractor={(item) => item.code}
+              ItemSeparatorComponent={() => <View style={globalStyles.separator} />}
+              renderItem={({ item }) => (
                 <AttendanceCard
-                  key={course.code}
-                  course={course}
+                  course={item}
                   onIncrement={incrementAbsence}
                   onDecrement={decrementAbsence}
                   onToggleRequiresAttendance={toggleRequiresAttendance}
                   onToggleAlertEnabled={toggleAlertEnabled}
                 />
-              ))}
-
-            {!isLoading && courses.length === 0 && (
-              <Text style={globalStyles.helperText}>Nenhuma disciplina ativa encontrada.</Text>
-            )}
+              )}
+              ListEmptyComponent={
+                <View style={{ padding: 16 }}>
+                  <Text style={globalStyles.infoText}>Nenhuma disciplina ativa encontrada.</Text>
+                </View>
+              }
+              ListHeaderComponent={<View style={{ height: 4 }} />}
+              ListFooterComponent={<View style={{ height: 12 }} />}
+            />
           </View>
-        </ScrollView>
+        )}
       </View>
     </SafeAreaView>
   );

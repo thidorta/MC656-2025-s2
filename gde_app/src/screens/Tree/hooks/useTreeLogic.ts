@@ -20,7 +20,14 @@ export default function useTreeLogic() {
   const [selectedModalidade, setSelectedModalidade] = useState<string | null>(null);
   const [isCompleta, setIsCompleta] = useState<'Sim' | 'Nao'>('Nao');
 
-  const [activeCourse, setActiveCourse] = useState<{ code: string; prereqs: string[][] } | null>(null);
+  const [activeCourse, setActiveCourse] = useState<{
+    code: string;
+    prereqs: string[][];
+    isCurrent?: boolean;
+    planned?: boolean;
+    missingPrereqs?: boolean;
+    notOffered?: boolean;
+  } | null>(null);
   const [showContext, setShowContext] = useState(true);
 
   const normalizeModalidade = (value: string | null | undefined) =>
@@ -95,6 +102,9 @@ export default function useTreeLogic() {
         code: d.codigo,
         prereqs: Array.isArray(d.prereqs) ? d.prereqs : [],
         isCurrent: d.isCurrent,
+        planned: Boolean((d as any).planned),
+        missingPrereqs: Boolean((d as any).missingPrereqs),
+        notOffered: Boolean((d as any).notOffered),
       });
     });
     const orderValue = (id: string) => (id === 'eletivas' ? Number.MAX_SAFE_INTEGER : Number(id));
@@ -142,7 +152,14 @@ export default function useTreeLogic() {
     setSelectedModalidade(modForYear ?? null);
   };
 
-  const toggleActiveCourse = (course: { code: string; prereqs: string[][] }) => {
+  const toggleActiveCourse = (course: {
+    code: string;
+    prereqs: string[][];
+    isCurrent?: boolean;
+    planned?: boolean;
+    missingPrereqs?: boolean;
+    notOffered?: boolean;
+  }) => {
     setActiveCourse((prev) => (prev?.code === course.code ? null : course));
   };
 
