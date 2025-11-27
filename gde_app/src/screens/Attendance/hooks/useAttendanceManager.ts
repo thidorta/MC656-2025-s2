@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { sessionStore } from '../../../services/session';
-import { AttendanceCourse } from '../types';
+import { AttendanceCourse, AttendanceCourseComputed } from '../types';
 
-const CREDIT_TO_SEMESTER_HOURS = 15; // 4 créditos -> 60h, 2 créditos -> 30h, 6 créditos -> 90h
+const CREDIT_TO_SEMESTER_HOURS = 15; // 4 creditos -> 60h, 2 creditos -> 30h, 6 creditos -> 90h
 const MAX_ABSENCE_RATIO = 0.25;
 
 function computeHours(credits: number) {
@@ -27,6 +27,7 @@ function mapFromSnapshot(): AttendanceCourse[] {
       credits,
       professor: '',
       requiresAttendance: true,
+      alertEnabled: true,
       absencesUsed: 0,
       semesterHours,
       weeklyHours,
@@ -36,9 +37,36 @@ function mapFromSnapshot(): AttendanceCourse[] {
 }
 
 const FALLBACK_COURSES: AttendanceCourse[] = [
-  { code: 'MC656', name: 'Engenharia de Software', credits: 4, professor: '', requiresAttendance: true, absencesUsed: 0, ...computeHours(4) },
-  { code: 'MC658', name: 'Redes de Computadores', credits: 4, professor: '', requiresAttendance: true, absencesUsed: 0, ...computeHours(4) },
-  { code: 'MS211', name: 'Cálculo Numérico', credits: 2, professor: '', requiresAttendance: true, absencesUsed: 0, ...computeHours(2) },
+  {
+    code: 'MC656',
+    name: 'Engenharia de Software',
+    credits: 4,
+    professor: '',
+    requiresAttendance: true,
+    alertEnabled: true,
+    absencesUsed: 0,
+    ...computeHours(4),
+  },
+  {
+    code: 'MC658',
+    name: 'Redes de Computadores',
+    credits: 4,
+    professor: '',
+    requiresAttendance: true,
+    alertEnabled: true,
+    absencesUsed: 0,
+    ...computeHours(4),
+  },
+  {
+    code: 'MS211',
+    name: 'Calculo Numerico',
+    credits: 2,
+    professor: '',
+    requiresAttendance: true,
+    alertEnabled: true,
+    absencesUsed: 0,
+    ...computeHours(2),
+  },
 ];
 
 export default function useAttendanceManager() {
@@ -69,14 +97,23 @@ export default function useAttendanceManager() {
     updateCourse(code, (c) => ({ ...c, requiresAttendance: value }));
   };
 
-  const data = useMemo(
-    () =>
-      courses.map((c) => ({
+  const toggleAlertEnabled = (code: string, value: boolean) => {
+    updateCourse(code, (c) => ({ ...c, alertEnabled: value }));
+  };
+
+  const data: AttendanceCourseComputed[] = useMemo(() => {
+    const riskThreshold = 25;
+    return courses.map((c) => {
+      const absencePercent = c.semesterHours ? (c.absencesUsed / c.semesterHours) * 100 : 0;
+      return {
         ...c,
         remaining: Math.max(c.maxAbsences - c.absencesUsed, 0),
-      })),
-    [courses],
-  );
+        absencePercent,
+        riskThreshold,
+        isAtRisk: absencePercent >= riskThreshold,
+      };
+    });
+  }, [courses]);
 
   return {
     courses: data,
@@ -84,5 +121,6 @@ export default function useAttendanceManager() {
     decrementAbsence,
     setProfessor,
     toggleRequiresAttendance,
+    toggleAlertEnabled,
   };
 }
