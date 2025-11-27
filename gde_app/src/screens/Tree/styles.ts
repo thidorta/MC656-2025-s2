@@ -11,6 +11,12 @@ export const palette = {
   accent: '#33E1D3',
   accentSoft: 'rgba(51,225,211,0.12)',
   accentBorder: 'rgba(51,225,211,0.35)',
+  dangerSoft: 'rgba(255,99,99,0.18)',
+  dangerBorder: 'rgba(255,99,99,0.6)',
+  dangerText: '#FF9B9B',
+  infoSoft: 'rgba(120,168,255,0.18)',
+  infoBorder: 'rgba(120,168,255,0.6)',
+  legendBg: 'rgba(255,255,255,0.04)',
 };
 
 export const spacing = (n: number) => baseSpacing(n);

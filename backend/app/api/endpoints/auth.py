@@ -14,6 +14,7 @@ from app.db.user_store import (
     update_user_password,
     update_user_planner,
     update_user_snapshot,
+    load_planned_courses,
 )
 from app.services.session_store import get_session_store
 from app.utils.security import (
@@ -105,7 +106,14 @@ async def login(payload: LoginRequest):
         update_user_snapshot(user_row["id"], user_db)
 
         store = get_session_store()
-        session = store.create_session(planner_id=planner_id, user_id=user_row["id"], user_db=user_db, original_payload=user_db)
+        planned_courses = load_planned_courses(int(user_row["id"]))
+        session = store.create_session(
+            planner_id=planner_id,
+            user_id=user_row["id"],
+            user_db=user_db,
+            original_payload=user_db,
+            planned_courses=planned_courses,
+        )
         access_token = create_access_token({"uid": user_row["id"], "sub": str(user_row["id"]), "planner_id": planner_id, "sid": session.token})
         refresh_token = create_refresh_token({"uid": user_row["id"], "sub": str(user_row["id"]), "planner_id": planner_id, "sid": session.token})
         logger.info("[auth.login] success user id=%s sid=%s", user_row["id"], session.token)

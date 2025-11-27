@@ -21,6 +21,22 @@ def _conn() -> sqlite3.Connection:
     return conn
 
 
+def _ensure_planner_courses_table(conn: sqlite3.Connection) -> None:
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS planner_courses (
+            id INTEGER PRIMARY KEY,
+            user_id INTEGER NOT NULL,
+            course_code TEXT NOT NULL,
+            turma TEXT,
+            updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+            UNIQUE(user_id, course_code)
+        )
+        """
+    )
+
+
 def init_user_db() -> None:
     settings = get_settings()
     alembic_cfg = Config(str((Path(__file__).resolve().parents[2] / "alembic.ini").resolve()))
@@ -129,3 +145,30 @@ def load_attendance_overrides(user_id: int) -> Dict[str, Any]:
         except Exception:
             out[row["course_code"]] = {}
     return out
+
+
+def save_planned_courses(user_id: int, planned: Dict[str, str]) -> None:
+    with _conn() as conn:
+        _ensure_planner_courses_table(conn)
+        conn.execute("DELETE FROM planner_courses WHERE user_id = ?", (user_id,))
+        rows = []
+        for code, turma in (planned or {}).items():
+            if not code:
+                continue
+            rows.append((user_id, code, turma or ""))
+        if rows:
+            conn.executemany(
+                "INSERT INTO planner_courses (user_id, course_code, turma, updated_at) VALUES (?, ?, ?, CURRENT_TIMESTAMP)",
+                rows,
+            )
+        conn.commit()
+
+
+def load_planned_courses(user_id: int) -> Dict[str, str]:
+    with _conn() as conn:
+        _ensure_planner_courses_table(conn)
+        rows = conn.execute(
+            "SELECT course_code, turma FROM planner_courses WHERE user_id = ?",
+            (user_id,),
+        ).fetchall()
+    return {row["course_code"]: row["turma"] or "" for row in rows}

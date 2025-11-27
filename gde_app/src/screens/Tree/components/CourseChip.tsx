@@ -1,11 +1,12 @@
 import React from 'react';
-import { Text, TouchableOpacity, View, StyleSheet } from 'react-native';
+import { Text, TouchableOpacity, View, StyleSheet, Platform } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { spacing, palette } from '../styles';
 
 interface CourseChipProps {
-  course: { code: string; prereqs: string[][]; isCurrent?: boolean };
+  course: { code: string; prereqs: string[][]; isCurrent?: boolean; planned?: boolean; missingPrereqs?: boolean; notOffered?: boolean };
   isActive: boolean;
-  onToggle: (course: { code: string; prereqs: string[][]; isCurrent?: boolean }) => void;
+  onToggle: (course: { code: string; prereqs: string[][]; isCurrent?: boolean; planned?: boolean; missingPrereqs?: boolean; notOffered?: boolean }) => void;
 }
 
 const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) => {
@@ -24,17 +25,43 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
     return groups.length ? groups : ['sem requisitos'];
   };
 
+  const statusStyle = () => {
+    if (course.missingPrereqs) return styles.chipBlocked;
+    if (course.planned) return styles.chipPlanned;
+    if (course.notOffered) return styles.chipNotOffered;
+    return null;
+  };
+
+  const iconForStatus = () => {
+    if (course.missingPrereqs) return 'lock-alert';
+    if (course.notOffered) return 'calendar-remove';
+    if (course.planned) return 'check';
+    return null;
+  };
+
   return (
     <TouchableOpacity
       activeOpacity={0.9}
       style={[
         styles.chip,
         course.isCurrent && styles.currentChip,
+        statusStyle(),
         isActive && styles.activeChip,
       ]}
       onPress={() => onToggle(course)}
     >
-      <Text style={styles.chipText}>{course.code}</Text>
+      <View style={styles.chipContent}>
+        <Text style={styles.chipText}>{course.code}</Text>
+        {iconForStatus() && (
+          <MaterialCommunityIcons
+            name={iconForStatus() as any}
+            size={14}
+            color={course.missingPrereqs ? palette.dangerText : palette.text}
+            style={styles.statusIcon}
+          />
+        )}
+      </View>
+      {course.notOffered && <Text style={styles.metaText}>Nao ofertada</Text>}
       {isActive && (
         <View style={styles.tooltip}>
           <Text style={styles.tooltipLabel}>Requisitos</Text>
@@ -68,6 +95,18 @@ const styles = StyleSheet.create({
     borderColor: palette.accentBorder,
     backgroundColor: palette.accentSoft,
   },
+  chipPlanned: {
+    backgroundColor: palette.accent,
+    borderColor: palette.accent,
+  },
+  chipBlocked: {
+    backgroundColor: palette.dangerSoft,
+    borderColor: palette.dangerBorder,
+  },
+  chipNotOffered: {
+    backgroundColor: palette.infoSoft,
+    borderColor: palette.infoBorder,
+  },
   activeChip: {
     borderColor: palette.accent,
   },
@@ -76,6 +115,19 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '700',
     letterSpacing: 0.3,
+  },
+  chipContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing(0.4),
+  },
+  statusIcon: {
+    marginLeft: 2,
+  },
+  metaText: {
+    color: palette.textMuted,
+    fontSize: 11,
+    marginTop: 2,
   },
   tooltip: {
     position: 'absolute',
@@ -88,11 +140,15 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: palette.divider,
     padding: spacing(1),
-    shadowColor: '#000',
-    shadowOpacity: 0.35,
-    shadowRadius: 16,
-    shadowOffset: { width: 0, height: 10 },
     elevation: 8,
+    ...(Platform.OS === 'web'
+      ? { boxShadow: '0px 10px 16px rgba(0,0,0,0.35)' }
+      : {
+          shadowColor: '#000',
+          shadowOpacity: 0.35,
+          shadowRadius: 16,
+          shadowOffset: { width: 0, height: 10 },
+        }),
   },
   tooltipLabel: {
     color: palette.textMuted,

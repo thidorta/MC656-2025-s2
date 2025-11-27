@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { View, Text, useWindowDimensions } from 'react-native';
+import { View, Text, useWindowDimensions, TouchableOpacity } from 'react-native';
 import { CourseBlock } from '../types';
 import { gridStyles } from '../styles';
 
@@ -11,9 +11,10 @@ const START_HOUR = 8;
 
 interface Props {
   blocks: CourseBlock[];
+  onBlockPress?: (code: string) => void;
 }
 
-export default function ScheduleGrid({ blocks }: Props) {
+export default function ScheduleGrid({ blocks, onBlockPress }: Props) {
   const { width } = useWindowDimensions();
   const totalWidth = Math.max(width - 2 * 20, 320);
   const timeColumnWidth = totalWidth * 0.18;
@@ -56,9 +57,14 @@ export default function ScheduleGrid({ blocks }: Props) {
       ))}
 
       {blockPositions.map((block) => (
-        <View key={block.id} style={[gridStyles.block, block.style]}>
+        <TouchableOpacity
+          key={block.id}
+          style={[gridStyles.block, block.style]}
+          activeOpacity={0.85}
+          onPress={() => onBlockPress?.(block.code)}
+        >
           <Text style={gridStyles.blockText}>{block.code}</Text>
-        </View>
+        </TouchableOpacity>
       ))}
     </View>
   );

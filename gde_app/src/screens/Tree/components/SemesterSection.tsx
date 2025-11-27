@@ -5,17 +5,28 @@ import CourseChip from './CourseChip';
 import { Semester } from '../types';
 import { spacing, palette } from '../styles';
 
-interface Props {
-  semester: Semester;
-  activeCourse: { code: string; prereqs: string[][] } | null;
-  onToggleCourse: (course: { code: string; prereqs: string[][]; isCurrent?: boolean }) => void;
+interface CourseState {
+  code: string;
+  prereqs: string[][];
+  isCurrent?: boolean;
+  planned?: boolean;
+  missingPrereqs?: boolean;
+  notOffered?: boolean;
 }
 
-const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCourse }) => {
+interface Props {
+  semester: Semester;
+  activeCourse: CourseState | null;
+  onToggleCourse: (course: CourseState) => void;
+  forceExpanded?: boolean;
+}
+
+const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCourse, forceExpanded }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const label = semester.id === 'eletivas' ? 'Eletivas' : `Semestre ${semester.id}`;
   const courseCount = semester.courses.length;
+  const collapsed = forceExpanded ? false : isCollapsed;
 
   return (
     <View style={styles.card}>
@@ -26,10 +37,10 @@ const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCour
         </View>
         <View style={styles.headerRight}>
           <Text style={styles.meta}>{courseCount} disciplinas</Text>
-          <MaterialCommunityIcons name={isCollapsed ? 'chevron-down' : 'chevron-up'} size={22} color={palette.text} />
+          <MaterialCommunityIcons name={collapsed ? 'chevron-down' : 'chevron-up'} size={22} color={palette.text} />
         </View>
       </TouchableOpacity>
-      {!isCollapsed && (
+      {!collapsed && (
         <View style={styles.chipGrid}>
           {semester.courses.map((course, index) => (
             <CourseChip

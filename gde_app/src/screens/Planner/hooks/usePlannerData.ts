@@ -1,35 +1,135 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { apiService } from '../../../services/api';
-import { sessionStore } from '../../../services/session';
 import { CourseBlock, DaySchedule, DayScheduleCourse } from '../types';
 
-type PlannerPayload = Record<string, any>;
+type PlannerPayload = {
+  curriculum?: any[];
+  planned_codes?: (string | number)[];
+};
+
+type PlannerResponse = {
+  original?: { payload?: PlannerPayload };
+  modified?: { payload?: PlannerPayload };
+};
+
+const WEEKDAY_LABELS = [
+  'Segunda-feira',
+  'Terca-feira',
+  'Quarta-feira',
+  'Quinta-feira',
+  'Sexta-feira',
+];
+const OTHER_LABEL = 'Outros / sem horario';
+
+const hasOffers = (payload?: PlannerPayload | null) =>
+  Array.isArray(payload?.curriculum) &&
+  payload!.curriculum.some((course: any) => Array.isArray(course?.offers) && course.offers.length > 0);
+
+const selectActivePayload = (planner: PlannerResponse | null): PlannerPayload | null => {
+  if (!planner) return null;
+  const modified = planner.modified?.payload || null;
+  const original = planner.original?.payload || null;
+  if (modified && hasOffers(modified)) return modified;
+  if (modified && !hasOffers(modified) && hasOffers(original)) return original;
+  return modified || original || null;
+};
+
+const derivePlannerState = (payload: PlannerPayload | null) => {
+  const curriculum = Array.isArray(payload?.curriculum) ? payload!.curriculum : [];
+  const plannedCodes = Array.isArray(payload?.planned_codes)
+    ? payload!.planned_codes.map((code) => String(code))
+    : [];
+  const plannedSet = new Set<string>(plannedCodes);
+  const plannedOffers = new Map<string, string>();
+
+  curriculum.forEach((course: any) => {
+    const code = String(course?.codigo ?? course?.code ?? '').trim();
+    if (!code) return;
+    const offers = Array.isArray(course?.offers) ? course.offers : [];
+    const selectedOffer = offers.find((offer: any) => offer?.adicionado);
+    if (selectedOffer) {
+      plannedOffers.set(code, selectedOffer.turma || '');
+      plannedSet.add(code);
+    }
+  });
+
+  return { plannedSet, plannedOffers };
+};
+
+const buildPayload = (
+  planner: PlannerResponse | null,
+  codes: Set<string>,
+  offers: Map<string, string>,
+): PlannerPayload | null => {
+  if (!planner) return null;
+  const basePayload = (planner.modified?.payload || planner.original?.payload || {}) as PlannerPayload;
+  const curriculum = Array.isArray(basePayload.curriculum) ? basePayload.curriculum : [];
+  const updatedCurriculum = curriculum.map((course: any) => {
+    const code = String(course?.codigo ?? course?.code ?? '').trim();
+    if (!code) return course;
+    const planned = codes.has(code);
+    const selectedTurma = offers.get(code);
+    const offerList = Array.isArray(course?.offers) ? course.offers : [];
+    if (!offerList.length) {
+      return { ...course };
+    }
+    let assigned = false;
+    const updatedOffers = offerList.map((offer: any, index: number) => {
+      const turma = offer?.turma || '';
+      let adicionado = false;
+      if (planned) {
+        if (selectedTurma) {
+          adicionado = selectedTurma === turma;
+        } else if (!assigned && index === 0) {
+          adicionado = true;
+        }
+      }
+      if (adicionado) assigned = true;
+      return { ...offer, adicionado };
+    });
+    if (planned && !assigned && updatedOffers.length) {
+      updatedOffers[0] = { ...updatedOffers[0], adicionado: true };
+    }
+    return { ...course, offers: updatedOffers };
+  });
+
+  return {
+    ...basePayload,
+    curriculum: updatedCurriculum,
+    planned_codes: Array.from(codes),
+  };
+};
 
 export function usePlannerData() {
-  const [planner, setPlanner] = useState<any | null>(null);
+  const [planner, setPlanner] = useState<PlannerResponse | null>(null);
   const [plannedSet, setPlannedSet] = useState<Set<string>>(new Set());
-  const [currentSet, setCurrentSet] = useState<Set<string>>(new Set());
+  const [plannedOffers, setPlannedOffers] = useState<Map<string, string>>(new Map());
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [ready, setReady] = useState(false);
+
+  const activePayload = useMemo(() => selectActivePayload(planner), [planner]);
+
+  useEffect(() => {
+    if (!activePayload) return;
+    const { plannedSet: derivedSet, plannedOffers: derivedOffers } = derivePlannerState(activePayload);
+    setPlannedSet(derivedSet);
+    setPlannedOffers(derivedOffers);
+    setReady(true);
+  }, [activePayload]);
+
+  const curriculum = useMemo(() => {
+    if (!activePayload || !Array.isArray(activePayload.curriculum)) return [];
+    return activePayload.curriculum as any[];
+  }, [activePayload]);
 
   const loadPlanner = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
-      if (!sessionStore.getToken()) {
-        throw new Error('Faça login para acessar o planner.');
-      }
       const data = await apiService.fetchPlanner();
       setPlanner(data);
-      const basePayload: PlannerPayload = data.modified?.payload || data.original?.payload || {};
-      const curriculum = Array.isArray(basePayload.curriculum) ? basePayload.curriculum : [];
-      const currentCodes = curriculum
-        .filter((c: any) => Array.isArray(c.offers) && c.offers.length > 0)
-        .map((c: any) => String(c.codigo));
-      const planned = (basePayload.planned_codes || []).map((c: any) => String(c));
-      setCurrentSet(new Set(currentCodes));
-      setPlannedSet(new Set([...planned, ...currentCodes]));
     } catch (err: any) {
       setError(err?.message || 'Erro ao carregar planner');
     } finally {
@@ -41,33 +141,52 @@ export function usePlannerData() {
     void loadPlanner();
   }, [loadPlanner]);
 
-  const togglePlanned = useCallback((code: string) => {
-    setPlannedSet((prev) => {
-      const next = new Set(prev);
-      if (next.has(code)) next.delete(code);
-      else next.add(code);
-      return next;
-    });
-  }, []);
-
-  const activePayload = useMemo(() => {
-    if (!planner) return null;
-    const originalPayload = planner.original?.payload || null;
-    const modifiedPayload = planner.modified?.payload || null;
-
-    const hasOffers = (payload: any) =>
-      Array.isArray(payload?.curriculum) &&
-      payload.curriculum.some((c: any) => Array.isArray(c?.offers) && c.offers.length > 0);
-
-    if (modifiedPayload && hasOffers(modifiedPayload)) return modifiedPayload;
-    if (modifiedPayload && !hasOffers(modifiedPayload) && hasOffers(originalPayload)) return originalPayload;
-    return modifiedPayload || originalPayload || null;
-  }, [planner]);
-
-  const curriculum = useMemo(() => {
-    if (!activePayload || !Array.isArray(activePayload.curriculum)) return [];
-    return activePayload.curriculum as any[];
-  }, [activePayload]);
+  const togglePlanned = useCallback(
+    (code: string, turma?: string | null) => {
+      const normalizedCode = String(code);
+      setPlannedSet((prev) => {
+        const next = new Set(prev);
+        if (next.has(normalizedCode)) {
+          if (typeof turma === 'string') {
+            setPlannedOffers((prevOffers) => {
+              const updated = new Map(prevOffers);
+              updated.set(normalizedCode, turma);
+              return updated;
+            });
+            return next;
+          }
+          next.delete(normalizedCode);
+          setPlannedOffers((prevOffers) => {
+            const updated = new Map(prevOffers);
+            updated.delete(normalizedCode);
+            return updated;
+          });
+          return next;
+        }
+        next.add(normalizedCode);
+        setPlannedOffers((prevOffers) => {
+          const updated = new Map(prevOffers);
+          if (typeof turma === 'string') {
+            updated.set(normalizedCode, turma);
+            return updated;
+          }
+          const course = curriculum.find((c) => String(c?.codigo) === normalizedCode);
+          const existingOffer =
+            (Array.isArray(course?.offers) && course.offers.find((offer: any) => offer?.adicionado)?.turma) || '';
+          if (existingOffer) {
+            updated.set(normalizedCode, existingOffer);
+          } else if (Array.isArray(course?.offers) && course.offers.length > 0) {
+            updated.set(normalizedCode, course.offers[0].turma || '');
+          } else {
+            updated.set(normalizedCode, '');
+          }
+          return updated;
+        });
+        return next;
+      });
+    },
+    [curriculum],
+  );
 
   const slotsFromOffer = useCallback((offer: any) => {
     const slots: { day: number; start: number; end: number }[] = [];
@@ -93,32 +212,32 @@ export function usePlannerData() {
 
   const coursesByDay: DaySchedule[] = useMemo(() => {
     const base: Record<string, DaySchedule> = {
-      '0': { id: '0', day: 'Segunda-feira', courses: [] },
-      '1': { id: '1', day: 'Terça-feira', courses: [] },
-      '2': { id: '2', day: 'Quarta-feira', courses: [] },
-      '3': { id: '3', day: 'Quinta-feira', courses: [] },
-      '4': { id: '4', day: 'Sexta-feira', courses: [] },
-      other: { id: 'other', day: 'Outros / sem horário', courses: [] },
+      '0': { id: '0', day: WEEKDAY_LABELS[0], courses: [] },
+      '1': { id: '1', day: WEEKDAY_LABELS[1], courses: [] },
+      '2': { id: '2', day: WEEKDAY_LABELS[2], courses: [] },
+      '3': { id: '3', day: WEEKDAY_LABELS[3], courses: [] },
+      '4': { id: '4', day: WEEKDAY_LABELS[4], courses: [] },
+      other: { id: 'other', day: OTHER_LABEL, courses: [] },
     };
 
     const addCourse = (key: string, course: DayScheduleCourse) => {
       base[key].courses.push(course);
     };
 
-    curriculum.forEach((c: any) => {
-      const code = String(c.codigo);
+    curriculum.forEach((course: any) => {
+      const code = String(course?.codigo ?? course?.code ?? '');
       const isPlanned = plannedSet.has(code);
-      const offers = Array.isArray(c.offers) ? c.offers : [];
-      if (offers.length === 0) {
+      const offers = Array.isArray(course?.offers) ? course.offers : [];
+      if (!offers.length) {
         addCourse('other', { code, planned: isPlanned });
         return;
       }
       let attached = false;
-      offers.forEach((o: any) => {
-        const slots = slotsFromOffer(o);
+      offers.forEach((offer: any) => {
+        const slots = slotsFromOffer(offer);
         if (!slots.length) return;
-        slots.forEach((s) => {
-          const key = ['0', '1', '2', '3', '4'].includes(String(s.day)) ? String(s.day) : 'other';
+        slots.forEach((slot) => {
+          const key = ['0', '1', '2', '3', '4'].includes(String(slot.day)) ? String(slot.day) : 'other';
           addCourse(key, { code, planned: isPlanned });
           attached = true;
         });
@@ -131,43 +250,60 @@ export function usePlannerData() {
 
   const scheduleBlocks: CourseBlock[] = useMemo(() => {
     const blocks: CourseBlock[] = [];
-    curriculum.forEach((c: any) => {
-      const code = String(c.codigo);
+    curriculum.forEach((course: any) => {
+      const code = String(course?.codigo ?? course?.code ?? '');
       if (!plannedSet.has(code)) return;
-      const offers = Array.isArray(c.offers) ? c.offers : [];
-      offers.forEach((o: any, idx: number) => {
-        const slots = slotsFromOffer(o);
-        slots.forEach((s, sIdx) => {
-          if (s.day < 0 || s.day > 4) return;
-          const dur = s.end - s.start;
+      const selectedTurma = plannedOffers.get(code);
+      const offers = Array.isArray(course?.offers) ? course.offers : [];
+      offers.forEach((offer: any, idx: number) => {
+        const turma = offer?.turma || '';
+        if (selectedTurma && turma && selectedTurma !== turma) return;
+        const slots = slotsFromOffer(offer);
+        slots.forEach((slot, slotIdx) => {
+          if (slot.day < 0 || slot.day > 4) return;
+          const duration = slot.end - slot.start;
           blocks.push({
-            id: `${code}-${idx}-${sIdx}`,
+            id: `${code}-${idx}-${slotIdx}`,
             code,
-            dayIndex: s.day,
-            startTime: s.start,
-            durationHours: dur > 0 ? dur : 2,
+            dayIndex: slot.day,
+            startTime: slot.start,
+            durationHours: duration > 0 ? duration : 2,
           });
         });
       });
     });
     return blocks;
-  }, [curriculum, plannedSet, currentSet, slotsFromOffer]);
+  }, [curriculum, plannedSet, plannedOffers, slotsFromOffer]);
 
-  const savePlanner = useCallback(async () => {
-    if (!planner) return;
-    setSaving(true);
-    setError(null);
-    const payload = (planner.modified?.payload || planner.original?.payload || {}) as any;
-    const newPayload = { ...payload, planned_codes: Array.from(plannedSet) };
-    try {
-      const data = await apiService.savePlanner(newPayload);
-      setPlanner(data);
-    } catch (err: any) {
-      setError(err?.message || 'Erro ao salvar planner');
-    } finally {
-      setSaving(false);
-    }
-  }, [planner, plannedSet]);
+  const savePlanner = useCallback(
+    async (overrideSet?: Set<string>, overrideOffers?: Map<string, string>) => {
+      if (!planner) return;
+      const codes = overrideSet ?? plannedSet;
+      const offers = overrideOffers ?? plannedOffers;
+      const payload = buildPayload(planner, codes, offers);
+      if (!payload) return;
+      setSaving(true);
+      setError(null);
+      try {
+        const data = await apiService.savePlanner(payload);
+        setPlanner(data);
+      } catch (err: any) {
+        setError(err?.message || 'Erro ao salvar planner');
+        throw err;
+      } finally {
+        setSaving(false);
+      }
+    },
+    [planner, plannedSet, plannedOffers],
+  );
+
+  const clearPlanner = useCallback(async () => {
+    const nextSet = new Set<string>();
+    const nextOffers = new Map<string, string>();
+    setPlannedSet(nextSet);
+    setPlannedOffers(nextOffers);
+    await savePlanner(nextSet, nextOffers);
+  }, [savePlanner]);
 
   return {
     loading,
@@ -175,8 +311,13 @@ export function usePlannerData() {
     error,
     coursesByDay,
     scheduleBlocks,
+    curriculum,
+    plannedSet,
+    plannedOffers,
+    ready,
     refreshPlanner: loadPlanner,
     savePlanner,
     togglePlanned,
+    clearPlanner,
   };
 }

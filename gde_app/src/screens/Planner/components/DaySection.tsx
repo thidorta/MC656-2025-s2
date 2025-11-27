@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function DaySection({ schedule, onToggle }: Props) {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const courseCount = schedule.courses.length;
   const metaLabel = courseCount === 0 ? 'Sem disciplinas' : `${courseCount} disciplina${courseCount > 1 ? 's' : ''}`;
 

@@ -55,7 +55,12 @@ export default function useCurriculum() {
       const catalogAll: Discipline[] = [
         ...(data.disciplinas_obrigatorias || []),
         ...(data.disciplinas_eletivas || []),
-      ];
+      ].map((d: any) => ({
+        ...d,
+        planned: Boolean(d?.planned),
+        missingPrereqs: Boolean(d?.missingPrereqs || d?.missing || d?.status === 'missing'),
+        notOffered: !(Array.isArray(d?.offers) && d.offers.length > 0),
+      }));
       setDisciplines(catalogAll);
 
       if (isCompleta === 'Nao') {
@@ -72,6 +77,9 @@ export default function useCurriculum() {
             ...d,
             prereqs: prereqMap.get(d.codigo) ?? d.prereqs ?? [],
             isCurrent: Array.isArray(d.offers) && d.offers.length > 0,
+            planned: Boolean((d as any)?.planned),
+            missingPrereqs: Boolean((d as any)?.missingPrereqs || (d as any)?.missing || (d as any)?.status === 'missing'),
+            notOffered: !(Array.isArray((d as any)?.offers) && (d as any).offers.length > 0),
           }));
 
           setDisciplinesExternal(merged);

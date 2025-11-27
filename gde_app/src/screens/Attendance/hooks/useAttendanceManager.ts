@@ -48,8 +48,10 @@ function mapFromSnapshot(): AttendanceCourse[] {
 }
 
 export default function useAttendanceManager() {
+  const [initialCourses, setInitialCourses] = useState<AttendanceCourse[]>([]);
   const [courses, setCourses] = useState<AttendanceCourse[]>([]);
   const [overrides, setOverrides] = useState<AttendanceOverridesMap>({});
+  const [plannedCodes, setPlannedCodes] = useState<Set<string>>(new Set());
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const [dirty, setDirty] = useState(false);
@@ -57,6 +59,7 @@ export default function useAttendanceManager() {
 
   useEffect(() => {
     const mapped = mapFromSnapshot();
+    setInitialCourses(mapped);
     setCourses(mapped);
   }, []);
 
@@ -76,7 +79,7 @@ export default function useAttendanceManager() {
       const merged = { ...remote, ...pending };
       if (!cancelled && Object.keys(merged).length) {
         setOverrides(merged);
-        setCourses((prev) => applyOverrides(prev, merged));
+        setOverrides(merged);
         setDirty(Object.keys(pending).length > 0);
       }
       if (!cancelled) setIsLoading(false);
@@ -86,6 +89,49 @@ export default function useAttendanceManager() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    const loadPlannerCourses = async () => {
+      try {
+        const planner = await apiService.fetchPlanner();
+        const modifiedPayload = planner.modified?.payload || null;
+        const basePayload = modifiedPayload || planner.original?.payload || {};
+        const curriculum = Array.isArray(basePayload.curriculum) ? basePayload.curriculum : [];
+
+        const rawPlanned = Array.isArray(modifiedPayload?.planned_codes)
+          ? modifiedPayload!.planned_codes
+          : basePayload.planned_codes || [];
+        const planned = rawPlanned.map((c: any) => String(c));
+        const plannedSet = new Set(planned);
+
+        // garante que ofertas marcadas como adicionado entram no conjunto
+        curriculum.forEach((course: any) => {
+          if (Array.isArray(course.offers) && course.offers.some((offer: any) => offer?.adicionado)) {
+            plannedSet.add(String(course.codigo));
+          }
+        });
+
+        setPlannedCodes(plannedSet);
+      } catch (err) {
+        console.warn('Nao foi possivel carregar planner para faltas', err);
+      }
+    };
+    loadPlannerCourses();
+  }, []);
+
+  useEffect(() => {
+    setCourses((prev) => {
+      const map = new Map(prev.map((c) => [c.code, c]));
+      const base = plannedCodes.size
+        ? initialCourses.filter((c) => plannedCodes.has(c.code))
+        : initialCourses;
+      return base.map((course) => map.get(course.code) || course);
+    });
+  }, [initialCourses, plannedCodes]);
+
+  useEffect(() => {
+    setCourses((prev) => applyOverrides(prev, overrides));
+  }, [overrides]);
 
   const queueOverride = (course: AttendanceCourse) => {
     const { code, absencesUsed, requiresAttendance, alertEnabled = true } = course;

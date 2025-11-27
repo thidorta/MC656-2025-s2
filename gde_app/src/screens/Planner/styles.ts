@@ -89,6 +89,15 @@ export const globalStyles = StyleSheet.create({
     fontSize: 13,
     lineHeight: 18,
   },
+  infoBanner: {
+    backgroundColor: palette.surface,
+    borderRadius: 12,
+    paddingHorizontal: spacing(1),
+    paddingVertical: spacing(0.8),
+    borderWidth: 1,
+    borderColor: palette.divider,
+    rowGap: spacing(0.25),
+  },
   helperText: {
     color: palette.textMuted,
     fontSize: 13,
@@ -96,6 +105,22 @@ export const globalStyles = StyleSheet.create({
   errorText: {
     color: palette.danger,
     fontSize: 13,
+  },
+  resetButton: {
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
+    columnGap: spacing(0.5),
+    paddingHorizontal: spacing(0.8),
+    paddingVertical: spacing(0.6),
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: palette.accentBorder,
+  },
+  resetButtonText: {
+    color: palette.accent,
+    fontSize: 12,
+    fontWeight: '600',
   },
   sectionLabel: {
     color: palette.textMuted,
