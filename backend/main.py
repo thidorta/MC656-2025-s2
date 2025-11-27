@@ -32,8 +32,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 app.include_router(router, prefix="/api/v1")
-init_user_db()
 
 
 @app.get("/")
@@ -72,5 +72,5 @@ async def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-
+    init_user_db()
     uvicorn.run(app, host="0.0.0.0", port=8000)
