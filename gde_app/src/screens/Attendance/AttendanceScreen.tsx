@@ -17,8 +17,8 @@ export default function AttendanceScreen({ navigation }: Props) {
     decrementAbsence,
     toggleRequiresAttendance,
     toggleAlertEnabled,
+    resetAttendance,
     isLoading,
-    isSaving,
     error,
   } = useAttendanceManager();
 
@@ -47,7 +47,10 @@ export default function AttendanceScreen({ navigation }: Props) {
             </Text>
           </View>
           {error && <Text style={globalStyles.errorText}>{error}</Text>}
-          {isSaving && <Text style={globalStyles.helperText}>Sincronizando faltas...</Text>}
+          <TouchableOpacity style={globalStyles.resetButton} onPress={resetAttendance}>
+            <MaterialCommunityIcons name="refresh" size={16} color={palette.accent} />
+            <Text style={globalStyles.resetButtonText}>Limpar faltas</Text>
+          </TouchableOpacity>
         </View>
 
         {isLoading ? (

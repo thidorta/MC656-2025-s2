@@ -9,7 +9,8 @@ const MAX_ABSENCE_RATIO = 0.25;
 function computeHours(credits: number) {
   const semesterHours = credits * CREDIT_TO_SEMESTER_HOURS;
   const weeklyHours = credits * 2;
-  const maxAbsences = Math.floor(semesterHours * MAX_ABSENCE_RATIO);
+  const allowedHours = Math.floor(semesterHours * MAX_ABSENCE_RATIO);
+  const maxAbsences = Math.floor(allowedHours / 2);
   return { semesterHours, weeklyHours, maxAbsences };
 }
 
@@ -134,6 +135,13 @@ export default function useAttendanceManager() {
     updateCourse(code, (c) => ({ ...c, alertEnabled: value }));
   };
 
+  const resetAttendance = () => {
+    setOverrides({});
+    sessionStore.setPendingOverrides(null);
+    setCourses(mapFromSnapshot());
+    setDirty(false);
+  };
+
   useEffect(() => {
     const persist = async () => {
       if (!dirty) return;
@@ -142,7 +150,6 @@ export default function useAttendanceManager() {
         await apiService.saveAttendanceOverrides(overrides);
         sessionStore.setPendingOverrides(null);
         setDirty(false);
-        setError(null);
       } catch (err) {
         console.warn('Falha ao salvar overrides de frequencia', err);
         sessionStore.setPendingOverrides(overrides);
@@ -156,9 +163,9 @@ export default function useAttendanceManager() {
   }, [dirty, overrides]);
 
   const data: AttendanceCourseComputed[] = useMemo(() => {
-    const riskThreshold = 25;
+    const riskThreshold = 50;
     return courses.map((c) => {
-      const absencePercent = c.semesterHours ? (c.absencesUsed / c.semesterHours) * 100 : 0;
+      const absencePercent = c.maxAbsences ? (c.absencesUsed / c.maxAbsences) * 100 : 0;
       return {
         ...c,
         remaining: Math.max(c.maxAbsences - c.absencesUsed, 0),
@@ -176,6 +183,7 @@ export default function useAttendanceManager() {
     setProfessor,
     toggleRequiresAttendance,
     toggleAlertEnabled,
+    resetAttendance,
     isLoading,
     isSaving,
     error,

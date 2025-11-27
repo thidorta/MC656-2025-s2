@@ -20,8 +20,8 @@ const AttendanceCard: React.FC<Props> = ({
   onToggleAlertEnabled,
 }) => {
   const [expanded, setExpanded] = useState(false);
-  const meterScale =
-    course.maxAbsences === 0 ? 0 : Math.min(1, Math.max(0, course.absencesUsed / course.maxAbsences));
+  const meterWidth =
+    course.maxAbsences === 0 ? '0%' : `${Math.min(1, Math.max(0, course.absencesUsed / course.maxAbsences)) * 100}%`;
   const absencePercent = Number.isFinite(course.absencePercent) ? course.absencePercent : 0;
   const riskThreshold = course.riskThreshold ?? 25;
   const isAtRisk = course.isAtRisk ?? absencePercent >= riskThreshold;
@@ -60,7 +60,7 @@ const AttendanceCard: React.FC<Props> = ({
 
           <View style={styles.statRow}>
             <Text style={styles.statLabel}>Faltas registradas</Text>
-            <Text style={styles.statValue}>{course.absencesUsed}</Text>
+            <Text style={styles.statValue}>{course.absencesUsed} aulas</Text>
           </View>
           <View style={styles.statRow}>
             <Text style={styles.statLabel}>% de faltas</Text>
@@ -68,7 +68,7 @@ const AttendanceCard: React.FC<Props> = ({
           </View>
 
           <View style={styles.meter}>
-            <View style={[styles.meterFill, { transform: [{ scaleX: meterScale }] }]} />
+            <View style={[styles.meterFill, { width: meterWidth }]} />
           </View>
 
           <View style={styles.statRow}>
@@ -77,7 +77,7 @@ const AttendanceCard: React.FC<Props> = ({
           </View>
           <View style={styles.statRow}>
             <Text style={styles.statLabel}>Faltas restantes</Text>
-            <Text style={styles.statValue}>{course.remaining}h</Text>
+            <Text style={styles.statValue}>{course.remaining} aulas</Text>
           </View>
 
           <View style={styles.controls}>
