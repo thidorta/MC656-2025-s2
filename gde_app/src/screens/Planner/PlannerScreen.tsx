@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ScrollView, Text, TouchableOpacity, View, Modal, TextInput, StyleSheet, Alert } from 'react-native';
+import { ScrollView, Text, TouchableOpacity, View, Modal, TextInput, StyleSheet, Alert, Linking } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../../navigation/types';
@@ -147,6 +147,45 @@ export default function PlannerScreen({ navigation }: Props) {
     }
   }, [clearPlanner]);
 
+  const handleExportCalendar = () => {
+    if (!scheduleBlocks || scheduleBlocks.length === 0) {
+      Alert.alert("Nada para exportar", "Você não tem horários definidos.");
+      return;
+    }
+
+    const events = scheduleBlocks.map((block) => {
+      const { code, dayIndex, startTime, durationHours } = block;
+
+      // Converte horário semanal para uma data real fixa.
+      const baseDate = getNextWeekDate(dayIndex);
+
+      const start = new Date(baseDate);
+      start.setHours(startTime, 0, 0, 0);
+
+      const end = new Date(start);
+      end.setHours(startTime + durationHours, 0, 0, 0);
+
+      return {
+        title: `Aula ${code}`,
+        start,
+        end,
+      };
+    });
+
+    // Exporta apenas o primeiro evento
+    const event = events[0];
+
+    const startStr = formatDateGoogle(event.start);
+    const endStr = formatDateGoogle(event.end);
+
+    const url =
+      `https://calendar.google.com/calendar/render?action=TEMPLATE` +
+      `&text=${encodeURIComponent(event.title)}` +
+      `&dates=${startStr}/${endStr}`;
+
+    Linking.openURL(url);
+  };
+
   return (
     <SafeAreaView edges={['top', 'bottom']} style={globalStyles.safeArea}>
       <View style={globalStyles.page}>
@@ -209,7 +248,7 @@ export default function PlannerScreen({ navigation }: Props) {
           <Text style={globalStyles.sectionLabel}>Horario semanal</Text>
           <ScheduleGrid blocks={scheduleBlocks} onBlockPress={handleBlockPress} />
 
-          <TouchableOpacity onPress={() => {}} style={globalStyles.exportButton}>
+          <TouchableOpacity onPress={handleExportCalendar} style={globalStyles.exportButton}>
             <MaterialCommunityIcons name="calendar-export" size={22} color={palette.buttonText} />
             <Text style={globalStyles.exportButtonText}>Exportar para Google Calendar</Text>
             <View style={globalStyles.calendarBadge}>
@@ -425,4 +464,26 @@ function detectConflicts(blocks: CourseBlock[]): Conflict[] {
     }
   });
   return result;
+}
+
+// Retorna a próxima data real para cada dia da semana
+function getNextWeekDate(dayIndex: number) {
+  const today = new Date();
+  const currentDow = today.getDay();      
+  const desiredDow = dayIndex + 1;        
+
+  let diff = desiredDow - currentDow;
+  if (diff <= 0) diff += 7;
+
+  const date = new Date(today);
+  date.setDate(today.getDate() + diff);
+  return date;
+}
+
+// Formato que o Google Calendar aceita: YYYYMMDDTHHMMSSZ
+function formatDateGoogle(date: Date) {
+  return date
+    .toISOString()
+    .replace(/[-:]/g, "")
+    .replace(".000Z", "Z");
 }
