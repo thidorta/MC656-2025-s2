@@ -11,10 +11,16 @@ import { globalStyles, palette } from './styles';
 type Props = NativeStackScreenProps<RootStackParamList, 'Attendance'>;
 
 export default function AttendanceScreen({ navigation }: Props) {
-  const { courses, incrementAbsence, decrementAbsence, toggleRequiresAttendance, toggleAlertEnabled } =
-    useAttendanceManager();
-
-  const isLoading = false;
+  const {
+    courses,
+    incrementAbsence,
+    decrementAbsence,
+    toggleRequiresAttendance,
+    toggleAlertEnabled,
+    isLoading,
+    isSaving,
+    error,
+  } = useAttendanceManager();
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={globalStyles.safeArea}>
@@ -37,6 +43,8 @@ export default function AttendanceScreen({ navigation }: Props) {
               Cada credito = 2h semanais e 25% de tolerancia no semestre. Ajuste as faltas e registre se o professor
               controla presenca.
             </Text>
+            {error && <Text style={globalStyles.errorText}>{error}</Text>}
+            {isSaving && <Text style={globalStyles.helperText}>Sincronizando faltas...</Text>}
 
             {isLoading && <ActivityIndicator size="large" color={palette.text} />}
 

@@ -19,3 +19,8 @@ export interface AttendanceCourseComputed extends AttendanceCourse {
   riskThreshold: number;
   isAtRisk: boolean;
 }
+
+export type AttendanceOverridesMap = Record<
+  string,
+  Partial<Pick<AttendanceCourse, 'absencesUsed' | 'requiresAttendance' | 'alertEnabled'>>
+>;
