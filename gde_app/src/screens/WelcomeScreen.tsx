@@ -1,28 +1,43 @@
-import { StyleSheet, View, Text, Image } from 'react-native';
+import React from 'react';
+import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import PrimaryButton from '../../components/PrimaryButton';
-import { colors } from '../theme/colors';
-import { spacing } from '../theme/spacing';
 import { RootStackParamList } from '../navigation/types';
+import { spacing } from '../theme/spacing';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Welcome'>;
+
+const palette = {
+  bg: '#0B0B0F',
+  text: '#E8ECF5',
+  textMuted: '#8A8F9B',
+  accent: '#33E1D3',
+  surfaceElevated: '#151824',
+};
 
 export default function WelcomeScreen({ navigation }: Props) {
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
-      <View style={styles.container}>
-        <View style={styles.logoWrap}>
-          <Image source={require('../../assets/logo.png')} style={styles.logo} resizeMode="contain" />
-          <Text style={styles.title}>GDE - UNICAMP</Text>
-          <Text style={styles.subtitle}>Explore cursos, ementas e informacoes academicas estruturadas.</Text>
+      <View style={styles.page}>
+        <View style={styles.hero}>
+          <View style={styles.logoWrap}>
+            <Image source={require('../../assets/logo.png')} style={styles.logo} resizeMode="contain" />
+          </View>
+          <Text style={styles.title}>GDE – UNICAMP</Text>
+          <Text style={styles.subtitle}>
+            Explore cursos, ementas e informações acadêmicas estruturadas.
+          </Text>
         </View>
 
-        <PrimaryButton
-          label="Explorar GDE"
-          onPress={() => navigation.navigate('Login')}
-          style={styles.cta}
-        />
+        <View style={styles.footer}>
+          <TouchableOpacity
+            activeOpacity={0.85}
+            style={styles.primaryButton}
+            onPress={() => navigation.navigate('Login')}
+          >
+            <Text style={styles.primaryButtonText}>Explorar GDE</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -31,42 +46,62 @@ export default function WelcomeScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: colors.bg,
+    backgroundColor: palette.bg,
   },
-  container: {
+  page: {
     flex: 1,
-    paddingHorizontal: spacing(3),
+    backgroundColor: palette.bg,
+    paddingHorizontal: 24,
+    justifyContent: 'space-between',
+    paddingBottom: spacing(3),
+  },
+  hero: {
+    paddingTop: spacing(8),
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.bg,
   },
   logoWrap: {
-    alignItems: 'center',
-    gap: spacing(2),
-  },
-  logo: {
     width: 140,
     height: 140,
-    marginBottom: spacing(1),
+    borderRadius: 70,
+    backgroundColor: palette.surfaceElevated,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.08)',
+    marginBottom: spacing(2),
+  },
+  logo: {
+    width: 90,
+    height: 90,
   },
   title: {
-    color: colors.text,
-    fontSize: 26,
-    fontWeight: '900',
-    letterSpacing: 0.6,
-    fontFamily: 'monospace',
+    color: palette.text,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: 0.4,
+    textAlign: 'center',
   },
   subtitle: {
-    color: colors.textMuted,
-    marginTop: spacing(1),
+    color: palette.textMuted,
     fontSize: 15,
-    textAlign: 'center',
-    maxWidth: 320,
     lineHeight: 22,
-    fontFamily: 'monospace',
+    textAlign: 'center',
+    marginTop: spacing(1),
+    maxWidth: 320,
   },
-  cta: {
-    marginTop: spacing(4),
-    width: '100%',
+  footer: {
+    paddingTop: spacing(2),
+  },
+  primaryButton: {
+    backgroundColor: palette.accent,
+    borderRadius: 18,
+    paddingVertical: spacing(1.5),
+    alignItems: 'center',
+  },
+  primaryButtonText: {
+    color: palette.bg,
+    fontSize: 16,
+    fontWeight: '700',
+    letterSpacing: 0.3,
   },
 });

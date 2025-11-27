@@ -43,6 +43,11 @@ export default function HomeScreen({ navigation }: Props) {
           .map((p) => p[0].toUpperCase())
           .join('');
 
+  const handleLogout = () => {
+    sessionStore.clear();
+    navigation.reset({ index: 0, routes: [{ name: 'Welcome' }] });
+  };
+
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
       <View style={styles.page}>
@@ -78,6 +83,11 @@ export default function HomeScreen({ navigation }: Props) {
             </TouchableOpacity>
           ))}
         </View>
+
+        <TouchableOpacity style={styles.logoutButton} activeOpacity={0.85} onPress={handleLogout}>
+          <MaterialCommunityIcons name="logout" size={18} color={palette.accent} />
+          <Text style={styles.logoutText}>Sair</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -146,4 +156,21 @@ const styles = StyleSheet.create({
   actionCopy: { flex: 1 },
   actionLabel: { color: palette.text, fontSize: 15, fontWeight: '600' },
   actionDescription: { color: palette.textMuted, fontSize: 12, marginTop: 2 },
+  logoutButton: {
+    marginTop: spacing(1),
+    paddingVertical: spacing(0.9),
+    borderRadius: 14,
+    borderWidth: 1,
+    borderColor: palette.divider,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: spacing(0.5),
+  },
+  logoutText: {
+    color: palette.accent,
+    fontSize: 14,
+    fontWeight: '600',
+    letterSpacing: 0.2,
+  },
 });
