@@ -69,6 +69,16 @@ def update_user_planner(user_id: int, planner_id: str) -> None:
 
 
 def update_user_snapshot(user_id: int, user_db: Dict[str, Any]) -> None:
+    """
+    DEPRECATED - PHASE 3 REFACTOR
+    
+    This function persists user_db as a JSON blob in users.user_db_json.
+    
+    REPLACEMENT: Use app.services.planner_service.save_gde_snapshot() which
+    persists to relational tables (gde_snapshots, curriculum_disciplines, etc.)
+    
+    TODO: Remove after confirming /auth/login uses new service layer.
+    """
     with _conn() as conn:
         conn.execute(
             "UPDATE users SET user_db_json = ?, user_db_updated_at = CURRENT_TIMESTAMP WHERE id = ?",
@@ -78,6 +88,16 @@ def update_user_snapshot(user_id: int, user_db: Dict[str, Any]) -> None:
 
 
 def get_user_snapshot(user_id: int) -> tuple[Dict[str, Any], Optional[str]]:
+    """
+    DEPRECATED - PHASE 3 REFACTOR
+    
+    This function reads user_db from users.user_db_json blob.
+    
+    REPLACEMENT: Use app.services.planner_service.build_user_db_from_snapshot()
+    which reconstructs user_db from relational tables.
+    
+    TODO: Remove after confirming /user-db/me uses new service layer.
+    """
     with _conn() as conn:
         row = conn.execute("SELECT user_db_json, user_db_updated_at FROM users WHERE id = ?", (user_id,)).fetchone()
     if not row:
@@ -94,8 +114,9 @@ def get_user_snapshot(user_id: int) -> tuple[Dict[str, Any], Optional[str]]:
 def create_user(username: str, password: str, planner_id: str) -> int:
     with _conn() as conn:
         cur = conn.execute(
-            "INSERT INTO users (username, password_hash, planner_id, user_db_json) VALUES (?, ?, ?, ?)",
-            (username, hash_password(password), planner_id, json.dumps({}, ensure_ascii=False)),
+            "INSERT INTO users (username, password_hash, planner_id) VALUES (?, ?, ?)",
+            # Password will be truncated internally by hash_password
+            (username, hash_password(password), planner_id),
         )
         conn.commit()
         return cur.lastrowid
@@ -104,6 +125,7 @@ def create_user(username: str, password: str, planner_id: str) -> int:
 def get_or_create_user(username: str, password: str, planner_id: str) -> int:
     existing = get_user(username)
     if existing:
+        # Verify password (will be truncated internally)
         if not verify_password(password, existing["password_hash"]):
             raise ValueError("Credenciais invalidas")
         # update planner_id if changed
@@ -112,10 +134,22 @@ def get_or_create_user(username: str, password: str, planner_id: str) -> int:
                 conn.execute("UPDATE users SET planner_id = ? WHERE id = ?", (planner_id, existing["id"]))
                 conn.commit()
         return int(existing["id"])
+    # Create user with full password (hashing will truncate internally)
     return create_user(username, password, planner_id)
 
 
 def save_attendance_overrides(user_id: int, overrides: Dict[str, Any]) -> None:
+    """
+    DEPRECATED - PHASE 3 REFACTOR
+    
+    This function persists attendance overrides as JSON blobs in
+    attendance_overrides.overrides_json column.
+    
+    REPLACEMENT: Use app.services.planner_service.save_attendance_overrides()
+    which uses AttendanceRepository to persist relational rows.
+    
+    TODO: Remove after confirming /attendance PUT uses new service layer.
+    """
     payload = json.dumps(overrides or {}, ensure_ascii=False)
     with _conn() as conn:
         for code, data in (overrides or {}).items():
@@ -127,12 +161,22 @@ def save_attendance_overrides(user_id: int, overrides: Dict[str, Any]) -> None:
                   overrides_json = excluded.overrides_json,
                   updated_at = CURRENT_TIMESTAMP
                 """,
-                (user_id, code, json.dumps(data, ensure_ascii=False)),
+                (user_id, code, json.dumps(data or {}, ensure_ascii=False)),
             )
         conn.commit()
 
 
 def load_attendance_overrides(user_id: int) -> Dict[str, Any]:
+    """
+    DEPRECATED - PHASE 3 REFACTOR
+    
+    This function reads attendance overrides from JSON blobs.
+    
+    REPLACEMENT: Use app.services.planner_service.get_attendance_overrides()
+    which uses AttendanceRepository to read relational rows.
+    
+    TODO: Remove after confirming /attendance GET uses new service layer.
+    """
     with _conn() as conn:
         rows = conn.execute(
             "SELECT course_code, overrides_json FROM attendance_overrides WHERE user_id = ?",
@@ -148,6 +192,16 @@ def load_attendance_overrides(user_id: int) -> Dict[str, Any]:
 
 
 def save_planned_courses(user_id: int, planned: Dict[str, str]) -> None:
+    """
+    DEPRECATED - PHASE 3 REFACTOR
+    
+    This function persists planned courses to the legacy planner_courses table.
+    
+    REPLACEMENT: Use app.services.planner_service.update_planned_courses()
+    which uses PlannerRepository to persist to planned_courses table.
+    
+    TODO: Remove after confirming /planner PUT uses new service layer.
+    """
     with _conn() as conn:
         _ensure_planner_courses_table(conn)
         conn.execute("DELETE FROM planner_courses WHERE user_id = ?", (user_id,))
@@ -165,6 +219,16 @@ def save_planned_courses(user_id: int, planned: Dict[str, str]) -> None:
 
 
 def load_planned_courses(user_id: int) -> Dict[str, str]:
+    """
+    DEPRECATED - PHASE 3 REFACTOR
+    
+    This function reads from the legacy planner_courses table.
+    
+    REPLACEMENT: Use PlannerRepository.list_planned_courses() directly.
+    
+    TODO: Remove after confirming /planner GET uses new service layer.
+    Note: Still used in /auth/login for backward compatibility with session_store.
+    """
     with _conn() as conn:
         _ensure_planner_courses_table(conn)
         rows = conn.execute(

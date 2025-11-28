@@ -5,9 +5,10 @@ from typing import Any, Dict, Optional
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel
+from sqlalchemy.orm import Session
 
-from app.api.deps import require_session
-from app.db.user_store import save_planned_courses
+from app.api.deps import require_session, require_user, get_db
+from app.services import planner_service
 
 router = APIRouter()
 bearer_scheme = HTTPBearer(auto_error=False)
@@ -18,74 +19,43 @@ class PlannerPayload(BaseModel):
     semester: Optional[str] = None
 
 
-def _normalize_code_key(value: Any) -> str:
-    text = str(value or "").strip()
-    return "".join(text.split()).upper()
-
-
-def _normalize_code_display(value: Any) -> str:
-    return str(value or "").strip()
-
-
-def _extract_planned_courses(payload: Dict[str, Any]) -> Dict[str, str]:
-    planned_codes = payload.get("planned_codes")
-    planned_map: Dict[str, Dict[str, str]] = {}
-    if isinstance(planned_codes, list):
-        for code in planned_codes:
-            display = _normalize_code_display(code)
-            if not display:
-                continue
-            key = _normalize_code_key(display)
-            planned_map[key] = {"display": display, "turma": ""}
-
-    curriculum = payload.get("curriculum")
-    if isinstance(curriculum, list):
-        for course in curriculum:
-            if not isinstance(course, dict):
-                continue
-            code_value = course.get("codigo") or course.get("sigla")
-            display = _normalize_code_display(code_value)
-            if not display:
-                continue
-            key = _normalize_code_key(display)
-            offers = course.get("offers")
-            selected_turma = ""
-            if isinstance(offers, list):
-                for offer in offers:
-                    if not isinstance(offer, dict):
-                        continue
-                    if offer.get("adicionado"):
-                        selected_turma = _normalize_code_display(offer.get("turma"))
-                        break
-                else:
-                    for offer in offers:
-                        if isinstance(offer, dict):
-                            selected_turma = _normalize_code_display(offer.get("turma"))
-                            break
-            if key in planned_map:
-                planned_map[key]["turma"] = selected_turma
-            elif selected_turma or any(
-                isinstance(offer, dict) and offer.get("adicionado") for offer in (offers or [])
-            ):
-                planned_map[key] = {"display": display, "turma": selected_turma}
-
-    return {
-        entry["display"]: entry["turma"]
-        for entry in planned_map.values()
-        if entry["display"]
-    }
-
-
 @router.get("/")
-def get_planner(credentials: HTTPAuthorizationCredentials | None = Depends(bearer_scheme)):
-    session, _ = require_session(credentials)
-    return session.serialize_planner()
+def get_planner(
+    credentials: HTTPAuthorizationCredentials | None = Depends(bearer_scheme),
+    db: Session = Depends(get_db),
+):
+    """
+    Get planner state (original/modified/current payloads + planned_courses).
+    
+    PHASE 3 REFACTOR: Computes payloads from relational tables,
+    no longer reads from planner JSON blobs.
+    """
+    # Get user from token (skip session_store for now)
+    from app.api.deps import require_access_payload
+    jwt_payload = require_access_payload(credentials)
+    user_id = jwt_payload.get("uid")
+    planner_id = jwt_payload.get("planner_id", "")
+    
+    if not user_id:
+        raise HTTPException(status_code=401, detail="Token sem user_id")
+    
+    # Build planner response from relational state
+    response = planner_service.build_planner_response(
+        session=db,
+        user_id=user_id,
+        planner_id=planner_id,
+    )
+    
+    return response
 
 
 @router.post("/refresh")
 def refresh_planner(credentials: HTTPAuthorizationCredentials | None = Depends(bearer_scheme)):
-    # Sem credenciais do GDE armazenadas, o refresh exige novo login.
-    require_session(credentials)
+    """
+    Refresh requires re-login (GDE credentials not stored).
+    """
+    from app.api.deps import require_access_payload
+    require_access_payload(credentials)
     raise HTTPException(
         status_code=status.HTTP_400_BAD_REQUEST,
         detail="Refaca o login para atualizar o planner (credenciais nao sao armazenadas).",
@@ -93,8 +63,37 @@ def refresh_planner(credentials: HTTPAuthorizationCredentials | None = Depends(b
 
 
 @router.put("/modified")
-def save_modified_planner(payload: PlannerPayload, credentials: HTTPAuthorizationCredentials | None = Depends(bearer_scheme)):
-    session, _ = require_session(credentials)
-    session.modified_payload = payload.payload
-    save_planned_courses(session.user_id, _extract_planned_courses(payload.payload))
-    return session.serialize_planner()
+def save_modified_planner(
+    payload: PlannerPayload,
+    credentials: HTTPAuthorizationCredentials | None = Depends(bearer_scheme),
+    db: Session = Depends(get_db),
+):
+    """
+    Save modified planner state (planned course selections).
+    
+    PHASE 3 REFACTOR: Persists to planned_courses table,
+    no longer writes planner JSON blobs.
+    """
+    from app.api.deps import require_access_payload
+    jwt_payload = require_access_payload(credentials)
+    user_id = jwt_payload.get("uid")
+    planner_id = jwt_payload.get("planner_id", "")
+    
+    if not user_id:
+        raise HTTPException(status_code=401, detail="Token sem user_id")
+    
+    # Update planned courses via repository
+    planner_service.update_planned_courses(
+        session=db,
+        user_id=user_id,
+        planned_payload=payload.payload,
+    )
+    
+    # Return fresh planner view
+    response = planner_service.build_planner_response(
+        session=db,
+        user_id=user_id,
+        planner_id=planner_id,
+    )
+    
+    return response

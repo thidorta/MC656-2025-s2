@@ -5,15 +5,16 @@ import logging
 from fastapi import APIRouter, HTTPException, status, Depends
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel
+from sqlalchemy.orm import Session
 
 from app.services.gde_snapshot import fetch_user_db_with_credentials
+from app.services import planner_service
 from app.db.user_store import (
     get_user,
     get_user_by_id,
     create_user,
     update_user_password,
     update_user_planner,
-    update_user_snapshot,
     load_planned_courses,
 )
 from app.services.session_store import get_session_store
@@ -24,7 +25,7 @@ from app.utils.security import (
     verify_password,
     hash_password,
 )
-from app.api.deps import require_refresh_payload, require_access_payload
+from app.api.deps import require_refresh_payload, require_access_payload, get_db
 
 router = APIRouter()
 bearer_scheme = HTTPBearer(auto_error=False)
@@ -78,33 +79,64 @@ async def register(payload: RegisterRequest):
 
 
 @router.post("/login", response_model=LoginResponse)
-async def login(payload: LoginRequest):
+async def login(payload: LoginRequest, db: Session = Depends(get_db)):
     try:
         if not payload.username or not payload.password:
             raise HTTPException(status_code=400, detail="Credenciais obrigatorias")
 
         logger.info("[auth.login] user=%s starting login", payload.username)
+        logger.debug("[auth.login] raw password length=%s", len(payload.password))
         user_row = get_user(payload.username)
         if user_row:
             logger.info("[auth.login] user found id=%s planner=%s", user_row["id"], user_row["planner_id"])
-            if not verify_password(payload.password, user_row["password_hash"]):
-                logger.warning("[auth.login] invalid local password for user=%s", payload.username)
-                raise HTTPException(status_code=401, detail="Credenciais invalidas")
-        # valida credenciais no GDE e obtém dados
-        planner_id, user_db, _ = fetch_user_db_with_credentials(payload.username, payload.password)
+            # Verify against local hash (password will be truncated internally by verify_password)
+            try:
+                local_ok = verify_password(payload.password, user_row["password_hash"]) if user_row.get("password_hash") else False
+            except Exception as e:
+                logger.warning("[auth.login] local verify raised %s: %s", type(e).__name__, e)
+                local_ok = False
+            if not local_ok:
+                logger.warning("[auth.login] local password mismatch for user=%s; will validate via GDE and refresh local hash on success", payload.username)
+        
+        # Validate credentials against GDE and fetch snapshot
+        # Send full password to GDE
+        planner_id, user_db, gde_payload = fetch_user_db_with_credentials(payload.username, payload.password)
         logger.info("[auth.login] GDE ok planner_id=%s", planner_id)
+        
         if not user_row:
-            user_id = create_user(payload.username, payload.password, planner_id)
+            # Create user with full password (hashing will truncate internally)
+            try:
+                user_id = create_user(payload.username, payload.password, planner_id)
+            except Exception as e:
+                logger.exception("[auth.login] create_user failed for user=%s: %s", payload.username, e)
+                raise HTTPException(status_code=500, detail=f"Erro interno ao criar usuario: {e}")
             user_row = get_user_by_id(user_id)
             logger.info("[auth.login] created user id=%s", user_id)
         else:
             if planner_id and user_row["planner_id"] != planner_id:
                 update_user_planner(user_row["id"], planner_id)
                 logger.info("[auth.login] updated planner_id for user id=%s -> %s", user_row["id"], planner_id)
+            # If local verify failed earlier, refresh local hash now that GDE validated credentials
+            if not local_ok:
+                try:
+                    new_hash = hash_password(payload.password)
+                    update_user_password(user_row["id"], new_hash)
+                    logger.info("[auth.login] refreshed local password hash for user id=%s after GDE validation", user_row["id"])
+                except Exception as e:
+                    logger.warning("[auth.login] failed to refresh local password hash for user id=%s: %s", user_row["id"], e)
 
-        # atualiza snapshot persistente para uso em /user-db mesmo sem sessao em memoria
-        update_user_snapshot(user_row["id"], user_db)
+        # PHASE 3 REFACTOR: Use relational repositories instead of JSON blobs
+        # Save GDE snapshot to relational tables
+        planner_service.save_gde_snapshot(
+            session=db,
+            user_id=user_row["id"],
+            planner_id=planner_id,
+            gde_payload=gde_payload,
+            user_db=user_db,
+        )
+        logger.info("[auth.login] saved relational snapshot for user id=%s", user_row["id"])
 
+        # Create in-memory session (for backward compatibility with session_store)
         store = get_session_store()
         planned_courses = load_planned_courses(int(user_row["id"]))
         session = store.create_session(
@@ -114,8 +146,19 @@ async def login(payload: LoginRequest):
             original_payload=user_db,
             planned_courses=planned_courses,
         )
-        access_token = create_access_token({"uid": user_row["id"], "sub": str(user_row["id"]), "planner_id": planner_id, "sid": session.token})
-        refresh_token = create_refresh_token({"uid": user_row["id"], "sub": str(user_row["id"]), "planner_id": planner_id, "sid": session.token})
+        
+        access_token = create_access_token({
+            "uid": user_row["id"],
+            "sub": str(user_row["id"]),
+            "planner_id": planner_id,
+            "sid": session.token
+        })
+        refresh_token = create_refresh_token({
+            "uid": user_row["id"],
+            "sub": str(user_row["id"]),
+            "planner_id": planner_id,
+            "sid": session.token
+        })
         logger.info("[auth.login] success user id=%s sid=%s", user_row["id"], session.token)
 
         return LoginResponse(
@@ -166,8 +209,10 @@ async def change_password(payload: ChangePasswordRequest, credentials: HTTPAutho
     if not user_id:
         raise HTTPException(status_code=401, detail="Token sem user_id")
     user_row = get_user_by_id(int(user_id))
+    # Verify current password (will be truncated internally)
     if not user_row or not verify_password(payload.current_password, user_row["password_hash"]):
         raise HTTPException(status_code=401, detail="Senha atual incorreta")
+    # Hash new password (will be truncated internally)
     new_hash = hash_password(payload.new_password)
     update_user_password(user_id, new_hash)
     return {"status": "ok"}

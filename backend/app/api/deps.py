@@ -1,10 +1,14 @@
 from __future__ import annotations
 
+from typing import Generator
+
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from sqlalchemy.orm import Session
 
 from app.services.session_store import get_session_store
 from app.utils.security import decode_token
+from app.db.session import get_db
 
 bearer_scheme = HTTPBearer(auto_error=False)
 
