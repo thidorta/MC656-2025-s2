@@ -85,25 +85,45 @@ async def login(payload: LoginRequest, db: Session = Depends(get_db)):
             raise HTTPException(status_code=400, detail="Credenciais obrigatorias")
 
         logger.info("[auth.login] user=%s starting login", payload.username)
+        logger.debug("[auth.login] raw password length=%s", len(payload.password))
         user_row = get_user(payload.username)
         if user_row:
             logger.info("[auth.login] user found id=%s planner=%s", user_row["id"], user_row["planner_id"])
-            if not verify_password(payload.password, user_row["password_hash"]):
-                logger.warning("[auth.login] invalid local password for user=%s", payload.username)
-                raise HTTPException(status_code=401, detail="Credenciais invalidas")
+            # Verify against local hash (password will be truncated internally by verify_password)
+            try:
+                local_ok = verify_password(payload.password, user_row["password_hash"]) if user_row.get("password_hash") else False
+            except Exception as e:
+                logger.warning("[auth.login] local verify raised %s: %s", type(e).__name__, e)
+                local_ok = False
+            if not local_ok:
+                logger.warning("[auth.login] local password mismatch for user=%s; will validate via GDE and refresh local hash on success", payload.username)
         
         # Validate credentials against GDE and fetch snapshot
+        # Send full password to GDE
         planner_id, user_db, gde_payload = fetch_user_db_with_credentials(payload.username, payload.password)
         logger.info("[auth.login] GDE ok planner_id=%s", planner_id)
         
         if not user_row:
-            user_id = create_user(payload.username, payload.password, planner_id)
+            # Create user with full password (hashing will truncate internally)
+            try:
+                user_id = create_user(payload.username, payload.password, planner_id)
+            except Exception as e:
+                logger.exception("[auth.login] create_user failed for user=%s: %s", payload.username, e)
+                raise HTTPException(status_code=500, detail=f"Erro interno ao criar usuario: {e}")
             user_row = get_user_by_id(user_id)
             logger.info("[auth.login] created user id=%s", user_id)
         else:
             if planner_id and user_row["planner_id"] != planner_id:
                 update_user_planner(user_row["id"], planner_id)
                 logger.info("[auth.login] updated planner_id for user id=%s -> %s", user_row["id"], planner_id)
+            # If local verify failed earlier, refresh local hash now that GDE validated credentials
+            if not local_ok:
+                try:
+                    new_hash = hash_password(payload.password)
+                    update_user_password(user_row["id"], new_hash)
+                    logger.info("[auth.login] refreshed local password hash for user id=%s after GDE validation", user_row["id"])
+                except Exception as e:
+                    logger.warning("[auth.login] failed to refresh local password hash for user id=%s: %s", user_row["id"], e)
 
         # PHASE 3 REFACTOR: Use relational repositories instead of JSON blobs
         # Save GDE snapshot to relational tables
@@ -189,8 +209,10 @@ async def change_password(payload: ChangePasswordRequest, credentials: HTTPAutho
     if not user_id:
         raise HTTPException(status_code=401, detail="Token sem user_id")
     user_row = get_user_by_id(int(user_id))
+    # Verify current password (will be truncated internally)
     if not user_row or not verify_password(payload.current_password, user_row["password_hash"]):
         raise HTTPException(status_code=401, detail="Senha atual incorreta")
+    # Hash new password (will be truncated internally)
     new_hash = hash_password(payload.new_password)
     update_user_password(user_id, new_hash)
     return {"status": "ok"}

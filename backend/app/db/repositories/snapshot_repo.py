@@ -108,7 +108,7 @@ class SnapshotRepository:
                 nome=disc_data.get("nome"),
                 creditos=disc_data.get("creditos", 0),
                 catalog_year=disc_data.get("catalogo"),
-                tipo=disc_data.get("tipo", ""),
+                tipo=disc_data.get("tipo") or "",  # Handle None values
                 semestre_sugerido=disc_data.get("semestre"),
                 cp_group=str(disc_data.get("cp_group")) if disc_data.get("cp_group") is not None else None,
                 has_completed=1 if disc_data.get("tem") else 0,

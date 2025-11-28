@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 # revision identifiers, used by Alembic.
 revision = "0006_drop_legacy_json_structures"
-down_revision = "0005_drop_legacy_planner_json"
+down_revision = "0005"
 branch_labels = None
 depends_on = None
 

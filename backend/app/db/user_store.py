@@ -114,8 +114,9 @@ def get_user_snapshot(user_id: int) -> tuple[Dict[str, Any], Optional[str]]:
 def create_user(username: str, password: str, planner_id: str) -> int:
     with _conn() as conn:
         cur = conn.execute(
-            "INSERT INTO users (username, password_hash, planner_id, user_db_json) VALUES (?, ?, ?, ?)",
-            (username, hash_password(password), planner_id, json.dumps({}, ensure_ascii=False)),
+            "INSERT INTO users (username, password_hash, planner_id) VALUES (?, ?, ?)",
+            # Password will be truncated internally by hash_password
+            (username, hash_password(password), planner_id),
         )
         conn.commit()
         return cur.lastrowid
@@ -124,6 +125,7 @@ def create_user(username: str, password: str, planner_id: str) -> int:
 def get_or_create_user(username: str, password: str, planner_id: str) -> int:
     existing = get_user(username)
     if existing:
+        # Verify password (will be truncated internally)
         if not verify_password(password, existing["password_hash"]):
             raise ValueError("Credenciais invalidas")
         # update planner_id if changed
@@ -132,6 +134,7 @@ def get_or_create_user(username: str, password: str, planner_id: str) -> int:
                 conn.execute("UPDATE users SET planner_id = ? WHERE id = ?", (planner_id, existing["id"]))
                 conn.commit()
         return int(existing["id"])
+    # Create user with full password (hashing will truncate internally)
     return create_user(username, password, planner_id)
 
 
