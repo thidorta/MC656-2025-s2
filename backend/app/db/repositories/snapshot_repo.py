@@ -54,6 +54,7 @@ class SnapshotRepository:
         user_id: int,
         planner_id: str,
         user_db_payload: Dict[str, Any],
+        gde_payload: Optional[Dict[str, Any]] = None,
     ) -> GdeSnapshotModel:
         """
         Create a new immutable snapshot from GDE data.
@@ -143,7 +144,7 @@ class SnapshotRepository:
                     offer_external_id=str(offer_data.get("id")) if offer_data.get("id") is not None else None,
                     semester=user_db_payload.get("current_period"),
                     source="gde_snapshot",
-                    metadata=json.dumps({k: v for k, v in offer_data.items() if k not in ("events", "turma", "id", "adicionado")}),
+                    offer_metadata=json.dumps({k: v for k, v in offer_data.items() if k not in ("events", "turma", "id", "adicionado")}),
                     created_at=now,
                 )
                 session.add(offer)

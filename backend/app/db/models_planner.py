@@ -10,12 +10,25 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
-from sqlalchemy import Column, Integer, String, Text, Float, ForeignKey, UniqueConstraint
+from sqlalchemy import Column, Integer, String, Text, Float, ForeignKey, UniqueConstraint, Table
 from sqlalchemy.orm import relationship, declarative_base
 
 # Base declarative class (shared across the app)
 # If you have an existing Base, import it instead
 Base = declarative_base()
+
+# Minimal 'users' table in metadata to satisfy FK resolution during ORM flushes.
+# The actual table is created by Alembic migration 0001 and managed outside ORM.
+# We declare only the primary key and common columns; this avoids NoReferencedTableError.
+users_table = Table(
+    "users",
+    Base.metadata,
+    Column("id", Integer, primary_key=True),
+    Column("username", String, nullable=True),
+    Column("password_hash", String, nullable=True),
+    Column("planner_id", String, nullable=True),
+    extend_existing=True,
+)
 
 
 def _utcnow_iso() -> str:
@@ -201,8 +214,8 @@ class CourseOfferModel(Base):
     semester = Column(String, nullable=True)
     source = Column(String, nullable=False)  # "catalog" | "gde_snapshot"
     
-    # Display metadata (JSON)
-    metadata = Column(Text, nullable=True)
+    # Display metadata (JSON) - renamed from 'metadata' to avoid SQLAlchemy conflict
+    offer_metadata = Column(Text, nullable=True)
     
     created_at = Column(String, nullable=False, default=_utcnow_iso)
     
@@ -218,7 +231,7 @@ class CourseOfferModel(Base):
     def to_offer_dict(self, adicionado: bool = False, events: Optional[List[Dict]] = None) -> Dict[str, Any]:
         """Convert to API offer format."""
         import json
-        metadata = json.loads(self.metadata) if self.metadata else {}
+        metadata = json.loads(self.offer_metadata) if self.offer_metadata else {}
         return {
             "id": self.offer_external_id,
             "turma": self.turma,

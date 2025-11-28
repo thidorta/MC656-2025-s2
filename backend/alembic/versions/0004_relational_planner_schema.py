@@ -121,8 +121,8 @@ def upgrade():
         sa.Column("semester", sa.String, nullable=True),
         sa.Column("source", sa.String, nullable=False),  # "catalog" | "gde_snapshot"
         
-        # Display metadata (JSON)
-        sa.Column("metadata", sa.Text, nullable=True),
+        # Display metadata (JSON) - renamed from 'metadata' to avoid SQLAlchemy reserved word
+        sa.Column("offer_metadata", sa.Text, nullable=True),
         
         sa.Column("created_at", sa.String, nullable=False),
     )

@@ -158,7 +158,7 @@ def save_attendance_overrides(user_id: int, overrides: Dict[str, Any]) -> None:
                   overrides_json = excluded.overrides_json,
                   updated_at = CURRENT_TIMESTAMP
                 """,
-                (user_id, code, json.dumps(data, ensure_ascii=False)),
+                (user_id, code, json.dumps(data or {}, ensure_ascii=False)),
             )
         conn.commit()
 

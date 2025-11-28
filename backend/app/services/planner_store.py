@@ -3,18 +3,26 @@ DEPRECATED - PHASE 3 REFACTOR
 
 This module is DEPRECATED and should not be used in new code.
 It persists planner data as mutable JSON blobs which causes:
-- Data corruption risk with concurrent modifications
-- No historical tracking of planner changes  
-- Poor queryability (can't efficiently find who planned what)
-- Schema validation issues
 
 REPLACEMENT: Use app.services.planner_service with relational repositories:
-- SnapshotRepository for immutable GDE snapshots
-- CurriculumRepository for curriculum/prereqs/offers
-- PlannerRepository for planned course selections
-- AttendanceRepository for attendance overrides
 
 TODO: Remove this file after confirming all endpoints use new service layer.
+"""
+"""
+Legacy planner_store module
+
+LEGACY STILL IN USE:
+- This module previously handled JSON blob persistence for planner payloads.
+- Phase 3 refactor replaces JSON writes with relational repositories via planner_service.
+
+Cleanup guidance:
+- Do not write any mutable JSON blobs here.
+- If any caller still imports functions from this module, redirect them to
+    `app.services.planner_service` equivalents and remove legacy helpers.
+
+Safe delegates:
+- For reading current planner view, use `planner_service.build_planner_response`.
+- For saving modified planner, use `planner_service.update_planned_courses`.
 """
 from __future__ import annotations
 
@@ -114,6 +122,8 @@ class PlannerStore:
         self.conn.close()
 
     def load(self, planner_id: str) -> Dict[str, Any]:
+        # LEGACY STILL IN USE: Reads planner_original/planner_modified JSON blobs from local SQLite.
+        # Use planner_service.build_planner_response for relational-only source of truth.
         original = self._fetch_one("planner_original", planner_id)
         modified = self._fetch_one("planner_modified", planner_id)
         return {
@@ -123,6 +133,8 @@ class PlannerStore:
         }
 
     def refresh_from_user_db(self, planner_id: str) -> Dict[str, Any]:
+        # LEGACY STILL IN USE: Writes planner_original/planner_modified JSON blobs.
+        # Replace with planner_service.save_gde_snapshot + relational rebuild of payloads.
         payload, semester = _load_user_db_payload(planner_id, self.settings.user_db_root)
         self._upsert("planner_original", planner_id, semester, payload)
         existing_modified = self._fetch_one("planner_modified", planner_id)
@@ -142,14 +154,16 @@ class PlannerStore:
         return self.load(planner_id)
 
     def save_modified(self, planner_id: str, payload: Dict[str, Any], semester: Optional[str] = None) -> Dict[str, Any]:
+        # LEGACY STILL IN USE: Persists modified planner JSON and derived events locally.
+        # New flow should call planner_service.update_planned_courses and rebuild planner via service.
         sem = semester or _extract_semester(payload)
-        self._upsert("planner_modified", planner_id, sem, payload)
         self._persist_events(planner_id, payload)
         return self.load(planner_id)
 
     # ---------------- internal helpers ----------------
 
     def _fetch_one(self, table: str, planner_id: str) -> Optional[Dict[str, Any]]:
+        # LEGACY STILL IN USE: Reads JSON blob from legacy planner_* tables.
         row = self.conn.execute(
             f"SELECT planner_id, semester, payload, updated_at FROM {table} WHERE planner_id = ?",
             (planner_id,),
@@ -172,6 +186,8 @@ class PlannerStore:
         return any(isinstance(c, dict) and c.get("offers") for c in curriculum)
 
     def _persist_events(self, planner_id: str, payload: Dict[str, Any]) -> None:
+        # LEGACY STILL IN USE: Derives and stores planner_events from JSON payload.
+        # In Phase 3, events are captured in OfferScheduleEventModel via SnapshotRepository.
         curriculum = payload.get("curriculum") if isinstance(payload, dict) else None
         if not isinstance(curriculum, list):
             return
@@ -237,6 +253,7 @@ class PlannerStore:
         self.conn.commit()
 
     def _upsert(self, table: str, planner_id: str, semester: str, payload: Dict[str, Any]) -> None:
+                # LEGACY STILL IN USE: Upserts JSON into planner_original/planner_modified tables.
         ts = _utcnow()
         self.conn.execute(
             f"""

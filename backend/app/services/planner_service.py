@@ -67,42 +67,31 @@ def build_user_db_from_snapshot(session: Session, user_id: int) -> Optional[Dict
     user_db = snapshot.to_user_db_dict()
     
     # Load curriculum disciplines with their prerequisites and offers
-    disciplines = curriculum_repo.list_disciplines_for_snapshot(session, snapshot.id)
-    prereqs_map = curriculum_repo.list_prereqs_for_curriculum_ids(
-        session,
-        [d.id for d in disciplines]
+    # Load curriculum disciplines with their prerequisites and offers
+    disciplines = curriculum_repo.list_curriculum_for_snapshot(
+        session=session,
+        user_id=user_id,
+        snapshot_id=snapshot.id,
     )
-    
-    curriculum_list = []
+    curriculum_ids = [d.id for d in disciplines]
+    prereqs_map = curriculum_repo.list_prereqs_for_curriculum_ids(session, curriculum_ids)
+    offers_map = curriculum_repo.list_offers_for_curriculum(session, curriculum_ids)
+    # Gather all offer ids to fetch events in batch
+    all_offer_ids = [offer.id for offers in offers_map.values() for offer in offers]
+    events_map = curriculum_repo.list_events_for_offers(session, all_offer_ids)
+
+    curriculum_list: List[Dict[str, Any]] = []
     for disc in disciplines:
-        disc_dict = disc.to_curriculum_dict()
-        # Add prerequisites
-        disc_dict["prereqs"] = prereqs_map.get(disc.id, [])
-        # Add offers
-        offers = curriculum_repo.list_offers_for_discipline(session, disc.id)
-        if offers:
-            disc_dict["offers"] = [
-                {
-                    "id": offer.offer_id,
-                    "turma": offer.turma,
-                    "vagas": offer.vagas,
-                    "vagas_ocupadas": offer.vagas_ocupadas,
-                    "professor": offer.professor,
-                    "observacao": offer.observacao,
-                    "events": [
-                        {
-                            "title": evt.title,
-                            "start": evt.start_iso,
-                            "end": evt.end_iso,
-                            "day": evt.day_of_week,
-                            "start_hour": evt.start_hour,
-                            "end_hour": evt.end_hour,
-                        }
-                        for evt in curriculum_repo.list_events_for_offer(session, offer.id)
-                    ],
-                }
-                for offer in offers
-            ]
+        # Build offers list for this discipline
+        disc_offers = []
+        for offer in offers_map.get(disc.id, []):
+            offer_events = [evt.to_event_dict() for evt in events_map.get(offer.id, [])]
+            disc_offers.append(offer.to_offer_dict(events=offer_events))
+
+        disc_dict = disc.to_curriculum_dict(
+            prereqs=prereqs_map.get(disc.id, []),
+            offers=disc_offers,
+        )
         curriculum_list.append(disc_dict)
     
     user_db["curriculum"] = curriculum_list
@@ -134,26 +123,26 @@ def build_planner_response(session: Session, user_id: int, planner_id: str) -> D
     """
     snapshot_repo = SnapshotRepository()
     planner_repo = PlannerRepository()
+
+    # Always load planned courses map (even without a snapshot)
+    planned_entries = planner_repo.list_planned_courses(session, user_id)
+    planned_courses = {
+        entry.codigo: (entry.turma or "")
+        for entry in planned_entries
+        if entry.turma  # Only include courses with selected turma
+    }
     
     # Get base snapshot (original_payload)
     original_payload = build_user_db_from_snapshot(session, user_id)
     if not original_payload:
-        # No snapshot yet, return empty structure
+        # No snapshot yet: return empty payloads but include planned_courses
         return {
             "planner_id": planner_id,
             "original_payload": {},
             "modified_payload": {},
             "current_payload": {},
-            "planned_courses": {},
+            "planned_courses": planned_courses,
         }
-    
-    # Get planned courses
-    planned_entries = planner_repo.list_planned_courses(session, user_id)
-    planned_courses = {
-        entry.codigo: entry.turma or ""
-        for entry in planned_entries
-        if entry.turma  # Only include courses with selected turma
-    }
     
     # Build modified_payload: apply planned selections to curriculum
     modified_payload = _apply_planned_to_payload(original_payload, planned_entries)
@@ -235,7 +224,7 @@ def save_gde_snapshot(
         user_id=user_id,
         planner_id=planner_id,
         gde_payload=gde_payload,
-        user_db=user_db,
+        user_db_payload=user_db,
     )
     session.commit()
 
