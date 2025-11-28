@@ -1,3 +1,21 @@
+"""
+DEPRECATED - PHASE 3 REFACTOR
+
+This module is DEPRECATED and should not be used in new code.
+It persists planner data as mutable JSON blobs which causes:
+- Data corruption risk with concurrent modifications
+- No historical tracking of planner changes  
+- Poor queryability (can't efficiently find who planned what)
+- Schema validation issues
+
+REPLACEMENT: Use app.services.planner_service with relational repositories:
+- SnapshotRepository for immutable GDE snapshots
+- CurriculumRepository for curriculum/prereqs/offers
+- PlannerRepository for planned course selections
+- AttendanceRepository for attendance overrides
+
+TODO: Remove this file after confirming all endpoints use new service layer.
+"""
 from __future__ import annotations
 
 import json

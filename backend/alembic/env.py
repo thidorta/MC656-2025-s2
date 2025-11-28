@@ -8,8 +8,7 @@ from alembic import context
 from sqlalchemy import create_engine, pool
 
 BASE_DIR = pathlib.Path(__file__).resolve().parents[1]
-PROJECT_ROOT = BASE_DIR.parent
-sys.path.append(str(PROJECT_ROOT))
+sys.path.insert(0, str(BASE_DIR))
 
 from app.config.settings import get_settings  # noqa: E402
 
