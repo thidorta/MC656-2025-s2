@@ -78,6 +78,8 @@ class SnapshotRepository:
         now = _utcnow_iso()
         
         # 1. Create snapshot metadata
+        # NOTE: planejado_metadata is DEPRECATED and always set to empty.
+        # Planning state comes ONLY from planned_courses table (user actions).
         snapshot = GdeSnapshotModel(
             user_id=user_id,
             planner_id=planner_id,
@@ -90,7 +92,7 @@ class SnapshotRepository:
             current_period=user_db_payload.get("current_period"),
             cp_value=user_db_payload.get("cp"),
             integralizacao_metadata=json.dumps(user_db_payload.get("integralizacao_meta", {})),
-            planejado_metadata=json.dumps(user_db_payload.get("planejado", {})),
+            planejado_metadata="{}",  # DEPRECATED: Always empty. Planning comes from planned_courses table only.
             faltantes_metadata=json.dumps(user_db_payload.get("faltantes", {})),
             created_at=now,
         )

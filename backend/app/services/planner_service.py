@@ -116,10 +116,13 @@ def build_planner_response(session: Session, user_id: int, planner_id: str) -> D
     }
     
     Strategy:
-    - original_payload = latest GDE snapshot without user modifications
-    - modified_payload = original + applied planned_courses selections
+    - original_payload = latest GDE snapshot WITHOUT any planning data
+    - modified_payload = original + applied planned_courses selections from DB
     - current_payload = modified if has user changes, else original
-    - planned_courses = map from PlannedCourse rows
+    - planned_courses = map from PlannedCourse rows ONLY (user's explicit selections)
+    
+    IMPORTANT: planejado_metadata from GDE snapshot is IGNORED.
+    Planning state comes ONLY from planned_courses table (user actions via PUT /planner).
     """
     snapshot_repo = SnapshotRepository()
     planner_repo = PlannerRepository()
