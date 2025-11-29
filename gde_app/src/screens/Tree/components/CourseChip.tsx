@@ -32,41 +32,19 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
     return prereqList.length > 0 ? prereqList : ['sem requisitos'];
   };
 
-  // Determine styling based on status (iOS minimal palette)
-  const containerStatusStyle = (): { backgroundColor: string; borderColor: string } => {
-    // planned selection overrides
-    if (course.gde_plan_status === 1) {
-      return {
-        backgroundColor: palette.color_planned_bg,
-        borderColor: palette.color_planned_border,
-      };
-    }
+  // Use backend color_hex for background
+  const getBackgroundColor = (): string => {
+    return course.color_hex || palette.card;
+  };
 
-    if (course.final_status === 'completed') {
-      return {
-        backgroundColor: palette.color_completed_bg,
-        borderColor: palette.color_completed_border,
-      };
+  // Determinar cor do texto com base no brilho do background
+  const getTextColor = (): string => {
+    const bgColor = course.color_hex || palette.card;
+    // Cores claras do backend: #FFFF66 (amarelo), #DDDDDD (cinza claro)
+    if (bgColor === '#FFFF66' || bgColor === '#DDDDDD' || bgColor === '#55CC55') {
+      return '#000000'; // texto escuro para fundos claros
     }
-    if (course.final_status === 'eligible_and_offered') {
-      return {
-        backgroundColor: palette.color_eligible_offered_bg,
-        borderColor: palette.color_eligible_offered_border,
-      };
-    }
-    if (course.final_status === 'eligible_not_offered') {
-      return {
-        backgroundColor: palette.color_eligible_not_offered_bg,
-        borderColor: palette.color_eligible_not_offered_border,
-      };
-    }
-    if (course.final_status === 'not_eligible') {
-      return {
-        backgroundColor: palette.color_not_eligible_bg,
-        borderColor: palette.color_not_eligible_border,
-      };
-    }
-    return { backgroundColor: palette.surface2, borderColor: palette.border };
+    return palette.text; // texto claro para fundos escuros
   };
 
   const iconForStatus = () => {
@@ -77,23 +55,24 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
     return null;
   };
 
-  // Patch 1 — status icons
+  // Status icons with size 14
   let statusIcon: React.ReactNode = null;
+  const iconColor = getTextColor();
   if (course.final_status === 'completed') {
     statusIcon = (
-      <MaterialCommunityIcons name="check-circle-outline" size={20} color={palette.success} />
+      <MaterialCommunityIcons name="check-circle-outline" size={14} color={iconColor} />
     );
   } else if (course.final_status === 'eligible_and_offered') {
     statusIcon = (
-      <MaterialCommunityIcons name="book-check-outline" size={20} color={palette.accent} />
+      <MaterialCommunityIcons name="book-check-outline" size={14} color={iconColor} />
     );
   } else if (course.final_status === 'eligible_not_offered') {
     statusIcon = (
-      <MaterialCommunityIcons name="calendar-clock" size={20} color={palette.warning} />
+      <MaterialCommunityIcons name="calendar-clock" size={14} color={iconColor} />
     );
   } else if (course.final_status === 'not_eligible') {
     statusIcon = (
-      <MaterialCommunityIcons name="close-circle-outline" size={20} color={palette.danger} />
+      <MaterialCommunityIcons name="close-circle-outline" size={14} color={iconColor} />
     );
   }
 
@@ -102,16 +81,25 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
       activeOpacity={0.9}
       style={[
         styles.chip,
-        containerStatusStyle(),
+        {
+          backgroundColor: getBackgroundColor(),
+          borderColor: palette.border,
+        },
         isActive && styles.activeChip,
       ]}
       onPress={() => onToggle(course)}
     >
       <View style={styles.chipContent}>
-        <Text style={styles.chipText}>{course.code}</Text>
         {statusIcon}
+        <Text style={[styles.chipText, { color: getTextColor() }]}>{course.code}</Text>
+        {course.is_offered === 1 && <View style={styles.offeredBadge} />}
+        {course.final_status === 'eligible_and_offered' && <View style={styles.eligibleOfferedBadge} />}
       </View>
-      {!course.is_offered && <Text style={styles.metaText}>Nao ofertada</Text>}
+      {course.prereq_status === 'missing' ? (
+        <Text style={[styles.metaText, { color: getTextColor(), opacity: 0.7 }]}>Falta pré-requisitos</Text>
+      ) : !course.is_offered ? (
+        <Text style={[styles.metaText, { color: getTextColor(), opacity: 0.7 }]}>Não ofertada</Text>
+      ) : null}
       {isActive && (
         <View style={styles.tooltip}>
           <Text style={styles.tooltipLabel}>Requisitos</Text>
@@ -129,26 +117,23 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
 
 const styles = StyleSheet.create({
   chip: {
-    backgroundColor: palette.surface2,
-    borderRadius: 12,
-    paddingVertical: 10,
-    paddingHorizontal: 12,
-    minWidth: 92,
-    minHeight: 78,
+    backgroundColor: palette.card,
+    borderRadius: 14,
+    paddingVertical: 8,
+    paddingHorizontal: 10,
+    minWidth: 130,
+    minHeight: 70,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: palette.border,
+    borderColor: palette.cardBorder,
     position: 'relative',
     overflow: 'visible',
     flexGrow: 1,
-    width: '100%',
+    width: '46%',
+    maxWidth: 170,
     flexDirection: 'row',
-    gap: 10,
-    shadowColor: '#000',
-    shadowOpacity: 0.25,
-    shadowRadius: 12,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 6,
+    gap: 8,
+    marginBottom: 10,
   },
   currentChip: {
     borderColor: palette.accentBorder,
@@ -173,12 +158,13 @@ const styles = StyleSheet.create({
   },
   chipText: {
     color: palette.text,
-    fontSize: 14,
-    fontWeight: '700',
-    letterSpacing: 0.2,
+    fontSize: 13,
+    fontWeight: '600',
+    letterSpacing: -0.1,
     flexShrink: 1,
     flexGrow: 1,
     flexBasis: '70%',
+    lineHeight: 16,
   },
   chipContent: {
     flexDirection: 'row',
@@ -188,11 +174,25 @@ const styles = StyleSheet.create({
   statusIcon: {
     marginLeft: 2,
   },
+  offeredBadge: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: palette.badgeOffered,
+    marginLeft: 6,
+  },
+  eligibleOfferedBadge: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: palette.badgeEligibleOffered,
+    marginLeft: 6,
+  },
   metaText: {
     color: palette.textMuted,
     fontSize: 11,
-    marginTop: 3,
-    letterSpacing: -0.1,
+    marginTop: 2,
+    letterSpacing: 0,
   },
   tooltip: {
     position: 'absolute',

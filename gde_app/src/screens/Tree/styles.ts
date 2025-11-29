@@ -2,38 +2,27 @@ import { StyleSheet } from 'react-native';
 import { spacing as baseSpacing } from '../../theme/spacing';
 
 export const palette = {
-  bg: '#0C0C0D',
-  surface: '#1A1A1C',
-  surface2: '#222225',
-  border: 'rgba(255,255,255,0.08)',
-  borderStrong: 'rgba(255,255,255,0.14)',
+  bg: '#0D0D0D',
+  surface: '#161616',
+  card: '#1C1C1E',
+  cardBorder: 'rgba(255,255,255,0.08)',
   text: '#F2F2F7',
-  textMuted: 'rgba(235,235,245,0.6)',
-  accent: '#0A84FF',
-  accentSoft: 'rgba(10,132,255,0.15)',
-  danger: '#FF453A',
-  dangerSoft: 'rgba(255,69,58,0.15)',
-  warning: '#FFD60A',
-  warningSoft: 'rgba(255,214,10,0.15)',
-  success: '#30D158',
-  successSoft: 'rgba(48,209,88,0.15)',
+  textMuted: 'rgba(242,242,247,0.6)',
+  divider: 'rgba(255,255,255,0.08)',
 
-  // TREE STATUS
-  color_completed_bg: 'rgba(48,209,88,0.18)',
-  color_completed_border: 'rgba(48,209,88,0.35)',
+  // iOS Pastel State Colors
+  completedSoft: '#2ECC71',
+  eligibleSoft: '#A3E4D7',
+  offeredSoft: '#7DCEA0',
+  notEligibleSoft: '#F5B7B1',
+
+  // Badge Colors
+  badgeCompleted: '#58D68D',
+  badgeEligibleOffered: '#ABEBC6',
+  badgeOffered: '#82E0AA',
   
-  color_eligible_offered_bg: '#1E2A38',
-  color_eligible_offered_border: 'rgba(255,255,255,0.04)',
-  
-  color_eligible_not_offered_bg: 'rgba(255,214,10,0.12)',
-  color_eligible_not_offered_border: 'rgba(255,214,10,0.35)',
-
-  color_not_eligible_bg: 'rgba(255,69,58,0.12)',
-  color_not_eligible_border: 'rgba(255,69,58,0.35)',
-
-  // planned
-  color_planned_bg: 'rgba(10,132,255,0.22)',
-  color_planned_border: 'rgba(10,132,255,0.45)',
+  // Accent
+  accent: '#5AC8FA',
 };
 
 export const spacing = (n: number) => baseSpacing(n);
@@ -84,15 +73,15 @@ export const globalStyles = StyleSheet.create({
   },
   headerTitle: {
     color: palette.text,
-    fontSize: 28,
+    fontSize: 22,
     fontWeight: '700',
-    letterSpacing: -0.5,
+    letterSpacing: -0.3,
   },
   headerDescription: {
     color: palette.textMuted,
-    fontSize: 14,
-    lineHeight: 20,
-    letterSpacing: -0.1,
+    fontSize: 13,
+    lineHeight: 18,
+    letterSpacing: 0,
   },
   scrollArea: {
     flex: 1,

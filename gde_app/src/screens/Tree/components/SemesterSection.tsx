@@ -19,6 +19,11 @@ const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCour
   const courseCount = semester.courses.length;
   const collapsed = forceExpanded ? false : isCollapsed;
 
+  // Patch 6 — Sync collapsed state with forceExpanded
+  useEffect(() => {
+    setIsCollapsed(!forceExpanded);
+  }, [forceExpanded]);
+
   return (
     <View style={styles.card}>
       <TouchableOpacity onPress={() => setIsCollapsed(!isCollapsed)} style={styles.header} activeOpacity={0.85}>
@@ -32,7 +37,7 @@ const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCour
         </View>
       </TouchableOpacity>
       {!collapsed && (
-        <View style={styles.chipGrid}>
+        <View style={styles.courseGrid}>
           {semester.courses.map((course, index) => (
             <CourseChip
               key={`${course.code}-${index}`}
@@ -47,17 +52,12 @@ const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCour
   );
 };
 
-// Patch 6 — Sync collapsed state with forceExpanded
-useEffect(() => {
-  setIsCollapsed(!forceExpanded);
-}, [forceExpanded]);
-
 const styles = StyleSheet.create({
   card: {
     backgroundColor: palette.surface,
-    borderRadius: 16,
+    borderRadius: 14,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.05)',
+    borderColor: palette.divider,
     overflow: 'hidden',
   },
   header: {
@@ -76,9 +76,9 @@ const styles = StyleSheet.create({
   },
   title: {
     color: palette.text,
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: '600',
-    letterSpacing: -0.2,
+    letterSpacing: -0.1,
   },
   headerRight: {
     flexDirection: 'row',
@@ -90,13 +90,14 @@ const styles = StyleSheet.create({
     fontSize: 13,
     letterSpacing: -0.1,
   },
-  chipGrid: {
+  courseGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     paddingHorizontal: spacing(1.5),
-    paddingBottom: spacing(1.5),
-    gap: spacing(0.9),
-    width: '100%',
+    paddingTop: spacing(1.5),
+    paddingBottom: spacing(2),
+    gap: 8,
+    justifyContent: 'space-between',
   },
 });
 

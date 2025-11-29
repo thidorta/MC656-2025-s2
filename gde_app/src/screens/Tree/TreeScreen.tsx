@@ -50,7 +50,7 @@ export default function ArvoreIntegralizacaoScreen({ navigation }: Props) {
           </TouchableOpacity>
         </View>
 
-        <ScrollView style={globalStyles.scrollArea} contentContainerStyle={globalStyles.contentContainer}>
+        <ScrollView style={globalStyles.scrollArea} contentContainerStyle={[globalStyles.contentContainer, { paddingBottom: 120 }] }>
           <View style={globalStyles.headerBlock}>
             <Text style={globalStyles.headerEyebrow}>Planejamento</Text>
             <Text style={globalStyles.headerTitle}>Arvore de Materias</Text>
@@ -147,21 +147,25 @@ export default function ArvoreIntegralizacaoScreen({ navigation }: Props) {
             </View>
             <Text style={styles.legendSubtitle}>As cores se aplicam a toda a arvore e todos os semestres.</Text>
             <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: palette.color_completed_bg }]} />
+              <View style={[styles.legendDot, { backgroundColor: '#55CC55' }]} />
               <Text style={styles.legendLabel}>Concluída</Text>
             </View>
             <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: palette.color_eligible_offered_bg }]} />
+              <View style={[styles.legendDot, { backgroundColor: '#FFFF66' }]} />
               <Text style={styles.legendLabel}>Elegível e ofertada</Text>
             </View>
             <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: palette.color_eligible_not_offered_bg }]} />
+              <View style={[styles.legendDot, { backgroundColor: '#DDDDDD' }]} />
               <Text style={styles.legendLabel}>Elegível (não ofertada)</Text>
             </View>
             <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: palette.color_not_eligible_bg }]} />
-              <Text style={styles.legendLabel}>Pré-requisitos pendentes</Text>
-            </View>
+               <View style={[styles.legendDot, { backgroundColor: '#FF6666' }]} />
+               <Text style={styles.legendLabel}>Pré-requisitos pendentes</Text>
+             </View>
+             <View style={styles.legendRow}>
+               <View style={[styles.legendDot, { backgroundColor: palette.badgeOffered }]} />
+               <Text style={styles.legendLabel}>Ofertada neste semestre</Text>
+             </View>
           </View>
         </View>
       </Modal>
@@ -180,16 +184,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing(0.5),
-    backgroundColor: palette.surface2,
+    backgroundColor: palette.card,
     paddingVertical: spacing(0.7),
     paddingHorizontal: spacing(1.1),
     borderRadius: 14,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.08)',
+    borderColor: palette.cardBorder,
   },
   pillButtonActive: {
     borderColor: palette.accent,
-    backgroundColor: palette.accentSoft,
+    backgroundColor: palette.accent,
   },
   pillButtonText: {
     color: palette.text,
@@ -203,12 +207,12 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   legendCard: {
-    backgroundColor: '#1F1F22',
-    borderTopLeftRadius: 24,
-    borderTopRightRadius: 24,
-    padding: spacing(2),
+    backgroundColor: palette.surface,
+    borderTopLeftRadius: 22,
+    borderTopRightRadius: 22,
+    padding: 18,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.1)',
+    borderColor: palette.divider,
     gap: spacing(1),
   },
   legendHeader: {
@@ -236,9 +240,9 @@ const styles = StyleSheet.create({
     paddingVertical: spacing(0.4),
   },
   legendDot: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
+    width: 12,
+    height: 12,
+    borderRadius: 6,
   },
   legendLabel: {
     color: palette.text,
