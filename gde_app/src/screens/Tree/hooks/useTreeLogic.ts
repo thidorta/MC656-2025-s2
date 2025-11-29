@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import usePlanner from './usePlanner';
 import useCurriculum from './useCurriculum';
-import { Semester } from '../types';
+import { Semester, CourseNode, TreeSnapshot } from '../types';
+import { apiService } from '../../../services/api';
 
 export default function useTreeLogic() {
   const { plannerCourses, loadingPlanner, plannerError, loadPlanner } = usePlanner();
@@ -20,22 +21,43 @@ export default function useTreeLogic() {
   const [selectedModalidade, setSelectedModalidade] = useState<string | null>(null);
   const [isCompleta, setIsCompleta] = useState<'Sim' | 'Nao'>('Nao');
 
-  const [activeCourse, setActiveCourse] = useState<{
-    code: string;
-    prereqs: string[][];
-    isCurrent?: boolean;
-    planned?: boolean;
-    missingPrereqs?: boolean;
-    notOffered?: boolean;
-  } | null>(null);
+  const [activeCourse, setActiveCourse] = useState<CourseNode | null>(null);
   const [showContext, setShowContext] = useState(true);
+  
+  // New state for tree snapshot
+  const [treeSnapshot, setTreeSnapshot] = useState<TreeSnapshot | null>(null);
+  const [loadingTree, setLoadingTree] = useState(false);
+  const [treeError, setTreeError] = useState<string | null>(null);
 
   const normalizeModalidade = (value: string | null | undefined) =>
     value && value !== '-' && value.trim() !== '' ? value : null;
 
+  // Load curriculum options and planner on mount
   useEffect(() => {
     loadCurriculumOptions().then((parsed) => loadPlanner(parsed)).catch(() => loadPlanner());
   }, []);
+
+  // Fetch tree snapshot (for "Nao" mode)
+  useEffect(() => {
+    if (isCompleta === 'Nao') {
+      const fetchTreeSnapshot = async () => {
+        setLoadingTree(true);
+        setTreeError(null);
+        try {
+          const snapshot = await apiService.fetchTreeSnapshot();
+          setTreeSnapshot(snapshot);
+        } catch (error) {
+          console.error('Failed to fetch tree snapshot:', error);
+          setTreeError(error instanceof Error ? error.message : 'Failed to fetch tree');
+          setTreeSnapshot(null);
+        } finally {
+          setLoadingTree(false);
+        }
+      };
+      
+      fetchTreeSnapshot();
+    }
+  }, [isCompleta]);
 
   useEffect(() => {
     if (selectedCourseId || plannerCourses.length === 0 || curriculumOptions.length === 0) return;
@@ -71,8 +93,9 @@ export default function useTreeLogic() {
     setSelectedModalidade(desiredModalidade);
   }, [selectedCourseId, plannerCourses, curriculumOptions]);
 
+  // Fetch from old curriculum endpoint when isCompleta === 'Sim'
   useEffect(() => {
-    if (selectedCourseId) {
+    if (selectedCourseId && isCompleta === 'Sim') {
       fetchCurriculum({
         courseId: selectedCourseId,
         year: selectedYear,
@@ -85,6 +108,38 @@ export default function useTreeLogic() {
   }, [selectedCourseId, selectedYear, selectedModalidade, isCompleta, plannerCourses]);
 
   const semestersData: Semester[] = useMemo(() => {
+    // Use tree snapshot if available (isCompleta === 'Nao')
+    if (treeSnapshot && treeSnapshot.curriculum.length > 0) {
+      const grouped: Record<string, Semester> = {};
+      treeSnapshot.curriculum.forEach((node) => {
+        const sem = node.recommended_semester && Number.isInteger(node.recommended_semester) 
+          ? Number(node.recommended_semester) 
+          : 0;
+        const key = sem > 0 ? String(sem) : 'outros';
+        if (!grouped[key]) {
+          grouped[key] = {
+            id: key,
+            title: sem > 0 ? `Semestre ${sem}` : 'Outros',
+            courses: [],
+          };
+        }
+        grouped[key].courses.push(node);
+      });
+      
+      // Sort courses within each semester by order_index
+      Object.values(grouped).forEach((semester) => {
+        semester.courses.sort((a, b) => {
+          const aOrder = a.order_index ?? 999999;
+          const bOrder = b.order_index ?? 999999;
+          return aOrder - bOrder;
+        });
+      });
+      
+      const orderValue = (id: string) => (id === 'outros' ? Number.MAX_SAFE_INTEGER : Number(id));
+      return Object.values(grouped).sort((a, b) => orderValue(a.id) - orderValue(b.id));
+    }
+    
+    // Fallback to old disciplines format (isCompleta === 'Sim')
     if (!disciplines || disciplines.length === 0) return [];
 
     const grouped: Record<string, Semester> = {};
@@ -100,16 +155,19 @@ export default function useTreeLogic() {
       }
       grouped[key].courses.push({
         code: d.codigo,
-        prereqs: Array.isArray(d.prereqs) ? d.prereqs : [],
-        isCurrent: d.isCurrent,
-        planned: Boolean((d as any).planned),
-        missingPrereqs: Boolean((d as any).missingPrereqs),
-        notOffered: Boolean((d as any).notOffered),
-      });
+        name: d.nome || d.codigo,
+        final_status: d.status || 'not_eligible',
+        color_hex: d.tem ? '#55CC55' : (d.isCurrent ? '#FFFF66' : (d.missingPrereqs ? '#FF6666' : '#CCCCCC')),
+        prereq_list: Array.isArray(d.prereqs) ? d.prereqs.flat() : [],
+        children_list: [],
+        is_completed: d.tem ? 1 : 0,
+        is_offered: d.isCurrent ? 1 : 0,
+        prereq_status: d.missingPrereqs ? 'missing' : 'satisfied',
+      } as CourseNode);
     });
     const orderValue = (id: string) => (id === 'eletivas' ? Number.MAX_SAFE_INTEGER : Number(id));
     return Object.values(grouped).sort((a, b) => orderValue(a.id) - orderValue(b.id));
-  }, [disciplines]);
+  }, [disciplines, treeSnapshot]);
 
   const courseOptionsForSelect = useMemo(() => {
     const set = new Map<number, { courseId: number; courseName: string; courseCode: string }>();
@@ -152,14 +210,7 @@ export default function useTreeLogic() {
     setSelectedModalidade(modForYear ?? null);
   };
 
-  const toggleActiveCourse = (course: {
-    code: string;
-    prereqs: string[][];
-    isCurrent?: boolean;
-    planned?: boolean;
-    missingPrereqs?: boolean;
-    notOffered?: boolean;
-  }) => {
+  const toggleActiveCourse = (course: CourseNode) => {
     setActiveCourse((prev) => (prev?.code === course.code ? null : course));
   };
 
@@ -170,8 +221,8 @@ export default function useTreeLogic() {
     loadPlanner,
     curriculumOptions,
     disciplines,
-    loadingCurriculum,
-    curriculumError,
+    loadingCurriculum: loadingCurriculum || loadingTree,
+    curriculumError: curriculumError || treeError,
     semestersData,
     courseOptionsForSelect,
     yearsForSelectedCourse,
@@ -188,5 +239,6 @@ export default function useTreeLogic() {
     showContext,
     setShowContext,
     setSelectedModalidade,
+    treeSnapshot,
   };
 }

@@ -2,49 +2,61 @@ import React from 'react';
 import { Text, TouchableOpacity, View, StyleSheet, Platform } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { spacing, palette } from '../styles';
+import { CourseNode } from '../types';
 
 interface CourseChipProps {
-  course: { code: string; prereqs: string[][]; isCurrent?: boolean; planned?: boolean; missingPrereqs?: boolean; notOffered?: boolean };
+  course: CourseNode;
   isActive: boolean;
-  onToggle: (course: { code: string; prereqs: string[][]; isCurrent?: boolean; planned?: boolean; missingPrereqs?: boolean; notOffered?: boolean }) => void;
+  onToggle: (course: CourseNode) => void;
 }
 
 const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) => {
-  const formatPrereqs = (prereqs: string[][]): string[] => {
-    if (!Array.isArray(prereqs) || prereqs.length === 0) return ['sem requisitos'];
-    const groups = prereqs
-      .map((group) => {
-        if (!group) return '';
-        if (Array.isArray(group)) {
-          const leafs = group.map((item) => item.trim()).filter((v) => v.length > 0);
-          return leafs.length ? `(${leafs.join(' e ')})` : '';
-        }
+  // Map final_status to display label
+  const getStatusLabel = (): string => {
+    switch (course.final_status) {
+      case 'completed':
+        return 'Concluída';
+      case 'eligible_and_offered':
+        return 'Elegível e ofertada';
+      case 'eligible_not_offered':
+        return 'Elegível (não ofertada)';
+      case 'not_eligible':
+        return 'Pré-requisitos pendentes';
+      default:
         return '';
-      })
-      .filter((g) => g.length > 0);
-    return groups.length ? groups : ['sem requisitos'];
+    }
   };
 
+  const formatPrereqs = (prereqList: string[]): string[] => {
+    if (!Array.isArray(prereqList) || prereqList.length === 0) return ['sem requisitos'];
+    return prereqList.length > 0 ? prereqList : ['sem requisitos'];
+  };
+
+  // Determine styling based on backend fields
   const statusStyle = () => {
-    if (course.missingPrereqs) return styles.chipBlocked;
-    if (course.planned) return styles.chipPlanned;
-    if (course.notOffered) return styles.chipNotOffered;
+    if (course.prereq_status === 'missing') return styles.chipBlocked;
+    if (course.gde_plan_status === 1) return styles.chipPlanned;
+    if (!course.is_offered) return styles.chipNotOffered;
     return null;
   };
 
   const iconForStatus = () => {
-    if (course.missingPrereqs) return 'lock-alert';
-    if (course.notOffered) return 'calendar-remove';
-    if (course.planned) return 'check';
+    if (course.prereq_status === 'missing') return 'lock-alert';
+    if (!course.is_offered) return 'calendar-remove';
+    if (course.gde_plan_status === 1) return 'check';
     return null;
   };
+
+  // Use backend color for border (when applicable)
+  const customBorderColor = course.color_hex || palette.divider;
 
   return (
     <TouchableOpacity
       activeOpacity={0.9}
       style={[
         styles.chip,
-        course.isCurrent && styles.currentChip,
+        { borderColor: customBorderColor },
+        course.is_offered && styles.currentChip,
         statusStyle(),
         isActive && styles.activeChip,
       ]}
@@ -56,19 +68,19 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
           <MaterialCommunityIcons
             name={iconForStatus() as any}
             size={14}
-            color={course.missingPrereqs ? palette.dangerText : palette.text}
+            color={course.prereq_status === 'missing' ? palette.dangerText : palette.text}
             style={styles.statusIcon}
           />
         )}
       </View>
-      {course.notOffered && <Text style={styles.metaText}>Nao ofertada</Text>}
+      {!course.is_offered && <Text style={styles.metaText}>Nao ofertada</Text>}
       {isActive && (
         <View style={styles.tooltip}>
           <Text style={styles.tooltipLabel}>Requisitos</Text>
-          {formatPrereqs(course.prereqs).map((line, idx, arr) => (
+          {formatPrereqs(course.prereq_list).map((code, idx, arr) => (
             <Text key={`${course.code}-req-${idx}`} style={styles.tooltipText}>
-              {line}
-              {idx < arr.length - 1 ? ' ou' : ''}
+              {code}
+              {idx < arr.length - 1 ? ', ' : ''}
             </Text>
           ))}
         </View>

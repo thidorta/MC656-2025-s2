@@ -1,0 +1,67 @@
+{
+  "nodes": [
+    {
+      "codigo": "MC020",
+      "nome": "Estágio Supervisionado em Ciência da Computação II",
+      "status": "pending",
+      "completa": false,
+      "pode": false,
+      "motivo": "falta_pre",
+      "ofertas": []
+    },
+    {
+      "codigo": "MC646",
+      "nome": "Verificação, Validação e Testes de Software",
+      "status": "pending",
+      "completa": false,
+      "pode": true,
+      "ofertas": []
+    },
+    {
+      "codigo": "MC658",
+      "nome": "Projeto e Análise de Algoritmos III",
+      "status": "pending",
+      "completa": false,
+      "pode": false,
+      "motivo": "falta_pre",
+      "ofertas": []
+    },
+    {
+      "codigo": "MC906",
+      "nome": "Introdução à Inteligência Artificial",
+      "status": "completed",
+      "completa": true,
+      "pode": true,
+      "ofertas": [
+        {
+          "offer_id": "375375",
+          "turma": "A",
+          "horarios": ["219", "220", "421", "422"],
+          "eventos": [
+            {"day": 0, "start_hour": 19, "end_hour": 21},
+            {"day": 2, "start_hour": 21, "end_hour": 23}
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "MC536",
+      "nome": "Bancos de Dados: Teoria e Prática",
+      "status": "completed",
+      "completa": true,
+      "pode": true,
+      "ofertas": [
+        {
+          "offer_id": "375357",
+          "turma": "A",
+          "horarios": ["608", "609", "408", "409", "610", "611"],
+          "eventos": [
+            {"day": 2, "start_hour": 8, "end_hour": 10},
+            {"day": 4, "start_hour": 8, "end_hour": 12}
+          ]
+        }
+      ]
+    }
+  ],
+  "faltantes_eletivas": ["MC041(12)", "MC051(08)", "MC050(08)", "MC020(12)", "MC019(12)", "MC032(06)", "MC033(06)", "MC040(12)", "MC853(12)", "MC855(12)", "MC857(04)", "MC871(04)", "MC859(12)", "MC851(04)", "MC861(04)", "MC881(04)"]
+}

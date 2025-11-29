@@ -2,22 +2,13 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import CourseChip from './CourseChip';
-import { Semester } from '../types';
+import { Semester, CourseNode } from '../types';
 import { spacing, palette } from '../styles';
-
-interface CourseState {
-  code: string;
-  prereqs: string[][];
-  isCurrent?: boolean;
-  planned?: boolean;
-  missingPrereqs?: boolean;
-  notOffered?: boolean;
-}
 
 interface Props {
   semester: Semester;
-  activeCourse: CourseState | null;
-  onToggleCourse: (course: CourseState) => void;
+  activeCourse: CourseNode | null;
+  onToggleCourse: (course: CourseNode) => void;
   forceExpanded?: boolean;
 }
 

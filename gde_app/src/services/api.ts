@@ -164,4 +164,8 @@ export const apiService = {
     );
     return resp.json();
   },
+  fetchTreeSnapshot: async () => {
+    const resp = await fetchAuth(`${API_BASE_URL}/tree/`);
+    return resp.json();
+  },
 };

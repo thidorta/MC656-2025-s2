@@ -1,272 +1,286 @@
-# Phase 2 Complete: Database Schema & Repository Layer
+# Phase 2 Complete: Normalized Academic Logic
 
-**Date:** November 27, 2025  
-**Branch:** feature/app-run
-
----
-
-## ✅ What Was Accomplished
-
-### 1. Alembic Migration (0004_relational_planner_schema.py)
-
-Created comprehensive migration with **7 new tables**:
-
-| Table | Purpose | Rows Expected |
-|-------|---------|---------------|
-| `gde_snapshots` | Immutable GDE snapshots | ~1-10 per user (history) |
-| `curriculum_disciplines` | Curriculum courses | ~60-80 per snapshot |
-| `discipline_prerequisites` | Prerequisite graph | ~100-150 per snapshot |
-| `course_offers` | Available turmas | ~200-300 per snapshot |
-| `offer_schedule_events` | Class schedules | ~800-1200 per snapshot |
-| `planned_courses` | **Mutable planner state** | ~6-10 per user (active) |
-| `attendance_overrides` | **Mutable attendance** | ~6-10 per user (active) |
-
-**Total indices created:** 20 (optimized for all query patterns)
+**Date:** 2025-11-29  
+**Objective:** Enrich unified curriculum with authoritative prerequisites, offerings, and computed status
 
 ---
 
-### 2. SQLAlchemy ORM Models (models_planner.py)
+## Phase 2 Implementation
 
-Created 7 models with:
-- ✅ Proper relationships (one-to-many, cascades)
-- ✅ Helper methods for API conversion
-- ✅ Type hints and documentation
-- ✅ Timestamp management
-
-**Key models:**
-- `GdeSnapshotModel` - Immutable history
-- `PlannedCourseModel` - **Mutable planner state** (replaces JSON)
-- `AttendanceOverrideModel` - **Mutable attendance** (replaces JSON)
-
----
-
-### 3. Repository Layer (app/db/repositories/)
-
-Created 4 repositories with **24 total methods**:
-
-#### SnapshotRepository (3 methods)
-- `get_latest_snapshot()` - Fetch current GDE state
-- `create_snapshot_from_gde()` - Persist GDE data relationally
-- `get_snapshot_by_id()` - Retrieve specific snapshot
-
-#### CurriculumRepository (4 methods)
-- `list_curriculum_for_snapshot()` - Get courses for snapshot
-- `list_prereqs_for_curriculum_ids()` - Batch prereq lookup
-- `list_offers_for_curriculum()` - Batch offer lookup
-- `list_events_for_offers()` - Batch event lookup
-
-#### PlannerRepository (5 methods)
-- `list_planned_courses()` - Get user's plan
-- `get_planned_courses_map()` - Get as `{"codigo": "turma"}` dict
-- `replace_planned_courses()` - Full replacement (for POST)
-- `upsert_planned_course()` - Single course update
-- `delete_planned_course()` - Remove from plan
-
-#### AttendanceRepository (5 methods)
-- `list_overrides()` - Get all overrides
-- `get_overrides_map()` - Get as `{"codigo": {...}}` dict
-- `upsert_overrides()` - Full replacement (for POST)
-- `upsert_override()` - Single override update
-- `delete_override()` - Remove override
-
----
-
-## 📁 Files Created
+### Architecture Flow
 
 ```
-backend/
-├── alembic/versions/
-│   └── 0004_relational_planner_schema.py    ✨ NEW - Migration
-├── app/db/
-│   ├── models_planner.py                     ✨ NEW - ORM models
-│   └── repositories/                         ✨ NEW - Repository layer
-│       ├── __init__.py
-│       ├── snapshot_repo.py
-│       ├── curriculum_repo.py
-│       ├── planner_repo.py
-│       └── attendance_repo.py
-docs/backend/
-├── DATABASE_SCHEMA.md                        ✅ UPDATED - Added impl section
-└── REPOSITORY_GUIDE.md                       ✨ NEW - Usage guide
+user_curriculum (Phase 1: catalog + raw GDE overlay)
+    ↓
+Read authoritative prerequisites (discipline_prerequisites → fallback catalog)
+    ↓
+Read authoritative offerings (course_offers + offer_schedule_events)
+    ↓
+Compute normalized flags (can_enroll_final, ofertada_final)
+    ↓
+Apply status decision tree → status_final
+    ↓
+user_curriculum (Phase 2: enriched with normalized fields)
+    ↓
+Generate final /tree JSON
 ```
 
 ---
 
-## 🎯 Architecture Achievements
+## Implementation Steps
 
-### Before (JSON Blobs)
-```
-users table
-├── planner_id
-└── (various fields)
+### 1. Database Schema Extension
 
-planner_original table          ❌ MUTABLE JSON
-├── planner_id
-└── payload (JSON blob)
+**Migration:** `0008_phase2_normalized_fields.py`
 
-planner_modified table          ❌ MUTABLE JSON
-├── planner_id
-└── payload (JSON blob)
+Added columns to `user_curriculum`:
 
-user_db table                   ❌ MUTABLE JSON
-├── user_id
-└── snapshot (JSON blob)
-```
+| Column | Type | Purpose |
+|---|---|---|
+| `pre_req_real` | TEXT (JSON) | Authoritative prerequisites from DB/catalog |
+| `offers_real` | TEXT (JSON) | Normalized offerings with schedule details |
+| `can_enroll_final` | BOOLEAN | Computed eligibility (prereqs + completion) |
+| `ofertada_final` | BOOLEAN | Discipline is currently offered |
+| `status_final` | VARCHAR | Final computed status |
+| `validation_notes` | TEXT | Optional debugging notes |
 
-### After (Relational)
-```
-users table
-├── planner_id
-└── (various fields)
+### 2. Prerequisite Resolution
 
-gde_snapshots                   ✅ IMMUTABLE
-├── planner_id
-├── fetched_at
-└── metadata (display-only JSON)
-    └── curriculum_disciplines  ✅ IMMUTABLE
-        ├── discipline_prerequisites
-        └── course_offers
-            └── offer_schedule_events
+**Source Priority:**
+1. `discipline_prerequisites` table (authoritative, per user)
+2. Catalog `prereq_requirement` (universal fallback)
+3. Empty array if neither exists
 
-planned_courses                 ✅ MUTABLE (RELATIONAL)
-├── user_id
-├── codigo
-├── turma
-└── source
-
-attendance_overrides            ✅ MUTABLE (RELATIONAL)
-├── user_id
-├── codigo
-└── metrics
+**Query:**
+```sql
+SELECT DISTINCT required_codigo
+FROM discipline_prerequisites dp
+JOIN curriculum_disciplines cd ON dp.curriculum_discipline_id = cd.id
+WHERE cd.codigo = ?
 ```
 
----
+**Fallback (catalog):**
+```sql
+SELECT DISTINCT pr.required_code
+FROM prereq_requirement pr
+JOIN prereq_group pg ON pr.group_id = pg.group_id
+JOIN curriculum_entry ce ON pg.entry_id = ce.entry_id
+JOIN discipline d ON ce.discipline_id = d.discipline_id
+WHERE d.code = ?
+```
 
-## 🚀 Next Steps (Phase 3)
+**Result:** `pre_req_real` = JSON array of prerequisite codigos
 
-### Service Layer Refactoring
+### 3. Offering Resolution
 
-1. **Update auth.py (POST /auth/login)**
-   ```python
-   # Old: persist JSON to user_db table
-   # New: SnapshotRepository.create_snapshot_from_gde()
-   ```
+**Source:** `course_offers` + `offer_schedule_events` (authoritative only)
 
-2. **Rewrite user_db.py (GET /user-db/me)**
-   ```python
-   # Old: load JSON from user_db table
-   # New: SnapshotRepository + CurriculumRepository
-   ```
+**Query:**
+```sql
+SELECT id, turma, semester, offer_metadata
+FROM course_offers
+WHERE codigo = ? AND user_id = ?
+```
 
-3. **Rewrite planner endpoints (GET/POST /planner)**
-   ```python
-   # Old: load/save JSON from planner_original/modified
-   # New: SnapshotRepository + PlannerRepository
-   ```
+For each offer:
+```sql
+SELECT day_of_week, start_hour, end_hour, location, title
+FROM offer_schedule_events
+WHERE offer_id = ?
+```
 
-4. **Rewrite attendance endpoints (GET/POST /attendance)**
-   ```python
-   # Old: load/save JSON from attendance_overrides
-   # New: AttendanceRepository
-   ```
+**Result:** `offers_real` = JSON array of offer objects:
+```json
+{
+  "turma": "A",
+  "professor": "Hilder Vitor Lima Pereira",
+  "schedule": [
+    {"day": 1, "start_hour": 10, "end_hour": 12, "location": "CB07", "title": "MC458 A CB07"}
+  ],
+  "periodo": "20261"
+}
+```
 
-5. **Delete deprecated modules**
-   - `planner_store.py` (replaced by repositories)
-   - Old JSON persistence code
+### 4. Computed Flags
 
----
+**concluida:**
+```python
+concluida = (tem == 1)
+```
 
-## 🧪 Testing Checklist
+**ofertada_final:**
+```python
+ofertada_final = (len(offers_real) > 0)
+```
 
-Before deploying:
+**can_enroll_final:**
+```python
+if tem:
+    can_enroll_final = False  # already completed
+else if any prereq not completed:
+    can_enroll_final = False  # missing prerequisites
+else:
+    can_enroll_final = True   # eligible
+```
 
-- [ ] Run migration: `alembic upgrade head`
-- [ ] Verify tables exist: `sqlite3 user_auth.db ".tables"`
-- [ ] Test POST /auth/login creates snapshot
-- [ ] Test GET /user-db/me reconstructs from snapshot
-- [ ] Test GET /planner returns original/modified/current
-- [ ] Test POST /planner/modified updates planned_courses
-- [ ] Test GET/POST /attendance works with overrides
-- [ ] Verify no breaking changes to API contracts
-- [ ] Test session cleanup (no memory leaks)
+### 5. Status Decision Tree
 
----
-
-## 📊 Performance Characteristics
-
-| Operation | Old (JSON) | New (Relational) |
-|-----------|-----------|------------------|
-| Login (create snapshot) | ~50ms | ~100ms (more writes) |
-| GET /user-db/me | ~10ms | ~30ms (join queries) |
-| GET /planner | ~20ms | ~40ms (join + merge) |
-| POST /planner/modified | ~15ms | ~20ms (targeted upserts) |
-| GET /attendance | ~5ms | ~5ms (similar) |
-| POST /attendance | ~10ms | ~10ms (similar) |
-
-**Trade-off:** Slightly slower reads, but:
-- ✅ No mutable JSON corruption
-- ✅ Queryable historical data
-- ✅ Proper foreign key integrity
-- ✅ Index-optimized queries
-- ✅ Future analytics possible
-
----
-
-## 🔐 Data Integrity Guarantees
-
-| Guarantee | Old | New |
-|-----------|-----|-----|
-| Foreign key enforcement | ❌ No | ✅ Yes |
-| Cascade deletion | ❌ Manual | ✅ Automatic |
-| Unique constraints | ⚠️ Partial | ✅ Full |
-| Transaction safety | ⚠️ Partial | ✅ Full |
-| Historical tracking | ❌ No | ✅ Yes (snapshots) |
-| JSON schema validation | ❌ None | N/A (relational) |
+```python
+if concluida:
+    status_final = "concluida"
+else if can_enroll_final == False:
+    status_final = "nao_elegivel"
+else if ofertada_final == True:
+    status_final = "elegivel_e_ofertada"
+else:
+    status_final = "elegivel_nao_ofertada"
+```
 
 ---
 
-## 📝 Migration Notes
+## Execution
 
-### Database Size Estimates
+### Scripts
 
-For a typical user (60 courses, 200 offers, 1000 events):
+1. **`build_normalized_curriculum.py`**
+   - Reads `user_curriculum` rows
+   - Queries authoritative prereqs/offers
+   - Computes flags + status
+   - Updates Phase 2 columns
 
-**Old schema:**
-- `user_db.snapshot`: ~200KB JSON (1 row)
-- `planner_original`: ~150KB JSON (1 row)
-- `planner_modified`: ~150KB JSON (1 row)
-- **Total:** ~500KB per user
+2. **`generate_final_snapshot.py`**
+   - Reads enriched `user_curriculum`
+   - Generates final JSON with both raw + normalized fields
+   - Outputs `snapshot_final.json` (all) and `snapshot_completed.json` (filtered)
 
-**New schema:**
-- `gde_snapshots`: ~1KB (1 row)
-- `curriculum_disciplines`: ~15KB (60 rows)
-- `discipline_prerequisites`: ~5KB (100 rows)
-- `course_offers`: ~10KB (200 rows)
-- `offer_schedule_events`: ~50KB (1000 rows)
-- `planned_courses`: ~0.5KB (6 rows)
-- `attendance_overrides`: ~0.3KB (6 rows)
-- **Total:** ~82KB per user (active snapshot)
+### Run Commands
 
-**Savings:** ~83% reduction for active data, plus queryability!
+```bash
+# Phase 2 normalization
+python backend/build_normalized_curriculum.py
 
----
-
-## ✅ Success Criteria Met
-
-- [x] Zero mutable JSON blobs for planner state
-- [x] All API contracts preserved
-- [x] Proper relational normalization
-- [x] Clean separation of concerns
-- [x] Repository pattern implemented
-- [x] Comprehensive documentation
-- [x] Migration path defined
-- [x] Performance acceptable
+# Generate final snapshot
+python backend/generate_final_snapshot.py
+```
 
 ---
 
-**Phase 2 Status:** ✅ **COMPLETE**  
-**Ready for:** Phase 3 (Service Layer Refactoring)
+## Validation Results (User 183611)
+
+### Discipline Counts by Status
+
+| Status | Count |
+|---|---|
+| `concluida` | 17 |
+| `elegivel_nao_ofertada` | 29 |
+| `nao_elegivel` | 62 |
+| **Total** | **108** |
+
+### Key Sample Disciplines
+
+#### MC358: Fundamentos Matemáticos da Computação
+- **Raw (GDE):** Not present in user_db (catalog-only)
+- **Normalized:**
+  - `tem`: false
+  - `pre_req_real`: [] (no prerequisites)
+  - `offers_real`: [] (not offered)
+  - `can_enroll_final`: true
+  - `ofertada_final`: false
+  - `status_final`: **elegivel_nao_ofertada**
+
+**Explanation:** Student hasn't taken this course (`tem=false`). No prerequisites required, so eligible (`can_enroll=true`). Not currently offered, so status is "eligible but not offered."
+
+#### MC458: Projeto e Análise de Algoritmos I
+- **Raw (GDE):** `tem=true`, `status="completed"`
+- **Normalized:**
+  - `tem`: true
+  - `pre_req_real`: ["MC202", "MS328", "MC358"]
+  - `offers_real`: 8 sections (A-H with schedules)
+  - `can_enroll_final`: false (already completed)
+  - `ofertada_final`: true
+  - `status_final`: **concluida**
+
+**Explanation:** Student completed this course (`tem=true`). Decision tree: `tem=true` → status = "concluida" (overrides all other logic).
+
+#### MC558: Projeto e Análise de Algoritmos II
+- **Raw (GDE):** `tem=false`, `pode=false`, `obs="falta_pre"`
+- **Normalized:**
+  - `tem`: false
+  - `pre_req_real`: ["MA327", "MC458"]
+  - `offers_real`: [] (not offered)
+  - `can_enroll_final`: false (prereq MA327 not completed)
+  - `ofertada_final`: false
+  - `status_final`: **nao_elegivel**
+
+**Explanation:** Student hasn't taken this course. Prerequisites include MA327 (not completed by student), so `can_enroll=false`. Decision tree: `!can_enroll` → status = "nao_elegivel".
 
 ---
 
-**End of Summary**
+## Data Integrity
+
+### Raw Fields (Preserved)
+
+All Phase 1 raw fields remain untouched:
+- `disciplina_id`, `missing`, `tem`, `pode` → `raw_can_enroll`
+- `raw_status`, `color`, `obs`
+- `pre_req_raw`, `offers_raw`
+
+### Normalized Fields (Added)
+
+Phase 2 computed fields:
+- `pre_req_real` (authoritative prereqs)
+- `offers_real` (normalized offerings)
+- `can_enroll_final`, `ofertada_final` (boolean flags)
+- `status_final` (decision tree result)
+
+### Final JSON Schema
+
+```json
+{
+  "codigo": "MC558",
+  "nome": "Projeto e Análise de Algoritmos II",
+  "creditos": 4,
+  "tipo": "obrigatoria",
+  "semestre_sugerido": 6,
+  "cp_group": null,
+  "catalogo": 2022,
+  
+  "disciplina_id": "6775",
+  "missing": true,
+  "tem": false,
+  "raw_status": "pending",
+  "raw_can_enroll": false,
+  "color": "#B373B3",
+  "obs": "falta_pre",
+  "pre_req_raw": [],
+  "offers_raw": [],
+  
+  "pre_req_real": ["MA327", "MC458"],
+  "offers_real": [],
+  "concluida": false,
+  "can_enroll_final": false,
+  "ofertada_final": false,
+  "status_final": "nao_elegivel"
+}
+```
+
+---
+
+## Files Created
+
+- `backend/alembic/versions/0008_phase2_normalized_fields.py` — Migration
+- `backend/build_normalized_curriculum.py` — Phase 2 normalization script
+- `backend/generate_final_snapshot.py` — Final JSON generator
+- `backend/snapshot_final.json` — Full snapshot (108 disciplines)
+- `backend/snapshot_completed.json` — Completed only (17 disciplines)
+- `docs/backend/PHASE2_SUMMARY.md` — This document
+
+---
+
+## Status: ✅ Phase 2 Complete
+
+**Next Steps:**
+- Integrate normalized snapshot into `/tree` API endpoint
+- Add filters (completa, semestre, status)
+- Implement real-time updates when offers/prereqs change
+- Add prerequisite group logic (AND/OR combinations)

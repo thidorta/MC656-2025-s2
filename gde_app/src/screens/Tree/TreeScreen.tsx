@@ -147,16 +147,20 @@ export default function ArvoreIntegralizacaoScreen({ navigation }: Props) {
             </View>
             <Text style={styles.legendSubtitle}>As cores se aplicam a toda a arvore e todos os semestres.</Text>
             <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: palette.accent }]} />
-              <Text style={styles.legendLabel}>Planejada neste semestre</Text>
+              <View style={[styles.legendDot, { backgroundColor: '#55CC55' }]} />
+              <Text style={styles.legendLabel}>Concluída</Text>
+            </View>
+            <View style={styles.legendRow}>
+              <View style={[styles.legendDot, { backgroundColor: '#FFFF66' }]} />
+              <Text style={styles.legendLabel}>Elegível e ofertada</Text>
             </View>
             <View style={styles.legendRow}>
               <View style={[styles.legendDot, { backgroundColor: palette.infoSoft, borderColor: palette.infoBorder, borderWidth: 1 }]} />
-              <Text style={styles.legendLabel}>Elegivel, mas nao ofertada neste semestre</Text>
+              <Text style={styles.legendLabel}>Elegível (não ofertada)</Text>
             </View>
             <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: palette.dangerSoft, borderColor: palette.dangerBorder, borderWidth: 1 }]} />
-              <Text style={styles.legendLabel}>Nao pode cursar (faltam pre-requisitos)</Text>
+              <View style={[styles.legendDot, { backgroundColor: '#FF6666' }]} />
+              <Text style={styles.legendLabel}>Pré-requisitos pendentes</Text>
             </View>
           </View>
         </View>
