@@ -93,8 +93,9 @@ export default function useTreeLogic() {
     setSelectedModalidade(desiredModalidade);
   }, [selectedCourseId, plannerCourses, curriculumOptions]);
 
-  // Fetch from old curriculum endpoint when isCompleta === 'Sim'
+  // Patch 5 — ensure tree updates on course/year/modality changes
   useEffect(() => {
+    // reload curriculum when selection changes (no stale closures)
     if (selectedCourseId && isCompleta === 'Sim') {
       fetchCurriculum({
         courseId: selectedCourseId,
@@ -105,23 +106,32 @@ export default function useTreeLogic() {
         setDisciplinesExternal: setDisciplines,
       });
     }
-  }, [selectedCourseId, selectedYear, selectedModalidade, isCompleta, plannerCourses]);
+    // For 'Nao', we rely on snapshot but recalc semesters via dependencies
+  }, [selectedCourseId, selectedYear, selectedModalidade]);
 
   const semestersData: Semester[] = useMemo(() => {
     // Use tree snapshot if available (isCompleta === 'Nao')
     if (treeSnapshot && treeSnapshot.curriculum.length > 0) {
+      // Patch 2 — filter completed when isCompleta === 'Nao'
+      let filtered: CourseNode[] = [...treeSnapshot.curriculum];
+      if (isCompleta === 'Nao') {
+        filtered = filtered.filter((c) => c.final_status !== 'completed');
+      }
+
       const grouped: Record<string, Semester> = {};
-      treeSnapshot.curriculum.forEach((node) => {
+      filtered.forEach((node) => {
         const sem = node.recommended_semester && Number.isInteger(node.recommended_semester) 
           ? Number(node.recommended_semester) 
           : 0;
         const key = sem > 0 ? String(sem) : 'outros';
         if (!grouped[key]) {
-          grouped[key] = {
+          grouped[key] = ({
             id: key,
             title: sem > 0 ? `Semestre ${sem}` : 'Outros',
             courses: [],
-          };
+            // add for stable keys
+            semester_number: sem,
+          } as any);
         }
         grouped[key].courses.push(node);
       });
@@ -167,7 +177,7 @@ export default function useTreeLogic() {
     });
     const orderValue = (id: string) => (id === 'eletivas' ? Number.MAX_SAFE_INTEGER : Number(id));
     return Object.values(grouped).sort((a, b) => orderValue(a.id) - orderValue(b.id));
-  }, [disciplines, treeSnapshot]);
+  }, [disciplines, treeSnapshot, isCompleta]);
 
   const courseOptionsForSelect = useMemo(() => {
     const set = new Map<number, { courseId: number; courseName: string; courseCode: string }>();

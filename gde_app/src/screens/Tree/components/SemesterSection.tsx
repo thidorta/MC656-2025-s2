@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import CourseChip from './CourseChip';
@@ -47,12 +47,17 @@ const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCour
   );
 };
 
+// Patch 6 — Sync collapsed state with forceExpanded
+useEffect(() => {
+  setIsCollapsed(!forceExpanded);
+}, [forceExpanded]);
+
 const styles = StyleSheet.create({
   card: {
     backgroundColor: palette.surface,
-    borderRadius: 14,
+    borderRadius: 16,
     borderWidth: 1,
-    borderColor: palette.divider,
+    borderColor: 'rgba(255,255,255,0.05)',
     overflow: 'hidden',
   },
   header: {
@@ -60,34 +65,38 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: spacing(1.5),
-    paddingVertical: spacing(1.25),
+    paddingVertical: spacing(1.4),
   },
   badge: {
     color: palette.textMuted,
     fontSize: 12,
-    letterSpacing: 0.4,
-    marginBottom: 2,
+    letterSpacing: 0.6,
+    textTransform: 'uppercase',
+    marginBottom: 3,
   },
   title: {
     color: palette.text,
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: '600',
+    letterSpacing: -0.2,
   },
   headerRight: {
     flexDirection: 'row',
     alignItems: 'center',
-    columnGap: spacing(0.5),
+    columnGap: spacing(0.6),
   },
   meta: {
     color: palette.textMuted,
-    fontSize: 12,
+    fontSize: 13,
+    letterSpacing: -0.1,
   },
   chipGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    paddingHorizontal: spacing(1.25),
-    paddingBottom: spacing(1.25),
-    gap: spacing(0.75),
+    paddingHorizontal: spacing(1.5),
+    paddingBottom: spacing(1.5),
+    gap: spacing(0.9),
+    width: '100%',
   },
 });
 
