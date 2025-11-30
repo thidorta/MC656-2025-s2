@@ -5,14 +5,24 @@ export const palette = {
   bg: '#0D0D0D',
   surface: '#141414',
   surface2: '#1E1E1E',
-  text: '#EDEDED',
-  textSecondary: '#A9A9A9',
   border: '#2A2A2A',
+  
+  text: '#EDEDED',
+  textSecondary: 'rgba(255,255,255,0.70)',
+  textMuted: 'rgba(255,255,255,0.45)',
+  
   accent: '#00F0FF',
   accentSoft: 'rgba(0,240,255,0.15)',
-  accentBorder: '#2A2A2A',
   buttonText: '#0D0D0D',
-  danger: '#B71C1C',
+  
+  // BRUNO STATE COLORS (for indicators only)
+  completed: '#00FF9C',
+  eligibleOffered: '#3DA9FF',
+  eligibleNotOffered: '#FFD55A',
+  notEligible: '#FF4A4A',
+  offeredThisTerm: '#00F0FF',
+  
+  danger: '#FF4A4A',
 };
 
 export const spacing = (value: number) => baseSpacing(value);
@@ -210,95 +220,4 @@ export const daySectionStyles = StyleSheet.create({
   },
 });
 
-export const chipStyles = StyleSheet.create({
-  chip: {
-    backgroundColor: palette.surface2,
-    borderRadius: 8,
-    paddingVertical: spacing(1),
-    paddingHorizontal: spacing(1.75),
-    borderWidth: 1,
-    borderColor: palette.border,
-  },
-  chipPlanned: {
-    borderColor: palette.accent,
-    backgroundColor: palette.accentSoft,
-  },
-  chipText: {
-    color: palette.text,
-    fontSize: 13,
-    fontWeight: '600',
-  },
-});
-
-export const gridStyles = StyleSheet.create({
-  card: {
-    marginTop: spacing(0.5),
-    backgroundColor: palette.surface,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: palette.border,
-    overflow: 'hidden',
-    position: 'relative',
-    shadowColor: '#000',
-    shadowOpacity: 0.35,
-    shadowRadius: 16,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 8,
-  },
-  headerRow: {
-    flexDirection: 'row',
-    borderBottomWidth: 1,
-    borderBottomColor: palette.border,
-    backgroundColor: palette.surface2,
-  },
-  cornerCell: {
-    paddingVertical: spacing(1),
-  },
-  dayHeaderCell: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: spacing(1),
-    borderLeftWidth: 1,
-    borderLeftColor: palette.border,
-  },
-  dayHeaderText: {
-    fontSize: 13,
-    fontWeight: '600',
-    color: palette.text,
-  },
-  row: {
-    flexDirection: 'row',
-    borderBottomWidth: 1,
-    borderBottomColor: palette.border,
-  },
-  timeCell: {
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    paddingHorizontal: spacing(1),
-    backgroundColor: palette.surface2,
-    borderRightWidth: 1,
-    borderRightColor: palette.border,
-  },
-  timeText: {
-    fontSize: 11,
-    color: palette.textSecondary,
-  },
-  cell: {
-    borderLeftWidth: 1,
-    borderLeftColor: palette.border,
-  },
-  block: {
-    position: 'absolute',
-    backgroundColor: palette.accent,
-    borderRadius: 8,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: spacing(0.5),
-    zIndex: 1,
-  },
-  blockText: {
-    color: palette.buttonText,
-    fontSize: 13,
-    fontWeight: '700',
-  },
-});
+// Remove old chipStyles - now defined in CourseChip component

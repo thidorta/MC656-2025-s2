@@ -5,14 +5,16 @@ export const palette = {
   bg: '#0D0D0D',
   surface: '#141414',
   surface2: '#1E1E1E',
-  text: '#EDEDED',
-  textSecondary: '#A9A9A9',
   border: '#2A2A2A',
+  
+  text: '#EDEDED',
+  textSecondary: 'rgba(255,255,255,0.70)',
+  
   accent: '#00F0FF',
   accentSoft: 'rgba(0,240,255,0.15)',
-  accentBorder: '#2A2A2A',
-  danger: '#B71C1C',
-  dangerSoft: 'rgba(183,28,28,0.15)',
+  
+  danger: '#FF4A4A',
+  dangerSoft: 'rgba(255,74,74,0.15)',
 };
 
 export const spacing = (n: number) => baseSpacing(n);

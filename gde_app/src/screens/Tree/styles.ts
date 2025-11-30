@@ -9,7 +9,7 @@ export const palette = {
   border: '#2A2A2A',
   
   text: '#EDEDED',
-  textSecondary: '#A9A9A9',
+  textSecondary: 'rgba(255,255,255,0.70)',
   
   accent: '#00F0FF',
   accentSoft: 'rgba(0,240,255,0.15)',
@@ -20,6 +20,7 @@ export const palette = {
   eligibleNotOffered: '#FFD55A',  // cyber amber (cooler) - elegível não ofertada
   notEligible: '#FF4A4A',         // cold neon red - pré-requisitos pendentes
   offered: '#00F0FF',             // core cyan - badge "ofertada neste semestre"
+  offeredThisTerm: '#00F0FF',     // alias for offered
 };
 
 export const spacing = (n: number) => baseSpacing(n);

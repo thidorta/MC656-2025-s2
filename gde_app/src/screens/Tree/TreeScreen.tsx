@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
     height: 18,
     borderRadius: 4,
     borderWidth: 1,
-    borderColor: '#2A2A2A',
+    borderColor: palette.border,
   },
   legendLabel: {
     color: '#EDEDED',

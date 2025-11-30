@@ -14,7 +14,8 @@ const palette = {
   surface: '#141414',
   surface2: '#1E1E1E',
   text: '#EDEDED',
-  textSecondary: '#A9A9A9',
+  textSecondary: 'rgba(255,255,255,0.70)',
+  textMuted: 'rgba(255,255,255,0.45)',
   border: '#2A2A2A',
   accent: '#00F0FF',
 };

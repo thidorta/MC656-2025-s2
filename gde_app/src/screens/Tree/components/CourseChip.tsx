@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, TouchableOpacity, View, StyleSheet } from 'react-native';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { spacing, palette } from '../styles';
 import { CourseNode } from '../types';
 
@@ -11,7 +10,6 @@ interface CourseChipProps {
 }
 
 const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) => {
-  // Map final_status to display label
   const getStatusLabel = (): string => {
     switch (course.final_status) {
       case 'completed':
@@ -32,97 +30,45 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
     return prereqList.length > 0 ? prereqList : ['sem requisitos'];
   };
 
-  // BRUNO KALLISTER STATE COLOR MAPPING
-  const getBackgroundColor = () => {
+  // BRUNO KALLISTER — State color for LEFT BAR indicator only
+  const getIndicatorColor = () => {
     switch (course.final_status) {
       case 'completed':
-        return 'rgba(0, 255, 156, 0.75)';    // #00FF9C neon emerald @ 50% opacity
-      case 'eligible_offered':
-        return palette.eligibleOffered;     // #3DA9FF tech blue
+        return palette.completed;
+      case 'eligible_and_offered':
+        return palette.eligibleOffered;
       case 'eligible_not_offered':
-        return 'rgba(245, 234, 88, 0.75)'; // #FFD55A cyber amber @ 75% opacity
+        return palette.eligibleNotOffered;
       case 'not_eligible':
-        return palette.notEligible;         // #FF4A4A cold neon red
+        return palette.notEligible;
       default:
-        return palette.surface2;
+        return palette.border;
     }
   };
 
-  const getTextColor = (): string => {
-    // Black text for completed and eligible_not_offered (transparent chips), white for others
-    if (course.final_status === 'completed' || course.final_status === 'eligible_not_offered') {
-      return '#0D0D0D';
-    }
-    return '#FFFFFF';
-  };
-
-  // BRUNO NEON GLOW — dynamic shadow color based on state
-  const getNeonGlowColor = () => {
-    switch (course.final_status) {
-      case 'completed':
-        return palette.completed;           // #00FF9C
-      case 'eligible_offered':
-        return palette.eligibleOffered;     // #3DA9FF
-      case 'eligible_not_offered':
-        return palette.eligibleNotOffered;  // #FFD55A
-      case 'not_eligible':
-        return palette.notEligible;         // #FF4A4A
-      default:
-        return '#000';
-    }
-  };
-
-  const iconForStatus = () => {
-    if (course.prereq_status === 'missing') return 'lock-alert';
-    if (!course.is_offered) return 'calendar-remove';
-    if (course.gde_plan_status === 1) return 'check';
-    if (course.final_status === 'completed') return 'check-circle';
-    return null;
-  };
-
-  // Status icons with white color for all states
-  let statusIcon: React.ReactNode = null;
-  const iconColor = (course.final_status === 'completed' || course.final_status === 'eligible_not_offered') ? '#0D0D0D' : '#FFFFFF';
-  if (course.final_status === 'completed') {
-    statusIcon = (
-      <MaterialCommunityIcons name="check-circle" size={14} color={iconColor} />
-    );
-  } else if (course.final_status === 'eligible_and_offered') {
-    statusIcon = (
-      <MaterialCommunityIcons name="book-check" size={14} color={iconColor} />
-    );
-  } else if (course.final_status === 'eligible_not_offered') {
-    statusIcon = (
-      <MaterialCommunityIcons name="clock-outline" size={14} color={iconColor} />
-    );
-  } else if (course.final_status === 'not_eligible') {
-    statusIcon = (
-      <MaterialCommunityIcons name="lock" size={14} color={iconColor} />
-    );
-  }
+  const indicatorColor = getIndicatorColor();
 
   return (
     <TouchableOpacity
       activeOpacity={0.85}
       style={[
         styles.chip,
-        { 
-          backgroundColor: getBackgroundColor(),
-          shadowColor: getNeonGlowColor(),
-          shadowOpacity: 0.22,
-          shadowRadius: 14,
-          shadowOffset: { width: 0, height: 4 },
-        },
         isActive && styles.activeChip,
       ]}
       onPress={() => onToggle(course)}
     >
+      {/* BRUNO LEFT BAR STATE INDICATOR */}
+      <View style={[styles.leftBar, { backgroundColor: indicatorColor }]} />
+      
+      {/* OFFERED BADGE (top-right tiny dot) */}
       {course.is_offered === 1 && <View style={styles.offeredBadge} />}
+      
       <View style={styles.chipContent}>
-        {statusIcon && <View style={styles.statusIcon}>{statusIcon}</View>}
-        <Text style={[styles.chipText, { color: getTextColor() }]}>{course.code}</Text>
+        <Text style={styles.chipText}>{course.code}</Text>
       </View>
-      <Text style={[styles.metaText, { color: getTextColor(), opacity: 0.7 }]}>{getStatusLabel()}</Text>
+      <Text style={styles.metaText}>{getStatusLabel()}</Text>
+      
+      {/* TOOLTIP */}
       {isActive && (
         <View style={styles.tooltip}>
           <Text style={styles.tooltipLabel}>Pré-requisitos</Text>
@@ -143,23 +89,37 @@ const styles = StyleSheet.create({
     maxWidth: 180,
     flexGrow: 1,
     flexBasis: '30%',
+    backgroundColor: palette.surface2,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#2A2A2A',
+    borderColor: palette.border,
     paddingVertical: 10,
     paddingHorizontal: 14,
     gap: 4,
     position: 'relative',
+    shadowColor: '#000',
+    shadowOpacity: 0.28,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 6 },
     elevation: 6,
   },
   activeChip: {
     borderColor: palette.accent,
     borderWidth: 2,
   },
+  leftBar: {
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    bottom: 0,
+    width: 4,
+    borderTopLeftRadius: 8,
+    borderBottomLeftRadius: 8,
+  },
   chipContent: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
+    paddingLeft: 6,
   },
   chipText: {
     color: '#FFFFFF',
@@ -168,9 +128,6 @@ const styles = StyleSheet.create({
     letterSpacing: 0.2,
     flex: 1,
   },
-  statusIcon: {
-    marginRight: 0,
-  },
   offeredBadge: {
     position: 'absolute',
     top: 6,
@@ -178,25 +135,28 @@ const styles = StyleSheet.create({
     width: 6,
     height: 6,
     borderRadius: 3,
-    backgroundColor: '#00F0FF',
-    borderWidth: 1,
-    borderColor: 'rgba(0,240,255,0.35)',
+    backgroundColor: palette.offeredThisTerm,
+    shadowColor: palette.offeredThisTerm,
+    shadowOpacity: 0.4,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 2 },
   },
   metaText: {
-    color: 'rgba(255,255,255,0.7)',
+    color: 'rgba(255,255,255,0.70)',
     fontSize: 11,
     letterSpacing: 0,
     marginTop: 2,
+    paddingLeft: 6,
   },
   tooltip: {
     position: 'absolute',
     bottom: '105%',
     left: -8,
     right: -8,
-    backgroundColor: '#141414',
+    backgroundColor: palette.surface,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#2A2A2A',
+    borderColor: palette.border,
     padding: 12,
     zIndex: 100,
     shadowColor: '#000',
@@ -206,7 +166,7 @@ const styles = StyleSheet.create({
     elevation: 16,
   },
   tooltipLabel: {
-    color: palette.textSecondary,
+    color: 'rgba(255,255,255,0.70)',
     fontSize: 11,
     marginBottom: 6,
     letterSpacing: 0,
