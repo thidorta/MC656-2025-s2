@@ -33,24 +33,43 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
   };
 
   // BRUNO KALLISTER STATE COLOR MAPPING
-  const getBackgroundColor = (): string => {
+  const getBackgroundColor = () => {
     switch (course.final_status) {
       case 'completed':
-        return palette.completed;
-      case 'eligible_and_offered':
-        return palette.eligibleOffered;
+        return palette.completed;           // #00FF9C neon emerald
+      case 'eligible_offered':
+        return palette.eligibleOffered;     // #3DA9FF tech blue
       case 'eligible_not_offered':
-        return palette.eligibleNotOffered;
+        return 'rgba(255, 222, 124, 0.75)';   // #FFD55A cyber amber @ 50% opacity
       case 'not_eligible':
-        return palette.notEligible;
+        return palette.notEligible;         // #FF4A4A cold neon red
       default:
         return palette.surface2;
     }
   };
 
   const getTextColor = (): string => {
-    // All Bruno colors use white text for maximum contrast
+    // Black text for eligible_not_offered (transparent chip), white for others
+    if (course.final_status === 'eligible_not_offered') {
+      return '#0D0D0D';
+    }
     return '#FFFFFF';
+  };
+
+  // BRUNO NEON GLOW — dynamic shadow color based on state
+  const getNeonGlowColor = () => {
+    switch (course.final_status) {
+      case 'completed':
+        return palette.completed;           // #00FF9C
+      case 'eligible_offered':
+        return palette.eligibleOffered;     // #3DA9FF
+      case 'eligible_not_offered':
+        return palette.eligibleNotOffered;  // #FFD55A
+      case 'not_eligible':
+        return palette.notEligible;         // #FF4A4A
+      default:
+        return '#000';
+    }
   };
 
   const iconForStatus = () => {
@@ -63,7 +82,7 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
 
   // Status icons with white color for all states
   let statusIcon: React.ReactNode = null;
-  const iconColor = '#FFFFFF';
+  const iconColor = course.final_status === 'eligible_not_offered' ? '#0D0D0D' : '#FFFFFF';
   if (course.final_status === 'completed') {
     statusIcon = (
       <MaterialCommunityIcons name="check-circle" size={14} color={iconColor} />
@@ -87,7 +106,13 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
       activeOpacity={0.85}
       style={[
         styles.chip,
-        { backgroundColor: getBackgroundColor() },
+        { 
+          backgroundColor: getBackgroundColor(),
+          shadowColor: getNeonGlowColor(),
+          shadowOpacity: 0.22,
+          shadowRadius: 14,
+          shadowOffset: { width: 0, height: 4 },
+        },
         isActive && styles.activeChip,
       ]}
       onPress={() => onToggle(course)}
@@ -95,9 +120,9 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
       {course.is_offered === 1 && <View style={styles.offeredBadge} />}
       <View style={styles.chipContent}>
         {statusIcon && <View style={styles.statusIcon}>{statusIcon}</View>}
-        <Text style={styles.chipText}>{course.code}</Text>
+        <Text style={[styles.chipText, { color: getTextColor() }]}>{course.code}</Text>
       </View>
-      <Text style={styles.metaText}>{getStatusLabel()}</Text>
+      <Text style={[styles.metaText, { color: getTextColor(), opacity: 0.7 }]}>{getStatusLabel()}</Text>
       {isActive && (
         <View style={styles.tooltip}>
           <Text style={styles.tooltipLabel}>Pré-requisitos</Text>
@@ -114,18 +139,18 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
 
 const styles = StyleSheet.create({
   chip: {
-    minWidth: 140,
-    maxWidth: 160,
+    minWidth: 150,
+    maxWidth: 180,
     flexGrow: 1,
     flexBasis: '30%',
-    backgroundColor: palette.surface2,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: palette.border,
-    paddingVertical: 8,
+    borderColor: '#2A2A2A',
+    paddingVertical: 10,
     paddingHorizontal: 14,
     gap: 4,
     position: 'relative',
+    elevation: 6,
   },
   activeChip: {
     borderColor: palette.accent,
@@ -140,7 +165,7 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 13,
     fontWeight: '600',
-    letterSpacing: 0,
+    letterSpacing: 0.2,
     flex: 1,
   },
   statusIcon: {
@@ -152,8 +177,10 @@ const styles = StyleSheet.create({
     right: 6,
     width: 6,
     height: 6,
-    borderRadius: 8,
-    backgroundColor: palette.offered,
+    borderRadius: 3,
+    backgroundColor: '#00F0FF',
+    borderWidth: 1,
+    borderColor: 'rgba(0,240,255,0.35)',
   },
   metaText: {
     color: 'rgba(255,255,255,0.7)',
@@ -166,10 +193,10 @@ const styles = StyleSheet.create({
     bottom: '105%',
     left: -8,
     right: -8,
-    backgroundColor: palette.surface2,
+    backgroundColor: '#141414',
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: palette.border,
+    borderColor: '#2A2A2A',
     padding: 12,
     zIndex: 100,
     shadowColor: '#000',

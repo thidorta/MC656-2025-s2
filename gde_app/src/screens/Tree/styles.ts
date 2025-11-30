@@ -14,12 +14,12 @@ export const palette = {
   accent: '#00F0FF',
   accentSoft: 'rgba(0,240,255,0.15)',
   
-  // Discipline State Colors (professional, saturated, engineered)
-  completed: '#00C853',
-  eligibleOffered: '#1E88E5',
-  eligibleNotOffered: '#F5A623',
-  notEligible: '#B71C1C',
-  offered: '#00F0FF',
+  // BRUNO KALLISTER NEON-MINIMAL DISCIPLINE COLORS
+  completed: '#00FF9C',           // neon emerald - disciplinas concluídas
+  eligibleOffered: '#3DA9FF',     // cold tech blue - elegível e ofertada
+  eligibleNotOffered: '#FFD55A',  // cyber amber (cooler) - elegível não ofertada
+  notEligible: '#FF4A4A',         // cold neon red - pré-requisitos pendentes
+  offered: '#00F0FF',             // core cyan - badge "ofertada neste semestre"
 };
 
 export const spacing = (n: number) => baseSpacing(n);

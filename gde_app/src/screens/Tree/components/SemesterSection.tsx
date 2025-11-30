@@ -60,10 +60,10 @@ const styles = StyleSheet.create({
     borderColor: palette.border,
     overflow: 'hidden',
     shadowColor: '#000',
-    shadowOpacity: 0.35,
-    shadowRadius: 16,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 8,
+    shadowOpacity: 0.28,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 6,
   },
   header: {
     flexDirection: 'row',
@@ -103,8 +103,10 @@ const styles = StyleSheet.create({
   courseGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
+    justifyContent: 'flex-start',
     padding: 16,
-    gap: 12,
+    rowGap: 16,
+    columnGap: 12,
   },
 });
 
