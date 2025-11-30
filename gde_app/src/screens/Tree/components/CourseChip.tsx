@@ -36,11 +36,11 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
   const getBackgroundColor = () => {
     switch (course.final_status) {
       case 'completed':
-        return palette.completed;           // #00FF9C neon emerald
+        return 'rgba(0, 255, 156, 0.75)';    // #00FF9C neon emerald @ 50% opacity
       case 'eligible_offered':
         return palette.eligibleOffered;     // #3DA9FF tech blue
       case 'eligible_not_offered':
-        return 'rgba(255, 222, 124, 0.75)';   // #FFD55A cyber amber @ 50% opacity
+        return 'rgba(245, 234, 88, 0.75)'; // #FFD55A cyber amber @ 75% opacity
       case 'not_eligible':
         return palette.notEligible;         // #FF4A4A cold neon red
       default:
@@ -49,8 +49,8 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
   };
 
   const getTextColor = (): string => {
-    // Black text for eligible_not_offered (transparent chip), white for others
-    if (course.final_status === 'eligible_not_offered') {
+    // Black text for completed and eligible_not_offered (transparent chips), white for others
+    if (course.final_status === 'completed' || course.final_status === 'eligible_not_offered') {
       return '#0D0D0D';
     }
     return '#FFFFFF';
@@ -82,7 +82,7 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
 
   // Status icons with white color for all states
   let statusIcon: React.ReactNode = null;
-  const iconColor = course.final_status === 'eligible_not_offered' ? '#0D0D0D' : '#FFFFFF';
+  const iconColor = (course.final_status === 'completed' || course.final_status === 'eligible_not_offered') ? '#0D0D0D' : '#FFFFFF';
   if (course.final_status === 'completed') {
     statusIcon = (
       <MaterialCommunityIcons name="check-circle" size={14} color={iconColor} />
