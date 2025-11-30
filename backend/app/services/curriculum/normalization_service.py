@@ -19,35 +19,38 @@ class NormalizationService:
 
     @staticmethod
     def compute_is_completed(gde_has_completed: Optional[int]) -> int:
-        """null -> 1 (historically completed), 1 -> 1, 0 -> 0"""
+        """null -> 1 (historically completed), 1 -> 0 (not completed), 0 -> 0 (not completed)"""
         if gde_has_completed is None:
             return 1
-        return gde_has_completed
+        return 0
 
     @staticmethod
-    def compute_prereq_status(gde_prereqs_raw: Optional[int]) -> str:
-        """null -> done_or_irrelevant, 0 -> satisfied, 1 -> missing"""
-        if gde_prereqs_raw is None:
-            return "done_or_irrelevant"
-        elif gde_prereqs_raw == 0:
-            return "satisfied"
-        else:
-            return "missing"
+    def compute_prereq_status(missing_in_gde_snapshot: Optional[int]) -> str:
+        """Use GDE missing flag: None -> not_applicable, 0 -> satisfied, 1 -> missing"""
+        if missing_in_gde_snapshot is None:
+            return "not_applicable"
+        return "missing" if int(missing_in_gde_snapshot) == 1 else "satisfied"
 
     @staticmethod
     def compute_is_offered(gde_offers_raw: Optional[str]) -> int:
-        """null -> 0, non-null -> 1"""
-        return 0 if gde_offers_raw is None else 1
+        """Parse offers JSON; offered if array has at least one item."""
+        if not gde_offers_raw:
+            return 0
+        try:
+            import json
+            data = json.loads(gde_offers_raw)
+            return 1 if isinstance(data, list) and len(data) > 0 else 0
+        except Exception:
+            return 0
 
     @staticmethod
-    def compute_is_eligible(is_completed: int, prereq_status: str) -> int:
-        """completed -> 0, missing prereqs -> 0, else -> 1"""
+    def compute_is_eligible(is_completed: int, can_enroll_gde: Optional[int], prereq_status: str) -> int:
+        """Eligibility: if completed -> 0; else prefer GDE can_enroll flag; fallback to prereq_status."""
         if is_completed == 1:
             return 0
-        elif prereq_status == "missing":
-            return 0
-        else:
-            return 1
+        if can_enroll_gde is not None:
+            return 1 if int(can_enroll_gde) == 1 else 0
+        return 0 if prereq_status == "missing" else 1
 
     @staticmethod
     def compute_final_status(is_completed: int, is_eligible: int, is_offered: int) -> str:
@@ -119,9 +122,9 @@ class NormalizationService:
 
                 # Compute Phase 1 fields
                 is_completed = self.compute_is_completed(has_completed_gde)
-                prereq_status = self.compute_prereq_status(prereqs_gde_raw)
+                prereq_status = self.compute_prereq_status(missing_in_gde_snapshot)
                 is_offered = self.compute_is_offered(offers_gde_raw)
-                is_eligible = self.compute_is_eligible(is_completed, prereq_status)
+                is_eligible = self.compute_is_eligible(is_completed, can_enroll_gde, prereq_status)
                 final_status = self.compute_final_status(is_completed, is_eligible, is_offered)
 
                 # Map plan status if present

@@ -95,11 +95,7 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
         {course.is_offered === 1 && <View style={styles.offeredBadge} />}
         {course.final_status === 'eligible_and_offered' && <View style={styles.eligibleOfferedBadge} />}
       </View>
-      {course.prereq_status === 'missing' ? (
-        <Text style={[styles.metaText, { color: getTextColor(), opacity: 0.7 }]}>Falta pré-requisitos</Text>
-      ) : !course.is_offered ? (
-        <Text style={[styles.metaText, { color: getTextColor(), opacity: 0.7 }]}>Não ofertada</Text>
-      ) : null}
+      <Text style={[styles.metaText, { color: getTextColor(), opacity: 0.7 }]}>{getStatusLabel()}</Text>
       {isActive && (
         <View style={styles.tooltip}>
           <Text style={styles.tooltipLabel}>Requisitos</Text>

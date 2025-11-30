@@ -141,6 +141,22 @@ class SnapshotService:
                     graph_position, order_index
                 ))
             
+            # Update graph_position to proper tree layout
+            # Group by depth and assign y positions within each depth
+            depths = conn.execute("SELECT DISTINCT depth FROM user_curriculum_snapshot ORDER BY depth").fetchall()
+            for depth_row in depths:
+                d = depth_row[0]
+                courses_in_depth = conn.execute(
+                    "SELECT code FROM user_curriculum_snapshot WHERE depth = ? ORDER BY order_index", (d,)
+                ).fetchall()
+                for i, course_row in enumerate(courses_in_depth):
+                    y_pos = i * 80
+                    new_pos = json.dumps({"x": d * 100, "y": y_pos})
+                    conn.execute(
+                        "UPDATE user_curriculum_snapshot SET graph_position = ? WHERE code = ? AND depth = ?",
+                        (new_pos, course_row[0], d)
+                    )
+            
             conn.commit()
             count = len(rows)
             logger.info(f"[SnapshotService] Built snapshot with {count} nodes")
