@@ -7,7 +7,9 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
-from app.api.deps import require_session, require_user, get_db
+from app.api.deps import get_db
+from app.application.dto.planner import PlannerStateRequest
+from app.domain.use_cases.planner.get_planner_state import GetPlannerStateUseCase
 from app.services import planner_service
 
 router = APIRouter()
@@ -34,19 +36,18 @@ def get_planner(
     from app.api.deps import require_access_payload
     jwt_payload = require_access_payload(credentials)
     user_id = jwt_payload.get("uid")
-    planner_id = jwt_payload.get("planner_id", "")
-    
+    planner_id = jwt_payload.get("planner_id")
+
     if not user_id:
         raise HTTPException(status_code=401, detail="Token sem user_id")
-    
-    # Build planner response from relational state
-    response = planner_service.build_planner_response(
-        session=db,
-        user_id=user_id,
-        planner_id=planner_id,
-    )
-    
-    return response
+    if not planner_id:
+        raise HTTPException(status_code=400, detail="Token sem planner_id")
+
+    request_dto = PlannerStateRequest(user_id=user_id, planner_id=planner_id)
+    use_case = GetPlannerStateUseCase(planner_state_builder=planner_service.build_planner_response)
+    response = use_case.execute(session=db, request=request_dto)
+
+    return response.model_dump()
 
 
 @router.post("/refresh")
@@ -77,23 +78,23 @@ def save_modified_planner(
     from app.api.deps import require_access_payload
     jwt_payload = require_access_payload(credentials)
     user_id = jwt_payload.get("uid")
-    planner_id = jwt_payload.get("planner_id", "")
-    
+    planner_id = jwt_payload.get("planner_id")
+
     if not user_id:
         raise HTTPException(status_code=401, detail="Token sem user_id")
-    
+    if not planner_id:
+        raise HTTPException(status_code=400, detail="Token sem planner_id")
+
     # Update planned courses via repository
     planner_service.update_planned_courses(
         session=db,
         user_id=user_id,
         planned_payload=payload.payload,
     )
-    
-    # Return fresh planner view
-    response = planner_service.build_planner_response(
-        session=db,
-        user_id=user_id,
-        planner_id=planner_id,
-    )
-    
-    return response
+
+    # Return fresh planner view through the new use case
+    request_dto = PlannerStateRequest(user_id=user_id, planner_id=planner_id)
+    use_case = GetPlannerStateUseCase(planner_state_builder=planner_service.build_planner_response)
+    response = use_case.execute(session=db, request=request_dto)
+
+    return response.model_dump()
