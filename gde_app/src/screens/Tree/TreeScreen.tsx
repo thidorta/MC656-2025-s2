@@ -137,37 +137,45 @@ export default function ArvoreIntegralizacaoScreen({ navigation }: Props) {
       </View>
 
       <Modal visible={legendVisible} transparent animationType="fade" onRequestClose={() => setLegendVisible(false)}>
-        <View style={styles.legendOverlay}>
-          <View style={styles.legendCard}>
-            <View style={styles.legendHeader}>
-              <Text style={styles.legendTitle}>Legenda da arvore</Text>
-              <TouchableOpacity onPress={() => setLegendVisible(false)} hitSlop={10}>
-                <MaterialCommunityIcons name="close" size={20} color={palette.text} />
-              </TouchableOpacity>
+        <TouchableOpacity 
+          style={styles.legendOverlay} 
+          activeOpacity={1} 
+          onPress={() => setLegendVisible(false)}
+        >
+          <TouchableOpacity activeOpacity={1} onPress={(e) => e.stopPropagation()}>
+            <View style={styles.legendCard}>
+              <View style={styles.legendHeader}>
+                <Text style={styles.legendTitle}>Legenda</Text>
+                <TouchableOpacity onPress={() => setLegendVisible(false)} hitSlop={12}>
+                  <MaterialCommunityIcons name="close" size={20} color={palette.text} />
+                </TouchableOpacity>
+              </View>
+              <Text style={styles.legendSubtitle}>
+                Cores aplicadas a todas as disciplinas em todos os semestres
+              </Text>
+              <View style={styles.legendRow}>
+                <View style={[styles.legendDot, { backgroundColor: palette.completed }]} />
+                <Text style={styles.legendLabel}>Concluída</Text>
+              </View>
+              <View style={styles.legendRow}>
+                <View style={[styles.legendDot, { backgroundColor: palette.eligibleOffered }]} />
+                <Text style={styles.legendLabel}>Elegível e ofertada</Text>
+              </View>
+              <View style={styles.legendRow}>
+                <View style={[styles.legendDot, { backgroundColor: palette.eligibleNotOffered }]} />
+                <Text style={styles.legendLabel}>Elegível (não ofertada)</Text>
+              </View>
+              <View style={styles.legendRow}>
+                <View style={[styles.legendDot, { backgroundColor: palette.notEligible }]} />
+                <Text style={styles.legendLabel}>Pré-requisitos pendentes</Text>
+              </View>
+              <View style={styles.legendRow}>
+                <View style={[styles.legendDot, { backgroundColor: palette.offered }]} />
+                <Text style={styles.legendLabel}>Ofertada neste semestre (badge)</Text>
+              </View>
             </View>
-            <Text style={styles.legendSubtitle}>As cores se aplicam a toda a arvore e todos os semestres.</Text>
-            <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: '#55CC55' }]} />
-              <Text style={styles.legendLabel}>Concluída</Text>
-            </View>
-            <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: '#FFFF66' }]} />
-              <Text style={styles.legendLabel}>Elegível e ofertada</Text>
-            </View>
-            <View style={styles.legendRow}>
-              <View style={[styles.legendDot, { backgroundColor: '#DDDDDD' }]} />
-              <Text style={styles.legendLabel}>Elegível (não ofertada)</Text>
-            </View>
-            <View style={styles.legendRow}>
-               <View style={[styles.legendDot, { backgroundColor: '#FF6666' }]} />
-               <Text style={styles.legendLabel}>Pré-requisitos pendentes</Text>
-             </View>
-             <View style={styles.legendRow}>
-               <View style={[styles.legendDot, { backgroundColor: palette.badgeOffered }]} />
-               <Text style={styles.legendLabel}>Ofertada neste semestre</Text>
-             </View>
-          </View>
-        </View>
+          </TouchableOpacity>
+        </TouchableOpacity>
       </Modal>
     </SafeAreaView>
   );
@@ -176,77 +184,90 @@ export default function ArvoreIntegralizacaoScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   headerActions: {
     flexDirection: 'row',
-    gap: spacing(0.8),
-    marginTop: spacing(1),
+    gap: 8,
+    marginTop: 12,
     flexWrap: 'wrap',
   },
   pillButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing(0.5),
-    backgroundColor: palette.card,
-    paddingVertical: spacing(0.7),
-    paddingHorizontal: spacing(1.1),
-    borderRadius: 14,
+    gap: 6,
+    backgroundColor: palette.surface2,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    borderRadius: 8,
     borderWidth: 1,
-    borderColor: palette.cardBorder,
+    borderColor: palette.border,
   },
   pillButtonActive: {
     borderColor: palette.accent,
-    backgroundColor: palette.accent,
+    backgroundColor: palette.accentSoft,
   },
   pillButtonText: {
     color: palette.text,
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '600',
-    letterSpacing: -0.1,
+    letterSpacing: 0,
   },
   legendOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.65)',
-    justifyContent: 'flex-end',
+    backgroundColor: 'rgba(0,0,0,0.8)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 20,
   },
   legendCard: {
     backgroundColor: palette.surface,
-    borderTopLeftRadius: 22,
-    borderTopRightRadius: 22,
-    padding: 18,
+    borderRadius: 8,
+    padding: 20,
     borderWidth: 1,
-    borderColor: palette.divider,
-    gap: spacing(1),
+    borderColor: palette.border,
+    maxWidth: 400,
+    width: '100%',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    shadowRadius: 24,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 16,
   },
   legendHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: spacing(0.5),
+    marginBottom: 16,
+    paddingBottom: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: palette.border,
   },
   legendTitle: {
     color: palette.text,
     fontSize: 20,
     fontWeight: '700',
-    letterSpacing: -0.3,
+    letterSpacing: 0,
   },
   legendSubtitle: {
-    color: palette.textMuted,
-    fontSize: 14,
+    color: palette.textSecondary,
+    fontSize: 13,
     lineHeight: 20,
-    marginBottom: spacing(0.5),
+    marginBottom: 16,
   },
   legendRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing(0.9),
-    paddingVertical: spacing(0.4),
+    gap: 12,
+    paddingVertical: 8,
   },
   legendDot: {
-    width: 12,
-    height: 12,
-    borderRadius: 6,
+    width: 18,
+    height: 18,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: palette.border,
   },
   legendLabel: {
     color: palette.text,
-    fontSize: 14,
-    letterSpacing: -0.1,
+    fontSize: 15,
+    letterSpacing: 0,
+    flex: 1,
   },
 });

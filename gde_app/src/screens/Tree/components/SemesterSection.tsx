@@ -27,13 +27,13 @@ const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCour
   return (
     <View style={styles.card}>
       <TouchableOpacity onPress={() => setIsCollapsed(!isCollapsed)} style={styles.header} activeOpacity={0.85}>
-        <View>
+        <View style={styles.headerLeft}>
           <Text style={styles.badge}>{label}</Text>
           <Text style={styles.title}>{semester.title}</Text>
         </View>
         <View style={styles.headerRight}>
           <Text style={styles.meta}>{courseCount} disciplinas</Text>
-          <MaterialCommunityIcons name={collapsed ? 'chevron-down' : 'chevron-up'} size={22} color={palette.text} />
+          <MaterialCommunityIcons name={collapsed ? 'chevron-down' : 'chevron-up'} size={20} color={palette.text} />
         </View>
       </TouchableOpacity>
       {!collapsed && (
@@ -55,49 +55,56 @@ const SemesterSection: React.FC<Props> = ({ semester, activeCourse, onToggleCour
 const styles = StyleSheet.create({
   card: {
     backgroundColor: palette.surface,
-    borderRadius: 14,
+    borderRadius: 8,
     borderWidth: 1,
-    borderColor: palette.divider,
+    borderColor: palette.border,
     overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 8,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: spacing(1.5),
-    paddingVertical: spacing(1.4),
+    paddingHorizontal: 16,
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: palette.border,
+  },
+  headerLeft: {
+    flex: 1,
   },
   badge: {
-    color: palette.textMuted,
-    fontSize: 12,
-    letterSpacing: 0.6,
+    color: palette.textSecondary,
+    fontSize: 13,
+    letterSpacing: 0,
     textTransform: 'uppercase',
-    marginBottom: 3,
+    marginBottom: 4,
   },
   title: {
     color: palette.text,
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: '600',
-    letterSpacing: -0.1,
+    letterSpacing: 0,
   },
   headerRight: {
     flexDirection: 'row',
     alignItems: 'center',
-    columnGap: spacing(0.6),
+    columnGap: 12,
   },
   meta: {
-    color: palette.textMuted,
+    color: palette.textSecondary,
     fontSize: 13,
-    letterSpacing: -0.1,
+    letterSpacing: 0,
   },
   courseGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    paddingHorizontal: spacing(1.5),
-    paddingTop: spacing(1.5),
-    paddingBottom: spacing(2),
-    gap: 8,
-    justifyContent: 'space-between',
+    padding: 16,
+    gap: 12,
   },
 });
 

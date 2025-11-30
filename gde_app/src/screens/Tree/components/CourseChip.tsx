@@ -32,19 +32,25 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
     return prereqList.length > 0 ? prereqList : ['sem requisitos'];
   };
 
-  // Use backend color_hex for background
+  // BRUNO KALLISTER STATE COLOR MAPPING
   const getBackgroundColor = (): string => {
-    return course.color_hex || palette.card;
+    switch (course.final_status) {
+      case 'completed':
+        return palette.completed;
+      case 'eligible_and_offered':
+        return palette.eligibleOffered;
+      case 'eligible_not_offered':
+        return palette.eligibleNotOffered;
+      case 'not_eligible':
+        return palette.notEligible;
+      default:
+        return palette.surface2;
+    }
   };
 
-  // Determinar cor do texto com base no brilho do background
   const getTextColor = (): string => {
-    const bgColor = course.color_hex || palette.card;
-    // Cores claras do backend: #FFFF66 (amarelo), #DDDDDD (cinza claro)
-    if (bgColor === '#FFFF66' || bgColor === '#DDDDDD' || bgColor === '#55CC55') {
-      return '#000000'; // texto escuro para fundos claros
-    }
-    return palette.text; // texto claro para fundos escuros
+    // All Bruno colors use white text for maximum contrast
+    return '#FFFFFF';
   };
 
   const iconForStatus = () => {
@@ -55,54 +61,49 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
     return null;
   };
 
-  // Status icons with size 14
+  // Status icons with white color for all states
   let statusIcon: React.ReactNode = null;
-  const iconColor = getTextColor();
+  const iconColor = '#FFFFFF';
   if (course.final_status === 'completed') {
     statusIcon = (
-      <MaterialCommunityIcons name="check-circle-outline" size={14} color={iconColor} />
+      <MaterialCommunityIcons name="check-circle" size={14} color={iconColor} />
     );
   } else if (course.final_status === 'eligible_and_offered') {
     statusIcon = (
-      <MaterialCommunityIcons name="book-check-outline" size={14} color={iconColor} />
+      <MaterialCommunityIcons name="book-check" size={14} color={iconColor} />
     );
   } else if (course.final_status === 'eligible_not_offered') {
     statusIcon = (
-      <MaterialCommunityIcons name="calendar-clock" size={14} color={iconColor} />
+      <MaterialCommunityIcons name="clock-outline" size={14} color={iconColor} />
     );
   } else if (course.final_status === 'not_eligible') {
     statusIcon = (
-      <MaterialCommunityIcons name="close-circle-outline" size={14} color={iconColor} />
+      <MaterialCommunityIcons name="lock" size={14} color={iconColor} />
     );
   }
 
   return (
     <TouchableOpacity
-      activeOpacity={0.9}
+      activeOpacity={0.85}
       style={[
         styles.chip,
-        {
-          backgroundColor: getBackgroundColor(),
-          borderColor: palette.border,
-        },
+        { backgroundColor: getBackgroundColor() },
         isActive && styles.activeChip,
       ]}
       onPress={() => onToggle(course)}
     >
+      {course.is_offered === 1 && <View style={styles.offeredBadge} />}
       <View style={styles.chipContent}>
-        {statusIcon}
-        <Text style={[styles.chipText, { color: getTextColor() }]}>{course.code}</Text>
-        {course.is_offered === 1 && <View style={styles.offeredBadge} />}
-        {course.final_status === 'eligible_and_offered' && <View style={styles.eligibleOfferedBadge} />}
+        {statusIcon && <View style={styles.statusIcon}>{statusIcon}</View>}
+        <Text style={styles.chipText}>{course.code}</Text>
       </View>
-      <Text style={[styles.metaText, { color: getTextColor(), opacity: 0.7 }]}>{getStatusLabel()}</Text>
+      <Text style={styles.metaText}>{getStatusLabel()}</Text>
       {isActive && (
         <View style={styles.tooltip}>
-          <Text style={styles.tooltipLabel}>Requisitos</Text>
-          {formatPrereqs(course.prereq_list).map((code, idx, arr) => (
+          <Text style={styles.tooltipLabel}>Pré-requisitos</Text>
+          {formatPrereqs(course.prereq_list).map((code, idx) => (
             <Text key={`${course.code}-req-${idx}`} style={styles.tooltipText}>
-              {code}
-              {idx < arr.length - 1 ? ', ' : ''}
+              • {code}
             </Text>
           ))}
         </View>
@@ -113,112 +114,82 @@ const CourseChip: React.FC<CourseChipProps> = ({ course, isActive, onToggle }) =
 
 const styles = StyleSheet.create({
   chip: {
-    backgroundColor: palette.card,
-    borderRadius: 14,
-    paddingVertical: 8,
-    paddingHorizontal: 10,
-    minWidth: 130,
-    minHeight: 70,
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: palette.cardBorder,
-    position: 'relative',
-    overflow: 'visible',
+    minWidth: 140,
+    maxWidth: 160,
     flexGrow: 1,
-    width: '46%',
-    maxWidth: 170,
-    flexDirection: 'row',
-    gap: 8,
-    marginBottom: 10,
-  },
-  currentChip: {
-    borderColor: palette.accentBorder,
-    backgroundColor: palette.accentSoft,
-  },
-  chipPlanned: {
-    backgroundColor: palette.accent,
-    borderColor: palette.accent,
-  },
-  chipBlocked: {
-    backgroundColor: palette.dangerSoft,
-    borderColor: palette.dangerBorder,
-  },
-  chipNotOffered: {
-    backgroundColor: palette.infoSoft,
-    borderColor: palette.infoBorder,
+    flexBasis: '30%',
+    backgroundColor: palette.surface2,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: palette.border,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    gap: 4,
+    position: 'relative',
   },
   activeChip: {
     borderColor: palette.accent,
-    shadowOpacity: 0.35,
-    shadowRadius: 16,
-  },
-  chipText: {
-    color: palette.text,
-    fontSize: 13,
-    fontWeight: '600',
-    letterSpacing: -0.1,
-    flexShrink: 1,
-    flexGrow: 1,
-    flexBasis: '70%',
-    lineHeight: 16,
+    borderWidth: 2,
   },
   chipContent: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing(0.5),
+    gap: 6,
+  },
+  chipText: {
+    color: '#FFFFFF',
+    fontSize: 13,
+    fontWeight: '600',
+    letterSpacing: 0,
+    flex: 1,
   },
   statusIcon: {
-    marginLeft: 2,
+    marginRight: 0,
   },
   offeredBadge: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    backgroundColor: palette.badgeOffered,
-    marginLeft: 6,
-  },
-  eligibleOfferedBadge: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    backgroundColor: palette.badgeEligibleOffered,
-    marginLeft: 6,
+    position: 'absolute',
+    top: 6,
+    right: 6,
+    width: 6,
+    height: 6,
+    borderRadius: 8,
+    backgroundColor: palette.offered,
   },
   metaText: {
-    color: palette.textMuted,
+    color: 'rgba(255,255,255,0.7)',
     fontSize: 11,
-    marginTop: 2,
     letterSpacing: 0,
+    marginTop: 2,
   },
   tooltip: {
     position: 'absolute',
-    bottom: '110%',
-    left: 0,
-    right: 0,
-    marginHorizontal: spacing(0.25),
-    backgroundColor: '#1F1F22',
-    borderRadius: 14,
+    bottom: '105%',
+    left: -8,
+    right: -8,
+    backgroundColor: palette.surface2,
+    borderRadius: 8,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.12)',
-    padding: spacing(1.2),
-    elevation: 12,
+    borderColor: palette.border,
+    padding: 12,
+    zIndex: 100,
     shadowColor: '#000',
-    shadowOpacity: 0.4,
-    shadowRadius: 20,
+    shadowOpacity: 0.5,
+    shadowRadius: 24,
     shadowOffset: { width: 0, height: 8 },
+    elevation: 16,
   },
   tooltipLabel: {
-    color: palette.textMuted,
-    fontSize: 12,
+    color: palette.textSecondary,
+    fontSize: 11,
     marginBottom: 6,
-    letterSpacing: 0.3,
+    letterSpacing: 0,
     textTransform: 'uppercase',
   },
   tooltipText: {
     color: palette.text,
-    fontSize: 14,
+    fontSize: 13,
     lineHeight: 20,
-    letterSpacing: -0.1,
+    letterSpacing: 0,
   },
 });
 

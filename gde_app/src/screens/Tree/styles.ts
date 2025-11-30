@@ -1,28 +1,25 @@
 import { StyleSheet } from 'react-native';
 import { spacing as baseSpacing } from '../../theme/spacing';
 
+// BRUNO KALLISTER — TREE DESIGN TOKENS
 export const palette = {
   bg: '#0D0D0D',
-  surface: '#161616',
-  card: '#1C1C1E',
-  cardBorder: 'rgba(255,255,255,0.08)',
-  text: '#F2F2F7',
-  textMuted: 'rgba(242,242,247,0.6)',
-  divider: 'rgba(255,255,255,0.08)',
-
-  // iOS Pastel State Colors
-  completedSoft: '#2ECC71',
-  eligibleSoft: '#A3E4D7',
-  offeredSoft: '#7DCEA0',
-  notEligibleSoft: '#F5B7B1',
-
-  // Badge Colors
-  badgeCompleted: '#58D68D',
-  badgeEligibleOffered: '#ABEBC6',
-  badgeOffered: '#82E0AA',
+  surface: '#141414',
+  surface2: '#1E1E1E',
+  border: '#2A2A2A',
   
-  // Accent
-  accent: '#5AC8FA',
+  text: '#EDEDED',
+  textSecondary: '#A9A9A9',
+  
+  accent: '#00F0FF',
+  accentSoft: 'rgba(0,240,255,0.15)',
+  
+  // Discipline State Colors (professional, saturated, engineered)
+  completed: '#00C853',
+  eligibleOffered: '#1E88E5',
+  eligibleNotOffered: '#F5A623',
+  notEligible: '#B71C1C',
+  offered: '#00F0FF',
 };
 
 export const spacing = (n: number) => baseSpacing(n);
@@ -37,50 +34,52 @@ export const globalStyles = StyleSheet.create({
     backgroundColor: palette.bg,
   },
   navbar: {
-    height: 48,
+    height: 60,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    paddingTop: 8,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.06)',
+    borderBottomColor: palette.border,
   },
   backButton: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: 40,
+    height: 40,
+    borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: palette.surface,
+    borderWidth: 1,
+    borderColor: palette.border,
   },
   navTitle: {
     color: palette.text,
-    fontSize: 17,
+    fontSize: 20,
     fontWeight: '600',
-    letterSpacing: -0.2,
+    letterSpacing: 0,
   },
   headerBlock: {
     paddingHorizontal: 20,
     paddingTop: 16,
-    paddingBottom: 14,
-    gap: 6,
+    paddingBottom: 16,
+    gap: 8,
   },
   headerEyebrow: {
-    color: palette.textMuted,
+    color: palette.textSecondary,
     fontSize: 13,
-    letterSpacing: 0.6,
+    letterSpacing: 0,
     textTransform: 'uppercase',
   },
   headerTitle: {
     color: palette.text,
-    fontSize: 22,
+    fontSize: 28,
     fontWeight: '700',
-    letterSpacing: -0.3,
+    letterSpacing: 0,
   },
   headerDescription: {
-    color: palette.textMuted,
-    fontSize: 13,
-    lineHeight: 18,
+    color: palette.textSecondary,
+    fontSize: 15,
+    lineHeight: 22,
     letterSpacing: 0,
   },
   scrollArea: {
@@ -88,26 +87,23 @@ export const globalStyles = StyleSheet.create({
   },
   contentContainer: {
     paddingHorizontal: 20,
-    paddingBottom: spacing(4),
-    gap: spacing(1.5),
+    paddingBottom: 32,
+    gap: 16,
   },
   helperText: {
-    color: palette.textMuted,
-    fontSize: 14,
+    color: palette.textSecondary,
+    fontSize: 13,
     textAlign: 'center',
-    marginTop: spacing(1.5),
+    marginTop: 12,
   },
   errorText: {
-    color: palette.danger,
-    fontSize: 14,
+    color: palette.notEligible,
+    fontSize: 13,
     textAlign: 'center',
-    marginVertical: spacing(1.5),
+    marginVertical: 12,
   },
   loader: {
     alignItems: 'center',
-    paddingVertical: spacing(2),
-  },
-  sectionSpacer: {
-    height: spacing(1.5),
+    paddingVertical: 16,
   },
 });

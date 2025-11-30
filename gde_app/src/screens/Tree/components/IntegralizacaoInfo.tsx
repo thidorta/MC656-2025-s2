@@ -87,11 +87,16 @@ const IntegralizacaoInfo: React.FC<Props> = ({
 const styles = StyleSheet.create({
   card: {
     backgroundColor: palette.surface,
-    borderRadius: 14,
-    padding: spacing(1.75),
+    borderRadius: 8,
+    padding: spacing(2),
     borderWidth: 1,
-    borderColor: palette.divider,
+    borderColor: palette.border,
     gap: spacing(1),
+    shadowColor: '#000',
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 8,
   },
   header: {
     flexDirection: 'row',
@@ -99,14 +104,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   eyebrow: {
-    color: palette.textMuted,
-    fontSize: 12,
-    letterSpacing: 0.4,
+    color: palette.textSecondary,
+    fontSize: 13,
+    letterSpacing: 0,
     marginBottom: 2,
   },
   title: {
     color: palette.text,
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: '700',
   },
   fields: {

@@ -8,11 +8,12 @@ import { spacing } from '../theme/spacing';
 type Props = NativeStackScreenProps<RootStackParamList, 'Welcome'>;
 
 const palette = {
-  bg: '#0B0B0F',
-  text: '#E8ECF5',
-  textMuted: '#8A8F9B',
-  accent: '#33E1D3',
-  surfaceElevated: '#151824',
+  bg: '#0D0D0D',
+  text: '#EDEDED',
+  textSecondary: '#A9A9A9',
+  accent: '#00F0FF',
+  surface2: '#1E1E1E',
+  border: '#2A2A2A',
 };
 
 export default function WelcomeScreen({ navigation }: Props) {
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
   page: {
     flex: 1,
     backgroundColor: palette.bg,
-    paddingHorizontal: 24,
+    paddingHorizontal: 20,
     justifyContent: 'space-between',
     paddingBottom: spacing(3),
   },
@@ -62,13 +63,13 @@ const styles = StyleSheet.create({
   logoWrap: {
     width: 140,
     height: 140,
-    borderRadius: 70,
-    backgroundColor: palette.surfaceElevated,
+    borderRadius: 8,
+    backgroundColor: palette.surface2,
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.08)',
-    marginBottom: spacing(2),
+    borderColor: palette.border,
+    marginBottom: spacing(3),
   },
   logo: {
     width: 90,
@@ -78,11 +79,11 @@ const styles = StyleSheet.create({
     color: palette.text,
     fontSize: 28,
     fontWeight: '700',
-    letterSpacing: 0.4,
+    letterSpacing: 0,
     textAlign: 'center',
   },
   subtitle: {
-    color: palette.textMuted,
+    color: palette.textSecondary,
     fontSize: 15,
     lineHeight: 22,
     textAlign: 'center',
@@ -94,14 +95,14 @@ const styles = StyleSheet.create({
   },
   primaryButton: {
     backgroundColor: palette.accent,
-    borderRadius: 18,
-    paddingVertical: spacing(1.5),
+    borderRadius: 8,
+    paddingVertical: spacing(1.75),
     alignItems: 'center',
   },
   primaryButtonText: {
     color: palette.bg,
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '700',
-    letterSpacing: 0.3,
+    letterSpacing: 0,
   },
 });

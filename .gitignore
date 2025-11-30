@@ -143,3 +143,4 @@ __pypackages__/
 /crawler/data/js_catalog/
 /gde_app/debug-data/generated/
 /gde_app/debug-data/*.log
+gde_app.zip
