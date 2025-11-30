@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import usePlanner from './usePlanner';
 import useCurriculum from './useCurriculum';
 import { Semester, CourseNode, TreeSnapshot } from '../types';
@@ -37,27 +37,44 @@ export default function useTreeLogic() {
     loadCurriculumOptions().then((parsed) => loadPlanner(parsed)).catch(() => loadPlanner());
   }, []);
 
-  // Fetch tree snapshot (for "Nao" mode)
+  const fetchTreeSnapshot = useCallback(async () => {
+    if (
+      isCompleta !== 'Nao' ||
+      !selectedCourseId ||
+      !selectedYear ||
+      !selectedModalidade
+    ) {
+      return;
+    }
+    setLoadingTree(true);
+    setTreeError(null);
+    try {
+      const snapshot = await apiService.fetchTreeSnapshot({
+        cursoId: selectedCourseId,
+        catalogYear: selectedYear,
+        modalityCode: selectedModalidade,
+      });
+      setTreeSnapshot(snapshot);
+    } catch (error) {
+      console.error('Failed to fetch tree snapshot:', error);
+      setTreeError(error instanceof Error ? error.message : 'Failed to fetch tree');
+      setTreeSnapshot(null);
+    } finally {
+      setLoadingTree(false);
+    }
+  }, [isCompleta, selectedCourseId, selectedYear, selectedModalidade]);
+
+  // Auto load snapshot when filters are ready
   useEffect(() => {
-    if (isCompleta === 'Nao') {
-      const fetchTreeSnapshot = async () => {
-        setLoadingTree(true);
-        setTreeError(null);
-        try {
-          const snapshot = await apiService.fetchTreeSnapshot();
-          setTreeSnapshot(snapshot);
-        } catch (error) {
-          console.error('Failed to fetch tree snapshot:', error);
-          setTreeError(error instanceof Error ? error.message : 'Failed to fetch tree');
-          setTreeSnapshot(null);
-        } finally {
-          setLoadingTree(false);
-        }
-      };
-      
+    if (isCompleta !== 'Nao') {
+      setTreeSnapshot(null);
+      setTreeError(null);
+      return;
+    }
+    if (selectedCourseId && selectedYear && selectedModalidade) {
       fetchTreeSnapshot();
     }
-  }, [isCompleta]);
+  }, [isCompleta, selectedCourseId, selectedYear, selectedModalidade, fetchTreeSnapshot]);
 
   useEffect(() => {
     if (selectedCourseId || plannerCourses.length === 0 || curriculumOptions.length === 0) return;
@@ -250,5 +267,6 @@ export default function useTreeLogic() {
     setShowContext,
     setSelectedModalidade,
     treeSnapshot,
+    reloadTreeSnapshot: fetchTreeSnapshot,
   };
 }

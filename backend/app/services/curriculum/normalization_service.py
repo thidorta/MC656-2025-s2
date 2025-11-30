@@ -74,6 +74,7 @@ class NormalizationService:
             conn.execute("""
                 CREATE TABLE user_curriculum_normalized (
                     user_id TEXT NOT NULL,
+                    course_id INTEGER NOT NULL,
                     code TEXT NOT NULL,
                     name TEXT NOT NULL,
                     credits INTEGER,
@@ -105,7 +106,7 @@ class NormalizationService:
             # Read from raw
             cur = conn.execute("""
                 SELECT 
-                    user_id, code, name, credits, tipo, semester,
+                    user_id, course_id, code, name, credits, tipo, semester,
                     cp_group, catalogo, modality_id,
                     discipline_id_gde, has_completed_gde, can_enroll_gde,
                     missing_in_gde_snapshot, status_gde_raw, color_gde_raw,
@@ -116,7 +117,7 @@ class NormalizationService:
             rows = cur.fetchall()
 
             for row in rows:
-                (user_id, code, name, credits, tipo, semester, cp_group, catalogo, modality_id,
+                (user_id, course_id, code, name, credits, tipo, semester, cp_group, catalogo, modality_id,
                  discipline_id_gde, has_completed_gde, can_enroll_gde, missing_in_gde_snapshot,
                  status_gde_raw, color_gde_raw, note_gde_raw, prereqs_gde_raw, offers_gde_raw) = row
 
@@ -132,15 +133,15 @@ class NormalizationService:
 
                 conn.execute("""
                     INSERT INTO user_curriculum_normalized (
-                        user_id, code, name, credits, course_type, recommended_semester,
+                        user_id, course_id, code, name, credits, course_type, recommended_semester,
                         cp_group, catalog_year, modality_id,
                         gde_discipline_id, gde_has_completed, gde_plan_status,
                         gde_can_enroll, gde_prereqs_raw, gde_offers_raw,
                         gde_color_raw, gde_plan_status_raw,
                         is_completed, prereq_status, is_eligible, is_offered, final_status
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
-                    user_id, code, name, credits, tipo, semester,
+                    user_id, course_id, code, name, credits, tipo, semester,
                     cp_group, catalogo, modality_id,
                     discipline_id_gde, has_completed_gde, gde_plan_status,
                     can_enroll_gde, prereqs_gde_raw, offers_gde_raw,

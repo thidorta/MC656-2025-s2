@@ -33,6 +33,7 @@ export default function ArvoreIntegralizacaoScreen({ navigation }: Props) {
     showContext,
     setShowContext,
     setSelectedModalidade,
+    reloadTreeSnapshot,
   } = useTreeLogic();
   const [showFullTree, setShowFullTree] = React.useState(false);
   const [legendVisible, setLegendVisible] = React.useState(false);
@@ -69,6 +70,19 @@ export default function ArvoreIntegralizacaoScreen({ navigation }: Props) {
                   color={palette.text}
                 />
                 <Text style={styles.pillButtonText}>{showFullTree ? 'Recolher' : 'Ver arvore completa'}</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[
+                  styles.pillButton,
+                  styles.reloadButton,
+                  (loadingPlanner || loadingCurriculum) && styles.pillButtonDisabled,
+                ]}
+                onPress={reloadTreeSnapshot}
+                activeOpacity={0.9}
+                disabled={loadingPlanner || loadingCurriculum}
+              >
+                <MaterialCommunityIcons name="refresh" size={16} color={palette.text} />
+                <Text style={styles.pillButtonText}>Atualizar arvore</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={styles.pillButton}
@@ -208,6 +222,12 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: '600',
     letterSpacing: 0,
+  },
+  pillButtonDisabled: {
+    opacity: 0.5,
+  },
+  reloadButton: {
+    borderColor: palette.accent,
   },
   legendOverlay: {
     flex: 1,

@@ -72,7 +72,12 @@ class RawAcquisitionService:
         conn.commit()
 
     def rebuild_user_curriculum_raw(
-        self, user_id: int, course_id: int, catalog_year: int, user_db: Dict[str, Any]
+        self,
+        user_id: int,
+        course_id: int,
+        catalog_year: int,
+        user_db: Dict[str, Any],
+        modality_id: int,
     ) -> int:
         """Build user_curriculum_raw table via left join."""
         catalog_conn = sqlite3.connect(str(self.catalog_db_path))
@@ -88,6 +93,7 @@ class RawAcquisitionService:
             user_auth_conn.execute("""
                 CREATE TABLE user_curriculum_raw (
                     user_id INTEGER NOT NULL,
+                    course_id INTEGER NOT NULL,
                     code TEXT NOT NULL,
                     name TEXT,
                     credits INTEGER,
@@ -119,19 +125,20 @@ class RawAcquisitionService:
                     JOIN catalog.catalog_curriculum cc ON ce.curriculum_id = cc.curriculum_id
                     JOIN catalog.discipline d ON ce.discipline_id = d.discipline_id
                     JOIN catalog.catalog_modality cm ON cc.modality_id = cm.modality_id
-                    WHERE cm.course_id = ? AND cc.year = ?
+                    WHERE cm.course_id = ? AND cc.year = ? AND cm.modality_id = ?
                 ), picked AS (
                     SELECT * FROM ce1 WHERE ce_rowid IN (
                         SELECT MIN(ce_rowid) FROM ce1 GROUP BY d_code
                     )
                 )
                 INSERT INTO user_curriculum_raw (
-                    user_id, code, name, credits, tipo, semester, cp_group, modality_id, catalogo,
+                    user_id, course_id, code, name, credits, tipo, semester, cp_group, modality_id, catalogo,
                     discipline_id_gde, has_completed_gde, can_enroll_gde, missing_in_gde_snapshot,
                     status_gde_raw, color_gde_raw, note_gde_raw, prereqs_gde_raw, offers_gde_raw
                 )
                 SELECT
                     ? AS user_id,
+                    ? AS course_id,
                     COALESCE(g.code, p.d_code) AS code,
                     p.d_name AS name,
                     p.credits,
@@ -153,7 +160,7 @@ class RawAcquisitionService:
                 LEFT JOIN gde_overlay_raw g ON p.d_code = g.code
             """
 
-            user_auth_conn.execute(insert_sql, (course_id, catalog_year, user_id))
+            user_auth_conn.execute(insert_sql, (course_id, catalog_year, modality_id, user_id, course_id))
             user_auth_conn.commit()
 
             count = user_auth_conn.execute(

@@ -7,16 +7,31 @@ from sqlalchemy.orm import Session
 from app.db.repositories.tree_repository import TreeRepository
 from app.utils.logging_setup import logger
 from app.utils.errors import AppError
+from app.services.curriculum.updater import CurriculumUpdater
 
 class TreeService:
     def __init__(self, db: Session):
         self.repo = TreeRepository(db)
 
-    def build_for_user(self, user_id: str) -> Dict[str, Any]:
-        logger.info(f"[TreeService] Building tree for user_id={user_id}")
-        rows = self.repo.fetch_user_snapshot_rows(user_id)
+    def build_for_user(self, user_id: str, course_id: int, catalog_year: int, modality_id: int) -> Dict[str, Any]:
+        logger.info(
+            f"[TreeService] Building tree for user={user_id} course={course_id} catalog={catalog_year} modality={modality_id}"
+        )
+        rows = self.repo.fetch_user_snapshot_rows_filtered(user_id, course_id, catalog_year, modality_id)
         if not rows:
-            raise AppError(f"No curriculum snapshot found for user {user_id}")
+            logger.info("[TreeService] No snapshot rows for selection; triggering pipeline rebuild")
+            updater = CurriculumUpdater()
+            updater.rebuild_all_for_user(
+                user_id=user_id,
+                course_id=course_id,
+                catalog_year=catalog_year,
+                modality_id=modality_id,
+            )
+            rows = self.repo.fetch_user_snapshot_rows_filtered(user_id, course_id, catalog_year, modality_id)
+            if not rows:
+                raise AppError(
+                    f"No curriculum snapshot found for user {user_id} with (course_id={course_id}, catalog_year={catalog_year}, modality_id={modality_id})"
+                )
         curriculum: List[Dict[str, Any]] = []
         for row in rows:
             prereq_list = json.loads(row.get("prereq_list") or "[]")
@@ -54,3 +69,17 @@ class TreeService:
                 "order_index": row.get("order_index"),
             })
         return {"user_id": user_id, "curriculum": curriculum}
+
+    def rebuild_for_selection(self, user_id: str, course_id: int, catalog_year: int, modality_id: int) -> int:
+        logger.info(
+            f"[TreeService] Forcing rebuild for user={user_id} course={course_id} catalog={catalog_year} modality={modality_id}"
+        )
+        updater = CurriculumUpdater()
+        updater.rebuild_all_for_user(
+            user_id=user_id,
+            course_id=course_id,
+            catalog_year=catalog_year,
+            modality_id=modality_id,
+        )
+        rows = self.repo.fetch_user_snapshot_rows_filtered(user_id, course_id, catalog_year, modality_id)
+        return len(rows)

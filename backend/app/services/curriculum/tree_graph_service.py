@@ -104,42 +104,26 @@ class TreeGraphService:
         
         return depths
 
-    def rebuild_user_curriculum_tree(self) -> int:
-        """Build tree structure from normalized data + catalog prerequisites."""
+    def rebuild_user_curriculum_tree(self, user_id: int, course_id: int, catalog_year: int, modality_id: int) -> int:
+        """Build tree structure from normalized data + catalog prerequisites for a specific selection."""
         user_auth_conn = sqlite3.connect(str(self.user_auth_db_path))
         catalog_conn = sqlite3.connect(str(self.catalog_db_path))
 
         try:
-            # Get course/catalog info from first row
-            row = user_auth_conn.execute(
-                "SELECT user_id, catalog_year, modality_id FROM user_curriculum_normalized LIMIT 1"
-            ).fetchone()
-            
-            if not row:
-                raise ValueError("No data in user_curriculum_normalized")
-            
-            user_id, catalog_year, modality_id = row[0], row[1], row[2]
-            
-            # Get course_id from catalog
-            course_id_row = catalog_conn.execute("""
-                SELECT cm.course_id
-                FROM catalog_curriculum cc
-                JOIN catalog_modality cm ON cc.modality_id = cm.modality_id
-                WHERE cc.year = ? AND cm.modality_id = ?
-                LIMIT 1
-            """, (catalog_year, modality_id)).fetchone()
-            
-            if not course_id_row:
-                raise ValueError(f"Could not find course_id for modality_id={modality_id}, catalog_year={catalog_year}")
-            
-            course_id = course_id_row[0]
+            # Validate inputs
+            if not (user_id and course_id and catalog_year and modality_id):
+                raise ValueError("Missing one of required inputs: user_id, course_id, catalog_year, modality_id")
             
             # Load prerequisite graph
             prereqs = self.load_catalog_prerequisites(catalog_conn, course_id, catalog_year)
             
-            # Get all codes
+            # Get all codes for this selection
             all_codes_result = user_auth_conn.execute(
-                "SELECT code FROM user_curriculum_normalized WHERE user_id = ?", (user_id,)
+                """
+                SELECT code FROM user_curriculum_normalized
+                WHERE user_id = ? AND course_id = ? AND catalog_year = ? AND modality_id = ?
+                """,
+                (user_id, course_id, catalog_year, modality_id),
             ).fetchall()
             all_codes = {row[0] for row in all_codes_result}
             
@@ -191,8 +175,8 @@ class TreeGraphService:
                     gde_has_completed, gde_plan_status, gde_can_enroll, gde_prereqs_raw,
                     gde_offers_raw, gde_color_raw, gde_plan_status_raw
                 FROM user_curriculum_normalized
-                WHERE user_id = ?
-            """, (user_id,))
+                WHERE user_id = ? AND course_id = ? AND catalog_year = ? AND modality_id = ?
+            """, (user_id, course_id, catalog_year, modality_id))
             
             rows = cur.fetchall()
             

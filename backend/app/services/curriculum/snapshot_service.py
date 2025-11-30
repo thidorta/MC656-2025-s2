@@ -43,6 +43,7 @@ class SnapshotService:
                     cp_group TEXT,
                     catalog_year INTEGER,
                     modality_id INTEGER,
+                    course_id INTEGER,
                     
                     gde_discipline_id TEXT,
                     gde_has_completed INTEGER,
@@ -82,6 +83,7 @@ class SnapshotService:
                 p1.cp_group,
                 p1.catalog_year,
                 p1.modality_id,
+                p1.course_id,
                 
                 p1.gde_discipline_id,
                 p1.gde_has_completed,
@@ -122,15 +124,15 @@ class SnapshotService:
                 conn.execute("""
                     INSERT INTO user_curriculum_snapshot (
                         user_id, code, name, credits, course_type, recommended_semester, cp_group,
-                        catalog_year, modality_id,
+                        catalog_year, modality_id, course_id,
                         gde_discipline_id, gde_has_completed, gde_plan_status, gde_can_enroll,
                         gde_prereqs_raw, gde_offers_raw, gde_color_raw, gde_plan_status_raw,
                         is_completed, prereq_status, is_eligible, is_offered, final_status,
                         prereq_list, children_list, depth, color_hex, graph_position, order_index
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
                     row['user_id'], row['code'], row['name'], row['credits'], row['course_type'],
-                    row['recommended_semester'], row['cp_group'], row['catalog_year'], row['modality_id'],
+                    row['recommended_semester'], row['cp_group'], row['catalog_year'], row['modality_id'], row['course_id'],
                     row['gde_discipline_id'], row['gde_has_completed'], row['gde_plan_status'],
                     row['gde_can_enroll'], row['gde_prereqs_raw'], row['gde_offers_raw'],
                     row['gde_color_raw'], row['gde_plan_status_raw'],
