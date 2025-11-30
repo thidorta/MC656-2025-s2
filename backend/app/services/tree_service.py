@@ -27,6 +27,7 @@ class TreeService:
                 catalog_year=catalog_year,
                 modality_id=modality_id,
             )
+            self.repo.invalidate_snapshot_schema_cache()
             rows = self.repo.fetch_user_snapshot_rows_filtered(user_id, course_id, catalog_year, modality_id)
             if not rows:
                 raise AppError(
@@ -81,5 +82,6 @@ class TreeService:
             catalog_year=catalog_year,
             modality_id=modality_id,
         )
+        self.repo.invalidate_snapshot_schema_cache()
         rows = self.repo.fetch_user_snapshot_rows_filtered(user_id, course_id, catalog_year, modality_id)
         return len(rows)

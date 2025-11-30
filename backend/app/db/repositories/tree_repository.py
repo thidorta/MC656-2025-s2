@@ -9,6 +9,10 @@ class TreeRepository:
         self.db = db
         self._snapshot_has_course_id: bool | None = None
 
+    def invalidate_snapshot_schema_cache(self) -> None:
+        """Force the repository to re-check snapshot table columns on the next query."""
+        self._snapshot_has_course_id = None
+
     def _snapshot_supports_course_id(self) -> bool:
         """Detect whether the snapshot table currently exposes the course_id column."""
         if self._snapshot_has_course_id is not None:
