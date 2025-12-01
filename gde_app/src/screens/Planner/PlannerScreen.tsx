@@ -1,6 +1,10 @@
 import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ScrollView, Text, TouchableOpacity, View, Modal, TextInput, StyleSheet, Alert } from 'react-native';
+import { ScrollView, Text, TouchableOpacity, View, Modal, TextInput, StyleSheet, Alert, Platform, Switch, ActivityIndicator } from 'react-native';
+import * as AuthSession from 'expo-auth-session';
+import * as WebBrowser from 'expo-web-browser';
+import * as FileSystem from 'expo-file-system';
+import * as Sharing from 'expo-sharing';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../../navigation/types';
@@ -10,6 +14,8 @@ import DaySection from './components/DaySection';
 import ScheduleGrid from './components/ScheduleGrid';
 import { CourseBlock } from './types';
 import { resolveProfessorName, formatOfferSchedule, resolveProfessorDifficulty } from './utils/offers';
+import { apiService } from '../../services/api';
+import { googleOAuthConfig, getRedirectUri } from '../../config/google';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Planner'>;
 const DAY_NAMES = ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta'];
@@ -36,6 +42,8 @@ const difficultySwatch: Record<DifficultyLevel, { text: string; bg: string }> = 
 };
 
 const getDifficultyStyle = (level?: DifficultyLevel | null) => difficultySwatch[level || 'medium'];
+
+WebBrowser.maybeCompleteAuthSession();
 
 interface Conflict {
   dayIndex: number;
@@ -70,6 +78,55 @@ export default function PlannerScreen({ navigation }: Props) {
   const [semesterEnd, setSemesterEnd] = useState('');
   const [selectedPreset, setSelectedPreset] = useState<string | null>(null);
   const [exportError, setExportError] = useState<string | null>(null);
+  const [exporting, setExporting] = useState(false);
+  const [pushToGoogle, setPushToGoogle] = useState(false);
+  const [googleStatus, setGoogleStatus] = useState<GoogleStatusState>({ connected: false });
+  const [googleStatusLoading, setGoogleStatusLoading] = useState(true);
+  const [googleActionLoading, setGoogleActionLoading] = useState(false);
+
+  const useProxy = Platform.OS !== 'web';
+  const redirectUri = useMemo(() => getRedirectUri(useProxy), [useProxy]);
+  const discovery = AuthSession.useAutoDiscovery('https://accounts.google.com');
+  const [authRequest, , promptAsync] = AuthSession.useAuthRequest(
+    {
+      clientId: googleOAuthConfig.clientId || googleOAuthConfig.webClientId,
+      responseType: AuthSession.ResponseType.Code,
+      scopes: googleOAuthConfig.scopes,
+      redirectUri,
+      usePKCE: true,
+      extraParams: { access_type: 'offline', prompt: 'consent' },
+    },
+    discovery,
+  );
+  const googleAuthAvailable = Boolean(googleOAuthConfig.clientId || googleOAuthConfig.webClientId);
+
+  const fetchGoogleStatus = useCallback(async () => {
+    try {
+      setGoogleStatusLoading(true);
+      const status = await apiService.getGoogleStatus();
+      setGoogleStatus(status);
+    } catch {
+      setGoogleStatus({ connected: false });
+    } finally {
+      setGoogleStatusLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchGoogleStatus();
+  }, [fetchGoogleStatus]);
+
+  useEffect(() => {
+    if (exportVisible) {
+      fetchGoogleStatus();
+    }
+  }, [exportVisible, fetchGoogleStatus]);
+
+  useEffect(() => {
+    if (!googleStatus.connected && pushToGoogle) {
+      setPushToGoogle(false);
+    }
+  }, [googleStatus.connected, pushToGoogle]);
 
   const handleToggleCourse = useCallback(
     (code: string, turma?: string | null) => {
@@ -179,6 +236,7 @@ export default function PlannerScreen({ navigation }: Props) {
   }, [curriculum, plannedOffers, plannedSet]);
 
   const semesterPresets = useMemo(() => buildSemesterPresets(activePayload), [activePayload]);
+  const googleExpiresLabel = useMemo(() => formatExpiresAt(googleStatus.expires_at), [googleStatus.expires_at]);
 
   useEffect(() => {
     if (!semesterPresets.length) return;
@@ -198,6 +256,58 @@ export default function PlannerScreen({ navigation }: Props) {
     },
     [],
   );
+
+  const handleGoogleConnect = useCallback(async () => {
+    if (!googleAuthAvailable) {
+      Alert.alert('Configuracao ausente', 'Defina os client IDs do Google para habilitar esta integracao.');
+      return;
+    }
+    if (!authRequest) {
+      Alert.alert('Carregando OAuth', 'Aguarde a inicializacao da configuracao do Google.');
+      return;
+    }
+    setGoogleActionLoading(true);
+    try {
+      const result = await promptAsync({ useProxy });
+      if (result.type !== 'success' || !result.params?.code) {
+        if (result.type !== 'dismiss') {
+          setExportError('Autenticacao Google cancelada.');
+        }
+        return;
+      }
+      const verifier = authRequest.codeVerifier;
+      if (!verifier) {
+        throw new Error('Verifier PKCE ausente.');
+      }
+      await apiService.exchangeGoogleCode({
+        code: result.params.code,
+        code_verifier: verifier,
+        redirect_uri: authRequest.redirectUri || redirectUri,
+      });
+      await fetchGoogleStatus();
+      setPushToGoogle(true);
+      setExportError(null);
+    } catch (error: any) {
+      const detail = typeof error?.message === 'string' ? error.message : 'Falha ao conectar com o Google.';
+      setExportError(detail);
+    } finally {
+      setGoogleActionLoading(false);
+    }
+  }, [authRequest, fetchGoogleStatus, googleAuthAvailable, promptAsync, redirectUri, useProxy]);
+
+  const handleDisconnectGoogle = useCallback(async () => {
+    setGoogleActionLoading(true);
+    try {
+      await apiService.disconnectGoogle();
+      await fetchGoogleStatus();
+      setPushToGoogle(false);
+    } catch (error: any) {
+      const detail = typeof error?.message === 'string' ? error.message : 'Falha ao desconectar do Google.';
+      setExportError(detail);
+    } finally {
+      setGoogleActionLoading(false);
+    }
+  }, [fetchGoogleStatus]);
 
   const handleDatesConfirmation = useCallback(() => {
     if (!semesterStart || !semesterEnd) {
@@ -222,13 +332,65 @@ export default function PlannerScreen({ navigation }: Props) {
     setExportStep('preview');
   }, [semesterStart, semesterEnd, plannedPreview]);
 
-  const handleConfirmExport = useCallback(() => {
-    setExportVisible(false);
-    Alert.alert(
-      'Exportação em desenvolvimento',
-      'O arquivo ICS e a criação automática do calendário serão liberados após o backend expor o endpoint.',
-    );
-  }, []);
+  const handleConfirmExport = useCallback(async () => {
+    if (!semesterStart || !semesterEnd || exporting) return;
+    setExportError(null);
+    setExporting(true);
+    try {
+      if (pushToGoogle) {
+        if (!googleStatus.connected) {
+          throw new Error('Conecte uma conta Google antes de sincronizar.');
+        }
+        const response = await apiService.exportPlannerToGoogle({
+          start_date: semesterStart,
+          end_date: semesterEnd,
+        });
+        Alert.alert(
+          'Google Calendar',
+          `Sincronizamos ${response.event_count} eventos em ${response.calendar_name}.`,
+        );
+      } else {
+        const response = await apiService.exportPlannerCalendar({ start_date: semesterStart, end_date: semesterEnd });
+        const sanitizedName = sanitizeFilename(response.filename || 'planner-export.ics');
+        if (Platform.OS === 'web') {
+          const downloaded = triggerWebDownload(response.ics_content, sanitizedName);
+          if (!downloaded) {
+            throw new Error('Nao foi possivel salvar o arquivo neste dispositivo.');
+          }
+        } else {
+          const targetDir = FileSystem.documentDirectory || FileSystem.cacheDirectory;
+          if (!targetDir) {
+            throw new Error('Nao foi possivel salvar o arquivo neste dispositivo.');
+          }
+          const destination = `${targetDir}${sanitizedName}`;
+          await FileSystem.writeAsStringAsync(destination, response.ics_content, {
+            encoding: FileSystem.EncodingType.UTF8,
+          });
+          const sharingAvailable = await Sharing.isAvailableAsync();
+          if (sharingAvailable) {
+            await Sharing.shareAsync(destination, {
+              mimeType: 'text/calendar',
+              dialogTitle: response.calendar_name || 'Exportar calendario',
+              UTI: 'public.calendar-event',
+            });
+          } else {
+            Alert.alert('Arquivo pronto', `ICS salvo em ${destination}`);
+          }
+        }
+      }
+      setExportVisible(false);
+      setExportStep('dates');
+    } catch (error: any) {
+      const detail = typeof error?.message === 'string' ? error.message : 'Falha ao gerar o calendario.';
+      if (detail.includes('HTTP 400')) {
+        setExportError('Reveja as datas ou disciplinas planejadas e tente novamente.');
+      } else {
+        setExportError(detail);
+      }
+    } finally {
+      setExporting(false);
+    }
+  }, [semesterStart, semesterEnd, exporting, pushToGoogle, googleStatus.connected]);
 
   const conflicts = useMemo(() => detectConflicts(scheduleBlocks), [scheduleBlocks]);
   const planSignature = useMemo(() => {
@@ -559,6 +721,66 @@ export default function PlannerScreen({ navigation }: Props) {
                     </View>
                   ))}
                 </ScrollView>
+                <View style={styles.googleCard}>
+                  <View style={styles.googleCardHeader}>
+                    <View style={styles.googleHeaderRow}>
+                      <MaterialCommunityIcons name="google" size={18} color={palette.text} />
+                      <Text style={styles.googleCardTitle}>Google Calendar</Text>
+                    </View>
+                    <View
+                      style={[
+                        styles.googleBadge,
+                        googleStatus.connected ? styles.googleBadgeOnline : styles.googleBadgeOffline,
+                      ]}
+                    >
+                      <Text style={styles.googleBadgeText}>
+                        {googleStatus.connected ? 'Conectado' : 'Desconectado'}
+                      </Text>
+                    </View>
+                  </View>
+                  {googleStatus.email ? <Text style={styles.googleCardEmail}>{googleStatus.email}</Text> : null}
+                  {googleExpiresLabel ? (
+                    <Text style={styles.googleCardHelper}>{`Token valido ate ${googleExpiresLabel}`}</Text>
+                  ) : null}
+                  {googleStatusLoading ? (
+                    <ActivityIndicator color={palette.accent} style={styles.googleLoader} />
+                  ) : (
+                    <>
+                      {!googleStatus.connected ? (
+                        <TouchableOpacity
+                          style={[styles.primaryButton, (!googleAuthAvailable || googleActionLoading) && styles.primaryButtonDisabled]}
+                          onPress={handleGoogleConnect}
+                          disabled={!googleAuthAvailable || googleActionLoading}
+                        >
+                          <Text style={styles.primaryButtonText}>
+                            {googleActionLoading ? 'Conectando...' : 'Conectar com Google'}
+                          </Text>
+                        </TouchableOpacity>
+                      ) : (
+                        <>
+                          <View style={styles.googleToggleRow}>
+                            <Text style={styles.googleToggleLabel}>Enviar direto para o Google Calendar</Text>
+                            <Switch value={pushToGoogle} onValueChange={setPushToGoogle} disabled={googleActionLoading} />
+                          </View>
+                          <TouchableOpacity
+                            style={styles.googleSecondaryButton}
+                            onPress={handleDisconnectGoogle}
+                            disabled={googleActionLoading}
+                          >
+                            <Text style={styles.googleSecondaryButtonText}>
+                              {googleActionLoading ? 'Desconectando...' : 'Desconectar conta'}
+                            </Text>
+                          </TouchableOpacity>
+                        </>
+                      )}
+                      {!googleAuthAvailable && !googleStatus.connected && (
+                        <Text style={styles.googleWarning}>
+                          Defina os client IDs do Google nas variaveis EXPO_PUBLIC_* para habilitar o login.
+                        </Text>
+                      )}
+                    </>
+                  )}
+                </View>
                 {exportError && <Text style={styles.exportError}>{exportError}</Text>}
                 <View style={styles.previewActions}>
                   <TouchableOpacity
@@ -570,8 +792,12 @@ export default function PlannerScreen({ navigation }: Props) {
                   >
                     <Text style={styles.secondaryButtonText}>Editar datas</Text>
                   </TouchableOpacity>
-                  <TouchableOpacity style={styles.primaryButton} onPress={handleConfirmExport}>
-                    <Text style={styles.primaryButtonText}>Criar calendário</Text>
+                  <TouchableOpacity
+                    style={[styles.primaryButton, exporting && styles.primaryButtonDisabled]}
+                    onPress={handleConfirmExport}
+                    disabled={exporting}
+                  >
+                    <Text style={styles.primaryButtonText}>{exporting ? 'Gerando...' : 'Criar calendário'}</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -590,6 +816,13 @@ type PlannedPreviewItem = {
   professor?: string | null;
   schedule?: string | null;
   events: Array<{ dayLabel: string; timeLabel: string; location?: string | null }>;
+};
+
+type GoogleStatusState = {
+  connected: boolean;
+  email?: string | null;
+  scope?: string | null;
+  expires_at?: string | null;
 };
 
 type DateCardProps = {
@@ -847,6 +1080,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: spacing(0.5),
   },
+  primaryButtonDisabled: {
+    opacity: 0.6,
+  },
   primaryButtonText: {
     color: palette.buttonText,
     fontWeight: '700',
@@ -914,6 +1150,85 @@ const styles = StyleSheet.create({
     color: palette.danger,
     fontSize: 12,
     marginTop: spacing(0.25),
+  },
+  googleCard: {
+    borderWidth: 1,
+    borderColor: palette.border,
+    borderRadius: 10,
+    padding: spacing(1.25),
+    marginBottom: spacing(1.25),
+    backgroundColor: palette.surface2,
+    gap: spacing(0.5),
+  },
+  googleCardHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  googleHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing(0.5),
+  },
+  googleCardTitle: {
+    color: palette.text,
+    fontWeight: '700',
+  },
+  googleBadge: {
+    paddingHorizontal: spacing(0.75),
+    paddingVertical: spacing(0.25),
+    borderRadius: 999,
+  },
+  googleBadgeOnline: {
+    backgroundColor: palette.accentSoft,
+  },
+  googleBadgeOffline: {
+    backgroundColor: palette.surface,
+  },
+  googleBadgeText: {
+    color: palette.text,
+    fontSize: 11,
+    fontWeight: '600',
+  },
+  googleCardEmail: {
+    color: palette.text,
+    fontSize: 13,
+  },
+  googleCardHelper: {
+    color: palette.textSecondary,
+    fontSize: 12,
+  },
+  googleLoader: {
+    marginVertical: spacing(0.5),
+  },
+  googleToggleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: spacing(0.75),
+  },
+  googleToggleLabel: {
+    color: palette.text,
+    fontSize: 13,
+    flex: 1,
+    marginRight: spacing(0.75),
+  },
+  googleSecondaryButton: {
+    borderWidth: 1,
+    borderColor: palette.border,
+    borderRadius: 8,
+    paddingVertical: spacing(0.9),
+    alignItems: 'center',
+    marginTop: spacing(0.75),
+  },
+  googleSecondaryButtonText: {
+    color: palette.text,
+    fontWeight: '600',
+  },
+  googleWarning: {
+    color: palette.textSecondary,
+    fontSize: 11,
+    marginTop: spacing(0.5),
   },
   previewActions: {
     flexDirection: 'row',
@@ -1122,8 +1437,44 @@ function formatDateLabel(value: string) {
   }
 }
 
+function formatExpiresAt(value?: string | null) {
+  if (!value) return null;
+  const timestamp = Date.parse(value);
+  if (Number.isNaN(timestamp)) return null;
+  try {
+    return new Date(timestamp).toLocaleString('pt-BR');
+  } catch {
+    return new Date(timestamp).toISOString();
+  }
+}
+
 function formatTime(hour: number) {
   return `${hour.toString().padStart(2, '0')}:00`;
+}
+
+function sanitizeFilename(name: string) {
+  return name.replace(/[^a-zA-Z0-9._-]/g, '_');
+}
+
+function triggerWebDownload(contents: string, filename: string): boolean {
+  if (typeof window === 'undefined' || typeof document === 'undefined' || typeof URL === 'undefined') {
+    return false;
+  }
+  try {
+    const blob = new Blob([contents], { type: 'text/calendar;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = filename;
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+    URL.revokeObjectURL(url);
+    return true;
+  } catch (err) {
+    console.warn('Failed to trigger web download', err);
+    return false;
+  }
 }
 
 function detectConflicts(blocks: CourseBlock[]): Conflict[] {

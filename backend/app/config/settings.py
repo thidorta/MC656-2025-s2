@@ -19,6 +19,12 @@ def _to_bool(value: str | None, default: bool = False) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "on"}
 
 
+def _split_env_list(value: str | None) -> tuple[str, ...]:
+    if not value:
+        return tuple()
+    return tuple(item.strip() for item in value.split(",") if item.strip())
+
+
 @dataclass(frozen=True)
 class Settings:
     catalog_db_path: Path
@@ -27,7 +33,12 @@ class Settings:
     user_auth_db_path: Path
     planner_debug_dir: Path
     planner_debug_enabled: bool
+    frontend_base_url: str = ""
     cors_allow_origins: str = "http://localhost:19006,http://localhost:3000"
+    google_client_id: str = ""
+    google_client_secret: str = ""
+    google_allowed_redirects: tuple[str, ...] = tuple()
+    google_default_calendar_id: str | None = None
 
 
 @lru_cache(maxsize=1)
@@ -46,4 +57,11 @@ def get_settings() -> Settings:
         user_auth_db_path=_resolve_path(os.getenv("USER_AUTH_DB_PATH"), default_user_auth),
         planner_debug_dir=_resolve_path(os.getenv("PLANNER_DEBUG_DIR"), default_debug_dir),
         planner_debug_enabled=_to_bool(os.getenv("PLANNER_DEBUG_ENABLED"), default=True),
+        frontend_base_url=os.getenv("FRONTEND_BASE_URL", "").strip(),
+        google_client_id=os.getenv("GOOGLE_OAUTH_CLIENT_ID", "").strip(),
+        google_client_secret=os.getenv("GOOGLE_OAUTH_CLIENT_SECRET", "").strip(),
+        google_allowed_redirects=_split_env_list(os.getenv("GOOGLE_OAUTH_ALLOWED_REDIRECTS")),
+        google_default_calendar_id=(lambda raw: raw.strip() if raw and raw.strip() else None)(
+            os.getenv("GOOGLE_CALENDAR_DEFAULT_ID")
+        ),
     )
