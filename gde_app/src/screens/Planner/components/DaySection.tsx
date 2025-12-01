@@ -7,7 +7,7 @@ import { daySectionStyles, palette } from '../styles';
 
 interface Props {
   schedule: DaySchedule;
-  onToggle: (code: string) => void;
+  onToggle: (code: string, turma?: string) => void;
 }
 
 export default function DaySection({ schedule, onToggle }: Props) {
@@ -37,7 +37,20 @@ export default function DaySection({ schedule, onToggle }: Props) {
           {courseCount > 0 ? (
             <View style={daySectionStyles.chipContainer}>
               {schedule.courses.map((course) => (
-                <CourseChip key={course.code} code={course.code} planned={course.planned} onPress={() => onToggle(course.code)} />
+                <CourseChip
+                  key={`${course.code}-${course.turma || 'NA'}`}
+                  code={course.code}
+                  planned={course.planned}
+                  turma={course.turma}
+                  professor={course.professor}
+                  schedule={course.schedule}
+                  selected={course.selected}
+                  isElective={course.isElective}
+                  difficultyLabel={course.difficultyLabel}
+                  difficultyLevel={course.difficultyLevel}
+                  difficultyScore={course.difficultyScore}
+                  onPress={() => onToggle(course.code, course.turma)}
+                />
               ))}
             </View>
           ) : (

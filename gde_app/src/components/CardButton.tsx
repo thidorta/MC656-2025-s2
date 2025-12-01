@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     maxWidth: 200,
     aspectRatio: 1,
     backgroundColor: colors.surface,
-    borderRadius: 14,
+    borderRadius: 8,
     borderWidth: 1,
     borderColor: colors.border,
     alignItems: 'center',
@@ -45,10 +45,9 @@ const styles = StyleSheet.create({
   },
   label: {
     color: colors.text,
-    fontWeight: '800',
-    fontSize: 16,
-    letterSpacing: 0.4,
+    fontWeight: '600',
+    fontSize: 15,
+    letterSpacing: 0,
     textAlign: 'center',
-    fontFamily: 'monospace',
   },
 });

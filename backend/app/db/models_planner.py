@@ -61,7 +61,7 @@ class GdeSnapshotModel(Base):
     
     # Display-only metadata (JSON strings)
     integralizacao_metadata = Column(Text, nullable=True)
-    planejado_metadata = Column(Text, nullable=True)
+    planejado_metadata = Column(Text, nullable=True)  # DEPRECATED: Not used for planning logic, kept for reference only
     faltantes_metadata = Column(Text, nullable=True)
     
     created_at = Column(String, nullable=False, default=_utcnow_iso)
@@ -99,7 +99,7 @@ class GdeSnapshotModel(Base):
                 "periodo": self.current_period or "",
                 "cp": "0",
             },
-            "planejado": json.loads(self.planejado_metadata) if self.planejado_metadata else {},
+            "planejado": {},  # DEPRECATED: Always return empty dict. Planning comes from planned_courses table only.
             "integralizacao_meta": json.loads(self.integralizacao_metadata) if self.integralizacao_metadata else {},
             "faltantes": json.loads(self.faltantes_metadata) if self.faltantes_metadata else {},
         }

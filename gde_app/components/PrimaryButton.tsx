@@ -18,32 +18,31 @@ export default function PrimaryButton({ label, onPress, style }: Props) {
 
 const styles = StyleSheet.create({
   btn: {
-    backgroundColor: colors.primary,
-    paddingVertical: spacing(1.5),
+    backgroundColor: colors.accent,
+    paddingVertical: spacing(1.75),
     paddingHorizontal: spacing(3),
-    borderRadius: 12,
+    borderRadius: 8,
     borderWidth: 1,
-    borderColor: colors.primary,
+    borderColor: colors.border,
     alignItems: 'center',
     alignSelf: 'center',
     minWidth: 200,
     ...Platform.select({
       ios: {
-        shadowColor: colors.primary,
-        shadowOpacity: 0.18,
-        shadowRadius: 12,
-        shadowOffset: { width: 0, height: 6 },
+        shadowColor: '#000',
+        shadowOpacity: 0.35,
+        shadowRadius: 16,
+        shadowOffset: { width: 0, height: 4 },
       },
       android: {
-        elevation: 3,
+        elevation: 8,
       },
     }),
   },
   label: {
     color: colors.buttonText,
-    fontWeight: '800',
-    fontSize: 16,
-    letterSpacing: 0.3,
-    fontFamily: 'monospace',
+    fontWeight: '700',
+    fontSize: 15,
+    letterSpacing: 0,
   },
 });

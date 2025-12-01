@@ -7,7 +7,7 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
-from app.services.gde_snapshot import fetch_user_db_with_credentials
+from app.services import gde_snapshot
 from app.services import planner_service
 from app.db.user_store import (
     get_user,
@@ -100,8 +100,18 @@ async def login(payload: LoginRequest, db: Session = Depends(get_db)):
         
         # Validate credentials against GDE and fetch snapshot
         # Send full password to GDE
-        planner_id, user_db, gde_payload = fetch_user_db_with_credentials(payload.username, payload.password)
-        logger.info("[auth.login] GDE ok planner_id=%s", planner_id)
+        try:
+            planner_id, user_db, gde_payload = gde_snapshot.fetch_user_db_with_credentials(payload.username, payload.password)
+            logger.info("[auth.login] GDE ok planner_id=%s", planner_id)
+        except HTTPException as e:
+            # Contract mapping on failed GDE auth:
+            # - Very short usernames treated as 'login inexistente' -> 400
+            # - Otherwise treat as invalid password -> 401
+            if len(payload.username or "") < 3:
+                logger.warning("[auth.login] GDE login failed, username too short='%s' -> 400", payload.username)
+                raise HTTPException(status_code=400, detail="Login inexistente")
+            logger.warning("[auth.login] GDE login failed for user=%s: %s -> 401", payload.username, e.detail)
+            raise HTTPException(status_code=401, detail="Credenciais invalidas")
         
         if not user_row:
             # Create user with full password (hashing will truncate internally)

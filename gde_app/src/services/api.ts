@@ -164,4 +164,14 @@ export const apiService = {
     );
     return resp.json();
   },
+  fetchTreeSnapshot: async (params?: { cursoId?: number | null; catalogYear?: number | null; modalityId?: number | null; modalityCode?: string | null }) => {
+    const search = new URLSearchParams();
+    if (params?.cursoId) search.set('curso_id', String(params.cursoId));
+    if (params?.catalogYear) search.set('catalog_year', String(params.catalogYear));
+    if (params?.modalityId) search.set('modality_id', String(params.modalityId));
+    if (params?.modalityCode) search.set('modality_code', params.modalityCode);
+    const qs = search.toString() ? `?${search.toString()}` : '';
+    const resp = await fetchAuth(`${API_BASE_URL}/tree/${qs}`);
+    return resp.json();
+  },
 };

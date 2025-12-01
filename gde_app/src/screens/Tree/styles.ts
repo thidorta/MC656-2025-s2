@@ -1,22 +1,26 @@
 import { StyleSheet } from 'react-native';
 import { spacing as baseSpacing } from '../../theme/spacing';
 
+// BRUNO KALLISTER — TREE DESIGN TOKENS
 export const palette = {
-  bg: '#0B0B0F',
-  surface: '#11131A',
-  surfaceElevated: '#151824',
-  text: '#E8ECF5',
-  textMuted: '#8A8F9B',
-  divider: 'rgba(255,255,255,0.08)',
-  accent: '#33E1D3',
-  accentSoft: 'rgba(51,225,211,0.12)',
-  accentBorder: 'rgba(51,225,211,0.35)',
-  dangerSoft: 'rgba(255,99,99,0.18)',
-  dangerBorder: 'rgba(255,99,99,0.6)',
-  dangerText: '#FF9B9B',
-  infoSoft: 'rgba(120,168,255,0.18)',
-  infoBorder: 'rgba(120,168,255,0.6)',
-  legendBg: 'rgba(255,255,255,0.04)',
+  bg: '#0D0D0D',
+  surface: '#141414',
+  surface2: '#1E1E1E',
+  border: '#2A2A2A',
+  
+  text: '#EDEDED',
+  textSecondary: 'rgba(255,255,255,0.70)',
+  
+  accent: '#00F0FF',
+  accentSoft: 'rgba(0,240,255,0.15)',
+  
+  // BRUNO KALLISTER NEON-MINIMAL DISCIPLINE COLORS
+  completed: '#00FF9C',           // neon emerald - disciplinas concluídas
+  eligibleOffered: '#3DA9FF',     // cold tech blue - elegível e ofertada
+  eligibleNotOffered: '#FFD55A',  // cyber amber (cooler) - elegível não ofertada
+  notEligible: '#FF4A4A',         // cold neon red - pré-requisitos pendentes
+  offered: '#00F0FF',             // core cyan - badge "ofertada neste semestre"
+  offeredThisTerm: '#00F0FF',     // alias for offered
 };
 
 export const spacing = (n: number) => baseSpacing(n);
@@ -31,71 +35,76 @@ export const globalStyles = StyleSheet.create({
     backgroundColor: palette.bg,
   },
   navbar: {
-    height: 44,
+    height: 60,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    paddingTop: 8,
+    borderBottomWidth: 1,
+    borderBottomColor: palette.border,
   },
   backButton: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
+    width: 40,
+    height: 40,
+    borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: palette.surface,
+    borderWidth: 1,
+    borderColor: palette.border,
   },
   navTitle: {
     color: palette.text,
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: '600',
+    letterSpacing: 0,
   },
   headerBlock: {
     paddingHorizontal: 20,
-    paddingTop: 12,
-    paddingBottom: 12,
-    gap: 4,
+    paddingTop: 16,
+    paddingBottom: 16,
+    gap: 8,
   },
   headerEyebrow: {
-    color: palette.textMuted,
+    color: palette.textSecondary,
     fontSize: 13,
-    letterSpacing: 0.4,
+    letterSpacing: 0,
+    textTransform: 'uppercase',
   },
   headerTitle: {
     color: palette.text,
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: '700',
+    letterSpacing: 0,
   },
   headerDescription: {
-    color: palette.textMuted,
-    fontSize: 13,
-    lineHeight: 18,
+    color: palette.textSecondary,
+    fontSize: 15,
+    lineHeight: 22,
+    letterSpacing: 0,
   },
   scrollArea: {
     flex: 1,
   },
   contentContainer: {
     paddingHorizontal: 20,
-    paddingBottom: spacing(4),
-    gap: spacing(1.5),
+    paddingBottom: 32,
+    gap: 16,
   },
   helperText: {
-    color: palette.textMuted,
+    color: palette.textSecondary,
     fontSize: 13,
     textAlign: 'center',
-    marginTop: spacing(1),
+    marginTop: 12,
   },
   errorText: {
-    color: palette.accent,
-    fontSize: 14,
+    color: palette.notEligible,
+    fontSize: 13,
     textAlign: 'center',
-    marginVertical: spacing(1),
+    marginVertical: 12,
   },
   loader: {
     alignItems: 'center',
-    paddingVertical: spacing(1.5),
-  },
-  sectionSpacer: {
-    height: spacing(1),
+    paddingVertical: 16,
   },
 });
