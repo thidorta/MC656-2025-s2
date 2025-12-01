@@ -1,38 +1,101 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RootStackParamList } from '../navigation/types';
 import { sessionStore } from '../services/session';
-import { spacing } from '../theme/spacing';
+
+// ====================================================================
+// BRUNO KALLISTER — HOME DASHBOARD DESIGN SYSTEM
+// ====================================================================
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
-const palette = {
+const brunoTokens = {
+  // Surfaces
   bg: '#0D0D0D',
   surface: '#141414',
   surface2: '#1E1E1E',
-  text: '#EDEDED',
-  textSecondary: 'rgba(255,255,255,0.70)',
-  textMuted: 'rgba(255,255,255,0.45)',
   border: '#2A2A2A',
+  
+  // Text
+  textPrimary: '#EDEDED',
+  textSecondary: 'rgba(255,255,255,0.70)',
+  textDisabled: 'rgba(255,255,255,0.45)',
+  
+  // Accent
   accent: '#00F0FF',
+  accentSoft: 'rgba(0,240,255,0.15)',
+  
+  // Status Colors
+  goodAttendance: '#00FF9C',
+  warning: '#FFD55A',
+  critical: '#FF4A4A',
 };
 
-const actions = [
-  { label: 'Árvore', description: 'Visualizar currículo', icon: 'tree-outline', route: 'Tree' as const },
-  { label: 'Planejador', description: 'Organizar horários', icon: 'calendar-month', route: 'Planner' as const },
-  { label: 'Faltas', description: 'Gerir presenças', icon: 'account-check', route: 'Attendance' as const },
-  { label: 'Info', description: 'Sobre o aplicativo', icon: 'information-outline', route: 'Info' as const },
-  { label: 'Configurar', description: 'Ajustes e debug', icon: 'cog-outline', route: 'Debug' as const },
+const brunoShadow = {
+  shadowColor: '#000',
+  shadowOpacity: 0.28,
+  shadowRadius: 12,
+  shadowOffset: { width: 0, height: 6 },
+  elevation: 8,
+};
+
+// ====================================================================
+// PRIMARY ACTIONS (ENGINEERING DASHBOARD)
+// ====================================================================
+
+const primaryActions = [
+  {
+    label: 'Árvore Curricular',
+    description: 'Visualizar estrutura do curso',
+    icon: 'file-tree-outline',
+    route: 'Tree' as const,
+    badge: null,
+  },
+  {
+    label: 'Planejador',
+    description: 'Organizar disciplinas e horários',
+    icon: 'calendar-month-outline',
+    route: 'Planner' as const,
+    badge: null,
+  },
+  {
+    label: 'Frequência',
+    description: 'Monitorar faltas e presenças',
+    icon: 'clipboard-check-outline',
+    route: 'Attendance' as const,
+    badge: null,
+  },
 ];
+
+const secondaryActions = [
+  {
+    label: 'Sobre',
+    icon: 'information-outline',
+    route: 'Info' as const,
+  },
+  {
+    label: 'Debug',
+    icon: 'cog-outline',
+    route: 'Debug' as const,
+  },
+];
+
+// ====================================================================
+// HOME SCREEN COMPONENT
+// ====================================================================
 
 export default function HomeScreen({ navigation }: Props) {
   const snapshot = sessionStore.getUserDb();
   const profileName = snapshot?.user?.name || 'Usuário';
-  const courseName = snapshot?.course?.name || 'Curso não carregado';
+  const courseName = snapshot?.course?.name || 'Curso não definido';
   const catalogYear = snapshot?.year ? String(snapshot.year) : '-';
+  const currentPeriod = snapshot?.current_period || '-';
+  const cp = snapshot?.cp != null ? snapshot.cp.toFixed(2) : '-';
+
+  // Calculate initials
   const nameParts = profileName.trim().split(/\s+/).filter(Boolean);
   const initials =
     nameParts.length === 0
@@ -51,139 +114,310 @@ export default function HomeScreen({ navigation }: Props) {
 
   return (
     <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
-      <View style={styles.page}>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={styles.content}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Header */}
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>Dashboard</Text>
+          <TouchableOpacity
+            style={styles.headerButton}
+            activeOpacity={0.8}
+            onPress={handleLogout}
+          >
+            <MaterialCommunityIcons name="logout" size={18} color={brunoTokens.accent} />
+          </TouchableOpacity>
+        </View>
+
+        {/* Profile Card */}
         <View style={styles.profileCard}>
-          <View style={styles.avatar}>
-            <Text style={styles.avatarText}>{initials}</Text>
-            <View style={styles.statusDot} />
+          <View style={styles.profileHeader}>
+            <View style={styles.avatar}>
+              <Text style={styles.avatarText}>{initials}</Text>
+              <View style={styles.statusDot} />
+            </View>
+            <View style={styles.profileInfo}>
+              <Text style={styles.profileName}>{profileName}</Text>
+              <Text style={styles.profileCourse}>{courseName}</Text>
+            </View>
           </View>
-          <View style={styles.profileInfo}>
-            <Text style={styles.profileEyebrow}>Resumo do aluno</Text>
-            <Text style={styles.profileName}>{profileName}</Text>
-            <Text style={styles.profileDetail}>{courseName}</Text>
-            <Text style={styles.profileDetail}>Catálogo {catalogYear}</Text>
+          
+          <View style={styles.profileMetrics}>
+            <View style={styles.metricItem}>
+              <Text style={styles.metricLabel}>Catálogo</Text>
+              <Text style={styles.metricValue}>{catalogYear}</Text>
+            </View>
+            <View style={styles.metricDivider} />
+            <View style={styles.metricItem}>
+              <Text style={styles.metricLabel}>Período</Text>
+              <Text style={styles.metricValue}>{currentPeriod}</Text>
+            </View>
+            <View style={styles.metricDivider} />
+            <View style={styles.metricItem}>
+              <Text style={styles.metricLabel}>CP</Text>
+              <Text style={styles.metricValue}>{cp}</Text>
+            </View>
           </View>
         </View>
 
-        <View style={styles.section}>
-          {actions.map((action) => (
+        {/* Primary Actions */}
+        <View style={styles.sectionHeader}>
+          <Text style={styles.sectionTitle}>Ferramentas</Text>
+        </View>
+        <View style={styles.actionsGrid}>
+          {primaryActions.map((action) => (
             <TouchableOpacity
               key={action.label}
-              style={styles.actionRow}
+              style={styles.primaryCard}
               activeOpacity={0.85}
               onPress={() => navigation.navigate(action.route)}
             >
-              <View style={styles.actionIcon}>
-                <MaterialCommunityIcons name={action.icon} size={20} color={palette.accent} />
+              <View style={styles.primaryCardIcon}>
+                <MaterialCommunityIcons
+                  name={action.icon}
+                  size={24}
+                  color={brunoTokens.accent}
+                />
               </View>
-              <View style={styles.actionCopy}>
-                <Text style={styles.actionLabel}>{action.label}</Text>
-                <Text style={styles.actionDescription}>{action.description}</Text>
+              <View style={styles.primaryCardContent}>
+                <Text style={styles.primaryCardLabel}>{action.label}</Text>
+                <Text style={styles.primaryCardDescription}>{action.description}</Text>
               </View>
-              <MaterialCommunityIcons name="chevron-right" size={20} color={palette.textMuted} />
+              <MaterialCommunityIcons
+                name="chevron-right"
+                size={20}
+                color={brunoTokens.textDisabled}
+              />
             </TouchableOpacity>
           ))}
         </View>
 
-        <TouchableOpacity style={styles.logoutButton} activeOpacity={0.85} onPress={handleLogout}>
-          <MaterialCommunityIcons name="logout" size={18} color={palette.accent} />
-          <Text style={styles.logoutText}>Sair</Text>
-        </TouchableOpacity>
-      </View>
+        {/* Secondary Actions */}
+        <View style={styles.secondaryRow}>
+          {secondaryActions.map((action) => (
+            <TouchableOpacity
+              key={action.label}
+              style={styles.secondaryCard}
+              activeOpacity={0.85}
+              onPress={() => navigation.navigate(action.route)}
+            >
+              <MaterialCommunityIcons
+                name={action.icon}
+                size={20}
+                color={brunoTokens.textSecondary}
+              />
+              <Text style={styles.secondaryLabel}>{action.label}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+
+        {/* Bottom Spacer */}
+        <View style={{ height: 32 }} />
+      </ScrollView>
     </SafeAreaView>
   );
 }
 
+// ====================================================================
+// BRUNO KALLISTER — STYLES
+// ====================================================================
+
 const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: palette.bg },
-  page: { flex: 1, backgroundColor: palette.bg, paddingHorizontal: 20, paddingTop: spacing(2), gap: spacing(2) },
-  profileCard: {
+  safeArea: {
+    flex: 1,
+    backgroundColor: brunoTokens.bg,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: brunoTokens.bg,
+  },
+  content: {
+    paddingHorizontal: 20,
+    paddingTop: 12,
+  },
+  
+  // Header
+  header: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: palette.surface,
+    justifyContent: 'space-between',
+    marginBottom: 20,
+  },
+  headerTitle: {
+    color: brunoTokens.textPrimary,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: -0.5,
+  },
+  headerButton: {
+    width: 40,
+    height: 40,
     borderRadius: 8,
+    backgroundColor: brunoTokens.surface,
     borderWidth: 1,
-    borderColor: palette.border,
-    padding: spacing(2),
-    gap: spacing(1.5),
-    shadowColor: '#000',
-    shadowOpacity: 0.35,
-    shadowRadius: 16,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 8,
+    borderColor: brunoTokens.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  
+  // Profile Card
+  profileCard: {
+    backgroundColor: brunoTokens.surface,
+    borderWidth: 1,
+    borderColor: brunoTokens.border,
+    borderRadius: 8,
+    padding: 16,
+    marginBottom: 24,
+    ...brunoShadow,
+  },
+  profileHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 16,
+    gap: 12,
   },
   avatar: {
-    width: 70,
-    height: 70,
+    width: 64,
+    height: 64,
     borderRadius: 8,
-    backgroundColor: palette.surface2,
+    backgroundColor: brunoTokens.surface2,
     borderWidth: 1,
-    borderColor: palette.border,
+    borderColor: brunoTokens.border,
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
   },
-  avatarText: { color: palette.text, fontSize: 24, fontWeight: '700' },
+  avatarText: {
+    color: brunoTokens.textPrimary,
+    fontSize: 22,
+    fontWeight: '700',
+  },
   statusDot: {
     position: 'absolute',
-    bottom: 6,
-    right: 6,
+    bottom: 4,
+    right: 4,
     width: 12,
     height: 12,
-    borderRadius: 8,
-    backgroundColor: palette.accent,
+    borderRadius: 6,
+    backgroundColor: brunoTokens.goodAttendance,
+    borderWidth: 2,
+    borderColor: brunoTokens.surface,
   },
-  profileInfo: { flex: 1, gap: 4 },
-  profileEyebrow: { color: palette.textSecondary, fontSize: 13, letterSpacing: 0 },
-  profileName: { color: palette.text, fontSize: 20, fontWeight: '700' },
-  profileDetail: { color: palette.textSecondary, fontSize: 13 },
-  section: {
-    backgroundColor: palette.surface,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: palette.border,
-    paddingVertical: spacing(0.5),
-    shadowColor: '#000',
-    shadowOpacity: 0.35,
-    shadowRadius: 16,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 8,
+  profileInfo: {
+    flex: 1,
   },
-  actionRow: {
+  profileName: {
+    color: brunoTokens.textPrimary,
+    fontSize: 18,
+    fontWeight: '600',
+    marginBottom: 2,
+    letterSpacing: -0.3,
+  },
+  profileCourse: {
+    color: brunoTokens.textSecondary,
+    fontSize: 13,
+  },
+  profileMetrics: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: spacing(2),
-    paddingVertical: spacing(1.5),
-    gap: spacing(1.25),
+    paddingTop: 12,
+    borderTopWidth: 1,
+    borderTopColor: brunoTokens.border,
   },
-  actionIcon: {
-    width: 40,
-    height: 40,
-    borderRadius: 8,
-    backgroundColor: palette.surface2,
+  metricItem: {
+    flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: palette.border,
   },
-  actionCopy: { flex: 1 },
-  actionLabel: { color: palette.text, fontSize: 15, fontWeight: '600' },
-  actionDescription: { color: palette.textSecondary, fontSize: 13, marginTop: 2 },
-  logoutButton: {
-    marginTop: spacing(1),
-    paddingVertical: spacing(1.5),
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: palette.border,
+  metricLabel: {
+    color: brunoTokens.textSecondary,
+    fontSize: 11,
+    marginBottom: 4,
+  },
+  metricValue: {
+    color: brunoTokens.textPrimary,
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  metricDivider: {
+    width: 1,
+    height: 32,
+    backgroundColor: brunoTokens.border,
+  },
+  
+  // Section Header
+  sectionHeader: {
+    marginBottom: 12,
+  },
+  sectionTitle: {
+    color: brunoTokens.textPrimary,
+    fontSize: 14,
+    fontWeight: '600',
+    letterSpacing: -0.2,
+  },
+  
+  // Primary Actions Grid
+  actionsGrid: {
+    gap: 12,
+    marginBottom: 24,
+  },
+  primaryCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    gap: spacing(0.5),
+    backgroundColor: brunoTokens.surface,
+    borderWidth: 1,
+    borderColor: brunoTokens.border,
+    borderRadius: 8,
+    padding: 12,
+    gap: 12,
+    ...brunoShadow,
   },
-  logoutText: {
-    color: palette.accent,
+  primaryCardIcon: {
+    width: 48,
+    height: 48,
+    borderRadius: 8,
+    backgroundColor: brunoTokens.surface2,
+    borderWidth: 1,
+    borderColor: brunoTokens.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  primaryCardContent: {
+    flex: 1,
+  },
+  primaryCardLabel: {
+    color: brunoTokens.textPrimary,
     fontSize: 15,
     fontWeight: '600',
-    letterSpacing: 0,
+    marginBottom: 2,
+    letterSpacing: -0.2,
+  },
+  primaryCardDescription: {
+    color: brunoTokens.textSecondary,
+    fontSize: 12,
+  },
+  
+  // Secondary Actions
+  secondaryRow: {
+    flexDirection: 'row',
+    gap: 12,
+  },
+  secondaryCard: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: brunoTokens.surface,
+    borderWidth: 1,
+    borderColor: brunoTokens.border,
+    borderRadius: 8,
+    paddingVertical: 12,
+    gap: 8,
+  },
+  secondaryLabel: {
+    color: brunoTokens.textSecondary,
+    fontSize: 13,
+    fontWeight: '600',
   },
 });

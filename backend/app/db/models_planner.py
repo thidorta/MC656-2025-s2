@@ -7,6 +7,8 @@ They replace the previous JSON blob storage with normalized relational entities.
 
 from __future__ import annotations
 
+import json
+import re
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
@@ -34,6 +36,58 @@ users_table = Table(
 def _utcnow_iso() -> str:
     """Returns current UTC time in ISO 8601 format."""
     return datetime.now(timezone.utc).isoformat()
+
+
+def _parse_decimal(value: Any) -> Optional[float]:
+    """Convert localized numeric strings (e.g., "0,6872") to float."""
+    if value is None:
+        return None
+    if isinstance(value, (int, float)):
+        try:
+            return float(value)
+        except (TypeError, ValueError):
+            return None
+
+    text = str(value).strip()
+    if not text:
+        return None
+
+    normalized = text.replace("%", "").replace(" ", "")
+    if "," in normalized and "." in normalized:
+        normalized = normalized.replace(".", "").replace(",", ".")
+    else:
+        normalized = normalized.replace(",", ".")
+
+    normalized = re.sub(r"[^0-9.\-]", "", normalized)
+    if normalized.count(".") > 1:
+        head, *tail = normalized.split(".")
+        normalized = head + "." + "".join(tail)
+
+    if not normalized or normalized == "-":
+        return None
+
+    try:
+        return float(normalized)
+    except ValueError:
+        return None
+
+
+def _resolve_cp_value(raw_cp: Any, integralizacao_meta: Dict[str, Any]) -> Optional[float]:
+    """Return CP ratio stored on snapshot, falling back to integralizacao metadata when needed."""
+    numeric_cp = None
+    if raw_cp is not None:
+        try:
+            numeric_cp = float(raw_cp)
+        except (TypeError, ValueError):
+            numeric_cp = None
+    if numeric_cp is not None and 0 <= numeric_cp <= 1:
+        return numeric_cp
+
+    meta_cp = _parse_decimal((integralizacao_meta or {}).get("cp_atual"))
+    if meta_cp is not None:
+        return meta_cp
+
+    return numeric_cp
 
 
 class GdeSnapshotModel(Base):
@@ -80,7 +134,8 @@ class GdeSnapshotModel(Base):
     
     def to_user_db_dict(self) -> Dict[str, Any]:
         """Convert snapshot to user_db API format (partial)."""
-        import json
+        integralizacao_meta = json.loads(self.integralizacao_metadata) if self.integralizacao_metadata else {}
+        faltantes_meta = json.loads(self.faltantes_metadata) if self.faltantes_metadata else {}
         return {
             "planner_id": self.planner_id,
             "user": {
@@ -93,15 +148,15 @@ class GdeSnapshotModel(Base):
             } if self.raw_course_id else {},
             "year": self.catalog_year,
             "current_period": self.current_period,
-            "cp": self.cp_value,
+            "cp": _resolve_cp_value(self.cp_value, integralizacao_meta),
             "parameters": {
                 "catalogo": str(self.catalog_year) if self.catalog_year else "",
                 "periodo": self.current_period or "",
                 "cp": "0",
             },
             "planejado": {},  # DEPRECATED: Always return empty dict. Planning comes from planned_courses table only.
-            "integralizacao_meta": json.loads(self.integralizacao_metadata) if self.integralizacao_metadata else {},
-            "faltantes": json.loads(self.faltantes_metadata) if self.faltantes_metadata else {},
+            "integralizacao_meta": integralizacao_meta,
+            "faltantes": faltantes_meta,
         }
 
 

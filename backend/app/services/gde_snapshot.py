@@ -138,6 +138,41 @@ def _coerce_int(value: Any) -> Optional[int]:
         return None
 
 
+def _parse_decimal(value: Any) -> Optional[float]:
+    """Convert localized numeric strings (e.g., "0,6872") to float."""
+    if value is None:
+        return None
+    if isinstance(value, (int, float)):
+        try:
+            return float(value)
+        except (TypeError, ValueError):
+            return None
+
+    text = str(value).strip()
+    if not text:
+        return None
+
+    # Remove percentage signs and spaces, normalize decimal separator
+    normalized = text.replace("%", "").replace(" ", "")
+    if "," in normalized and "." in normalized:
+        normalized = normalized.replace(".", "").replace(",", ".")
+    else:
+        normalized = normalized.replace(",", ".")
+
+    normalized = re.sub(r"[^0-9.\-]", "", normalized)
+    if normalized.count(".") > 1:
+        head, *tail = normalized.split(".")
+        normalized = head + "." + "".join(tail)
+
+    if not normalized or normalized == "-":
+        return None
+
+    try:
+        return float(normalized)
+    except ValueError:
+        return None
+
+
 def _extract_user_info(integralizacao_html: str) -> tuple[Optional[str], Optional[int]]:
     user_name = None
     course_id = None
@@ -413,7 +448,10 @@ def build_user_db_snapshot(planner_id: str, payload: Dict[str, Any]) -> Dict[str
     ra_fallback = _extract_ra_fallback(integralizacao_html)
     catalog_year = _infer_catalog_year(payload, meta)
     current_period = str(payload.get("Planejado", {}).get("periodo") or os.getenv("PERIODO_TARGET", ""))
-    cp_value = payload.get("c")
+    cp_value = _parse_decimal(meta.get("cp_atual"))
+    if cp_value is None:
+        # Some legacy payloads expose CP under different keys; fall back to raw "c"
+        cp_value = _parse_decimal(payload.get("c"))
 
     user_nodes, cp_disciplines = _build_user_nodes(payload, year=catalog_year or 0)
     missing_sections = _extract_missing_sections(integralizacao_html)
