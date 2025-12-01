@@ -1,14 +1,40 @@
 """
 SnapshotService - Phase 3 Logic
-Assembles final denormalized snapshot for API
+Assembles final denormalized snapshot for API and planner datasets.
 """
 from __future__ import annotations
 
 import json
 import sqlite3
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional, Tuple
 
 from app.utils.logging_setup import logger
+
+
+def _utcnow_iso() -> str:
+    """Return current UTC timestamp in ISO-8601."""
+    return datetime.now(tz=timezone.utc).isoformat()
+
+
+def _extract_professor_from_payload(payload: Optional[dict]) -> Optional[str]:
+    if not isinstance(payload, dict):
+        return None
+    for key in ("professor", "docente", "teacher"):
+        value = payload.get(key)
+        if isinstance(value, str):
+            stripped = value.strip()
+            if stripped:
+                return stripped
+    professores = payload.get("professores")
+    if isinstance(professores, list):
+        for entry in professores:
+            if isinstance(entry, dict):
+                name = entry.get("nome")
+                if isinstance(name, str) and name.strip():
+                    return name.strip()
+    return None
 
 
 class SnapshotService:
@@ -17,8 +43,8 @@ class SnapshotService:
     def __init__(self, user_auth_db_path: Path):
         self.user_auth_db_path = user_auth_db_path
 
-    def rebuild_user_curriculum_snapshot(self) -> int:
-        """Build unified snapshot from Phase 1 + Phase 2."""
+    def rebuild_user_curriculum_snapshot(self, user_id: int) -> int:
+        """Build unified snapshot from Phase 1 + Phase 2 for a specific user."""
         conn = sqlite3.connect(str(self.user_auth_db_path))
         conn.row_factory = sqlite3.Row
         
@@ -107,9 +133,10 @@ class SnapshotService:
             FROM user_curriculum_normalized p1
             LEFT JOIN user_curriculum_tree p2
                 ON p1.user_id = p2.user_id AND p1.code = p2.code
+            WHERE p1.user_id = ?
             """
             
-            cur = conn.execute(query)
+            cur = conn.execute(query, (str(user_id),))
             rows = cur.fetchall()
             
             if not rows:
@@ -160,9 +187,165 @@ class SnapshotService:
                     )
             
             conn.commit()
+            offers_count, events_count = self._rebuild_course_offers(conn, user_id)
             count = len(rows)
-            logger.info(f"[SnapshotService] Built snapshot with {count} nodes")
+            logger.info(
+                f"[SnapshotService] Built snapshot with {count} nodes and backfilled "
+                f"{offers_count} offers / {events_count} events for user {user_id}"
+            )
             return count
 
         finally:
             conn.close()
+
+    def _rebuild_course_offers(self, conn: sqlite3.Connection, user_id: int) -> Tuple[int, int]:
+        """Rebuild course_offers + offer_schedule_events from Phase 2 tree data."""
+        try:
+            tables = conn.execute(
+                "SELECT name FROM sqlite_master WHERE type='table' AND name IN ('course_offers','offer_schedule_events')"
+            ).fetchall()
+            if len(tables) < 2:
+                logger.warning("[SnapshotService] Planner tables missing; skipping offer backfill")
+                return 0, 0
+        except Exception:
+            return 0, 0
+
+        conn.execute("PRAGMA foreign_keys = ON")
+        conn.execute(
+            "DELETE FROM offer_schedule_events WHERE offer_id IN (SELECT id FROM course_offers WHERE user_id = ?)",
+            (user_id,),
+        )
+        conn.execute("DELETE FROM course_offers WHERE user_id = ?", (user_id,))
+
+        rows = conn.execute(
+            """
+            SELECT code, gde_offers_raw
+            FROM user_curriculum_tree
+            WHERE user_id = ? AND gde_offers_raw IS NOT NULL AND gde_offers_raw <> ''
+            """,
+            (str(user_id),),
+        ).fetchall()
+
+        offers_inserted = 0
+        events_inserted = 0
+        seen_keys: set[Tuple[str, str, Optional[str], Optional[str]]] = set()
+        timestamp = _utcnow_iso()
+
+        for row in rows:
+            raw_offers = row["gde_offers_raw"]
+            if not raw_offers or raw_offers.strip() in ("[]", "null"):
+                continue
+            try:
+                offers = json.loads(raw_offers)
+            except Exception:
+                continue
+            if not isinstance(offers, list):
+                continue
+
+            for offer in offers:
+                if not isinstance(offer, dict):
+                    continue
+                turma = (offer.get("turma") or "").strip()
+                external_id = offer.get("id")
+                professor_name = _extract_professor_from_payload(offer)
+                key = (
+                    row["code"],
+                    turma,
+                    str(external_id) if external_id is not None else None,
+                    professor_name,
+                )
+                if key in seen_keys:
+                    continue
+                seen_keys.add(key)
+
+                metadata = {
+                    k: v for k, v in offer.items() if k not in {"events", "turma", "id", "adicionado"}
+                }
+                if professor_name and "professor" not in metadata:
+                    metadata["professor"] = professor_name
+                semester_value = metadata.get("semester")
+                cur = conn.execute(
+                    """
+                    INSERT INTO course_offers (
+                        curriculum_discipline_id,
+                        user_id,
+                        snapshot_id,
+                        codigo,
+                        turma,
+                        offer_external_id,
+                        semester,
+                        source,
+                        offer_metadata,
+                        created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        None,
+                        user_id,
+                        None,
+                        row["code"],
+                        turma or "",
+                        str(external_id) if external_id is not None else None,
+                        semester_value,
+                        "phase3_backfill",
+                        json.dumps(metadata, ensure_ascii=False),
+                        timestamp,
+                    ),
+                )
+                offer_id = cur.lastrowid
+                offers_inserted += 1
+
+                events = offer.get("events") or []
+                for event in events:
+                    if not isinstance(event, dict):
+                        continue
+                    start_iso = event.get("start")
+                    end_iso = event.get("end")
+                    if not start_iso or not end_iso:
+                        continue
+                    day_of_week = event.get("day")
+                    start_hour = event.get("start_hour")
+                    end_hour = event.get("end_hour")
+                    try:
+                        if day_of_week is None or start_hour is None:
+                            start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
+                            if day_of_week is None:
+                                day_of_week = start_dt.weekday()
+                            if start_hour is None:
+                                start_hour = start_dt.hour
+                        if end_hour is None:
+                            end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00"))
+                            end_hour = end_dt.hour
+                    except Exception:
+                        pass
+                    if day_of_week is None:
+                        continue
+                    conn.execute(
+                        """
+                        INSERT INTO offer_schedule_events (
+                            offer_id,
+                            start_datetime,
+                            end_datetime,
+                            day_of_week,
+                            start_hour,
+                            end_hour,
+                            location,
+                            title,
+                            is_biweekly
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0)
+                        """,
+                        (
+                            offer_id,
+                            start_iso,
+                            end_iso,
+                            int(day_of_week),
+                            int(start_hour) if start_hour is not None else 0,
+                            int(end_hour) if end_hour is not None else 0,
+                            event.get("location"),
+                            event.get("title"),
+                        ),
+                    )
+                    events_inserted += 1
+
+        conn.commit()
+        return offers_inserted, events_inserted

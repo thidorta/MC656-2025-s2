@@ -144,3 +144,5 @@ __pypackages__/
 /gde_app/debug-data/generated/
 /gde_app/debug-data/*.log
 gde_app.zip
+/gde_app/debug-data
+debug_planner

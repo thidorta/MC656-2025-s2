@@ -83,7 +83,7 @@ class CurriculumUpdater:
         logger.info(f"Phase 2 done: {count_p2} nodes in user_curriculum_tree")
 
         # Phase 3: Final snapshot
-        count_p3 = snapshot_service.rebuild_user_curriculum_snapshot()
+        count_p3 = snapshot_service.rebuild_user_curriculum_snapshot(int(user_id))
         logger.info(f"Phase 3 done: {count_p3} rows in user_curriculum_snapshot")
 
     def _lookup_modality_id(self, course_id: int | None, catalog_year: int | None, modality_code: str | None) -> int | None:
@@ -101,6 +101,12 @@ class CurriculumUpdater:
             conn = sqlite3.connect(str(self.catalog_db_path))
             try:
                 normalized = str(modality_code).strip()
+                # GDE payloads sometimes arrive double-encoded ("Ã§" instead of the expected cedilla).
+                if "\u00c3" in normalized:
+                    try:
+                        normalized = normalized.encode("latin-1").decode("utf-8")
+                    except UnicodeError:
+                        pass
                 if not normalized:
                     return None
                 normalized_upper = normalized.upper()

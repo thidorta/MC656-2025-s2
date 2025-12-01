@@ -9,9 +9,25 @@ import { usePlannerData } from './hooks/usePlannerData';
 import DaySection from './components/DaySection';
 import ScheduleGrid from './components/ScheduleGrid';
 import { CourseBlock } from './types';
+import { resolveProfessorName, formatOfferSchedule, resolveProfessorDifficulty } from './utils/offers';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Planner'>;
 const DAY_NAMES = ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta'];
+type DifficultyLevel = 'easy' | 'medium' | 'hard';
+
+const DIFFICULTY_LEGEND: Array<{ key: DifficultyLevel; label: string; hint: string }> = [
+  { key: 'easy', label: 'Facil', hint: 'Nota < 30' },
+  { key: 'medium', label: 'Medio', hint: 'Nota 30-39' },
+  { key: 'hard', label: 'Dificil', hint: 'Nota ≥ 40' },
+];
+
+const difficultySwatch: Record<DifficultyLevel, { text: string; bg: string }> = {
+  easy: { text: palette.difficultyEasy, bg: palette.difficultyEasyBg },
+  medium: { text: palette.difficultyMedium, bg: palette.difficultyMediumBg },
+  hard: { text: palette.difficultyHard, bg: palette.difficultyHardBg },
+};
+
+const getDifficultyStyle = (level?: DifficultyLevel | null) => difficultySwatch[level || 'medium'];
 
 interface Conflict {
   dayIndex: number;
@@ -33,6 +49,7 @@ export default function PlannerScreen({ navigation }: Props) {
     refreshPlanner,
     savePlanner,
     togglePlanned,
+    selectCourseOffer,
     clearPlanner,
   } =
     usePlannerData();
@@ -46,31 +63,59 @@ export default function PlannerScreen({ navigation }: Props) {
     [togglePlanned],
   );
 
+  const handleDayCourseSelect = useCallback(
+    (code: string, turma?: string | null) => {
+      selectCourseOffer(code, turma);
+    },
+    [selectCourseOffer],
+  );
+
   const courseOptions = useMemo(() => {
-    return curriculum.map((course: any) => {
-      const code = String(course.codigo || '');
-      const name = course.nome || code;
-      const planned = plannedSet.has(code);
-      const offers = Array.isArray(course.offers) && course.offers.length
-        ? course.offers.map((offer: any) => {
-            const turmaValue = offer.turma || '';
-            return {
-              key: `${code}-${turmaValue || 'NA'}`,
-              turma: turmaValue,
-              label: turmaValue || 'A',
-              schedule: formatOfferSchedule(offer),
-            };
-          })
-        : [
-            {
-              key: `${code}-NA`,
-              turma: '',
-              label: 'Sem horario',
-              schedule: 'Sem horario definido',
-            },
-          ];
-      return { code, name, planned, offers };
-    });
+    return curriculum
+      .filter((course: any) => {
+        const code = String(course.codigo || course.code || '');
+        if (!code) return false;
+        if (plannedSet.has(code)) return true;
+        return Array.isArray(course.offers) && course.offers.length > 0;
+      })
+      .map((course: any) => {
+        const code = String(course.codigo || course.code || '');
+        const name = course.nome || code;
+        const planned = plannedSet.has(code);
+        const offerList = Array.isArray(course.offers) ? course.offers : [];
+        const offers = offerList.length
+          ? offerList.map((offer: any) => {
+              const turmaValue = offer.turma || '';
+              const professorName = resolveProfessorName(offer);
+              const difficulty = resolveProfessorDifficulty(offer);
+              return {
+                key: `${code}-${turmaValue || 'NA'}-${professorName || 'NP'}`,
+                turma: turmaValue,
+                label: turmaValue || 'A',
+                professor: professorName,
+                schedule: formatOfferSchedule(offer),
+                difficultyLabel: difficulty.label,
+                difficultyLevel: difficulty.level,
+                difficultyScore: difficulty.rating,
+              };
+            })
+          : (() => {
+              const difficulty = resolveProfessorDifficulty(null);
+              return [
+                {
+                  key: `${code}-NA`,
+                  turma: '',
+                  label: 'Sem horario',
+                  professor: '',
+                  schedule: 'Sem horario definido',
+                  difficultyLabel: difficulty.label,
+                  difficultyLevel: difficulty.level,
+                  difficultyScore: difficulty.rating,
+                },
+              ];
+            })();
+        return { code, name, planned, offers };
+      });
   }, [curriculum, plannedSet]);
 
   const filteredCourses = useMemo(() => {
@@ -79,7 +124,10 @@ export default function PlannerScreen({ navigation }: Props) {
     return courseOptions.filter((course) => {
       if (course.code.toLowerCase().includes(term)) return true;
       if ((course.name || '').toLowerCase().includes(term)) return true;
-      return course.offers.some((offer) => offer.label.toLowerCase().includes(term));
+      return course.offers.some((offer) => {
+        if (offer.label.toLowerCase().includes(term)) return true;
+        return (offer.professor || '').toLowerCase().includes(term);
+      });
     });
   }, [courseOptions, searchQuery]);
   const [expandedCourses, setExpandedCourses] = useState<Record<string, boolean>>({});
@@ -172,6 +220,17 @@ export default function PlannerScreen({ navigation }: Props) {
             <Text style={globalStyles.headerDescription}>
               Distribua suas materias nos dias da semana e visualize o horario completo.
             </Text>
+            <View style={globalStyles.difficultyLegendRow}>
+              {DIFFICULTY_LEGEND.map((item) => {
+                const swatch = getDifficultyStyle(item.key);
+                return (
+                  <View key={item.key} style={globalStyles.difficultyLegendItem}>
+                    <View style={[globalStyles.difficultyLegendDot, { backgroundColor: swatch.text }]} />
+                    <Text style={globalStyles.difficultyLegendText}>{`${item.label} (${item.hint})`}</Text>
+                  </View>
+                );
+              })}
+            </View>
             <TouchableOpacity style={globalStyles.resetButton} onPress={handleClearPlanner} activeOpacity={0.85}>
               <MaterialCommunityIcons name="refresh" size={16} color={palette.accent} />
               <Text style={globalStyles.resetButtonText}>Limpar planejamento</Text>
@@ -202,7 +261,7 @@ export default function PlannerScreen({ navigation }: Props) {
           </TouchableOpacity>
           <View style={globalStyles.sectionList}>
             {coursesByDay.map((schedule) => (
-              <DaySection key={schedule.id} schedule={schedule} onToggle={handleToggleCourse} />
+              <DaySection key={schedule.id} schedule={schedule} onToggle={handleDayCourseSelect} />
             ))}
           </View>
 
@@ -268,8 +327,29 @@ export default function PlannerScreen({ navigation }: Props) {
                               onPress={() => handleToggleCourse(course.code, offer.turma)}
                             >
                               <View>
-                                <Text style={styles.offerTitle}>Turma {offer.label}</Text>
-                                <Text style={styles.offerMeta}>{offer.schedule}</Text>
+                                <Text style={styles.offerTitle}>
+                                  {`Turma ${offer.label}`}
+                                  {offer.professor ? ` • ${offer.professor}` : ''}
+                                </Text>
+                                <View style={styles.offerMetaRow}>
+                                  <Text style={styles.offerMeta}>{offer.schedule}</Text>
+                                  <View
+                                    style={[
+                                      styles.offerDifficultyTag,
+                                      { backgroundColor: getDifficultyStyle(offer.difficultyLevel).bg },
+                                    ]}
+                                  >
+                                    <Text
+                                      style={[
+                                        styles.offerDifficultyText,
+                                        { color: getDifficultyStyle(offer.difficultyLevel).text },
+                                      ]}
+                                    >
+                                      {offer.difficultyLabel}
+                                      {offer.difficultyScore != null ? ` • Nota ${offer.difficultyScore}` : ''}
+                                    </Text>
+                                  </View>
+                                </View>
                               </View>
                               {isSelected && (
                                 <MaterialCommunityIcons name="check" size={18} color={palette.accent} />
@@ -382,27 +462,23 @@ const styles = StyleSheet.create({
     color: palette.textSecondary,
     fontSize: 13,
   },
+  offerMetaRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    columnGap: spacing(0.75),
+    marginTop: 2,
+  },
+  offerDifficultyTag: {
+    paddingHorizontal: spacing(0.75),
+    paddingVertical: spacing(0.25),
+    borderRadius: 999,
+  },
+  offerDifficultyText: {
+    fontSize: 11,
+    fontWeight: '600',
+    letterSpacing: 0.3,
+  },
 });
-
-function formatOfferSchedule(offer: any) {
-  const events = Array.isArray(offer.events) ? offer.events : [];
-  if (!events.length && Array.isArray(offer.horarios) && offer.horarios.length) {
-    return `Horarios: ${offer.horarios.join(', ')}`;
-  }
-  if (!events.length) {
-    return 'Sem horario definido';
-  }
-  const formatted = events
-    .map((event: any) => {
-      const start = event.start ? new Date(event.start) : null;
-      const end = event.end ? new Date(event.end) : null;
-      if (!start || !end) return null;
-      const day = DAY_NAMES[start.getDay() - 1] || 'Dia';
-      return `${day} ${start.getHours()}h-${end.getHours()}h`;
-    })
-    .filter(Boolean);
-  return formatted.join(' | ') || 'Sem horario definido';
-}
 
 function formatTime(hour: number) {
   return `${hour.toString().padStart(2, '0')}:00`;

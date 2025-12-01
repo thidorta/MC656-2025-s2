@@ -14,6 +14,13 @@ export const palette = {
   accent: '#00F0FF',
   accentSoft: 'rgba(0,240,255,0.15)',
   buttonText: '#0D0D0D',
+
+  difficultyEasy: '#00FF9C',
+  difficultyEasyBg: 'rgba(0,255,156,0.15)',
+  difficultyMedium: '#FFD55A',
+  difficultyMediumBg: 'rgba(255,213,90,0.20)',
+  difficultyHard: '#FF4A4A',
+  difficultyHardBg: 'rgba(255,74,74,0.18)',
   
   // BRUNO STATE COLORS (for indicators only)
   completed: '#00FF9C',
@@ -100,6 +107,27 @@ export const globalStyles = StyleSheet.create({
     color: palette.textSecondary,
     fontSize: 15,
     lineHeight: 22,
+  },
+  difficultyLegendRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    columnGap: spacing(1.25),
+    rowGap: spacing(0.5),
+    marginTop: spacing(0.5),
+  },
+  difficultyLegendItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    columnGap: spacing(0.5),
+  },
+  difficultyLegendDot: {
+    width: 10,
+    height: 10,
+    borderRadius: 999,
+  },
+  difficultyLegendText: {
+    color: palette.textSecondary,
+    fontSize: 12,
   },
   infoBanner: {
     backgroundColor: palette.surface,
