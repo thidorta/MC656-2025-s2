@@ -6,9 +6,11 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from collections import defaultdict
 from typing import Any, Dict, List, Optional, Tuple
+from uuid import uuid4
+from zoneinfo import ZoneInfo
 
 from sqlalchemy import text
 from sqlalchemy.orm import Session
@@ -31,6 +33,8 @@ __all__ = [
     "update_planned_courses",
     "get_attendance_overrides",
     "save_attendance_overrides",
+    "generate_planner_export",
+    "PlannerExportError",
 ]
 
 
@@ -182,6 +186,23 @@ def _load_offers_for_user(session: Session, user_id: int) -> Dict[str, List[Dict
         offers_map[row["codigo"]].append(offer_dict)
 
     return offers_map
+
+
+class PlannerExportError(Exception):
+    """Raised when planner export cannot be generated."""
+
+
+WEEKDAY_LABELS = [
+    "Segunda",
+    "Terça",
+    "Quarta",
+    "Quinta",
+    "Sexta",
+    "Sábado",
+    "Domingo",
+]
+
+DEFAULT_TZ = "America/Sao_Paulo"
 
 
 def _build_curriculum_from_tree(session: Session, user_id: int) -> List[Dict[str, Any]]:

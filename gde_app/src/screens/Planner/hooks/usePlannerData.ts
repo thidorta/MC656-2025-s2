@@ -328,22 +328,6 @@ export function usePlannerData() {
       const courseType = String(course?.tipo ?? course?.course_type ?? '').toLowerCase();
       const isElective = courseType === 'eletiva' || courseType === 'elective' || electiveCodeSet.has(code);
       if (!offerList.length) {
-        if (!isElective) {
-          return;
-        }
-        const defaultDifficulty = resolveProfessorDifficulty(null);
-        addCourse('other', {
-          code,
-          planned: isPlanned,
-          turma: '',
-          professor: '',
-          schedule: 'Sem horario definido',
-          selected: false,
-          isElective: true,
-          difficultyLabel: defaultDifficulty.label,
-          difficultyLevel: defaultDifficulty.level,
-          difficultyScore: defaultDifficulty.rating,
-        });
         return;
       }
 
@@ -459,6 +443,7 @@ export function usePlannerData() {
     loading,
     saving,
     error,
+    activePayload,
     coursesByDay,
     scheduleBlocks,
     curriculum,
