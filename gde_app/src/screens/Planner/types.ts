@@ -1,5 +1,6 @@
 export interface DayScheduleCourse {
   code: string;
+  name?: string;
   planned: boolean;
   turma?: string;
   professor?: string;
@@ -20,7 +21,11 @@ export interface DaySchedule {
 export interface CourseBlock {
   id: string;
   code: string;
+  name?: string;
   dayIndex: number;
   startTime: number;
   durationHours: number;
+  difficultyLabel?: string;
+  difficultyLevel?: 'easy' | 'medium' | 'hard';
+  difficultyRated?: boolean;
 }

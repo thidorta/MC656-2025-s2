@@ -62,6 +62,7 @@ export default function PlannerScreen({ navigation }: Props) {
     curriculum,
     plannedSet,
     plannedOffers,
+    creditSummary,
     ready,
     refreshPlanner,
     savePlanner,
@@ -461,6 +462,12 @@ export default function PlannerScreen({ navigation }: Props) {
           </TouchableOpacity>
           <Text style={globalStyles.navTitle}>Planejador</Text>
           <View style={globalStyles.navActions}>
+            <View style={styles.creditBadge}>
+              <Text style={styles.creditBadgeText}>
+                {creditSummary.plannedCredits} / {creditSummary.maxCredits}
+              </Text>
+              <Text style={styles.creditBadgeLabel}>créditos</Text>
+            </View>
             <TouchableOpacity onPress={refreshPlanner} style={globalStyles.iconButton}>
               <MaterialCommunityIcons name="refresh" size={20} color={palette.text} />
             </TouchableOpacity>
@@ -832,6 +839,29 @@ type DateCardProps = {
 };
 
 const styles = StyleSheet.create({
+  creditBadge: {
+    backgroundColor: palette.surface2,
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderWidth: 1,
+    borderColor: palette.border,
+    alignItems: 'center',
+    minWidth: 80,
+  },
+  creditBadgeText: {
+    color: palette.accent,
+    fontSize: 15,
+    fontWeight: '700',
+    letterSpacing: 0.3,
+  },
+  creditBadgeLabel: {
+    color: palette.textSecondary,
+    fontSize: 10,
+    marginTop: 2,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
   drawerOverlay: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.7)',

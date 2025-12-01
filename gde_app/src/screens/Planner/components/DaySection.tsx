@@ -40,6 +40,7 @@ export default function DaySection({ schedule, onToggle }: Props) {
                 <CourseChip
                   key={`${course.code}-${course.turma || 'NA'}`}
                   code={course.code}
+                  name={course.name}
                   planned={course.planned}
                   turma={course.turma}
                   professor={course.professor}

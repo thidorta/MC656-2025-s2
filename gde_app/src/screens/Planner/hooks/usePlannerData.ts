@@ -344,6 +344,7 @@ export function usePlannerData() {
           }
           addCourse('other', {
             code,
+            name: course?.nome || code,
             planned: isPlanned,
             turma,
             professor: professorName,
@@ -365,6 +366,7 @@ export function usePlannerData() {
           seenDays.add(key);
           addCourse(key, {
             code,
+            name: course?.nome || code,
             planned: isPlanned,
             turma,
             professor: professorName,
@@ -392,6 +394,7 @@ export function usePlannerData() {
       offers.forEach((offer: any, idx: number) => {
         const turma = offer?.turma || '';
         if (selectedTurma && turma && selectedTurma !== turma) return;
+        const difficulty = resolveProfessorDifficulty(offer);
         const slots = slotsFromOffer(offer);
         slots.forEach((slot, slotIdx) => {
           if (slot.day < 0 || slot.day > 4) return;
@@ -399,15 +402,33 @@ export function usePlannerData() {
           blocks.push({
             id: `${code}-${idx}-${slotIdx}`,
             code,
+            name: course?.nome || code,
             dayIndex: slot.day,
             startTime: slot.start,
             durationHours: duration > 0 ? duration : 2,
+            difficultyLabel: difficulty.label,
+            difficultyLevel: difficulty.level,
+            difficultyRated: difficulty.rating != null,
           });
         });
       });
     });
     return blocks;
   }, [curriculum, plannedSet, plannedOffers, slotsFromOffer]);
+
+  const creditSummary = useMemo(() => {
+    let plannedCredits = 0;
+    curriculum.forEach((course: any) => {
+      const code = String(course?.codigo ?? course?.code ?? '');
+      const credits = typeof course?.creditos === 'number' ? course.creditos : 0;
+      if (plannedSet.has(code)) {
+        plannedCredits += credits;
+      }
+    });
+    // Max credits per semester for Unicamp engineering courses (standard regulation)
+    const maxCreditsPerSemester = 30;
+    return { plannedCredits, maxCredits: maxCreditsPerSemester };
+  }, [curriculum, plannedSet]);
 
   const savePlanner = useCallback(
     async (overrideSet?: Set<string>, overrideOffers?: Map<string, string>) => {
@@ -449,6 +470,7 @@ export function usePlannerData() {
     curriculum,
     plannedSet,
     plannedOffers,
+    creditSummary,
     ready,
     refreshPlanner: loadPlanner,
     savePlanner,

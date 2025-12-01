@@ -6,6 +6,7 @@ type DifficultyLevel = 'easy' | 'medium' | 'hard';
 
 interface Props {
   code: string;
+  name?: string;
   planned?: boolean;
   turma?: string;
   professor?: string;
@@ -28,6 +29,7 @@ const getDifficultyStyle = (level?: DifficultyLevel) => difficultySwatch[level |
 
 export default function CourseChip({
   code,
+  name,
   planned,
   turma,
   professor,
@@ -48,6 +50,9 @@ export default function CourseChip({
       {/* BRUNO LEFT BAR INDICATOR */}
       {selected && <View style={styles.leftBar} />}
       
+      {/* BRUNO RIGHT NEON DOT */}
+      {selected && <View style={styles.rightDot} />}
+      
       <View style={styles.content}>
         {isElective && (
           <View style={styles.electiveTag}>
@@ -55,9 +60,10 @@ export default function CourseChip({
           </View>
         )}
         <Text style={styles.chipText}>
-          {code}
+          {name || code}
           {turma ? ` • Turma ${turma}` : ''}
         </Text>
+        {name && <Text style={styles.chipCode}>{code}</Text>}
         {professor ? (
           <Text style={styles.metaText}>{professor}</Text>
         ) : planned ? (
@@ -90,11 +96,16 @@ const styles = StyleSheet.create({
     position: 'relative',
     backgroundColor: palette.surface2,
     borderRadius: 8,
-    paddingVertical: 10,
+    paddingVertical: 12,
     paddingHorizontal: 14,
     borderWidth: 1,
     borderColor: palette.border,
     minWidth: 100,
+    shadowColor: '#000',
+    shadowOpacity: 0.28,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 4,
   },
   chipSelected: {
     borderColor: palette.accent,
@@ -110,8 +121,20 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 8,
     borderBottomLeftRadius: 8,
   },
+  rightDot: {
+    position: 'absolute',
+    top: 8,
+    right: 8,
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: palette.accent,
+    borderWidth: 1,
+    borderColor: 'rgba(0,240,255,0.35)',
+  },
   content: {
     paddingLeft: 6,
+    paddingRight: 16,
   },
   electiveTag: {
     alignSelf: 'flex-start',
@@ -132,8 +155,14 @@ const styles = StyleSheet.create({
   chipText: {
     color: palette.text,
     fontSize: 13,
+    fontWeight: '700',
+    letterSpacing: 0.3,
+  },
+  chipCode: {
+    color: palette.textSecondary,
+    fontSize: 11,
+    marginTop: 2,
     fontWeight: '600',
-    letterSpacing: 0.2,
   },
   metaText: {
     color: palette.textSecondary,
