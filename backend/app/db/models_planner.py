@@ -359,3 +359,32 @@ class AttendanceOverrideModel(Base):
         if self.faltas_justificadas is not None:
             result["faltas_justificadas"] = self.faltas_justificadas
         return result
+
+
+class UserOAuthTokenModel(Base):
+    """Persisted OAuth tokens for third-party integrations (e.g., Google)."""
+
+    __tablename__ = "user_oauth_tokens"
+    __table_args__ = (
+        UniqueConstraint("user_id", "provider", name="uq_user_oauth_provider"),
+    )
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    provider = Column(String, nullable=False, default="google")
+    access_token = Column(Text, nullable=False)
+    refresh_token = Column(Text, nullable=True)
+    token_type = Column(String, nullable=True)
+    scope = Column(Text, nullable=True)
+    account_email = Column(String, nullable=True)
+    expires_at = Column(String, nullable=True)
+    created_at = Column(String, nullable=False, default=_utcnow_iso)
+    updated_at = Column(String, nullable=False, default=_utcnow_iso, onupdate=_utcnow_iso)
+
+    def to_status_dict(self) -> Dict[str, Any]:
+        return {
+            "provider": self.provider,
+            "email": self.account_email,
+            "scope": self.scope,
+            "expires_at": self.expires_at,
+        }

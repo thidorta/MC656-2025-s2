@@ -6,7 +6,7 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, time, timedelta, timezone
 from collections import defaultdict
 from typing import Any, Dict, List, Optional, Tuple
 from uuid import uuid4
@@ -34,6 +34,9 @@ __all__ = [
     "get_attendance_overrides",
     "save_attendance_overrides",
     "generate_planner_export",
+    "build_planner_event_templates",
+    "build_event_summary",
+    "build_event_description",
     "PlannerExportError",
 ]
 
@@ -194,11 +197,11 @@ class PlannerExportError(Exception):
 
 WEEKDAY_LABELS = [
     "Segunda",
-    "Terça",
+    "Terca",
     "Quarta",
     "Quinta",
     "Sexta",
-    "Sábado",
+    "Sabado",
     "Domingo",
 ]
 
@@ -686,3 +689,279 @@ def save_attendance_overrides(
     attendance_repo = AttendanceRepository()
     attendance_repo.upsert_overrides(session, user_id, overrides)
     session.commit()
+
+
+def generate_planner_export(
+    session: Session,
+    user_id: int,
+    start_date: Any,
+    end_date: Any,
+    *,
+    timezone_name: Optional[str] = None,
+    calendar_name: Optional[str] = None,
+) -> Dict[str, Any]:
+    """Build ICS calendar content for the user's planned courses."""
+
+    start = _coerce_date(start_date, "start_date")
+    end = _coerce_date(end_date, "end_date")
+    if end <= start:
+        raise PlannerExportError("A data final deve ser posterior ao inicio.")
+
+    tz_name = timezone_name or DEFAULT_TZ
+    try:
+        tzinfo = ZoneInfo(tz_name)
+    except Exception as exc:  # pragma: no cover - invalid tz handled as user error
+        raise PlannerExportError("Fuso horario invalido.") from exc
+
+    templates = build_planner_event_templates(session, user_id, start, end)
+
+    calendar_label = calendar_name or f"Planejamento GDE {start.year}"
+    filename = f"planner-{start.isoformat()}-{end.isoformat()}.ics"
+    dtstamp = datetime.now(tz=timezone.utc)
+
+    preview: List[Dict[str, Any]] = []
+    ics_lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//MC656//Planner Export//PT-BR",
+        "CALSCALE:GREGORIAN",
+        f"X-WR-CALNAME:{_escape_ics_text(calendar_label)}",
+        f"X-WR-TIMEZONE:{_escape_ics_text(tz_name)}",
+    ]
+
+    for template in templates:
+        start_local = datetime.combine(
+            template["first_date"],
+            _hour_to_time(template["start_hour"]),
+            tzinfo=tzinfo,
+        )
+        end_local = datetime.combine(
+            template["first_date"],
+            _hour_to_time(template["end_hour"]),
+            tzinfo=tzinfo,
+        )
+        until_local = datetime.combine(
+            template["last_date"],
+            _hour_to_time(template["start_hour"]),
+            tzinfo=tzinfo,
+        )
+
+        summary = build_event_summary(template)
+        description, weekday_label = build_event_description(template, include_weekday_label=True)
+
+        event_lines = [
+            "BEGIN:VEVENT",
+            f"UID:{uuid4()}@mc656-planner",
+            f"DTSTAMP:{_format_ics_datetime(dtstamp)}",
+            f"SUMMARY:{_escape_ics_text(summary)}",
+            f"DESCRIPTION:{_escape_ics_text(description)}",
+            f"DTSTART:{_format_ics_datetime(start_local)}",
+            f"DTEND:{_format_ics_datetime(end_local)}",
+            f"RRULE:FREQ=WEEKLY;UNTIL:{_format_ics_datetime(until_local)}",
+        ]
+        if template["location"]:
+            event_lines.append(f"LOCATION:{_escape_ics_text(str(template['location']))}")
+        event_lines.append("END:VEVENT")
+        ics_lines.extend(event_lines)
+
+        preview.append(
+            {
+                "code": template["codigo"],
+                "turma": template["turma"],
+                "weekday": template["weekday"],
+                "weekday_label": weekday_label,
+                "time_label": f"{template['start_hour']:02d}:00 - {template['end_hour']:02d}:00",
+                "location": template["location"],
+            }
+        )
+
+    ics_lines.append("END:VCALENDAR")
+    ics_content = "\r\n".join(ics_lines) + "\r\n"
+
+    return {
+        "calendar_name": calendar_label,
+        "filename": filename,
+        "ics_content": ics_content,
+        "timezone": tz_name,
+        "starts_on": start,
+        "ends_on": end,
+        "event_templates": preview,
+        "event_count": len(templates),
+        "generated_at": _utcnow_iso(),
+    }
+
+
+def build_planner_event_templates(
+    session: Session,
+    user_id: int,
+    start: date,
+    end: date,
+) -> List[Dict[str, Any]]:
+    """Produce normalized planner events between the selected dates."""
+
+    planner_repo = PlannerRepository()
+    planned_entries = planner_repo.list_planned_courses(session, user_id)
+    if not planned_entries:
+        raise PlannerExportError("Nenhuma disciplina planejada encontrada.")
+
+    offers_map = _load_offers_for_user(session, user_id)
+    if not offers_map:
+        raise PlannerExportError("Nenhum horario disponivel para as disciplinas planejadas.")
+
+    name_lookup = {row["code"]: row["name"] for row in _fetch_tree_rows(session, user_id)}
+
+    templates: List[Dict[str, Any]] = []
+    for entry in planned_entries:
+        code = entry.codigo
+        offers = offers_map.get(code)
+        if not offers:
+            continue
+
+        turma = (entry.turma or "").strip()
+        selected_offer = None
+        if turma:
+            selected_offer = next(
+                (offer for offer in offers if (offer.get("turma") or "").strip() == turma),
+                None,
+            )
+        if not selected_offer:
+            selected_offer = offers[0]
+            turma = (selected_offer.get("turma") or "").strip()
+
+        for event in selected_offer.get("events") or []:
+            weekday = _normalize_weekday(event.get("day"))
+            start_hour, end_hour = _resolve_event_hours(event)
+            if weekday is None or start_hour is None or end_hour is None:
+                continue
+
+            first_occurrence = _next_weekday_on_or_after(start, weekday)
+            if first_occurrence > end:
+                continue
+            last_occurrence = _last_weekday_on_or_before(end, weekday)
+            if last_occurrence < first_occurrence:
+                continue
+
+            templates.append(
+                {
+                    "codigo": code,
+                    "nome": name_lookup.get(code),
+                    "turma": turma,
+                    "weekday": weekday,
+                    "start_hour": start_hour,
+                    "end_hour": end_hour,
+                    "location": event.get("location"),
+                    "professor": selected_offer.get("professor"),
+                    "description": event.get("title"),
+                    "first_date": first_occurrence,
+                    "last_date": last_occurrence,
+                }
+            )
+
+    if not templates:
+        raise PlannerExportError("Nao ha eventos com horarios configurados para exportar.")
+
+    return templates
+
+
+def build_event_summary(template: Dict[str, Any]) -> str:
+    """Compose a human-readable summary for ICS/Google Calendar entries."""
+
+    summary_parts = [template.get("codigo") or ""]
+    turma = template.get("turma")
+    if turma:
+        summary_parts.append(f"Turma {turma}")
+    if template.get("nome"):
+        summary_parts.append(str(template["nome"]))
+    return " - ".join(part for part in summary_parts if part)
+
+
+def build_event_description(
+    template: Dict[str, Any],
+    *,
+    include_weekday_label: bool = False,
+) -> str | tuple[str, str]:
+    """Compose detailed description; optionally return weekday label."""
+
+    description_parts: List[str] = []
+    if template.get("nome"):
+        description_parts.append(str(template["nome"]))
+    if template.get("professor"):
+        description_parts.append(f"Professor: {template['professor']}")
+    weekday_label = WEEKDAY_LABELS[template["weekday"]]
+    description_parts.append(
+        f"{weekday_label} das {template['start_hour']:02d}:00 as {template['end_hour']:02d}:00"
+    )
+    if template.get("description"):
+        description_parts.append(str(template["description"]))
+    description = "\n".join(description_parts)
+    if include_weekday_label:
+        return description, weekday_label
+    return description
+
+
+def _hour_to_time(hour_value: int) -> time:
+    bounded = max(0, min(23, hour_value))
+    return time(hour=bounded, minute=0)
+
+
+def _coerce_date(value: Any, field_name: str) -> date:
+    if isinstance(value, date):
+        return value
+    if isinstance(value, str):
+        try:
+            return date.fromisoformat(value)
+        except ValueError as exc:
+            raise PlannerExportError(f"{field_name} invalida.") from exc
+    raise PlannerExportError(f"{field_name} invalida.")
+
+
+def _normalize_weekday(value: Any) -> Optional[int]:
+    if isinstance(value, int):
+        if 0 <= value <= 6:
+            return value
+        if 1 <= value <= 7:
+            return (value - 1) % 7
+    if isinstance(value, str) and value.isdigit():
+        return _normalize_weekday(int(value))
+    return None
+
+
+def _resolve_event_hours(event: Dict[str, Any]) -> Tuple[Optional[int], Optional[int]]:
+    start_hour = event.get("start_hour")
+    end_hour = event.get("end_hour")
+    if isinstance(start_hour, int) and isinstance(end_hour, int):
+        return start_hour, end_hour
+
+    start_iso = event.get("start")
+    end_iso = event.get("end")
+    if isinstance(start_iso, str) and isinstance(end_iso, str):
+        try:
+            start_dt = datetime.fromisoformat(start_iso.replace("Z", "+00:00"))
+            end_dt = datetime.fromisoformat(end_iso.replace("Z", "+00:00"))
+            return start_dt.hour, end_dt.hour
+        except ValueError:
+            return None, None
+    return None, None
+
+
+def _next_weekday_on_or_after(start: date, weekday: int) -> date:
+    delta = (weekday - start.weekday()) % 7
+    return start + timedelta(days=delta)
+
+
+def _last_weekday_on_or_before(end: date, weekday: int) -> date:
+    delta = (end.weekday() - weekday) % 7
+    return end - timedelta(days=delta)
+
+
+def _format_ics_datetime(value: datetime) -> str:
+    return value.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+
+def _escape_ics_text(value: str) -> str:
+    return (
+        value.replace("\\", "\\\\")
+        .replace(";", "\\;")
+        .replace(",", "\\,")
+        .replace("\n", "\\n")
+    )

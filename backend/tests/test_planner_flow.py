@@ -58,7 +58,22 @@ def test_user_db_planner_attendance_flow(client):
                 "pode": True,
                 "prereqs": [],
                 "offers": [
-                    {"id": 1, "turma": "A", "vagas": 50, "events": []},
+                    {
+                        "id": 1,
+                        "turma": "A",
+                        "vagas": 50,
+                        "events": [
+                            {
+                                "day": 0,
+                                "start_hour": 8,
+                                "end_hour": 10,
+                                "start": "2025-08-04T08:00:00-03:00",
+                                "end": "2025-08-04T10:00:00-03:00",
+                                "title": "MC102 Aula CB01",
+                                "location": "CB01",
+                            }
+                        ],
+                    },
                     {"id": 2, "turma": "B", "vagas": 50, "events": []},
                 ],
             }
@@ -110,6 +125,15 @@ def test_user_db_planner_attendance_flow(client):
     assert r.status_code == 200
     after = r.json()
     assert after["planned_courses"].get("MC102") == "A"
+
+    export_payload = {"start_date": "2025-08-04", "end_date": "2025-12-15"}
+    r = client.post("/api/v1/planner/export", headers=headers, json=export_payload)
+    assert r.status_code == 200
+    export = r.json()
+    assert export["event_count"] == 1
+    assert export["timezone"] == "America/Sao_Paulo"
+    assert export["filename"].endswith(".ics")
+    assert "BEGIN:VCALENDAR" in export["ics_content"]
 
     # Attendance PUT/GET
     r = client.put("/api/v1/attendance/", headers=headers, json={"overrides": {"MC102": {"presencas": 3, "total_aulas": 10}}})

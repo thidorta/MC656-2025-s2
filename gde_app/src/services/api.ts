@@ -30,6 +30,33 @@ interface AttendanceOverridesResponse {
   overrides: Record<string, any>;
 }
 
+interface PlannerExportResponse {
+  calendar_name: string;
+  filename: string;
+  ics_content: string;
+  timezone: string;
+  starts_on: string;
+  ends_on: string;
+  event_templates: Array<Record<string, any>>;
+  event_count: number;
+  generated_at: string;
+}
+
+interface GoogleStatusResponse {
+  connected: boolean;
+  email?: string;
+  scope?: string;
+  expires_at?: string;
+}
+
+interface PlannerGoogleExportResponse {
+  calendar_id: string;
+  calendar_name: string;
+  event_count: number;
+  connected_email?: string;
+  synced_at: string;
+}
+
 async function withRefreshRetry<T>(fn: () => Promise<T>): Promise<T> {
   try {
     return await fn();
@@ -173,5 +200,36 @@ export const apiService = {
     const qs = search.toString() ? `?${search.toString()}` : '';
     const resp = await fetchAuth(`${API_BASE_URL}/tree/${qs}`);
     return resp.json();
+  },
+  exportPlannerCalendar: async (params: { start_date: string; end_date: string; timezone?: string; calendar_name?: string }): Promise<PlannerExportResponse> => {
+    const resp = await fetchAuth(`${API_BASE_URL}/planner/export`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(params),
+    });
+    return resp.json();
+  },
+  exportPlannerToGoogle: async (params: { start_date: string; end_date: string; timezone?: string; calendar_name?: string; calendar_id?: string }): Promise<PlannerGoogleExportResponse> => {
+    const resp = await fetchAuth(`${API_BASE_URL}/planner/export/google`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(params),
+    });
+    return resp.json();
+  },
+  getGoogleStatus: async (): Promise<GoogleStatusResponse> => {
+    const resp = await fetchAuth(`${API_BASE_URL}/google/status`);
+    return resp.json();
+  },
+  exchangeGoogleCode: async (payload: { code: string; code_verifier: string; redirect_uri: string }): Promise<GoogleStatusResponse> => {
+    const resp = await fetchAuth(`${API_BASE_URL}/google/oauth/exchange`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    return resp.json();
+  },
+  disconnectGoogle: async (): Promise<void> => {
+    await fetchAuth(`${API_BASE_URL}/google/oauth/token`, { method: 'DELETE' });
   },
 };

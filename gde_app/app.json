@@ -3,6 +3,7 @@
     "name": "GDE • DAC Online",
     "slug": "gde_app",
     "version": "1.0.0",
+    "scheme": "gdeapp",
 
     "icon": "./assets/logo.png",
 
