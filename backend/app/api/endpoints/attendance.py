@@ -22,11 +22,11 @@ async def get_overrides(user=Depends(require_user), db: Session = Depends(get_db
     uid, payload = user
     
     # Get overrides from relational repository
-    overrides = planner_service.get_attendance_overrides(db, uid)
+    data = planner_service.get_attendance_overrides(db, uid)
     
     return {
         "planner_id": payload.get("planner_id"),
-        "overrides": overrides,
+        **data,
     }
 
 

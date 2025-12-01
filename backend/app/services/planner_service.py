@@ -8,6 +8,7 @@ import json
 import logging
 from datetime import date, datetime, time, timedelta, timezone
 from collections import defaultdict
+from math import floor
 from typing import Any, Dict, List, Optional, Tuple
 from uuid import uuid4
 from zoneinfo import ZoneInfo
@@ -19,7 +20,7 @@ from app.db.repositories.snapshot_repo import SnapshotRepository
 from app.db.repositories.curriculum_repo import CurriculumRepository
 from app.db.repositories.planner_repo import PlannerRepository
 from app.db.repositories.attendance_repo import AttendanceRepository
-from app.utils.planner_debug import write_debug_json
+from app.utils.planner_debug import write_debug_json, write_attendance_debug
 
 # Re-export repositories for convenience
 __all__ = [
@@ -39,6 +40,9 @@ __all__ = [
     "build_event_description",
     "PlannerExportError",
 ]
+
+ATTENDANCE_CREDIT_TO_SEMESTER_HOURS = 15  # mirrors frontend constant
+ATTENDANCE_MAX_ABSENCE_RATIO = 0.25
 
 
 def _utcnow_iso() -> str:
@@ -556,6 +560,7 @@ def update_planned_courses(
         planned_payload: Modified planner payload with planned selections
     """
     planner_repo = PlannerRepository()
+    attendance_repo = AttendanceRepository()
     
     write_debug_json(
         "update_planned_courses_input",
@@ -571,11 +576,16 @@ def update_planned_courses(
         suffix=_debug_suffix(user_id=user_id),
     )
     
+    planned_codes = [entry["codigo"] for entry in planned_entries if entry.get("codigo")]
+
     # Replace all planned courses for this user
     planner_repo.replace_planned_courses(session, user_id, planned_entries)
+
+    # Keep attendance overrides table aligned with planner selections
+    attendance_repo.sync_with_planned_codes(session, user_id, planned_codes)
+
     session.commit()
 
-    planned_codes = [entry["codigo"] for entry in planned_entries if entry.get("codigo")]
     _update_tree_planned_flags(session, user_id, planned_codes)
 
     write_debug_json(
@@ -665,12 +675,35 @@ def _extract_planned_from_payload(payload: Dict[str, Any]) -> List[Dict[str, Any
 
 def get_attendance_overrides(session: Session, user_id: int) -> Dict[str, Any]:
     """
-    Get attendance overrides for a user.
+    Get attendance overrides plus the current planned codes & metadata.
     
-    Returns dict: {"MC102": {"presencas": 10, "total_aulas": 15, ...}, ...}
+    Returns dict: {"planned_codes": [...], "overrides": {...}, "courses": [...]}
     """
     attendance_repo = AttendanceRepository()
-    return attendance_repo.get_overrides_map(session, user_id)
+    overrides = attendance_repo.get_overrides_map(session, user_id)
+    
+    planner_repo = PlannerRepository()
+    planned_entries = planner_repo.list_planned_courses(session, user_id)
+    planned_codes = [entry.codigo for entry in planned_entries if entry.codigo]
+    
+    courses_payload = _build_attendance_courses_payload(session, user_id, planned_codes)
+    payload = {
+        "user_id": user_id,
+        "planned_codes": planned_codes,
+        "overrides": overrides,
+        "courses": courses_payload,
+    }
+    write_attendance_debug(
+        "attendance_fetch",
+        payload,
+        suffix=_debug_suffix(user_id=user_id),
+    )
+    
+    return {
+        "planned_codes": planned_codes,
+        "overrides": overrides,
+        "courses": courses_payload,
+    }
 
 
 def save_attendance_overrides(
@@ -689,6 +722,95 @@ def save_attendance_overrides(
     attendance_repo = AttendanceRepository()
     attendance_repo.upsert_overrides(session, user_id, overrides)
     session.commit()
+
+
+def _normalize_course_code(value: Any) -> str:
+    if value is None:
+        return ""
+    return str(value).strip().upper()
+
+
+def _compute_attendance_metrics(credits: int) -> Dict[str, int]:
+    semester_hours = credits * ATTENDANCE_CREDIT_TO_SEMESTER_HOURS
+    weekly_hours = credits * 2
+    allowed_hours = floor(semester_hours * ATTENDANCE_MAX_ABSENCE_RATIO)
+    max_absences = floor(allowed_hours / 2) if allowed_hours else 0
+    return {
+        "semester_hours": semester_hours,
+        "weekly_hours": weekly_hours,
+        "max_absences": max_absences,
+    }
+
+
+def _resolve_professor_from_curriculum_entry(entry: Dict[str, Any]) -> str:
+    offers = entry.get("offers") if isinstance(entry, dict) else None
+    if not isinstance(offers, list):
+        return ""
+    for offer in offers:
+        if not isinstance(offer, dict):
+            continue
+        professor = offer.get("professor")
+        if isinstance(professor, str) and professor.strip():
+            return professor.strip()
+    return ""
+
+
+def _build_attendance_course_entry(code: str, entry: Optional[Dict[str, Any]]) -> Dict[str, Any]:
+    name = code
+    credits_raw: Any = 0
+    professor = ""
+    if isinstance(entry, dict):
+        name = entry.get("nome") or entry.get("name") or code
+        credits_raw = entry.get("creditos") or entry.get("credits") or 0
+        professor = _resolve_professor_from_curriculum_entry(entry)
+
+    try:
+        credits = int(round(float(credits_raw)))
+    except (TypeError, ValueError):
+        credits = 0
+    metrics = _compute_attendance_metrics(credits)
+
+    return {
+        "code": code,
+        "name": name,
+        "credits": credits,
+        "professor": professor,
+        "semester_hours": metrics["semester_hours"],
+        "weekly_hours": metrics["weekly_hours"],
+        "max_absences": metrics["max_absences"],
+        "requires_attendance": True,
+        "alert_enabled": True,
+    }
+
+
+def _build_attendance_courses_payload(
+    session: Session,
+    user_id: int,
+    planned_codes: List[str],
+) -> List[Dict[str, Any]]:
+    if not planned_codes:
+        return []
+
+    user_db_payload = build_user_db_from_snapshot(session, user_id)
+    curriculum_list = []
+    if isinstance(user_db_payload, dict):
+        curriculum_list = user_db_payload.get("curriculum") or []
+
+    course_map: Dict[str, Dict[str, Any]] = {}
+    for entry in curriculum_list:
+        if not isinstance(entry, dict):
+            continue
+        normalized = _normalize_course_code(entry.get("codigo") or entry.get("code"))
+        if normalized:
+            course_map[normalized] = entry
+
+    courses: List[Dict[str, Any]] = []
+    for raw_code in planned_codes:
+        normalized = _normalize_course_code(raw_code)
+        entry = course_map.get(normalized)
+        courses.append(_build_attendance_course_entry(normalized or raw_code, entry))
+
+    return courses
 
 
 def generate_planner_export(

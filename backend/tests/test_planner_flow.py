@@ -136,9 +136,21 @@ def test_user_db_planner_attendance_flow(client):
     assert "BEGIN:VCALENDAR" in export["ics_content"]
 
     # Attendance PUT/GET
-    r = client.put("/api/v1/attendance/", headers=headers, json={"overrides": {"MC102": {"presencas": 3, "total_aulas": 10}}})
+    override_payload = {
+        "overrides": {
+            "MC102": {
+                "absencesUsed": 2,
+                "requiresAttendance": True,
+                "alertEnabled": False,
+            }
+        }
+    }
+    r = client.put("/api/v1/attendance/", headers=headers, json=override_payload)
     assert r.status_code == 200
     r = client.get("/api/v1/attendance/", headers=headers)
     assert r.status_code == 200
     att = r.json()
-    assert att["overrides"]["MC102"]["presencas"] == 3
+    mc102 = att["overrides"]["MC102"]
+    assert mc102["absencesUsed"] == 2
+    assert mc102["requiresAttendance"] is True
+    assert mc102["alertEnabled"] is False

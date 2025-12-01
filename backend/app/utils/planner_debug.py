@@ -21,13 +21,8 @@ def _sanitize_segment(value: str) -> str:
     return "".join(ch if ch.isalnum() or ch in allowed else "-" for ch in value)
 
 
-def write_debug_json(label: str, payload: Any, *, suffix: Optional[str] = None) -> None:
-    """Persist planner debug payloads when enabled via settings."""
-    settings = get_settings()
-    if not settings.planner_debug_enabled:
-        return
-
-    target_dir: Path = settings.planner_debug_dir
+def _write_json(target_dir: Path, label: str, payload: Any, *, suffix: Optional[str] = None) -> None:
+    """Internal helper that writes a JSON file to target_dir."""
     try:
         target_dir.mkdir(parents=True, exist_ok=True)
         segments = [_timestamp(), _sanitize_segment(label)]
@@ -39,3 +34,23 @@ def write_debug_json(label: str, payload: Any, *, suffix: Optional[str] = None) 
             handle.write("\n")
     except Exception:
         logger.exception("Failed to write planner debug artifact for %s", label)
+
+
+def write_debug_json(label: str, payload: Any, *, suffix: Optional[str] = None) -> None:
+    """Persist planner debug payloads when enabled via settings."""
+    settings = get_settings()
+    if not settings.planner_debug_enabled:
+        return
+
+    target_dir: Path = settings.planner_debug_dir
+    _write_json(target_dir, label, payload, suffix=suffix)
+
+
+def write_attendance_debug(label: str, payload: Any, *, suffix: Optional[str] = None) -> None:
+    """Persist attendance-specific debug payloads under a dedicated folder."""
+    settings = get_settings()
+    if not settings.planner_debug_enabled:
+        return
+
+    target_dir: Path = settings.planner_debug_dir / "attendance"
+    _write_json(target_dir, label, payload, suffix=suffix)

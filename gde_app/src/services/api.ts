@@ -28,6 +28,21 @@ interface LoginResponse {
 interface AttendanceOverridesResponse {
   planner_id: string;
   overrides: Record<string, any>;
+  planned_codes?: string[];
+  courses?: Array<{
+    code?: string;
+    codigo?: string;
+    name?: string;
+    nome?: string;
+    credits?: number;
+    creditos?: number;
+    professor?: string;
+    semester_hours?: number;
+    weekly_hours?: number;
+    max_absences?: number;
+    requires_attendance?: boolean;
+    alert_enabled?: boolean;
+  }>;
 }
 
 interface PlannerExportResponse {

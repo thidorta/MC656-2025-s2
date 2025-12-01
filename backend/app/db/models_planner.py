@@ -341,6 +341,9 @@ class AttendanceOverrideModel(Base):
     # Attendance metrics
     presencas = Column(Integer, nullable=False, default=0)
     total_aulas = Column(Integer, nullable=False, default=0)
+    absences_used = Column(Integer, nullable=False, default=0)
+    requires_attendance = Column(Integer, nullable=False, default=1)
+    alert_enabled = Column(Integer, nullable=False, default=1)
     
     # Optional extended fields
     notas = Column(Float, nullable=True)
@@ -350,7 +353,15 @@ class AttendanceOverrideModel(Base):
     
     def to_override_dict(self) -> Dict[str, Any]:
         """Convert to attendance override format."""
+        absences_used = self.absences_used or 0
+        requires_attendance = bool(self.requires_attendance if self.requires_attendance is not None else 1)
+        alert_enabled = bool(self.alert_enabled if self.alert_enabled is not None else 1)
+
         result = {
+            "absencesUsed": absences_used,
+            "requiresAttendance": requires_attendance,
+            "alertEnabled": alert_enabled,
+            # Legacy keys kept for compatibility with older clients/debug scripts
             "presencas": self.presencas,
             "total_aulas": self.total_aulas,
         }
